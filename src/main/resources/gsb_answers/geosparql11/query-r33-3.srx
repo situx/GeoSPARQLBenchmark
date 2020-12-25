@@ -1,0 +1,11 @@
+
+<sparql xmlns="http://www.w3.org/2005/sparql-results#">
+ <head>
+  <variable name="convexhull"/>
+ </head>
+ <results distinct="false" ordered="true">
+  <result>
+   <binding name="convexhull"><literal datatype="http://www.opengis.net/ont/geosparql#wktiteral">POLYGON ((31.95 -88.38, -88.38 31.95, -77.089005 38.913574, -77.02995300000001 38.913574, 31.95 -88.38))</literal></binding>
+  </result>
+ </results>
+</sparql>
