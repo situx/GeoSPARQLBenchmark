@@ -1,0 +1,10 @@
+<sparql xmlns="http://www.w3.org/2005/sparql-results#">
+ <head>
+  <variable name="dggs"/>
+ </head>
+ <results distinct="false" ordered="true">
+  <result>
+   <binding name="dggs"><literal datatype="http://www.opengis.net/ont/geosparql#kmlLiteral"><![CDATA[<Polygon xmlns="http://www.opengis.net/kml/2.2"><outerBoundaryIs><LinearRing><coordinates>-83.5,34.2 -83.3,34.2 -83.3,34.4 -83.5,34.4 -83.5,34.2</coordinates></LinearRing></outerBoundaryIs></Polygon>]]></literal></binding>
+  </result>
+ </results>
+</sparql>
