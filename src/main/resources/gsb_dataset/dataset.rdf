@@ -85,6 +85,9 @@
     <geo:asGeoJSON rdf:datatype="http://www.opengis.net/ont/geosparql#geoJSONLiteral">
         <![CDATA[{"geometry":{"type":"Polygon","coordinates":[[[-83.6,34.1],[-83.2,34.1],[-83.2,34.5],[-83.6,34.5],[-83.6,34.1]]]}]]>
     </geo:asGeoJSON>
+	<geo:asKML rdf:datatype="http://www.opengis.net/ont/geosparql#kmlLiteral">
+        <![CDATA[<Polygon xmlns="http://www.opengis.net/kml/2.2"><outerBoundaryIs><LinearRing><coordinates>-83.6,34.1 -83.2,34.1 -83.2,34.5 -83.6,34.5 -83.6,34.1</coordinates></LinearRing></outerBoundaryIs></Polygon>]]>
+    </geo:asKML>
 </sf:Polygon>
 
 <sf:Point rdf:about="http://example.org/ApplicationSchema#APointGeom">
@@ -340,6 +343,9 @@
     <geo:asGeoJSON rdf:datatype="http://www.opengis.net/ont/geosparql#geoJSONLiteral">
         <![CDATA[{"geometry":{"type":"Polygon","coordinates":[[[-83.5,34.2],[-83.3,34.2],[-83.3,34.4],[-83.5,34.4],[-83.5,34.2]]]}]]>
     </geo:asGeoJSON>
+	<geo:asKML rdf:datatype="http://www.opengis.net/ont/geosparql#kmlLiteral">
+        <![CDATA[<Polygon xmlns="http://www.opengis.net/kml/2.2"><outerBoundaryIs><LinearRing><coordinates>-83.5,34.2 -83.3,34.2 -83.3,34.4 -83.5,34.4 -83.5,34.2</coordinates></LinearRing></outerBoundaryIs></Polygon>]]>
+    </geo:asKML>
 </sf:Polygon>
 
 <sf:Point rdf:about="http://example.org/ApplicationSchema#GPointGeom">
@@ -379,6 +385,7 @@
     <geo:asWKT rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral"></geo:asWKT>
     <geo:asGML rdf:datatype="http://www.opengis.net/ont/geosparql#gmlLiteral"></geo:asGML>
     <geo:asGeoJSON rdf:datatype="http://www.opengis.net/ont/geosparql#geoJSONLiteral"></geo:asGeoJSON>
+	<geo:asKML rdf:datatype="http://www.opengis.net/ont/geosparql#kmlLiteral"></geo:asKML>
 </sf:LineString>
 
 <sf:Point rdf:about="http://example.org/ApplicationSchema#HPointGeom">
@@ -392,6 +399,7 @@
     <geo:asWKT rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral"></geo:asWKT>
     <geo:asGML rdf:datatype="http://www.opengis.net/ont/geosparql#gmlLiteral"></geo:asGML>
     <geo:asGeoJSON rdf:datatype="http://www.opengis.net/ont/geosparql#geoJSONLiteral"></geo:asGeoJSON>
+	<geo:asKML rdf:datatype="http://www.opengis.net/ont/geosparql#kmlLiteral"></geo:asKML>
 </sf:Point>
 
 <!-- I -->
@@ -422,6 +430,7 @@
     <geo:asGeoJSON rdf:datatype="http://www.opengis.net/ont/geosparql#geoJSONLiteral">
         <![CDATA[{"geometry":null}]]>
     </geo:asGeoJSON>
+	<geo:asKML rdf:datatype="http://www.opengis.net/ont/geosparql#kmlLiteral"></geo:asKML>
 </sf:LineString>
 
 <sf:Point rdf:about="http://example.org/ApplicationSchema#IPointGeom">
@@ -441,6 +450,7 @@
     <geo:asGeoJSON rdf:datatype="http://www.opengis.net/ont/geosparql#geoJSONLiteral">
         <![CDATA[{"geometry":null}]]>
     </geo:asGeoJSON>
+	<geo:asKML rdf:datatype="http://www.opengis.net/ont/geosparql#kmlLiteral"></geo:asKML>
 </sf:Point>
 
 <!-- J -->
