@@ -12,15 +12,35 @@ answerpath = 'src/main/resources/geosparql11_compliance/gsb_answertemplates/'
 
 configpath = 'src/main/resources/geosparql10_compliance/gsb_config/geosparql10_compliance.json'
 
+querypaths = ['src/main/resources/geosparql10_compliance/gsb_queries/','src/main/resources/geosparql11_compliance/gsb_querytemplates/']
+
+configpaths = ['src/main/resources/geosparql10_compliance/gsb_config/geosparql10_compliance.json','src/main/resources/geosparql11_compliance/gsb_config/geosparql11_compliance.json']
+
 benchmarkconfig={}
 
 files = os.listdir(querypath)
 answerp = os.listdir(answerpath)
 
-with open(configpath) as json_file:
-    benchmarkconfig = json.load(json_file)
-
 amountOfRequirements=32
+
+benchmarkconfigttlhead="""
+@prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix hobbit: <http://w3id.org/hobbit/vocab#> .
+@prefix spec: <http://www.opengis.net/def/spec-element/> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl:    <http://www.w3.org/2002/07/owl#> .
+@prefix bench:  <http://w3id.org/bench#> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+#-------------------------------------------------------------------------------------------------------------------------------
+bench:GSComplianceBenchmarkV2  a   hobbit:Benchmark;
+    rdfs:label  "GeoSPARQL Compliance Benchmark (v2)"@en;
+    rdfs:comment    "GeoSPARQL Compliance Benchmark (v2) for the HOBBIT Platform. The benchmark tests the system's compliance to the GeoSPARQL 1.0 and 1.1 specifications and their requirements. It provides a 0 - 100% compliance result, along with details about the failing tests and sub-tests for each requirement."@en;
+    hobbit:hasAPI   <https://project-hobbit.eu/challenges/MOCHA2017-API>;
+    hobbit:imageName    "git.project-hobbit.eu:4567/mjovanovik/gsb-benchmarkcontroller-v2";
+    hobbit:usesImage    "git.project-hobbit.eu:4567/mjovanovik/gsb-datagenerator-v2";
+    hobbit:usesImage    "git.project-hobbit.eu:4567/mjovanovik/gsb-seqtaskgenerator-v2";
+    hobbit:usesImage    "git.project-hobbit.eu:4567/mjovanovik/gsb-evaluationmodule-v2";"""
 
 geom_literals = {
     "WKT":"geo:asWKT",
@@ -126,32 +146,16 @@ def expandLiteralsFromTemplates():
                 variantcounter=variantcounter+1
             file.close()
 
-def generateConfiguration():
+def generateConfiguration(querypath,benchmarkconfig,benchmarkconfigttl,benchmarkconfigttlhead):
     first=True
     gsbquerycounter=0
     curreqcounter=0
     curreqamount=0
     reqstring=""
-    benchmarkconfigttl=""
-    benchmarkconfigttlhead="""
-@prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix hobbit: <http://w3id.org/hobbit/vocab#> .
-@prefix spec: <http://www.opengis.net/def/spec-element/> .
-@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
-@prefix owl:    <http://www.w3.org/2002/07/owl#> .
-@prefix bench:  <http://w3id.org/bench#> .
-@prefix qb: <http://purl.org/linked-data/cube#> .
-#-------------------------------------------------------------------------------------------------------------------------------
-bench:GSComplianceBenchmarkV2  a   hobbit:Benchmark;
-    rdfs:label  "GeoSPARQL Compliance Benchmark (v2)"@en;
-    rdfs:comment    "GeoSPARQL Compliance Benchmark (v2) for the HOBBIT Platform. The benchmark tests the system's compliance to the GeoSPARQL 1.0 and 1.1 specifications and their requirements. It provides a 0 - 100% compliance result, along with details about the failing tests and sub-tests for each requirement."@en;
-    hobbit:hasAPI   <https://project-hobbit.eu/challenges/MOCHA2017-API>;
-    hobbit:imageName    "git.project-hobbit.eu:4567/mjovanovik/gsb-benchmarkcontroller-v2";
-    hobbit:usesImage    "git.project-hobbit.eu:4567/mjovanovik/gsb-datagenerator-v2";
-    hobbit:usesImage    "git.project-hobbit.eu:4567/mjovanovik/gsb-seqtaskgenerator-v2";
-    hobbit:usesImage    "git.project-hobbit.eu:4567/mjovanovik/gsb-evaluationmodule-v2";"""
+    files = os.listdir(querypath)
+    #answerp = os.listdir(answerpath)
     for f in files:
+        print(querypath+f)
         if not os.path.isfile(querypath+f):
             continue
         file = open(querypath+f, "r")
@@ -169,7 +173,7 @@ bench:GSComplianceBenchmarkV2  a   hobbit:Benchmark;
         reqstring=fileprefix
         variantcounter=1
         if not "%%literal1%%" in filecontent and not "%%literalrel1%%" in filecontent and not "%%literal2%%" in filecontent and not "%%literalrel1%%" in filecontent:
-            benchmarkconfigttl+="bench:Q"+f.replace(".rq","").replace("query-r","").replace("-","_")+"Status a hobbit:KPI;\n"
+            benchmarkconfigttl+="bench:Q"+f.replace(".rq","").replace("query-r","").replace("-","_")+"_"+benchmarkconfig["benchmarkshorturi"]+"Status a hobbit:KPI;\n"
             partnumber=-1
             if f.count("-")>1:
                 querynumber=f[0:f.rfind("-")]
@@ -203,7 +207,7 @@ bench:GSComplianceBenchmarkV2  a   hobbit:Benchmark;
             continue
         if "%%literal2%%" in filecontent:
             for lit in combinations:
-                benchmarkconfigttl+="bench:Q"+f.replace(".rq","").replace("query-r","").replace("-","_")+"_"+str(variantcounter)+"Status a hobbit:KPI;\n"
+                benchmarkconfigttl+="bench:Q"+f.replace(".rq","").replace("query-r","").replace("-","_")+"_"+str(variantcounter)+"_"+benchmarkconfig["benchmarkshorturi"]+"Status a hobbit:KPI;\n"
                 partnumber=-1
                 if f.count("-")>1:
                     querynumber=f[0:f.rfind("-")]
@@ -221,7 +225,7 @@ bench:GSComplianceBenchmarkV2  a   hobbit:Benchmark;
                 print("QueryNumber: "+str(f))
                 print("QueryNumber: "+str(partnumber))
                 if "reqToURI" in benchmarkconfig and querynumber in benchmarkconfig["reqToURI"]:
-                    benchmarkconfigttl+="req:isTestResultOf <"+benchmarkconfig["reqToURI"][querynumber]+"> ;\n"
+                    benchmarkconfigttl+="spec:isTestResultOf <"+benchmarkconfig["reqToURI"][querynumber]+"> ;\n"
                 if "reqToDescs" in benchmarkconfig and f in benchmarkconfig["reqToDescs"]:		
                     benchmarkconfigttl+="rdfs:comment \""+benchmarkconfig["reqToDescs"][f]+"\";\n"
                 else:
@@ -235,11 +239,17 @@ bench:GSComplianceBenchmarkV2  a   hobbit:Benchmark;
                 first=True                
                 variantcounter=variantcounter+1
             file.close()
-    benchmarkconfigttlhead+="    hobbit:measuresKPI  bench:totalCorrectAnswers ;\n    hobbit:measuresKPI  bench:percentageCorrectAnswers .\n"
-    with open("benchmarkconfig_gen.ttl", "w") as f2:
-        f2.write(benchmarkconfigttlhead)
-        f2.write(benchmarkconfigttl)
-
+    return benchmarkconfigttl
 
 expandLiteralsFromTemplates()
-generateConfiguration()
+benchmarkconfigttl=""
+i=0
+for bencon in configpaths:
+    with open(bencon) as json_file:
+        benchmarkconfig = json.load(json_file)
+    benchmarkconfigttl=generateConfiguration(querypaths[i],benchmarkconfig,benchmarkconfigttl,benchmarkconfigttlhead)
+    i+=1
+benchmarkconfigttlhead+="    hobbit:measuresKPI  bench:totalCorrectAnswers ;\n    hobbit:measuresKPI  bench:percentageCorrectAnswers .\n"
+with open("benchmarkconfig_gen.ttl", "w") as f2:
+    f2.write(benchmarkconfigttlhead)
+    f2.write(benchmarkconfigttl)

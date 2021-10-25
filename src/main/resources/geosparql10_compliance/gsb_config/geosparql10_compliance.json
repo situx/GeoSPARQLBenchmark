@@ -2,6 +2,7 @@
 "inference":["query-r25-1.rq","query-r25-2.rq","query-r25-3.rq","query-r26-1.rq","query-r26-2.rq","query-r27.rq"],
 "benchmarkname":"GeoSPARQL 1.1 Compliance Benchmark",
 "benchmarkshortname":"GSB v1.0",
+"benchmarkshorturi":"gsb_10",
 "extensionMap":{"CORE":["query-r01","query-r02","query-r03"],
 			  "TOP":["query-r04","query-r05","query-r06"],
 			  "GEOEXT":["query-r07","query-r08","query-r09","query-r10","query-r11","query-r12","query-r13","query-r14","query-r15","query-r16","query-r17","query-r18","query-r19","query-r20"],
