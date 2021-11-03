@@ -33,6 +33,28 @@ benchmarkconfigttlhead="""
 @prefix bench:  <http://w3id.org/bench#> .
 @prefix qb: <http://purl.org/linked-data/cube#> .
 #-------------------------------------------------------------------------------------------------------------------------------
+
+spec:Requirement rdf:type owl:Class .
+spec:Requirement rdfs:label \"requirement\"@en .
+spec:ConformanceTest rdf:type owl:Class .
+spec:ConformanceTest rdfs:label \"conformance test\"@en .
+hobbit:imageName rdf:type owl:DatatypeProperty .
+hobbit:imageName rdfs:label \"image name\"@en .
+hobbit:usesImage rdf:type owl:DatatypeProperty .
+hobbit:usesImage rdfs:label \"uses image\"@en .
+rdfs:label rdf:type owl:AnnotationProperty .
+rdfs:comment rdf:type owl:AnnotationProperty .
+hobbit:hasAPI rdf:type owl:ObjectProperty .
+hobbit:hasAPI rdfs:label \"has API\"@en .
+hobbit:Benchmark rdf:type owl:Class .
+hobbit:Benchmark rdfs:label \"Benchmark\"@en .
+hobbit:KPI rdf:type owl:Class .
+hobbit:KPI rdfs:label \"KPI\"@en .
+hobbit:measuresKPI rdf:type owl:ObjectProperty .
+hobbit:measuresKPI rdfs:label \"measures KPI\"@en .
+spec:isTestResultOf rdf:type owl:ObjectProperty .
+spec:isTestResultOf rdfs:label \"is test result of\"@en .
+
 bench:GSComplianceBenchmarkV2  a   hobbit:Benchmark;
     rdfs:label  "GeoSPARQL Compliance Benchmark (v2)"@en;
     rdfs:comment    "GeoSPARQL Compliance Benchmark (v2) for the HOBBIT Platform. The benchmark tests the system's compliance to the GeoSPARQL 1.0 and 1.1 specifications and their requirements. It provides a 0 - 100% compliance result, along with details about the failing tests and sub-tests for each requirement."@en;
@@ -49,6 +71,8 @@ geom_literals = {
     "KML":"geo:asKML",
 	"DGGS":"geo:asDGGS"
 }
+
+benchmarkuri="bench:GSComplianceBenchmarkV2"
 
 geom_literals2 = [
     ("WKT","geo:asWKT"),
@@ -173,6 +197,7 @@ def generateConfiguration(querypath,benchmarkconfig,benchmarkconfigttl,benchmark
         reqstring=fileprefix
         variantcounter=1
         if not "%%literal1%%" in filecontent and not "%%literalrel1%%" in filecontent and not "%%literal2%%" in filecontent and not "%%literalrel1%%" in filecontent:
+            benchmarkconfigttl+=benchmarkuri+" hobbit:measuresKPI "+"bench:Q"+f.replace(".rq","").replace("query-r","").replace("-","_")+"_"+benchmarkconfig["benchmarkshorturi"]+"Status .\n"
             benchmarkconfigttl+="bench:Q"+f.replace(".rq","").replace("query-r","").replace("-","_")+"_"+benchmarkconfig["benchmarkshorturi"]+"Status a hobbit:KPI;\n"
             partnumber=-1
             if f.count("-")>1:
@@ -191,7 +216,10 @@ def generateConfiguration(querypath,benchmarkconfig,benchmarkconfigttl,benchmark
             print("QueryNumber: "+str(f))
             print("QueryNumber: "+str(partnumber))
             if "reqToURI" in benchmarkconfig and querynumber in benchmarkconfig["reqToURI"]:
-                benchmarkconfigttl+="spec:isTestResultOf <"+benchmarkconfig["reqToURI"][querynumber]+"> ;\n"
+                benchmarkconfigttl+="spec:isTestResultOf <"+benchmarkconfig["reqToURI"][querynumber]+"> .\n"
+                benchmarkconfigttl+="<"+benchmarkconfig["reqToURI"][querynumber]+"> rdf:type spec:Requirement .\n"
+                benchmarkconfigttl+="<"+benchmarkconfig["reqToURI"][querynumber].replace("req","conf")+"> rdf:type spec:ConformanceTest .\n"
+                benchmarkconfigttl+="bench:Q"+f.replace(".rq","").replace("query-r","").replace("-","_")+"_"+benchmarkconfig["benchmarkshorturi"]+"Status " 
             if 	"reqToDescs" in benchmarkconfig and f in benchmarkconfig["reqToDescs"]:	
                 benchmarkconfigttl+="rdfs:comment \"Requirement "+f.replace(".rq","")
                 if partnumber!=-1:
@@ -249,7 +277,7 @@ for bencon in configpaths:
         benchmarkconfig = json.load(json_file)
     benchmarkconfigttl=generateConfiguration(querypaths[i],benchmarkconfig,benchmarkconfigttl,benchmarkconfigttlhead)
     i+=1
-benchmarkconfigttlhead+="    hobbit:measuresKPI  bench:totalCorrectAnswers ;\n    hobbit:measuresKPI  bench:percentageCorrectAnswers .\n"
+benchmarkconfigttlhead+="    hobbit:measuresKPI  bench:totalCorrectAnswers ;\n    hobbit:measuresKPI  bench:percentageCorrectAnswers . bench:percentageCorrectAnswers rdf:type hobbit:KPI .\n"
 with open("benchmarkconfig_gen.ttl", "w") as f2:
     f2.write(benchmarkconfigttlhead)
     f2.write(benchmarkconfigttl)
