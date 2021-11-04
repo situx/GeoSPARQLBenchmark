@@ -1,7 +1,7 @@
 import os
 import itertools
 import json
-
+from rdflib import Graph
 
 def replaceInString(toreplace, firstliteral, secondliteral,firstliteralrel,secondliteralrel):
 	return toreplace.replace("%%literal1%%",firstliteral).replace("%%literal2%%",secondliteral).replace("%%literalrel1%%",firstliteralrel).replace("%%literalrel2%%",secondliteralrel)
@@ -50,10 +50,39 @@ hobbit:Benchmark rdf:type owl:Class .
 hobbit:Benchmark rdfs:label \"Benchmark\"@en .
 hobbit:KPI rdf:type owl:Class .
 hobbit:KPI rdfs:label \"KPI\"@en .
+hobbit:API rdf:type owl:Class .
+hobbit:API rdfs:label "API"@en .
 hobbit:measuresKPI rdf:type owl:ObjectProperty .
 hobbit:measuresKPI rdfs:label \"measures KPI\"@en .
 spec:isTestResultOf rdf:type owl:ObjectProperty .
 spec:isTestResultOf rdfs:label \"is test result of\"@en .
+
+bench:benchmarkVersion a hobbit:Parameter, hobbit:ConfigurableParameter, hobbit:FeatureParameter;
+    rdfs:label "GeoSPARQL Version"@en;
+    rdfs:comment "The version of GeoSPARQL to be tested"@en;
+    rdfs:domain	hobbit:Benchmark;
+    rdfs:range bench:BenchmarkVersion ;
+    hobbit:defaultValue bench:geosparql10 .
+
+bench:BenchmarkVersion a rdfs:Class, owl:Class .
+
+bench:geosparql10compliance a bench:BenchmarkVersion;
+	rdfs:label "GeoSPARQL 1.0 Compliance"@en;
+	rdfs:comment "GeoSPARQL 1.0 Compliance"@en .
+
+bench:geosparql11compliance a bench:BenchmarkVersion;
+	rdfs:label "GeoSPARQL 1.1 Compliance"@en;
+	rdfs:comment "GeoSPARQL 1.1 Compliance"@en .
+    
+bench:geosparql10performance a bench:BenchmarkVersion ;
+    rdfs:label "GeoSPARQL 1.0 Performance"@en ;
+    rdfs:comment "GeoSPARQL 1.0 Performance"@en .
+	
+bench:geosparql11performance a bench:BenchmarkVersion ;
+    rdfs:label "GeoSPARQL 1.1 Performance"@en ;
+    rdfs:comment "GeoSPARQL 1.1 Performance"@en .
+
+<https://project-hobbit.eu/challenges/MOCHA2017-API>    a   hobbit:API .
 
 bench:GSComplianceBenchmarkV2  a   hobbit:Benchmark;
     rdfs:label  "GeoSPARQL Compliance Benchmark (v2)"@en;
@@ -278,6 +307,10 @@ for bencon in configpaths:
     benchmarkconfigttl=generateConfiguration(querypaths[i],benchmarkconfig,benchmarkconfigttl,benchmarkconfigttlhead)
     i+=1
 benchmarkconfigttlhead+="    hobbit:measuresKPI  bench:totalCorrectAnswers ;\n    hobbit:measuresKPI  bench:percentageCorrectAnswers . bench:percentageCorrectAnswers rdf:type hobbit:KPI .\n"
-with open("benchmarkconfig_gen.ttl", "w") as f2:
-    f2.write(benchmarkconfigttlhead)
-    f2.write(benchmarkconfigttl)
+
+graph2 = Graph()
+graph2.parse(data = benchmarkconfigttlhead+benchmarkconfigttl, format='n3')
+graph2.serialize(destination='hobbit-settings/benchmark_v2.ttl', format='turtle')
+#with open("benchmarkconfig_gen.ttl", "w") as f2:
+#    f2.write(benchmarkconfigttlhead)
+#    f2.write(benchmarkconfigttl)

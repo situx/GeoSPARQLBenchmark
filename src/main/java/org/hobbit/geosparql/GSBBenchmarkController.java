@@ -37,10 +37,10 @@ public class GSBBenchmarkController extends AbstractBenchmarkController {
     private static final String performanceTest="http://example.org/performanceYes";
 
     public GSBBenchmarkController() { 
-    	BenchmarkVersions.put("http://w3id.org/bench#GeoSPARQL10Compliance","geosparql10_compliance");
-    	BenchmarkVersions.put("http://w3id.org/bench#GeoSPARQL10Performance","geosparql10_performance");
-    	BenchmarkVersions.put("http://w3id.org/bench#GeoSPARQL11Compliance","geosparql11_compliance");
-    	BenchmarkVersions.put("http://w3id.org/bench#GeoSPARQL11Performance","geosparql11_performance");
+    	BenchmarkVersions.put("http://w3id.org/bench#geosparql10compliance","geosparql10_compliance");
+    	BenchmarkVersions.put("http://w3id.org/bench#geosparql10performance","geosparql10_performance");
+    	BenchmarkVersions.put("http://w3id.org/bench#geosaprql11compliance","geosparql11_compliance");
+    	BenchmarkVersions.put("http://w3id.org/bench#geosaprql11performance","geosparql11_performance");
     }
 
     @Override

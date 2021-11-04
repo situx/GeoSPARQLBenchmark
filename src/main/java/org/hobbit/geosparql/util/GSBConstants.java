@@ -44,6 +44,7 @@ public final class GSBConstants {
 		String filecontent=readFileAsString(configfile);		
 		JSONObject jsonobj=new JSONObject(filecontent);
 		JSONObject weights = jsonobj.getJSONObject("reqWeights");
+		String shorturi = jsonobj.getString("benchmarkshorturi");
 		for(String key:weights.keySet()) {
 			GSB_ANSWERS_WEIGHTS.put(key, weights.getDouble(key));
 			GSB_ANSWERS.add(key);
@@ -69,7 +70,7 @@ public final class GSBConstants {
 		GSB_NUMBER_OF_REQUIREMENTS=GSB_REQUIREMENTS_MAP.size();
 		for(String str:folderfiles) {
 			GSB_QUERIES.add(str);
-			GSB_EVALUATION_STATUS.put("evaluation_"+str.replace(".srx", "")+"_execution_status","http://w3id.org/bench#"+str.replace(".srx", "")+"Status");
+			GSB_EVALUATION_STATUS.put("evaluation_"+str.replace(".srx", "")+"_execution_status","http://w3id.org/bench#"+str.replace(".srx", "")+"_"+shorturi+"Status");
 		}
 		System.out.println(GSB_QUERIES);
 		System.out.println(GSB_EVALUATION_STATUS);
