@@ -10,6 +10,16 @@
 			  "RDFSE":["query-r47","query-r48","query-r49"],
 			  "QRW":["query-r50","query-r51","query-r52"]
 },
+"reqLabels":{
+	"query-r01.rq":"Requirement 1: SPARQL Protocol",
+	"query-r02.rq":"Requirement 2: Spatial Object Class",
+	"query-r03.rq":"Requirement 3: Feature Class"
+},
+"reqDefinitions":{
+	"query-r01.rq":"Requirement 1: Implementations shall support the SPARQL Query Language for RDF [W3C SPARQL], the SPARQL Protocol for RDF [W3C SPARQL Protocol] and the SPARQL Query Results XML Format [W3C SPARQL Result Format].",
+	"query-r02.rq":"Requirement 2: Implementations shall allow the RDFS class geo:SpatialObject to be used in SPARQL graph patterns.",
+	"query-r03.rq":"Requirement 3: Implementations shall allow the RDFS class geo:Feature to be used in SPARQL graph patterns."
+},
 "reqWeights":{
 	"query-r01.rq": 0.01923076923076923077,
 	"query-r02.rq": 0.01923076923076923077,
@@ -334,5 +344,5 @@
 "query-r51":"http://www.opengis.net/spec/geosparql/1.0/req/query-rewrite-extension/eh-query-rewrite",
 "query-r52":"http://www.opengis.net/spec/geosparql/1.0/req/query-rewrite-extension/rcc8-query-rewrite"
 },
-"queryFolders":{"src/main/resources/geosparql11_compliance/gsb_querytemplates/result/":"src/main/resources/geosparql11_compliance/gsb_answers/"}
+"queryFolders":{"src/main/resources/geosparql11_compliance/gsb_queries/":"src/main/resources/geosparql11_compliance/gsb_answers/"}
 }

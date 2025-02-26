@@ -10,6 +10,8 @@ resultMap={}
 
 resultMapReq={}
 
+resultMapErr={}
+
 queryResultMap={}
 
 configfile="geosparql10_compliance.json"
@@ -35,18 +37,26 @@ if "extensionMap" in config:
 reqWeights={}
 if "reqWeights" in config:
     reqWeights=config["reqWeights"]
+    
+reqDefinitions={}
+if "reqDefinitions" in config:
+    reqDefinitions=config["reqDefinitions"]
 
 reqToURI={}
 if "reqToURI" in config:
     reqToURI=config["reqToURI"]
+   
+reqLabels={}
+if "reqLabels" in config:
+    reqLabels=config["reqLabels"]
 
 queryFolder={}
 if "queryFolders" in config:
     queryFolder=config["queryFolders"]
 
-curendpointrdfs="https://api.triplydb.com/datasets/Timo/geosparqlbenchmarkrdfs/services/geosparqlbenchmarkrdfs/sparql"
+curendpointrdfs="https://api.triplydb.com/datasets/Timo/geosparqlbenchmarkrdfs/sparql"
 
-curendpoint="https://api.triplydb.com/datasets/timohomburg/geosparqlbenchmark/services/geosparqlbenchmark/sparql"
+curendpoint="https://api.triplydb.com/datasets/timohomburg/geosparqlbenchmark/sparql"
 
 #queryFolder="src/main/resources/gsb_queries/"
 
@@ -68,11 +78,21 @@ def queryEndpoint(endpoint,query,resultFolder, testid):
 	try:
 		results = sparql.query().convert().toprettyxml(indent="", newl="\n")
 		results=replaceCDATA(results)
-		results=results.replace("\n","").replace(" ","").replace("\t","").replace("distinct=\"false\"ordered=\"true\"","").replace("xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"xsi:schemaLocation=\"http://www.w3.org/2001/sw/DataAccess/rf1/result2.xsd\"","")
-		res=compareResults(getResultFilesList(testid,resultFolder),results,testid,query)
+		results=results.replace("\n","").replace(" ","").replace("\t","").replace("distinct=\"false\"ordered=\"true\"","")#.replace("xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"xsi:schemaLocation=\"http://www.w3.org/2001/sw/DataAccess/rf1/result2.xsd\"","")
+		#print(results)
+		results=re.sub(r'<sparql(.*?)>','<sparql>',results)
+		print(results)
+		expectedresult=getResultFilesList(testid,resultFolder)
+		print(expectedresult)
+		res=compareResults(expectedresult,results,testid,query)
 		print(testid+": "+str(res))
-	except:
-		print("except")
+		resultMapErr[testid]=False
+	except Exception as e:
+		print(e)
+		resultMapErr[testid]=str(e)
+		expectedresult=getResultFilesList(testid,resultFolder)
+		res=compareResults(expectedresult,str(e),testid,query)
+		print(testid+": "+str(res))
 
 ## Compares a list of anticipated query results to the retrieved query result from the triple store .
 #  @param resultlist the list of anticipated query results
@@ -145,6 +165,7 @@ def calculateComplianceScore(resultMap):
 		print("ComplianceScore: "+str(compliancescore*100)+"%")
 	print("Amount of correct tests: "+str(correctScore)+"/"+str(amountOfQueries)+"="+str((correctScore/amountOfQueries)))
 	print("ComplianceScore: "+str(round(compliancescore*100,2))+"%")
+	resjson={"exts":{},"correcttests":correctScore,"totalQueries":amountOfQueries,"compliancescore":str(round(compliancescore*100,2))+"%"}
 	f = open("result.txt", "w")
 	f.write("Amount of correct tests: "+str(correctScore)+"/"+str(amountOfQueries)+"\n")
 	f.write("ComplianceScore: "+str(round(compliancescore*100,2))+"%\n")
@@ -164,11 +185,12 @@ def calculateComplianceScore(resultMap):
 						extmaxscore+=percperThisReq
 			#else:
 			#	curextscore+=percentagePerReq
-		if curextscore==0 or extmaxscore==0:
-			f.write("Extension "+str(ext)+": 0%\n")
-		else:
-			f.write("Extension "+str(ext)+": "+str(round((curextscore/extmaxscore)*100,2))+"%\n")
+		if extmaxscore==0:
+			extmaxscore=1
+		f.write("Extension "+str(ext)+": "+str(round((curextscore/extmaxscore)*100,2))+"%\n")
+		resjson["exts"][str(ext)]=str(round((curextscore/extmaxscore)*100,2))+"%"
 	f.close()
+	return resjson
 
 
 def benchmarkResultsToRDF(resultMap):
@@ -189,9 +211,9 @@ def benchmarkResultsToRDF(resultMap):
 				for assessment in resultMapReq[req]:
 					if assessment in reqWeights:
 						percperThisReq=reqWeights[assessment]
-                        if resultMapReq[req][assessment]:
-                            curextscore+=percperThisReq
-                        extmaxscore+=percperThisReq
+						if resultMapReq[req][assessment]:
+							curextscore+=percperThisReq
+						extmaxscore+=percperThisReq
 					ttlstring+="<"+reqToURI[req]+"_eval> geo:hasEvaluationQuery <"+reqToURI[req]+"/query_"+str(asscounter)+"> .\n"
 					ttlstring+="<"+reqToURI[req]+"/query_"+str(asscounter)+"> rdf:type geo:RequirementQuery .\n"
 					ttlstring+="<"+reqToURI[req]+"/query_"+str(asscounter)+"> rdfs:label \""+str(reqToURI[req])+" query "+str(asscounter)+"\"@en .\n"
@@ -236,6 +258,24 @@ for folder in queryFolder.keys():
 f = open("benchmarkresult.json", "w")
 f.write(json.dumps(resultMap, indent=2))
 f.close()
+score=calculateComplianceScore(resultMap)
+jsresultmap={}
+for res in resultMap:
+    jsresultmap[res]={"result":resultMap[res]}
+    if res in reqDefinitions:
+        jsresultmap[res]["definition"]=reqDefinitions[res]
+    if res in reqLabels:
+        jsresultmap[res]["label"]=reqLabels[res]
+    if res in reqWeights:
+        jsresultmap[res]["weight"]=str(reqWeights[res]*100)+"%"
+    if res.replace(".rq","") in reqToURI:
+        jsresultmap[res]["requri"]=reqToURI[res.replace(".rq","")]
+    if res in resultMapErr:
+        jsresultmap[res]["err"]=str(resultMapErr[res]).replace("False","")
+jsresultmap["score"]=score
+f = open("benchmarkresult.js", "w")
+f.write("var benchmarkresult="+json.dumps(jsresultmap, indent=2))
+f.close()
 comparefile.close()
-calculateComplianceScore(resultMap)
+
 benchmarkResultsToRDF(resultMap)
