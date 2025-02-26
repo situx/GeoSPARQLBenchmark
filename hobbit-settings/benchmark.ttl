@@ -230,56 +230,67 @@ bench:GSComplianceBenchmark  a   hobbit:Benchmark;
 # --- KPIs ---
 bench:Q01Status a   hobbit:KPI;
     rdfs:label  "Q01 Status"@en;
+	skos:altLabel "Requirement 1: SPARQL Protocol"@en;
     rdfs:comment    "Requirement 1: Implementations shall support the SPARQL Query Language for RDF [W3C SPARQL], the SPARQL Protocol for RDF [W3C SPARQL Protocol] and the SPARQL Query Results XML Format [W3C SPARQL Result Format]."@en;
     rdfs:range  xsd:boolean .
 
 bench:Q02Status a   hobbit:KPI;
     rdfs:label  "Q02 Status"@en;
+	skos:altLabel "Requirement 2: Spatial Object Class"@en;
     rdfs:comment    "Requirement 2: Implementations shall allow the RDFS class geo:SpatialObject to be used in SPARQL graph patterns."@en;
     rdfs:range  xsd:boolean .
 
 bench:Q03Status a   hobbit:KPI;
     rdfs:label  "Q03 Status"@en;
+	skos:altLabel "Requirement 3: Feature Class"@en;
     rdfs:comment    "Requirement 3: Implementations shall allow the RDFS class geo:Feature to be used in SPARQL graph patterns."@en;
     rdfs:range  xsd:boolean .
 
 bench:Q04_1Status a   hobbit:KPI;
     rdfs:label  "Q04-1 Status"@en;
+	skos:altLabel "Requirement 4-1: Simple Feature Spatial Relations: geo:sfEquals"@en;
     rdfs:comment    "Requirement 4 (Part 1): Implementations shall allow the property geo:sfEquals to be used in SPARQL graph patterns."@en;
     rdfs:range  xsd:boolean .
 
 bench:Q04_2Status a   hobbit:KPI;
     rdfs:label  "Q04-2 Status"@en;
-    rdfs:comment    "Requirement 4 (Part 2): Implementations shall allow the property geo:sfDisjoint to be used in SPARQL graph patterns."@en;
+    skos:altLabel "Requirement 4-2: Simple Feature Spatial Relations: geo:sfDisjoint"@en;
+	rdfs:comment    "Requirement 4 (Part 2): Implementations shall allow the property geo:sfDisjoint to be used in SPARQL graph patterns."@en;
     rdfs:range  xsd:boolean .
 
 bench:Q04_3Status a   hobbit:KPI;
     rdfs:label  "Q04-3 Status"@en;
+	skos:altLabel "Requirement 4-3: Simple Feature Spatial Relations: geo:sfIntersects"@en;
     rdfs:comment    "Requirement 4 (Part 3): Implementations shall allow the property geo:sfIntersects to be used in SPARQL graph patterns."@en;
     rdfs:range  xsd:boolean .
 
 bench:Q04_4Status a   hobbit:KPI;
     rdfs:label  "Q04-4 Status"@en;
+	skos:altLabel "Requirement 4-4: Simple Feature Spatial Relations: geo:sfTouches"@en;
     rdfs:comment    "Requirement 4 (Part 4): Implementations shall allow the property geo:sfTouches to be used in SPARQL graph patterns."@en;
     rdfs:range  xsd:boolean .
 
 bench:Q04_5Status a   hobbit:KPI;
     rdfs:label  "Q04-5 Status"@en;
+	skos:altLabel "Requirement 4-5: Simple Feature Spatial Relations: geo:sfCrosses"@en;
     rdfs:comment    "Requirement 4 (Part 5): Implementations shall allow the property geo:sfCrosses to be used in SPARQL graph patterns."@en;
     rdfs:range  xsd:boolean .
 
 bench:Q04_6Status a   hobbit:KPI;
     rdfs:label  "Q04-6 Status"@en;
+	skos:altLabel "Requirement 4-6: Simple Feature Spatial Relations: geo:sfWithin"@en;
     rdfs:comment    "Requirement 4 (Part 6): Implementations shall allow the property geo:sfWithin to be used in SPARQL graph patterns."@en;
     rdfs:range  xsd:boolean .
 
 bench:Q04_7Status a   hobbit:KPI;
     rdfs:label  "Q04-7 Status"@en;
+	skos:altLabel "Requirement 4-7: Simple Feature Spatial Relations: geo:sfContains"@en;
     rdfs:comment    "Requirement 4 (Part 7): Implementations shall allow the property geo:sfContains to be used in SPARQL graph patterns."@en;
     rdfs:range  xsd:boolean .
 
 bench:Q04_8Status a   hobbit:KPI;
     rdfs:label  "Q04-8 Status"@en;
+	skos:altLabel "Requirement 4-8: Simple Feature Spatial Relations: geo:sfOverlaps"@en;
     rdfs:comment    "Requirement 4 (Part 8): Implementations shall allow the property geo:sfOverlaps to be used in SPARQL graph patterns."@en;
     rdfs:range  xsd:boolean .
 
@@ -453,7 +464,7 @@ bench:Q16_2Status a   hobbit:KPI;
     rdfs:comment    "Requirement 16 (Part 2): An empty geo:gmlLiteral shall be interpreted as an empty geometry. Part 2 tests Point geometries."@en;
     rdfs:range  xsd:boolean .
 
-bench:Q18Status a   hobbit:KPI;
+bench:Q18Status a hobbit:KPI;
     rdfs:label  "Q18 Status"@en;
     rdfs:comment    "Requirement 18: Implementations shall allow the RDF property geo:asGML to be used in SPARQL graph patterns."@en;
     rdfs:range  xsd:boolean .
