@@ -2,9 +2,9 @@ PREFIX uom: <http://www.opengis.net/def/uom/OGC/1.0/>
 PREFIX my: <http://example.org/ApplicationSchema#>
 PREFIX geo: <http://www.opengis.net/ont/geosparql#>
 PREFIX geof: <http://www.opengis.net/def/function/geosparql/>
-SELECT ?buffer
+SELECT ?length
 WHERE {
   my:A geo:hasDefaultGeometry ?geom .
   ?geom %%literalrel1%% ?%%literal1%% .
-  BIND (geof:buffer(?%%literal1%%, 10.0, uom:metre) as ?buffer)
-}
+  BIND (geof:length(?%%literal1%%) as ?length)
+} 

@@ -1,0 +1,7 @@
+PREFIX my: <http://example.org/ApplicationSchema#>
+PREFIX geo: <http://www.opengis.net/ont/geosparql#>
+SELECT ?marea
+WHERE {
+  my:A geo:hasMetricArea ?marea .
+} 
+ 

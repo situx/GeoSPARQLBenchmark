@@ -1,10 +1,8 @@
-PREFIX uom: <http://www.opengis.net/def/uom/OGC/1.0/>
 PREFIX my: <http://example.org/ApplicationSchema#>
 PREFIX geo: <http://www.opengis.net/ont/geosparql#>
 PREFIX geof: <http://www.opengis.net/def/function/geosparql/>
-SELECT ?geometryN
+SELECT ?minX
 WHERE {
-  my:A geo:hasDefaultGeometry ?geom .
-  ?geom %%literalrel1%% ?%%literal1%% .
-  BIND (geof:geometryN(?%%literal1%%,1) as ?geometryN)
-} 
+  my:AExactGeom %%literalrel1%% ?%%literal1%% .
+  BIND(geof:minX(?%%literal1%%) AS ?minX)
+}

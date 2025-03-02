@@ -1,7 +1,7 @@
 PREFIX my: <http://example.org/ApplicationSchema#>
 PREFIX geo: <http://www.opengis.net/ont/geosparql#>
 PREFIX geof: <http://www.opengis.net/def/function/geosparql/>
-SELECT (geof:union2(?%%literal1%%) AS ?union)
+SELECT (geof:aggCentroid(?%%literal1%%) AS ?centroid)
 WHERE {
   ?geom %%literalrel1%% ?%%literal1%% .
 }

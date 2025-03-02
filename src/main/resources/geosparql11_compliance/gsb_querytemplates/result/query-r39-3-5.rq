@@ -1,0 +1,9 @@
+PREFIX my: <http://example.org/ApplicationSchema#>
+PREFIX geo: <http://www.opengis.net/ont/geosparql#>
+PREFIX geof: <http://www.opengis.net/def/function/geosparql/>
+SELECT ?mbuffer
+WHERE {
+  my:A geo:hasDefaultGeometry ?geom .
+  ?geom geo:asDGGS ?DGGS .
+  BIND (geof:metricBuffer(?DGGS, 10.0) as ?mbuffer)
+}

@@ -12,11 +12,15 @@ answerpath = 'src/main/resources/geosparql11_compliance/gsb_answertemplates/'
 
 configpath = 'src/main/resources/geosparql10_compliance/gsb_config/geosparql10_compliance.json'
 
-querypaths = ['src/main/resources/geosparql10_compliance/gsb_queries/','src/main/resources/geosparql11_compliance/gsb_querytemplates/']
+querytemplatepaths = ['src/main/resources/geosparql10_compliance/gsb_queries/','src/main/resources/geosparql11_compliance/gsb_querytemplates/']
+
+querypaths = ['src/main/resources/geosparql10_compliance/gsb_queries/','src/main/resources/geosparql11_compliance/gsb_querytemplates/result/']
 
 configpaths = ['src/main/resources/geosparql10_compliance/gsb_config/geosparql10_compliance.json','src/main/resources/geosparql11_compliance/gsb_config/geosparql11_compliance.json']
 
 benchmarkconfig={}
+
+benchmarkjsconfig={}
 
 files = os.listdir(querypath)
 answerp = os.listdir(answerpath)
@@ -29,6 +33,7 @@ benchmarkconfigttlhead="""
 @prefix hobbit: <http://w3id.org/hobbit/vocab#> .
 @prefix spec: <http://www.opengis.net/def/spec-element/> .
 @prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix owl:    <http://www.w3.org/2002/07/owl#> .
 @prefix bench:  <http://w3id.org/bench#> .
 @prefix qb: <http://purl.org/linked-data/cube#> .
@@ -207,12 +212,17 @@ def generateConfiguration(querypath,benchmarkconfig,benchmarkconfigttl,benchmark
     reqstring=""
     files = os.listdir(querypath)
     #answerp = os.listdir(answerpath)
+    benchmarkname="The Benchmark"
+    if "benchmarkshorturi" in benchmarkconfig:
+        benchmarkname=benchmarkconfig["benchmarkshorturi"]
+    benchmarkjs={}
     for f in files:
         print(querypath+f)
         if not os.path.isfile(querypath+f):
             continue
         file = open(querypath+f, "r")
         filecontent=file.read()
+        benchmarkjs[f]={"query":filecontent,"answers":[],"label":"","definition":"","uri":""}
         fileprefix=f[0:f.rfind("-")]
         if curreqcounter==0:
             curreqamount=0
@@ -245,6 +255,7 @@ def generateConfiguration(querypath,benchmarkconfig,benchmarkconfigttl,benchmark
             print("QueryNumber: "+str(f))
             print("QueryNumber: "+str(partnumber))
             if "reqToURI" in benchmarkconfig and querynumber in benchmarkconfig["reqToURI"]:
+                benchmarkjs[f]["uri"]=benchmarkconfig["reqToURI"][querynumber]
                 benchmarkconfigttl+="spec:isTestResultOf <"+benchmarkconfig["reqToURI"][querynumber]+"> .\n"
                 benchmarkconfigttl+="<"+benchmarkconfig["reqToURI"][querynumber]+"> rdf:type spec:Requirement .\n"
                 benchmarkconfigttl+="<"+benchmarkconfig["reqToURI"][querynumber].replace("req","conf")+"> rdf:type spec:ConformanceTest .\n"
@@ -254,11 +265,16 @@ def generateConfiguration(querypath,benchmarkconfig,benchmarkconfigttl,benchmark
                 if partnumber!=-1:
                     benchmarkconfigttl+=" (Part "+str(partnumber)+")" 
                 benchmarkconfigttl+=": "+benchmarkconfig["reqToDescs"][f]+"\";\n"
+                benchmarkjs[f]["definition"]=benchmarkconfig["reqToDescs"][f]
             else:
                 benchmarkconfigttl+="rdfs:comment \""+f.replace(".rq","")
                 if "benchmarkshortname" in benchmarkconfig:
                     benchmarkconfigttl+=" ("+benchmarkconfig["benchmarkshortname"]+")"
                 benchmarkconfigttl+="\";\n"
+                benchmarkjs[f]["definition"]=f.replace(".rq","")
+            if "reqLabels" in benchmarkconfig and f in benchmarkconfig["reqLabels"]:
+                benchmarkconfigttl+="skos:altLabel \""+benchmarkconfig["reqLabels"][f]+"\"@en;\n"
+                benchmarkjs[f]["label"]=benchmarkconfig["reqLabels"][f]                
             benchmarkconfigttl+="rdfs:range xsd:boolean .\n\n"  
             benchmarkconfigttlhead+="    hobbit:measuresKPI bench:Q"+f.replace(".rq","").replace("query-r","").replace("-","_")+"Status ;\n"        
             continue
@@ -283,19 +299,27 @@ def generateConfiguration(querypath,benchmarkconfig,benchmarkconfigttl,benchmark
                 print("QueryNumber: "+str(partnumber))
                 if "reqToURI" in benchmarkconfig and querynumber in benchmarkconfig["reqToURI"]:
                     benchmarkconfigttl+="spec:isTestResultOf <"+benchmarkconfig["reqToURI"][querynumber]+"> ;\n"
+                    benchmarkjs[f]["uri"]=benchmarkconfig["reqToURI"][querynumber]
                 if "reqToDescs" in benchmarkconfig and f in benchmarkconfig["reqToDescs"]:		
                     benchmarkconfigttl+="rdfs:comment \""+benchmarkconfig["reqToDescs"][f]+"\";\n"
+                    benchmarkjs[f]["definition"]=benchmarkconfig["reqToDescs"][f]
                 else:
                     benchmarkconfigttl+="rdfs:comment \""+f.replace(".rq","")
                     if "benchmarkshortname" in benchmarkconfig:
                         benchmarkconfigttl+=" ("+lit[0]+"-"+lit[1]+") ("+benchmarkconfig["benchmarkshortname"]+")"
                     benchmarkconfigttl+="\";\n"
+                    benchmarkjs[f]["definition"]=f.replace(".rq","")
+                if "reqLabels" in benchmarkconfig and f in benchmarkconfig["reqLabels"]:
+                    benchmarkconfigttl+="skos:altLabel \""+benchmarkconfig["reqLabels"][f]+"\"@en;\n" 
+                    benchmarkjs[f]["label"]=benchmarkconfig["reqLabels"][f]
                 benchmarkconfigttl+="rdfs:range xsd:boolean .\n\n"  
                 benchmarkconfigttlhead+="    hobbit:measuresKPI bench:Q"+f.replace(".rq","").replace("query-r","").replace("-","_")+"_"+str(variantcounter)+"Status ;\n"    
                 gsbquerycounter+=1
                 first=True                
                 variantcounter=variantcounter+1
             file.close()
+    with open(benchmarkname+"_benchmark.js", "w") as f2:
+        f2.write("var benchmarkconfig="+json.dumps(benchmarkjs,indent=2,sort_keys=True))
     return benchmarkconfigttl
 
 expandLiteralsFromTemplates()

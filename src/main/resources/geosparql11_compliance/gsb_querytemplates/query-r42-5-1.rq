@@ -1,7 +1,7 @@
 PREFIX my: <http://example.org/ApplicationSchema#>
 PREFIX geo: <http://www.opengis.net/ont/geosparql#>
 PREFIX geof: <http://www.opengis.net/def/function/geosparql/>
-SELECT (geof:centroid(?%%literal1%%) AS ?centroid)
+SELECT (geof:aggConvexHull(?%%literal1%%) AS ?convexhull)
 WHERE {
   ?geom %%literalrel1%% ?%%literal1%% .
 }

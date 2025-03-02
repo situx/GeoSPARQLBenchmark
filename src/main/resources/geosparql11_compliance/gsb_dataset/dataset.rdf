@@ -79,6 +79,13 @@
 <rdfs:Class rdf:about="http://qudt.org/vocab/unit#Unit">
 </rdfs:Class>
 
+<geo:SpatialObjectCollection rdf:about="http://example.org/ApplicationSchema#ASpatialObjectCollection">
+    <rdfs:member rdf:resource="http://example.org/ApplicationSchema#A"/>
+    <rdfs:member rdf:resource="http://example.org/ApplicationSchema#B"/>
+	<rdfs:member rdf:resource="http://example.org/ApplicationSchema#AExactGeom"/>
+    <rdfs:member rdf:resource="http://example.org/ApplicationSchema#BExactGeom"/>
+</geo:SpatialObjectCollection>
+
 <geo:GeometryCollection rdf:about="http://example.org/ApplicationSchema#AGeometryCollection">
     <rdfs:member rdf:resource="http://example.org/ApplicationSchema#AExactGeom"/>
     <rdfs:member rdf:resource="http://example.org/ApplicationSchema#BExactGeom"/>
