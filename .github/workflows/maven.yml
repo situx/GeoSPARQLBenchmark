@@ -17,6 +17,7 @@ jobs:
          sudo pip3 install wheel pylode rdflib sparqlwrapper
          cd system 
          python3 validatexml.py
+         cd ..
          mkdir docs
          cp js docs/js
          cp benchmarkjs.html docs/index.html
