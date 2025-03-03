@@ -40,6 +40,42 @@ async function executeAllQueries(){
 		await sleep(sleepparam)
 	}
 	activateDataTable()
+	calculateComplianceScore(benchmarkconfig)
+}
+function calculateComplianceScore(benchmarkconfig){
+	var querycount=0
+	var correctcount=0
+	var compscore=0
+	var moduleToScore={}
+	for(res in benchmarkconfig){
+		if("module" in benchmarkconfig[res] && !(benchmarkconfig[res]["module"] in moduleToScore)){
+			moduleToScore[benchmarkconfig[res]["module"]]={"queries":0,"scores":0,"finalscore":0}
+		}
+		if("module" in benchmarkconfig[res]){
+			moduleToScore[benchmarkconfig[res]["module"]]["queries"]+=1
+		}		
+		if("resultStatus" in benchmarkconfig[res] && benchmarkconfig[res]["resultStatus"]=="Passed"){
+			correctcount+=1
+			compscore+=benchmarkconfig[res]["weight"]
+			if("module" in benchmarkconfig[res]){
+				moduleToScore[benchmarkconfig[res]["module"]]["scores"]+=1
+			}	
+		}
+		querycount+=1
+	}
+	modscorestr=""
+	for(mod in moduleToScore){
+		if(moduleToScore[mod]["queries"]==0){
+			moduleToScore[mod]["queries"]=1
+		}
+		moduleToScore[mod]["finalscore"]=moduleToScore[mod]["scores"]/moduleToScore[mod]["queries"]
+		modscorestr+=mod+" "+((moduleToScore[mod]["scores"]/moduleToScore[mod]["queries"])*100)+"%<br/>"
+	}
+	document.getElementById("correcttests").innerHTML=correctcount+"/"+querycount
+	document.getElementById("compliancescore").innerHTML=(compscore*100)+"%"
+	document.getElementById("compscoredialog").innerHTML=(compscore*100)+"%"
+	document.getElementById("allqueriesdialog").innerHTML=correctcount+"/"+querycount
+	document.getElementById("modulesscore").innerHTML=modscorestr
 }
 
 function executeQuery(benchmarkname,queryid){
@@ -47,7 +83,7 @@ function executeQuery(benchmarkname,queryid){
 	benchmarkconfig=window[benchmarkname]
 	if(queryid in benchmarkconfig){
 		d3.sparql(url, benchmarkconfig[queryid]["query"]).then((results)=>{
-			console.log(results)
+			//console.log(results)
 			if("message" in results){
 				document.getElementById('err_'+queryid).innerHTML=results["message"];
 				document.getElementById("res_"+queryid).innerHTML="Failed"
@@ -56,11 +92,11 @@ function executeQuery(benchmarkname,queryid){
 				if(benchmarkconfig[queryid]["answers"].length>0){
 					//console.log(benchmarkconfig[queryid]["answers"])
 					for(answer of benchmarkconfig[queryid]["answers"]){
-						console.log(answer==sresults)
+						/*console.log(answer==sresults)
 						console.log(JSON.parse(answer)==sresults)
 						console.log(answer)
 						console.log(sresults)
-						console.log(queryid)
+						console.log(queryid)*/
 						if(_.isEqual(results,JSON.parse(answer))){
 							document.getElementById("res_"+queryid).innerHTML="Passed"
 							document.getElementById("score_"+queryid).innerHTML=document.getElementById("weight_"+queryid).innerHTML
@@ -97,18 +133,20 @@ function fillTable(benchmarkname){
 			tabres+="title=\""+benchmarkconfig[res]["definition"]+"\" "
 		}
 		tabres+=">"
-		if("requri" in benchmarkconfig[res]){
-			tabres+="<a href=\""+benchmarkconfig[res]["requri"]+"\" target=\"_blank\">"
-		}
 		if("label" in benchmarkconfig[res]){
-			tabres+=benchmarkconfig[res]["label"]+" ("+res+")"
+			tabres+=benchmarkconfig[res]["label"]+" ("+res+") "
 		}else{
-			tabres+=res
+			tabres+=res+" "
 		}
-		if("requri" in benchmarkconfig[res]){
-			tabres+="</a>"
+		if("uri" in benchmarkconfig[res]){
+			tabres+="<a href=\""+benchmarkconfig[res]["uri"]+"\" target=\"_blank\">&#8599;</a>"
 		}
 		tabres+=" <button style=\"border:0px;background-color:white\" onclick=\"openDialogForQuery('"+res+"',true)\">&#9432;</button>"
+		if("module" in benchmarkconfig[res]){
+			tabres+="</td><td id=\"module_"+res+"\">"+benchmarkconfig[res]["module"]
+		}else{
+			tabres+="</td><td id=\"module_"+res+"\">"
+		}
 		if("result" in benchmarkconfig[res]){
 			tabres+="</td><td id=\"res_"+res+"\">"+benchmarkconfig[res]["result"]+"</td><td id=\"score_"+res+"\">"
 		}else{
@@ -138,7 +176,14 @@ function fillTableProc(){
 	activateDataTable()
 }
 function activateDataTable(){
-	$("#benchmarkresult").dataTable({paging:true,columnDefs:[{type:"natural",targets:"_all"}]});
+	$("#benchmarkresult").dataTable({
+	paging:true,
+	columnDefs:[{type:"natural",targets:"_all"}],
+	"footerCallback": function ( row, data, start, end, display ) {
+            var api = this.api(), data;
+			$( api.column( 0 ).footer() ).html('Total');
+		}
+	});
 }
 function openDialogForQuery(queryid,showdialog=false){
 	benchmarkname=$('#benchmarkversions').val()
@@ -201,6 +246,15 @@ pre {
 </head>
 <body>
 <h1>GeoSPARQL Compliance Benchmark</h1>
+<dialog id="compliancescoredialog">
+<h3>Compliance Score</h1>
+Score: <span id="compscoredialog"></span><br/>
+Correct Queries:<span id="allqueriesdialog"></span><br/>
+Modules:<br/>
+<pre id="modulesscore">
+</pre>
+<button id="compliancescoredialogbtn" onclick="document.getElementById('compliancescoredialog').close()">Close</button>
+</dialog>
 <dialog id="queryviewdialog">
 <h3 id="querydialogid"></h3>
 <span id="requirementtext" style="font-weight:bold;"></span><br/>
@@ -225,11 +279,11 @@ Select Benchmark Version:
 Endpoint URL: <input type="url" id="endpointurl" value="https://api.triplydb.com/datasets/timohomburg/geosparqlbenchmark/sparql"/>
 <button id="testendpoint" onclick="testSPARQLEndpoint()">Test Endpoint</button><span id="endpointtestresult"></span><br/>
 <button id="executetest" onclick="executeAllQueries()">Execute Test</button><br/>
-Correct Tests: <span id="correcttests"></span><br/>
+Correct Tests: <span id="correcttests"></span><button style="border:0px;background-color:white" onclick="document.getElementById('compliancescoredialog').showModal()">&#9432;</button><br/>
 Compliance Score: <span id="compliancescore"></span>
 <table id="benchmarkresult">
 <thead>
-<tr><th>Query</th><th>Result</th><th>Score</th><th>Weight</th><th>Error</th><th>Test</th></tr>
+<tr><th>Query</th><th>Module</th><th>Result</th><th>Score</th><th>Weight</th><th>Error</th><th>Test</th></tr>
 </thead>
 <tbody id="benchmarkresultbody">
 
