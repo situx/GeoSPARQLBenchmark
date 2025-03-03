@@ -40,6 +40,21 @@ async function executeAllQueries(){
 		await sleep(sleepparam)
 	}
 	activateDataTable()
+	calculateComplianceScore(benchmarkconfig)
+}
+function calculateComplianceScore(benchmarkconfig){
+	var querycount=0
+	var correctcount=0
+	var compscore=0
+	for(res in benchmarkconfig){
+		if("resultStatus" in benchmarkconfig[res] && benchmarkconfig[res]["resultStatus"]=="Passed"){
+			correctcount+=1
+			compscore+=benchmarkconfig[res]["weight"]
+		}
+		querycount+=1
+	}
+	document.getElementById("correcttests").innerHTML=correctcount+"/"+querycount
+	document.getElementById("compliancescore").innerHTML=(compscore*100)+"%"
 }
 
 function executeQuery(benchmarkname,queryid){
@@ -138,7 +153,14 @@ function fillTableProc(){
 	activateDataTable()
 }
 function activateDataTable(){
-	$("#benchmarkresult").dataTable({paging:true,columnDefs:[{type:"natural",targets:"_all"}]});
+	$("#benchmarkresult").dataTable({
+	paging:true,
+	columnDefs:[{type:"natural",targets:"_all"}],
+	"footerCallback": function ( row, data, start, end, display ) {
+            var api = this.api(), data;
+			$( api.column( 0 ).footer() ).html('Total');
+		}
+	});
 }
 function openDialogForQuery(queryid,showdialog=false){
 	benchmarkname=$('#benchmarkversions').val()
