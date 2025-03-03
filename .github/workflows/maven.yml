@@ -19,7 +19,8 @@ jobs:
          python3 validatexml.py
          cd ..
          mkdir docs
-         cp js docs/js
+         mkdir docs/js
+         cp js/* docs/js/*
          cp benchmarkjs.html docs/index.html
     - name: Deploy 🚀
       uses: JamesIves/github-pages-deploy-action@releases/v3
