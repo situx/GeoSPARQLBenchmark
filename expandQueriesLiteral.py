@@ -1,7 +1,10 @@
 import os
 import itertools
 import json
+from io import StringIO
 from rdflib import Graph
+from rdflib.plugins.sparql.results.xmlresults import XMLResultParser
+from rdflib.plugins.sparql.results.jsonresults import JSONResultSerializer
 
 def replaceInString(toreplace, firstliteral, secondliteral,firstliteralrel,secondliteralrel):
 	return toreplace.replace("%%literal1%%",firstliteral).replace("%%literal2%%",secondliteral).replace("%%literalrel1%%",firstliteralrel).replace("%%literalrel2%%",secondliteralrel)
@@ -11,6 +14,8 @@ querypath = 'src/main/resources/geosparql11_compliance/gsb_querytemplates/'
 answerpath = 'src/main/resources/geosparql11_compliance/gsb_answertemplates/'
 
 configpath = 'src/main/resources/geosparql10_compliance/gsb_config/geosparql10_compliance.json'
+
+answerpaths = ['src/main/resources/geosparql10_compliance/gsb_answers/','src/main/resources/geosparql11_compliance/gsb_answers/']
 
 querytemplatepaths = ['src/main/resources/geosparql10_compliance/gsb_queries/','src/main/resources/geosparql11_compliance/gsb_querytemplates/']
 
@@ -128,6 +133,27 @@ if not os.path.exists(answerpath+"result"):
 if not os.path.exists(querypath+"result"):
     os.makedirs(querypath+"result")
 
+def find_nth_occurrence(string, sub_string, n):
+    start_index = string.find(sub_string)
+    while start_index >= 0 and n > 1:
+        start_index = string.find(sub_string, start_index + 1)
+        n -= 1
+    return start_index
+
+def convertXMLResultToJSONResult(xmlresultstring):
+    jsonio=StringIO("")
+    #print(xmlresultstring)
+    #"<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n"+
+    sio=StringIO(xmlresultstring)
+    xmlparser=XMLResultParser()
+    xmlres=xmlparser.parse(source=sio)
+    #print(xmlres)
+    jsonres=JSONResultSerializer(xmlres)
+    #print(jsonres)
+    jsonres.serialize(jsonio)
+    #print(jsonio.getvalue())
+    return json.dumps(json.loads(jsonio.getvalue()),sort_keys=True)
+
 def expandLiteralsFromTemplates():
     first=True
     gsbquerycounter=0
@@ -155,11 +181,11 @@ def expandLiteralsFromTemplates():
         answerfiles={}
         for ans in answerp:
             if fileprefix in ans:
-                print(ans+" - "+fileprefix)
+                #print(ans+" - "+fileprefix)
                 ansfile = open(answerpath+ans, "r")
                 filec=ansfile.read()
                 answerfiles[ans]=filec
-        print(answerfiles)
+        #print(answerfiles)
         variantcounter=1
         if not "%%literal1%%" in filecontent and not "%%literalrel1%%" in filecontent and not "%%literal2%%" in filecontent and not "%%literalrel1%%" in filecontent:     
             with open(querypath+"result/"+f, "w") as f2:
@@ -193,7 +219,7 @@ def expandLiteralsFromTemplates():
             file.close()
         else:	
             for lit in geom_literals2:
-                print(lit[0]+" "+lit[1])
+                #print(lit[0]+" "+lit[1])
                 newfile=replaceInString(filecontent,lit[0],lit[0],lit[1],lit[1])
                 try:
                     with open(querypath+"result/"+f[0:f.rfind("-")]+"-"+str(variantcounter)+".rq", "w") as f2:
@@ -204,25 +230,30 @@ def expandLiteralsFromTemplates():
                 variantcounter=variantcounter+1
             file.close()
 
-def generateConfiguration(querypath,benchmarkconfig,benchmarkconfigttl,benchmarkconfigttlhead):
+def generateConfiguration(querypath,answerpath,benchmarkconfig,benchmarkconfigttl,benchmarkconfigttlhead):
     first=True
     gsbquerycounter=0
     curreqcounter=0
     curreqamount=0
     reqstring=""
     files = os.listdir(querypath)
-    #answerp = os.listdir(answerpath)
+    answerp = os.listdir(answerpath)
     benchmarkname="The Benchmark"
     if "benchmarkshorturi" in benchmarkconfig:
         benchmarkname=benchmarkconfig["benchmarkshorturi"]
     benchmarkjs={}
     for f in files:
-        print(querypath+f)
+        #print(querypath+f)
         if not os.path.isfile(querypath+f):
             continue
         file = open(querypath+f, "r")
         filecontent=file.read()
-        benchmarkjs[f]={"query":filecontent,"answers":[],"label":"","definition":"","uri":""}
+        benchmarkjs[f]={"query":filecontent,"answers":[],"label":"","definition":"","uri":"","weight":""}
+        if os.path.exists(answerpath+f.replace(".rq",".srx")):
+            afile = open(answerpath+f.replace(".rq",".srx"), "r")
+            afilecontent=afile.read()
+            jsonres=convertXMLResultToJSONResult(afilecontent)
+            benchmarkjs[f]["answers"].append(jsonres)
         fileprefix=f[0:f.rfind("-")]
         if curreqcounter==0:
             curreqamount=0
@@ -235,6 +266,12 @@ def generateConfiguration(querypath,benchmarkconfig,benchmarkconfigttl,benchmark
             curreqcounter=0
         reqstring=fileprefix
         variantcounter=1
+        index=find_nth_occurrence(f, "-", 2)
+        if index==-1:
+            querynumbersmall=f.replace(".rq","")
+        else:
+            querynumbersmall=f[0:index]
+        #print("QUERYNUMERSMALL: "+str(querynumbersmall))
         if not "%%literal1%%" in filecontent and not "%%literalrel1%%" in filecontent and not "%%literal2%%" in filecontent and not "%%literalrel1%%" in filecontent:
             benchmarkconfigttl+=benchmarkuri+" hobbit:measuresKPI "+"bench:Q"+f.replace(".rq","").replace("query-r","").replace("-","_")+"_"+benchmarkconfig["benchmarkshorturi"]+"Status .\n"
             benchmarkconfigttl+="bench:Q"+f.replace(".rq","").replace("query-r","").replace("-","_")+"_"+benchmarkconfig["benchmarkshorturi"]+"Status a hobbit:KPI;\n"
@@ -260,6 +297,10 @@ def generateConfiguration(querypath,benchmarkconfig,benchmarkconfigttl,benchmark
                 benchmarkconfigttl+="<"+benchmarkconfig["reqToURI"][querynumber]+"> rdf:type spec:Requirement .\n"
                 benchmarkconfigttl+="<"+benchmarkconfig["reqToURI"][querynumber].replace("req","conf")+"> rdf:type spec:ConformanceTest .\n"
                 benchmarkconfigttl+="bench:Q"+f.replace(".rq","").replace("query-r","").replace("-","_")+"_"+benchmarkconfig["benchmarkshorturi"]+"Status " 
+            if "reqToExtension" in benchmarkconfig and querynumbersmall in benchmarkconfig["reqToExtension"]:
+                benchmarkjs[f]["module"]=benchmarkconfig["reqToExtension"][querynumbersmall]
+            if "reqWeights" in benchmarkconfig and f in benchmarkconfig["reqWeights"]:
+                benchmarkjs[f]["weight"]=benchmarkconfig["reqWeights"][f]
             if 	"reqToDescs" in benchmarkconfig and f in benchmarkconfig["reqToDescs"]:	
                 benchmarkconfigttl+="rdfs:comment \"Requirement "+f.replace(".rq","")
                 if partnumber!=-1:
@@ -300,6 +341,10 @@ def generateConfiguration(querypath,benchmarkconfig,benchmarkconfigttl,benchmark
                 if "reqToURI" in benchmarkconfig and querynumber in benchmarkconfig["reqToURI"]:
                     benchmarkconfigttl+="spec:isTestResultOf <"+benchmarkconfig["reqToURI"][querynumber]+"> ;\n"
                     benchmarkjs[f]["uri"]=benchmarkconfig["reqToURI"][querynumber]
+                if "reqToExtension" in benchmarkconfig and querynumbersmall in benchmarkconfig["reqToExtension"]:
+                    benchmarkjs[f]["module"]=benchmarkconfig["reqToExtension"][querynumbersmall]
+                if "reqWeights" in benchmarkconfig and f in benchmarkconfig["reqWeights"]:
+                    benchmarkjs[f]["weight"]=benchmarkconfig["reqWeights"][f]
                 if "reqToDescs" in benchmarkconfig and f in benchmarkconfig["reqToDescs"]:		
                     benchmarkconfigttl+="rdfs:comment \""+benchmarkconfig["reqToDescs"][f]+"\";\n"
                     benchmarkjs[f]["definition"]=benchmarkconfig["reqToDescs"][f]
@@ -318,8 +363,8 @@ def generateConfiguration(querypath,benchmarkconfig,benchmarkconfigttl,benchmark
                 first=True                
                 variantcounter=variantcounter+1
             file.close()
-    with open(benchmarkname+"_benchmark.js", "w") as f2:
-        f2.write("var benchmarkconfig="+json.dumps(benchmarkjs,indent=2,sort_keys=True))
+    with open("js/"+benchmarkname+"_benchmark.js", "w") as f2:
+        f2.write("var "+benchmarkname+"_benchmarkconfig="+json.dumps(benchmarkjs,indent=2,sort_keys=True))
     return benchmarkconfigttl
 
 expandLiteralsFromTemplates()
@@ -328,13 +373,18 @@ i=0
 for bencon in configpaths:
     with open(bencon) as json_file:
         benchmarkconfig = json.load(json_file)
-    benchmarkconfigttl=generateConfiguration(querypaths[i],benchmarkconfig,benchmarkconfigttl,benchmarkconfigttlhead)
+    benchmarkconfigttl=generateConfiguration(querypaths[i],answerpaths[i],benchmarkconfig,benchmarkconfigttl,benchmarkconfigttlhead)
+    #benchmarkconfigttlhead+="    hobbit:measuresKPI  bench:totalCorrectAnswers ;\n    hobbit:measuresKPI  bench:percentageCorrectAnswers . bench:percentageCorrectAnswers rdf:type hobbit:KPI .\n"
+    #print(benchmarkconfigttlhead+benchmarkconfigttl)
+    with open("benchmarkconfig_gen.ttl", "w") as f2:
+        f2.write(benchmarkconfigttlhead)
+        f2.write(benchmarkconfigttl)
+    #graph2 = Graph()
+    #graph2.parse(data = benchmarkconfigttlhead+benchmarkconfigttl, format='n3')
+    #graph2.serialize(destination='hobbit-settings/benchmark_v2.ttl', format='turtle')
     i+=1
-benchmarkconfigttlhead+="    hobbit:measuresKPI  bench:totalCorrectAnswers ;\n    hobbit:measuresKPI  bench:percentageCorrectAnswers . bench:percentageCorrectAnswers rdf:type hobbit:KPI .\n"
 
-graph2 = Graph()
-graph2.parse(data = benchmarkconfigttlhead+benchmarkconfigttl, format='n3')
-graph2.serialize(destination='hobbit-settings/benchmark_v2.ttl', format='turtle')
+
 #with open("benchmarkconfig_gen.ttl", "w") as f2:
 #    f2.write(benchmarkconfigttlhead)
 #    f2.write(benchmarkconfigttl)
