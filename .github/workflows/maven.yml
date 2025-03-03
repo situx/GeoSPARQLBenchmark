@@ -20,7 +20,7 @@ jobs:
          cd ..
          mkdir docs
          mkdir docs/js
-         cp js/* docs/js/*
+         cp js/* docs/js/
          cp benchmarkjs.html docs/index.html
     - name: Deploy 🚀
       uses: JamesIves/github-pages-deploy-action@releases/v3
