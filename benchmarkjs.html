@@ -1,0 +1,242 @@
+<html>
+<head>
+<script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js" integrity="sha256-lSjKY0/srUM9BE3dPm+c4fBo1dky2v27Gdjm2uoZaL0=" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+<link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
+<link rel="stylesheet" href="https://cdn.datatables.net/buttons/2.4.1/css/buttons.dataTables.min.css">
+<link rel="stylesheet" href="https://cdn.datatables.net/colreorder/1.7.0/css/colReorder.dataTables.min.css">
+<link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.5.0/css/responsive.dataTables.min.css">
+<script src="https://cdn.datatables.net/1.13.11/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/buttons/2.4.1/js/dataTables.buttons.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>	
+<script src="https://cdn.datatables.net/plug-ins/1.13.6/pagination/input.js"></script>
+<script src="https://cdn.datatables.net/plug-ins/1.13.6/sorting/natural.js"></script>
+<script src="js/gsb_10_benchmark.js"></script>
+<script src="js/gsb_11_benchmark.js"></script>
+<script src="js/d3sparql.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+var dialogeventlistener=null
+var sleepparam=50
+function testSPARQLEndpoint(typeproperty="http://www.w3.org/1999/02/22-rdf-syntax-ns#type",subclassproperty="http://www.w3.org/2000/01/rdf-schema#subClassOf",concept=null){
+	url=$('#endpointurl').val()	
+	//console.log("URL: "+url)
+	d3.sparql(url, "SELECT ?a ?b ?c WHERE { ?a ?b ?c . } LIMIT 1").then((results)=>{
+		$("#endpointtestresult").html("SPARQL Endpoint detected!");
+	}).catch(function(e) { $("#endpointtestresult").html("Error detecting SPARQL endpoint");throw e; });
+}
+function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
+async function executeAllQueries(){
+	benchmarkname=$('#benchmarkversions').val()
+	tabres=""
+	benchmarkconfig=window[benchmarkname]
+	fillTable()
+	for(res in benchmarkconfig){
+		executeQuery(benchmarkname,res)
+		await sleep(sleepparam)
+	}
+	activateDataTable()
+}
+
+function executeQuery(benchmarkname,queryid){
+	url=$('#endpointurl').val()	
+	benchmarkconfig=window[benchmarkname]
+	if(queryid in benchmarkconfig){
+		d3.sparql(url, benchmarkconfig[queryid]["query"]).then((results)=>{
+			console.log(results)
+			if("message" in results){
+				document.getElementById('err_'+queryid).innerHTML=results["message"];
+				document.getElementById("res_"+queryid).innerHTML="Failed"
+			}else{
+				sresults=JSON.stringify(results)
+				if(benchmarkconfig[queryid]["answers"].length>0){
+					//console.log(benchmarkconfig[queryid]["answers"])
+					for(answer of benchmarkconfig[queryid]["answers"]){
+						console.log(answer==sresults)
+						console.log(JSON.parse(answer)==sresults)
+						console.log(answer)
+						console.log(sresults)
+						console.log(queryid)
+						if(_.isEqual(results,JSON.parse(answer))){
+							document.getElementById("res_"+queryid).innerHTML="Passed"
+							document.getElementById("score_"+queryid).innerHTML=document.getElementById("weight_"+queryid).innerHTML
+							benchmarkconfig[queryid]["result"]=results
+							benchmarkconfig[queryid]["resultStatus"]="Passed"
+						}else{
+							document.getElementById("res_"+queryid).innerHTML="Failed"
+							document.getElementById("score_"+queryid).innerHTML="0"
+							benchmarkconfig[queryid]["result"]=results
+							benchmarkconfig[queryid]["resultStatus"]="Failed"
+						}
+					}
+				}
+			}
+			openDialogForQuery(queryid)
+		}).catch(function(e) {$('#err_'+queryid).html(e);throw e; });	
+	}
+}
+function fillTable(benchmarkname){
+	if ($.fn.DataTable.isDataTable("#benchmarkresult")) {
+	   $('#benchmarkresult').DataTable().clear().destroy();
+	}
+	//document.getElementById("benchmarkresultbody").innerHTML=""
+	benchmarkname=$('#benchmarkversions').val()
+	tabres=""
+	benchmarkconfig=window[benchmarkname]
+	for(res in benchmarkconfig){
+		//console.log(benchmarkconfig[res])
+		if(res=="score"){
+			continue
+		}
+		tabres+="<tr><td "
+		if("definition" in benchmarkconfig[res]){
+			tabres+="title=\""+benchmarkconfig[res]["definition"]+"\" "
+		}
+		tabres+=">"
+		if("requri" in benchmarkconfig[res]){
+			tabres+="<a href=\""+benchmarkconfig[res]["requri"]+"\" target=\"_blank\">"
+		}
+		if("label" in benchmarkconfig[res]){
+			tabres+=benchmarkconfig[res]["label"]+" ("+res+")"
+		}else{
+			tabres+=res
+		}
+		if("requri" in benchmarkconfig[res]){
+			tabres+="</a>"
+		}
+		tabres+=" <button style=\"border:0px;background-color:white\" onclick=\"openDialogForQuery('"+res+"',true)\">&#9432;</button>"
+		if("result" in benchmarkconfig[res]){
+			tabres+="</td><td id=\"res_"+res+"\">"+benchmarkconfig[res]["result"]+"</td><td id=\"score_"+res+"\">"
+		}else{
+			tabres+="</td><td id=\"res_"+res+"\"></td><td id=\"score_"+res+"\">"
+		}	
+		if("weight" in benchmarkconfig[res]){
+			if(benchmarkconfig[res]["result"]){
+				tabres+=benchmarkconfig[res]["weight"]
+			}else{
+				tabres+="0"
+			}
+		}
+		tabres+="</td><td id=\"weight_"+res+"\">"+benchmarkconfig[res]["weight"]+"</td>"
+		if("err" in benchmarkconfig[res] && benchmarkconfig[res]!=""){
+			tabres+="<td id=\"err_"+res+"\">"+benchmarkconfig[res]["err"]+"</td>"
+		}else{
+			tabres+="<td id=\"err_"+res+"\"></td>"
+		}
+		tabres+="<td><button id=\"test_"+res+"\" onclick=\"executeQuery('"+benchmarkname+"','"+res+"')\">Test</td>"
+		tabres+="</tr>"
+	}
+	//console.log(tabres)
+	document.getElementById("benchmarkresultbody").innerHTML=tabres
+}
+function fillTableProc(){
+	fillTable()
+	activateDataTable()
+}
+function activateDataTable(){
+	$("#benchmarkresult").dataTable({paging:true,columnDefs:[{type:"natural",targets:"_all"}]});
+}
+function openDialogForQuery(queryid,showdialog=false){
+	benchmarkname=$('#benchmarkversions').val()
+	benchmarkconfig=window[benchmarkname]
+	document.getElementById("querydialogid").innerHTML="Query "+queryid
+	if("label" in benchmarkconfig[queryid]){
+		document.getElementById("querydialogid").innerHTML=benchmarkconfig[queryid]["label"]
+	}else{
+		document.getElementById("querydialogid").innerHTML=""
+	}
+	if("resultStatus" in benchmarkconfig[queryid]){
+		document.getElementById("querydialogstatus").innerHTML=benchmarkconfig[queryid]["resultStatus"]
+	}else{
+		document.getElementById("querydialogstatus").innerHTML=""
+	}
+	if("definition" in benchmarkconfig[queryid]){
+		document.getElementById("requirementtext").innerHTML=benchmarkconfig[queryid]["definition"]
+	}else{
+		document.getElementById("requirementtext").innerHTML=""
+	}
+	if("query" in benchmarkconfig[queryid]){
+		document.getElementById("querydialogquery").innerHTML=benchmarkconfig[queryid]["query"].replaceAll("<","&lt;").replaceAll(">","&gt;").replaceAll("\n","<br/>")
+	}else{
+		document.getElementById("querydialogquery").innerHTML=""
+	}
+	if("answers" in benchmarkconfig[queryid]){
+		answers=""
+		for(ans of benchmarkconfig[queryid]["answers"]){
+			answers+=JSON.stringify(JSON.parse(ans),null,2)+"<br/>"
+		}
+		document.getElementById("querydialogexpectedresult").innerHTML=answers
+	}else{
+		document.getElementById("querydialogexpectedresult").innerHTML=""
+	}
+	if("result" in benchmarkconfig[queryid]){
+		document.getElementById("querydialogretresult").innerHTML=JSON.stringify(benchmarkconfig[queryid]["result"],null,2)
+	}else{
+		document.getElementById("querydialogretresult").innerHTML=""
+	}
+	if(dialogeventlistener!=null){
+		document.getElementById("querydialogretestbutton").removeEventListener('click',dialogeventlistener)
+	}
+	dialogeventlistener=document.getElementById("querydialogretestbutton").addEventListener('click', function() { executeQuery(benchmarkname,queryid);});
+	if(showdialog){
+		document.getElementById("queryviewdialog").showModal()
+	}
+}
+</script>
+<style>
+pre {
+    height: auto;
+    max-height: 200px;
+    overflow: auto;
+    background-color: #eeeeee;
+    word-break: normal !important;
+    word-wrap: normal !important;
+    white-space: pre !important;
+}
+</style>
+</head>
+<body>
+<h1>GeoSPARQL Compliance Benchmark</h1>
+<dialog id="queryviewdialog">
+<h3 id="querydialogid"></h3>
+<span id="requirementtext" style="font-weight:bold;"></span><br/>
+Status: <span id="querydialogstatus"></span><br/>
+Query:<br/>
+<pre id="querydialogquery" style="background-color:#DCDCDC"></pre>
+<hr>
+Expected Result:<br/>
+<pre id="querydialogexpectedresult" style="background-color:#DCDCDC"></pre>
+<hr>
+Retrieved Result:<br/>
+<pre id="querydialogretresult" style="background-color:#DCDCDC"></pre>
+<hr>
+<button id="querydialogclosebutton" onclick="document.getElementById('queryviewdialog').close()">Close</button>
+<button id="querydialogretestbutton">Re(test)</button>
+</dialog>
+Select Benchmark Version:
+<select id="benchmarkversions" onchange="fillTableProc()">
+<option value="gsb_10_benchmarkconfig">GeoSPARQL 1.0 Compliance Benchmark</option>
+<option value="gsb_11_benchmarkconfig">GeoSPARQL 1.1 Compliance Benchmark</option>
+</select><br/>
+Endpoint URL: <input type="url" id="endpointurl" value="https://api.triplydb.com/datasets/timohomburg/geosparqlbenchmark/sparql"/>
+<button id="testendpoint" onclick="testSPARQLEndpoint()">Test Endpoint</button><span id="endpointtestresult"></span><br/>
+<button id="executetest" onclick="executeAllQueries()">Execute Test</button><br/>
+Correct Tests: <span id="correcttests"></span><br/>
+Compliance Score: <span id="compliancescore"></span>
+<table id="benchmarkresult">
+<thead>
+<tr><th>Query</th><th>Result</th><th>Score</th><th>Weight</th><th>Error</th><th>Test</th></tr>
+</thead>
+<tbody id="benchmarkresultbody">
+
+</tbody>
+</table>
+<script>
+fillTableProc()
+</script>
+</body>
+</html>
