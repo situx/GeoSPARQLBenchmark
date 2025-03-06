@@ -268,6 +268,17 @@ pre {
 </head>
 <body>
 <h1>GeoSPARQL Compliance Benchmark</h1>
+<dialog id="tutorial">
+<h3>GeoSPARQL Compliance Benchmark Tutorial</h3>
+This tutorial helps to get you started using the JavaScript Version of the GeoSPARQL Compliance Benchmark.
+<ol>
+<li>Choose a SPARQL Endpoint without reasoning enabled that features the benchmark dataset for the benchmark you want to execute. A sample SPARQL endpoint is given for reference.</li>
+<li>Choose a second SPARQL endpoint featuring the benchmark dataset with reasoning enabled</li>
+<li>Start the testing of either all queries or selected queries to obtain benchmark results</li>
+<li>Check individual query results by clicking the info icon</li>
+</ol>
+<button id="tutorialclosebutton" onclick="document.getElementById('tutorial').close()">Close</button>
+</dialog>
 <dialog id="compliancescoredialog">
 <h3>Compliance Score</h1>
 Score: <span id="compscoredialog"></span><br/>
@@ -298,7 +309,10 @@ Select Benchmark Version:
 <option value="gsb_10_benchmarkconfig">GeoSPARQL 1.0 Compliance Benchmark</option>
 <option value="gsb_11_benchmarkconfig">GeoSPARQL 1.1 Compliance Benchmark</option>
 </select><br/>
-Endpoint URL: <input type="url" id="endpointurl" value="https://api.triplydb.com/datasets/timohomburg/geosparqlbenchmark/sparql"/>
+<button id="tutorialbutton" onclick="document.getElementById('tutorial').showModal()">Tutorial</button><br/>
+Endpoint URL: <input type="url" id="endpointurl" style="width:25%" value="https://api.triplydb.com/datasets/timohomburg/geosparqlbenchmark/sparql"/>
+<button id="testendpoint" onclick="testSPARQLEndpoint()">Test Endpoint</button><span id="endpointtestresult"></span><br/>
+Endpoint URL Reasoning: <input type="url" id="endpointurlres" style="width:25%" value="https://api.triplydb.com/datasets/timohomburg/geosparqlbenchmark/sparql"/>
 <button id="testendpoint" onclick="testSPARQLEndpoint()">Test Endpoint</button><span id="endpointtestresult"></span><br/>
 <button id="executetest" onclick="executeAllQueries()">Execute Test</button><br/>
 Correct Tests: <span id="correcttests"></span><button style="border:0px;background-color:white" onclick="document.getElementById('compliancescoredialog').showModal()">&#9432;</button><br/>
