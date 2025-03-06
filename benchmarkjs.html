@@ -86,7 +86,7 @@ function normalizeValue(result){
 			for(res in resobj){
 				if("value" in resobj[res]){
 					//console.log("BINDING: "+resobj[res]["value"])
-					resobj[res]["value"]=resobj[res]["value"].trim()
+					resobj[res]["value"]=resobj[res]["value"].replace(/^\s+|\s+$/g, '');
 					//console.log("BINDING: "+resobj[res]["value"])
 				}
 			}
