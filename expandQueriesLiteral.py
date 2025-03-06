@@ -2,7 +2,7 @@ import os
 import itertools
 import json
 from io import StringIO
-from rdflib import Graph
+from rdflib import Graph, URIRef, Literal,RDF,OWL,RDFS,SKOS,XSD
 from rdflib.plugins.sparql.results.xmlresults import XMLResultParser
 from rdflib.plugins.sparql.results.jsonresults import JSONResultSerializer
 
@@ -101,7 +101,7 @@ bench:GSComplianceBenchmarkV2  a   hobbit:Benchmark;
     hobbit:imageName    "git.project-hobbit.eu:4567/mjovanovik/gsb-benchmarkcontroller-v2";
     hobbit:usesImage    "git.project-hobbit.eu:4567/mjovanovik/gsb-datagenerator-v2";
     hobbit:usesImage    "git.project-hobbit.eu:4567/mjovanovik/gsb-seqtaskgenerator-v2";
-    hobbit:usesImage    "git.project-hobbit.eu:4567/mjovanovik/gsb-evaluationmodule-v2";"""
+    hobbit:usesImage    "git.project-hobbit.eu:4567/mjovanovik/gsb-evaluationmodule-v2" ."""
 
 geom_literals = {
     "WKT":"geo:asWKT",
@@ -230,7 +230,7 @@ def expandLiteralsFromTemplates():
                 variantcounter=variantcounter+1
             file.close()
 
-def generateConfiguration(querypath,answerpath,benchmarkconfig,benchmarkconfigttl,benchmarkconfigttlhead):
+def generateConfiguration(querypath,answerpath,benchmarkconfig,benchmarkconfigttl):
     first=True
     gsbquerycounter=0
     curreqcounter=0
@@ -273,8 +273,10 @@ def generateConfiguration(querypath,answerpath,benchmarkconfig,benchmarkconfigtt
             querynumbersmall=f[0:index]
         #print("QUERYNUMERSMALL: "+str(querynumbersmall))
         if not "%%literal1%%" in filecontent and not "%%literalrel1%%" in filecontent and not "%%literal2%%" in filecontent and not "%%literalrel1%%" in filecontent:
-            benchmarkconfigttl+=benchmarkuri+" hobbit:measuresKPI "+"bench:Q"+f.replace(".rq","").replace("query-r","").replace("-","_")+"_"+benchmarkconfig["benchmarkshorturi"]+"Status .\n"
-            benchmarkconfigttl+="bench:Q"+f.replace(".rq","").replace("query-r","").replace("-","_")+"_"+benchmarkconfig["benchmarkshorturi"]+"Status a hobbit:KPI;\n"
+            kpiuri="http://w3id.org/bench#Q"+f.replace(".rq","").replace("query-r","").replace("-","_")+"_"+benchmarkconfig["benchmarkshorturi"]+"Status"
+            benchmarkconfigttl.add((URIRef(benchmarkuri),URIRef("http://w3id.org/hobbit/vocab#measuresKPI"),URIRef(kpiuri)))
+            benchmarkconfigttl.add((URIRef(kpiuri),RDF.type,URIRef("http://w3id.org/hobbit/vocab#KPI")))
+            benchmarkconfigttl.add((URIRef(kpiuri),RDFS.range,XSD.boolean))
             partnumber=-1
             if f.count("-")>1:
                 querynumber=f[0:f.rfind("-")]
@@ -282,46 +284,54 @@ def generateConfiguration(querypath,answerpath,benchmarkconfig,benchmarkconfigtt
             else:
                 querynumber=f.replace(".rq","")
             if benchmarkconfig!=None and "benchmarkshortname" in benchmarkconfig:
-                benchmarkconfigttl+="rdfs:label \""+f.replace(".rq","")
+                thelabel=f.replace(".rq","")
                 if partnumber!=-1:
-                    benchmarkconfigttl+=" (Part "+str(partnumber)+")"
-                benchmarkconfigttl+=" ("+benchmarkconfig["benchmarkshortname"]+")\";\n"
+                    thelabel+=" (Part "+str(partnumber)+")"
+                thelabel+=" ("+benchmarkconfig["benchmarkshortname"]+")"
+                benchmarkconfigttl.add((URIRef(kpiuri),RDFS.label,Literal(thelabel)))
             else:
-                benchmarkconfigttl+="rdfs:label \""+f.replace(".rq","")+"\";\n"
+                benchmarkconfigttl.add((URIRef(kpiuri),RDFS.label,Literal(f.replace(".rq",""))))
             print("QueryNumber: "+str(querynumber))
             print("QueryNumber: "+str(f))
             print("QueryNumber: "+str(partnumber))
             if "reqToURI" in benchmarkconfig and querynumber in benchmarkconfig["reqToURI"]:
                 benchmarkjs[f]["uri"]=benchmarkconfig["reqToURI"][querynumber]
-                benchmarkconfigttl+="spec:isTestResultOf <"+benchmarkconfig["reqToURI"][querynumber]+"> .\n"
-                benchmarkconfigttl+="<"+benchmarkconfig["reqToURI"][querynumber]+"> rdf:type spec:Requirement .\n"
-                benchmarkconfigttl+="<"+benchmarkconfig["reqToURI"][querynumber].replace("req","conf")+"> rdf:type spec:ConformanceTest .\n"
-                benchmarkconfigttl+="bench:Q"+f.replace(".rq","").replace("query-r","").replace("-","_")+"_"+benchmarkconfig["benchmarkshorturi"]+"Status " 
+                benchmarkconfigttl.add((URIRef(kpiuri),URIRef("http://www.opengis.net/def/spec-element/isTestResultOf"),URIRef(benchmarkconfig["reqToURI"][querynumber]replace("req","conf"))))
+                benchmarkconfigttl.add((URIRef(benchmarkconfig["reqToURI"][querynumber]),RDF.type,URIRef("http://www.opengis.net/def/spec-element/Requirement")))
+                benchmarkconfigttl.add((URIRef(benchmarkconfig["reqToURI"][querynumber].replace("req","conf")),RDF.type,URIRef("http://www.opengis.net/def/spec-element/ConformanceTest")))
+                #benchmarkconfigttl+="spec:isTestResultOf <"+benchmarkconfig["reqToURI"][querynumber]+"> .\n"
+                #benchmarkconfigttl+="<"+benchmarkconfig["reqToURI"][querynumber]+"> rdf:type spec:Requirement .\n"
+                #benchmarkconfigttl+="<"+benchmarkconfig["reqToURI"][querynumber].replace("req","conf")+"> rdf:type spec:ConformanceTest .\n"
+                #benchmarkconfigttl+="bench:Q"+f.replace(".rq","").replace("query-r","").replace("-","_")+"_"+benchmarkconfig["benchmarkshorturi"]+"Status " 
             if "reqToExtension" in benchmarkconfig and querynumbersmall in benchmarkconfig["reqToExtension"]:
                 benchmarkjs[f]["module"]=benchmarkconfig["reqToExtension"][querynumbersmall]
             if "reqWeights" in benchmarkconfig and f in benchmarkconfig["reqWeights"]:
                 benchmarkjs[f]["weight"]=benchmarkconfig["reqWeights"][f]
             if 	"reqToDescs" in benchmarkconfig and f in benchmarkconfig["reqToDescs"]:	
-                benchmarkconfigttl+="rdfs:comment \"Requirement "+f.replace(".rq","")
+                thecomment="Requirement "+f.replace(".rq","")
                 if partnumber!=-1:
-                    benchmarkconfigttl+=" (Part "+str(partnumber)+")" 
-                benchmarkconfigttl+=": "+benchmarkconfig["reqToDescs"][f]+"\";\n"
+                    thecomment+=" (Part "+str(partnumber)+")" 
+                thecomment+=": "+benchmarkconfig["reqToDescs"][f]
+                benchmarkconfigttl.add((URIRef(kpiuri),RDFS.comment,Literal(thecomment,lang="en")))
+                benchmarkconfigttl.add((URIRef(kpiuri),SKOS.definition,Literal(thecomment,lang="en")))
                 benchmarkjs[f]["definition"]=benchmarkconfig["reqToDescs"][f]
             else:
-                benchmarkconfigttl+="rdfs:comment \""+f.replace(".rq","")
+                thecomment=f.replace(".rq","")
                 if "benchmarkshortname" in benchmarkconfig:
-                    benchmarkconfigttl+=" ("+benchmarkconfig["benchmarkshortname"]+")"
-                benchmarkconfigttl+="\";\n"
+                    thecomment+=" ("+benchmarkconfig["benchmarkshortname"]+")"
+                benchmarkconfigttl.add((URIRef(kpiuri),RDFS.comment,Literal(thecomment,lang="en")))
+                benchmarkconfigttl.add((URIRef(kpiuri),SKOS.definition,Literal(thecomment,lang="en")))
                 benchmarkjs[f]["definition"]=f.replace(".rq","")
             if "reqLabels" in benchmarkconfig and f in benchmarkconfig["reqLabels"]:
-                benchmarkconfigttl+="skos:altLabel \""+benchmarkconfig["reqLabels"][f]+"\"@en;\n"
+                benchmarkconfigttl.add((URIRef(kpiuri),SKOS.altLabel,Literal(benchmarkconfig["reqLabels"][f],lang="en")))
                 benchmarkjs[f]["label"]=benchmarkconfig["reqLabels"][f]                
-            benchmarkconfigttl+="rdfs:range xsd:boolean .\n\n"  
-            benchmarkconfigttlhead+="    hobbit:measuresKPI bench:Q"+f.replace(".rq","").replace("query-r","").replace("-","_")+"Status ;\n"        
+            #benchmarkconfigttl+="rdfs:range xsd:boolean .\n\n"  
+            #benchmarkconfigttlhead+="    hobbit:measuresKPI bench:Q"+f.replace(".rq","").replace("query-r","").replace("-","_")+"Status ;\n"        
             continue
         if "%%literal2%%" in filecontent:
             for lit in combinations:
-                benchmarkconfigttl+="bench:Q"+f.replace(".rq","").replace("query-r","").replace("-","_")+"_"+str(variantcounter)+"_"+benchmarkconfig["benchmarkshorturi"]+"Status a hobbit:KPI;\n"
+                kpiuri="http://w3id.org/bench#Q"+f.replace(".rq","").replace("query-r","").replace("-","_")+"_"+str(variantcounter)+"_"+benchmarkconfig["benchmarkshorturi"]+"Status"
+                benchmarkconfigttl.add((URIRef(kpiuri),RDF.type,URIRef("http://w3id.org/hobbit/vocab#KPI")))
                 partnumber=-1
                 if f.count("-")>1:
                     querynumber=f[0:f.rfind("-")]
@@ -329,36 +339,39 @@ def generateConfiguration(querypath,answerpath,benchmarkconfig,benchmarkconfigtt
                 else:
                     querynumber=f.replace(".rq","")
                 if benchmarkconfig!=None and "benchmarkshortname" in benchmarkconfig:
-                    benchmarkconfigttl+="rdfs:label \""+f.replace(".rq","")
+                    thelabel=f.replace(".rq","")
                     if partnumber!=-1:
-                        benchmarkconfigttl+=" (Part "+str(partnumber)+")"
-                    benchmarkconfigttl+=" ("+lit[0]+"-"+lit[1]+") ("+benchmarkconfig["benchmarkshortname"]+")\";\n"
+                        thelabel+=" (Part "+str(partnumber)+")"
+                    thelabel+=" ("+lit[0]+"-"+lit[1]+") ("+benchmarkconfig["benchmarkshortname"]+")"
+                    benchmarkconfigttl.add((URIRef(kpiuri),RDFS.label,Literal(thelabel,lang="en")))
                 else:
-                    benchmarkconfigttl+="rdfs:label \""+f.replace(".rq","")+"\";\n"
+                    benchmarkconfigttl.add((URIRef(kpiuri),RDFS.label,Literal(f.replace(".rq",""),lang="en")))
                 print("QueryNumber: "+str(querynumber))
                 print("QueryNumber: "+str(f))
                 print("QueryNumber: "+str(partnumber))
                 if "reqToURI" in benchmarkconfig and querynumber in benchmarkconfig["reqToURI"]:
-                    benchmarkconfigttl+="spec:isTestResultOf <"+benchmarkconfig["reqToURI"][querynumber]+"> ;\n"
+                    benchmarkconfigttl.add((URIRef(kpiuri),URIRef("http://www.opengis.net/def/spec-element/isTestResultOf"),URIRef(benchmarkconfig["reqToURI"][querynumber])))
                     benchmarkjs[f]["uri"]=benchmarkconfig["reqToURI"][querynumber]
                 if "reqToExtension" in benchmarkconfig and querynumbersmall in benchmarkconfig["reqToExtension"]:
                     benchmarkjs[f]["module"]=benchmarkconfig["reqToExtension"][querynumbersmall]
                 if "reqWeights" in benchmarkconfig and f in benchmarkconfig["reqWeights"]:
                     benchmarkjs[f]["weight"]=benchmarkconfig["reqWeights"][f]
                 if "reqToDescs" in benchmarkconfig and f in benchmarkconfig["reqToDescs"]:		
-                    benchmarkconfigttl+="rdfs:comment \""+benchmarkconfig["reqToDescs"][f]+"\";\n"
                     benchmarkjs[f]["definition"]=benchmarkconfig["reqToDescs"][f]
+                    benchmarkconfigttl.add((URIRef(kpiuri),RDFS.comment,Literal(benchmarkconfig["reqToDescs"][f],lang="en")))
+                    benchmarkconfigttl.add((URIRef(kpiuri),SKOS.definition,Literal(benchmarkconfig["reqToDescs"][f],lang="en")))                
                 else:
-                    benchmarkconfigttl+="rdfs:comment \""+f.replace(".rq","")
+                    thecomment=f.replace(".rq","")
                     if "benchmarkshortname" in benchmarkconfig:
-                        benchmarkconfigttl+=" ("+lit[0]+"-"+lit[1]+") ("+benchmarkconfig["benchmarkshortname"]+")"
-                    benchmarkconfigttl+="\";\n"
+                        thecomment+=" ("+lit[0]+"-"+lit[1]+") ("+benchmarkconfig["benchmarkshortname"]+")"
                     benchmarkjs[f]["definition"]=f.replace(".rq","")
+                    benchmarkconfigttl.add((URIRef(kpiuri),RDFS.comment,Literal(thecomment,lang="en")))
+                    benchmarkconfigttl.add((URIRef(kpiuri),SKOS.definition,Literal(thecomment,lang="en")))   
                 if "reqLabels" in benchmarkconfig and f in benchmarkconfig["reqLabels"]:
-                    benchmarkconfigttl+="skos:altLabel \""+benchmarkconfig["reqLabels"][f]+"\"@en;\n" 
                     benchmarkjs[f]["label"]=benchmarkconfig["reqLabels"][f]
-                benchmarkconfigttl+="rdfs:range xsd:boolean .\n\n"  
-                benchmarkconfigttlhead+="    hobbit:measuresKPI bench:Q"+f.replace(".rq","").replace("query-r","").replace("-","_")+"_"+str(variantcounter)+"Status ;\n"    
+                    benchmarkconfigttl.add((URIRef(kpiuri),SKOS.altLabel,Literal(benchmarkconfig["reqLabels"][f],lang="en")))
+                #benchmarkconfigttl+="rdfs:range xsd:boolean .\n\n"  
+                #benchmarkconfigttlhead+="    hobbit:measuresKPI bench:Q"+f.replace(".rq","").replace("query-r","").replace("-","_")+"_"+str(variantcounter)+"Status ;\n"    
                 gsbquerycounter+=1
                 first=True                
                 variantcounter=variantcounter+1
@@ -368,20 +381,19 @@ def generateConfiguration(querypath,answerpath,benchmarkconfig,benchmarkconfigtt
     return benchmarkconfigttl
 
 expandLiteralsFromTemplates()
-benchmarkconfigttl=""
+benchmarkconfigttl=Graph()
 i=0
 for bencon in configpaths:
     with open(bencon) as json_file:
         benchmarkconfig = json.load(json_file)
-    benchmarkconfigttl=generateConfiguration(querypaths[i],answerpaths[i],benchmarkconfig,benchmarkconfigttl,benchmarkconfigttlhead)
+    benchmarkconfigttl.parse(data=benchmarkconfigttlhead)
+    benchmarkconfigttl=generateConfiguration(querypaths[i],answerpaths[i],benchmarkconfig,benchmarkconfigttl)
+    benchmarkconfigttl.serialize(destination='hobbit-settings/benchmark_v2.ttl', format='turtle')
     #benchmarkconfigttlhead+="    hobbit:measuresKPI  bench:totalCorrectAnswers ;\n    hobbit:measuresKPI  bench:percentageCorrectAnswers . bench:percentageCorrectAnswers rdf:type hobbit:KPI .\n"
     #print(benchmarkconfigttlhead+benchmarkconfigttl)
-    with open("benchmarkconfig_gen.ttl", "w") as f2:
-        f2.write(benchmarkconfigttlhead)
-        f2.write(benchmarkconfigttl)
     #graph2 = Graph()
     #graph2.parse(data = benchmarkconfigttlhead+benchmarkconfigttl, format='n3')
-    #graph2.serialize(destination='hobbit-settings/benchmark_v2.ttl', format='turtle')
+    #
     i+=1
 
 
