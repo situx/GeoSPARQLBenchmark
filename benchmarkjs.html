@@ -205,6 +205,8 @@ function activateDataTable(){
 		}
 	});
 }
+
+
 function openDialogForQuery(queryid,showdialog=false){
 	benchmarkname=$('#benchmarkversions').val()
 	benchmarkconfig=window[benchmarkname]
@@ -245,9 +247,7 @@ function openDialogForQuery(queryid,showdialog=false){
 	}else{
 		document.getElementById("querydialogretresult").innerHTML=""
 	}
-	if(dialogeventlistener!=null){
-		document.getElementById("querydialogretestbutton").removeEventListener('click',dialogeventlistener)
-	}
+	document.getElementById("querydialogretestbutton").outerHTML=document.getElementById("querydialogretestbutton").outerHTML
 	dialogeventlistener=document.getElementById("querydialogretestbutton").addEventListener('click', function() { executeQuery(benchmarkname,queryid);});
 	if(showdialog){
 		document.getElementById("queryviewdialog").showModal()
