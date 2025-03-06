@@ -79,15 +79,15 @@ function calculateComplianceScore(benchmarkconfig){
 }
 
 function normalizeValue(result){
-	console.log(result)
+	//console.log(result)
 	if("results" in result && "bindings" in result["results"]){
 		for(resobj of result["results"]["bindings"]){
-			console.log(resobj)
+			//console.log(resobj)
 			for(res in resobj){
 				if("value" in resobj[res]){
-					console.log("BINDING: "+resobj[res]["value"])
+					//console.log("BINDING: "+resobj[res]["value"])
 					resobj[res]["value"]=resobj[res]["value"].trim()
-					console.log("BINDING: "+resobj[res]["value"])
+					//console.log("BINDING: "+resobj[res]["value"])
 				}
 			}
 		}
