@@ -78,6 +78,23 @@ function calculateComplianceScore(benchmarkconfig){
 	document.getElementById("modulesscore").innerHTML=modscorestr
 }
 
+function normalizeValue(result){
+	console.log(result)
+	if("results" in result && "bindings" in result["results"]){
+		for(resobj of result["results"]["bindings"]){
+			console.log(resobj)
+			for(res in resobj){
+				if("value" in resobj[res]){
+					console.log("BINDING: "+resobj[res]["value"])
+					resobj[res]["value"]=resobj[res]["value"].trim()
+					console.log("BINDING: "+resobj[res]["value"])
+				}
+			}
+		}
+	}
+	return result
+}
+
 function executeQuery(benchmarkname,queryid){
 	url=$('#endpointurl').val()	
 	benchmarkconfig=window[benchmarkname]
@@ -98,7 +115,9 @@ function executeQuery(benchmarkname,queryid){
 						console.log(answer)
 						console.log(sresults)
 						console.log(queryid)*/
-						if(_.isEqual(results,JSON.parse(answer))){
+						normalizeValue(results)
+						theanswer=normalizeValue(JSON.parse(answer))
+						if(_.isEqual(results,theanswer)){
 							document.getElementById("res_"+queryid).innerHTML="Passed"
 							document.getElementById("score_"+queryid).innerHTML=document.getElementById("weight_"+queryid).innerHTML
 							benchmarkconfig[queryid]["result"]=results
