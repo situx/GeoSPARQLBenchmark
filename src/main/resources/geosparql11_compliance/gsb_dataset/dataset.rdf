@@ -424,7 +424,7 @@
 <sf:LineString rdf:about="http://example.org/ApplicationSchema#EExactGeom">
     <rdf:type rdf:resource="http://www.opengis.net/ont/geosparql#Geometry"/>
     <rdf:type rdf:resource="http://www.opengis.net/ont/gml#LineString"/>
-	<geo:hasMetricLength rdf:datatype="http://www.w3.org/2001/XMLSchema#double">34531.762814738206</geo:metricLength>
+	<geo:hasMetricLength rdf:datatype="http://www.w3.org/2001/XMLSchema#double">34531.762814738206</geo:hasMetricLength>
     <geo:isEmpty rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</geo:isEmpty>
     <geo:isSimple rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</geo:isSimple>
     <geo:dimension rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</geo:dimension>
@@ -660,8 +660,8 @@
     <rdf:type rdf:resource="http://www.opengis.net/ont/geosparql#Feature"/>
     <rdf:type rdf:resource="http://www.opengis.net/ont/geosparql#SpatialObject"/>
     <my:hasExactGeometry rdf:resource="http://example.org/ApplicationSchema#JExactGeom"/>
-	<geo:hasMetricArea rdf:datatype="http://www.w3.org/2001/XMLSchema#double">15498362.890529633</geo:hasMetricPerimeterLength>
-	<geo:hasMetricPerimeterLength rdf:datatype="http://www.w3.org/2001/XMLSchema#double">16296.223177870606</geo:hasMetricArea>
+	<geo:hasMetricArea rdf:datatype="http://www.w3.org/2001/XMLSchema#double">15498362.890529633</geo:hasMetricArea>
+	<geo:hasMetricPerimeterLength rdf:datatype="http://www.w3.org/2001/XMLSchema#double">16296.223177870606</geo:hasMetricPerimeterLength>
     <geo:hasDefaultGeometry rdf:resource="http://example.org/ApplicationSchema#JExactGeom"/>
     <geo:hasGeometry rdf:resource="http://example.org/ApplicationSchema#JExactGeom"/>
 </my:PlaceOfInterest>
@@ -699,8 +699,8 @@
     <rdf:type rdf:resource="http://www.opengis.net/ont/geosparql#Feature"/>
     <rdf:type rdf:resource="http://www.opengis.net/ont/geosparql#SpatialObject"/>
     <my:hasExactGeometry rdf:resource="http://example.org/ApplicationSchema#KExactGeom"/>
-	<geo:hasMetricArea rdf:datatype="http://www.w3.org/2001/XMLSchema#double">15498362.890529633</geo:hasMetricPerimeterLength>
-	<geo:hasMetricPerimeterLength rdf:datatype="http://www.w3.org/2001/XMLSchema#double">16296.223177870606</geo:hasMetricArea>
+	<geo:hasMetricArea rdf:datatype="http://www.w3.org/2001/XMLSchema#double">15498362.890529633</geo:hasMetricArea>
+	<geo:hasMetricPerimeterLength rdf:datatype="http://www.w3.org/2001/XMLSchema#double">16296.223177870606</geo:hasMetricPerimeterLength>
     <geo:hasDefaultGeometry rdf:resource="http://example.org/ApplicationSchema#KExactGeom"/>
     <geo:hasGeometry rdf:resource="http://example.org/ApplicationSchema#KExactGeom"/>
 </my:PlaceOfInterest>

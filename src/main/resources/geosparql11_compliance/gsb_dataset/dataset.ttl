@@ -127,6 +127,10 @@ geo:hasGeometry rdf:type owl:AnnotationProperty .
 geo:hasMetricArea rdf:type owl:AnnotationProperty .
 
 
+###  http://www.opengis.net/ont/geosparql#hasMetricLength
+geo:hasMetricLength rdf:type owl:AnnotationProperty .
+
+
 ###  http://www.opengis.net/ont/geosparql#hasMetricPerimeterLength
 geo:hasMetricPerimeterLength rdf:type owl:AnnotationProperty .
 
@@ -342,8 +346,12 @@ my:A rdf:type owl:NamedIndividual ,
      geo:ehEquals my:A ;
      geo:ehMeet my:C ;
      geo:ehOverlap my:D ;
+     geo:hasBoundingBox my:AExactGeom ;
+     geo:hasCentroid my:APointGeom ;
      geo:hasDefaultGeometry my:AExactGeom ;
      geo:hasGeometry my:AExactGeom ;
+     geo:hasMetricArea "1.6338971063552246E9"^^xsd:double ;
+     geo:hasMetricPerimeterLength "false"^^xsd:boolean ;
      geo:rcc8ec my:C ;
      geo:rcc8eq my:A ;
      geo:rcc8ntppi my:G ;
@@ -439,6 +447,7 @@ my:B rdf:type owl:NamedIndividual ,
      geo:ehCoveredBy my:A ;
      geo:ehDisjoint my:C ;
      geo:ehEquals my:B ;
+     geo:hasCentroid my:BPointGeom ;
      geo:hasDefaultGeometry my:BExactGeom ;
      geo:hasGeometry my:BExactGeom ;
      geo:rcc8dc my:C ;
@@ -473,6 +482,8 @@ my:BExactGeom rdf:type owl:NamedIndividual ,
     """^^geo:wktLiteral ;
               geo:coordinateDimension 2 ;
               geo:dimension 2 ;
+              geo:hasMetricArea "4.089516328177643E8"^^xsd:double ;
+              geo:hasMetricPerimeterLength "81237.42251393184"^^xsd:double ;
               geo:isEmpty "false"^^xsd:boolean ;
               geo:isSimple "true"^^xsd:boolean ;
               geo:spatialDimension 2 .
@@ -517,11 +528,14 @@ my:C rdf:type owl:NamedIndividual ,
      geo:ehEquals my:C ;
      geo:hasArea my:C_area ;
      geo:hasBoundingBox my:C_bbox ;
-     geo:hasCentroid my:C_centroid ;
+     geo:hasCentroid my:CPointGeom ,
+                     my:C_centroid ;
      geo:hasDefaultGeometry my:CExactGeom ;
      geo:hasGeometry my:CExactGeom ;
-     geo:hasMetricArea "4.0899263059323E8"^^xsd:double ;
-     geo:hasMetricPerimeterLength "81152.0"^^xsd:double ;
+     geo:hasMetricArea "4.079967948035431E8"^^xsd:double ,
+                       "4.0899263059323E8"^^xsd:double ;
+     geo:hasMetricPerimeterLength "81151.59235053362"^^xsd:double ,
+                                  "81152.0"^^xsd:double ;
      geo:hasPerimeterLength my:C_perimeterlength ;
      geo:rcc8dc my:B ;
      geo:rcc8eq my:C ;
@@ -625,6 +639,7 @@ my:D rdf:type owl:NamedIndividual ,
      my:hasExactGeometry my:DExactGeom ;
      my:hasPointGeometry my:DPointGeom ;
      geo:ehEquals my:D ;
+     geo:hasCentroid my:DPointGeom ;
      geo:hasDefaultGeometry my:DExactGeom ;
      geo:hasGeometry my:DExactGeom ;
      geo:rcc8eq my:D ;
@@ -656,6 +671,8 @@ my:DExactGeom rdf:type owl:NamedIndividual ,
     """^^geo:wktLiteral ;
               geo:coordinateDimension 2 ;
               geo:dimension 2 ;
+              geo:hasMetricArea "4.0942717105566406E8"^^xsd:double ;
+              geo:hasMetricPerimeterLength "81280.17043883589"^^xsd:double ;
               geo:isEmpty "false"^^xsd:boolean ;
               geo:isSimple "true"^^xsd:boolean ;
               geo:spatialDimension 2 .
@@ -725,6 +742,7 @@ my:EExactGeom rdf:type owl:NamedIndividual ,
     """^^geo:wktLiteral ;
               geo:coordinateDimension 2 ;
               geo:dimension 2 ;
+              geo:hasMetricLength "34531.762814738206"^^xsd:double ;
               geo:isEmpty "false"^^xsd:boolean ;
               geo:isSimple "true"^^xsd:boolean ;
               geo:spatialDimension 2 .
@@ -780,6 +798,7 @@ my:G rdf:type owl:NamedIndividual ,
               geo:SpatialObject ;
      my:hasExactGeometry my:GExactGeom ;
      my:hasPointGeometry my:GPointGeom ;
+     geo:hasCentroid my:GPointGeom ;
      geo:hasDefaultGeometry my:GExactGeom ;
      geo:hasGeometry my:GExactGeom ;
      geo:rcc8ntpp my:A .
@@ -811,6 +830,8 @@ my:GExactGeom rdf:type owl:NamedIndividual ,
     """^^geo:wktLiteral ;
               geo:coordinateDimension 2 ;
               geo:dimension 2 ;
+              geo:hasMetricArea "4.084748403183899E8"^^xsd:double ;
+              geo:hasMetricPerimeterLength "81194.56311137906"^^xsd:double ;
               geo:isEmpty "false"^^xsd:boolean ;
               geo:isSimple "true"^^xsd:boolean ;
               geo:spatialDimension 2 .
@@ -953,7 +974,9 @@ my:J rdf:type owl:NamedIndividual ,
               geo:SpatialObject ;
      my:hasExactGeometry my:JExactGeom ;
      geo:hasDefaultGeometry my:JExactGeom ;
-     geo:hasGeometry my:JExactGeom .
+     geo:hasGeometry my:JExactGeom ;
+     geo:hasMetricArea "1.5498362890529633E7"^^xsd:double ;
+     geo:hasMetricPerimeterLength "16296.223177870606"^^xsd:double .
 
 
 ###  http://example.org/ApplicationSchema#JExactGeom
@@ -992,7 +1015,9 @@ my:K rdf:type owl:NamedIndividual ,
               geo:SpatialObject ;
      my:hasExactGeometry my:KExactGeom ;
      geo:hasDefaultGeometry my:KExactGeom ;
-     geo:hasGeometry my:KExactGeom .
+     geo:hasGeometry my:KExactGeom ;
+     geo:hasMetricArea "1.5498362890529633E7"^^xsd:double ;
+     geo:hasMetricPerimeterLength "16296.223177870606"^^xsd:double .
 
 
 ###  http://example.org/ApplicationSchema#KExactGeom
