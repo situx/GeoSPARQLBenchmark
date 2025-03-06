@@ -78,6 +78,23 @@ function calculateComplianceScore(benchmarkconfig){
 	document.getElementById("modulesscore").innerHTML=modscorestr
 }
 
+function normalizeValue(result){
+	//console.log(result)
+	if("results" in result && "bindings" in result["results"]){
+		for(resobj of result["results"]["bindings"]){
+			//console.log(resobj)
+			for(res in resobj){
+				if("value" in resobj[res]){
+					//console.log("BINDING: "+resobj[res]["value"])
+					resobj[res]["value"]=resobj[res]["value"].replace(/^\s+|\s+$/g, '');
+					//console.log("BINDING: "+resobj[res]["value"])
+				}
+			}
+		}
+	}
+	return result
+}
+
 function executeQuery(benchmarkname,queryid){
 	url=$('#endpointurl').val()	
 	benchmarkconfig=window[benchmarkname]
@@ -87,6 +104,7 @@ function executeQuery(benchmarkname,queryid){
 			if("message" in results){
 				document.getElementById('err_'+queryid).innerHTML=results["message"];
 				document.getElementById("res_"+queryid).innerHTML="Failed"
+				benchmarkconfig[queryid]["error"]=results["message"]
 			}else{
 				sresults=JSON.stringify(results)
 				if(benchmarkconfig[queryid]["answers"].length>0){
@@ -97,7 +115,9 @@ function executeQuery(benchmarkname,queryid){
 						console.log(answer)
 						console.log(sresults)
 						console.log(queryid)*/
-						if(_.isEqual(results,JSON.parse(answer))){
+						normalizeValue(results)
+						theanswer=normalizeValue(JSON.parse(answer))
+						if(_.isEqual(results,theanswer)){
 							document.getElementById("res_"+queryid).innerHTML="Passed"
 							document.getElementById("score_"+queryid).innerHTML=document.getElementById("weight_"+queryid).innerHTML
 							benchmarkconfig[queryid]["result"]=results
@@ -112,7 +132,7 @@ function executeQuery(benchmarkname,queryid){
 				}
 			}
 			openDialogForQuery(queryid)
-		}).catch(function(e) {$('#err_'+queryid).html(e);throw e; });	
+		}).catch(function(e) {$('#err_'+queryid).html(e);benchmarkconfig[queryid]["error"]=e;openDialogForQuery(queryid);throw e; });	
 	}
 }
 function fillTable(benchmarkname){
@@ -218,7 +238,9 @@ function openDialogForQuery(queryid,showdialog=false){
 	}else{
 		document.getElementById("querydialogexpectedresult").innerHTML=""
 	}
-	if("result" in benchmarkconfig[queryid]){
+	if("error" in benchmarkconfig[queryid]){
+		document.getElementById("querydialogretresult").innerHTML=benchmarkconfig[queryid]["error"]
+	}else if("result" in benchmarkconfig[queryid] && benchmarkconfig[queryid]["result"]!=""){
 		document.getElementById("querydialogretresult").innerHTML=JSON.stringify(benchmarkconfig[queryid]["result"],null,2)
 	}else{
 		document.getElementById("querydialogretresult").innerHTML=""
