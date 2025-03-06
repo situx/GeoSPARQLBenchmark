@@ -55,9 +55,13 @@
     <rdf:type rdf:resource="http://www.opengis.net/ont/geosparql#SpatialObject"/>
     <my:hasExactGeometry rdf:resource="http://example.org/ApplicationSchema#AExactGeom"/>
     <my:hasPointGeometry rdf:resource="http://example.org/ApplicationSchema#APointGeom"/>
+	<geo:hasCentroid rdf:resource="http://example.org/ApplicationSchema#APointGeom"/>
+	<geo:hasBoundingBox rdf:resource="http://example.org/ApplicationSchema#AExactGeom"/>
     <geo:hasDefaultGeometry rdf:resource="http://example.org/ApplicationSchema#AExactGeom"/>
     <geo:defaultGeometry rdf:resource="http://example.org/ApplicationSchema#AExactGeom"/>
     <geo:hasGeometry rdf:resource="http://example.org/ApplicationSchema#AExactGeom"/>
+	<geo:hasMetricPerimeterLength rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">162388.75450235402</geo:hasMetricPerimeterLength>
+	<geo:hasMetricArea rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1633897106.3552246</geo:hasMetricArea>
     <geo:sfEquals rdf:resource="http://example.org/ApplicationSchema#A"/>
     <geo:ehEquals rdf:resource="http://example.org/ApplicationSchema#A"/>
     <geo:rcc8eq rdf:resource="http://example.org/ApplicationSchema#A"/>
@@ -156,6 +160,7 @@
     <rdf:type rdf:resource="http://www.opengis.net/ont/geosparql#SpatialObject"/>
     <my:hasExactGeometry rdf:resource="http://example.org/ApplicationSchema#BExactGeom"/>
     <my:hasPointGeometry rdf:resource="http://example.org/ApplicationSchema#BPointGeom"/>
+	<geo:hasCentroid rdf:resource="http://example.org/ApplicationSchema#BPointGeom"/>
     <geo:hasDefaultGeometry rdf:resource="http://example.org/ApplicationSchema#BExactGeom"/>
     <geo:defaultGeometry rdf:resource="http://example.org/ApplicationSchema#BExactGeom"/>
     <geo:hasGeometry rdf:resource="http://example.org/ApplicationSchema#BExactGeom"/>
@@ -173,6 +178,8 @@
 <sf:Polygon rdf:about="http://example.org/ApplicationSchema#BExactGeom">
     <rdf:type rdf:resource="http://www.opengis.net/ont/geosparql#Geometry"/>
     <rdf:type rdf:resource="http://www.opengis.net/ont/gml#Polygon"/>
+	<geo:hasMetricPerimeterLength rdf:datatype="http://www.w3.org/2001/XMLSchema#double">81237.42251393184</geo:hasMetricPerimeterLength>
+	<geo:hasMetricArea rdf:datatype="http://www.w3.org/2001/XMLSchema#double">408951632.8177643</geo:hasMetricArea>
     <geo:isEmpty rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</geo:isEmpty>
     <geo:isSimple rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</geo:isSimple>
     <geo:dimension rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</geo:dimension>
@@ -230,9 +237,12 @@
     <rdf:type rdf:resource="http://www.opengis.net/ont/geosparql#SpatialObject"/>
     <my:hasExactGeometry rdf:resource="http://example.org/ApplicationSchema#CExactGeom"/>
     <my:hasPointGeometry rdf:resource="http://example.org/ApplicationSchema#CPointGeom"/>
+	<geo:hasCentroid rdf:resource="http://example.org/ApplicationSchema#CPointGeom"/>
     <geo:hasDefaultGeometry rdf:resource="http://example.org/ApplicationSchema#CExactGeom"/>
     <geo:hasGeometry rdf:resource="http://example.org/ApplicationSchema#CExactGeom"/>
-    <geo:sfEquals rdf:resource="http://example.org/ApplicationSchema#C"/>
+	<geo:hasMetricArea rdf:datatype="http://www.w3.org/2001/XMLSchema#double">407996794.8035431</geo:hasMetricArea>
+    <geo:hasMetricPerimeterLength rdf:datatype="http://www.w3.org/2001/XMLSchema#double">81151.59235053362</geo:hasMetricPerimeterLength>
+	<geo:sfEquals rdf:resource="http://example.org/ApplicationSchema#C"/>
     <geo:ehEquals rdf:resource="http://example.org/ApplicationSchema#C"/>
     <geo:rcc8eq rdf:resource="http://example.org/ApplicationSchema#C"/>
     <geo:sfDisjoint rdf:resource="http://example.org/ApplicationSchema#B"/>
@@ -332,6 +342,7 @@
     <rdf:type rdf:resource="http://www.opengis.net/ont/geosparql#SpatialObject"/>
     <my:hasExactGeometry rdf:resource="http://example.org/ApplicationSchema#DExactGeom"/>
     <my:hasPointGeometry rdf:resource="http://example.org/ApplicationSchema#DPointGeom"/>
+	<geo:hasCentroid rdf:resource="http://example.org/ApplicationSchema#DPointGeom"/>
     <geo:hasDefaultGeometry rdf:resource="http://example.org/ApplicationSchema#DExactGeom"/>
     <geo:hasGeometry rdf:resource="http://example.org/ApplicationSchema#DExactGeom"/>
     <geo:sfEquals rdf:resource="http://example.org/ApplicationSchema#D"/>
@@ -343,6 +354,8 @@
 <sf:Polygon rdf:about="http://example.org/ApplicationSchema#DExactGeom">
     <rdf:type rdf:resource="http://www.opengis.net/ont/geosparql#Geometry"/>
     <rdf:type rdf:resource="http://www.opengis.net/ont/gml#Polygon"/>
+	<geo:hasMetricPerimeterLength rdf:datatype="http://www.w3.org/2001/XMLSchema#double">81280.17043883589</geo:hasMetricPerimeterLength>
+	<geo:hasMetricArea rdf:datatype="http://www.w3.org/2001/XMLSchema#double">409427171.05566406</geo:hasMetricArea>	
     <geo:dimension rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</geo:dimension>
     <geo:spatialDimension rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</geo:spatialDimension>
     <geo:coordinateDimension rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</geo:coordinateDimension>
@@ -411,6 +424,7 @@
 <sf:LineString rdf:about="http://example.org/ApplicationSchema#EExactGeom">
     <rdf:type rdf:resource="http://www.opengis.net/ont/geosparql#Geometry"/>
     <rdf:type rdf:resource="http://www.opengis.net/ont/gml#LineString"/>
+	<geo:hasMetricLength rdf:datatype="http://www.w3.org/2001/XMLSchema#double">34531.762814738206</geo:metricLength>
     <geo:isEmpty rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</geo:isEmpty>
     <geo:isSimple rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</geo:isSimple>
     <geo:dimension rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</geo:dimension>
@@ -480,6 +494,7 @@
     <rdf:type rdf:resource="http://www.opengis.net/ont/geosparql#SpatialObject"/>
     <my:hasExactGeometry rdf:resource="http://example.org/ApplicationSchema#GExactGeom"/>
     <my:hasPointGeometry rdf:resource="http://example.org/ApplicationSchema#GPointGeom"/>
+	<geo:hasCentroid rdf:resource="http://example.org/ApplicationSchema#GPointGeom"/>
     <geo:hasDefaultGeometry rdf:resource="http://example.org/ApplicationSchema#GExactGeom"/>
     <geo:hasGeometry rdf:resource="http://example.org/ApplicationSchema#GExactGeom"/>
     <!-- <geo:sfEquals rdf:resource="http://example.org/ApplicationSchema#G"/> -->
@@ -491,6 +506,8 @@
 <sf:Polygon rdf:about="http://example.org/ApplicationSchema#GExactGeom">
     <rdf:type rdf:resource="http://www.opengis.net/ont/geosparql#Geometry"/>
     <rdf:type rdf:resource="http://www.opengis.net/ont/gml#Polygon"/>
+	<geo:hasMetricPerimeterLength rdf:datatype="http://www.w3.org/2001/XMLSchema#double">81194.56311137906</geo:hasMetricPerimeterLength>
+	<geo:hasMetricArea rdf:datatype="http://www.w3.org/2001/XMLSchema#double">408474840.3183899</geo:hasMetricArea>		
     <geo:isEmpty rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</geo:isEmpty>
     <geo:isSimple rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</geo:isSimple>
     <geo:dimension rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</geo:dimension>
@@ -643,6 +660,8 @@
     <rdf:type rdf:resource="http://www.opengis.net/ont/geosparql#Feature"/>
     <rdf:type rdf:resource="http://www.opengis.net/ont/geosparql#SpatialObject"/>
     <my:hasExactGeometry rdf:resource="http://example.org/ApplicationSchema#JExactGeom"/>
+	<geo:hasMetricArea rdf:datatype="http://www.w3.org/2001/XMLSchema#double">15498362.890529633</geo:hasMetricPerimeterLength>
+	<geo:hasMetricPerimeterLength rdf:datatype="http://www.w3.org/2001/XMLSchema#double">16296.223177870606</geo:hasMetricArea>
     <geo:hasDefaultGeometry rdf:resource="http://example.org/ApplicationSchema#JExactGeom"/>
     <geo:hasGeometry rdf:resource="http://example.org/ApplicationSchema#JExactGeom"/>
 </my:PlaceOfInterest>
@@ -680,6 +699,8 @@
     <rdf:type rdf:resource="http://www.opengis.net/ont/geosparql#Feature"/>
     <rdf:type rdf:resource="http://www.opengis.net/ont/geosparql#SpatialObject"/>
     <my:hasExactGeometry rdf:resource="http://example.org/ApplicationSchema#KExactGeom"/>
+	<geo:hasMetricArea rdf:datatype="http://www.w3.org/2001/XMLSchema#double">15498362.890529633</geo:hasMetricPerimeterLength>
+	<geo:hasMetricPerimeterLength rdf:datatype="http://www.w3.org/2001/XMLSchema#double">16296.223177870606</geo:hasMetricArea>
     <geo:hasDefaultGeometry rdf:resource="http://example.org/ApplicationSchema#KExactGeom"/>
     <geo:hasGeometry rdf:resource="http://example.org/ApplicationSchema#KExactGeom"/>
 </my:PlaceOfInterest>
@@ -781,4 +802,5 @@
         <![CDATA[]]>
     </geo:asDGGS>
 </sf:Point>
+
 </rdf:RDF>
