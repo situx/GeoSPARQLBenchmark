@@ -285,7 +285,7 @@ def expandLiteralsFromTemplates(benchmarkconfig,querypath,answerpath):
     geom_literals=benchmarkconfig["geoProperties"]
     geom_literals2=benchmarkconfig["literalTypes"]
     combinations=list(itertools.permutations(geom_literals,2))
-    combinations+=list(map(lambda x, y:(x,y), geom_literals.keys(), geom_literals.keys()))
+    combinations=list(map(lambda x, y:(x,y), geom_literals.keys(), geom_literals.keys()))+list(itertools.permutations(geom_literals,2))
     for comb in combinations:
         print(comb)
     for f in files:
@@ -323,7 +323,28 @@ def expandLiteralsFromTemplates(benchmarkconfig,querypath,answerpath):
                 f2.write(filecontent)
             file.close()
             continue
-        if "%%literal2%%" in filecontent:
+        if "%%literalrel1%%" in filecontent and not "%%literal2%%" in filecontent and not "%%literal1%%" in filecontent:
+            for lit in geom_literals:
+                #print(lit[0]+" "+lit[1])
+                newfile=replaceInString(filecontent,"","",geom_literals[lit],geom_literals[lit])
+                if f.find("-")==f.rfind("-"):
+                    queryToVariants[f[0:index]][f.replace(".rq","")+"-"+str(variantcounter)+".rq"]=False
+                    try:
+                        with open(querypath+"result/"+f.replace(".rq","")+"-"+str(variantcounter)+".rq", "w") as f2:
+                            f2.write(newfile)
+                    except:
+                        print("except")                    
+                else:
+                    queryToVariants[f[0:index]][f[0:index]+"-"+str(variantcounter)+".rq"]=False
+                    try:
+                        with open(querypath+"result/"+f[0:index]+"-"+str(variantcounter)+".rq", "w") as f2:
+                            f2.write(newfile)
+                    except:
+                        print("except")
+                gsbquerycounter+=1
+                variantcounter=variantcounter+1
+            file.close()
+        elif "%%literal2%%" in filecontent:
             for lit in combinations:
                 if lit[0]==lit[1]:
                     queryToVariants[f[0:index]][f[0:f.rfind("-")]+"-"+str(variantcounter)+".rq"]=True
@@ -355,7 +376,7 @@ def expandLiteralsFromTemplates(benchmarkconfig,querypath,answerpath):
         else:	
             for lit in geom_literals2:
                 #print(lit[0]+" "+lit[1])
-                newfile=replaceInString(filecontent,lit,lit,geom_literals2[lit],geom_literals2[lit])
+                newfile=replaceInString(filecontent,lit,lit,geom_literals[lit],geom_literals[lit])
                 if lit==geom_literals2[lit]:
                     queryToVariants[f[0:index]][f[0:f.rfind("-")]+"-"+str(variantcounter)+".rq"]=True
                 else:
@@ -387,18 +408,18 @@ def generateConfiguration(querypath,answerpath,benchmarkconfig,benchmarkconfigtt
             continue
         file = open(querypath+f, "r")
         filecontent=file.read()
-        benchmarkjs[f]={"query":filecontent,"answers":[],"label":"","definition":"","uri":"","weight":""}
+        benchmarkjs[f]={"query":filecontent,"answers":{},"label":"","definition":"","uri":"","weight":""}
         if os.path.exists(answerpath+f.replace(".rq",".srx")):
             afile = open(answerpath+f.replace(".rq",".srx"), "r")
             afilecontent=afile.read()
             jsonres=convertXMLResultToJSONResult(afilecontent)
-            benchmarkjs[f]["answers"].append(jsonres)
+            benchmarkjs[f]["answers"][jsonres]=True
         for i in range(1,10):
             if os.path.exists(answerpath+f.replace(".rq","")+"-alternative-"+str(i)+".srx"):
                 afile = open(answerpath+f.replace(".rq","")+"-alternative-"+str(i)+".srx", "r")
                 afilecontent=afile.read()
                 jsonres=convertXMLResultToJSONResult(afilecontent)
-                benchmarkjs[f]["answers"].append(jsonres)
+                benchmarkjs[f]["answers"][jsonres]=True
                 break
         fileprefix=f[0:f.rfind("-")]
         if curreqcounter==0:

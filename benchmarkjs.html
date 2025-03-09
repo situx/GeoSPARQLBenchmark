@@ -233,8 +233,8 @@ function openDialogForQuery(queryid,showdialog=false){
 	}
 	if("answers" in benchmarkconfig[queryid]){
 		answers=""
-		for(ans of benchmarkconfig[queryid]["answers"]){
-			answers+=JSON.stringify(JSON.parse(ans),null,2)+"<br/>"
+		for(ans in benchmarkconfig[queryid]["answers"]){
+			answers+=JSON.stringify(JSON.parse(ans),null,2)+"\n"
 		}
 		document.getElementById("querydialogexpectedresult").innerHTML=answers.replaceAll("<","&lt;").replace(">","&gt;")
 	}else{
@@ -308,8 +308,7 @@ Select Benchmark Version:
 <select id="benchmarkversions" onchange="fillTableProc()">
 <option value="gsb_10_benchmarkconfig">GeoSPARQL 1.0 Compliance Benchmark</option>
 <option value="gsb_11_benchmarkconfig">GeoSPARQL 1.1 Compliance Benchmark</option>
-</select><br/>
-<button id="tutorialbutton" onclick="document.getElementById('tutorial').showModal()">Tutorial</button><br/>
+</select><button id="tutorialbutton" onclick="document.getElementById('tutorial').showModal()">Tutorial</button><br/>
 Endpoint URL: <input type="url" id="endpointurl" style="width:25%" value="https://api.triplydb.com/datasets/timohomburg/geosparqlbenchmark/sparql"/>
 <button id="testendpoint" onclick="testSPARQLEndpoint()">Test Endpoint</button><span id="endpointtestresult"></span><br/>
 Endpoint URL Reasoning: <input type="url" id="endpointurlres" style="width:25%" value="https://api.triplydb.com/datasets/timohomburg/geosparqlbenchmark/sparql"/>

@@ -1,8 +1,8 @@
 var gsb_10_benchmarkconfig={
   "query-r01.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"p\", \"o\"]}, \"results\": {\"bindings\": [{\"o\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#AExactGeom\"}, \"p\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#hasExactGeometry\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"p\", \"o\"]}, \"results\": {\"bindings\": [{\"o\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#AExactGeom\"}, \"p\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#hasExactGeometry\"}}]}}": true
+    },
     "definition": "Requirement 1: Implementations shall support the SPARQL Query Language for RDF [W3C SPARQL], the SPARQL Protocol for RDF [W3C SPARQL Protocol] and the SPARQL Query Results XML Format [W3C SPARQL Result Format] ",
     "label": "Requirement 1: SPARQL Protocol",
     "module": "CORE",
@@ -11,9 +11,9 @@ var gsb_10_benchmarkconfig={
     "weight": 0.03333333333333333
   },
   "query-r02.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"f\"]}, \"results\": {\"bindings\": [{\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#A\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#B\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#C\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#D\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#E\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#F\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#G\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#H\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#I\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#J\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#K\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#L\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#M\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"f\"]}, \"results\": {\"bindings\": [{\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#A\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#B\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#C\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#D\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#E\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#F\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#G\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#H\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#I\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#J\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#K\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#L\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#M\"}}]}}": true
+    },
     "definition": "Requirement 2: Implementations shall allow the RDFS class geo:SpatialObject to be used in SPARQL graph patterns.",
     "label": "Requirement 2: Spatial Object Class",
     "module": "CORE",
@@ -22,9 +22,9 @@ var gsb_10_benchmarkconfig={
     "weight": 0.03333333333333333
   },
   "query-r03.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"f\"]}, \"results\": {\"bindings\": [{\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#A\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#B\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#C\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#D\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#E\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#F\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#G\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#H\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#I\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#J\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#K\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#L\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"f\"]}, \"results\": {\"bindings\": [{\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#A\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#B\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#C\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#D\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#E\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#F\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#G\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#H\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#I\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#J\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#K\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#L\"}}]}}": true
+    },
     "definition": "Requirement 3: Implementations shall allow the RDFS class geo:Feature to be used in SPARQL graph patterns.",
     "label": "Requirement 3: Feature Class",
     "module": "CORE",
@@ -33,9 +33,9 @@ var gsb_10_benchmarkconfig={
     "weight": 0.03333333333333333
   },
   "query-r04-1.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"f\"]}, \"results\": {\"bindings\": [{\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#A\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"f\"]}, \"results\": {\"bindings\": [{\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#A\"}}]}}": true
+    },
     "definition": "Requirement 4 (Part 1): Implementations shall allow the property geo:sfEquals to be used in SPARQL graph patterns.",
     "label": "Requirement 4-1: Simple Feature Spatial Relations: geo:sfEquals",
     "module": "CORE",
@@ -44,9 +44,9 @@ var gsb_10_benchmarkconfig={
     "weight": 0.004166666666666667
   },
   "query-r04-2.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"f\"]}, \"results\": {\"bindings\": [{\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#C\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"f\"]}, \"results\": {\"bindings\": [{\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#C\"}}]}}": true
+    },
     "definition": "Requirement 4 (Part 2): Implementations shall allow the property geo:sfDisjoint to be used in SPARQL graph patterns.",
     "label": "Requirement 4-2: Simple Feature Spatial Relations: geo:sfDisjoint",
     "module": "CORE",
@@ -55,9 +55,9 @@ var gsb_10_benchmarkconfig={
     "weight": 0.004166666666666667
   },
   "query-r04-3.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"f\"]}, \"results\": {\"bindings\": [{\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#D\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"f\"]}, \"results\": {\"bindings\": [{\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#D\"}}]}}": true
+    },
     "definition": "Requirement 4 (Part 3): Implementations shall allow the property geo:sfIntersects to be used in SPARQL graph patterns.",
     "label": "Requirement 4-3: Simple Feature Spatial Relations: geo:sfIntersects",
     "module": "CORE",
@@ -66,9 +66,9 @@ var gsb_10_benchmarkconfig={
     "weight": 0.004166666666666667
   },
   "query-r04-4.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"f\"]}, \"results\": {\"bindings\": [{\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#C\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"f\"]}, \"results\": {\"bindings\": [{\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#C\"}}]}}": true
+    },
     "definition": "Requirement 4 (Part 4): Implementations shall allow the property geo:sfTouches to be used in SPARQL graph patterns.",
     "label": "Requirement 4-4: Simple Feature Spatial Relations: geo:sfTouches",
     "module": "CORE",
@@ -77,9 +77,9 @@ var gsb_10_benchmarkconfig={
     "weight": 0.004166666666666667
   },
   "query-r04-5.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"f\"]}, \"results\": {\"bindings\": [{\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#A\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"f\"]}, \"results\": {\"bindings\": [{\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#A\"}}]}}": true
+    },
     "definition": "Requirement 4 (Part 5): Implementations shall allow the property geo:sfCrosses to be used in SPARQL graph patterns.",
     "label": "Requirement 4-5: Simple Feature Spatial Relations: geo:sfCrosses",
     "module": "CORE",
@@ -88,9 +88,9 @@ var gsb_10_benchmarkconfig={
     "weight": 0.004166666666666667
   },
   "query-r04-6.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"f\"]}, \"results\": {\"bindings\": [{\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#A\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"f\"]}, \"results\": {\"bindings\": [{\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#A\"}}]}}": true
+    },
     "definition": "Requirement 4 (Part 6): Implementations shall allow the property geo:sfWithin to be used in SPARQL graph patterns.",
     "label": "Requirement 4-6: Simple Feature Spatial Relations: geo:sfWithin",
     "module": "CORE",
@@ -99,9 +99,9 @@ var gsb_10_benchmarkconfig={
     "weight": 0.004166666666666667
   },
   "query-r04-7.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"f\"]}, \"results\": {\"bindings\": [{\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#B\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"f\"]}, \"results\": {\"bindings\": [{\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#B\"}}]}}": true
+    },
     "definition": "Requirement 4 (Part 7): Implementations shall allow the property geo:sfContains to be used in SPARQL graph patterns.",
     "label": "Requirement 4-7: Simple Feature Spatial Relations: geo:sfContains",
     "module": "CORE",
@@ -110,9 +110,9 @@ var gsb_10_benchmarkconfig={
     "weight": 0.004166666666666667
   },
   "query-r04-8.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"f\"]}, \"results\": {\"bindings\": [{\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#D\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"f\"]}, \"results\": {\"bindings\": [{\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#D\"}}]}}": true
+    },
     "definition": "Requirement 4 (Part 8): Implementations shall allow the property geo:sfOverlaps to be used in SPARQL graph patterns.",
     "label": "Requirement 4-8: Simple Feature Spatial Relations: geo:sfOverlaps",
     "module": "CORE",
@@ -121,9 +121,9 @@ var gsb_10_benchmarkconfig={
     "weight": 0.004166666666666667
   },
   "query-r05-1.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"f\"]}, \"results\": {\"bindings\": [{\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#A\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"f\"]}, \"results\": {\"bindings\": [{\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#A\"}}]}}": true
+    },
     "definition": "Requirement 5 (Part 1): Implementations shall allow the property geo:ehEquals to be used in SPARQL graph patterns.",
     "label": "Requirement 5-1: Egenhofer Spatial Relations: geo:ehEquals",
     "module": "CORE",
@@ -132,9 +132,9 @@ var gsb_10_benchmarkconfig={
     "weight": 0.004166666666666667
   },
   "query-r05-2.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"f\"]}, \"results\": {\"bindings\": [{\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#C\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"f\"]}, \"results\": {\"bindings\": [{\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#C\"}}]}}": true
+    },
     "definition": "Requirement 5 (Part 2): Implementations shall allow the property geo:ehDisjoint to be used in SPARQL graph patterns.",
     "label": "Requirement 5-2: Egenhofer Spatial Relations: geo:ehDisjoint",
     "module": "CORE",
@@ -143,9 +143,9 @@ var gsb_10_benchmarkconfig={
     "weight": 0.004166666666666667
   },
   "query-r05-3.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"f\"]}, \"results\": {\"bindings\": [{\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#C\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"f\"]}, \"results\": {\"bindings\": [{\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#C\"}}]}}": true
+    },
     "definition": "Requirement 5 (Part 3): Implementations shall allow the property geo:ehMeet to be used in SPARQL graph patterns.",
     "label": "Requirement 5-3: Egenhofer Spatial Relations: geo:ehMeet",
     "module": "CORE",
@@ -154,9 +154,9 @@ var gsb_10_benchmarkconfig={
     "weight": 0.004166666666666667
   },
   "query-r05-4.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"f\"]}, \"results\": {\"bindings\": [{\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#D\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"f\"]}, \"results\": {\"bindings\": [{\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#D\"}}]}}": true
+    },
     "definition": "Requirement 5 (Part 4): Implementations shall allow the property geo:ehOverlap to be used in SPARQL graph patterns.",
     "label": "Requirement 5-4: Egenhofer Spatial Relations: geo:ehOverlap",
     "module": "CORE",
@@ -165,9 +165,9 @@ var gsb_10_benchmarkconfig={
     "weight": 0.004166666666666667
   },
   "query-r05-5.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"f\"]}, \"results\": {\"bindings\": [{\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#B\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"f\"]}, \"results\": {\"bindings\": [{\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#B\"}}]}}": true
+    },
     "definition": "Requirement 5 (Part 5): Implementations shall allow the property geo:ehCovers to be used in SPARQL graph patterns.",
     "label": "Requirement 5-5: Egenhofer Spatial Relations: geo:ehCovers",
     "module": "CORE",
@@ -176,9 +176,9 @@ var gsb_10_benchmarkconfig={
     "weight": 0.004166666666666667
   },
   "query-r05-6.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"f\"]}, \"results\": {\"bindings\": [{\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#A\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"f\"]}, \"results\": {\"bindings\": [{\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#A\"}}]}}": true
+    },
     "definition": "Requirement 5 (Part 6): Implementations shall allow the property geo:ehCoveredBy to be used in SPARQL graph patterns.",
     "label": "Requirement 5-6: Egenhofer Spatial Relations: geo:ehCoveredBy",
     "module": "CORE",
@@ -187,9 +187,9 @@ var gsb_10_benchmarkconfig={
     "weight": 0.004166666666666667
   },
   "query-r05-7.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"f\"]}, \"results\": {\"bindings\": [{\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#A\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"f\"]}, \"results\": {\"bindings\": [{\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#A\"}}]}}": true
+    },
     "definition": "Requirement 5 (Part 7): Implementations shall allow the property geo:ehInside to be used in SPARQL graph patterns.",
     "label": "Requirement 5-7: Egenhofer Spatial Relations: geo:ehInside",
     "module": "CORE",
@@ -198,9 +198,9 @@ var gsb_10_benchmarkconfig={
     "weight": 0.004166666666666667
   },
   "query-r05-8.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"f\"]}, \"results\": {\"bindings\": [{\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#B\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"f\"]}, \"results\": {\"bindings\": [{\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#B\"}}]}}": true
+    },
     "definition": "Requirement 5 (Part 8): Implementations shall allow the property geo:ehContains to be used in SPARQL graph patterns.",
     "label": "Requirement 5-8: Egenhofer Spatial Relations: geo:ehContains",
     "module": "CORE",
@@ -209,9 +209,9 @@ var gsb_10_benchmarkconfig={
     "weight": 0.004166666666666667
   },
   "query-r06-1.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"f\"]}, \"results\": {\"bindings\": [{\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#A\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"f\"]}, \"results\": {\"bindings\": [{\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#A\"}}]}}": true
+    },
     "definition": "Requirement 6 (Part 1): Implementations shall allow the property geo:rcc8eq to be used in SPARQL graph patterns.",
     "label": "Requirement 6-1: RCC8 Spatial Relations: geo:rcc8eq",
     "module": "CORE",
@@ -220,9 +220,9 @@ var gsb_10_benchmarkconfig={
     "weight": 0.004166666666666667
   },
   "query-r06-2.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"f\"]}, \"results\": {\"bindings\": [{\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#C\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"f\"]}, \"results\": {\"bindings\": [{\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#C\"}}]}}": true
+    },
     "definition": "Requirement 6 (Part 2): Implementations shall allow the property geo:rcc8dc to be used in SPARQL graph patterns.",
     "label": "Requirement 6-2: RCC8 Spatial Relations: geo:rcc8dc",
     "module": "CORE",
@@ -231,9 +231,9 @@ var gsb_10_benchmarkconfig={
     "weight": 0.004166666666666667
   },
   "query-r06-3.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"f\"]}, \"results\": {\"bindings\": [{\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#C\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"f\"]}, \"results\": {\"bindings\": [{\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#C\"}}]}}": true
+    },
     "definition": "Requirement 6 (Part 3): Implementations shall allow the property geo:rcc8ec to be used in SPARQL graph patterns.",
     "label": "Requirement 6-3: RCC8 Spatial Relations: geo:rcc8ec",
     "module": "CORE",
@@ -242,9 +242,9 @@ var gsb_10_benchmarkconfig={
     "weight": 0.004166666666666667
   },
   "query-r06-4.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"f\"]}, \"results\": {\"bindings\": [{\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#D\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"f\"]}, \"results\": {\"bindings\": [{\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#D\"}}]}}": true
+    },
     "definition": "Requirement 6 (Part 4): Implementations shall allow the property geo:rcc8po to be used in SPARQL graph patterns.",
     "label": "Requirement 6-4: RCC8 Spatial Relations: geo:rcc8po",
     "module": "CORE",
@@ -253,9 +253,9 @@ var gsb_10_benchmarkconfig={
     "weight": 0.004166666666666667
   },
   "query-r06-5.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"f\"]}, \"results\": {\"bindings\": [{\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#B\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"f\"]}, \"results\": {\"bindings\": [{\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#B\"}}]}}": true
+    },
     "definition": "Requirement 6 (Part 5): Implementations shall allow the property geo:rcc8tppi to be used in SPARQL graph patterns.",
     "label": "Requirement 6-5: RCC8 Spatial Relations: geo:rcc8tppi",
     "module": "CORE",
@@ -264,9 +264,9 @@ var gsb_10_benchmarkconfig={
     "weight": 0.004166666666666667
   },
   "query-r06-6.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"f\"]}, \"results\": {\"bindings\": [{\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#A\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"f\"]}, \"results\": {\"bindings\": [{\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#A\"}}]}}": true
+    },
     "definition": "Requirement 6 (Part 6): Implementations shall allow the property geo:rcc8tpp to be used in SPARQL graph patterns.",
     "label": "Requirement 6-6: RCC8 Spatial Relations: geo:rcc8tpp",
     "module": "CORE",
@@ -275,9 +275,9 @@ var gsb_10_benchmarkconfig={
     "weight": 0.004166666666666667
   },
   "query-r06-7.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"f\"]}, \"results\": {\"bindings\": [{\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#A\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"f\"]}, \"results\": {\"bindings\": [{\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#A\"}}]}}": true
+    },
     "definition": "Requirement 6 (Part 7): Implementations shall allow the property geo:rcc8ntpp to be used in SPARQL graph patterns.",
     "label": "Requirement 6-7: RCC8 Spatial Relations: geo:rcc8ntpp",
     "module": "CORE",
@@ -286,9 +286,9 @@ var gsb_10_benchmarkconfig={
     "weight": 0.004166666666666667
   },
   "query-r06-8.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"f\"]}, \"results\": {\"bindings\": [{\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#G\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"f\"]}, \"results\": {\"bindings\": [{\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#G\"}}]}}": true
+    },
     "definition": "Requirement 6 (Part 8): Implementations shall allow the property geo:rcc8ntppi to be used in SPARQL graph patterns.",
     "label": "Requirement 6-8: RCC8 Spatial Relations: geo:rcc8ntppi",
     "module": "CORE",
@@ -297,9 +297,9 @@ var gsb_10_benchmarkconfig={
     "weight": 0.004166666666666667
   },
   "query-r07.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"f\"]}, \"results\": {\"bindings\": [{\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#AExactGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#APointGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#BExactGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#BPointGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#CExactGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#CPointGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#DExactGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#DPointGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#EExactGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#FExactGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#GExactGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#GPointGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#HExactGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#HPointGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#IExactGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#IPointGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#JExactGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#KExactGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#LExactGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#MExactGeom\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"f\"]}, \"results\": {\"bindings\": [{\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#AExactGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#APointGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#BExactGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#BPointGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#CExactGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#CPointGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#DExactGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#DPointGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#EExactGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#FExactGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#GExactGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#GPointGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#HExactGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#HPointGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#IExactGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#IPointGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#JExactGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#KExactGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#LExactGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#MExactGeom\"}}]}}": true
+    },
     "definition": "Requirement 7: Implementations shall allow the RDFS class geo:Geometry to be used in SPARQL graph patterns.",
     "label": "Requirement 7: Geometry Class",
     "module": "CORE",
@@ -308,9 +308,9 @@ var gsb_10_benchmarkconfig={
     "weight": 0.03333333333333333
   },
   "query-r08-1.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"geom\"]}, \"results\": {\"bindings\": [{\"geom\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#AExactGeom\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"geom\"]}, \"results\": {\"bindings\": [{\"geom\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#AExactGeom\"}}]}}": true
+    },
     "definition": "Requirement 8 (Part 1): Implementations shall allow the property geo:hasGeometry to be used in SPARQL graph patterns.",
     "label": "Requirement 8-1: Feature Properties: geo:hasGeometry",
     "module": "TOP",
@@ -319,9 +319,9 @@ var gsb_10_benchmarkconfig={
     "weight": 0.016666666666666666
   },
   "query-r08-2.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"defaultGeom\"]}, \"results\": {\"bindings\": [{\"defaultGeom\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#AExactGeom\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"defaultGeom\"]}, \"results\": {\"bindings\": [{\"defaultGeom\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#AExactGeom\"}}]}}": true
+    },
     "definition": "Requirement 8 (Part 2): Implementations shall allow the property geo:hasDefaultGeometry to be used in SPARQL graph patterns.",
     "label": "Requirement 8-2: Feature Properties: geo:hasDefaultGeometry",
     "module": "TOP",
@@ -330,9 +330,9 @@ var gsb_10_benchmarkconfig={
     "weight": 0.016666666666666666
   },
   "query-r09-1.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"dimension\"]}, \"results\": {\"bindings\": [{\"dimension\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#integer\", \"type\": \"literal\", \"value\": \"2\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"dimension\"]}, \"results\": {\"bindings\": [{\"dimension\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#integer\", \"type\": \"literal\", \"value\": \"2\"}}]}}": true
+    },
     "definition": "Requirement 9 (Part 1): Implementations shall allow the property geo:dimension to be used in SPARQL graph patterns.",
     "label": "Requirement 9-1: Geometry Properties: geo:dimension",
     "module": "TOP",
@@ -341,9 +341,9 @@ var gsb_10_benchmarkconfig={
     "weight": 0.005555555555555556
   },
   "query-r09-2.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"coordinateDimension\"]}, \"results\": {\"bindings\": [{\"coordinateDimension\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#integer\", \"type\": \"literal\", \"value\": \"2\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"coordinateDimension\"]}, \"results\": {\"bindings\": [{\"coordinateDimension\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#integer\", \"type\": \"literal\", \"value\": \"2\"}}]}}": true
+    },
     "definition": "Requirement 9 (Part 2): Implementations shall allow the property geo:coordinateDimension to be used in SPARQL graph patterns.",
     "label": "Requirement 9-2: Geometry Properties: geo:coordinateDimension",
     "module": "TOP",
@@ -352,9 +352,9 @@ var gsb_10_benchmarkconfig={
     "weight": 0.005555555555555556
   },
   "query-r09-3.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"spatialDimension\"]}, \"results\": {\"bindings\": [{\"spatialDimension\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#integer\", \"type\": \"literal\", \"value\": \"2\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"spatialDimension\"]}, \"results\": {\"bindings\": [{\"spatialDimension\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#integer\", \"type\": \"literal\", \"value\": \"2\"}}]}}": true
+    },
     "definition": "Requirement 9 (Part 3): Implementations shall allow the property geo:spatialDimension to be used in SPARQL graph patterns.",
     "label": "Requirement 9-3: Geometry Properties: geo:spatialDimension",
     "module": "TOP",
@@ -363,10 +363,9 @@ var gsb_10_benchmarkconfig={
     "weight": 0.005555555555555556
   },
   "query-r09-4.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"isEmpty\"]}, \"results\": {\"bindings\": [{\"isEmpty\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"false\"}}]}}",
-      "{\"head\": {\"vars\": [\"isEmpty\"]}, \"results\": {\"bindings\": [{\"isEmpty\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"false\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"isEmpty\"]}, \"results\": {\"bindings\": [{\"isEmpty\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"false\"}}]}}": true
+    },
     "definition": "Requirement 9 (Part 4): Implementations shall allow the property geo:isEmpty to be used in SPARQL graph patterns.",
     "label": "Requirement 9-4: Geometry Properties: geo:isEmpty",
     "module": "TOP",
@@ -375,10 +374,9 @@ var gsb_10_benchmarkconfig={
     "weight": 0.005555555555555556
   },
   "query-r09-5.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"isSimple\"]}, \"results\": {\"bindings\": [{\"isSimple\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}",
-      "{\"head\": {\"vars\": [\"isSimple\"]}, \"results\": {\"bindings\": [{\"isSimple\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"isSimple\"]}, \"results\": {\"bindings\": [{\"isSimple\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 9 (Part 5): Implementations shall allow the property geo:isSimple to be used in SPARQL graph patterns.",
     "label": "Requirement 9-5: Geometry Properties: geo:isSimple",
     "module": "TOP",
@@ -387,10 +385,10 @@ var gsb_10_benchmarkconfig={
     "weight": 0.005555555555555556
   },
   "query-r09-6.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"hasSerialization\"]}, \"results\": {\"bindings\": [{\"hasSerialization\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#wktLiteral\", \"type\": \"literal\", \"value\": \"POLYGON((-83.6 34.1,-83.2 34.1,-83.2 34.5,-83.6 34.5,-83.6 34.1))\"}}]}}",
-      "{\"head\": {\"vars\": [\"hasSerialization\"]}, \"results\": {\"bindings\": [{\"hasSerialization\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#wktLiteral\", \"type\": \"literal\", \"value\": \"<http://www.opengis.net/def/crs/OGC/1.3/CRS84>POLYGON((-83.6 34.1,-83.2 34.1,-83.2 34.5,-83.6 34.5,-83.6 34.1))\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"hasSerialization\"]}, \"results\": {\"bindings\": [{\"hasSerialization\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#wktLiteral\", \"type\": \"literal\", \"value\": \"<http://www.opengis.net/def/crs/OGC/1.3/CRS84>POLYGON((-83.6 34.1,-83.2 34.1,-83.2 34.5,-83.6 34.5,-83.6 34.1))\"}}]}}": true,
+      "{\"head\": {\"vars\": [\"hasSerialization\"]}, \"results\": {\"bindings\": [{\"hasSerialization\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#wktLiteral\", \"type\": \"literal\", \"value\": \"POLYGON((-83.6 34.1,-83.2 34.1,-83.2 34.5,-83.6 34.5,-83.6 34.1))\"}}]}}": true
+    },
     "definition": "Requirement 9 (Part 6): Implementations shall allow the property geo:hasSerialization to be used in SPARQL graph patterns.",
     "label": "Requirement 9-6: Geometry Properties: geo:hasSerialization",
     "module": "TOP",
@@ -399,9 +397,9 @@ var gsb_10_benchmarkconfig={
     "weight": 0.005555555555555556
   },
   "query-r10.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"wkt\"]}, \"results\": {\"bindings\": [{\"wkt\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#wktLiteral\", \"type\": \"literal\", \"value\": \"<http://www.opengis.net/def/crs/OGC/1.3/CRS84> Polygon((-83.6 34.1, -83.2 34.1, -83.2 34.5, -83.6 34.5, -83.6 34.1))\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"wkt\"]}, \"results\": {\"bindings\": [{\"wkt\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#wktLiteral\", \"type\": \"literal\", \"value\": \"<http://www.opengis.net/def/crs/OGC/1.3/CRS84> Polygon((-83.6 34.1, -83.2 34.1, -83.2 34.5, -83.6 34.5, -83.6 34.1))\"}}]}}": true
+    },
     "definition": "Requirement 10: All RDFS Literals of type geo:wktLiteral shall consist of an optional URI identifying the coordinate reference system followed by Simple Features Well Known Text (WKT) describing a geometric value. Valid geo:wktLiterals are formed by concatenating a valid, absolute URI as defined in [RFC 2396], one or more spaces (Unicode U+0020 character) as a separator, and a WKT string as defined in Simple Features [ISO 19125-1].",
     "label": "Requirement 10: WKT Literal",
     "module": "TOP",
@@ -410,10 +408,9 @@ var gsb_10_benchmarkconfig={
     "weight": 0.03333333333333333
   },
   "query-r11.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"equals\"]}, \"results\": {\"bindings\": [{\"equals\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}",
-      "{\"head\": {\"vars\": [\"equals\"]}, \"results\": {\"bindings\": [{\"equals\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"equals\"]}, \"results\": {\"bindings\": [{\"equals\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 11: The URI <http://www.opengis.net/def/crs/OGC/1.3/CRS84> shall be assumed as the spatial reference system for geo:wktLiterals that do not specify an explicit spatial reference system URI.",
     "label": "Requirement 11: WKT Literal Default SRS",
     "module": "GEOEXT",
@@ -422,10 +419,9 @@ var gsb_10_benchmarkconfig={
     "weight": 0.03333333333333333
   },
   "query-r12.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"equals\"]}, \"results\": {\"bindings\": [{\"equals\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}",
-      "{\"head\": {\"vars\": [\"equals\"]}, \"results\": {\"bindings\": [{\"equals\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"equals\"]}, \"results\": {\"bindings\": [{\"equals\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 12: Coordinate tuples within geo:wktLiterals shall be interpreted using the axis order defined in the spatial reference system used.",
     "label": "Requirement 12: WKT Axis Order",
     "module": "GEOEXT",
@@ -434,10 +430,9 @@ var gsb_10_benchmarkconfig={
     "weight": 0.03333333333333333
   },
   "query-r13-1.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"equals\"]}, \"results\": {\"bindings\": [{\"equals\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}",
-      "{\"head\": {\"vars\": [\"equals\"]}, \"results\": {\"bindings\": [{\"equals\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"equals\"]}, \"results\": {\"bindings\": [{\"equals\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 13 (Part 1): An empty RDFS Literal of type geo:wktLiteral shall be interpreted as an empty geometry. Part 1 tests LineString geometries.",
     "label": "Requirement 13-1: Empty WKT Literal: LineString",
     "module": "GEOEXT",
@@ -446,10 +441,9 @@ var gsb_10_benchmarkconfig={
     "weight": 0.016666666666666666
   },
   "query-r13-2.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"equals\"]}, \"results\": {\"bindings\": [{\"equals\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}",
-      "{\"head\": {\"vars\": [\"equals\"]}, \"results\": {\"bindings\": [{\"equals\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"equals\"]}, \"results\": {\"bindings\": [{\"equals\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 13 (Part 2): An empty RDFS Literal of type geo:wktLiteral shall be interpreted as an empty geometry. Part 2 tests Point geometries.",
     "label": "Requirement 13-2: Empty WKT Literal: Point",
     "module": "GEOEXT",
@@ -458,9 +452,9 @@ var gsb_10_benchmarkconfig={
     "weight": 0.016666666666666666
   },
   "query-r14.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"wkt\"]}, \"results\": {\"bindings\": [{\"wkt\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#wktLiteral\", \"type\": \"literal\", \"value\": \"<http://www.opengis.net/def/crs/OGC/1.3/CRS84> Polygon((-83.6 34.1, -83.2 34.1, -83.2 34.5, -83.6 34.5, -83.6 34.1))\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"wkt\"]}, \"results\": {\"bindings\": [{\"wkt\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#wktLiteral\", \"type\": \"literal\", \"value\": \"<http://www.opengis.net/def/crs/OGC/1.3/CRS84> Polygon((-83.6 34.1, -83.2 34.1, -83.2 34.5, -83.6 34.5, -83.6 34.1))\"}}]}}": true
+    },
     "definition": "Requirement 14: Implementations shall allow the RDF property geo:asWKT to be used in SPARQL graph patterns.",
     "label": "Requirement 14: geo:asWKT Property",
     "module": "GEOEXT",
@@ -469,9 +463,9 @@ var gsb_10_benchmarkconfig={
     "weight": 0.03333333333333333
   },
   "query-r15.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"geom\"]}, \"results\": {\"bindings\": [{\"geom\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#AExactGeom\"}}, {\"geom\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#APointGeom\"}}, {\"geom\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#BExactGeom\"}}, {\"geom\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#BPointGeom\"}}, {\"geom\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#CExactGeom\"}}, {\"geom\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#CPointGeom\"}}, {\"geom\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#DExactGeom\"}}, {\"geom\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#DPointGeom\"}}, {\"geom\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#EExactGeom\"}}, {\"geom\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#FExactGeom\"}}, {\"geom\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#GExactGeom\"}}, {\"geom\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#GPointGeom\"}}, {\"geom\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#IExactGeom\"}}, {\"geom\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#IPointGeom\"}}, {\"geom\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#JExactGeom\"}}, {\"geom\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#KExactGeom\"}}, {\"geom\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#LExactGeom\"}}, {\"geom\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#MExactGeom\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"geom\"]}, \"results\": {\"bindings\": [{\"geom\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#AExactGeom\"}}, {\"geom\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#APointGeom\"}}, {\"geom\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#BExactGeom\"}}, {\"geom\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#BPointGeom\"}}, {\"geom\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#CExactGeom\"}}, {\"geom\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#CPointGeom\"}}, {\"geom\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#DExactGeom\"}}, {\"geom\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#DPointGeom\"}}, {\"geom\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#EExactGeom\"}}, {\"geom\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#FExactGeom\"}}, {\"geom\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#GExactGeom\"}}, {\"geom\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#GPointGeom\"}}, {\"geom\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#IExactGeom\"}}, {\"geom\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#IPointGeom\"}}, {\"geom\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#JExactGeom\"}}, {\"geom\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#KExactGeom\"}}, {\"geom\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#LExactGeom\"}}, {\"geom\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#MExactGeom\"}}]}}": true
+    },
     "definition": "Requirement 15: All geo:gmlLiterals shall consist of a valid element from the GML schema that implements a subtype of GM_Object as defined in [OGC 07-036].",
     "label": "Requirement 15: GML Literal",
     "module": "GEOEXT",
@@ -480,10 +474,9 @@ var gsb_10_benchmarkconfig={
     "weight": 0.03333333333333333
   },
   "query-r16-1.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"equals\"]}, \"results\": {\"bindings\": [{\"equals\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}",
-      "{\"head\": {\"vars\": [\"equals\"]}, \"results\": {\"bindings\": [{\"equals\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"equals\"]}, \"results\": {\"bindings\": [{\"equals\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 16 (Part 1): An empty geo:gmlLiteral shall be interpreted as an empty geometry. Part 1 tests LineString geometries.",
     "label": "Requirement 16-1: Empty GML Literal: LineString",
     "module": "GEOEXT",
@@ -492,10 +485,9 @@ var gsb_10_benchmarkconfig={
     "weight": 0.016666666666666666
   },
   "query-r16-2.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"equals\"]}, \"results\": {\"bindings\": [{\"equals\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}",
-      "{\"head\": {\"vars\": [\"equals\"]}, \"results\": {\"bindings\": [{\"equals\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"equals\"]}, \"results\": {\"bindings\": [{\"equals\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 16 (Part 2): An empty geo:gmlLiteral shall be interpreted as an empty geometry. Part 2 tests Point geometries.",
     "label": "Requirement 16-2: Empty GML Literal: Point",
     "module": "GEOEXT",
@@ -504,10 +496,10 @@ var gsb_10_benchmarkconfig={
     "weight": 0.016666666666666666
   },
   "query-r18.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"gml\"]}, \"results\": {\"bindings\": [{\"gml\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#gmlLiteral\", \"type\": \"literal\", \"value\": \"<gml:Polygon xmlns:gml=\\\"http://www.opengis.net/ont/gml\\\" srsName=\\\"http://www.opengis.net/def/crs/OGC/1.3/CRS84\\\"><gml:exterior><gml:LinearRing><gml:posList>-83.6 34.1 -83.2 34.1 -83.2 34.5 -83.6 34.5 -83.6 34.1</gml:posList></gml:LinearRing></gml:exterior></gml:Polygon>\"}}]}}",
-      "{\"head\": {\"vars\": [\"symDifference\"]}, \"results\": {\"bindings\": [{\"symDifference\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#wktLiteral\", \"type\": \"literal\", \"value\": \"<http://www.opengis.net/def/crs/OGC/1.3/CRS84>MULTIPOLYGON(((-83.3 34.1,-83.6 34.1,-83.6 34.5,-83.2 34.5,-83.2 34.2,-83.3 34.2,-83.3 34.1)),((-83.3 34.1,-83.2 34.1,-83.2 34.2,-83.1 34.2,-83.1 34,-83.3 34,-83.3 34.1)))\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"gml\"]}, \"results\": {\"bindings\": [{\"gml\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#gmlLiteral\", \"type\": \"literal\", \"value\": \"<gml:Polygon xmlns:gml=\\\"http://www.opengis.net/ont/gml\\\" srsName=\\\"http://www.opengis.net/def/crs/OGC/1.3/CRS84\\\"><gml:exterior><gml:LinearRing><gml:posList>-83.6 34.1 -83.2 34.1 -83.2 34.5 -83.6 34.5 -83.6 34.1</gml:posList></gml:LinearRing></gml:exterior></gml:Polygon>\"}}]}}": true,
+      "{\"head\": {\"vars\": [\"symDifference\"]}, \"results\": {\"bindings\": [{\"symDifference\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#wktLiteral\", \"type\": \"literal\", \"value\": \"<http://www.opengis.net/def/crs/OGC/1.3/CRS84>MULTIPOLYGON(((-83.3 34.1,-83.6 34.1,-83.6 34.5,-83.2 34.5,-83.2 34.2,-83.3 34.2,-83.3 34.1)),((-83.3 34.1,-83.2 34.1,-83.2 34.2,-83.1 34.2,-83.1 34,-83.3 34,-83.3 34.1)))\"}}]}}": true
+    },
     "definition": "Requirement 18: Implementations shall allow the RDF property geo:asGML to be used in SPARQL graph patterns.",
     "label": "Requirement 18: geo:asGML Property",
     "module": "GEOEXT",
@@ -516,9 +508,9 @@ var gsb_10_benchmarkconfig={
     "weight": 0.03333333333333333
   },
   "query-r19-1-1.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"f\", \"distance\"]}, \"results\": {\"bindings\": [{\"distance\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#double\", \"type\": \"literal\", \"value\": \"0.0\"}, \"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#A\"}}, {\"distance\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#double\", \"type\": \"literal\", \"value\": \"9387.01\"}, \"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#G\"}}, {\"distance\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#double\", \"type\": \"literal\", \"value\": \"10194.1\"}, \"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#E\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"f\", \"distance\"]}, \"results\": {\"bindings\": [{\"distance\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#double\", \"type\": \"literal\", \"value\": \"0.0\"}, \"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#A\"}}, {\"distance\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#double\", \"type\": \"literal\", \"value\": \"9387.01\"}, \"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#G\"}}, {\"distance\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#double\", \"type\": \"literal\", \"value\": \"10194.1\"}, \"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#E\"}}]}}": true
+    },
     "definition": "Requirement 19 (Part 1) (WKT-WKT): Implementations shall support geof:distance as a SPARQL extension function, consistent with the definition of the corresponding function distance in Simple Features [ISO 19125-1].",
     "label": "Requirement 19-1-1 (WKT-WKT): Non-topological Query Functions: geof:distance",
     "module": "GEOEXT",
@@ -527,9 +519,9 @@ var gsb_10_benchmarkconfig={
     "weight": 0.0012345679012345679
   },
   "query-r19-1-2.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"f\", \"distance\"]}, \"results\": {\"bindings\": [{\"distance\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#double\", \"type\": \"literal\", \"value\": \"0.0\"}, \"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#A\"}}, {\"distance\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#double\", \"type\": \"literal\", \"value\": \"9387.01\"}, \"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#G\"}}, {\"distance\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#double\", \"type\": \"literal\", \"value\": \"10194.1\"}, \"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#E\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"f\", \"distance\"]}, \"results\": {\"bindings\": [{\"distance\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#double\", \"type\": \"literal\", \"value\": \"0.0\"}, \"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#A\"}}, {\"distance\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#double\", \"type\": \"literal\", \"value\": \"9387.01\"}, \"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#G\"}}, {\"distance\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#double\", \"type\": \"literal\", \"value\": \"10194.1\"}, \"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#E\"}}]}}": true
+    },
     "definition": "Requirement 19 (Part 1) (GML-GML): Implementations shall support geof:distance as a SPARQL extension function, consistent with the definition of the corresponding function distance in Simple Features [ISO 19125-1].",
     "label": "Requirement 19-1-2 (GML-GML): Non-topological Query Functions: geof:distance",
     "module": "GEOEXT",
@@ -538,9 +530,9 @@ var gsb_10_benchmarkconfig={
     "weight": 0.0012345679012345679
   },
   "query-r19-1-3.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"f\", \"distance\"]}, \"results\": {\"bindings\": [{\"distance\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#double\", \"type\": \"literal\", \"value\": \"0.0\"}, \"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#A\"}}, {\"distance\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#double\", \"type\": \"literal\", \"value\": \"9387.01\"}, \"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#G\"}}, {\"distance\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#double\", \"type\": \"literal\", \"value\": \"10194.1\"}, \"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#E\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"f\", \"distance\"]}, \"results\": {\"bindings\": [{\"distance\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#double\", \"type\": \"literal\", \"value\": \"0.0\"}, \"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#A\"}}, {\"distance\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#double\", \"type\": \"literal\", \"value\": \"9387.01\"}, \"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#G\"}}, {\"distance\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#double\", \"type\": \"literal\", \"value\": \"10194.1\"}, \"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#E\"}}]}}": true
+    },
     "definition": "Requirement 19 (Part 1) (WKT-GML): Implementations shall support geof:distance as a SPARQL extension function, consistent with the definition of the corresponding function distance in Simple Features [ISO 19125-1].",
     "label": "Requirement 19-1-3 (WKT-GML): Non-topological Query Functions: geof:distance",
     "module": "GEOEXT",
@@ -549,9 +541,9 @@ var gsb_10_benchmarkconfig={
     "weight": 0.0006172839506172839
   },
   "query-r19-1-4.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"f\", \"distance\"]}, \"results\": {\"bindings\": [{\"distance\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#double\", \"type\": \"literal\", \"value\": \"0.0\"}, \"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#A\"}}, {\"distance\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#double\", \"type\": \"literal\", \"value\": \"9387.01\"}, \"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#G\"}}, {\"distance\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#double\", \"type\": \"literal\", \"value\": \"10194.1\"}, \"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#E\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"f\", \"distance\"]}, \"results\": {\"bindings\": [{\"distance\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#double\", \"type\": \"literal\", \"value\": \"0.0\"}, \"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#A\"}}, {\"distance\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#double\", \"type\": \"literal\", \"value\": \"9387.01\"}, \"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#G\"}}, {\"distance\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#double\", \"type\": \"literal\", \"value\": \"10194.1\"}, \"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#E\"}}]}}": true
+    },
     "definition": "Requirement 19 (Part 1) (GML-WKT): Implementations shall support geof:distance as a SPARQL extension function, consistent with the definition of the corresponding function distance in Simple Features [ISO 19125-1].",
     "label": "Requirement 19-1-4 (GML-WKT): Non-topological Query Functions: geof:distance",
     "module": "GEOEXT",
@@ -560,10 +552,10 @@ var gsb_10_benchmarkconfig={
     "weight": 0.0006172839506172839
   },
   "query-r19-2-1.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"buffer\"]}, \"results\": {\"bindings\": [{\"buffer\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#wktLiteral\", \"type\": \"literal\", \"value\": \"POLYGON((-93.6 34.1,-93.6 34.5,-93.407852804032 36.450903220161,-92.838795325113 38.326834323651,-91.914696123025 40.055702330196,-90.671067811865 41.571067811865,-89.155702330196 42.814696123025,-87.426834323651 43.738795325113,-85.550903220161 44.307852804032,-83.6 44.5,-83.2 44.5,-81.249096779839 44.307852804032,-79.373165676349 43.738795325113,-77.644297669804 42.814696123025,-76.128932188135 41.571067811865,-74.885303876975 40.055702330196,-73.961204674887 38.326834323651,-73.392147195968 36.450903220161,-73.2 34.5,-73.2 34.1,-73.392147195968 32.149096779839,-73.961204674887 30.273165676349,-74.885303876975 28.544297669804,-76.128932188135 27.028932188135,-77.644297669804 25.785303876975,-79.373165676349 24.861204674887,-81.249096779839 24.292147195968,-83.2 24.1,-83.6 24.1,-85.550903220161 24.292147195968,-87.426834323651 24.861204674887,-89.155702330196 25.785303876975,-90.671067811865 27.028932188135,-91.914696123025 28.544297669804,-92.838795325113 30.273165676349,-93.407852804032 32.149096779839,-93.6 34.1))\"}}]}}",
-      "{\"head\": {\"vars\": [\"buffer\"]}, \"results\": {\"bindings\": [{\"buffer\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#wktLiteral\", \"type\": \"literal\", \"value\": \"<http://www.opengis.net/def/crs/OGC/1.3/CRS84>POLYGON((-93.6 34.1,-93.6 34.5,-93.407852804032 36.450903220161,-92.838795325113 38.326834323651,-91.914696123025 40.055702330196,-90.671067811865 41.571067811865,-89.155702330196 42.814696123025,-87.426834323651 43.738795325113,-85.550903220161 44.307852804032,-83.6 44.5,-83.2 44.5,-81.249096779839 44.307852804032,-79.373165676349 43.738795325113,-77.644297669804 42.814696123025,-76.128932188135 41.571067811865,-74.885303876975 40.055702330196,-73.961204674887 38.326834323651,-73.392147195968 36.450903220161,-73.2 34.5,-73.2 34.1,-73.392147195968 32.149096779839,-73.961204674887 30.273165676349,-74.885303876975 28.544297669804,-76.128932188135 27.028932188135,-77.644297669804 25.785303876975,-79.373165676349 24.861204674887,-81.249096779839 24.292147195968,-83.2 24.1,-83.6 24.1,-85.550903220161 24.292147195968,-87.426834323651 24.861204674887,-89.155702330196 25.785303876975,-90.671067811865 27.028932188135,-91.914696123025 28.544297669804,-92.838795325113 30.273165676349,-93.407852804032 32.149096779839,-93.6 34.1))\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"buffer\"]}, \"results\": {\"bindings\": [{\"buffer\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#wktLiteral\", \"type\": \"literal\", \"value\": \"<http://www.opengis.net/def/crs/OGC/1.3/CRS84>POLYGON((-93.6 34.1,-93.6 34.5,-93.407852804032 36.450903220161,-92.838795325113 38.326834323651,-91.914696123025 40.055702330196,-90.671067811865 41.571067811865,-89.155702330196 42.814696123025,-87.426834323651 43.738795325113,-85.550903220161 44.307852804032,-83.6 44.5,-83.2 44.5,-81.249096779839 44.307852804032,-79.373165676349 43.738795325113,-77.644297669804 42.814696123025,-76.128932188135 41.571067811865,-74.885303876975 40.055702330196,-73.961204674887 38.326834323651,-73.392147195968 36.450903220161,-73.2 34.5,-73.2 34.1,-73.392147195968 32.149096779839,-73.961204674887 30.273165676349,-74.885303876975 28.544297669804,-76.128932188135 27.028932188135,-77.644297669804 25.785303876975,-79.373165676349 24.861204674887,-81.249096779839 24.292147195968,-83.2 24.1,-83.6 24.1,-85.550903220161 24.292147195968,-87.426834323651 24.861204674887,-89.155702330196 25.785303876975,-90.671067811865 27.028932188135,-91.914696123025 28.544297669804,-92.838795325113 30.273165676349,-93.407852804032 32.149096779839,-93.6 34.1))\"}}]}}": true,
+      "{\"head\": {\"vars\": [\"buffer\"]}, \"results\": {\"bindings\": [{\"buffer\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#wktLiteral\", \"type\": \"literal\", \"value\": \"POLYGON((-93.6 34.1,-93.6 34.5,-93.407852804032 36.450903220161,-92.838795325113 38.326834323651,-91.914696123025 40.055702330196,-90.671067811865 41.571067811865,-89.155702330196 42.814696123025,-87.426834323651 43.738795325113,-85.550903220161 44.307852804032,-83.6 44.5,-83.2 44.5,-81.249096779839 44.307852804032,-79.373165676349 43.738795325113,-77.644297669804 42.814696123025,-76.128932188135 41.571067811865,-74.885303876975 40.055702330196,-73.961204674887 38.326834323651,-73.392147195968 36.450903220161,-73.2 34.5,-73.2 34.1,-73.392147195968 32.149096779839,-73.961204674887 30.273165676349,-74.885303876975 28.544297669804,-76.128932188135 27.028932188135,-77.644297669804 25.785303876975,-79.373165676349 24.861204674887,-81.249096779839 24.292147195968,-83.2 24.1,-83.6 24.1,-85.550903220161 24.292147195968,-87.426834323651 24.861204674887,-89.155702330196 25.785303876975,-90.671067811865 27.028932188135,-91.914696123025 28.544297669804,-92.838795325113 30.273165676349,-93.407852804032 32.149096779839,-93.6 34.1))\"}}]}}": true
+    },
     "definition": "Requirement 19 (Part 2) (WKT): Implementations shall support geof:buffer as a SPARQL extension function, consistent with the definition of the corresponding function distance in Simple Features [ISO 19125-1].",
     "label": "Requirement 19-2-1 (WKT): Non-topological Query Functions: geof:buffer",
     "module": "GEOEXT",
@@ -572,10 +564,10 @@ var gsb_10_benchmarkconfig={
     "weight": 0.001851851851851852
   },
   "query-r19-2-2.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"buffer\"]}, \"results\": {\"bindings\": [{\"buffer\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#gmlLiteral\", \"type\": \"literal\", \"value\": \"<gml:Polygon xmlns:gml=\\\"http://www.opengis.net/ont/gml\\\" srsName=\\\"http://www.opengis.net/def/crs/OGC/1.3/CRS84\\\"><gml:exterior><gml:LinearRing><gml:posList>-93.6 34.1 -93.6 34.5 -93.407852804032 36.450903220161 -92.838795325113 38.326834323651 -91.914696123025 40.055702330196 -90.671067811865 41.571067811865 -89.155702330196 42.814696123025 -87.426834323651 43.738795325113 -85.550903220161 44.307852804032 -83.6 44.5 -83.2 44.5 -81.249096779839 44.307852804032 -79.373165676349 43.738795325113 -77.644297669804 42.814696123025 -76.128932188135 41.571067811865 -74.885303876975 40.055702330196 -73.961204674887 38.326834323651 -73.392147195968 36.450903220161 -73.2 34.5 -73.2 34.1 -73.392147195968 32.149096779839 -73.961204674887 30.273165676349 -74.885303876975 28.544297669804 -76.128932188135 27.028932188135 -77.644297669804 25.785303876975 -79.373165676349 24.861204674887 -81.249096779839 24.292147195968 -83.2 24.1 -83.6 24.1 -85.550903220161 24.292147195968 -87.426834323651 24.861204674887 -89.155702330196 25.785303876975 -90.671067811865 27.028932188135 -91.914696123025 28.544297669804 -92.838795325113 30.273165676349 -93.407852804032 32.149096779839 -93.6 34.1</gml:posList></gml:LinearRing></gml:exterior></gml:Polygon>\"}}]}}",
-      "{\"head\": {\"vars\": [\"buffer\"]}, \"results\": {\"bindings\": [{\"buffer\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#gmlLiteral\", \"type\": \"literal\", \"value\": \"<gml:Polygon srsName=\\\"http://www.opengis.net/def/crs/OGC/1.3/CRS84\\\" xmlns:gml=\\\"http://www.opengis.net/ont/gml\\\"><gml:outerBoundaryIs><gml:LinearRing><gml:coordinates>-93.6,34.1 -93.6,34.5 -93.407852804032,36.450903220161 -92.838795325113,38.326834323651 -91.914696123025,40.055702330196 -90.671067811865,41.571067811865 -89.155702330196,42.814696123025 -87.426834323651,43.738795325113 -85.550903220161,44.307852804032 -83.6,44.5 -83.2,44.5 -81.249096779839,44.307852804032 -79.373165676349,43.738795325113 -77.644297669804,42.814696123025 -76.128932188135,41.571067811865 -74.885303876975,40.055702330196 -73.961204674887,38.326834323651 -73.392147195968,36.450903220161 -73.2,34.5 -73.2,34.1 -73.392147195968,32.149096779839 -73.961204674887,30.273165676349 -74.885303876975,28.544297669804 -76.128932188135,27.028932188135 -77.644297669804,25.785303876975 -79.373165676349,24.861204674887 -81.249096779839,24.292147195968 -83.2,24.1 -83.6,24.1 -85.550903220161,24.292147195968 -87.426834323651,24.861204674887 -89.155702330196,25.785303876975 -90.671067811865,27.028932188135 -91.914696123025,28.544297669804 -92.838795325113,30.273165676349 -93.407852804032,32.149096779839 -93.6,34.1</gml:coordinates></gml:LinearRing></gml:outerBoundaryIs></gml:Polygon>\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"buffer\"]}, \"results\": {\"bindings\": [{\"buffer\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#gmlLiteral\", \"type\": \"literal\", \"value\": \"<gml:Polygon srsName=\\\"http://www.opengis.net/def/crs/OGC/1.3/CRS84\\\" xmlns:gml=\\\"http://www.opengis.net/ont/gml\\\"><gml:outerBoundaryIs><gml:LinearRing><gml:coordinates>-93.6,34.1 -93.6,34.5 -93.407852804032,36.450903220161 -92.838795325113,38.326834323651 -91.914696123025,40.055702330196 -90.671067811865,41.571067811865 -89.155702330196,42.814696123025 -87.426834323651,43.738795325113 -85.550903220161,44.307852804032 -83.6,44.5 -83.2,44.5 -81.249096779839,44.307852804032 -79.373165676349,43.738795325113 -77.644297669804,42.814696123025 -76.128932188135,41.571067811865 -74.885303876975,40.055702330196 -73.961204674887,38.326834323651 -73.392147195968,36.450903220161 -73.2,34.5 -73.2,34.1 -73.392147195968,32.149096779839 -73.961204674887,30.273165676349 -74.885303876975,28.544297669804 -76.128932188135,27.028932188135 -77.644297669804,25.785303876975 -79.373165676349,24.861204674887 -81.249096779839,24.292147195968 -83.2,24.1 -83.6,24.1 -85.550903220161,24.292147195968 -87.426834323651,24.861204674887 -89.155702330196,25.785303876975 -90.671067811865,27.028932188135 -91.914696123025,28.544297669804 -92.838795325113,30.273165676349 -93.407852804032,32.149096779839 -93.6,34.1</gml:coordinates></gml:LinearRing></gml:outerBoundaryIs></gml:Polygon>\"}}]}}": true,
+      "{\"head\": {\"vars\": [\"buffer\"]}, \"results\": {\"bindings\": [{\"buffer\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#gmlLiteral\", \"type\": \"literal\", \"value\": \"<gml:Polygon xmlns:gml=\\\"http://www.opengis.net/ont/gml\\\" srsName=\\\"http://www.opengis.net/def/crs/OGC/1.3/CRS84\\\"><gml:exterior><gml:LinearRing><gml:posList>-93.6 34.1 -93.6 34.5 -93.407852804032 36.450903220161 -92.838795325113 38.326834323651 -91.914696123025 40.055702330196 -90.671067811865 41.571067811865 -89.155702330196 42.814696123025 -87.426834323651 43.738795325113 -85.550903220161 44.307852804032 -83.6 44.5 -83.2 44.5 -81.249096779839 44.307852804032 -79.373165676349 43.738795325113 -77.644297669804 42.814696123025 -76.128932188135 41.571067811865 -74.885303876975 40.055702330196 -73.961204674887 38.326834323651 -73.392147195968 36.450903220161 -73.2 34.5 -73.2 34.1 -73.392147195968 32.149096779839 -73.961204674887 30.273165676349 -74.885303876975 28.544297669804 -76.128932188135 27.028932188135 -77.644297669804 25.785303876975 -79.373165676349 24.861204674887 -81.249096779839 24.292147195968 -83.2 24.1 -83.6 24.1 -85.550903220161 24.292147195968 -87.426834323651 24.861204674887 -89.155702330196 25.785303876975 -90.671067811865 27.028932188135 -91.914696123025 28.544297669804 -92.838795325113 30.273165676349 -93.407852804032 32.149096779839 -93.6 34.1</gml:posList></gml:LinearRing></gml:exterior></gml:Polygon>\"}}]}}": true
+    },
     "definition": "Requirement 19 (Part 2) (GML): Implementations shall support geof:buffer as a SPARQL extension function, consistent with the definition of the corresponding function distance in Simple Features [ISO 19125-1].",
     "label": "Requirement 19-2-2 (GML): Non-topological Query Functions: geof:buffer",
     "module": "GEOEXT",
@@ -584,10 +576,10 @@ var gsb_10_benchmarkconfig={
     "weight": 0.001851851851851852
   },
   "query-r19-3-1.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"convexHull\"]}, \"results\": {\"bindings\": [{\"convexHull\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#wktLiteral\", \"type\": \"literal\", \"value\": \"POLYGON((-83.6 34.1,-83.6 34.5,-83.2 34.5,-83.2 34.1,-83.6 34.1))\"}}]}}",
-      "{\"head\": {\"vars\": [\"convexHull\"]}, \"results\": {\"bindings\": [{\"convexHull\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#wktLiteral\", \"type\": \"literal\", \"value\": \"<http://www.opengis.net/def/crs/OGC/1.3/CRS84>POLYGON((-83.6 34.1,-83.6 34.5,-83.2 34.5,-83.2 34.1,-83.6 34.1))\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"convexHull\"]}, \"results\": {\"bindings\": [{\"convexHull\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#wktLiteral\", \"type\": \"literal\", \"value\": \"<http://www.opengis.net/def/crs/OGC/1.3/CRS84>POLYGON((-83.6 34.1,-83.6 34.5,-83.2 34.5,-83.2 34.1,-83.6 34.1))\"}}]}}": true,
+      "{\"head\": {\"vars\": [\"convexHull\"]}, \"results\": {\"bindings\": [{\"convexHull\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#wktLiteral\", \"type\": \"literal\", \"value\": \"POLYGON((-83.6 34.1,-83.6 34.5,-83.2 34.5,-83.2 34.1,-83.6 34.1))\"}}]}}": true
+    },
     "definition": "Requirement 19 (Part 3) (WKT): Implementations shall support geof:convexHull as a SPARQL extension function, consistent with the definition of the corresponding function distance in Simple Features [ISO 19125-1].",
     "label": "Requirement 19-3-1 (WKT): Non-topological Query Functions: geof:convexHull",
     "module": "GEOEXT",
@@ -596,10 +588,10 @@ var gsb_10_benchmarkconfig={
     "weight": 0.001851851851851852
   },
   "query-r19-3-2.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"convexHull\"]}, \"results\": {\"bindings\": [{\"convexHull\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#gmlLiteral\", \"type\": \"literal\", \"value\": \"<gml:Polygon xmlns:gml=\\\"http://www.opengis.net/ont/gml\\\" srsName=\\\"http://www.opengis.net/def/crs/OGC/1.3/CRS84\\\"><gml:exterior><gml:LinearRing><gml:posList>-83.6 34.1 -83.6 34.5 -83.2 34.5 -83.2 34.1 -83.6 34.1</gml:posList></gml:LinearRing></gml:exterior></gml:Polygon>\"}}]}}",
-      "{\"head\": {\"vars\": [\"convexHull\"]}, \"results\": {\"bindings\": [{\"convexHull\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#gmlLiteral\", \"type\": \"literal\", \"value\": \"<gml:Polygon xmlns:gml=\\\"http://www.opengis.net/ont/gml\\\" srsName=\\\"http://www.opengis.net/def/crs/OGC/1.3/CRS84\\\"><gml:outerBoundaryIs><gml:LinearRing><gml:coordinates>-83.4,34.1 -83.6,34.1 -83.6,34.3 -83.4,34.3 -83.4,34.1</gml:coordinates></gml:LinearRing></gml:outerBoundaryIs></gml:Polygon>\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"convexHull\"]}, \"results\": {\"bindings\": [{\"convexHull\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#gmlLiteral\", \"type\": \"literal\", \"value\": \"<gml:Polygon xmlns:gml=\\\"http://www.opengis.net/ont/gml\\\" srsName=\\\"http://www.opengis.net/def/crs/OGC/1.3/CRS84\\\"><gml:exterior><gml:LinearRing><gml:posList>-83.6 34.1 -83.6 34.5 -83.2 34.5 -83.2 34.1 -83.6 34.1</gml:posList></gml:LinearRing></gml:exterior></gml:Polygon>\"}}]}}": true,
+      "{\"head\": {\"vars\": [\"convexHull\"]}, \"results\": {\"bindings\": [{\"convexHull\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#gmlLiteral\", \"type\": \"literal\", \"value\": \"<gml:Polygon xmlns:gml=\\\"http://www.opengis.net/ont/gml\\\" srsName=\\\"http://www.opengis.net/def/crs/OGC/1.3/CRS84\\\"><gml:outerBoundaryIs><gml:LinearRing><gml:coordinates>-83.4,34.1 -83.6,34.1 -83.6,34.3 -83.4,34.3 -83.4,34.1</gml:coordinates></gml:LinearRing></gml:outerBoundaryIs></gml:Polygon>\"}}]}}": true
+    },
     "definition": "Requirement 19 (Part 3) (GML): Implementations shall support geof:convexHull as a SPARQL extension function, consistent with the definition of the corresponding function distance in Simple Features [ISO 19125-1].",
     "label": "Requirement 19-3-2 (GML): Non-topological Query Functions: geof:convexHull",
     "module": "GEOEXT",
@@ -608,10 +600,10 @@ var gsb_10_benchmarkconfig={
     "weight": 0.001851851851851852
   },
   "query-r19-4-1.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"intersection\"]}, \"results\": {\"bindings\": [{\"intersection\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#wktLiteral\", \"type\": \"literal\", \"value\": \"POLYGON((-83.4 34.1,-83.6 34.1,-83.6 34.3,-83.4 34.3,-83.4 34.1))\"}}]}}",
-      "{\"head\": {\"vars\": [\"intersection\"]}, \"results\": {\"bindings\": [{\"intersection\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#wktLiteral\", \"type\": \"literal\", \"value\": \"<http://www.opengis.net/def/crs/OGC/1.3/CRS84>POLYGON((-83.4 34.1,-83.6 34.1,-83.6 34.3,-83.4 34.3,-83.4 34.1))\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"intersection\"]}, \"results\": {\"bindings\": [{\"intersection\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#wktLiteral\", \"type\": \"literal\", \"value\": \"<http://www.opengis.net/def/crs/OGC/1.3/CRS84>POLYGON((-83.4 34.1,-83.6 34.1,-83.6 34.3,-83.4 34.3,-83.4 34.1))\"}}]}}": true,
+      "{\"head\": {\"vars\": [\"intersection\"]}, \"results\": {\"bindings\": [{\"intersection\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#wktLiteral\", \"type\": \"literal\", \"value\": \"POLYGON((-83.4 34.1,-83.6 34.1,-83.6 34.3,-83.4 34.3,-83.4 34.1))\"}}]}}": true
+    },
     "definition": "Requirement 19 (Part 4) (WKT-WKT): Implementations shall support geof:intersection as a SPARQL extension function, consistent with the definition of the corresponding function distance in Simple Features [ISO 19125-1].",
     "label": "Requirement 19-4-1 (WKT-WKT): Non-topological Query Functions: geof:intersection",
     "module": "GEOEXT",
@@ -620,10 +612,10 @@ var gsb_10_benchmarkconfig={
     "weight": 0.0012345679012345679
   },
   "query-r19-4-2.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"intersection\"]}, \"results\": {\"bindings\": [{\"intersection\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#gmlLiteral\", \"type\": \"literal\", \"value\": \"<gml:Polygon xmlns:gml=\\\"http://www.opengis.net/ont/gml\\\" srsName=\\\"http://www.opengis.net/def/crs/OGC/1.3/CRS84\\\"><gml:exterior><gml:LinearRing><gml:posList>-83.4 34.1 -83.6 34.1 -83.6 34.3 -83.4 34.3 -83.4 34.1</gml:posList></gml:LinearRing></gml:exterior></gml:Polygon>\"}}]}}",
-      "{\"head\": {\"vars\": [\"intersection\"]}, \"results\": {\"bindings\": [{\"intersection\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#gmlLiteral\", \"type\": \"literal\", \"value\": \"<gml:Polygon xmlns:gml=\\\"http://www.opengis.net/ont/gml\\\" srsName=\\\"http://www.opengis.net/def/crs/OGC/1.3/CRS84\\\"><gml:outerBoundaryIs><gml:LinearRing><gml:coordinates>-83.6,34.1 -83.6,34.5 -83.2,34.5 -83.2,34.1 -83.6,34.1</gml:coordinates></gml:LinearRing></gml:outerBoundaryIs></gml:Polygon>\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"intersection\"]}, \"results\": {\"bindings\": [{\"intersection\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#gmlLiteral\", \"type\": \"literal\", \"value\": \"<gml:Polygon xmlns:gml=\\\"http://www.opengis.net/ont/gml\\\" srsName=\\\"http://www.opengis.net/def/crs/OGC/1.3/CRS84\\\"><gml:exterior><gml:LinearRing><gml:posList>-83.4 34.1 -83.6 34.1 -83.6 34.3 -83.4 34.3 -83.4 34.1</gml:posList></gml:LinearRing></gml:exterior></gml:Polygon>\"}}]}}": true,
+      "{\"head\": {\"vars\": [\"intersection\"]}, \"results\": {\"bindings\": [{\"intersection\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#gmlLiteral\", \"type\": \"literal\", \"value\": \"<gml:Polygon xmlns:gml=\\\"http://www.opengis.net/ont/gml\\\" srsName=\\\"http://www.opengis.net/def/crs/OGC/1.3/CRS84\\\"><gml:outerBoundaryIs><gml:LinearRing><gml:coordinates>-83.6,34.1 -83.6,34.5 -83.2,34.5 -83.2,34.1 -83.6,34.1</gml:coordinates></gml:LinearRing></gml:outerBoundaryIs></gml:Polygon>\"}}]}}": true
+    },
     "definition": "Requirement 19 (Part 4) (GML-GML): Implementations shall support geof:intersection as a SPARQL extension function, consistent with the definition of the corresponding function distance in Simple Features [ISO 19125-1].",
     "label": "Requirement 19-4-2 (GML-GML): Non-topological Query Functions: geof:intersection",
     "module": "GEOEXT",
@@ -632,10 +624,10 @@ var gsb_10_benchmarkconfig={
     "weight": 0.0012345679012345679
   },
   "query-r19-4-3.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"intersection\"]}, \"results\": {\"bindings\": [{\"intersection\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#wktLiteral\", \"type\": \"literal\", \"value\": \"POLYGON((-83.4 34.1,-83.6 34.1,-83.6 34.3,-83.4 34.3,-83.4 34.1))\"}}]}}",
-      "{\"head\": {\"vars\": [\"intersection\"]}, \"results\": {\"bindings\": [{\"intersection\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#wktLiteral\", \"type\": \"literal\", \"value\": \"<http://www.opengis.net/def/crs/OGC/1.3/CRS84>POLYGON((-83.4 34.1,-83.6 34.1,-83.6 34.3,-83.4 34.3,-83.4 34.1))\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"intersection\"]}, \"results\": {\"bindings\": [{\"intersection\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#wktLiteral\", \"type\": \"literal\", \"value\": \"<http://www.opengis.net/def/crs/OGC/1.3/CRS84>POLYGON((-83.4 34.1,-83.6 34.1,-83.6 34.3,-83.4 34.3,-83.4 34.1))\"}}]}}": true,
+      "{\"head\": {\"vars\": [\"intersection\"]}, \"results\": {\"bindings\": [{\"intersection\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#wktLiteral\", \"type\": \"literal\", \"value\": \"POLYGON((-83.4 34.1,-83.6 34.1,-83.6 34.3,-83.4 34.3,-83.4 34.1))\"}}]}}": true
+    },
     "definition": "Requirement 19 (Part 4) (WKT-GML): Implementations shall support geof:intersection as a SPARQL extension function, consistent with the definition of the corresponding function distance in Simple Features [ISO 19125-1].",
     "label": "Requirement 19-4-3 (WKT-GML): Non-topological Query Functions: geof:intersection",
     "module": "GEOEXT",
@@ -644,10 +636,10 @@ var gsb_10_benchmarkconfig={
     "weight": 0.0006172839506172839
   },
   "query-r19-4-4.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"intersection\"]}, \"results\": {\"bindings\": [{\"intersection\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#gmlLiteral\", \"type\": \"literal\", \"value\": \"<gml:Polygon xmlns:gml=\\\"http://www.opengis.net/ont/gml\\\" srsName=\\\"http://www.opengis.net/def/crs/OGC/1.3/CRS84\\\"><gml:exterior><gml:LinearRing><gml:posList>-83.4 34.1 -83.6 34.1 -83.6 34.3 -83.4 34.3 -83.4 34.1</gml:posList></gml:LinearRing></gml:exterior></gml:Polygon>\"}}]}}",
-      "{\"head\": {\"vars\": [\"intersection\"]}, \"results\": {\"bindings\": [{\"intersection\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#wktLiteral\", \"type\": \"literal\", \"value\": \"<http://www.opengis.net/def/crs/OGC/1.3/CRS84>POLYGON((-83.4 34.1,-83.6 34.1,-83.6 34.3,-83.4 34.3,-83.4 34.1))\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"intersection\"]}, \"results\": {\"bindings\": [{\"intersection\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#gmlLiteral\", \"type\": \"literal\", \"value\": \"<gml:Polygon xmlns:gml=\\\"http://www.opengis.net/ont/gml\\\" srsName=\\\"http://www.opengis.net/def/crs/OGC/1.3/CRS84\\\"><gml:exterior><gml:LinearRing><gml:posList>-83.4 34.1 -83.6 34.1 -83.6 34.3 -83.4 34.3 -83.4 34.1</gml:posList></gml:LinearRing></gml:exterior></gml:Polygon>\"}}]}}": true,
+      "{\"head\": {\"vars\": [\"intersection\"]}, \"results\": {\"bindings\": [{\"intersection\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#wktLiteral\", \"type\": \"literal\", \"value\": \"<http://www.opengis.net/def/crs/OGC/1.3/CRS84>POLYGON((-83.4 34.1,-83.6 34.1,-83.6 34.3,-83.4 34.3,-83.4 34.1))\"}}]}}": true
+    },
     "definition": "Requirement 19 (Part 4) (GML-WKT): Implementations shall support geof:intersection as a SPARQL extension function, consistent with the definition of the corresponding function distance in Simple Features [ISO 19125-1].",
     "label": "Requirement 19-4-4 (GML-WKT): Non-topological Query Functions: geof:intersection",
     "module": "GEOEXT",
@@ -656,10 +648,10 @@ var gsb_10_benchmarkconfig={
     "weight": 0.0006172839506172839
   },
   "query-r19-5-1.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"union\"]}, \"results\": {\"bindings\": [{\"union\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#wktLiteral\", \"type\": \"literal\", \"value\": \"POLYGON((-83.4 34.1,-83.6 34.1,-83.6 34.3,-83.6 34.5,-83.2 34.5,-83.2 34.1,-83.4 34.1))\"}}]}}",
-      "{\"head\": {\"vars\": [\"union\"]}, \"results\": {\"bindings\": [{\"union\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#wktLiteral\", \"type\": \"literal\", \"value\": \"<http://www.opengis.net/def/crs/OGC/1.3/CRS84>POLYGON((-83.4 34.1,-83.6 34.1,-83.6 34.3,-83.6 34.5,-83.2 34.5,-83.2 34.1,-83.4 34.1))\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"union\"]}, \"results\": {\"bindings\": [{\"union\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#wktLiteral\", \"type\": \"literal\", \"value\": \"<http://www.opengis.net/def/crs/OGC/1.3/CRS84>POLYGON((-83.4 34.1,-83.6 34.1,-83.6 34.3,-83.6 34.5,-83.2 34.5,-83.2 34.1,-83.4 34.1))\"}}]}}": true,
+      "{\"head\": {\"vars\": [\"union\"]}, \"results\": {\"bindings\": [{\"union\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#wktLiteral\", \"type\": \"literal\", \"value\": \"POLYGON((-83.4 34.1,-83.6 34.1,-83.6 34.3,-83.6 34.5,-83.2 34.5,-83.2 34.1,-83.4 34.1))\"}}]}}": true
+    },
     "definition": "Requirement 19 (Part 5) (WKT-WKT): Implementations shall support geof:union as a SPARQL extension function, consistent with the definition of the corresponding function distance in Simple Features [ISO 19125-1].",
     "label": "Requirement 19-5-1 (WKT-WKT): Non-topological Query Functions: geof:union",
     "module": "GEOEXT",
@@ -668,10 +660,10 @@ var gsb_10_benchmarkconfig={
     "weight": 0.0012345679012345679
   },
   "query-r19-5-2.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"union\"]}, \"results\": {\"bindings\": [{\"union\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#gmlLiteral\", \"type\": \"literal\", \"value\": \"<gml:Polygon srsName=\\\"http://www.opengis.net/def/crs/OGC/1.3/CRS84\\\" xmlns:gml=\\\"http://www.opengis.net/ont/gml\\\"><gml:exterior><gml:LinearRing><gml:posList>-83.4 34.1 -83.6 34.1 -83.6 34.3 -83.6 34.5 -83.2 34.5 -83.2 34.1 -83.4 34.1</gml:posList></gml:LinearRing></gml:exterior></gml:Polygon>\"}}]}}",
-      "{\"head\": {\"vars\": [\"union\"]}, \"results\": {\"bindings\": [{\"union\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#gmlLiteral\", \"type\": \"literal\", \"value\": \"<gml:Polygon srsName=\\\"http://www.opengis.net/def/crs/OGC/1.3/CRS84\\\" xmlns:gml=\\\"http://www.opengis.net/ont/gml\\\"><gml:outerBoundaryIs><gml:LinearRing><gml:coordinates>-83.4,34.1 -83.6,34.1 -83.6,34.3 -83.6,34.5 -83.2,34.5 -83.2,34.1 -83.4,34.1</gml:coordinates></gml:LinearRing></gml:outerBoundaryIs></gml:Polygon>\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"union\"]}, \"results\": {\"bindings\": [{\"union\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#gmlLiteral\", \"type\": \"literal\", \"value\": \"<gml:Polygon srsName=\\\"http://www.opengis.net/def/crs/OGC/1.3/CRS84\\\" xmlns:gml=\\\"http://www.opengis.net/ont/gml\\\"><gml:exterior><gml:LinearRing><gml:posList>-83.4 34.1 -83.6 34.1 -83.6 34.3 -83.6 34.5 -83.2 34.5 -83.2 34.1 -83.4 34.1</gml:posList></gml:LinearRing></gml:exterior></gml:Polygon>\"}}]}}": true,
+      "{\"head\": {\"vars\": [\"union\"]}, \"results\": {\"bindings\": [{\"union\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#gmlLiteral\", \"type\": \"literal\", \"value\": \"<gml:Polygon srsName=\\\"http://www.opengis.net/def/crs/OGC/1.3/CRS84\\\" xmlns:gml=\\\"http://www.opengis.net/ont/gml\\\"><gml:outerBoundaryIs><gml:LinearRing><gml:coordinates>-83.4,34.1 -83.6,34.1 -83.6,34.3 -83.6,34.5 -83.2,34.5 -83.2,34.1 -83.4,34.1</gml:coordinates></gml:LinearRing></gml:outerBoundaryIs></gml:Polygon>\"}}]}}": true
+    },
     "definition": "Requirement 19 (Part 5) (GML-GML): Implementations shall support geof:union as a SPARQL extension function, consistent with the definition of the corresponding function distance in Simple Features [ISO 19125-1].",
     "label": "Requirement 19-5-2 (GML-GML): Non-topological Query Functions: geof:union",
     "module": "GEOEXT",
@@ -680,10 +672,10 @@ var gsb_10_benchmarkconfig={
     "weight": 0.0012345679012345679
   },
   "query-r19-5-3.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"union\"]}, \"results\": {\"bindings\": [{\"union\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#wktLiteral\", \"type\": \"literal\", \"value\": \"POLYGON((-83.4 34.1,-83.6 34.1,-83.6 34.3,-83.6 34.5,-83.2 34.5,-83.2 34.1,-83.4 34.1))\"}}]}}",
-      "{\"head\": {\"vars\": [\"union\"]}, \"results\": {\"bindings\": [{\"union\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#wktLiteral\", \"type\": \"literal\", \"value\": \"<http://www.opengis.net/def/crs/OGC/1.3/CRS84>POLYGON((-83.4 34.1,-83.6 34.1,-83.6 34.3,-83.6 34.5,-83.2 34.5,-83.2 34.1,-83.4 34.1))\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"union\"]}, \"results\": {\"bindings\": [{\"union\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#wktLiteral\", \"type\": \"literal\", \"value\": \"<http://www.opengis.net/def/crs/OGC/1.3/CRS84>POLYGON((-83.4 34.1,-83.6 34.1,-83.6 34.3,-83.6 34.5,-83.2 34.5,-83.2 34.1,-83.4 34.1))\"}}]}}": true,
+      "{\"head\": {\"vars\": [\"union\"]}, \"results\": {\"bindings\": [{\"union\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#wktLiteral\", \"type\": \"literal\", \"value\": \"POLYGON((-83.4 34.1,-83.6 34.1,-83.6 34.3,-83.6 34.5,-83.2 34.5,-83.2 34.1,-83.4 34.1))\"}}]}}": true
+    },
     "definition": "Requirement 19 (Part 5) (WKT-GML): Implementations shall support geof:union as a SPARQL extension function, consistent with the definition of the corresponding function distance in Simple Features [ISO 19125-1].",
     "label": "Requirement 19-5-3 (WKT-GML): Non-topological Query Functions: geof:union",
     "module": "GEOEXT",
@@ -692,10 +684,10 @@ var gsb_10_benchmarkconfig={
     "weight": 0.0006172839506172839
   },
   "query-r19-5-4.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"union\"]}, \"results\": {\"bindings\": [{\"union\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#gmlLiteral\", \"type\": \"literal\", \"value\": \"<gml:Polygon srsName=\\\"http://www.opengis.net/def/crs/OGC/1.3/CRS84\\\" xmlns:gml=\\\"http://www.opengis.net/ont/gml\\\"><gml:exterior><gml:LinearRing><gml:posList>-83.4 34.1 -83.6 34.1 -83.6 34.3 -83.6 34.5 -83.2 34.5 -83.2 34.1 -83.4 34.1</gml:posList></gml:LinearRing></gml:exterior></gml:Polygon>\"}}]}}",
-      "{\"head\": {\"vars\": [\"union\"]}, \"results\": {\"bindings\": [{\"union\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#wktLiteral\", \"type\": \"literal\", \"value\": \"<http://www.opengis.net/def/crs/OGC/1.3/CRS84>POLYGON((-83.4 34.1,-83.6 34.1,-83.6 34.3,-83.6 34.5,-83.2 34.5,-83.2 34.1,-83.4 34.1))\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"union\"]}, \"results\": {\"bindings\": [{\"union\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#gmlLiteral\", \"type\": \"literal\", \"value\": \"<gml:Polygon srsName=\\\"http://www.opengis.net/def/crs/OGC/1.3/CRS84\\\" xmlns:gml=\\\"http://www.opengis.net/ont/gml\\\"><gml:exterior><gml:LinearRing><gml:posList>-83.4 34.1 -83.6 34.1 -83.6 34.3 -83.6 34.5 -83.2 34.5 -83.2 34.1 -83.4 34.1</gml:posList></gml:LinearRing></gml:exterior></gml:Polygon>\"}}]}}": true,
+      "{\"head\": {\"vars\": [\"union\"]}, \"results\": {\"bindings\": [{\"union\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#wktLiteral\", \"type\": \"literal\", \"value\": \"<http://www.opengis.net/def/crs/OGC/1.3/CRS84>POLYGON((-83.4 34.1,-83.6 34.1,-83.6 34.3,-83.6 34.5,-83.2 34.5,-83.2 34.1,-83.4 34.1))\"}}]}}": true
+    },
     "definition": "Requirement 19 (Part 5) (GML-WKT): Implementations shall support geof:union as a SPARQL extension function, consistent with the definition of the corresponding function distance in Simple Features [ISO 19125-1].",
     "label": "Requirement 19-5-4 (GML-WKT): Non-topological Query Functions: geof:union",
     "module": "GEOEXT",
@@ -704,10 +696,10 @@ var gsb_10_benchmarkconfig={
     "weight": 0.0006172839506172839
   },
   "query-r19-6-1.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"difference\"]}, \"results\": {\"bindings\": [{\"difference\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#wktLiteral\", \"type\": \"literal\", \"value\": \"POLYGON((-83.6 34.3,-83.6 34.5,-83.2 34.5,-83.2 34.1,-83.4 34.1,-83.4 34.3,-83.6 34.3))\"}}]}}",
-      "{\"head\": {\"vars\": [\"difference\"]}, \"results\": {\"bindings\": [{\"difference\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#wktLiteral\", \"type\": \"literal\", \"value\": \"<http://www.opengis.net/def/crs/OGC/1.3/CRS84>POLYGON((-83.6 34.3,-83.6 34.5,-83.2 34.5,-83.2 34.1,-83.4 34.1,-83.4 34.3,-83.6 34.3))\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"difference\"]}, \"results\": {\"bindings\": [{\"difference\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#wktLiteral\", \"type\": \"literal\", \"value\": \"<http://www.opengis.net/def/crs/OGC/1.3/CRS84>POLYGON((-83.6 34.3,-83.6 34.5,-83.2 34.5,-83.2 34.1,-83.4 34.1,-83.4 34.3,-83.6 34.3))\"}}]}}": true,
+      "{\"head\": {\"vars\": [\"difference\"]}, \"results\": {\"bindings\": [{\"difference\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#wktLiteral\", \"type\": \"literal\", \"value\": \"POLYGON((-83.6 34.3,-83.6 34.5,-83.2 34.5,-83.2 34.1,-83.4 34.1,-83.4 34.3,-83.6 34.3))\"}}]}}": true
+    },
     "definition": "Requirement 19 (Part 6) (WKT-WKT): Implementations shall support geof:difference as a SPARQL extension function, consistent with the definition of the corresponding function distance in Simple Features [ISO 19125-1].",
     "label": "Requirement 19-6-1 (WKT-WKT): Non-topological Query Functions: geof:difference",
     "module": "GEOEXT",
@@ -716,10 +708,10 @@ var gsb_10_benchmarkconfig={
     "weight": 0.0012345679012345679
   },
   "query-r19-6-2.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"difference\"]}, \"results\": {\"bindings\": [{\"difference\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#gmlLiteral\", \"type\": \"literal\", \"value\": \"<gml:Polygon srsName=\\\"http://www.opengis.net/def/crs/OGC/1.3/CRS84\\\" xmlns:gml=\\\"http://www.opengis.net/ont/gml\\\"><gml:exterior><gml:LinearRing><gml:posList>-83.6 34.3 -83.6 34.5 -83.2 34.5 -83.2 34.1 -83.4 34.1 -83.4 34.3 -83.6 34.3</gml:posList></gml:LinearRing></gml:exterior></gml:Polygon>\"}}]}}",
-      "{\"head\": {\"vars\": [\"difference\"]}, \"results\": {\"bindings\": [{\"difference\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#gmlLiteral\", \"type\": \"literal\", \"value\": \"<gml:Polygon srsName=\\\"http://www.opengis.net/def/crs/OGC/1.3/CRS84\\\" xmlns:gml=\\\"http://www.opengis.net/ont/gml\\\"><gml:outerBoundaryIs><gml:LinearRing><gml:coordinates>-83.6,34.3 -83.6,34.5 -83.2,34.5 -83.2,34.1 -83.4,34.1 -83.4,34.3 -83.6,34.3</gml:coordinates></gml:LinearRing></gml:outerBoundaryIs></gml:Polygon>\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"difference\"]}, \"results\": {\"bindings\": [{\"difference\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#gmlLiteral\", \"type\": \"literal\", \"value\": \"<gml:Polygon srsName=\\\"http://www.opengis.net/def/crs/OGC/1.3/CRS84\\\" xmlns:gml=\\\"http://www.opengis.net/ont/gml\\\"><gml:exterior><gml:LinearRing><gml:posList>-83.6 34.3 -83.6 34.5 -83.2 34.5 -83.2 34.1 -83.4 34.1 -83.4 34.3 -83.6 34.3</gml:posList></gml:LinearRing></gml:exterior></gml:Polygon>\"}}]}}": true,
+      "{\"head\": {\"vars\": [\"difference\"]}, \"results\": {\"bindings\": [{\"difference\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#gmlLiteral\", \"type\": \"literal\", \"value\": \"<gml:Polygon srsName=\\\"http://www.opengis.net/def/crs/OGC/1.3/CRS84\\\" xmlns:gml=\\\"http://www.opengis.net/ont/gml\\\"><gml:outerBoundaryIs><gml:LinearRing><gml:coordinates>-83.6,34.3 -83.6,34.5 -83.2,34.5 -83.2,34.1 -83.4,34.1 -83.4,34.3 -83.6,34.3</gml:coordinates></gml:LinearRing></gml:outerBoundaryIs></gml:Polygon>\"}}]}}": true
+    },
     "definition": "Requirement 19 (Part 6) (GML-GML): Implementations shall support geof:difference as a SPARQL extension function, consistent with the definition of the corresponding function distance in Simple Features [ISO 19125-1].",
     "label": "Requirement 19-6-2 (GML-GML): Non-topological Query Functions: geof:difference",
     "module": "GEOEXT",
@@ -728,10 +720,10 @@ var gsb_10_benchmarkconfig={
     "weight": 0.0012345679012345679
   },
   "query-r19-6-3.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"difference\"]}, \"results\": {\"bindings\": [{\"difference\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#wktLiteral\", \"type\": \"literal\", \"value\": \"POLYGON((-83.6 34.3,-83.6 34.5,-83.2 34.5,-83.2 34.1,-83.4 34.1,-83.4 34.3,-83.6 34.3))\"}}]}}",
-      "{\"head\": {\"vars\": [\"difference\"]}, \"results\": {\"bindings\": [{\"difference\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#wktLiteral\", \"type\": \"literal\", \"value\": \"<http://www.opengis.net/def/crs/OGC/1.3/CRS84>POLYGON((-83.6 34.3,-83.6 34.5,-83.2 34.5,-83.2 34.1,-83.4 34.1,-83.4 34.3,-83.6 34.3))\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"difference\"]}, \"results\": {\"bindings\": [{\"difference\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#wktLiteral\", \"type\": \"literal\", \"value\": \"<http://www.opengis.net/def/crs/OGC/1.3/CRS84>POLYGON((-83.6 34.3,-83.6 34.5,-83.2 34.5,-83.2 34.1,-83.4 34.1,-83.4 34.3,-83.6 34.3))\"}}]}}": true,
+      "{\"head\": {\"vars\": [\"difference\"]}, \"results\": {\"bindings\": [{\"difference\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#wktLiteral\", \"type\": \"literal\", \"value\": \"POLYGON((-83.6 34.3,-83.6 34.5,-83.2 34.5,-83.2 34.1,-83.4 34.1,-83.4 34.3,-83.6 34.3))\"}}]}}": true
+    },
     "definition": "Requirement 19 (Part 6) (WKT-GML): Implementations shall support geof:difference as a SPARQL extension function, consistent with the definition of the corresponding function distance in Simple Features [ISO 19125-1].",
     "label": "Requirement 19-6-3 (WKT-GML): Non-topological Query Functions: geof:difference",
     "module": "GEOEXT",
@@ -740,10 +732,10 @@ var gsb_10_benchmarkconfig={
     "weight": 0.0006172839506172839
   },
   "query-r19-6-4.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"difference\"]}, \"results\": {\"bindings\": [{\"difference\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#gmlLiteral\", \"type\": \"literal\", \"value\": \"<gml:Polygon srsName=\\\"http://www.opengis.net/def/crs/OGC/1.3/CRS84\\\" xmlns:gml=\\\"http://www.opengis.net/ont/gml\\\"><gml:exterior><gml:LinearRing><gml:posList>-83.6 34.3 -83.6 34.5 -83.2 34.5 -83.2 34.1 -83.4 34.1 -83.4 34.3 -83.6 34.3</gml:posList></gml:LinearRing></gml:exterior></gml:Polygon>\"}}]}}",
-      "{\"head\": {\"vars\": [\"difference\"]}, \"results\": {\"bindings\": [{\"difference\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#gmlLiteral\", \"type\": \"literal\", \"value\": \"<gml:Polygon srsName=\\\"http://www.opengis.net/def/crs/OGC/1.3/CRS84\\\" xmlns:gml=\\\"http://www.opengis.net/ont/gml\\\"><gml:outerBoundaryIs><gml:LinearRing><gml:coordinates>-83.6,34.3 -83.6,34.5 -83.2,34.5 -83.2,34.1 -83.4,34.1 -83.4,34.3 -83.6,34.3</gml:coordinates></gml:LinearRing></gml:outerBoundaryIs></gml:Polygon>\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"difference\"]}, \"results\": {\"bindings\": [{\"difference\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#gmlLiteral\", \"type\": \"literal\", \"value\": \"<gml:Polygon srsName=\\\"http://www.opengis.net/def/crs/OGC/1.3/CRS84\\\" xmlns:gml=\\\"http://www.opengis.net/ont/gml\\\"><gml:exterior><gml:LinearRing><gml:posList>-83.6 34.3 -83.6 34.5 -83.2 34.5 -83.2 34.1 -83.4 34.1 -83.4 34.3 -83.6 34.3</gml:posList></gml:LinearRing></gml:exterior></gml:Polygon>\"}}]}}": true,
+      "{\"head\": {\"vars\": [\"difference\"]}, \"results\": {\"bindings\": [{\"difference\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#gmlLiteral\", \"type\": \"literal\", \"value\": \"<gml:Polygon srsName=\\\"http://www.opengis.net/def/crs/OGC/1.3/CRS84\\\" xmlns:gml=\\\"http://www.opengis.net/ont/gml\\\"><gml:outerBoundaryIs><gml:LinearRing><gml:coordinates>-83.6,34.3 -83.6,34.5 -83.2,34.5 -83.2,34.1 -83.4,34.1 -83.4,34.3 -83.6,34.3</gml:coordinates></gml:LinearRing></gml:outerBoundaryIs></gml:Polygon>\"}}]}}": true
+    },
     "definition": "Requirement 19 (Part 6) (GML-WKT): Implementations shall support geof:difference as a SPARQL extension function, consistent with the definition of the corresponding function distance in Simple Features [ISO 19125-1].",
     "label": "Requirement 19-6-4 (GML-WKT): Non-topological Query Functions: geof:difference",
     "module": "GEOEXT",
@@ -752,10 +744,10 @@ var gsb_10_benchmarkconfig={
     "weight": 0.0006172839506172839
   },
   "query-r19-7-1.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"symDifference\"]}, \"results\": {\"bindings\": [{\"symDifference\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#wktLiteral\", \"type\": \"literal\", \"value\": \"MULTIPOLYGON(((-83.3 34.1,-83.6 34.1,-83.6 34.5,-83.2 34.5,-83.2 34.2,-83.3 34.2,-83.3 34.1)),((-83.3 34.1,-83.2 34.1,-83.2 34.2,-83.1 34.2,-83.1 34,-83.3 34,-83.3 34.1)))\"}}]}}",
-      "{\"head\": {\"vars\": [\"symDifference\"]}, \"results\": {\"bindings\": [{\"symDifference\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#wktLiteral\", \"type\": \"literal\", \"value\": \"<http://www.opengis.net/def/crs/OGC/1.3/CRS84>MULTIPOLYGON(((-83.3 34.1,-83.6 34.1,-83.6 34.5,-83.2 34.5,-83.2 34.2,-83.3 34.2,-83.3 34.1)),((-83.3 34.1,-83.2 34.1,-83.2 34.2,-83.1 34.2,-83.1 34,-83.3 34,-83.3 34.1)))\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"symDifference\"]}, \"results\": {\"bindings\": [{\"symDifference\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#wktLiteral\", \"type\": \"literal\", \"value\": \"<http://www.opengis.net/def/crs/OGC/1.3/CRS84>MULTIPOLYGON(((-83.3 34.1,-83.6 34.1,-83.6 34.5,-83.2 34.5,-83.2 34.2,-83.3 34.2,-83.3 34.1)),((-83.3 34.1,-83.2 34.1,-83.2 34.2,-83.1 34.2,-83.1 34,-83.3 34,-83.3 34.1)))\"}}]}}": true,
+      "{\"head\": {\"vars\": [\"symDifference\"]}, \"results\": {\"bindings\": [{\"symDifference\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#wktLiteral\", \"type\": \"literal\", \"value\": \"MULTIPOLYGON(((-83.3 34.1,-83.6 34.1,-83.6 34.5,-83.2 34.5,-83.2 34.2,-83.3 34.2,-83.3 34.1)),((-83.3 34.1,-83.2 34.1,-83.2 34.2,-83.1 34.2,-83.1 34,-83.3 34,-83.3 34.1)))\"}}]}}": true
+    },
     "definition": "Requirement 19 (Part 7) (WKT-WKT): Implementations shall support geof:symDifference as a SPARQL extension function, consistent with the definition of the corresponding function distance in Simple Features [ISO 19125-1].",
     "label": "Requirement 19-7-1 (WKT-WKT): Non-topological Query Functions: geof:symDifference",
     "module": "GEOEXT",
@@ -764,10 +756,10 @@ var gsb_10_benchmarkconfig={
     "weight": 0.0012345679012345679
   },
   "query-r19-7-2.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"symDifference\"]}, \"results\": {\"bindings\": [{\"symDifference\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#gmlLiteral\", \"type\": \"literal\", \"value\": \"<gml:MultiSurface srsName=\\\"http://www.opengis.net/def/crs/OGC/1.3/CRS84\\\" xmlns:gml=\\\"http://www.opengis.net/ont/gml\\\"><gml:surfaceMember><gml:Polygon><gml:exterior><gml:LinearRing><gml:posList>-83.3 34.1 -83.6 34.1 -83.6 34.5 -83.2 34.5 -83.2 34.2 -83.3 34.2 -83.3 34.1</gml:posList></gml:LinearRing></gml:exterior></gml:Polygon></gml:surfaceMember><gml:surfaceMember><gml:Polygon><gml:exterior><gml:LinearRing><gml:posList>-83.3 34.1 -83.2 34.1 -83.2 34.2 -83.1 34.2 -83.1 34.0 -83.3 34.0 -83.3 34.1</gml:posList></gml:LinearRing></gml:exterior></gml:Polygon></gml:surfaceMember></gml:MultiSurface>\"}}]}}",
-      "{\"head\": {\"vars\": [\"symDifference\"]}, \"results\": {\"bindings\": [{\"symDifference\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#wktLiteral\", \"type\": \"literal\", \"value\": \"MULTIPOLYGON(((-83.3 34.1,-83.6 34.1,-83.6 34.5,-83.2 34.5,-83.2 34.2,-83.3 34.2,-83.3 34.1)),((-83.3 34.1,-83.2 34.1,-83.2 34.2,-83.1 34.2,-83.1 34,-83.3 34,-83.3 34.1)))\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"symDifference\"]}, \"results\": {\"bindings\": [{\"symDifference\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#gmlLiteral\", \"type\": \"literal\", \"value\": \"<gml:MultiSurface srsName=\\\"http://www.opengis.net/def/crs/OGC/1.3/CRS84\\\" xmlns:gml=\\\"http://www.opengis.net/ont/gml\\\"><gml:surfaceMember><gml:Polygon><gml:exterior><gml:LinearRing><gml:posList>-83.3 34.1 -83.6 34.1 -83.6 34.5 -83.2 34.5 -83.2 34.2 -83.3 34.2 -83.3 34.1</gml:posList></gml:LinearRing></gml:exterior></gml:Polygon></gml:surfaceMember><gml:surfaceMember><gml:Polygon><gml:exterior><gml:LinearRing><gml:posList>-83.3 34.1 -83.2 34.1 -83.2 34.2 -83.1 34.2 -83.1 34.0 -83.3 34.0 -83.3 34.1</gml:posList></gml:LinearRing></gml:exterior></gml:Polygon></gml:surfaceMember></gml:MultiSurface>\"}}]}}": true,
+      "{\"head\": {\"vars\": [\"symDifference\"]}, \"results\": {\"bindings\": [{\"symDifference\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#wktLiteral\", \"type\": \"literal\", \"value\": \"MULTIPOLYGON(((-83.3 34.1,-83.6 34.1,-83.6 34.5,-83.2 34.5,-83.2 34.2,-83.3 34.2,-83.3 34.1)),((-83.3 34.1,-83.2 34.1,-83.2 34.2,-83.1 34.2,-83.1 34,-83.3 34,-83.3 34.1)))\"}}]}}": true
+    },
     "definition": "Requirement 19 (Part 7) (GML-GML): Implementations shall support geof:symDifference as a SPARQL extension function, consistent with the definition of the corresponding function distance in Simple Features [ISO 19125-1].",
     "label": "Requirement 19-7-2 (GML-GML): Non-topological Query Functions: geof:symDifference",
     "module": "GEOEXT",
@@ -776,10 +768,10 @@ var gsb_10_benchmarkconfig={
     "weight": 0.0012345679012345679
   },
   "query-r19-7-3.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"symDifference\"]}, \"results\": {\"bindings\": [{\"symDifference\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#wktLiteral\", \"type\": \"literal\", \"value\": \"MULTIPOLYGON(((-83.3 34.1,-83.6 34.1,-83.6 34.5,-83.2 34.5,-83.2 34.2,-83.3 34.2,-83.3 34.1)),((-83.3 34.1,-83.2 34.1,-83.2 34.2,-83.1 34.2,-83.1 34,-83.3 34,-83.3 34.1)))\"}}]}}",
-      "{\"head\": {\"vars\": [\"symDifference\"]}, \"results\": {\"bindings\": [{\"symDifference\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#wktLiteral\", \"type\": \"literal\", \"value\": \"<http://www.opengis.net/def/crs/OGC/1.3/CRS84>MULTIPOLYGON(((-83.3 34.1,-83.6 34.1,-83.6 34.5,-83.2 34.5,-83.2 34.2,-83.3 34.2,-83.3 34.1)),((-83.3 34.1,-83.2 34.1,-83.2 34.2,-83.1 34.2,-83.1 34,-83.3 34,-83.3 34.1)))\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"symDifference\"]}, \"results\": {\"bindings\": [{\"symDifference\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#wktLiteral\", \"type\": \"literal\", \"value\": \"<http://www.opengis.net/def/crs/OGC/1.3/CRS84>MULTIPOLYGON(((-83.3 34.1,-83.6 34.1,-83.6 34.5,-83.2 34.5,-83.2 34.2,-83.3 34.2,-83.3 34.1)),((-83.3 34.1,-83.2 34.1,-83.2 34.2,-83.1 34.2,-83.1 34,-83.3 34,-83.3 34.1)))\"}}]}}": true,
+      "{\"head\": {\"vars\": [\"symDifference\"]}, \"results\": {\"bindings\": [{\"symDifference\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#wktLiteral\", \"type\": \"literal\", \"value\": \"MULTIPOLYGON(((-83.3 34.1,-83.6 34.1,-83.6 34.5,-83.2 34.5,-83.2 34.2,-83.3 34.2,-83.3 34.1)),((-83.3 34.1,-83.2 34.1,-83.2 34.2,-83.1 34.2,-83.1 34,-83.3 34,-83.3 34.1)))\"}}]}}": true
+    },
     "definition": "Requirement 19 (Part 7) (WKT-GML): Implementations shall support geof:symDifference as a SPARQL extension function, consistent with the definition of the corresponding function distance in Simple Features [ISO 19125-1].",
     "label": "Requirement 19-7-3 (WKT-GML): Non-topological Query Functions: geof:symDifference",
     "module": "GEOEXT",
@@ -788,10 +780,10 @@ var gsb_10_benchmarkconfig={
     "weight": 0.0006172839506172839
   },
   "query-r19-7-4.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"symDifference\"]}, \"results\": {\"bindings\": [{\"symDifference\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#gmlLiteral\", \"type\": \"literal\", \"value\": \"<gml:MultiSurface srsName=\\\"http://www.opengis.net/def/crs/OGC/1.3/CRS84\\\" xmlns:gml=\\\"http://www.opengis.net/ont/gml\\\"><gml:surfaceMember><gml:Polygon><gml:exterior><gml:LinearRing><gml:posList>-83.3 34.1 -83.6 34.1 -83.6 34.5 -83.2 34.5 -83.2 34.2 -83.3 34.2 -83.3 34.1</gml:posList></gml:LinearRing></gml:exterior></gml:Polygon></gml:surfaceMember><gml:surfaceMember><gml:Polygon><gml:exterior><gml:LinearRing><gml:posList>-83.3 34.1 -83.2 34.1 -83.2 34.2 -83.1 34.2 -83.1 34.0 -83.3 34.0 -83.3 34.1</gml:posList></gml:LinearRing></gml:exterior></gml:Polygon></gml:surfaceMember></gml:MultiSurface>\"}}]}}",
-      "{\"head\": {\"vars\": [\"symDifference\"]}, \"results\": {\"bindings\": [{\"symDifference\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#gmlLiteral\", \"type\": \"literal\", \"value\": \"<gml:MultiSurface srsName=\\\"http://www.opengis.net/def/crs/OGC/1.3/CRS84\\\" xmlns:gml=\\\"http://www.opengis.net/ont/gml\\\"><gml:surfaceMember><gml:Polygon srsName=\\\"http://www.opengis.net/def/crs/OGC/1.3/CRS84\\\"><gml:exterior><gml:LinearRing><gml:posList>-83.3 34.1 -83.6 34.1 -83.6 34.5 -83.2 34.5 -83.2 34.2 -83.3 34.2 -83.3 34.1</gml:posList></gml:LinearRing></gml:exterior></gml:Polygon></gml:surfaceMember><gml:surfaceMember><gml:Polygon srsName=\\\"http://www.opengis.net/def/crs/OGC/1.3/CRS84\\\"><gml:exterior><gml:LinearRing><gml:posList>-83.3 34.1 -83.2 34.1 -83.2 34.2 -83.1 34.2 -83.1 34.0 -83.3 34.0 -83.3 34.1</gml:posList></gml:LinearRing></gml:exterior></gml:Polygon></gml:surfaceMember></gml:MultiSurface>\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"symDifference\"]}, \"results\": {\"bindings\": [{\"symDifference\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#gmlLiteral\", \"type\": \"literal\", \"value\": \"<gml:MultiSurface srsName=\\\"http://www.opengis.net/def/crs/OGC/1.3/CRS84\\\" xmlns:gml=\\\"http://www.opengis.net/ont/gml\\\"><gml:surfaceMember><gml:Polygon srsName=\\\"http://www.opengis.net/def/crs/OGC/1.3/CRS84\\\"><gml:exterior><gml:LinearRing><gml:posList>-83.3 34.1 -83.6 34.1 -83.6 34.5 -83.2 34.5 -83.2 34.2 -83.3 34.2 -83.3 34.1</gml:posList></gml:LinearRing></gml:exterior></gml:Polygon></gml:surfaceMember><gml:surfaceMember><gml:Polygon srsName=\\\"http://www.opengis.net/def/crs/OGC/1.3/CRS84\\\"><gml:exterior><gml:LinearRing><gml:posList>-83.3 34.1 -83.2 34.1 -83.2 34.2 -83.1 34.2 -83.1 34.0 -83.3 34.0 -83.3 34.1</gml:posList></gml:LinearRing></gml:exterior></gml:Polygon></gml:surfaceMember></gml:MultiSurface>\"}}]}}": true,
+      "{\"head\": {\"vars\": [\"symDifference\"]}, \"results\": {\"bindings\": [{\"symDifference\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#gmlLiteral\", \"type\": \"literal\", \"value\": \"<gml:MultiSurface srsName=\\\"http://www.opengis.net/def/crs/OGC/1.3/CRS84\\\" xmlns:gml=\\\"http://www.opengis.net/ont/gml\\\"><gml:surfaceMember><gml:Polygon><gml:exterior><gml:LinearRing><gml:posList>-83.3 34.1 -83.6 34.1 -83.6 34.5 -83.2 34.5 -83.2 34.2 -83.3 34.2 -83.3 34.1</gml:posList></gml:LinearRing></gml:exterior></gml:Polygon></gml:surfaceMember><gml:surfaceMember><gml:Polygon><gml:exterior><gml:LinearRing><gml:posList>-83.3 34.1 -83.2 34.1 -83.2 34.2 -83.1 34.2 -83.1 34.0 -83.3 34.0 -83.3 34.1</gml:posList></gml:LinearRing></gml:exterior></gml:Polygon></gml:surfaceMember></gml:MultiSurface>\"}}]}}": true
+    },
     "definition": "Requirement 19 (Part 7) (GML-WKT): Implementations shall support geof:symDifference as a SPARQL extension function, consistent with the definition of the corresponding function distance in Simple Features [ISO 19125-1].",
     "label": "Requirement 19-7-4 (GML-WKT): Non-topological Query Functions: geof:symDifference",
     "module": "GEOEXT",
@@ -800,10 +792,10 @@ var gsb_10_benchmarkconfig={
     "weight": 0.0006172839506172839
   },
   "query-r19-8-1.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"envelope\"]}, \"results\": {\"bindings\": [{\"envelope\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#wktLiteral\", \"type\": \"literal\", \"value\": \"BOX(-83.600009965897 34.099995934963,-83.199990081787 34.50000411272)\"}}]}}",
-      "{\"head\": {\"vars\": [\"envelope\"]}, \"results\": {\"bindings\": [{\"envelope\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#wktLiteral\", \"type\": \"literal\", \"value\": \"POLYGON((-83.6 34.1 -83.6 34.5, -83.2 34.5, -83.2 34.1, -83.6 34.1, -83.6 34.5))\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"envelope\"]}, \"results\": {\"bindings\": [{\"envelope\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#wktLiteral\", \"type\": \"literal\", \"value\": \"BOX(-83.600009965897 34.099995934963,-83.199990081787 34.50000411272)\"}}]}}": true,
+      "{\"head\": {\"vars\": [\"envelope\"]}, \"results\": {\"bindings\": [{\"envelope\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#wktLiteral\", \"type\": \"literal\", \"value\": \"POLYGON((-83.6 34.1 -83.6 34.5, -83.2 34.5, -83.2 34.1, -83.6 34.1, -83.6 34.5))\"}}]}}": true
+    },
     "definition": "Requirement 19 (Part 8) (WKT): Implementations shall support geof:envelope as a SPARQL extension function, consistent with the definition of the corresponding function distance in Simple Features [ISO 19125-1].",
     "label": "Requirement 19-8-1 (WKT): Non-topological Query Functions: geof:envelope",
     "module": "GEOEXT",
@@ -812,10 +804,10 @@ var gsb_10_benchmarkconfig={
     "weight": 0.001851851851851852
   },
   "query-r19-8-2.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"envelope\"]}, \"results\": {\"bindings\": [{\"envelope\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#gmlLiteral\", \"type\": \"literal\", \"value\": \"<gml:Polygon srsName=\\\"http://www.opengis.net/def/crs/OGC/1.3/CRS84\\\" xmlns:gml=\\\"http://www.opengis.net/ont/gml\\\"><gml:exterior><gml:LinearRing><gml:posList>-83.6 34.1 -83.2 34.5 -83.2 34.1 -83.6 34.1 -83.6 34.5</gml:posList></gml:LinearRing></gml:exterior></gml:Polygon>\"}}]}}",
-      "{\"head\": {\"vars\": [\"envelope\"]}, \"results\": {\"bindings\": [{\"envelope\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#gmlLiteral\", \"type\": \"literal\", \"value\": \"<gml:Envelope srsName=\\\"http://www.opengis.net/def/crs/OGC/1.3/CRS84\\\" xmlns:gml=\\\"http://www.opengis.net/ont/gml\\\"><gml:lowerCorner>-83.6 34.1</gml:lowerCorner><gml:upperCorner>-83.2 34.5</gml:upperCorner></gml:Envelope>\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"envelope\"]}, \"results\": {\"bindings\": [{\"envelope\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#gmlLiteral\", \"type\": \"literal\", \"value\": \"<gml:Envelope srsName=\\\"http://www.opengis.net/def/crs/OGC/1.3/CRS84\\\" xmlns:gml=\\\"http://www.opengis.net/ont/gml\\\"><gml:lowerCorner>-83.6 34.1</gml:lowerCorner><gml:upperCorner>-83.2 34.5</gml:upperCorner></gml:Envelope>\"}}]}}": true,
+      "{\"head\": {\"vars\": [\"envelope\"]}, \"results\": {\"bindings\": [{\"envelope\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#gmlLiteral\", \"type\": \"literal\", \"value\": \"<gml:Polygon srsName=\\\"http://www.opengis.net/def/crs/OGC/1.3/CRS84\\\" xmlns:gml=\\\"http://www.opengis.net/ont/gml\\\"><gml:exterior><gml:LinearRing><gml:posList>-83.6 34.1 -83.2 34.5 -83.2 34.1 -83.6 34.1 -83.6 34.5</gml:posList></gml:LinearRing></gml:exterior></gml:Polygon>\"}}]}}": true
+    },
     "definition": "Requirement 19 (Part 8) (GML): Implementations shall support geof:envelope as a SPARQL extension function, consistent with the definition of the corresponding function distance in Simple Features [ISO 19125-1].",
     "label": "Requirement 19-8-2 (GML): Non-topological Query Functions: geof:envelope",
     "module": "GEOEXT",
@@ -824,10 +816,10 @@ var gsb_10_benchmarkconfig={
     "weight": 0.001851851851851852
   },
   "query-r19-9-1.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"boundary\"]}, \"results\": {\"bindings\": [{\"boundary\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#wktLiteral\", \"type\": \"literal\", \"value\": \"LINESTRING(-83.6 34.1,-83.2 34.1,-83.2 34.5,-83.6 34.5,-83.6 34.1)\"}}]}}",
-      "{\"head\": {\"vars\": [\"boundary\"]}, \"results\": {\"bindings\": [{\"boundary\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#wktLiteral\", \"type\": \"literal\", \"value\": \"<http://www.opengis.net/def/crs/OGC/1.3/CRS84>LINESTRING(-83.6 34.1,-83.2 34.1,-83.2 34.5,-83.6 34.5,-83.6 34.1)\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"boundary\"]}, \"results\": {\"bindings\": [{\"boundary\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#wktLiteral\", \"type\": \"literal\", \"value\": \"<http://www.opengis.net/def/crs/OGC/1.3/CRS84>LINESTRING(-83.6 34.1,-83.2 34.1,-83.2 34.5,-83.6 34.5,-83.6 34.1)\"}}]}}": true,
+      "{\"head\": {\"vars\": [\"boundary\"]}, \"results\": {\"bindings\": [{\"boundary\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#wktLiteral\", \"type\": \"literal\", \"value\": \"LINESTRING(-83.6 34.1,-83.2 34.1,-83.2 34.5,-83.6 34.5,-83.6 34.1)\"}}]}}": true
+    },
     "definition": "Requirement 19 (Part 9) (WKT): Implementations shall support geof:boundary as a SPARQL extension function, consistent with the definition of the corresponding function distance in Simple Features [ISO 19125-1].",
     "label": "Requirement 19-9-1 (WKT): Non-topological Query Functions: geof:boundary",
     "module": "GEOEXT",
@@ -836,10 +828,10 @@ var gsb_10_benchmarkconfig={
     "weight": 0.001851851851851852
   },
   "query-r19-9-2.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"boundary\"]}, \"results\": {\"bindings\": [{\"boundary\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#gmlLiteral\", \"type\": \"literal\", \"value\": \"<gml:LineString srsName=\\\"http://www.opengis.net/def/crs/OGC/1.3/CRS84\\\" xmlns:gml=\\\"http://www.opengis.net/ont/gml\\\"><gml:posList>-83.6 34.1 -83.2 34.1 -83.2 34.5 -83.6 34.5 -83.6 34.1</gml:posList></gml:LineString>\"}}]}}",
-      "{\"head\": {\"vars\": [\"boundary\"]}, \"results\": {\"bindings\": [{\"boundary\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#gmlLiteral\", \"type\": \"literal\", \"value\": \"<gml:LinearRing srsName=\\\"http://www.opengis.net/def/crs/OGC/1.3/CRS84\\\" xmlns:gml=\\\"http://www.opengis.net/ont/gml\\\"><gml:posList>-83.6 34.1 -83.2 34.1 -83.2 34.5 -83.6 34.5 -83.6 34.1</gml:posList></gml:LinearRing>\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"boundary\"]}, \"results\": {\"bindings\": [{\"boundary\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#gmlLiteral\", \"type\": \"literal\", \"value\": \"<gml:LineString srsName=\\\"http://www.opengis.net/def/crs/OGC/1.3/CRS84\\\" xmlns:gml=\\\"http://www.opengis.net/ont/gml\\\"><gml:posList>-83.6 34.1 -83.2 34.1 -83.2 34.5 -83.6 34.5 -83.6 34.1</gml:posList></gml:LineString>\"}}]}}": true,
+      "{\"head\": {\"vars\": [\"boundary\"]}, \"results\": {\"bindings\": [{\"boundary\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#gmlLiteral\", \"type\": \"literal\", \"value\": \"<gml:LinearRing srsName=\\\"http://www.opengis.net/def/crs/OGC/1.3/CRS84\\\" xmlns:gml=\\\"http://www.opengis.net/ont/gml\\\"><gml:posList>-83.6 34.1 -83.2 34.1 -83.2 34.5 -83.6 34.5 -83.6 34.1</gml:posList></gml:LinearRing>\"}}]}}": true
+    },
     "definition": "Requirement 19 (Part 9) (GML): Implementations shall support geof:boundary as a SPARQL extension function, consistent with the definition of the corresponding function distance in Simple Features [ISO 19125-1].",
     "label": "Requirement 19-9-2 (GML): Non-topological Query Functions: geof:boundary",
     "module": "GEOEXT",
@@ -848,10 +840,10 @@ var gsb_10_benchmarkconfig={
     "weight": 0.001851851851851852
   },
   "query-r20-1.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"srid\"]}, \"results\": {\"bindings\": [{\"srid\": {\"type\": \"literal\", \"value\": \"http://www.opengis.net/def/crs/OGC/1.3/CRS84\"}}]}}",
-      "{\"head\": {\"vars\": [\"srid\"]}, \"results\": {\"bindings\": [{\"srid\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#anyURI\", \"type\": \"literal\", \"value\": \"http://www.opengis.net/def/crs/OGC/1.3/CRS84\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"srid\"]}, \"results\": {\"bindings\": [{\"srid\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#anyURI\", \"type\": \"literal\", \"value\": \"http://www.opengis.net/def/crs/OGC/1.3/CRS84\"}}]}}": true,
+      "{\"head\": {\"vars\": [\"srid\"]}, \"results\": {\"bindings\": [{\"srid\": {\"type\": \"literal\", \"value\": \"http://www.opengis.net/def/crs/OGC/1.3/CRS84\"}}]}}": true
+    },
     "definition": "Requirement 20 (Part 1) (WKT): Implementations shall support geof:getSRID as a SPARQL extension function.",
     "label": "Requirement 20-1 (WKT): SRID Function: geof:getSRID",
     "module": "GEOEXT",
@@ -860,10 +852,10 @@ var gsb_10_benchmarkconfig={
     "weight": 0.016666666666666666
   },
   "query-r20-2.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"srid\"]}, \"results\": {\"bindings\": [{\"srid\": {\"type\": \"literal\", \"value\": \"http://www.opengis.net/def/crs/OGC/1.3/CRS84\"}}]}}",
-      "{\"head\": {\"vars\": [\"srid\"]}, \"results\": {\"bindings\": [{\"srid\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#anyURI\", \"type\": \"literal\", \"value\": \"http://www.opengis.net/def/crs/OGC/1.3/CRS84\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"srid\"]}, \"results\": {\"bindings\": [{\"srid\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#anyURI\", \"type\": \"literal\", \"value\": \"http://www.opengis.net/def/crs/OGC/1.3/CRS84\"}}]}}": true,
+      "{\"head\": {\"vars\": [\"srid\"]}, \"results\": {\"bindings\": [{\"srid\": {\"type\": \"literal\", \"value\": \"http://www.opengis.net/def/crs/OGC/1.3/CRS84\"}}]}}": true
+    },
     "definition": "Requirement 20 (Part 2) (GML): Implementations shall support geof:getSRID as a SPARQL extension function.",
     "label": "Requirement 20-2 (GML): SRID Function: geof:getSRID",
     "module": "GEOEXT",
@@ -872,10 +864,9 @@ var gsb_10_benchmarkconfig={
     "weight": 0.016666666666666666
   },
   "query-r21-1.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"relates\"]}, \"results\": {\"bindings\": [{\"relates\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}",
-      "{\"head\": {\"vars\": [\"relates\"]}, \"results\": {\"bindings\": [{\"relates\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"relates\"]}, \"results\": {\"bindings\": [{\"relates\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 21 (Part 1) (WKT-WKT): Implementations shall support geof:relate as a SPARQL extension function, consistent with the relate operator defined in Simple Features [ISO 19125-1].",
     "label": "Requirement 21-1 (WKT-WKT): Relate Function: geof:relate",
     "module": "GTOP",
@@ -884,10 +875,9 @@ var gsb_10_benchmarkconfig={
     "weight": 0.011111111111111112
   },
   "query-r21-2.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"relates\"]}, \"results\": {\"bindings\": [{\"relates\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}",
-      "{\"head\": {\"vars\": [\"relates\"]}, \"results\": {\"bindings\": [{\"relates\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"relates\"]}, \"results\": {\"bindings\": [{\"relates\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 21 (Part 2) (GML-GML): Implementations shall support geof:relate as a SPARQL extension function, consistent with the relate operator defined in Simple Features [ISO 19125-1].",
     "label": "Requirement 21-2 (GML-GML): Relate Function: geof:relate",
     "module": "GTOP",
@@ -896,10 +886,9 @@ var gsb_10_benchmarkconfig={
     "weight": 0.011111111111111112
   },
   "query-r21-3.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"relates\"]}, \"results\": {\"bindings\": [{\"relates\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}",
-      "{\"head\": {\"vars\": [\"relates\"]}, \"results\": {\"bindings\": [{\"relates\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"relates\"]}, \"results\": {\"bindings\": [{\"relates\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 21 (Part 3) (WKT-GML): Implementations shall support geof:relate as a SPARQL extension function, consistent with the relate operator defined in Simple Features [ISO 19125-1].",
     "label": "Requirement 21-3 (WKT-GML): Relate Function: geof:relate",
     "module": "GTOP",
@@ -908,10 +897,9 @@ var gsb_10_benchmarkconfig={
     "weight": 0.005555555555555556
   },
   "query-r21-4.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"relates\"]}, \"results\": {\"bindings\": [{\"relates\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}",
-      "{\"head\": {\"vars\": [\"relates\"]}, \"results\": {\"bindings\": [{\"relates\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"relates\"]}, \"results\": {\"bindings\": [{\"relates\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 21 (Part 4) (GML-WKT): Implementations shall support geof:relate as a SPARQL extension function, consistent with the relate operator defined in Simple Features [ISO 19125-1].",
     "label": "Requirement 21-4 (GML-WKT): Relate Function: geof:relate",
     "module": "GTOP",
@@ -920,10 +908,9 @@ var gsb_10_benchmarkconfig={
     "weight": 0.005555555555555556
   },
   "query-r22-1-1.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"equals\"]}, \"results\": {\"bindings\": [{\"equals\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}",
-      "{\"head\": {\"vars\": [\"equals\"]}, \"results\": {\"bindings\": [{\"equals\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"equals\"]}, \"results\": {\"bindings\": [{\"equals\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 22 (Part 1) (WKT-WKT): Implementations shall support geof:sfEquals as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 22-1-1 (WKT-WKT): Simple Features Query Functions: geof:sfEquals",
     "module": "GTOP",
@@ -932,10 +919,9 @@ var gsb_10_benchmarkconfig={
     "weight": 0.001388888888888889
   },
   "query-r22-1-2.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"equals\"]}, \"results\": {\"bindings\": [{\"equals\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}",
-      "{\"head\": {\"vars\": [\"equals\"]}, \"results\": {\"bindings\": [{\"equals\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"equals\"]}, \"results\": {\"bindings\": [{\"equals\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 22 (Part 1) (GML-GML): Implementations shall support geof:sfEquals as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 22-1-2 (GML-GML): Simple Features Query Functions: geof:sfEquals",
     "module": "GTOP",
@@ -944,10 +930,9 @@ var gsb_10_benchmarkconfig={
     "weight": 0.001388888888888889
   },
   "query-r22-1-3.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"equals\"]}, \"results\": {\"bindings\": [{\"equals\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}",
-      "{\"head\": {\"vars\": [\"equals\"]}, \"results\": {\"bindings\": [{\"equals\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"equals\"]}, \"results\": {\"bindings\": [{\"equals\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 22 (Part 1) (WKT-GML): Implementations shall support geof:sfEquals as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 22-1-3 (WKT-GML): Simple Features Query Functions: geof:sfEquals",
     "module": "GTOP",
@@ -956,10 +941,9 @@ var gsb_10_benchmarkconfig={
     "weight": 0.0006944444444444445
   },
   "query-r22-1-4.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"equals\"]}, \"results\": {\"bindings\": [{\"equals\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}",
-      "{\"head\": {\"vars\": [\"equals\"]}, \"results\": {\"bindings\": [{\"equals\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"equals\"]}, \"results\": {\"bindings\": [{\"equals\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 22 (Part 1) (GML-WKT): Implementations shall support geof:sfEquals as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 22-1-4 (GML-WKT): Simple Features Query Functions: geof:sfEquals",
     "module": "GTOP",
@@ -968,10 +952,9 @@ var gsb_10_benchmarkconfig={
     "weight": 0.0006944444444444445
   },
   "query-r22-2-1.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"disjoint\"]}, \"results\": {\"bindings\": [{\"disjoint\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}",
-      "{\"head\": {\"vars\": [\"disjoint\"]}, \"results\": {\"bindings\": [{\"disjoint\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"disjoint\"]}, \"results\": {\"bindings\": [{\"disjoint\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 22 (Part 2) (WKT-WKT): Implementations shall support geof:sfDisjoint as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 22-2-1 (WKT-WKT): Simple Features Query Functions: geof:sfDisjoint",
     "module": "GTOP",
@@ -980,10 +963,9 @@ var gsb_10_benchmarkconfig={
     "weight": 0.001388888888888889
   },
   "query-r22-2-2.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"disjoint\"]}, \"results\": {\"bindings\": [{\"disjoint\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}",
-      "{\"head\": {\"vars\": [\"disjoint\"]}, \"results\": {\"bindings\": [{\"disjoint\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"disjoint\"]}, \"results\": {\"bindings\": [{\"disjoint\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 22 (Part 2) (GML-GML): Implementations shall support geof:sfDisjoint as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 22-2-2 (GML-GML): Simple Features Query Functions: geof:sfDisjoint",
     "module": "GTOP",
@@ -992,10 +974,9 @@ var gsb_10_benchmarkconfig={
     "weight": 0.001388888888888889
   },
   "query-r22-2-3.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"disjoint\"]}, \"results\": {\"bindings\": [{\"disjoint\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}",
-      "{\"head\": {\"vars\": [\"disjoint\"]}, \"results\": {\"bindings\": [{\"disjoint\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"disjoint\"]}, \"results\": {\"bindings\": [{\"disjoint\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 22 (Part 2) (WKT-GML): Implementations shall support geof:sfDisjoint as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 22-2-3 (WKT-GML): Simple Features Query Functions: geof:sfDisjoint",
     "module": "GTOP",
@@ -1004,10 +985,9 @@ var gsb_10_benchmarkconfig={
     "weight": 0.0006944444444444445
   },
   "query-r22-2-4.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"disjoint\"]}, \"results\": {\"bindings\": [{\"disjoint\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}",
-      "{\"head\": {\"vars\": [\"disjoint\"]}, \"results\": {\"bindings\": [{\"disjoint\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"disjoint\"]}, \"results\": {\"bindings\": [{\"disjoint\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 22 (Part 2) (GML-WKT): Implementations shall support geof:sfDisjoint as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 22-2-4 (GML-WKT): Simple Features Query Functions: geof:sfDisjoint",
     "module": "GTOP",
@@ -1016,10 +996,9 @@ var gsb_10_benchmarkconfig={
     "weight": 0.0006944444444444445
   },
   "query-r22-3-1.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"intersects\"]}, \"results\": {\"bindings\": [{\"intersects\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}",
-      "{\"head\": {\"vars\": [\"intersects\"]}, \"results\": {\"bindings\": [{\"intersects\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"intersects\"]}, \"results\": {\"bindings\": [{\"intersects\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 22 (Part 3) (WKT-WKT): Implementations shall support geof:sfIntersects as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 22-3-1 (WKT-WKT): Simple Features Query Functions: geof:sfIntersects",
     "module": "GTOP",
@@ -1028,10 +1007,9 @@ var gsb_10_benchmarkconfig={
     "weight": 0.001388888888888889
   },
   "query-r22-3-2.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"intersects\"]}, \"results\": {\"bindings\": [{\"intersects\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}",
-      "{\"head\": {\"vars\": [\"intersects\"]}, \"results\": {\"bindings\": [{\"intersects\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"intersects\"]}, \"results\": {\"bindings\": [{\"intersects\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 22 (Part 3) (GML-GML): Implementations shall support geof:sfIntersects as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 22-3-2 (GML-GML): Simple Features Query Functions: geof:sfIntersects",
     "module": "GTOP",
@@ -1040,10 +1018,9 @@ var gsb_10_benchmarkconfig={
     "weight": 0.001388888888888889
   },
   "query-r22-3-3.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"intersects\"]}, \"results\": {\"bindings\": [{\"intersects\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}",
-      "{\"head\": {\"vars\": [\"intersects\"]}, \"results\": {\"bindings\": [{\"intersects\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"intersects\"]}, \"results\": {\"bindings\": [{\"intersects\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 22 (Part 3) (WKT-GML): Implementations shall support geof:sfIntersects as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 22-3-3 (WKT-GML): Simple Features Query Functions: geof:sfIntersects",
     "module": "GTOP",
@@ -1052,10 +1029,9 @@ var gsb_10_benchmarkconfig={
     "weight": 0.0006944444444444445
   },
   "query-r22-3-4.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"intersects\"]}, \"results\": {\"bindings\": [{\"intersects\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}",
-      "{\"head\": {\"vars\": [\"intersects\"]}, \"results\": {\"bindings\": [{\"intersects\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"intersects\"]}, \"results\": {\"bindings\": [{\"intersects\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 22 (Part 3) (GML-WKT): Implementations shall support geof:sfIntersects as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 22-3-4 (GML-WKT): Simple Features Query Functions: geof:sfIntersects",
     "module": "GTOP",
@@ -1064,10 +1040,9 @@ var gsb_10_benchmarkconfig={
     "weight": 0.0006944444444444445
   },
   "query-r22-4-1.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"touches\"]}, \"results\": {\"bindings\": [{\"touches\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}",
-      "{\"head\": {\"vars\": [\"touches\"]}, \"results\": {\"bindings\": [{\"touches\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"touches\"]}, \"results\": {\"bindings\": [{\"touches\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 22 (Part 4) (WKT-WKT): Implementations shall support geof:sfTouches as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 22-4-1 (WKT-WKT): Simple Features Query Functions: geof:sfTouches",
     "module": "GTOP",
@@ -1076,10 +1051,9 @@ var gsb_10_benchmarkconfig={
     "weight": 0.001388888888888889
   },
   "query-r22-4-2.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"touches\"]}, \"results\": {\"bindings\": [{\"touches\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}",
-      "{\"head\": {\"vars\": [\"touches\"]}, \"results\": {\"bindings\": [{\"touches\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"touches\"]}, \"results\": {\"bindings\": [{\"touches\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 22 (Part 4) (GML-GML): Implementations shall support geof:sfTouches as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 22-4-2 (GML-GML): Simple Features Query Functions: geof:sfTouches",
     "module": "GTOP",
@@ -1088,10 +1062,9 @@ var gsb_10_benchmarkconfig={
     "weight": 0.001388888888888889
   },
   "query-r22-4-3.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"touches\"]}, \"results\": {\"bindings\": [{\"touches\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}",
-      "{\"head\": {\"vars\": [\"touches\"]}, \"results\": {\"bindings\": [{\"touches\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"touches\"]}, \"results\": {\"bindings\": [{\"touches\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 22 (Part 4) (WKT-GML): Implementations shall support geof:sfTouches as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 22-4-3 (WKT-GML): Simple Features Query Functions: geof:sfTouches",
     "module": "GTOP",
@@ -1100,10 +1073,9 @@ var gsb_10_benchmarkconfig={
     "weight": 0.0006944444444444445
   },
   "query-r22-4-4.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"touches\"]}, \"results\": {\"bindings\": [{\"touches\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}",
-      "{\"head\": {\"vars\": [\"touches\"]}, \"results\": {\"bindings\": [{\"touches\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"touches\"]}, \"results\": {\"bindings\": [{\"touches\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 22 (Part 4) (GML-WKT): Implementations shall support geof:sfTouches as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 22-4-4 (GML-WKT): Simple Features Query Functions: geof:sfTouches",
     "module": "GTOP",
@@ -1112,10 +1084,9 @@ var gsb_10_benchmarkconfig={
     "weight": 0.0006944444444444445
   },
   "query-r22-5-1.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"crosses\"]}, \"results\": {\"bindings\": [{\"crosses\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}",
-      "{\"head\": {\"vars\": [\"crosses\"]}, \"results\": {\"bindings\": [{\"crosses\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"crosses\"]}, \"results\": {\"bindings\": [{\"crosses\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 22 (Part 5) (WKT-WKT): Implementations shall support geof:sfCrosses as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 22-5-1 (WKT-WKT): Simple Features Query Functions: geof:sfCrosses",
     "module": "GTOP",
@@ -1124,10 +1095,9 @@ var gsb_10_benchmarkconfig={
     "weight": 0.001388888888888889
   },
   "query-r22-5-2.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"crosses\"]}, \"results\": {\"bindings\": [{\"crosses\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}",
-      "{\"head\": {\"vars\": [\"crosses\"]}, \"results\": {\"bindings\": [{\"crosses\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"crosses\"]}, \"results\": {\"bindings\": [{\"crosses\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 22 (Part 5) (GML-GML): Implementations shall support geof:sfCrosses as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 22-5-2 (GML-GML): Simple Features Query Functions: geof:sfCrosses",
     "module": "GTOP",
@@ -1136,10 +1106,9 @@ var gsb_10_benchmarkconfig={
     "weight": 0.001388888888888889
   },
   "query-r22-5-3.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"crosses\"]}, \"results\": {\"bindings\": [{\"crosses\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}",
-      "{\"head\": {\"vars\": [\"crosses\"]}, \"results\": {\"bindings\": [{\"crosses\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"crosses\"]}, \"results\": {\"bindings\": [{\"crosses\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 22 (Part 5) (WKT-GML): Implementations shall support geof:sfCrosses as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 22-5-3 (WKT-GML): Simple Features Query Functions: geof:sfCrosses",
     "module": "GTOP",
@@ -1148,10 +1117,9 @@ var gsb_10_benchmarkconfig={
     "weight": 0.0006944444444444445
   },
   "query-r22-5-4.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"crosses\"]}, \"results\": {\"bindings\": [{\"crosses\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}",
-      "{\"head\": {\"vars\": [\"crosses\"]}, \"results\": {\"bindings\": [{\"crosses\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"crosses\"]}, \"results\": {\"bindings\": [{\"crosses\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 22 (Part 5) (GML-WKT): Implementations shall support geof:sfCrosses as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 22-5-4 (GML-WKT): Simple Features Query Functions: geof:sfCrosses",
     "module": "GTOP",
@@ -1160,10 +1128,9 @@ var gsb_10_benchmarkconfig={
     "weight": 0.0006944444444444445
   },
   "query-r22-6-1.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"within\"]}, \"results\": {\"bindings\": [{\"within\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}",
-      "{\"head\": {\"vars\": [\"within\"]}, \"results\": {\"bindings\": [{\"within\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"within\"]}, \"results\": {\"bindings\": [{\"within\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 22 (Part 6) (WKT-WKT): Implementations shall support geof:sfWithin as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 22-6-1 (WKT-WKT): Simple Features Query Functions: geof:sfWithin",
     "module": "GTOP",
@@ -1172,10 +1139,9 @@ var gsb_10_benchmarkconfig={
     "weight": 0.001388888888888889
   },
   "query-r22-6-2.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"within\"]}, \"results\": {\"bindings\": [{\"within\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}",
-      "{\"head\": {\"vars\": [\"within\"]}, \"results\": {\"bindings\": [{\"within\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"within\"]}, \"results\": {\"bindings\": [{\"within\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 22 (Part 6) (GML-GML): Implementations shall support geof:sfWithin as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 22-6-2 (GML-GML): Simple Features Query Functions: geof:sfWithin",
     "module": "GTOP",
@@ -1184,10 +1150,9 @@ var gsb_10_benchmarkconfig={
     "weight": 0.001388888888888889
   },
   "query-r22-6-3.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"within\"]}, \"results\": {\"bindings\": [{\"within\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}",
-      "{\"head\": {\"vars\": [\"within\"]}, \"results\": {\"bindings\": [{\"within\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"within\"]}, \"results\": {\"bindings\": [{\"within\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 22 (Part 6) (WKT-GML): Implementations shall support geof:sfWithin as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 22-6-3 (WKT-GML): Simple Features Query Functions: geof:sfWithin",
     "module": "GTOP",
@@ -1196,10 +1161,9 @@ var gsb_10_benchmarkconfig={
     "weight": 0.0006944444444444445
   },
   "query-r22-6-4.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"within\"]}, \"results\": {\"bindings\": [{\"within\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}",
-      "{\"head\": {\"vars\": [\"within\"]}, \"results\": {\"bindings\": [{\"within\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"within\"]}, \"results\": {\"bindings\": [{\"within\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 22 (Part 6) (GML-WKT): Implementations shall support geof:sfWithin as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 22-6-4 (GML-WKT): Simple Features Query Functions: geof:sfWithin",
     "module": "GTOP",
@@ -1208,10 +1172,9 @@ var gsb_10_benchmarkconfig={
     "weight": 0.0006944444444444445
   },
   "query-r22-7-1.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"contains\"]}, \"results\": {\"bindings\": [{\"contains\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}",
-      "{\"head\": {\"vars\": [\"contains\"]}, \"results\": {\"bindings\": [{\"contains\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"contains\"]}, \"results\": {\"bindings\": [{\"contains\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 22 (Part 7) (WKT-WKT): Implementations shall support geof:sfContains as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 22-7-1 (WKT-WKT): Simple Features Query Functions: geof:sfContains",
     "module": "GTOP",
@@ -1220,10 +1183,9 @@ var gsb_10_benchmarkconfig={
     "weight": 0.001388888888888889
   },
   "query-r22-7-2.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"contains\"]}, \"results\": {\"bindings\": [{\"contains\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}",
-      "{\"head\": {\"vars\": [\"contains\"]}, \"results\": {\"bindings\": [{\"contains\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"contains\"]}, \"results\": {\"bindings\": [{\"contains\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 22 (Part 7) (GML-GML): Implementations shall support geof:sfContains as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 22-7-2 (GML-GML): Simple Features Query Functions: geof:sfContains",
     "module": "GTOP",
@@ -1232,10 +1194,9 @@ var gsb_10_benchmarkconfig={
     "weight": 0.001388888888888889
   },
   "query-r22-7-3.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"contains\"]}, \"results\": {\"bindings\": [{\"contains\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}",
-      "{\"head\": {\"vars\": [\"contains\"]}, \"results\": {\"bindings\": [{\"contains\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"contains\"]}, \"results\": {\"bindings\": [{\"contains\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 22 (Part 7) (WKT-GML): Implementations shall support geof:sfContains as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 22-7-3 (WKT-GML): Simple Features Query Functions: geof:sfContains",
     "module": "GTOP",
@@ -1244,10 +1205,9 @@ var gsb_10_benchmarkconfig={
     "weight": 0.0006944444444444445
   },
   "query-r22-7-4.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"contains\"]}, \"results\": {\"bindings\": [{\"contains\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}",
-      "{\"head\": {\"vars\": [\"contains\"]}, \"results\": {\"bindings\": [{\"contains\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"contains\"]}, \"results\": {\"bindings\": [{\"contains\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 22 (Part 7) (GML-WKT): Implementations shall support geof:sfContains as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 22-7-4 (GML-WKT): Simple Features Query Functions: geof:sfContains",
     "module": "GTOP",
@@ -1256,10 +1216,9 @@ var gsb_10_benchmarkconfig={
     "weight": 0.0006944444444444445
   },
   "query-r22-8-1.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"overlaps\"]}, \"results\": {\"bindings\": [{\"overlaps\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}",
-      "{\"head\": {\"vars\": [\"overlaps\"]}, \"results\": {\"bindings\": [{\"overlaps\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"overlaps\"]}, \"results\": {\"bindings\": [{\"overlaps\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 22 (Part 8) (WKT-WKT): Implementations shall support geof:sfOverlaps as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 22-8-1 (WKT-WKT): Simple Features Query Functions: geof:sfOverlaps",
     "module": "GTOP",
@@ -1268,10 +1227,9 @@ var gsb_10_benchmarkconfig={
     "weight": 0.001388888888888889
   },
   "query-r22-8-2.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"overlaps\"]}, \"results\": {\"bindings\": [{\"overlaps\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}",
-      "{\"head\": {\"vars\": [\"overlaps\"]}, \"results\": {\"bindings\": [{\"overlaps\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"overlaps\"]}, \"results\": {\"bindings\": [{\"overlaps\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 22 (Part 8) (GML-GML): Implementations shall support geof:sfOverlaps as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 22-8-2 (GML-GML): Simple Features Query Functions: geof:sfOverlaps",
     "module": "GTOP",
@@ -1280,10 +1238,9 @@ var gsb_10_benchmarkconfig={
     "weight": 0.001388888888888889
   },
   "query-r22-8-3.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"overlaps\"]}, \"results\": {\"bindings\": [{\"overlaps\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}",
-      "{\"head\": {\"vars\": [\"overlaps\"]}, \"results\": {\"bindings\": [{\"overlaps\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"overlaps\"]}, \"results\": {\"bindings\": [{\"overlaps\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 22 (Part 8) (WKT-GML): Implementations shall support geof:sfOverlaps as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 22-8-3 (WKT-GML): Simple Features Query Functions: geof:sfOverlaps",
     "module": "GTOP",
@@ -1292,10 +1249,9 @@ var gsb_10_benchmarkconfig={
     "weight": 0.0006944444444444445
   },
   "query-r22-8-4.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"overlaps\"]}, \"results\": {\"bindings\": [{\"overlaps\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}",
-      "{\"head\": {\"vars\": [\"overlaps\"]}, \"results\": {\"bindings\": [{\"overlaps\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"overlaps\"]}, \"results\": {\"bindings\": [{\"overlaps\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 22 (Part 8) (GML-WKT): Implementations shall support geof:sfOverlaps as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 22-8-4 (GML-WKT): Simple Features Query Functions: geof:sfOverlaps",
     "module": "GTOP",
@@ -1304,10 +1260,9 @@ var gsb_10_benchmarkconfig={
     "weight": 0.0006944444444444445
   },
   "query-r23-1-1.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"equals\"]}, \"results\": {\"bindings\": [{\"equals\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}",
-      "{\"head\": {\"vars\": [\"equals\"]}, \"results\": {\"bindings\": [{\"equals\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"equals\"]}, \"results\": {\"bindings\": [{\"equals\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 23 (Part 1) (WKT-WKT): Implementations shall support geof:ehEquals as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 23-1-1 (WKT-WKT): Egenhofer Query Functions: geof:ehEquals",
     "module": "GTOP",
@@ -1316,10 +1271,9 @@ var gsb_10_benchmarkconfig={
     "weight": 0.001388888888888889
   },
   "query-r23-1-2.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"equals\"]}, \"results\": {\"bindings\": [{\"equals\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}",
-      "{\"head\": {\"vars\": [\"equals\"]}, \"results\": {\"bindings\": [{\"equals\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"equals\"]}, \"results\": {\"bindings\": [{\"equals\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 23 (Part 1) (GML-GML): Implementations shall support geof:ehEquals as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 23-1-2 (GML-GML): Egenhofer Query Functions: geof:ehEquals",
     "module": "GTOP",
@@ -1328,10 +1282,9 @@ var gsb_10_benchmarkconfig={
     "weight": 0.001388888888888889
   },
   "query-r23-1-3.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"equals\"]}, \"results\": {\"bindings\": [{\"equals\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}",
-      "{\"head\": {\"vars\": [\"equals\"]}, \"results\": {\"bindings\": [{\"equals\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"equals\"]}, \"results\": {\"bindings\": [{\"equals\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 23 (Part 1) (WKT-GML): Implementations shall support geof:ehEquals as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 23-1-3 (WKT-GML): Egenhofer Query Functions: geof:ehEquals",
     "module": "GTOP",
@@ -1340,10 +1293,9 @@ var gsb_10_benchmarkconfig={
     "weight": 0.0006944444444444445
   },
   "query-r23-1-4.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"equals\"]}, \"results\": {\"bindings\": [{\"equals\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}",
-      "{\"head\": {\"vars\": [\"equals\"]}, \"results\": {\"bindings\": [{\"equals\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"equals\"]}, \"results\": {\"bindings\": [{\"equals\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 23 (Part 1) (GML-WKT): Implementations shall support geof:ehEquals as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 23-1-4 (GML-WKT): Egenhofer Query Functions: geof:ehEquals",
     "module": "GTOP",
@@ -1352,10 +1304,9 @@ var gsb_10_benchmarkconfig={
     "weight": 0.0006944444444444445
   },
   "query-r23-2-1.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"disjoint\"]}, \"results\": {\"bindings\": [{\"disjoint\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}",
-      "{\"head\": {\"vars\": [\"disjoint\"]}, \"results\": {\"bindings\": [{\"disjoint\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"disjoint\"]}, \"results\": {\"bindings\": [{\"disjoint\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 23 (Part 2) (WKT-WKT): Implementations shall support geof:ehDisjoint as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 23-2-1 (WKT-WKT): Egenhofer Query Functions: geof:ehDisjoint",
     "module": "GTOP",
@@ -1364,10 +1315,9 @@ var gsb_10_benchmarkconfig={
     "weight": 0.001388888888888889
   },
   "query-r23-2-2.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"disjoint\"]}, \"results\": {\"bindings\": [{\"disjoint\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}",
-      "{\"head\": {\"vars\": [\"disjoint\"]}, \"results\": {\"bindings\": [{\"disjoint\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"disjoint\"]}, \"results\": {\"bindings\": [{\"disjoint\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 23 (Part 2) (GML-GML): Implementations shall support geof:ehDisjoint as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 23-2-2 (GML-GML): Egenhofer Query Functions: geof:ehDisjoint",
     "module": "GTOP",
@@ -1376,10 +1326,9 @@ var gsb_10_benchmarkconfig={
     "weight": 0.001388888888888889
   },
   "query-r23-2-3.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"disjoint\"]}, \"results\": {\"bindings\": [{\"disjoint\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}",
-      "{\"head\": {\"vars\": [\"disjoint\"]}, \"results\": {\"bindings\": [{\"disjoint\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"disjoint\"]}, \"results\": {\"bindings\": [{\"disjoint\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 23 (Part 2) (WKT-GML): Implementations shall support geof:ehDisjoint as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 23-2-3 (WKT-GML): Egenhofer Query Functions: geof:ehDisjoint",
     "module": "GTOP",
@@ -1388,10 +1337,9 @@ var gsb_10_benchmarkconfig={
     "weight": 0.0006944444444444445
   },
   "query-r23-2-4.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"disjoint\"]}, \"results\": {\"bindings\": [{\"disjoint\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}",
-      "{\"head\": {\"vars\": [\"disjoint\"]}, \"results\": {\"bindings\": [{\"disjoint\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"disjoint\"]}, \"results\": {\"bindings\": [{\"disjoint\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 23 (Part 2) (GML-WKT): Implementations shall support geof:ehDisjoint as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 23-2-4 (GML-WKT): Egenhofer Query Functions: geof:ehDisjoint",
     "module": "GTOP",
@@ -1400,10 +1348,9 @@ var gsb_10_benchmarkconfig={
     "weight": 0.0006944444444444445
   },
   "query-r23-3-1.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"meet\"]}, \"results\": {\"bindings\": [{\"meet\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}",
-      "{\"head\": {\"vars\": [\"meet\"]}, \"results\": {\"bindings\": [{\"meet\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"meet\"]}, \"results\": {\"bindings\": [{\"meet\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 23 (Part 3) (WKT-WKT): Implementations shall support geof:ehMeet as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 23-3-1 (WKT-WKT): Egenhofer Query Functions: geof:ehMeet",
     "module": "GTOP",
@@ -1412,10 +1359,9 @@ var gsb_10_benchmarkconfig={
     "weight": 0.001388888888888889
   },
   "query-r23-3-2.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"meet\"]}, \"results\": {\"bindings\": [{\"meet\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}",
-      "{\"head\": {\"vars\": [\"meet\"]}, \"results\": {\"bindings\": [{\"meet\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"meet\"]}, \"results\": {\"bindings\": [{\"meet\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 23 (Part 3) (GML-GML): Implementations shall support geof:ehMeet as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 23-3-2 (GML-GML): Egenhofer Query Functions: geof:ehMeet",
     "module": "GTOP",
@@ -1424,10 +1370,9 @@ var gsb_10_benchmarkconfig={
     "weight": 0.001388888888888889
   },
   "query-r23-3-3.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"meet\"]}, \"results\": {\"bindings\": [{\"meet\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}",
-      "{\"head\": {\"vars\": [\"meet\"]}, \"results\": {\"bindings\": [{\"meet\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"meet\"]}, \"results\": {\"bindings\": [{\"meet\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 23 (Part 3) (WKT-GML): Implementations shall support geof:ehMeet as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 23-3-3 (WKT-GML): Egenhofer Query Functions: geof:ehMeet",
     "module": "GTOP",
@@ -1436,10 +1381,9 @@ var gsb_10_benchmarkconfig={
     "weight": 0.0006944444444444445
   },
   "query-r23-3-4.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"meet\"]}, \"results\": {\"bindings\": [{\"meet\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}",
-      "{\"head\": {\"vars\": [\"meet\"]}, \"results\": {\"bindings\": [{\"meet\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"meet\"]}, \"results\": {\"bindings\": [{\"meet\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 23 (Part 3) (GML-WKT): Implementations shall support geof:ehMeet as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 23-3-4 (GML-WKT): Egenhofer Query Functions: geof:ehMeet",
     "module": "GTOP",
@@ -1448,10 +1392,9 @@ var gsb_10_benchmarkconfig={
     "weight": 0.0006944444444444445
   },
   "query-r23-4-1.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"overlap\"]}, \"results\": {\"bindings\": [{\"overlap\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}",
-      "{\"head\": {\"vars\": [\"overlap\"]}, \"results\": {\"bindings\": [{\"overlap\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"overlap\"]}, \"results\": {\"bindings\": [{\"overlap\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 23 (Part 4) (WKT-WKT): Implementations shall support geof:ehOverlap as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 23-4-1 (WKT-WKT): Egenhofer Query Functions: geof:ehOverlap",
     "module": "GTOP",
@@ -1460,10 +1403,9 @@ var gsb_10_benchmarkconfig={
     "weight": 0.001388888888888889
   },
   "query-r23-4-2.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"overlap\"]}, \"results\": {\"bindings\": [{\"overlap\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}",
-      "{\"head\": {\"vars\": [\"overlap\"]}, \"results\": {\"bindings\": [{\"overlap\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"overlap\"]}, \"results\": {\"bindings\": [{\"overlap\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 23 (Part 4) (GML-GML): Implementations shall support geof:ehOverlap as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 23-4-2 (GML-GML): Egenhofer Query Functions: geof:ehOverlap",
     "module": "GTOP",
@@ -1472,10 +1414,9 @@ var gsb_10_benchmarkconfig={
     "weight": 0.001388888888888889
   },
   "query-r23-4-3.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"overlap\"]}, \"results\": {\"bindings\": [{\"overlap\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}",
-      "{\"head\": {\"vars\": [\"overlap\"]}, \"results\": {\"bindings\": [{\"overlap\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"overlap\"]}, \"results\": {\"bindings\": [{\"overlap\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 23 (Part 4) (WKT-GML): Implementations shall support geof:ehOverlap as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 23-4-3 (WKT-GML): Egenhofer Query Functions: geof:ehOverlap",
     "module": "GTOP",
@@ -1484,10 +1425,9 @@ var gsb_10_benchmarkconfig={
     "weight": 0.0006944444444444445
   },
   "query-r23-4-4.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"overlap\"]}, \"results\": {\"bindings\": [{\"overlap\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}",
-      "{\"head\": {\"vars\": [\"overlap\"]}, \"results\": {\"bindings\": [{\"overlap\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"overlap\"]}, \"results\": {\"bindings\": [{\"overlap\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 23 (Part 4) (GML-WKT): Implementations shall support geof:ehOverlap as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 23-4-4 (GML-WKT): Egenhofer Query Functions: geof:ehOverlap",
     "module": "GTOP",
@@ -1496,10 +1436,9 @@ var gsb_10_benchmarkconfig={
     "weight": 0.0006944444444444445
   },
   "query-r23-5-1.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"covers\"]}, \"results\": {\"bindings\": [{\"covers\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}",
-      "{\"head\": {\"vars\": [\"covers\"]}, \"results\": {\"bindings\": [{\"covers\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"covers\"]}, \"results\": {\"bindings\": [{\"covers\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 23 (Part 5) (WKT-WKT): Implementations shall support geof:ehCovers as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 23-5-1 (WKT-WKT): Egenhofer Query Functions: geof:ehCovers",
     "module": "GTOP",
@@ -1508,10 +1447,9 @@ var gsb_10_benchmarkconfig={
     "weight": 0.001388888888888889
   },
   "query-r23-5-2.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"covers\"]}, \"results\": {\"bindings\": [{\"covers\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}",
-      "{\"head\": {\"vars\": [\"covers\"]}, \"results\": {\"bindings\": [{\"covers\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"covers\"]}, \"results\": {\"bindings\": [{\"covers\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 23 (Part 5) (GML-GML): Implementations shall support geof:ehCovers as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 23-5-2 (GML-GML): Egenhofer Query Functions: geof:ehCovers",
     "module": "GTOP",
@@ -1520,10 +1458,9 @@ var gsb_10_benchmarkconfig={
     "weight": 0.001388888888888889
   },
   "query-r23-5-3.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"covers\"]}, \"results\": {\"bindings\": [{\"covers\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}",
-      "{\"head\": {\"vars\": [\"covers\"]}, \"results\": {\"bindings\": [{\"covers\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"covers\"]}, \"results\": {\"bindings\": [{\"covers\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 23 (Part 5) (WKT-GML): Implementations shall support geof:ehCovers as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 23-5-3 (WKT-GML): Egenhofer Query Functions: geof:ehCovers",
     "module": "GTOP",
@@ -1532,10 +1469,9 @@ var gsb_10_benchmarkconfig={
     "weight": 0.0006944444444444445
   },
   "query-r23-5-4.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"covers\"]}, \"results\": {\"bindings\": [{\"covers\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}",
-      "{\"head\": {\"vars\": [\"covers\"]}, \"results\": {\"bindings\": [{\"covers\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"covers\"]}, \"results\": {\"bindings\": [{\"covers\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 23 (Part 5) (GML-WKT): Implementations shall support geof:ehCovers as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 23-5-4 (GML-WKT): Egenhofer Query Functions: geof:ehCovers",
     "module": "GTOP",
@@ -1544,10 +1480,9 @@ var gsb_10_benchmarkconfig={
     "weight": 0.0006944444444444445
   },
   "query-r23-6-1.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"coveredBy\"]}, \"results\": {\"bindings\": [{\"coveredBy\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}",
-      "{\"head\": {\"vars\": [\"coveredBy\"]}, \"results\": {\"bindings\": [{\"coveredBy\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"coveredBy\"]}, \"results\": {\"bindings\": [{\"coveredBy\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 23 (Part 6) (WKT-WKT): Implementations shall support geof:ehCoveredBy as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 23-6-1 (WKT-WKT): Egenhofer Query Functions: geof:ehCoveredBy",
     "module": "GTOP",
@@ -1556,10 +1491,9 @@ var gsb_10_benchmarkconfig={
     "weight": 0.001388888888888889
   },
   "query-r23-6-2.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"coveredBy\"]}, \"results\": {\"bindings\": [{\"coveredBy\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}",
-      "{\"head\": {\"vars\": [\"coveredBy\"]}, \"results\": {\"bindings\": [{\"coveredBy\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"coveredBy\"]}, \"results\": {\"bindings\": [{\"coveredBy\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 23 (Part 6) (GML-GML): Implementations shall support geof:ehCoveredBy as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 23-6-2 (GML-GML): Egenhofer Query Functions: geof:ehCoveredBy",
     "module": "GTOP",
@@ -1568,10 +1502,9 @@ var gsb_10_benchmarkconfig={
     "weight": 0.001388888888888889
   },
   "query-r23-6-3.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"coveredBy\"]}, \"results\": {\"bindings\": [{\"coveredBy\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}",
-      "{\"head\": {\"vars\": [\"coveredBy\"]}, \"results\": {\"bindings\": [{\"coveredBy\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"coveredBy\"]}, \"results\": {\"bindings\": [{\"coveredBy\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 23 (Part 6) (WKT-GML): Implementations shall support geof:ehCoveredBy as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 23-6-3 (WKT-GML): Egenhofer Query Functions: geof:ehCoveredBy",
     "module": "GTOP",
@@ -1580,10 +1513,9 @@ var gsb_10_benchmarkconfig={
     "weight": 0.0006944444444444445
   },
   "query-r23-6-4.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"coveredBy\"]}, \"results\": {\"bindings\": [{\"coveredBy\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}",
-      "{\"head\": {\"vars\": [\"coveredBy\"]}, \"results\": {\"bindings\": [{\"coveredBy\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"coveredBy\"]}, \"results\": {\"bindings\": [{\"coveredBy\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 23 (Part 6) (GML-WKT): Implementations shall support geof:ehCoveredBy as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 23-6-4 (GML-WKT): Egenhofer Query Functions: geof:ehCoveredBy",
     "module": "GTOP",
@@ -1592,10 +1524,9 @@ var gsb_10_benchmarkconfig={
     "weight": 0.0006944444444444445
   },
   "query-r23-7-1.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"inside\"]}, \"results\": {\"bindings\": [{\"inside\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}",
-      "{\"head\": {\"vars\": [\"inside\"]}, \"results\": {\"bindings\": [{\"inside\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"inside\"]}, \"results\": {\"bindings\": [{\"inside\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 23 (Part 7) (WKT-WKT): Implementations shall support geof:ehInside as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 23-7-1 (WKT-WKT): Egenhofer Query Functions: geof:ehInside",
     "module": "GTOP",
@@ -1604,10 +1535,9 @@ var gsb_10_benchmarkconfig={
     "weight": 0.001388888888888889
   },
   "query-r23-7-2.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"inside\"]}, \"results\": {\"bindings\": [{\"inside\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}",
-      "{\"head\": {\"vars\": [\"inside\"]}, \"results\": {\"bindings\": [{\"inside\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"inside\"]}, \"results\": {\"bindings\": [{\"inside\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 23 (Part 7) (GML-GML): Implementations shall support geof:ehInside as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 23-7-2 (GML-GML): Egenhofer Query Functions: geof:ehInside",
     "module": "GTOP",
@@ -1616,10 +1546,9 @@ var gsb_10_benchmarkconfig={
     "weight": 0.001388888888888889
   },
   "query-r23-7-3.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"inside\"]}, \"results\": {\"bindings\": [{\"inside\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}",
-      "{\"head\": {\"vars\": [\"inside\"]}, \"results\": {\"bindings\": [{\"inside\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"inside\"]}, \"results\": {\"bindings\": [{\"inside\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 23 (Part 7) (WKT-GML): Implementations shall support geof:ehInside as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 23-7-3 (WKT-GML): Egenhofer Query Functions: geof:ehInside",
     "module": "GTOP",
@@ -1628,10 +1557,9 @@ var gsb_10_benchmarkconfig={
     "weight": 0.0006944444444444445
   },
   "query-r23-7-4.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"inside\"]}, \"results\": {\"bindings\": [{\"inside\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}",
-      "{\"head\": {\"vars\": [\"inside\"]}, \"results\": {\"bindings\": [{\"inside\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"inside\"]}, \"results\": {\"bindings\": [{\"inside\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 23 (Part 7) (GML-WKT): Implementations shall support geof:ehInside as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 23-7-4 (GML-WKT): Egenhofer Query Functions: geof:ehInside",
     "module": "GTOP",
@@ -1640,10 +1568,9 @@ var gsb_10_benchmarkconfig={
     "weight": 0.0006944444444444445
   },
   "query-r23-8-1.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"contains\"]}, \"results\": {\"bindings\": [{\"contains\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}",
-      "{\"head\": {\"vars\": [\"contains\"]}, \"results\": {\"bindings\": [{\"contains\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"contains\"]}, \"results\": {\"bindings\": [{\"contains\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 23 (Part 8) (WKT-WKT): Implementations shall support geof:ehContains as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 23-8-1 (WKT-WKT): Egenhofer Query Functions: geof:ehContains",
     "module": "GTOP",
@@ -1652,10 +1579,9 @@ var gsb_10_benchmarkconfig={
     "weight": 0.001388888888888889
   },
   "query-r23-8-2.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"contains\"]}, \"results\": {\"bindings\": [{\"contains\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}",
-      "{\"head\": {\"vars\": [\"contains\"]}, \"results\": {\"bindings\": [{\"contains\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"contains\"]}, \"results\": {\"bindings\": [{\"contains\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 23 (Part 8) (GML-GML): Implementations shall support geof:ehContains as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 23-8-2 (GML-GML): Egenhofer Query Functions: geof:ehContains",
     "module": "GTOP",
@@ -1664,10 +1590,9 @@ var gsb_10_benchmarkconfig={
     "weight": 0.001388888888888889
   },
   "query-r23-8-3.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"contains\"]}, \"results\": {\"bindings\": [{\"contains\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}",
-      "{\"head\": {\"vars\": [\"contains\"]}, \"results\": {\"bindings\": [{\"contains\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"contains\"]}, \"results\": {\"bindings\": [{\"contains\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 23 (Part 8) (WKT-GML): Implementations shall support geof:ehContains as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 23-8-3 (WKT-GML): Egenhofer Query Functions: geof:ehContains",
     "module": "GTOP",
@@ -1676,10 +1601,9 @@ var gsb_10_benchmarkconfig={
     "weight": 0.0006944444444444445
   },
   "query-r23-8-4.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"contains\"]}, \"results\": {\"bindings\": [{\"contains\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}",
-      "{\"head\": {\"vars\": [\"contains\"]}, \"results\": {\"bindings\": [{\"contains\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"contains\"]}, \"results\": {\"bindings\": [{\"contains\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 23 (Part 8) (GML-WKT): Implementations shall support geof:ehContains as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 23-8-4 (GML-WKT): Egenhofer Query Functions: geof:ehContains",
     "module": "GTOP",
@@ -1688,10 +1612,9 @@ var gsb_10_benchmarkconfig={
     "weight": 0.0006944444444444445
   },
   "query-r24-1-1.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"equals\"]}, \"results\": {\"bindings\": [{\"equals\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}",
-      "{\"head\": {\"vars\": [\"equals\"]}, \"results\": {\"bindings\": [{\"equals\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"equals\"]}, \"results\": {\"bindings\": [{\"equals\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 24 (Part 1) (WKT-WKT): Implementations shall support geof:rcc8eq as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 24-1-1 (WKT-WKT): RCC8 Query Functions: geof:rcc8eq",
     "module": "GTOP",
@@ -1700,10 +1623,9 @@ var gsb_10_benchmarkconfig={
     "weight": 0.001388888888888889
   },
   "query-r24-1-2.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"equals\"]}, \"results\": {\"bindings\": [{\"equals\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}",
-      "{\"head\": {\"vars\": [\"equals\"]}, \"results\": {\"bindings\": [{\"equals\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"equals\"]}, \"results\": {\"bindings\": [{\"equals\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 24 (Part 1) (GML-GML): Implementations shall support geof:rcc8eq as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 24-1-2 (GML-GML): RCC8 Query Functions: geof:rcc8eq",
     "module": "GTOP",
@@ -1712,10 +1634,9 @@ var gsb_10_benchmarkconfig={
     "weight": 0.001388888888888889
   },
   "query-r24-1-3.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"equals\"]}, \"results\": {\"bindings\": [{\"equals\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}",
-      "{\"head\": {\"vars\": [\"equals\"]}, \"results\": {\"bindings\": [{\"equals\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"equals\"]}, \"results\": {\"bindings\": [{\"equals\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 24 (Part 1) (WKT-GML): Implementations shall support geof:rcc8eq as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 24-1-3 (WKT-GML): RCC8 Query Functions: geof:rcc8eq",
     "module": "GTOP",
@@ -1724,10 +1645,9 @@ var gsb_10_benchmarkconfig={
     "weight": 0.0006944444444444445
   },
   "query-r24-1-4.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"equals\"]}, \"results\": {\"bindings\": [{\"equals\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}",
-      "{\"head\": {\"vars\": [\"equals\"]}, \"results\": {\"bindings\": [{\"equals\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"equals\"]}, \"results\": {\"bindings\": [{\"equals\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 24 (Part 1) (GML-WKT): Implementations shall support geof:rcc8eq as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 24-1-4 (GML-WKT): RCC8 Query Functions: geof:rcc8eq",
     "module": "GTOP",
@@ -1736,10 +1656,9 @@ var gsb_10_benchmarkconfig={
     "weight": 0.0006944444444444445
   },
   "query-r24-2-1.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"disconnected\"]}, \"results\": {\"bindings\": [{\"disconnected\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}",
-      "{\"head\": {\"vars\": [\"disconnected\"]}, \"results\": {\"bindings\": [{\"disconnected\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"disconnected\"]}, \"results\": {\"bindings\": [{\"disconnected\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 24 (Part 2) (WKT-WKT): Implementations shall support geof:rcc8dc as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 24-2-1 (WKT-WKT): RCC8 Query Functions: geof:rcc8dc",
     "module": "GTOP",
@@ -1748,10 +1667,9 @@ var gsb_10_benchmarkconfig={
     "weight": 0.001388888888888889
   },
   "query-r24-2-2.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"disconnected\"]}, \"results\": {\"bindings\": [{\"disconnected\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}",
-      "{\"head\": {\"vars\": [\"disconnected\"]}, \"results\": {\"bindings\": [{\"disconnected\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"disconnected\"]}, \"results\": {\"bindings\": [{\"disconnected\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 24 (Part 2) (GML-GML): Implementations shall support geof:rcc8dc as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 24-2-2 (GML-GML): RCC8 Query Functions: geof:rcc8dc",
     "module": "GTOP",
@@ -1760,10 +1678,9 @@ var gsb_10_benchmarkconfig={
     "weight": 0.001388888888888889
   },
   "query-r24-2-3.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"disconnected\"]}, \"results\": {\"bindings\": [{\"disconnected\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}",
-      "{\"head\": {\"vars\": [\"disconnected\"]}, \"results\": {\"bindings\": [{\"disconnected\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"disconnected\"]}, \"results\": {\"bindings\": [{\"disconnected\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 24 (Part 2) (WKT-GML): Implementations shall support geof:rcc8dc as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 24-2-3 (WKT-GML): RCC8 Query Functions: geof:rcc8dc",
     "module": "GTOP",
@@ -1772,10 +1689,9 @@ var gsb_10_benchmarkconfig={
     "weight": 0.0006944444444444445
   },
   "query-r24-2-4.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"disconnected\"]}, \"results\": {\"bindings\": [{\"disconnected\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}",
-      "{\"head\": {\"vars\": [\"disconnected\"]}, \"results\": {\"bindings\": [{\"disconnected\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"disconnected\"]}, \"results\": {\"bindings\": [{\"disconnected\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 24 (Part 2) (GML-WKT): Implementations shall support geof:rcc8dc as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 24-2-4 (GML-WKT): RCC8 Query Functions: geof:rcc8dc",
     "module": "GTOP",
@@ -1784,10 +1700,9 @@ var gsb_10_benchmarkconfig={
     "weight": 0.0006944444444444445
   },
   "query-r24-3-1.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"externallyConnected\"]}, \"results\": {\"bindings\": [{\"externallyConnected\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}",
-      "{\"head\": {\"vars\": [\"externallyConnected\"]}, \"results\": {\"bindings\": [{\"externallyConnected\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"externallyConnected\"]}, \"results\": {\"bindings\": [{\"externallyConnected\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 24 (Part 3) (WKT-WKT): Implementations shall support geof:rcc8ec as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 24-3-1 (WKT-WKT): RCC8 Query Functions: geof:rcc8ec",
     "module": "GTOP",
@@ -1796,10 +1711,9 @@ var gsb_10_benchmarkconfig={
     "weight": 0.001388888888888889
   },
   "query-r24-3-2.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"externallyConnected\"]}, \"results\": {\"bindings\": [{\"externallyConnected\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}",
-      "{\"head\": {\"vars\": [\"externallyConnected\"]}, \"results\": {\"bindings\": [{\"externallyConnected\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"externallyConnected\"]}, \"results\": {\"bindings\": [{\"externallyConnected\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 24 (Part 3) (GML-GML): Implementations shall support geof:rcc8ec as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 24-3-2 (GML-GML): RCC8 Query Functions: geof:rcc8ec",
     "module": "GTOP",
@@ -1808,10 +1722,9 @@ var gsb_10_benchmarkconfig={
     "weight": 0.001388888888888889
   },
   "query-r24-3-3.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"externallyConnected\"]}, \"results\": {\"bindings\": [{\"externallyConnected\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}",
-      "{\"head\": {\"vars\": [\"externallyConnected\"]}, \"results\": {\"bindings\": [{\"externallyConnected\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"externallyConnected\"]}, \"results\": {\"bindings\": [{\"externallyConnected\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 24 (Part 3) (WKT-GML): Implementations shall support geof:rcc8ec as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 24-3-3 (WKT-GML): RCC8 Query Functions: geof:rcc8ec",
     "module": "GTOP",
@@ -1820,10 +1733,9 @@ var gsb_10_benchmarkconfig={
     "weight": 0.0006944444444444445
   },
   "query-r24-3-4.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"externallyConnected\"]}, \"results\": {\"bindings\": [{\"externallyConnected\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}",
-      "{\"head\": {\"vars\": [\"externallyConnected\"]}, \"results\": {\"bindings\": [{\"externallyConnected\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"externallyConnected\"]}, \"results\": {\"bindings\": [{\"externallyConnected\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 24 (Part 3) (GML-WKT): Implementations shall support geof:rcc8ec as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 24-3-4 (GML-WKT): RCC8 Query Functions: geof:rcc8ec",
     "module": "GTOP",
@@ -1832,10 +1744,9 @@ var gsb_10_benchmarkconfig={
     "weight": 0.0006944444444444445
   },
   "query-r24-4-1.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"partiallyOverlapping\"]}, \"results\": {\"bindings\": [{\"partiallyOverlapping\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}",
-      "{\"head\": {\"vars\": [\"partiallyOverlapping\"]}, \"results\": {\"bindings\": [{\"partiallyOverlapping\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"partiallyOverlapping\"]}, \"results\": {\"bindings\": [{\"partiallyOverlapping\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 24 (Part 4) (WKT-WKT): Implementations shall support geof:rcc8po as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 24-4-1 (WKT-WKT): RCC8 Query Functions: geof:rcc8po",
     "module": "GTOP",
@@ -1844,10 +1755,9 @@ var gsb_10_benchmarkconfig={
     "weight": 0.001388888888888889
   },
   "query-r24-4-2.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"partiallyOverlapping\"]}, \"results\": {\"bindings\": [{\"partiallyOverlapping\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}",
-      "{\"head\": {\"vars\": [\"partiallyOverlapping\"]}, \"results\": {\"bindings\": [{\"partiallyOverlapping\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"partiallyOverlapping\"]}, \"results\": {\"bindings\": [{\"partiallyOverlapping\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 24 (Part 4) (GML-GML): Implementations shall support geof:rcc8po as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 24-4-2 (GML-GML): RCC8 Query Functions: geof:rcc8po",
     "module": "GTOP",
@@ -1856,10 +1766,9 @@ var gsb_10_benchmarkconfig={
     "weight": 0.001388888888888889
   },
   "query-r24-4-3.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"partiallyOverlapping\"]}, \"results\": {\"bindings\": [{\"partiallyOverlapping\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}",
-      "{\"head\": {\"vars\": [\"partiallyOverlapping\"]}, \"results\": {\"bindings\": [{\"partiallyOverlapping\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"partiallyOverlapping\"]}, \"results\": {\"bindings\": [{\"partiallyOverlapping\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 24 (Part 4) (WKT-GML): Implementations shall support geof:rcc8po as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 24-4-3 (WKT-GML): RCC8 Query Functions: geof:rcc8po",
     "module": "GTOP",
@@ -1868,10 +1777,9 @@ var gsb_10_benchmarkconfig={
     "weight": 0.0006944444444444445
   },
   "query-r24-4-4.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"partiallyOverlapping\"]}, \"results\": {\"bindings\": [{\"partiallyOverlapping\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}",
-      "{\"head\": {\"vars\": [\"partiallyOverlapping\"]}, \"results\": {\"bindings\": [{\"partiallyOverlapping\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"partiallyOverlapping\"]}, \"results\": {\"bindings\": [{\"partiallyOverlapping\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 24 (Part 4) (GML-WKT): Implementations shall support geof:rcc8po as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 24-4-4 (GML-WKT): RCC8 Query Functions: geof:rcc8po",
     "module": "GTOP",
@@ -1880,10 +1788,9 @@ var gsb_10_benchmarkconfig={
     "weight": 0.0006944444444444445
   },
   "query-r24-5-1.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"tangentialProperPartInverse\"]}, \"results\": {\"bindings\": [{\"tangentialProperPartInverse\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}",
-      "{\"head\": {\"vars\": [\"tangentialProperPartInverse\"]}, \"results\": {\"bindings\": [{\"tangentialProperPartInverse\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"tangentialProperPartInverse\"]}, \"results\": {\"bindings\": [{\"tangentialProperPartInverse\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 24 (Part 5) (WKT-WKT): Implementations shall support geof:rcc8tppi as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 24-5-1 (WKT-WKT): RCC8 Query Functions: geof:rcc8tppi",
     "module": "GTOP",
@@ -1892,10 +1799,9 @@ var gsb_10_benchmarkconfig={
     "weight": 0.001388888888888889
   },
   "query-r24-5-2.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"tangentialProperPartInverse\"]}, \"results\": {\"bindings\": [{\"tangentialProperPartInverse\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}",
-      "{\"head\": {\"vars\": [\"tangentialProperPartInverse\"]}, \"results\": {\"bindings\": [{\"tangentialProperPartInverse\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"tangentialProperPartInverse\"]}, \"results\": {\"bindings\": [{\"tangentialProperPartInverse\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 24 (Part 5) (GML-GML): Implementations shall support geof:rcc8tppi as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 24-5-2 (GML-GML): RCC8 Query Functions: geof:rcc8tppi",
     "module": "GTOP",
@@ -1904,10 +1810,9 @@ var gsb_10_benchmarkconfig={
     "weight": 0.001388888888888889
   },
   "query-r24-5-3.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"tangentialProperPartInverse\"]}, \"results\": {\"bindings\": [{\"tangentialProperPartInverse\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}",
-      "{\"head\": {\"vars\": [\"tangentialProperPartInverse\"]}, \"results\": {\"bindings\": [{\"tangentialProperPartInverse\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"tangentialProperPartInverse\"]}, \"results\": {\"bindings\": [{\"tangentialProperPartInverse\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 24 (Part 5) (WKT-GML): Implementations shall support geof:rcc8tppi as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 24-5-3 (WKT-GML): RCC8 Query Functions: geof:rcc8tppi",
     "module": "GTOP",
@@ -1916,10 +1821,9 @@ var gsb_10_benchmarkconfig={
     "weight": 0.0006944444444444445
   },
   "query-r24-5-4.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"tangentialProperPartInverse\"]}, \"results\": {\"bindings\": [{\"tangentialProperPartInverse\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}",
-      "{\"head\": {\"vars\": [\"tangentialProperPartInverse\"]}, \"results\": {\"bindings\": [{\"tangentialProperPartInverse\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"tangentialProperPartInverse\"]}, \"results\": {\"bindings\": [{\"tangentialProperPartInverse\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 24 (Part 5) (GML-WKT): Implementations shall support geof:rcc8tppi as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 24-5-4 (GML-WKT): RCC8 Query Functions: geof:rcc8tppi",
     "module": "GTOP",
@@ -1928,10 +1832,9 @@ var gsb_10_benchmarkconfig={
     "weight": 0.0006944444444444445
   },
   "query-r24-6-1.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"tangentialProperPart\"]}, \"results\": {\"bindings\": [{\"tangentialProperPart\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}",
-      "{\"head\": {\"vars\": [\"tangentialProperPart\"]}, \"results\": {\"bindings\": [{\"tangentialProperPart\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"tangentialProperPart\"]}, \"results\": {\"bindings\": [{\"tangentialProperPart\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 24 (Part 6) (WKT-WKT): Implementations shall support geof:rcc8tpp as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 24-6-1 (WKT-WKT): RCC8 Query Functions: geof:rcc8tpp",
     "module": "GTOP",
@@ -1940,10 +1843,9 @@ var gsb_10_benchmarkconfig={
     "weight": 0.001388888888888889
   },
   "query-r24-6-2.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"tangentialProperPart\"]}, \"results\": {\"bindings\": [{\"tangentialProperPart\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}",
-      "{\"head\": {\"vars\": [\"tangentialProperPart\"]}, \"results\": {\"bindings\": [{\"tangentialProperPart\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"tangentialProperPart\"]}, \"results\": {\"bindings\": [{\"tangentialProperPart\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 24 (Part 6) (GML-GML): Implementations shall support geof:rcc8tpp as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 24-6-2 (GML-GML): RCC8 Query Functions: geof:rcc8tpp",
     "module": "GTOP",
@@ -1952,10 +1854,9 @@ var gsb_10_benchmarkconfig={
     "weight": 0.001388888888888889
   },
   "query-r24-6-3.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"tangentialProperPart\"]}, \"results\": {\"bindings\": [{\"tangentialProperPart\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}",
-      "{\"head\": {\"vars\": [\"tangentialProperPart\"]}, \"results\": {\"bindings\": [{\"tangentialProperPart\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"tangentialProperPart\"]}, \"results\": {\"bindings\": [{\"tangentialProperPart\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 24 (Part 6) (WKT-GML): Implementations shall support geof:rcc8tpp as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 24-6-3 (WKT-GML): RCC8 Query Functions: geof:rcc8tpp",
     "module": "GTOP",
@@ -1964,10 +1865,9 @@ var gsb_10_benchmarkconfig={
     "weight": 0.0006944444444444445
   },
   "query-r24-6-4.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"tangentialProperPart\"]}, \"results\": {\"bindings\": [{\"tangentialProperPart\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}",
-      "{\"head\": {\"vars\": [\"tangentialProperPart\"]}, \"results\": {\"bindings\": [{\"tangentialProperPart\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"tangentialProperPart\"]}, \"results\": {\"bindings\": [{\"tangentialProperPart\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 24 (Part 6) (GML-WKT): Implementations shall support geof:rcc8tpp as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 24-6-4 (GML-WKT): RCC8 Query Functions: geof:rcc8tpp",
     "module": "GTOP",
@@ -1976,10 +1876,9 @@ var gsb_10_benchmarkconfig={
     "weight": 0.0006944444444444445
   },
   "query-r24-7-1.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"nonTangentialProperPart\"]}, \"results\": {\"bindings\": [{\"nonTangentialProperPart\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}",
-      "{\"head\": {\"vars\": [\"nonTangentialProperPart\"]}, \"results\": {\"bindings\": [{\"nonTangentialProperPart\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"nonTangentialProperPart\"]}, \"results\": {\"bindings\": [{\"nonTangentialProperPart\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 24 (Part 7) (WKT-WKT): Implementations shall support geof:rcc8ntpp as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 24-7-1 (WKT-WKT): RCC8 Query Functions: geof:rcc8ntpp",
     "module": "GTOP",
@@ -1988,10 +1887,9 @@ var gsb_10_benchmarkconfig={
     "weight": 0.001388888888888889
   },
   "query-r24-7-2.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"nonTangentialProperPart\"]}, \"results\": {\"bindings\": [{\"nonTangentialProperPart\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}",
-      "{\"head\": {\"vars\": [\"nonTangentialProperPart\"]}, \"results\": {\"bindings\": [{\"nonTangentialProperPart\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"nonTangentialProperPart\"]}, \"results\": {\"bindings\": [{\"nonTangentialProperPart\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 24 (Part 7) (GML-GML): Implementations shall support geof:rcc8ntpp as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 24-7-2 (GML-GML): RCC8 Query Functions: geof:rcc8ntpp",
     "module": "GTOP",
@@ -2000,10 +1898,9 @@ var gsb_10_benchmarkconfig={
     "weight": 0.001388888888888889
   },
   "query-r24-7-3.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"nonTangentialProperPart\"]}, \"results\": {\"bindings\": [{\"nonTangentialProperPart\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}",
-      "{\"head\": {\"vars\": [\"nonTangentialProperPart\"]}, \"results\": {\"bindings\": [{\"nonTangentialProperPart\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"nonTangentialProperPart\"]}, \"results\": {\"bindings\": [{\"nonTangentialProperPart\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 24 (Part 7) (WKT-GML): Implementations shall support geof:rcc8ntpp as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 24-7-3 (WKT-GML): RCC8 Query Functions: geof:rcc8ntpp",
     "module": "GTOP",
@@ -2012,10 +1909,9 @@ var gsb_10_benchmarkconfig={
     "weight": 0.0006944444444444445
   },
   "query-r24-7-4.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"nonTangentialProperPart\"]}, \"results\": {\"bindings\": [{\"nonTangentialProperPart\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}",
-      "{\"head\": {\"vars\": [\"nonTangentialProperPart\"]}, \"results\": {\"bindings\": [{\"nonTangentialProperPart\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"nonTangentialProperPart\"]}, \"results\": {\"bindings\": [{\"nonTangentialProperPart\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 24 (Part 7) (GML-WKT): Implementations shall support geof:rcc8ntpp as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 24-7-4 (GML-WKT): RCC8 Query Functions: geof:rcc8ntpp",
     "module": "GTOP",
@@ -2024,10 +1920,9 @@ var gsb_10_benchmarkconfig={
     "weight": 0.0006944444444444445
   },
   "query-r24-8-1.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"nonTangentialProperPartInverse\"]}, \"results\": {\"bindings\": [{\"nonTangentialProperPartInverse\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}",
-      "{\"head\": {\"vars\": [\"nonTangentialProperPartInverse\"]}, \"results\": {\"bindings\": [{\"nonTangentialProperPartInverse\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"nonTangentialProperPartInverse\"]}, \"results\": {\"bindings\": [{\"nonTangentialProperPartInverse\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 24 (Part 8) (WKT-WKT): Implementations shall support geof:rcc8ntppi as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 24-8-1 (WKT-WKT): RCC8 Query Functions: geof:rcc8ntppi",
     "module": "GTOP",
@@ -2036,10 +1931,9 @@ var gsb_10_benchmarkconfig={
     "weight": 0.001388888888888889
   },
   "query-r24-8-2.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"nonTangentialProperPartInverse\"]}, \"results\": {\"bindings\": [{\"nonTangentialProperPartInverse\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}",
-      "{\"head\": {\"vars\": [\"nonTangentialProperPartInverse\"]}, \"results\": {\"bindings\": [{\"nonTangentialProperPartInverse\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"nonTangentialProperPartInverse\"]}, \"results\": {\"bindings\": [{\"nonTangentialProperPartInverse\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 24 (Part 8) (GML-GML): Implementations shall support geof:rcc8ntppi as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 24-8-2 (GML-GML): RCC8 Query Functions: geof:rcc8ntppi",
     "module": "GTOP",
@@ -2048,10 +1942,9 @@ var gsb_10_benchmarkconfig={
     "weight": 0.001388888888888889
   },
   "query-r24-8-3.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"nonTangentialProperPartInverse\"]}, \"results\": {\"bindings\": [{\"nonTangentialProperPartInverse\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}",
-      "{\"head\": {\"vars\": [\"nonTangentialProperPartInverse\"]}, \"results\": {\"bindings\": [{\"nonTangentialProperPartInverse\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"nonTangentialProperPartInverse\"]}, \"results\": {\"bindings\": [{\"nonTangentialProperPartInverse\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 24 (Part 8) (WKT-GML): Implementations shall support geof:rcc8ntppi as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 24-8-3 (WKT-GML): RCC8 Query Functions: geof:rcc8ntppi",
     "module": "GTOP",
@@ -2060,10 +1953,9 @@ var gsb_10_benchmarkconfig={
     "weight": 0.0006944444444444445
   },
   "query-r24-8-4.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"nonTangentialProperPartInverse\"]}, \"results\": {\"bindings\": [{\"nonTangentialProperPartInverse\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}",
-      "{\"head\": {\"vars\": [\"nonTangentialProperPartInverse\"]}, \"results\": {\"bindings\": [{\"nonTangentialProperPartInverse\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"nonTangentialProperPartInverse\"]}, \"results\": {\"bindings\": [{\"nonTangentialProperPartInverse\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 24 (Part 8) (GML-WKT): Implementations shall support geof:rcc8ntppi as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 24-8-4 (GML-WKT): RCC8 Query Functions: geof:rcc8ntppi",
     "module": "GTOP",
@@ -2072,9 +1964,9 @@ var gsb_10_benchmarkconfig={
     "weight": 0.0006944444444444445
   },
   "query-r25-1.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"f\"]}, \"results\": {\"bindings\": [{\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#A\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#B\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#C\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#D\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#E\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#F\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#G\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#H\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#I\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#J\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#K\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#L\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#M\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"f\"]}, \"results\": {\"bindings\": [{\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#A\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#B\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#C\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#D\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#E\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#F\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#G\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#H\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#I\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#J\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#K\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#L\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#M\"}}]}}": true
+    },
     "definition": "Requirement 25 (Part 1): Basic graph pattern matching shall use the semantics defined by the RDFS Entailment Regime [W3C SPARQL Entailment]. Part 1 tests Subclass Inference using geo:Feature.",
     "label": "Requirement 25-1: Basic Graph Pattern: Subclass Inference using geo:Feature",
     "module": "RDFSE",
@@ -2083,9 +1975,9 @@ var gsb_10_benchmarkconfig={
     "weight": 0.011111111111111112
   },
   "query-r25-2.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"f\"]}, \"results\": {\"bindings\": [{\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#A\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#B\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#C\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#D\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#E\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#F\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#G\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#H\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#I\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#J\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#K\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#L\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#M\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"f\"]}, \"results\": {\"bindings\": [{\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#A\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#B\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#C\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#D\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#E\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#F\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#G\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#H\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#I\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#J\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#K\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#L\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#M\"}}]}}": true
+    },
     "definition": "Requirement 25 (Part 2): Basic graph pattern matching shall use the semantics defined by the RDFS Entailment Regime [W3C SPARQL Entailment]. Part 2 tests SubProperty Inference using geo:hasGeometry.",
     "label": "Requirement 25-2: Basic Graph Pattern: SubProperty Inference using geo:hasGeometry",
     "module": "RDFSE",
@@ -2094,9 +1986,9 @@ var gsb_10_benchmarkconfig={
     "weight": 0.011111111111111112
   },
   "query-r25-3.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"f\"]}, \"results\": {\"bindings\": [{\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#A\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#B\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#C\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#D\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#E\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#F\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#G\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#H\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#I\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#J\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#K\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#L\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#M\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"f\"]}, \"results\": {\"bindings\": [{\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#A\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#B\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#C\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#D\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#E\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#F\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#G\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#H\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#I\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#J\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#K\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#L\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#M\"}}]}}": true
+    },
     "definition": "Requirement 25 (Part 3): Basic graph pattern matching shall use the semantics defined by the RDFS Entailment Regime [W3C SPARQL Entailment]. Part 3 tests SubProperty Inference using geo:hasDefaultGeometry.",
     "label": "Requirement 25-3: Basic Graph Pattern: SubProperty Inference using geo:hasDefaultGeometry",
     "module": "RDFSE",
@@ -2105,9 +1997,9 @@ var gsb_10_benchmarkconfig={
     "weight": 0.011111111111111112
   },
   "query-r26-1.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"f\"]}, \"results\": {\"bindings\": [{\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#AExactGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#BExactGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#CExactGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#DExactGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#GExactGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#JExactGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#KExactGeom\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"f\"]}, \"results\": {\"bindings\": [{\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#AExactGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#BExactGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#CExactGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#DExactGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#GExactGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#JExactGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#KExactGeom\"}}]}}": true
+    },
     "definition": "Requirement 26 (Part 1): WKT Geometry Types: Subclass Inference using sf:Surface",
     "label": "Requirement 26-1: WKT Geometry Types: Subclass Inference using sf:Surface",
     "module": "RDFSE",
@@ -2116,9 +2008,9 @@ var gsb_10_benchmarkconfig={
     "weight": 0.016666666666666666
   },
   "query-r26-2.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"f\"]}, \"results\": {\"bindings\": [{\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#EExactGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#HExactGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#IExactGeom\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"f\"]}, \"results\": {\"bindings\": [{\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#EExactGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#HExactGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#IExactGeom\"}}]}}": true
+    },
     "definition": "Requirement 26 (Part 2): WKT Geometry Types: Subclass Inference using sf:Curve",
     "label": "Requirement 26-2: WKT Geometry Types: Subclass Inference using sf:Curve",
     "module": "RDFSE",
@@ -2127,9 +2019,9 @@ var gsb_10_benchmarkconfig={
     "weight": 0.016666666666666666
   },
   "query-r27.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"f\"]}, \"results\": {\"bindings\": [{\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#AExactGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#BExactGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#CExactGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#DExactGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#GExactGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#JExactGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#KExactGeom\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"f\"]}, \"results\": {\"bindings\": [{\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#AExactGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#BExactGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#CExactGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#DExactGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#GExactGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#JExactGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#KExactGeom\"}}]}}": true
+    },
     "definition": "Requirement 27: Implementations shall support graph patterns involving terms from an RDFS/OWL class hierarchy of geometry types consistent with the GML schema that implements GM_Object using the specified version of GML [OGC 07-036].",
     "label": "Requirement 27: GML Geometry Types",
     "module": "RDFSE",
@@ -2138,9 +2030,9 @@ var gsb_10_benchmarkconfig={
     "weight": 0.03333333333333333
   },
   "query-r28-1.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"f\"]}, \"results\": {\"bindings\": [{\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#G\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#GExactGeom\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"f\"]}, \"results\": {\"bindings\": [{\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#G\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#GExactGeom\"}}]}}": true
+    },
     "definition": "Requirement 28 (Part 1): Basic graph pattern matching shall use the semantics defined by the RIF Core Entailment Regime [W3C SPARQL Entailment] for the RIF rule [W3C RIF Core] geor:sfEquals.",
     "label": "Requirement 28-1: Simple Features Query Transformation Rules: geor:sfEquals",
     "module": "QRW",
@@ -2149,9 +2041,9 @@ var gsb_10_benchmarkconfig={
     "weight": 0.004166666666666667
   },
   "query-r28-2.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"f\"]}, \"results\": {\"bindings\": [{\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#C\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#CExactGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#CPointGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#D\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#DExactGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#DPointGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#E\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#EExactGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#F\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#FExactGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#H\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#HExactGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#HPointGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#I\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#IExactGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#IPointGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#J\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#JExactGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#K\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#KExactGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#L\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#LExactGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#MExactGeom\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"f\"]}, \"results\": {\"bindings\": [{\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#C\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#CExactGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#CPointGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#D\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#DExactGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#DPointGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#E\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#EExactGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#F\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#FExactGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#H\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#HExactGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#HPointGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#I\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#IExactGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#IPointGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#J\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#JExactGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#K\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#KExactGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#L\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#LExactGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#MExactGeom\"}}]}}": true
+    },
     "definition": "Requirement 28 (Part 2): Basic graph pattern matching shall use the semantics defined by the RIF Core Entailment Regime [W3C SPARQL Entailment] for the RIF rule [W3C RIF Core] geor:sfDisjoint.",
     "label": "Requirement 28-2: Simple Features Query Transformation Rules: geor:sfDisjoint",
     "module": "QRW",
@@ -2160,9 +2052,9 @@ var gsb_10_benchmarkconfig={
     "weight": 0.004166666666666667
   },
   "query-r28-3.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"f\"]}, \"results\": {\"bindings\": [{\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#B\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#BExactGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#C\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#CExactGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#D\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#DExactGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#E\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#EExactGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#F\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#FExactGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#G\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#GExactGeom\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"f\"]}, \"results\": {\"bindings\": [{\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#B\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#BExactGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#C\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#CExactGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#D\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#DExactGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#E\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#EExactGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#F\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#FExactGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#G\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#GExactGeom\"}}]}}": true
+    },
     "definition": "Requirement 28 (Part 3): Basic graph pattern matching shall use the semantics defined by the RIF Core Entailment Regime [W3C SPARQL Entailment] for the RIF rule [W3C RIF Core] geor:sfIntersects.",
     "label": "Requirement 28-3: Simple Features Query Transformation Rules: geor:sfIntersects",
     "module": "QRW",
@@ -2171,9 +2063,9 @@ var gsb_10_benchmarkconfig={
     "weight": 0.004166666666666667
   },
   "query-r28-4.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"f\"]}, \"results\": {\"bindings\": [{\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#A\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#AExactGeom\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"f\"]}, \"results\": {\"bindings\": [{\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#A\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#AExactGeom\"}}]}}": true
+    },
     "definition": "Requirement 28 (Part 4): Basic graph pattern matching shall use the semantics defined by the RIF Core Entailment Regime [W3C SPARQL Entailment] for the RIF rule [W3C RIF Core] geor:sfTouches.",
     "label": "Requirement 28-4: Simple Features Query Transformation Rules: geor:sfTouches",
     "module": "QRW",
@@ -2182,9 +2074,9 @@ var gsb_10_benchmarkconfig={
     "weight": 0.004166666666666667
   },
   "query-r28-5.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"f\"]}, \"results\": {\"bindings\": [{\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#A\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#AExactGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#G\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#GExactGeom\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"f\"]}, \"results\": {\"bindings\": [{\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#A\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#AExactGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#G\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#GExactGeom\"}}]}}": true
+    },
     "definition": "Requirement 28 (Part 5): Basic graph pattern matching shall use the semantics defined by the RIF Core Entailment Regime [W3C SPARQL Entailment] for the RIF rule [W3C RIF Core] geor:sfCrosses.",
     "label": "Requirement 28-5: Simple Features Query Transformation Rules: geor:sfCrosses",
     "module": "QRW",
@@ -2193,9 +2085,9 @@ var gsb_10_benchmarkconfig={
     "weight": 0.004166666666666667
   },
   "query-r28-6.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"f\"]}, \"results\": {\"bindings\": [{\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#A\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#AExactGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#APointGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#B\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#BExactGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#BPointGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#F\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#FExactGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#G\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#GExactGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#GPointGeom\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"f\"]}, \"results\": {\"bindings\": [{\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#A\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#AExactGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#APointGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#B\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#BExactGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#BPointGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#F\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#FExactGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#G\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#GExactGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#GPointGeom\"}}]}}": true
+    },
     "definition": "Requirement 28 (Part 6): Basic graph pattern matching shall use the semantics defined by the RIF Core Entailment Regime [W3C SPARQL Entailment] for the RIF rule [W3C RIF Core] geor:sfWithin.",
     "label": "Requirement 28-6: Simple Features Query Transformation Rules: geor:sfWithin",
     "module": "QRW",
@@ -2204,9 +2096,9 @@ var gsb_10_benchmarkconfig={
     "weight": 0.004166666666666667
   },
   "query-r28-7.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"f\"]}, \"results\": {\"bindings\": [{\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#A\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#AExactGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#APointGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#B\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#BExactGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#BPointGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#F\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#FExactGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#G\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#GExactGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#GPointGeom\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"f\"]}, \"results\": {\"bindings\": [{\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#A\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#AExactGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#APointGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#B\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#BExactGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#BPointGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#F\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#FExactGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#G\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#GExactGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#GPointGeom\"}}]}}": true
+    },
     "definition": "Requirement 28 (Part 7): Basic graph pattern matching shall use the semantics defined by the RIF Core Entailment Regime [W3C SPARQL Entailment] for the RIF rule [W3C RIF Core] geor:sfContains.",
     "label": "Requirement 28-7: Simple Features Query Transformation Rules: geor:sfContains",
     "module": "QRW",
@@ -2215,9 +2107,9 @@ var gsb_10_benchmarkconfig={
     "weight": 0.004166666666666667
   },
   "query-r28-8.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"f\"]}, \"results\": {\"bindings\": [{\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#A\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#AExactGeom\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"f\"]}, \"results\": {\"bindings\": [{\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#A\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#AExactGeom\"}}]}}": true
+    },
     "definition": "Requirement 28 (Part 8): Basic graph pattern matching shall use the semantics defined by the RIF Core Entailment Regime [W3C SPARQL Entailment] for the RIF rule [W3C RIF Core] geor:sfOverlaps.",
     "label": "Requirement 28-8: Simple Features Query Transformation Rules: geor:sfOverlaps",
     "module": "QRW",
@@ -2226,9 +2118,9 @@ var gsb_10_benchmarkconfig={
     "weight": 0.004166666666666667
   },
   "query-r29-1.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"f\"]}, \"results\": {\"bindings\": [{\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#G\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#GExactGeom\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"f\"]}, \"results\": {\"bindings\": [{\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#G\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#GExactGeom\"}}]}}": true
+    },
     "definition": "Requirement 29 (Part 1): Basic graph pattern matching shall use the semantics defined by the RIF Core Entailment Regime [W3C SPARQL Entailment] for the RIF rule [W3C RIF Core] geor:ehEquals.",
     "label": "Requirement 29-1: Egenhofer Query Transformation Rules: geor:ehEquals",
     "module": "QRW",
@@ -2237,9 +2129,9 @@ var gsb_10_benchmarkconfig={
     "weight": 0.004166666666666667
   },
   "query-r29-2.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"f\"]}, \"results\": {\"bindings\": [{\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#C\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#CExactGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#CPointGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#D\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#DExactGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#DPointGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#E\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#EExactGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#F\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#FExactGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#H\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#HExactGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#HPointGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#I\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#IExactGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#IPointGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#J\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#JExactGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#K\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#KExactGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#L\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#LExactGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#MExactGeom\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"f\"]}, \"results\": {\"bindings\": [{\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#C\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#CExactGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#CPointGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#D\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#DExactGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#DPointGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#E\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#EExactGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#F\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#FExactGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#H\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#HExactGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#HPointGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#I\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#IExactGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#IPointGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#J\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#JExactGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#K\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#KExactGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#L\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#LExactGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#MExactGeom\"}}]}}": true
+    },
     "definition": "Requirement 29 (Part 2): Basic graph pattern matching shall use the semantics defined by the RIF Core Entailment Regime [W3C SPARQL Entailment] for the RIF rule [W3C RIF Core] geor:ehDisjoint.",
     "label": "Requirement 29-2: Egenhofer Query Transformation Rules: geor:ehDisjoint",
     "module": "QRW",
@@ -2248,9 +2140,9 @@ var gsb_10_benchmarkconfig={
     "weight": 0.004166666666666667
   },
   "query-r29-3.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"f\"]}, \"results\": {\"bindings\": [{\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#A\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#AExactGeom\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"f\"]}, \"results\": {\"bindings\": [{\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#A\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#AExactGeom\"}}]}}": true
+    },
     "definition": "Requirement 29 (Part 3): Basic graph pattern matching shall use the semantics defined by the RIF Core Entailment Regime [W3C SPARQL Entailment] for the RIF rule [W3C RIF Core] geor:ehMeet.",
     "label": "Requirement 29-3: Egenhofer Query Transformation Rules: geor:ehMeet",
     "module": "QRW",
@@ -2259,9 +2151,9 @@ var gsb_10_benchmarkconfig={
     "weight": 0.004166666666666667
   },
   "query-r29-4.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"f\"]}, \"results\": {\"bindings\": [{\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#A\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#AExactGeom\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"f\"]}, \"results\": {\"bindings\": [{\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#A\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#AExactGeom\"}}]}}": true
+    },
     "definition": "Requirement 29 (Part 4): Basic graph pattern matching shall use the semantics defined by the RIF Core Entailment Regime [W3C SPARQL Entailment] for the RIF rule [W3C RIF Core] geor:ehOverlap.",
     "label": "Requirement 29-4: Egenhofer Query Transformation Rules: geor:ehOverlap",
     "module": "QRW",
@@ -2270,9 +2162,9 @@ var gsb_10_benchmarkconfig={
     "weight": 0.004166666666666667
   },
   "query-r29-5.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"f\"]}, \"results\": {\"bindings\": [{\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#B\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#BExactGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#G\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#GExactGeom\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"f\"]}, \"results\": {\"bindings\": [{\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#B\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#BExactGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#G\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#GExactGeom\"}}]}}": true
+    },
     "definition": "Requirement 29 (Part 5): Basic graph pattern matching shall use the semantics defined by the RIF Core Entailment Regime [W3C SPARQL Entailment] for the RIF rule [W3C RIF Core] geor:ehCovers.",
     "label": "Requirement 29-5: Egenhofer Query Transformation Rules: geor:ehCovers",
     "module": "QRW",
@@ -2281,9 +2173,9 @@ var gsb_10_benchmarkconfig={
     "weight": 0.004166666666666667
   },
   "query-r29-6.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"f\"]}, \"results\": {\"bindings\": [{\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#A\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#AExactGeom\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"f\"]}, \"results\": {\"bindings\": [{\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#A\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#AExactGeom\"}}]}}": true
+    },
     "definition": "Requirement 29 (Part 6): Basic graph pattern matching shall use the semantics defined by the RIF Core Entailment Regime [W3C SPARQL Entailment] for the RIF rule [W3C RIF Core] geor:ehCoveredBy.",
     "label": "Requirement 29-6: Egenhofer Query Transformation Rules: geor:ehCoveredBy",
     "module": "QRW",
@@ -2292,9 +2184,9 @@ var gsb_10_benchmarkconfig={
     "weight": 0.004166666666666667
   },
   "query-r29-7.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"f\"]}, \"results\": {\"bindings\": [{\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#A\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#AExactGeom\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"f\"]}, \"results\": {\"bindings\": [{\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#A\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#AExactGeom\"}}]}}": true
+    },
     "definition": "Requirement 29 (Part 7): Basic graph pattern matching shall use the semantics defined by the RIF Core Entailment Regime [W3C SPARQL Entailment] for the RIF rule [W3C RIF Core] geor:ehInside.",
     "label": "Requirement 29-7: Egenhofer Query Transformation Rules: geor:ehInside",
     "module": "QRW",
@@ -2303,9 +2195,9 @@ var gsb_10_benchmarkconfig={
     "weight": 0.004166666666666667
   },
   "query-r29-8.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"f\"]}, \"results\": {\"bindings\": [{\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#APointGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#B\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#BPointGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#F\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#FExactGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#G\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#GExactGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#GPointGeom\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"f\"]}, \"results\": {\"bindings\": [{\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#APointGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#B\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#BPointGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#F\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#FExactGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#G\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#GExactGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#GPointGeom\"}}]}}": true
+    },
     "definition": "Requirement 29 (Part 8): Basic graph pattern matching shall use the semantics defined by the RIF Core Entailment Regime [W3C SPARQL Entailment] for the RIF rule [W3C RIF Core] geor:ehContains.",
     "label": "Requirement 29-8: Egenhofer Query Transformation Rules: geor:ehContains",
     "module": "QRW",
@@ -2314,9 +2206,9 @@ var gsb_10_benchmarkconfig={
     "weight": 0.004166666666666667
   },
   "query-r30-1.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"f\"]}, \"results\": {\"bindings\": [{\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#G\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#GExactGeom\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"f\"]}, \"results\": {\"bindings\": [{\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#G\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#GExactGeom\"}}]}}": true
+    },
     "definition": "Requirement 30 (Part 1): Basic graph pattern matching shall use the semantics defined by the RIF Core Entailment Regime [W3C SPARQL Entailment] for the RIF rule [W3C RIF Core] geor:rcc8eq.",
     "label": "Requirement 30-1: RCC8 Query Transformation Rules: geor:rcc8eq",
     "module": "QRW",
@@ -2325,9 +2217,9 @@ var gsb_10_benchmarkconfig={
     "weight": 0.004166666666666667
   },
   "query-r30-2.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"f\"]}, \"results\": {\"bindings\": [{\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#C\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#CExactGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#D\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#DExactGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#J\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#JExactGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#K\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#KExactGeom\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"f\"]}, \"results\": {\"bindings\": [{\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#C\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#CExactGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#D\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#DExactGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#J\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#JExactGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#K\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#KExactGeom\"}}]}}": true
+    },
     "definition": "Requirement 30 (Part 2): Basic graph pattern matching shall use the semantics defined by the RIF Core Entailment Regime [W3C SPARQL Entailment] for the RIF rule [W3C RIF Core] geor:rcc8dc.",
     "label": "Requirement 30-2: RCC8 Query Transformation Rules: geor:rcc8dc",
     "module": "QRW",
@@ -2336,9 +2228,9 @@ var gsb_10_benchmarkconfig={
     "weight": 0.004166666666666667
   },
   "query-r30-3.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"f\"]}, \"results\": {\"bindings\": [{\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#A\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#AExactGeom\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"f\"]}, \"results\": {\"bindings\": [{\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#A\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#AExactGeom\"}}]}}": true
+    },
     "definition": "Requirement 30 (Part 3): Basic graph pattern matching shall use the semantics defined by the RIF Core Entailment Regime [W3C SPARQL Entailment] for the RIF rule [W3C RIF Core] geor:rcc8ec.",
     "label": "Requirement 30-3: RCC8 Query Transformation Rules: geor:rcc8ec",
     "module": "QRW",
@@ -2347,9 +2239,9 @@ var gsb_10_benchmarkconfig={
     "weight": 0.004166666666666667
   },
   "query-r30-4.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"f\"]}, \"results\": {\"bindings\": [{\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#A\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#AExactGeom\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"f\"]}, \"results\": {\"bindings\": [{\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#A\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#AExactGeom\"}}]}}": true
+    },
     "definition": "Requirement 30 (Part 4): Basic graph pattern matching shall use the semantics defined by the RIF Core Entailment Regime [W3C SPARQL Entailment] for the RIF rule [W3C RIF Core] geor:rcc8po.",
     "label": "Requirement 30-4: RCC8 Query Transformation Rules: geor:rcc8po",
     "module": "QRW",
@@ -2358,9 +2250,9 @@ var gsb_10_benchmarkconfig={
     "weight": 0.004166666666666667
   },
   "query-r30-5.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"f\"]}, \"results\": {\"bindings\": [{\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#A\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#AExactGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#B\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#BExactGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#F\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#FExactGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#G\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#GExactGeom\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"f\"]}, \"results\": {\"bindings\": [{\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#A\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#AExactGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#B\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#BExactGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#F\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#FExactGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#G\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#GExactGeom\"}}]}}": true
+    },
     "definition": "Requirement 30 (Part 5): Basic graph pattern matching shall use the semantics defined by the RIF Core Entailment Regime [W3C SPARQL Entailment] for the RIF rule [W3C RIF Core] geor:rcc8tppi.",
     "label": "Requirement 30-5: RCC8 Query Transformation Rules: geor:rcc8tppi",
     "module": "QRW",
@@ -2369,9 +2261,9 @@ var gsb_10_benchmarkconfig={
     "weight": 0.004166666666666667
   },
   "query-r30-6.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"f\"]}, \"results\": {\"bindings\": [{\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#A\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#AExactGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#B\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#BExactGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#F\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#FExactGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#G\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#GExactGeom\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"f\"]}, \"results\": {\"bindings\": [{\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#A\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#AExactGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#B\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#BExactGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#F\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#FExactGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#G\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#GExactGeom\"}}]}}": true
+    },
     "definition": "Requirement 30 (Part 6): Basic graph pattern matching shall use the semantics defined by the RIF Core Entailment Regime [W3C SPARQL Entailment] for the RIF rule [W3C RIF Core] geor:rcc8tpp.",
     "label": "Requirement 30-6: RCC8 Query Transformation Rules: geor:rcc8tpp",
     "module": "QRW",
@@ -2380,9 +2272,9 @@ var gsb_10_benchmarkconfig={
     "weight": 0.004166666666666667
   },
   "query-r30-7.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"f\"]}, \"results\": {\"bindings\": [{\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#A\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#AExactGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#G\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#GExactGeom\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"f\"]}, \"results\": {\"bindings\": [{\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#A\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#AExactGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#G\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#GExactGeom\"}}]}}": true
+    },
     "definition": "Requirement 30 (Part 7): Basic graph pattern matching shall use the semantics defined by the RIF Core Entailment Regime [W3C SPARQL Entailment] for the RIF rule [W3C RIF Core] geor:rcc8ntpp.",
     "label": "Requirement 30-7: RCC8 Query Transformation Rules: geor:rcc8ntpp",
     "module": "QRW",
@@ -2391,9 +2283,9 @@ var gsb_10_benchmarkconfig={
     "weight": 0.004166666666666667
   },
   "query-r30-8.rq": {
-    "answers": [
-      "{\"head\": {\"vars\": [\"f\"]}, \"results\": {\"bindings\": [{\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#A\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#AExactGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#G\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#GExactGeom\"}}]}}"
-    ],
+    "answers": {
+      "{\"head\": {\"vars\": [\"f\"]}, \"results\": {\"bindings\": [{\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#A\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#AExactGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#G\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#GExactGeom\"}}]}}": true
+    },
     "definition": "Requirement 30 (Part 8): Basic graph pattern matching shall use the semantics defined by the RIF Core Entailment Regime [W3C SPARQL Entailment] for the RIF rule [W3C RIF Core] geor:rcc8ntppi.",
     "label": "Requirement 30-8: RCC8 Query Transformation Rules: geor:rcc8ntppi",
     "module": "QRW",
