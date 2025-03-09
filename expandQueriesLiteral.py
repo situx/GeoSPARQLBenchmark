@@ -17,7 +17,7 @@ configpath = 'src/main/resources/geosparql10_compliance/gsb_config/geosparql10_c
 
 answerpaths = ['src/main/resources/geosparql10_compliance/gsb_answers/','src/main/resources/geosparql11_compliance/gsb_answers/']
 
-querytemplatepaths = ['src/main/resources/geosparql10_compliance/gsb_queries/','src/main/resources/geosparql11_compliance/gsb_querytemplates/']
+querytemplatepaths = ['src/main/resources/geosparql10_compliance/gsb_querytemplates/','src/main/resources/geosparql11_compliance/gsb_querytemplates/']
 
 querypaths = ['src/main/resources/geosparql10_compliance/gsb_queries/','src/main/resources/geosparql11_compliance/gsb_querytemplates/result/']
 
@@ -27,8 +27,7 @@ benchmarkconfig={}
 
 benchmarkjsconfig={}
 
-files = os.listdir(querypath)
-answerp = os.listdir(answerpath)
+queryToVariants={}
 
 amountOfRequirements=32
 
@@ -103,35 +102,115 @@ bench:GSComplianceBenchmarkV2  a   hobbit:Benchmark;
     hobbit:usesImage    "git.project-hobbit.eu:4567/mjovanovik/gsb-seqtaskgenerator-v2";
     hobbit:usesImage    "git.project-hobbit.eu:4567/mjovanovik/gsb-evaluationmodule-v2" ."""
 
-geom_literals = {
-    "WKT":"geo:asWKT",
-	"GML":"geo:asGML",
-    "GeoJSON":"geo:asGeoJSON",
-    "KML":"geo:asKML",
-	"DGGS":"geo:asDGGS"
-}
+
+
+#geom_literals = {
+#    "WKT":"geo:asWKT",
+#	"GML":"geo:asGML",
+#    "GeoJSON":"geo:asGeoJSON",
+#    "KML":"geo:asKML",
+#	"DGGS":"geo:asDGGS"
+#}
 
 benchmarkuri="bench:GSComplianceBenchmarkV2"
 
-geom_literals2 = [
-    ("WKT","geo:asWKT"),
-	("GML","geo:asGML"),
-    ("GeoJSON","geo:asGeoJSON"),
-    ("KML","geo:asKML"),
-	("DGGS","geo:asDGGS")
-]
+#geom_literals2 = [
+#   ("WKT","geo:asWKT"),
+#	("GML","geo:asGML"),
+#    ("GeoJSON","geo:asGeoJSON"),
+#    ("KML","geo:asKML"),
+#	("DGGS","geo:asDGGS")
+#]
 
-combinations=list(itertools.permutations(geom_literals,2))
-combinations+=list(map(lambda x, y:(x,y), geom_literals.keys(), geom_literals.keys()))
-
-for comb in combinations:
-    print(comb)
-
-if not os.path.exists(answerpath+"result"):
-    os.makedirs(answerpath+"result")
-
-if not os.path.exists(querypath+"result"):
-    os.makedirs(querypath+"result")
+def generateConfigLabelsFromTemplate(benchmarkconfig):
+    geom_literals=benchmarkconfig["geoProperties"]
+    geom_literals2=benchmarkconfig["literalTypes"]
+    combinations=list(itertools.permutations(geom_literals,2))
+    print(combinations)
+    combinations=list(map(lambda x, y:(x,y), geom_literals.keys(), geom_literals.keys()))+combinations
+    if "reqTemplates" in benchmarkconfig:
+        benchmarkconfig["reqLabels"]={}
+        benchmarkconfig["reqToDescs"]={}
+        for temp in benchmarkconfig["reqTemplates"]:
+            if "labeltemplate" in benchmarkconfig["reqTemplates"][temp]:
+                if "{{items}}" in benchmarkconfig["reqTemplates"][temp]["labeltemplate"] and "items" in benchmarkconfig["reqTemplates"][temp]:
+                    subreqcounter=1
+                    for item in benchmarkconfig["reqTemplates"][temp]["items"]:
+                        if benchmarkconfig["reqTemplates"][temp]["items"][item]==0:
+                            reqnum=temp.replace(".rq","")+"-"+str(subreqcounter)+".rq"
+                            onlynum=reqnum.replace(".rq","").replace("query-","").replace("r0","").replace("r","")
+                            thelabel="Requirement "+str(onlynum)+benchmarkconfig["reqTemplates"][temp]["labeltemplate"][benchmarkconfig["reqTemplates"][temp]["labeltemplate"].find(":"):]
+                            benchmarkconfig["reqLabels"][reqnum]=thelabel.replace("{{items}}",item).replace("{{index}}",str(subreqcounter))
+                        elif benchmarkconfig["reqTemplates"][temp]["items"][item]==1:
+                            litcounter=1
+                            for lit in geom_literals:
+                                if len(benchmarkconfig["reqTemplates"][temp]["items"])==1:
+                                    reqnum=temp.replace(".rq","")+"-"+str(litcounter)+".rq"
+                                else:
+                                    reqnum=temp.replace(".rq","")+"-"+str(subreqcounter)+"-"+str(litcounter)+".rq"
+                                onlynum=reqnum.replace(".rq","").replace("query-","").replace("r0","").replace("r","")
+                                thelabel="Requirement "+str(onlynum)+" ("+str(lit)+")"+benchmarkconfig["reqTemplates"][temp]["labeltemplate"][benchmarkconfig["reqTemplates"][temp]["labeltemplate"].find(":"):]
+                                benchmarkconfig["reqLabels"][reqnum]=thelabel.replace("{{items}}",item).replace("{{index}}",str(subreqcounter))
+                                litcounter+=1
+                        elif benchmarkconfig["reqTemplates"][temp]["items"][item]==2:
+                            litcounter=1
+                            for lit in combinations:
+                                if len(benchmarkconfig["reqTemplates"][temp]["items"])==1:
+                                    reqnum=temp.replace(".rq","")+"-"+str(litcounter)+".rq"
+                                else:
+                                    reqnum=temp.replace(".rq","")+"-"+str(subreqcounter)+"-"+str(litcounter)+".rq"
+                                onlynum=reqnum.replace(".rq","").replace("query-","").replace("r0","").replace("r","")
+                                thelabel="Requirement "+str(onlynum)+" ("+str(lit[0])+"-"+str(lit[1])+")"+benchmarkconfig["reqTemplates"][temp]["labeltemplate"][benchmarkconfig["reqTemplates"][temp]["labeltemplate"].find(":"):]
+                                benchmarkconfig["reqLabels"][reqnum]=thelabel.replace("{{items}}",item).replace("{{index}}",str(subreqcounter))
+                                litcounter+=1
+                        subreqcounter+=1
+                else:
+                    benchmarkconfig["reqLabels"][temp]=benchmarkconfig["reqTemplates"][temp]["labeltemplate"]
+            if "deftemplate" in benchmarkconfig["reqTemplates"][temp]:
+                if "{{items}}" in benchmarkconfig["reqTemplates"][temp]["deftemplate"]:
+                    subreqcounter=1
+                    for item in benchmarkconfig["reqTemplates"][temp]["items"]:
+                        if benchmarkconfig["reqTemplates"][temp]["items"][item]==0:
+                            hreqnum=temp.replace(".rq","").replace("query-","").replace("r0","").replace("r","")
+                            reqnum=temp.replace(".rq","")+"-"+str(subreqcounter)+".rq"
+                            onlynum=reqnum.replace(".rq","").replace("query-","").replace("r0","").replace("r","")
+                            thelabel="Requirement "+str(hreqnum)+" (Part "+str(subreqcounter)+"): "+benchmarkconfig["reqTemplates"][temp]["deftemplate"]
+                            benchmarkconfig["reqToDescs"][reqnum]=thelabel.replace("{{items}}",item).replace("{{index}}",str(subreqcounter))
+                        elif benchmarkconfig["reqTemplates"][temp]["items"][item]==1:
+                            litcounter=1
+                            for lit in geom_literals:
+                                hreqnum=temp.replace(".rq","").replace("query-","").replace("r0","").replace("r","")
+                                if len(benchmarkconfig["reqTemplates"][temp]["items"])==1:
+                                    reqnum=temp.replace(".rq","")+"-"+str(litcounter)+".rq"
+                                    thelabel="Requirement "+str(hreqnum)+" (Part "+str(litcounter)+") ("+str(lit)+"): "+benchmarkconfig["reqTemplates"][temp]["deftemplate"]
+                                else:
+                                    reqnum=temp.replace(".rq","")+"-"+str(subreqcounter)+"-"+str(litcounter)+".rq"
+                                    thelabel="Requirement "+str(hreqnum)+" (Part "+str(subreqcounter)+") ("+str(lit)+"): "+benchmarkconfig["reqTemplates"][temp]["deftemplate"]
+                                onlynum=reqnum.replace(".rq","").replace("query-","").replace("r0","").replace("r","")
+                                
+                                benchmarkconfig["reqToDescs"][reqnum]=thelabel.replace("{{items}}",item).replace("{{index}}",str(subreqcounter))
+                                litcounter+=1
+                        elif benchmarkconfig["reqTemplates"][temp]["items"][item]==2:
+                            litcounter=1
+                            for lit in combinations:
+                                hreqnum=temp.replace(".rq","").replace("query-","").replace("r0","").replace("r","")
+                                if len(benchmarkconfig["reqTemplates"][temp]["items"])==1:
+                                    reqnum=temp.replace(".rq","")+"-"+str(litcounter)+".rq"
+                                    thelabel="Requirement "+str(hreqnum)+" (Part "+str(litcounter)+") ("+str(lit[0])+"-"+str(lit[1])+"): "+benchmarkconfig["reqTemplates"][temp]["deftemplate"]
+                                else:
+                                    reqnum=temp.replace(".rq","")+"-"+str(subreqcounter)+"-"+str(litcounter)+".rq"
+                                    thelabel="Requirement "+str(hreqnum)+" (Part "+str(subreqcounter)+") ("+str(lit[0])+"-"+str(lit[1])+"): "+benchmarkconfig["reqTemplates"][temp]["deftemplate"]
+                                onlynum=reqnum.replace(".rq","").replace("query-","").replace("r0","").replace("r","")
+                                
+                                benchmarkconfig["reqToDescs"][reqnum]=thelabel.replace("{{items}}",item).replace("{{index}}",str(subreqcounter))
+                                litcounter+=1
+                        subreqcounter+=1
+                else:
+                    hreqnum=temp.replace(".rq","").replace("query-","").replace("r0","").replace("r","")
+                    benchmarkconfig["reqToDescs"][temp]="Requirement "+str(hreqnum)+": "+benchmarkconfig["reqTemplates"][temp]["deftemplate"]  
+    print(benchmarkconfig["reqLabels"])
+    print(benchmarkconfig["reqToDescs"])
+    #print(combinations)
 
 def find_nth_occurrence(string, sub_string, n):
     start_index = string.find(sub_string)
@@ -139,6 +218,42 @@ def find_nth_occurrence(string, sub_string, n):
         start_index = string.find(sub_string, start_index + 1)
         n -= 1
     return start_index
+
+def createWeightsForQueries(quervarmap):
+    numberreqs=len(quervarmap)+1
+    print("Number Of Reqs: "+str(numberreqs))
+    reqweight=100/numberreqs
+    print("ReqWeight: "+str(reqweight))
+    reqToWeights={}
+    for var in quervarmap:
+        #print(str(var)+": "+str(len(quervarmap[var])))
+        if len(quervarmap[var])==1:
+            reqToWeights[var]=reqweight
+        elif len(quervarmap[var])>1:
+            partweight=reqweight/len(quervarmap[var])
+            print("PartWeight: "+str(partweight))
+            print(quervarmap[var])
+            highweightcount=0
+            for quer in quervarmap[var]:
+                if quervarmap[var][quer]:
+                    highweightcount+=1
+            highpartweight=partweight
+            weightdiff=partweight*highweightcount
+            lowweightcount=len(quervarmap[var])-highweightcount
+            if lowweightcount>0:
+                subtractweight=weightdiff/lowweightcount
+                for quer in quervarmap[var]:
+                    if quervarmap[var][quer]:
+                        reqToWeights[quer]=highpartweight
+                    else:
+                        reqToWeights[quer]=partweight-subtractweight
+            else:
+                for quer in quervarmap[var]:
+                    if quervarmap[var][quer]:
+                        reqToWeights[quer]=partweight
+                    else:
+                        reqToWeights[quer]=partweight
+    print(reqToWeights)
 
 def convertXMLResultToJSONResult(xmlresultstring):
     jsonio=StringIO("")
@@ -154,16 +269,31 @@ def convertXMLResultToJSONResult(xmlresultstring):
     #print(jsonio.getvalue())
     return json.dumps(json.loads(jsonio.getvalue()),sort_keys=True)
 
-def expandLiteralsFromTemplates():
+def expandLiteralsFromTemplates(benchmarkconfig,querypath,answerpath):
     first=True
     gsbquerycounter=0
     curreqcounter=0
     curreqamount=0
     reqstring=""
     benchmarkconfigttl=""
+    files = os.listdir(querypath)
+    answerp = os.listdir(answerpath)
+    if not os.path.exists(answerpath+"result"):
+        os.makedirs(answerpath+"result")
+    if not os.path.exists(querypath+"result"):
+        os.makedirs(querypath+"result")
+    geom_literals=benchmarkconfig["geoProperties"]
+    geom_literals2=benchmarkconfig["literalTypes"]
+    combinations=list(itertools.permutations(geom_literals,2))
+    combinations+=list(map(lambda x, y:(x,y), geom_literals.keys(), geom_literals.keys()))
+    for comb in combinations:
+        print(comb)
     for f in files:
         if not os.path.isfile(querypath+f):
             continue
+        index=find_nth_occurrence(f, "-", 2)
+        if f[0:index] not in queryToVariants:
+            queryToVariants[f[0:index]]={}
         file = open(querypath+f, "r")
         filecontent=file.read()
         fileprefix=f[0:f.rfind("-")]
@@ -187,13 +317,18 @@ def expandLiteralsFromTemplates():
                 answerfiles[ans]=filec
         #print(answerfiles)
         variantcounter=1
-        if not "%%literal1%%" in filecontent and not "%%literalrel1%%" in filecontent and not "%%literal2%%" in filecontent and not "%%literalrel1%%" in filecontent:     
+        if not "%%literal1%%" in filecontent and not "%%literalrel1%%" in filecontent and not "%%literal2%%" in filecontent and not "%%literalrel1%%" in filecontent:
+            queryToVariants[f[0:index]][f]=True            
             with open(querypath+"result/"+f, "w") as f2:
                 f2.write(filecontent)
             file.close()
             continue
         if "%%literal2%%" in filecontent:
             for lit in combinations:
+                if lit[0]==lit[1]:
+                    queryToVariants[f[0:index]][f[0:f.rfind("-")]+"-"+str(variantcounter)+".rq"]=True
+                else:
+                    queryToVariants[f[0:index]][f[0:f.rfind("-")]+"-"+str(variantcounter)+".rq"]=False
                 newfile=replaceInString(filecontent,lit[0],lit[1],geom_literals[lit[0]],geom_literals[lit[1]])
                 with open(querypath+"result/"+f[0:f.rfind("-")]+"-"+str(variantcounter)+".rq", "w") as f2:
                     f2.write(newfile)
@@ -220,7 +355,11 @@ def expandLiteralsFromTemplates():
         else:	
             for lit in geom_literals2:
                 #print(lit[0]+" "+lit[1])
-                newfile=replaceInString(filecontent,lit[0],lit[0],lit[1],lit[1])
+                newfile=replaceInString(filecontent,lit,lit,geom_literals2[lit],geom_literals2[lit])
+                if lit==geom_literals2[lit]:
+                    queryToVariants[f[0:index]][f[0:f.rfind("-")]+"-"+str(variantcounter)+".rq"]=True
+                else:
+                    queryToVariants[f[0:index]][f[0:f.rfind("-")]+"-"+str(variantcounter)+".rq"]=False
                 try:
                     with open(querypath+"result/"+f[0:f.rfind("-")]+"-"+str(variantcounter)+".rq", "w") as f2:
                         f2.write(newfile)
@@ -254,6 +393,13 @@ def generateConfiguration(querypath,answerpath,benchmarkconfig,benchmarkconfigtt
             afilecontent=afile.read()
             jsonres=convertXMLResultToJSONResult(afilecontent)
             benchmarkjs[f]["answers"].append(jsonres)
+        for i in range(1,10):
+            if os.path.exists(answerpath+f.replace(".rq","")+"-alternative-"+str(i)+".srx"):
+                afile = open(answerpath+f.replace(".rq","")+"-alternative-"+str(i)+".srx", "r")
+                afilecontent=afile.read()
+                jsonres=convertXMLResultToJSONResult(afilecontent)
+                benchmarkjs[f]["answers"].append(jsonres)
+                break
         fileprefix=f[0:f.rfind("-")]
         if curreqcounter==0:
             curreqamount=0
@@ -291,12 +437,12 @@ def generateConfiguration(querypath,answerpath,benchmarkconfig,benchmarkconfigtt
                 benchmarkconfigttl.add((URIRef(kpiuri),RDFS.label,Literal(thelabel)))
             else:
                 benchmarkconfigttl.add((URIRef(kpiuri),RDFS.label,Literal(f.replace(".rq",""))))
-            print("QueryNumber: "+str(querynumber))
-            print("QueryNumber: "+str(f))
-            print("QueryNumber: "+str(partnumber))
+            #print("QueryNumber: "+str(querynumber))
+            #print("QueryNumber: "+str(f))
+            #print("QueryNumber: "+str(partnumber))
             if "reqToURI" in benchmarkconfig and querynumber in benchmarkconfig["reqToURI"]:
                 benchmarkjs[f]["uri"]=benchmarkconfig["reqToURI"][querynumber]
-                benchmarkconfigttl.add((URIRef(kpiuri),URIRef("http://www.opengis.net/def/spec-element/isTestResultOf"),URIRef(benchmarkconfig["reqToURI"][querynumber]replace("req","conf"))))
+                benchmarkconfigttl.add((URIRef(kpiuri),URIRef("http://www.opengis.net/def/spec-element/isTestResultOf"),URIRef(benchmarkconfig["reqToURI"][querynumber].replace("req","conf"))))
                 benchmarkconfigttl.add((URIRef(benchmarkconfig["reqToURI"][querynumber]),RDF.type,URIRef("http://www.opengis.net/def/spec-element/Requirement")))
                 benchmarkconfigttl.add((URIRef(benchmarkconfig["reqToURI"][querynumber].replace("req","conf")),RDF.type,URIRef("http://www.opengis.net/def/spec-element/ConformanceTest")))
                 #benchmarkconfigttl+="spec:isTestResultOf <"+benchmarkconfig["reqToURI"][querynumber]+"> .\n"
@@ -346,9 +492,9 @@ def generateConfiguration(querypath,answerpath,benchmarkconfig,benchmarkconfigtt
                     benchmarkconfigttl.add((URIRef(kpiuri),RDFS.label,Literal(thelabel,lang="en")))
                 else:
                     benchmarkconfigttl.add((URIRef(kpiuri),RDFS.label,Literal(f.replace(".rq",""),lang="en")))
-                print("QueryNumber: "+str(querynumber))
-                print("QueryNumber: "+str(f))
-                print("QueryNumber: "+str(partnumber))
+                #print("QueryNumber: "+str(querynumber))
+                #print("QueryNumber: "+str(f))
+                #print("QueryNumber: "+str(partnumber))
                 if "reqToURI" in benchmarkconfig and querynumber in benchmarkconfig["reqToURI"]:
                     benchmarkconfigttl.add((URIRef(kpiuri),URIRef("http://www.opengis.net/def/spec-element/isTestResultOf"),URIRef(benchmarkconfig["reqToURI"][querynumber])))
                     benchmarkjs[f]["uri"]=benchmarkconfig["reqToURI"][querynumber]
@@ -380,15 +526,26 @@ def generateConfiguration(querypath,answerpath,benchmarkconfig,benchmarkconfigtt
         f2.write("var "+benchmarkname+"_benchmarkconfig="+json.dumps(benchmarkjs,indent=2,sort_keys=True))
     return benchmarkconfigttl
 
-expandLiteralsFromTemplates()
+#i=0
+#for bencon in configpaths:
+#    with open(bencon) as json_file:
+#        benchmarkconfig = json.load(json_file)
+#    if i==0:
+#        
+#    i+=1
 benchmarkconfigttl=Graph()
 i=0
 for bencon in configpaths:
     with open(bencon) as json_file:
         benchmarkconfig = json.load(json_file)
+    #if i==0:
+    generateConfigLabelsFromTemplate(benchmarkconfig)
+    expandLiteralsFromTemplates(benchmarkconfig,querytemplatepaths[i],answerpaths[i])        
     benchmarkconfigttl.parse(data=benchmarkconfigttlhead)
     benchmarkconfigttl=generateConfiguration(querypaths[i],answerpaths[i],benchmarkconfig,benchmarkconfigttl)
-    benchmarkconfigttl.serialize(destination='hobbit-settings/benchmark_v2.ttl', format='turtle')
+    benchmarkconfigttl.serialize(destination='hobbit-settings/benchmark_'+str(benchmarkconfig["benchmarkshorturi"])+'.ttl', format='turtle')
+    print(queryToVariants)
+    createWeightsForQueries(queryToVariants)
     #benchmarkconfigttlhead+="    hobbit:measuresKPI  bench:totalCorrectAnswers ;\n    hobbit:measuresKPI  bench:percentageCorrectAnswers . bench:percentageCorrectAnswers rdf:type hobbit:KPI .\n"
     #print(benchmarkconfigttlhead+benchmarkconfigttl)
     #graph2 = Graph()
