@@ -369,6 +369,9 @@ my:AExactGeom rdf:type owl:NamedIndividual ,
                        geo:Geometry ,
                        <http://www.opengis.net/ont/gml#Polygon> ,
                        sf:Polygon ;
+              geo:asDGGS """
+        <https://h3geo.org/res/7> CELLIST( '87f15d9acffffff', '87f143749ffffff', '87f15d9a1ffffff', '87f143296ffffff', '87f15d910ffffff', '87f143648ffffff', '87f14374bffffff', '87f15d9aeffffff', '87f15d98dffffff', '87f14366bffffff', '87f15d912ffffff', '87f14374dffffff', '87f15d9a5ffffff', '87f15d832ffffff', '87f15d914ffffff', '87f14364cffffff', '87f15d916ffffff', '87f15d9a9ffffff', '87f15d836ffffff', '87f15d988ffffff', '87f143748ffffff', '87f15d9abffffff', '87f143668ffffff', '87f15d9adffffff', '87f15d98cffffff', '87f14366affffff', '87f143649ffffff', '87f14366cffffff', '87f15d810ffffff', '87f143661ffffff', '87f15d913ffffff', '87f14364bffffff', '87f14366effffff', '87f14364dffffff', '87f15d9a8ffffff', '87f143292ffffff', '87f15d814ffffff', '87f143665ffffff', '87f15d9aaffffff', '87f15d989ffffff', '87f15d816ffffff' )
+    """^^geo:dggsLiteral ;
               geo:asGML """
         <gml:Polygon xmlns:gml=\"http://www.opengis.net/ont/gml\" srsName=\"http://www.opengis.net/def/crs/OGC/1.3/CRS84\"><gml:exterior><gml:LinearRing><gml:posList>-83.6 34.1 -83.2 34.1 -83.2 34.5 -83.6 34.5 -83.6 34.1</gml:posList></gml:LinearRing></gml:exterior></gml:Polygon>
     """^^geo:gmlLiteral ;
@@ -410,6 +413,9 @@ my:APointGeom rdf:type owl:NamedIndividual ,
                        geo:Geometry ,
                        <http://www.opengis.net/ont/gml#Point> ,
                        sf:Point ;
+              geo:asDGGS """
+        <https://h3geo.org/res/7> CELLIST( 87f143649ffffff )
+    """^^geo:dggsLiteral ;
               geo:asGML """
         <gml:Point xmlns:gml=\"http://www.opengis.net/ont/gml\" srsName=\"http://www.opengis.net/def/crs/OGC/1.3/CRS84\"><gml:pos>-83.4 34.3</gml:pos></gml:Point>
     """^^geo:gmlLiteral ;
@@ -464,7 +470,7 @@ my:BExactGeom rdf:type owl:NamedIndividual ,
                        <http://www.opengis.net/ont/gml#Polygon> ,
                        sf:Polygon ;
               geo:asDGGS """
-        
+        <https://h3geo.org/res/7> CELLIST( '87f14364dffffff', '87f14366bffffff', '87f14366cffffff', '87f143749ffffff', '87f143292ffffff', '87f143649ffffff', '87f14374dffffff', '87f143668ffffff', '87f143296ffffff' )
     """^^geo:dggsLiteral ;
               geo:asGML """
         <gml:Polygon xmlns:gml=\"http://www.opengis.net/ont/gml\" srsName=\"http://www.opengis.net/def/crs/OGC/1.3/CRS84\"><gml:exterior><gml:LinearRing><gml:posList>-83.6 34.1 -83.4 34.1 -83.4 34.3 -83.6 34.3 -83.6 34.1</gml:posList></gml:LinearRing></gml:exterior></gml:Polygon>
@@ -495,7 +501,7 @@ my:BPointGeom rdf:type owl:NamedIndividual ,
                        <http://www.opengis.net/ont/gml#Point> ,
                        sf:Point ;
               geo:asDGGS """
-        
+        <https://h3geo.org/res/7> CELLIST( 87f14366cffffff )
     """^^geo:dggsLiteral ;
               geo:asGML """
         <gml:Point xmlns:gml=\"http://www.opengis.net/ont/gml\" srsName=\"http://www.opengis.net/def/crs/OGC/1.3/CRS84\"><gml:pos>-83.5 34.2</gml:pos></gml:Point>
@@ -549,7 +555,7 @@ my:CExactGeom rdf:type owl:NamedIndividual ,
                        <http://www.opengis.net/ont/gml#Polygon> ,
                        sf:Polygon ;
               geo:asDGGS """
-        
+        <https://h3geo.org/res/7> CELLIST( '87f15d8acffffff', '87f15d8a8ffffff', '87f15d812ffffff', '87f15d8d6ffffff', '87f15d8d2ffffff', '87f15d88dffffff', '87f15d12cffffff', '87f15d889ffffff', '87f15d8abffffff' )
     """^^geo:dggsLiteral ;
               geo:asGML """
         <gml:Polygon xmlns:gml=\"http://www.opengis.net/ont/gml\" srsName=\"http://www.opengis.net/def/crs/OGC/1.3/CRS84\"><gml:exterior><gml:LinearRing><gml:posList>-83.2 34.3 -83.0 34.3 -83.0 34.5 -83.2 34.5 -83.2 34.3</gml:posList></gml:LinearRing></gml:exterior></gml:Polygon>
@@ -578,7 +584,7 @@ my:CPointGeom rdf:type owl:NamedIndividual ,
                        <http://www.opengis.net/ont/gml#Point> ,
                        sf:Point ;
               geo:asDGGS """
-        
+        <https://h3geo.org/res/7> CELLIST( 87f15d88dffffff )
     """^^geo:dggsLiteral ;
               geo:asGML """
         <gml:Point xmlns:gml=\"http://www.opengis.net/ont/gml\" srsName=\"http://www.opengis.net/def/crs/OGC/1.3/CRS84\"><gml:pos>-83.1 34.4</gml:pos></gml:Point>
@@ -653,7 +659,7 @@ my:DExactGeom rdf:type owl:NamedIndividual ,
                        <http://www.opengis.net/ont/gml#Polygon> ,
                        sf:Polygon ;
               geo:asDGGS """
-        
+        <https://h3geo.org/res/7> CELLIST( '87f15d81effffff', '87f15d81affffff', '87f15d833ffffff', '87f15d9a9ffffff', '87f15d813ffffff', '87f15d814ffffff', '87f15d810ffffff', '87f15d832ffffff', '87f15d8f4ffffff', '87f15d815ffffff', '87f15d811ffffff', '87f15d836ffffff' )
     """^^geo:dggsLiteral ;
               geo:asGML """
         <gml:Polygon xmlns:gml=\"http://www.opengis.net/ont/gml\" srsName=\"http://www.opengis.net/def/crs/OGC/1.3/CRS84\"><gml:exterior><gml:LinearRing><gml:posList>-83.3 34.0 -83.1 34.0 -83.1 34.2 -83.3 34.2 -83.3 34.0</gml:posList></gml:LinearRing></gml:exterior></gml:Polygon>
@@ -684,7 +690,7 @@ my:DPointGeom rdf:type owl:NamedIndividual ,
                        <http://www.opengis.net/ont/gml#Point> ,
                        sf:Point ;
               geo:asDGGS """
-        
+        <https://h3geo.org/res/7> CELLIST( 87f15d810ffffff )
     """^^geo:dggsLiteral ;
               geo:asGML """
         <gml:Point xmlns:gml=\"http://www.opengis.net/ont/gml\" srsName=\"http://www.opengis.net/def/crs/OGC/1.3/CRS84\"><gml:pos>-83.2 34.1</gml:pos></gml:Point>
@@ -727,7 +733,7 @@ my:EExactGeom rdf:type owl:NamedIndividual ,
                        <http://www.opengis.net/ont/gml#LineString> ,
                        sf:LineString ;
               geo:asDGGS """
-        
+        <https://h3geo.org/res/7> CELLIST( 87f15d933ffffff 87f15d9a8ffffff )
     """^^geo:dggsLiteral ;
               geo:asGML """
         <gml:LineString srsName=\"http://www.opengis.net/def/crs/OGC/1.3/CRS84\" xmlns:gml=\"http://www.opengis.net/ont/gml\"><gml:posList>-83.4 34.0 -83.3 34.3</gml:posList></gml:LineString>
@@ -768,7 +774,7 @@ my:FExactGeom rdf:type owl:NamedIndividual ,
                        <http://www.opengis.net/ont/gml#Point> ,
                        sf:Point ;
               geo:asDGGS """
-        
+        <https://h3geo.org/res/7> CELLIST( 87f14364bffffff )
     """^^geo:dggsLiteral ;
               geo:asGML """
         <gml:Point xmlns:gml=\"http://www.opengis.net/ont/gml\" srsName=\"http://www.opengis.net/def/crs/OGC/1.3/CRS84\"><gml:pos>-83.4 34.4</gml:pos></gml:Point>
@@ -810,7 +816,7 @@ my:GExactGeom rdf:type owl:NamedIndividual ,
                        <http://www.opengis.net/ont/gml#Polygon> ,
                        sf:Polygon ;
               geo:asDGGS """
-        
+        <https://h3geo.org/res/7> CELLIST( '87f15d9acffffff', '87f15d9a8ffffff', '87f15d916ffffff', '87f15d912ffffff', '87f14364dffffff', '87f143649ffffff', '87f14366bffffff', '87f14366cffffff', '87f143668ffffff' )
     """^^geo:dggsLiteral ;
               geo:asGML """
         
@@ -843,7 +849,7 @@ my:GPointGeom rdf:type owl:NamedIndividual ,
                        <http://www.opengis.net/ont/gml#Point> ,
                        sf:Point ;
               geo:asDGGS """
-        
+        <https://h3geo.org/res/7> CELLIST( 87f143649ffffff )
     """^^geo:dggsLiteral ;
               geo:asGML """
         <gml:Point xmlns:gml=\"http://www.opengis.net/ont/gml\" srsName=\"http://www.opengis.net/def/crs/OGC/1.3/CRS84\"><gml:pos>-83.4 34.3</gml:pos></gml:Point>
@@ -928,7 +934,7 @@ my:IExactGeom rdf:type owl:NamedIndividual ,
                        <http://www.opengis.net/ont/gml#LineString> ,
                        sf:LineString ;
               geo:asDggs """
-                
+        <https://h3geo.org/res/7> CELLIST()    
     """^^geo:dggsLiteral ;
               geo:asGML """
         
@@ -939,7 +945,7 @@ my:IExactGeom rdf:type owl:NamedIndividual ,
         {}
     """^^geo:geoJSONLiteral ;
               geo:asKML """
-            <Point><coordinates></coordinates></Point>
+        <Point><coordinates></coordinates></Point>
     """^^geo:kmlLiteral ;
               geo:asWKT "LINESTRING EMPTY"^^geo:wktLiteral ;
               geo:coordinateDimension 2 ;
@@ -954,11 +960,20 @@ my:IPointGeom rdf:type owl:NamedIndividual ,
                        geo:Geometry ,
                        <http://www.opengis.net/ont/gml#Point> ,
                        sf:Point ;
+              geo:asDggs """
+        <https://h3geo.org/res/7> CELLIST()    
+    """^^geo:dggsLiteral ;
               geo:asGML """
         
             <Point xmlns=\"https://www.opengis.net/gml\"><posList></posList></Point>
         
     """^^geo:gmlLiteral ;
+              geo:asGeoJSON """
+        {}
+    """^^geo:geoJSONLiteral ;
+              geo:asKML """
+        <Point><coordinates></coordinates></Point>
+    """^^geo:kmlLiteral ;
               geo:asWKT "POINT EMPTY"^^geo:wktLiteral ;
               geo:coordinateDimension 2 ;
               geo:dimension 2 ;
@@ -985,7 +1000,7 @@ my:JExactGeom rdf:type owl:NamedIndividual ,
                        <http://www.opengis.net/ont/gml#Polygon> ,
                        sf:Polygon ;
               geo:asDGGS """
-        
+        <https://h3geo.org/res/7> CELLIST( '87f042942ffffff', '87f04295cffffff', '87f042946ffffff' )
     """^^geo:dggsLiteral ;
               geo:asGML """
         <gml:Polygon xmlns:gml=\"http://www.opengis.net/ont/gml\" srsName=\"http://www.opengis.net/def/crs/OGC/1.3/CRS84\"><gml:exterior><gml:LinearRing><gml:posList>-77.089005 38.913574 -77.029953 38.913574 -77.029953 38.886321 -77.089005 38.886321 -77.089005 38.913574</gml:posList></gml:LinearRing></gml:exterior></gml:Polygon>
@@ -1026,7 +1041,7 @@ my:KExactGeom rdf:type owl:NamedIndividual ,
                        <http://www.opengis.net/ont/gml#Polygon> ,
                        sf:Polygon ;
               geo:asDGGS """
-        
+        <https://h3geo.org/res/7> CELLIST( '87f042942ffffff', '87f04295cffffff', '87f042946ffffff' )
     """^^geo:dggsLiteral ;
               geo:asGML """
         <gml:Polygon xmlns:gml=\"http://www.opengis.net/ont/gml\" srsName=\"http://www.opengis.net/def/crs/OGC/1.3/CRS84\"><gml:exterior><gml:LinearRing><gml:posList>-77.089005 38.913574 -77.029953 38.913574 -77.029953 38.886321 -77.089005 38.886321 -77.089005 38.913574</gml:posList></gml:LinearRing></gml:exterior></gml:Polygon>
@@ -1065,7 +1080,7 @@ my:LExactGeom rdf:type owl:NamedIndividual ,
                        <http://www.opengis.net/ont/gml#Point> ,
                        sf:Point ;
               geo:asDGGS """
-        
+        <https://h3geo.org/res/7> CELLIST( 87f16608bffffff )
     """^^geo:dggsLiteral ;
               geo:asGML """
         <gml:Point xmlns:gml=\"http://www.opengis.net/ont/gml\" srsName=\"http://www.opengis.net/def/crs/OGC/1.3/CRS84\"><gml:pos>-88.38 31.95</gml:pos></gml:Point>
@@ -1101,7 +1116,7 @@ my:MExactGeom rdf:type owl:NamedIndividual ,
                        <http://www.opengis.net/ont/gml#Point> ,
                        sf:Point ;
               geo:asDGGS """
-        
+        <https://h3geo.org/res/7> CELLIST( 87f16608bffffff )
     """^^geo:dggsLiteral ;
               geo:asGML """
         <gml:Point xmlns:gml=\"http://www.opengis.net/ont/gml\" srsName=\"http://www.opengis.net/def/crs/EPSG/0/4326\"><gml:pos>31.95 -88.38</gml:pos></gml:Point>

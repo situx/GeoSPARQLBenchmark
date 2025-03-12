@@ -127,6 +127,9 @@
     <geo:asKML rdf:datatype="http://www.opengis.net/ont/geosparql#asKML">
         <![CDATA[<Polygon><outerBoundaryIs><LinearRing><coordinates>-83.6,34.1 -83.2,34.1 -83.2,34.5 -83.6,34.5 -83.6,34.1</coordinates></LinearRing></outerBoundaryIs></Polygon>]]>
     </geo:asKML>
+	<geo:asDGGS rdf:datatype="http://www.opengis.net/ont/geosparql#dggsLiteral">
+        <![CDATA[<https://h3geo.org/res/7> CELLIST( '87f15d9acffffff', '87f143749ffffff', '87f15d9a1ffffff', '87f143296ffffff', '87f15d910ffffff', '87f143648ffffff', '87f14374bffffff', '87f15d9aeffffff', '87f15d98dffffff', '87f14366bffffff', '87f15d912ffffff', '87f14374dffffff', '87f15d9a5ffffff', '87f15d832ffffff', '87f15d914ffffff', '87f14364cffffff', '87f15d916ffffff', '87f15d9a9ffffff', '87f15d836ffffff', '87f15d988ffffff', '87f143748ffffff', '87f15d9abffffff', '87f143668ffffff', '87f15d9adffffff', '87f15d98cffffff', '87f14366affffff', '87f143649ffffff', '87f14366cffffff', '87f15d810ffffff', '87f143661ffffff', '87f15d913ffffff', '87f14364bffffff', '87f14366effffff', '87f14364dffffff', '87f15d9a8ffffff', '87f143292ffffff', '87f15d814ffffff', '87f143665ffffff', '87f15d9aaffffff', '87f15d989ffffff', '87f15d816ffffff' )]]>
+    </geo:asDGGS>
 </sf:Polygon>
 
 <sf:Point rdf:about="http://example.org/ApplicationSchema#APointGeom">
@@ -151,6 +154,9 @@
     <geo:asKML rdf:datatype="http://www.opengis.net/ont/geosparql#asKML">
         <![CDATA[<Point><coordinates>-83.4,34.3</coordinates></Point>]]>
     </geo:asKML>
+	<geo:asDGGS rdf:datatype="http://www.opengis.net/ont/geosparql#dggsLiteral">
+        <![CDATA[<https://h3geo.org/res/7> CELLIST( 87f143649ffffff )]]>
+    </geo:asDGGS>
 </sf:Point>
 
 <!-- B -->
@@ -200,7 +206,7 @@
         <![CDATA[<Polygon><outerBoundaryIs><LinearRing><coordinates>-83.6,34.1 -83.4,34.1 -83.4,34.3 -83.6,34.3 -83.6,34.1</coordinates></LinearRing></outerBoundaryIs></Polygon>]]>
     </geo:asKML>
     <geo:asDGGS rdf:datatype="http://www.opengis.net/ont/geosparql#dggsLiteral">
-        <![CDATA[]]>
+        <![CDATA[<https://h3geo.org/res/7> CELLIST( '87f14364dffffff', '87f14366bffffff', '87f14366cffffff', '87f143749ffffff', '87f143292ffffff', '87f143649ffffff', '87f14374dffffff', '87f143668ffffff', '87f143296ffffff' )]]>
     </geo:asDGGS>
 </sf:Polygon>
 
@@ -226,7 +232,7 @@
         <![CDATA[<Point><coordinates>-83.5,34.2</coordinates></Point>]]>
     </geo:asKML>
     <geo:asDGGS rdf:datatype="http://www.opengis.net/ont/geosparql#dggsLiteral">
-        <![CDATA[]]>
+        <![CDATA[<https://h3geo.org/res/7> CELLIST( 87f14366cffffff )]]>
     </geo:asDGGS>
 </sf:Point>
 
@@ -304,7 +310,7 @@
         <![CDATA[<Polygon><outerBoundaryIs><LinearRing><coordinates>-83.2,34.3 -83,34.3 -83,34.5 -83.2,34.5 -83.2,34.3</coordinates></LinearRing></outerBoundaryIs></Polygon>]]>
     </geo:asKML>
     <geo:asDGGS rdf:datatype="http://www.opengis.net/ont/geosparql#dggsLiteral">
-        <![CDATA[]]>
+        <![CDATA[<https://h3geo.org/res/7> CELLIST( '87f15d8acffffff', '87f15d8a8ffffff', '87f15d812ffffff', '87f15d8d6ffffff', '87f15d8d2ffffff', '87f15d88dffffff', '87f15d12cffffff', '87f15d889ffffff', '87f15d8abffffff' )]]>
     </geo:asDGGS>
 </sf:Polygon>
 
@@ -331,7 +337,7 @@
         <![CDATA[<Point><coordinates>-83.1,34.4</coordinates></Point>]]>
     </geo:asKML>
     <geo:asDGGS rdf:datatype="http://www.opengis.net/ont/geosparql#dggsLiteral">
-        <![CDATA[]]>
+        <![CDATA[<https://h3geo.org/res/7> CELLIST( 87f15d88dffffff )]]>
     </geo:asDGGS>
 </sf:Point>
 
@@ -376,7 +382,7 @@
         <![CDATA[<Polygon><outerBoundaryIs><LinearRing><coordinates>-83.3,34.0 -83.1,34.0 -83.1,34.2 -83.3,34.2 -83.3,34.0</coordinates></LinearRing></outerBoundaryIs></Polygon>]]>
     </geo:asKML>
     <geo:asDGGS rdf:datatype="http://www.opengis.net/ont/geosparql#dggsLiteral">
-        <![CDATA[]]>
+        <![CDATA[<https://h3geo.org/res/7> CELLIST( '87f15d81effffff', '87f15d81affffff', '87f15d833ffffff', '87f15d9a9ffffff', '87f15d813ffffff', '87f15d814ffffff', '87f15d810ffffff', '87f15d832ffffff', '87f15d8f4ffffff', '87f15d815ffffff', '87f15d811ffffff', '87f15d836ffffff' )]]>
     </geo:asDGGS>
 </sf:Polygon>
 
@@ -403,7 +409,7 @@
         <![CDATA[<Point><coordinates>-83.2,34.1</coordinates></Point>]]>
     </geo:asKML>
     <geo:asDGGS rdf:datatype="http://www.opengis.net/ont/geosparql#dggsLiteral">
-        <![CDATA[]]>
+        <![CDATA[<https://h3geo.org/res/7> CELLIST( 87f15d810ffffff )]]>
     </geo:asDGGS>
 </sf:Point>
 
@@ -442,7 +448,7 @@
         <![CDATA[{"type": "LineString", "coordinates": [[-83.4, 34.0], [-83.3, 34.3]]}]]>
     </geo:asGeoJSON>
     <geo:asDGGS rdf:datatype="http://www.opengis.net/ont/geosparql#dggsLiteral">
-        <![CDATA[]]>
+        <![CDATA[<https://h3geo.org/res/7> CELLIST( 87f15d933ffffff 87f15d9a8ffffff )]]>
     </geo:asDGGS>
 </sf:LineString>
 
@@ -483,7 +489,7 @@
         <![CDATA[<Point><coordinates>-83.4,34.4</coordinates></Point>]]>
     </geo:asKML>
     <geo:asDGGS rdf:datatype="http://www.opengis.net/ont/geosparql#dggsLiteral">
-        <![CDATA[]]>
+        <![CDATA[<https://h3geo.org/res/7> CELLIST( 87f14364bffffff )]]>
     </geo:asDGGS>
 </sf:Point>
 
@@ -530,7 +536,7 @@
         <![CDATA[<Polygon><outerBoundaryIs><LinearRing><coordinates>-83.5,34.2 -83.3,34.2 -83.3,34.4 -83.5,34.4 -83.5,34.2</coordinates></LinearRing></outerBoundaryIs></Polygon>]]>
     </geo:asKML>
     <geo:asDGGS rdf:datatype="http://www.opengis.net/ont/geosparql#dggsLiteral">
-        <![CDATA[]]>
+        <![CDATA[<https://h3geo.org/res/7> CELLIST( '87f15d9acffffff', '87f15d9a8ffffff', '87f15d916ffffff', '87f15d912ffffff', '87f14364dffffff', '87f143649ffffff', '87f14366bffffff', '87f14366cffffff', '87f143668ffffff' )]]>
     </geo:asDGGS>
 </sf:Polygon>
 
@@ -557,7 +563,7 @@
         <![CDATA[<Point><coordinates>-83.4,34.3</coordinates></Point>]]>
     </geo:asKML>
     <geo:asDGGS rdf:datatype="http://www.opengis.net/ont/geosparql#dggsLiteral">
-        <![CDATA[]]>
+        <![CDATA[<https://h3geo.org/res/7> CELLIST( 87f143649ffffff )]]>
     </geo:asDGGS>
 </sf:Point>
 
@@ -631,10 +637,10 @@
         <![CDATA[{}]]>
     </geo:asGeoJSON>
     <geo:asKML rdf:datatype="http://www.opengis.net/ont/geosparql#kmlLiteral">
-            <![CDATA[<Point><coordinates></coordinates></Point>]]>
+        <![CDATA[<Point><coordinates></coordinates></Point>]]>
     </geo:asKML>
     <geo:asDggs rdf:datatype="http://www.opengis.net/ont/geosparql#dggsLiteral">
-            <![CDATA[]]>    
+        <![CDATA[<https://h3geo.org/res/7> CELLIST()]]>    
     </geo:asDggs>
 </sf:LineString>
 
@@ -652,6 +658,15 @@
             <Point xmlns="https://www.opengis.net/gml"><posList></posList></Point>
         ]]>
     </geo:asGML>
+	<geo:asGeoJSON rdf:datatype="http://www.opengis.net/ont/geosparql#geoJSONLiteral">
+        <![CDATA[{}]]>
+    </geo:asGeoJSON>
+	<geo:asKML rdf:datatype="http://www.opengis.net/ont/geosparql#kmlLiteral">
+        <![CDATA[<Point><coordinates></coordinates></Point>]]>
+    </geo:asKML>
+	<geo:asDggs rdf:datatype="http://www.opengis.net/ont/geosparql#dggsLiteral">
+        <![CDATA[<https://h3geo.org/res/7> CELLIST()]]>    
+    </geo:asDggs>
 </sf:Point>
 
 <!-- J -->
@@ -689,7 +704,7 @@
         <![CDATA[<Polygon><outerBoundaryIs><LinearRing><coordinates>-77.089005,38.913574 -77.029953,38.913574 -77.029953,38.886321 -77.089005,38.886321 -77.089005,38.913574</coordinates></LinearRing></outerBoundaryIs></Polygon>]]>
     </geo:asKML>
     <geo:asDGGS rdf:datatype="http://www.opengis.net/ont/geosparql#dggsLiteral">
-        <![CDATA[]]>
+        <![CDATA[<https://h3geo.org/res/7> CELLIST( '87f042942ffffff', '87f04295cffffff', '87f042946ffffff' )]]>
     </geo:asDGGS>
 </sf:Polygon>
 
@@ -728,7 +743,7 @@
         <![CDATA[<Polygon><outerBoundaryIs><LinearRing><coordinates>-77.089005,38.913574 -77.029953,38.913574 -77.029953,38.886321 -77.089005,38.886321 -77.089005,38.913574</coordinates></LinearRing></outerBoundaryIs></Polygon>]]>
     </geo:asKML>
     <geo:asDGGS rdf:datatype="http://www.opengis.net/ont/geosparql#dggsLiteral">
-        <![CDATA[]]>
+        <![CDATA[<https://h3geo.org/res/7> CELLIST( '87f042942ffffff', '87f04295cffffff', '87f042946ffffff' )]]>
     </geo:asDGGS>
 </sf:Polygon>
 
@@ -765,7 +780,7 @@
         <![CDATA[<Point><coordinates>-88.38,31.95</coordinates></Point>]]>
     </geo:asKML>
     <geo:asDGGS rdf:datatype="http://www.opengis.net/ont/geosparql#dggsLiteral">
-        <![CDATA[]]>
+        <![CDATA[<https://h3geo.org/res/7> CELLIST( 87f16608bffffff )]]>
     </geo:asDGGS>
 </sf:Point>
 
@@ -799,7 +814,7 @@
         <![CDATA[<Point><coordinates>-88.38,31.95</coordinates></Point>]]>
     </geo:asKML>
     <geo:asDGGS rdf:datatype="http://www.opengis.net/ont/geosparql#dggsLiteral">
-        <![CDATA[]]>
+        <![CDATA[<https://h3geo.org/res/7> CELLIST( 87f16608bffffff )]]>
     </geo:asDGGS>
 </sf:Point>
 
