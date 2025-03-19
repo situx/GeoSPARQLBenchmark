@@ -107,9 +107,9 @@ function executeQuery(benchmarkname,queryid){
 				benchmarkconfig[queryid]["error"]=results["message"]
 			}else{
 				sresults=JSON.stringify(results)
-				if(benchmarkconfig[queryid]["answers"].length>0){
-					//console.log(benchmarkconfig[queryid]["answers"])
-					for(answer of benchmarkconfig[queryid]["answers"]){
+				if(Object.keys(benchmarkconfig[queryid]["answers"]).length>0){
+					console.log(benchmarkconfig[queryid]["answers"])
+					for(answer in benchmarkconfig[queryid]["answers"]){
 						/*console.log(answer==sresults)
 						console.log(JSON.parse(answer)==sresults)
 						console.log(answer)
