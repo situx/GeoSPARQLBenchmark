@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<sparql xmlns="http://www.w3.org/2005/sparql-results#" xmlns:xml="http://www.w3.org/XML/1998/namespace">
+        <head>
+                <variable name="msize"/>
+        </head>
+        <results>
+                <result>
+                        <binding name="msize">
+                                <literal datatype="http://www.w3.org/2001/XMLSchema#double">1633897106.3552246</literal>
+                        </binding>
+                </result>
+        </results>
+</sparql>

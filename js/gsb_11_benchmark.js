@@ -64,7 +64,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r06-10.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"mvolume\"]}, \"results\": {\"bindings\": [{\"mvolume\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#double\", \"type\": \"literal\", \"value\": \"3629713440.6366\"}}]}}": true
+    },
     "definition": "Requirement 6 (Part 10): Implementations shall allow the property geo:hasMetricVolume to be used in SPARQL graph patterns.",
     "label": "Requirement 6-10: Spatial Object Properties geo:hasMetricVolume",
     "module": "CORE",
@@ -73,7 +75,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r06-2.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"msize\"]}, \"results\": {\"bindings\": [{\"msize\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#double\", \"type\": \"literal\", \"value\": \"1633897106.3552246\"}}]}}": true
+    },
     "definition": "Requirement 6 (Part 2): Implementations shall allow the property geo:hasMetricSize to be used in SPARQL graph patterns.",
     "label": "Requirement 6-2: Spatial Object Properties geo:hasMetricSize",
     "module": "CORE",
@@ -145,7 +149,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r07-1.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"geom\"]}, \"results\": {\"bindings\": [{\"geom\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#AExactGeom\"}}]}}": true
+    },
     "definition": "Requirement 7 (Part 1): Implementations shall allow the property geo:hasGeometry to be used in SPARQL graph patterns.",
     "label": "Requirement 7-1: Feature Properties geo:hasGeometry",
     "module": "CORE",
@@ -154,7 +160,9 @@ var gsb_11_benchmarkconfig={
     "weight": 0.0021367521367521365
   },
   "query-r07-2.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"defaultGeom\"]}, \"results\": {\"bindings\": [{\"defaultGeom\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#AExactGeom\"}}]}}": true
+    },
     "definition": "Requirement 7 (Part 2): Implementations shall allow the property geo:hasDefaultGeometry to be used in SPARQL graph patterns.",
     "label": "Requirement 7-2: Feature Properties geo:hasDefaultGeometry",
     "module": "CORE",
@@ -163,7 +171,9 @@ var gsb_11_benchmarkconfig={
     "weight": 0.0021367521367521365
   },
   "query-r07-3.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"defaultGeom\"]}, \"results\": {\"bindings\": [{\"defaultGeom\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#AExactGeom\"}}]}}": true
+    },
     "definition": "Requirement 7 (Part 3): Implementations shall allow the property geo:defaultGeometry to be used in SPARQL graph patterns.",
     "label": "Requirement 7-3: Feature Properties geo:defaultGeometry",
     "module": "CORE",
@@ -172,7 +182,9 @@ var gsb_11_benchmarkconfig={
     "weight": 0.0021367521367521365
   },
   "query-r07-4.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"centroid\"]}, \"results\": {\"bindings\": [{\"centroid\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#APointGeom\"}}]}}": true
+    },
     "definition": "Requirement 7 (Part 4): Implementations shall allow the property geo:hasCentroid to be used in SPARQL graph patterns.",
     "label": "Requirement 7-4: Feature Properties geo:hasCentroid",
     "module": "CORE",
@@ -181,7 +193,9 @@ var gsb_11_benchmarkconfig={
     "weight": 0.0021367521367521365
   },
   "query-r07-5.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"bbox\"]}, \"results\": {\"bindings\": [{\"bbox\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#AExactGeom\"}}]}}": true
+    },
     "definition": "Requirement 7 (Part 5): Implementations shall allow the property geo:hasBoundingBox to be used in SPARQL graph patterns.",
     "label": "Requirement 7-5: Feature Properties geo:hasBoundingBox",
     "module": "CORE",
@@ -476,7 +490,9 @@ var gsb_11_benchmarkconfig={
     "weight": 0.019230769230769232
   },
   "query-r13-1.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"dimension\"]}, \"results\": {\"bindings\": [{\"dimension\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#integer\", \"type\": \"literal\", \"value\": \"2\"}}]}}": true
+    },
     "definition": "query-r13-1",
     "label": "Requirement 13-1:  Geometry Properties: geo:dimension",
     "module": "GEOEXT",
@@ -485,7 +501,9 @@ var gsb_11_benchmarkconfig={
     "weight": 0.003205128205128205
   },
   "query-r13-10.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"hasSerialization\"]}, \"results\": {\"bindings\": [{\"hasSerialization\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#wktLiteral\", \"type\": \"literal\", \"value\": \"\\n\\n            <http://www.opengis.net/def/crs/OGC/1.3/CRS84> Polygon((-83.6 34.1, -83.2 34.1, -83.2 34.5, -83.6 34.5, -83.6 34.1))\\n\\n    \"}}]}}": true
+    },
     "definition": "query-r13-10",
     "label": "Requirement 13-10:  Geometry Properties: geo:hasSerialization",
     "module": "GEOEXT",
@@ -494,7 +512,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r13-2.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"coordinateDimension\"]}, \"results\": {\"bindings\": [{\"coordinateDimension\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#integer\", \"type\": \"literal\", \"value\": \"2\"}}]}}": true
+    },
     "definition": "query-r13-2",
     "label": "Requirement 13-2:  Geometry Properties: geo:coordinateDimension",
     "module": "GEOEXT",
@@ -503,7 +523,9 @@ var gsb_11_benchmarkconfig={
     "weight": 0.003205128205128205
   },
   "query-r13-3.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"spatialDimension\"]}, \"results\": {\"bindings\": [{\"spatialDimension\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#integer\", \"type\": \"literal\", \"value\": \"2\"}}]}}": true
+    },
     "definition": "query-r13-3",
     "label": "Requirement 13-3:  Geometry Properties: geo:spatialDimension",
     "module": "GEOEXT",
@@ -512,7 +534,9 @@ var gsb_11_benchmarkconfig={
     "weight": 0.003205128205128205
   },
   "query-r13-4.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"isSimple\"]}, \"results\": {\"bindings\": [{\"isSimple\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "query-r13-4",
     "label": "Requirement 13-4:  Geometry Properties: geo:hasSpatialResolution",
     "module": "GEOEXT",
@@ -521,7 +545,9 @@ var gsb_11_benchmarkconfig={
     "weight": 0.003205128205128205
   },
   "query-r13-5.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"isSimple\"]}, \"results\": {\"bindings\": [{\"isSimple\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "query-r13-5",
     "label": "Requirement 13-5:  Geometry Properties: geo:hasMetricSpatialResolution",
     "module": "GEOEXT",
@@ -530,7 +556,9 @@ var gsb_11_benchmarkconfig={
     "weight": 0.003205128205128205
   },
   "query-r13-6.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"isSimple\"]}, \"results\": {\"bindings\": [{\"isSimple\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "query-r13-6",
     "label": "Requirement 13-6:  Geometry Properties: geo:hasSpatialAccuracy",
     "module": "GEOEXT",
@@ -539,7 +567,9 @@ var gsb_11_benchmarkconfig={
     "weight": 0.003205128205128205
   },
   "query-r13-7.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"isSimple\"]}, \"results\": {\"bindings\": [{\"isSimple\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "query-r13-7",
     "label": "Requirement 13-7:  Geometry Properties: geo:hasMetricSpatialAccuracy",
     "module": "GEOEXT",
@@ -548,7 +578,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r13-8.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"isEmpty\"]}, \"results\": {\"bindings\": [{\"isEmpty\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"false\"}}]}}": true
+    },
     "definition": "query-r13-8",
     "label": "Requirement 13-8:  Geometry Properties: geo:isEmpty",
     "module": "GEOEXT",
@@ -557,7 +589,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r13-9.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"isSimple\"]}, \"results\": {\"bindings\": [{\"isSimple\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "query-r13-9",
     "label": "Requirement 13-9:  Geometry Properties: geo:isSimple",
     "module": "GEOEXT",
@@ -577,7 +611,9 @@ var gsb_11_benchmarkconfig={
     "weight": 0.019230769230769232
   },
   "query-r15.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"equals\"]}, \"results\": {\"bindings\": [{\"equals\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 15: The URI <http://www.opengis.net/def/crs/OGC/1.3/CRS84> shall be assumed as the spatial reference system for geo:wktLiterals that do not specify an explicit spatial reference system URI.",
     "label": "Requirement 15: WKT Literal Default SRS",
     "module": "GEOEXT",
@@ -586,7 +622,9 @@ var gsb_11_benchmarkconfig={
     "weight": 0.019230769230769232
   },
   "query-r16.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"equals\"]}, \"results\": {\"bindings\": [{\"equals\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 16: Coordinate tuples within geo:wktLiterals shall be interpreted using the axis order defined in the spatial reference system used.",
     "label": "Requirement 16: WKT Axis Order",
     "module": "GEOEXT",
@@ -595,7 +633,9 @@ var gsb_11_benchmarkconfig={
     "weight": 0.019230769230769232
   },
   "query-r17-1.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"equals\"]}, \"results\": {\"bindings\": [{\"equals\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 17 (Part 1): An empty RDFS Literal of type geo:wktLiteral shall be interpreted as an empty geometry. Part 1 tests LineString geometries.",
     "label": "Requirement 17-1: Empty WKT Literal: LineString",
     "module": "GEOEXT",
@@ -604,7 +644,9 @@ var gsb_11_benchmarkconfig={
     "weight": 0.009615384615384616
   },
   "query-r17-2.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"equals\"]}, \"results\": {\"bindings\": [{\"equals\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 17 (Part 2): An empty RDFS Literal of type geo:wktLiteral shall be interpreted as an empty geometry. Part 2 tests Point geometries.",
     "label": "Requirement 17-2: Empty WKT Literal: Point",
     "module": "GEOEXT",
@@ -624,7 +666,9 @@ var gsb_11_benchmarkconfig={
     "weight": 0.019230769230769232
   },
   "query-r19-1.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"wkt\"]}, \"results\": {\"bindings\": [{\"wkt\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#wktLiteral\", \"type\": \"literal\", \"value\": \"\\n\\n            <http://www.opengis.net/def/crs/OGC/1.3/CRS84> Polygon((-83.6 34.1, -83.2 34.1, -83.2 34.5, -83.6 34.5, -83.6 34.1))\\n\\n    \"}}]}}": true
+    },
     "definition": "Requirement 19 (Part 1): Implementations shall support geof:asWKT as a SPARQL extension function: geo:asWKT",
     "label": "Requirement 19-1: geof:asWKT Function: geo:asWKT",
     "module": "GEOEXT",
@@ -633,7 +677,9 @@ var gsb_11_benchmarkconfig={
     "weight": 0.003846153846153846
   },
   "query-r19-2.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"wkt\"]}, \"results\": {\"bindings\": [{\"wkt\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#wktLiteral\", \"type\": \"literal\", \"value\": \"\\n\\n            <http://www.opengis.net/def/crs/OGC/1.3/CRS84> Polygon((-83.6 34.1, -83.2 34.1, -83.2 34.5, -83.6 34.5, -83.6 34.1))\\n\\n    \"}}]}}": true
+    },
     "definition": "Requirement 19 (Part 2): Implementations shall support geof:asWKT as a SPARQL extension function: geo:asGML",
     "label": "Requirement 19-2: geof:asWKT Function: geo:asGML",
     "module": "GEOEXT",
@@ -642,7 +688,9 @@ var gsb_11_benchmarkconfig={
     "weight": 0.003846153846153846
   },
   "query-r19-3.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"wkt\"]}, \"results\": {\"bindings\": [{\"wkt\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#wktLiteral\", \"type\": \"literal\", \"value\": \"\\n\\n            <http://www.opengis.net/def/crs/OGC/1.3/CRS84> Polygon((-83.6 34.1, -83.2 34.1, -83.2 34.5, -83.6 34.5, -83.6 34.1))\\n\\n    \"}}]}}": true
+    },
     "definition": "Requirement 19 (Part 3): Implementations shall support geof:asWKT as a SPARQL extension function: geo:asGeoJSON",
     "label": "Requirement 19-3: geof:asWKT Function: geo:asGeoJSON",
     "module": "GEOEXT",
@@ -651,7 +699,9 @@ var gsb_11_benchmarkconfig={
     "weight": 0.003846153846153846
   },
   "query-r19-4.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"wkt\"]}, \"results\": {\"bindings\": [{\"wkt\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#wktLiteral\", \"type\": \"literal\", \"value\": \"\\n\\n            <http://www.opengis.net/def/crs/OGC/1.3/CRS84> Polygon((-83.6 34.1, -83.2 34.1, -83.2 34.5, -83.6 34.5, -83.6 34.1))\\n\\n    \"}}]}}": true
+    },
     "definition": "Requirement 19 (Part 4): Implementations shall support geof:asWKT as a SPARQL extension function: geo:asKML",
     "label": "Requirement 19-4: geof:asWKT Function: geo:asKML",
     "module": "GEOEXT",
@@ -660,7 +710,9 @@ var gsb_11_benchmarkconfig={
     "weight": 0.003846153846153846
   },
   "query-r19-5.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"wkt\"]}, \"results\": {\"bindings\": [{\"wkt\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#wktLiteral\", \"type\": \"literal\", \"value\": \"\\n\\n            <http://www.opengis.net/def/crs/OGC/1.3/CRS84> Polygon((-83.6 34.1, -83.2 34.1, -83.2 34.5, -83.6 34.5, -83.6 34.1))\\n\\n    \"}}]}}": true
+    },
     "definition": "Requirement 19 (Part 5): Implementations shall support geof:asWKT as a SPARQL extension function: geo:asDGGS",
     "label": "Requirement 19-5: geof:asWKT Function: geo:asDGGS",
     "module": "GEOEXT",
@@ -680,7 +732,9 @@ var gsb_11_benchmarkconfig={
     "weight": 0.019230769230769232
   },
   "query-r21-1.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"equals\"]}, \"results\": {\"bindings\": [{\"equals\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 21 (Part 1): An empty geo:gmlLiteral shall be interpreted as an empty geometry. Part 1 tests LineString geometries.",
     "label": "Requirement 21-1: Empty GML Literal: LineString",
     "module": "GEOEXT",
@@ -689,7 +743,9 @@ var gsb_11_benchmarkconfig={
     "weight": 0.009615384615384616
   },
   "query-r21-2.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"equals\"]}, \"results\": {\"bindings\": [{\"equals\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 21 (Part 2): An empty geo:gmlLiteral shall be interpreted as an empty geometry. Part 2 tests Point geometries.",
     "label": "Requirement 21-2: Empty GML Literal: Point",
     "module": "GEOEXT",
@@ -709,52 +765,64 @@ var gsb_11_benchmarkconfig={
     "weight": 0.019230769230769232
   },
   "query-r24-1.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"gml\"]}, \"results\": {\"bindings\": [{\"gml\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#gmlLiteral\", \"type\": \"literal\", \"value\": \"<gml:Polygon xmlns:gml=\\\"http://www.opengis.net/ont/gml\\\" srsName=\\\"http://www.opengis.net/def/crs/OGC/1.3/CRS84\\\"><gml:exterior><gml:LinearRing><gml:posList>-83.6 34.1 -83.2 34.1 -83.2 34.5 -83.6 34.5 -83.6 34.1</gml:posList></gml:LinearRing></gml:exterior></gml:Polygon>\"}}]}}": true
+    },
     "definition": "Requirement 24 (Part 1): Implementations shall support geof:asGML as a SPARQL extension function: geo:asWKT",
     "label": "Requirement 24-1: geof:asGML Function: geo:asWKT",
     "module": "GEOEXT",
-    "query": "PREFIX my: <http://example.org/ApplicationSchema#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX geof: <http://www.opengis.net/def/function/geosparql/>\nSELECT (geof:asGML(?gmll) as ?gml)\nWHERE {\n  my:AExactGeom geo:geo:asWKT ?gmll\n} \n \n",
+    "query": "PREFIX my: <http://example.org/ApplicationSchema#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX geof: <http://www.opengis.net/def/function/geosparql/>\nSELECT (geof:asGML(?gmll) as ?gml)\nWHERE {\n  my:AExactGeom geo:asWKT ?gmll\n} \n \n",
     "uri": "http://www.opengis.net/spec/geosparql/1.1/req/geometry-extension/asGML-function",
     "weight": ""
   },
   "query-r24-2.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"gml\"]}, \"results\": {\"bindings\": [{\"gml\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#gmlLiteral\", \"type\": \"literal\", \"value\": \"<gml:Polygon xmlns:gml=\\\"http://www.opengis.net/ont/gml\\\" srsName=\\\"http://www.opengis.net/def/crs/OGC/1.3/CRS84\\\"><gml:exterior><gml:LinearRing><gml:posList>-83.6 34.1 -83.2 34.1 -83.2 34.5 -83.6 34.5 -83.6 34.1</gml:posList></gml:LinearRing></gml:exterior></gml:Polygon>\"}}]}}": true
+    },
     "definition": "Requirement 24 (Part 2): Implementations shall support geof:asGML as a SPARQL extension function: geo:asGML",
     "label": "Requirement 24-2: geof:asGML Function: geo:asGML",
     "module": "GEOEXT",
-    "query": "PREFIX my: <http://example.org/ApplicationSchema#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX geof: <http://www.opengis.net/def/function/geosparql/>\nSELECT (geof:asGML(?gmll) as ?gml)\nWHERE {\n  my:AExactGeom geo:geo:asGML ?gmll\n} \n \n",
+    "query": "PREFIX my: <http://example.org/ApplicationSchema#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX geof: <http://www.opengis.net/def/function/geosparql/>\nSELECT (geof:asGML(?gmll) as ?gml)\nWHERE {\n  my:AExactGeom geo:asGML ?gmll\n} \n \n",
     "uri": "http://www.opengis.net/spec/geosparql/1.1/req/geometry-extension/asGML-function",
     "weight": ""
   },
   "query-r24-3.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"gml\"]}, \"results\": {\"bindings\": [{\"gml\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#gmlLiteral\", \"type\": \"literal\", \"value\": \"<gml:Polygon xmlns:gml=\\\"http://www.opengis.net/ont/gml\\\" srsName=\\\"http://www.opengis.net/def/crs/OGC/1.3/CRS84\\\"><gml:exterior><gml:LinearRing><gml:posList>-83.6 34.1 -83.2 34.1 -83.2 34.5 -83.6 34.5 -83.6 34.1</gml:posList></gml:LinearRing></gml:exterior></gml:Polygon>\"}}]}}": true
+    },
     "definition": "Requirement 24 (Part 3): Implementations shall support geof:asGML as a SPARQL extension function: geo:asGeoJSON",
     "label": "Requirement 24-3: geof:asGML Function: geo:asGeoJSON",
     "module": "GEOEXT",
-    "query": "PREFIX my: <http://example.org/ApplicationSchema#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX geof: <http://www.opengis.net/def/function/geosparql/>\nSELECT (geof:asGML(?gmll) as ?gml)\nWHERE {\n  my:AExactGeom geo:geo:asGeoJSON ?gmll\n} \n \n",
+    "query": "PREFIX my: <http://example.org/ApplicationSchema#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX geof: <http://www.opengis.net/def/function/geosparql/>\nSELECT (geof:asGML(?gmll) as ?gml)\nWHERE {\n  my:AExactGeom geo:asGeoJSON ?gmll\n} \n \n",
     "uri": "http://www.opengis.net/spec/geosparql/1.1/req/geometry-extension/asGML-function",
     "weight": ""
   },
   "query-r24-4.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"gml\"]}, \"results\": {\"bindings\": [{\"gml\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#gmlLiteral\", \"type\": \"literal\", \"value\": \"<gml:Polygon xmlns:gml=\\\"http://www.opengis.net/ont/gml\\\" srsName=\\\"http://www.opengis.net/def/crs/OGC/1.3/CRS84\\\"><gml:exterior><gml:LinearRing><gml:posList>-83.6 34.1 -83.2 34.1 -83.2 34.5 -83.6 34.5 -83.6 34.1</gml:posList></gml:LinearRing></gml:exterior></gml:Polygon>\"}}]}}": true
+    },
     "definition": "Requirement 24 (Part 4): Implementations shall support geof:asGML as a SPARQL extension function: geo:asKML",
     "label": "Requirement 24-4: geof:asGML Function: geo:asKML",
     "module": "GEOEXT",
-    "query": "PREFIX my: <http://example.org/ApplicationSchema#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX geof: <http://www.opengis.net/def/function/geosparql/>\nSELECT (geof:asGML(?gmll) as ?gml)\nWHERE {\n  my:AExactGeom geo:geo:asKML ?gmll\n} \n \n",
+    "query": "PREFIX my: <http://example.org/ApplicationSchema#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX geof: <http://www.opengis.net/def/function/geosparql/>\nSELECT (geof:asGML(?gmll) as ?gml)\nWHERE {\n  my:AExactGeom geo:asKML ?gmll\n} \n \n",
     "uri": "http://www.opengis.net/spec/geosparql/1.1/req/geometry-extension/asGML-function",
     "weight": ""
   },
   "query-r24-5.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"gml\"]}, \"results\": {\"bindings\": [{\"gml\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#gmlLiteral\", \"type\": \"literal\", \"value\": \"<gml:Polygon xmlns:gml=\\\"http://www.opengis.net/ont/gml\\\" srsName=\\\"http://www.opengis.net/def/crs/OGC/1.3/CRS84\\\"><gml:exterior><gml:LinearRing><gml:posList>-83.6 34.1 -83.2 34.1 -83.2 34.5 -83.6 34.5 -83.6 34.1</gml:posList></gml:LinearRing></gml:exterior></gml:Polygon>\"}}]}}": true
+    },
     "definition": "Requirement 24 (Part 5): Implementations shall support geof:asGML as a SPARQL extension function: geo:asDGGS",
     "label": "Requirement 24-5: geof:asGML Function: geo:asDGGS",
     "module": "GEOEXT",
-    "query": "PREFIX my: <http://example.org/ApplicationSchema#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX geof: <http://www.opengis.net/def/function/geosparql/>\nSELECT (geof:asGML(?gmll) as ?gml)\nWHERE {\n  my:AExactGeom geo:geo:asDGGS ?gmll\n} \n \n",
+    "query": "PREFIX my: <http://example.org/ApplicationSchema#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX geof: <http://www.opengis.net/def/function/geosparql/>\nSELECT (geof:asGML(?gmll) as ?gml)\nWHERE {\n  my:AExactGeom geo:asDGGS ?gmll\n} \n \n",
     "uri": "http://www.opengis.net/spec/geosparql/1.1/req/geometry-extension/asGML-function",
     "weight": ""
   },
   "query-r25.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"geom\"]}, \"results\": {\"bindings\": [{\"geom\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#geoJSONLiteral\", \"type\": \"literal\", \"value\": \"{\\\\\\\"type\\\\\\\": \\\\\\\"Polygon\\\\\\\", \\\\\\\"coordinates\\\\\\\": [[[-83.6, 34.1], [-83.2, 34.1], [-83.2, 34.5], [-83.6, 34.5], [-83.6, 34.1]]]}\"}}]}}": true
+    },
     "definition": "Requirement 25: All geo:geoJSONLiteral instances shall consist of the Geometry objects as defined in the GeoJSON specification GEOJSON.",
     "label": "Requirement 25: GeoJSON Literal",
     "module": "GEOEXT",
@@ -763,7 +831,9 @@ var gsb_11_benchmarkconfig={
     "weight": 0.019230769230769232
   },
   "query-r26.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"equals\"]}, \"results\": {\"bindings\": [{\"equals\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 26: RDFS Literals of type geo:geoJSONLiteral do not contain a SRS definition. All literals of this type shall, according to the GeoJSON specification, be encoded only in, and be assumed to use, the WGS84 geodetic longitude-latitude spatial reference system (http://www.opengis.net/def/crs/OGC/1.3/CRS84).",
     "label": "Requirement 26: GeoJSON Literal SRS",
     "module": "GEOEXT",
@@ -772,7 +842,9 @@ var gsb_11_benchmarkconfig={
     "weight": 0.019230769230769232
   },
   "query-r27-1.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"equals\"]}, \"results\": {\"bindings\": [{\"equals\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 27 (Part 1): An empty geo:geoJSONLiteral shall be interpreted as an empty geometry. Part 1 tests LineString geometries.",
     "label": "Requirement 27-1: Empty GeoJSON Literal: LineString",
     "module": "GEOEXT",
@@ -781,7 +853,9 @@ var gsb_11_benchmarkconfig={
     "weight": 0.009615384615384616
   },
   "query-r27-2.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"equals\"]}, \"results\": {\"bindings\": [{\"equals\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 27 (Part 2): An empty geo:geoJSONLiteral shall be interpreted as an empty geometry. Part 2 tests Point geometries.",
     "label": "Requirement 27-2: Empty GeoJSON Literal: Point",
     "module": "GEOEXT",
@@ -801,53 +875,63 @@ var gsb_11_benchmarkconfig={
     "weight": 0.019230769230769232
   },
   "query-r29-1.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"geojson\"]}, \"results\": {\"bindings\": [{\"geojson\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#geoJSONLiteral\", \"type\": \"literal\", \"value\": \"{\\\\\\\"type\\\\\\\": \\\\\\\"Polygon\\\\\\\", \\\\\\\"coordinates\\\\\\\": [[[-83.6, 34.1], [-83.2, 34.1], [-83.2, 34.5], [-83.6, 34.5], [-83.6, 34.1]]]}\"}}]}}": true
+    },
     "definition": "Requirement 29 (Part 1): Implementations shall support geof:asGeoJSON as a SPARQL extension function: geo:asWKT",
     "label": "Requirement 29-1: geof:asGeoJSON Function: geo:asWKT",
     "module": "GEOEXT",
-    "query": "PREFIX my: <http://example.org/ApplicationSchema#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX geof: <http://www.opengis.net/def/function/geosparql/>\nSELECT (geof:asGeoJSON(?geojsonn) as ?geojson)\nWHERE {\n  my:AExactGeom geo:geo:asWKT ?geojsonn\n} \n \n",
+    "query": "PREFIX my: <http://example.org/ApplicationSchema#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX geof: <http://www.opengis.net/def/function/geosparql/>\nSELECT (geof:asGeoJSON(?geojsonn) as ?geojson)\nWHERE {\n  my:AExactGeom geo:asWKT ?geojsonn\n} \n \n",
     "uri": "http://www.opengis.net/spec/geosparql/1.1/req/geometry-extension/asGeoJSON-function",
     "weight": ""
   },
   "query-r29-2.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"geojson\"]}, \"results\": {\"bindings\": [{\"geojson\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#geoJSONLiteral\", \"type\": \"literal\", \"value\": \"{\\\\\\\"type\\\\\\\": \\\\\\\"Polygon\\\\\\\", \\\\\\\"coordinates\\\\\\\": [[[-83.6, 34.1], [-83.2, 34.1], [-83.2, 34.5], [-83.6, 34.5], [-83.6, 34.1]]]}\"}}]}}": true
+    },
     "definition": "Requirement 29 (Part 2): Implementations shall support geof:asGeoJSON as a SPARQL extension function: geo:asGML",
     "label": "Requirement 29-2: geof:asGeoJSON Function: geo:asGML",
     "module": "GEOEXT",
-    "query": "PREFIX my: <http://example.org/ApplicationSchema#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX geof: <http://www.opengis.net/def/function/geosparql/>\nSELECT (geof:asGeoJSON(?geojsonn) as ?geojson)\nWHERE {\n  my:AExactGeom geo:geo:asGML ?geojsonn\n} \n \n",
+    "query": "PREFIX my: <http://example.org/ApplicationSchema#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX geof: <http://www.opengis.net/def/function/geosparql/>\nSELECT (geof:asGeoJSON(?geojsonn) as ?geojson)\nWHERE {\n  my:AExactGeom geo:asGML ?geojsonn\n} \n \n",
     "uri": "http://www.opengis.net/spec/geosparql/1.1/req/geometry-extension/asGeoJSON-function",
     "weight": ""
   },
   "query-r29-3.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"geojson\"]}, \"results\": {\"bindings\": [{\"geojson\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#geoJSONLiteral\", \"type\": \"literal\", \"value\": \"{\\\\\\\"type\\\\\\\": \\\\\\\"Polygon\\\\\\\", \\\\\\\"coordinates\\\\\\\": [[[-83.6, 34.1], [-83.2, 34.1], [-83.2, 34.5], [-83.6, 34.5], [-83.6, 34.1]]]}\"}}]}}": true
+    },
     "definition": "Requirement 29 (Part 3): Implementations shall support geof:asGeoJSON as a SPARQL extension function: geo:asGeoJSON",
     "label": "Requirement 29-3: geof:asGeoJSON Function: geo:asGeoJSON",
     "module": "GEOEXT",
-    "query": "PREFIX my: <http://example.org/ApplicationSchema#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX geof: <http://www.opengis.net/def/function/geosparql/>\nSELECT (geof:asGeoJSON(?geojsonn) as ?geojson)\nWHERE {\n  my:AExactGeom geo:geo:asGeoJSON ?geojsonn\n} \n \n",
+    "query": "PREFIX my: <http://example.org/ApplicationSchema#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX geof: <http://www.opengis.net/def/function/geosparql/>\nSELECT (geof:asGeoJSON(?geojsonn) as ?geojson)\nWHERE {\n  my:AExactGeom geo:asGeoJSON ?geojsonn\n} \n \n",
     "uri": "http://www.opengis.net/spec/geosparql/1.1/req/geometry-extension/asGeoJSON-function",
     "weight": ""
   },
   "query-r29-4.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"geojson\"]}, \"results\": {\"bindings\": [{\"geojson\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#geoJSONLiteral\", \"type\": \"literal\", \"value\": \"{\\\\\\\"type\\\\\\\": \\\\\\\"Polygon\\\\\\\", \\\\\\\"coordinates\\\\\\\": [[[-83.6, 34.1], [-83.2, 34.1], [-83.2, 34.5], [-83.6, 34.5], [-83.6, 34.1]]]}\"}}]}}": true
+    },
     "definition": "Requirement 29 (Part 4): Implementations shall support geof:asGeoJSON as a SPARQL extension function: geo:asKML",
     "label": "Requirement 29-4: geof:asGeoJSON Function: geo:asKML",
     "module": "GEOEXT",
-    "query": "PREFIX my: <http://example.org/ApplicationSchema#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX geof: <http://www.opengis.net/def/function/geosparql/>\nSELECT (geof:asGeoJSON(?geojsonn) as ?geojson)\nWHERE {\n  my:AExactGeom geo:geo:asKML ?geojsonn\n} \n \n",
+    "query": "PREFIX my: <http://example.org/ApplicationSchema#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX geof: <http://www.opengis.net/def/function/geosparql/>\nSELECT (geof:asGeoJSON(?geojsonn) as ?geojson)\nWHERE {\n  my:AExactGeom geo:asKML ?geojsonn\n} \n \n",
     "uri": "http://www.opengis.net/spec/geosparql/1.1/req/geometry-extension/asGeoJSON-function",
     "weight": ""
   },
   "query-r29-5.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"geojson\"]}, \"results\": {\"bindings\": [{\"geojson\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#geoJSONLiteral\", \"type\": \"literal\", \"value\": \"{\\\\\\\"type\\\\\\\": \\\\\\\"Polygon\\\\\\\", \\\\\\\"coordinates\\\\\\\": [[[-83.6, 34.1], [-83.2, 34.1], [-83.2, 34.5], [-83.6, 34.5], [-83.6, 34.1]]]}\"}}]}}": true
+    },
     "definition": "Requirement 29 (Part 5): Implementations shall support geof:asGeoJSON as a SPARQL extension function: geo:asDGGS",
     "label": "Requirement 29-5: geof:asGeoJSON Function: geo:asDGGS",
     "module": "GEOEXT",
-    "query": "PREFIX my: <http://example.org/ApplicationSchema#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX geof: <http://www.opengis.net/def/function/geosparql/>\nSELECT (geof:asGeoJSON(?geojsonn) as ?geojson)\nWHERE {\n  my:AExactGeom geo:geo:asDGGS ?geojsonn\n} \n \n",
+    "query": "PREFIX my: <http://example.org/ApplicationSchema#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX geof: <http://www.opengis.net/def/function/geosparql/>\nSELECT (geof:asGeoJSON(?geojsonn) as ?geojson)\nWHERE {\n  my:AExactGeom geo:asDGGS ?geojsonn\n} \n \n",
     "uri": "http://www.opengis.net/spec/geosparql/1.1/req/geometry-extension/asGeoJSON-function",
     "weight": ""
   },
   "query-r30.rq": {
     "answers": {
-      "{\"head\": {\"vars\": [\"geom\"]}, \"results\": {\"bindings\": [{\"geom\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#BExactGeom\"}}, {\"geom\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#CExactGeom\"}}, {\"geom\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#DExactGeom\"}}, {\"geom\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#IExactGeom\"}}, {\"geom\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#JExactGeom\"}}]}}": true
+      "{\"head\": {\"vars\": [\"geom\"]}, \"results\": {\"bindings\": [{\"geom\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#BExactGeom\"}}, {\"geom\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#CExactGeom\"}}, {\"geom\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#DExactGeom\"}}, {\"geom\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#IExactGeom\"}}, {\"geom\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#IPointGeom\"}}, {\"geom\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#JExactGeom\"}}]}}": true
     },
     "definition": "Requirement 30: All geo:kmlLiteral instances shall consist of the Geometry objects as defined in the KML specification [OGCKML].",
     "label": "Requirement 30: KML Literal",
@@ -857,7 +941,9 @@ var gsb_11_benchmarkconfig={
     "weight": 0.019230769230769232
   },
   "query-r31.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"equals\"]}, \"results\": {\"bindings\": [{\"equals\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 31: Requirement 31: RDFS Literals of type geo:kmlLiteral do not contain a SRS definition. All literals of this type shall according to the KML specification only be encoded in and assumed to use the WGS84 geodetic longitude-latitude spatial reference system (http://www.opengis.net/def/crs/OGC/1.3/CRS84).",
     "label": "Requirement 31: KML Literal SRS",
     "module": "GEOEXT",
@@ -866,7 +952,9 @@ var gsb_11_benchmarkconfig={
     "weight": 0.019230769230769232
   },
   "query-r32-1.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"equals\"]}, \"results\": {\"bindings\": [{\"equals\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 32 (Part 1): An empty geo:kmlLiteral shall be interpreted as an empty geometry. Part 1 tests LineString geometries.",
     "label": "Requirement 32-1: Empty KML Literal: LineString",
     "module": "GEOEXT",
@@ -875,7 +963,9 @@ var gsb_11_benchmarkconfig={
     "weight": 0.009615384615384616
   },
   "query-r32-2.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"equals\"]}, \"results\": {\"bindings\": [{\"equals\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 32 (Part 2): An empty geo:kmlLiteral shall be interpreted as an empty geometry. Part 2 tests Point geometries.",
     "label": "Requirement 32-2: Empty KML Literal: Point",
     "module": "GEOEXT",
@@ -895,52 +985,64 @@ var gsb_11_benchmarkconfig={
     "weight": 0.019230769230769232
   },
   "query-r34-1.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"kml\"]}, \"results\": {\"bindings\": [{\"kml\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#asKML\", \"type\": \"literal\", \"value\": \"<Polygon><outerBoundaryIs><LinearRing><coordinates>-83.6,34.1 -83.2,34.1 -83.2,34.5 -83.6,34.5 -83.6,34.1</coordinates></LinearRing></outerBoundaryIs></Polygon>\"}}]}}": true
+    },
     "definition": "Requirement 34 (Part 1): Implementations shall support geof:asKML as a SPARQL extension function: geo:asWKT",
     "label": "Requirement 34-1: geof:asKML Function: geo:asWKT",
     "module": "GEOEXT",
-    "query": "PREFIX my: <http://example.org/ApplicationSchema#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX geof: <http://www.opengis.net/def/function/geosparql/>\nSELECT (geof:asKML(?kmll) as ?kml)\nWHERE {\n  my:AExactGeom geo:geo:asWKT ?kmll\n} \n \n",
+    "query": "PREFIX my: <http://example.org/ApplicationSchema#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX geof: <http://www.opengis.net/def/function/geosparql/>\nSELECT (geof:asKML(?kmll) as ?kml)\nWHERE {\n  my:AExactGeom geo:asWKT ?kmll\n} \n \n",
     "uri": "http://www.opengis.net/spec/geosparql/1.1/req/geometry-extension/asKML-function",
     "weight": ""
   },
   "query-r34-2.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"kml\"]}, \"results\": {\"bindings\": [{\"kml\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#asKML\", \"type\": \"literal\", \"value\": \"<Polygon><outerBoundaryIs><LinearRing><coordinates>-83.6,34.1 -83.2,34.1 -83.2,34.5 -83.6,34.5 -83.6,34.1</coordinates></LinearRing></outerBoundaryIs></Polygon>\"}}]}}": true
+    },
     "definition": "Requirement 34 (Part 2): Implementations shall support geof:asKML as a SPARQL extension function: geo:asGML",
     "label": "Requirement 34-2: geof:asKML Function: geo:asGML",
     "module": "GEOEXT",
-    "query": "PREFIX my: <http://example.org/ApplicationSchema#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX geof: <http://www.opengis.net/def/function/geosparql/>\nSELECT (geof:asKML(?kmll) as ?kml)\nWHERE {\n  my:AExactGeom geo:geo:asGML ?kmll\n} \n \n",
+    "query": "PREFIX my: <http://example.org/ApplicationSchema#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX geof: <http://www.opengis.net/def/function/geosparql/>\nSELECT (geof:asKML(?kmll) as ?kml)\nWHERE {\n  my:AExactGeom geo:asGML ?kmll\n} \n \n",
     "uri": "http://www.opengis.net/spec/geosparql/1.1/req/geometry-extension/asKML-function",
     "weight": ""
   },
   "query-r34-3.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"kml\"]}, \"results\": {\"bindings\": [{\"kml\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#asKML\", \"type\": \"literal\", \"value\": \"<Polygon><outerBoundaryIs><LinearRing><coordinates>-83.6,34.1 -83.2,34.1 -83.2,34.5 -83.6,34.5 -83.6,34.1</coordinates></LinearRing></outerBoundaryIs></Polygon>\"}}]}}": true
+    },
     "definition": "Requirement 34 (Part 3): Implementations shall support geof:asKML as a SPARQL extension function: geo:asGeoJSON",
     "label": "Requirement 34-3: geof:asKML Function: geo:asGeoJSON",
     "module": "GEOEXT",
-    "query": "PREFIX my: <http://example.org/ApplicationSchema#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX geof: <http://www.opengis.net/def/function/geosparql/>\nSELECT (geof:asKML(?kmll) as ?kml)\nWHERE {\n  my:AExactGeom geo:geo:asGeoJSON ?kmll\n} \n \n",
+    "query": "PREFIX my: <http://example.org/ApplicationSchema#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX geof: <http://www.opengis.net/def/function/geosparql/>\nSELECT (geof:asKML(?kmll) as ?kml)\nWHERE {\n  my:AExactGeom geo:asGeoJSON ?kmll\n} \n \n",
     "uri": "http://www.opengis.net/spec/geosparql/1.1/req/geometry-extension/asKML-function",
     "weight": ""
   },
   "query-r34-4.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"kml\"]}, \"results\": {\"bindings\": [{\"kml\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#asKML\", \"type\": \"literal\", \"value\": \"<Polygon><outerBoundaryIs><LinearRing><coordinates>-83.6,34.1 -83.2,34.1 -83.2,34.5 -83.6,34.5 -83.6,34.1</coordinates></LinearRing></outerBoundaryIs></Polygon>\"}}]}}": true
+    },
     "definition": "Requirement 34 (Part 4): Implementations shall support geof:asKML as a SPARQL extension function: geo:asKML",
     "label": "Requirement 34-4: geof:asKML Function: geo:asKML",
     "module": "GEOEXT",
-    "query": "PREFIX my: <http://example.org/ApplicationSchema#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX geof: <http://www.opengis.net/def/function/geosparql/>\nSELECT (geof:asKML(?kmll) as ?kml)\nWHERE {\n  my:AExactGeom geo:geo:asKML ?kmll\n} \n \n",
+    "query": "PREFIX my: <http://example.org/ApplicationSchema#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX geof: <http://www.opengis.net/def/function/geosparql/>\nSELECT (geof:asKML(?kmll) as ?kml)\nWHERE {\n  my:AExactGeom geo:asKML ?kmll\n} \n \n",
     "uri": "http://www.opengis.net/spec/geosparql/1.1/req/geometry-extension/asKML-function",
     "weight": ""
   },
   "query-r34-5.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"kml\"]}, \"results\": {\"bindings\": [{\"kml\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#asKML\", \"type\": \"literal\", \"value\": \"<Polygon><outerBoundaryIs><LinearRing><coordinates>-83.6,34.1 -83.2,34.1 -83.2,34.5 -83.6,34.5 -83.6,34.1</coordinates></LinearRing></outerBoundaryIs></Polygon>\"}}]}}": true
+    },
     "definition": "Requirement 34 (Part 5): Implementations shall support geof:asKML as a SPARQL extension function: geo:asDGGS",
     "label": "Requirement 34-5: geof:asKML Function: geo:asDGGS",
     "module": "GEOEXT",
-    "query": "PREFIX my: <http://example.org/ApplicationSchema#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX geof: <http://www.opengis.net/def/function/geosparql/>\nSELECT (geof:asKML(?kmll) as ?kml)\nWHERE {\n  my:AExactGeom geo:geo:asDGGS ?kmll\n} \n \n",
+    "query": "PREFIX my: <http://example.org/ApplicationSchema#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX geof: <http://www.opengis.net/def/function/geosparql/>\nSELECT (geof:asKML(?kmll) as ?kml)\nWHERE {\n  my:AExactGeom geo:asDGGS ?kmll\n} \n \n",
     "uri": "http://www.opengis.net/spec/geosparql/1.1/req/geometry-extension/asKML-function",
     "weight": ""
   },
   "query-r35.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"geom\"]}, \"results\": {\"bindings\": [{\"geom\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#dggsLiteral\", \"type\": \"literal\", \"value\": \"<https://h3geo.org/res/7> CELLIST( '87f15d9acffffff', '87f143749ffffff', '87f15d9a1ffffff', '87f143296ffffff', '87f15d910ffffff', '87f143648ffffff', '87f14374bffffff', '87f15d9aeffffff', '87f15d98dffffff', '87f14366bffffff', '87f15d912ffffff', '87f14374dffffff', '87f15d9a5ffffff', '87f15d832ffffff', '87f15d914ffffff', '87f14364cffffff', '87f15d916ffffff', '87f15d9a9ffffff', '87f15d836ffffff', '87f15d988ffffff', '87f143748ffffff', '87f15d9abffffff', '87f143668ffffff', '87f15d9adffffff', '87f15d98cffffff', '87f14366affffff', '87f143649ffffff', '87f14366cffffff', '87f15d810ffffff', '87f143661ffffff', '87f15d913ffffff', '87f14364bffffff', '87f14366effffff', '87f14364dffffff', '87f15d9a8ffffff', '87f143292ffffff', '87f15d814ffffff', '87f143665ffffff', '87f15d9aaffffff', '87f15d989ffffff', '87f15d816ffffff' )\"}}]}}": true
+    },
     "definition": "Requirement 35: Implementations shall support geof:asKML as a SPARQL extension function.",
     "label": "Requirement 35: DGGS Literal",
     "module": "GEOEXT",
@@ -949,7 +1051,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r37.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"f\"]}, \"results\": {\"bindings\": [{\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#A\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#AExactGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#G\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#GExactGeom\"}}]}}": true
+    },
     "definition": "Requirement 37: Implementations shall allow the RDF property geo:asDGGS to be used in SPARQL graph patterns.",
     "label": "Requirement 37: geo:asDGGS Property",
     "module": "GEOEXT",
@@ -958,47 +1062,57 @@ var gsb_11_benchmarkconfig={
     "weight": 0.019230769230769232
   },
   "query-r38-1.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"geom\"]}, \"results\": {\"bindings\": [{\"geom\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#dggsLiteral\", \"type\": \"literal\", \"value\": \"<https://h3geo.org/res/7> CELLIST( '87f15d9acffffff', '87f143749ffffff', '87f15d9a1ffffff', '87f143296ffffff', '87f15d910ffffff', '87f143648ffffff', '87f14374bffffff', '87f15d9aeffffff', '87f15d98dffffff', '87f14366bffffff', '87f15d912ffffff', '87f14374dffffff', '87f15d9a5ffffff', '87f15d832ffffff', '87f15d914ffffff', '87f14364cffffff', '87f15d916ffffff', '87f15d9a9ffffff', '87f15d836ffffff', '87f15d988ffffff', '87f143748ffffff', '87f15d9abffffff', '87f143668ffffff', '87f15d9adffffff', '87f15d98cffffff', '87f14366affffff', '87f143649ffffff', '87f14366cffffff', '87f15d810ffffff', '87f143661ffffff', '87f15d913ffffff', '87f14364bffffff', '87f14366effffff', '87f14364dffffff', '87f15d9a8ffffff', '87f143292ffffff', '87f15d814ffffff', '87f143665ffffff', '87f15d9aaffffff', '87f15d989ffffff', '87f15d816ffffff' )\"}}]}}": true
+    },
     "definition": "Requirement 38 (Part 1): Implementations shall support geof:asDGGS as a SPARQL extension function: geo:asWKT",
     "label": "Requirement 38-1: geof:asDGGS Function: geo:asWKT",
     "module": "GEOEXT",
-    "query": "PREFIX my: <http://example.org/ApplicationSchema#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX geof: <http://www.opengis.net/def/function/geosparql/>\nSELECT (geof:asDggs(?dggss) as ?dggs)\nWHERE {\n  my:AExactGeom geo:asWKT ?dggss\n} \n \n",
+    "query": "PREFIX my: <http://example.org/ApplicationSchema#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX geof: <http://www.opengis.net/def/function/geosparql/>\nSELECT (geof:asDggs(?dggss,\"https://h3geo.org/res/7\") as ?dggs)\nWHERE {\n  my:AExactGeom geo:asWKT ?dggss\n} \n \n",
     "uri": "http://www.opengis.net/spec/geosparql/1.1/req/geometry-extension/geometry-as-dggs-literal",
     "weight": ""
   },
   "query-r38-2.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"geom\"]}, \"results\": {\"bindings\": [{\"geom\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#dggsLiteral\", \"type\": \"literal\", \"value\": \"<https://h3geo.org/res/7> CELLIST( '87f15d9acffffff', '87f143749ffffff', '87f15d9a1ffffff', '87f143296ffffff', '87f15d910ffffff', '87f143648ffffff', '87f14374bffffff', '87f15d9aeffffff', '87f15d98dffffff', '87f14366bffffff', '87f15d912ffffff', '87f14374dffffff', '87f15d9a5ffffff', '87f15d832ffffff', '87f15d914ffffff', '87f14364cffffff', '87f15d916ffffff', '87f15d9a9ffffff', '87f15d836ffffff', '87f15d988ffffff', '87f143748ffffff', '87f15d9abffffff', '87f143668ffffff', '87f15d9adffffff', '87f15d98cffffff', '87f14366affffff', '87f143649ffffff', '87f14366cffffff', '87f15d810ffffff', '87f143661ffffff', '87f15d913ffffff', '87f14364bffffff', '87f14366effffff', '87f14364dffffff', '87f15d9a8ffffff', '87f143292ffffff', '87f15d814ffffff', '87f143665ffffff', '87f15d9aaffffff', '87f15d989ffffff', '87f15d816ffffff' )\"}}]}}": true
+    },
     "definition": "Requirement 38 (Part 2): Implementations shall support geof:asDGGS as a SPARQL extension function: geo:asGML",
     "label": "Requirement 38-2: geof:asDGGS Function: geo:asGML",
     "module": "GEOEXT",
-    "query": "PREFIX my: <http://example.org/ApplicationSchema#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX geof: <http://www.opengis.net/def/function/geosparql/>\nSELECT (geof:asDggs(?dggss) as ?dggs)\nWHERE {\n  my:AExactGeom geo:asGML ?dggss\n} \n \n",
+    "query": "PREFIX my: <http://example.org/ApplicationSchema#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX geof: <http://www.opengis.net/def/function/geosparql/>\nSELECT (geof:asDggs(?dggss,\"https://h3geo.org/res/7\") as ?dggs)\nWHERE {\n  my:AExactGeom geo:asGML ?dggss\n} \n \n",
     "uri": "http://www.opengis.net/spec/geosparql/1.1/req/geometry-extension/geometry-as-dggs-literal",
     "weight": ""
   },
   "query-r38-3.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"geom\"]}, \"results\": {\"bindings\": [{\"geom\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#dggsLiteral\", \"type\": \"literal\", \"value\": \"<https://h3geo.org/res/7> CELLIST( '87f15d9acffffff', '87f143749ffffff', '87f15d9a1ffffff', '87f143296ffffff', '87f15d910ffffff', '87f143648ffffff', '87f14374bffffff', '87f15d9aeffffff', '87f15d98dffffff', '87f14366bffffff', '87f15d912ffffff', '87f14374dffffff', '87f15d9a5ffffff', '87f15d832ffffff', '87f15d914ffffff', '87f14364cffffff', '87f15d916ffffff', '87f15d9a9ffffff', '87f15d836ffffff', '87f15d988ffffff', '87f143748ffffff', '87f15d9abffffff', '87f143668ffffff', '87f15d9adffffff', '87f15d98cffffff', '87f14366affffff', '87f143649ffffff', '87f14366cffffff', '87f15d810ffffff', '87f143661ffffff', '87f15d913ffffff', '87f14364bffffff', '87f14366effffff', '87f14364dffffff', '87f15d9a8ffffff', '87f143292ffffff', '87f15d814ffffff', '87f143665ffffff', '87f15d9aaffffff', '87f15d989ffffff', '87f15d816ffffff' )\"}}]}}": true
+    },
     "definition": "Requirement 38 (Part 3): Implementations shall support geof:asDGGS as a SPARQL extension function: geo:asGeoJSON",
     "label": "Requirement 38-3: geof:asDGGS Function: geo:asGeoJSON",
     "module": "GEOEXT",
-    "query": "PREFIX my: <http://example.org/ApplicationSchema#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX geof: <http://www.opengis.net/def/function/geosparql/>\nSELECT (geof:asDggs(?dggss) as ?dggs)\nWHERE {\n  my:AExactGeom geo:asGeoJSON ?dggss\n} \n \n",
+    "query": "PREFIX my: <http://example.org/ApplicationSchema#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX geof: <http://www.opengis.net/def/function/geosparql/>\nSELECT (geof:asDggs(?dggss,\"https://h3geo.org/res/7\") as ?dggs)\nWHERE {\n  my:AExactGeom geo:asGeoJSON ?dggss\n} \n \n",
     "uri": "http://www.opengis.net/spec/geosparql/1.1/req/geometry-extension/geometry-as-dggs-literal",
     "weight": ""
   },
   "query-r38-4.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"geom\"]}, \"results\": {\"bindings\": [{\"geom\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#dggsLiteral\", \"type\": \"literal\", \"value\": \"<https://h3geo.org/res/7> CELLIST( '87f15d9acffffff', '87f143749ffffff', '87f15d9a1ffffff', '87f143296ffffff', '87f15d910ffffff', '87f143648ffffff', '87f14374bffffff', '87f15d9aeffffff', '87f15d98dffffff', '87f14366bffffff', '87f15d912ffffff', '87f14374dffffff', '87f15d9a5ffffff', '87f15d832ffffff', '87f15d914ffffff', '87f14364cffffff', '87f15d916ffffff', '87f15d9a9ffffff', '87f15d836ffffff', '87f15d988ffffff', '87f143748ffffff', '87f15d9abffffff', '87f143668ffffff', '87f15d9adffffff', '87f15d98cffffff', '87f14366affffff', '87f143649ffffff', '87f14366cffffff', '87f15d810ffffff', '87f143661ffffff', '87f15d913ffffff', '87f14364bffffff', '87f14366effffff', '87f14364dffffff', '87f15d9a8ffffff', '87f143292ffffff', '87f15d814ffffff', '87f143665ffffff', '87f15d9aaffffff', '87f15d989ffffff', '87f15d816ffffff' )\"}}]}}": true
+    },
     "definition": "Requirement 38 (Part 4): Implementations shall support geof:asDGGS as a SPARQL extension function: geo:asKML",
     "label": "Requirement 38-4: geof:asDGGS Function: geo:asKML",
     "module": "GEOEXT",
-    "query": "PREFIX my: <http://example.org/ApplicationSchema#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX geof: <http://www.opengis.net/def/function/geosparql/>\nSELECT (geof:asDggs(?dggss) as ?dggs)\nWHERE {\n  my:AExactGeom geo:asKML ?dggss\n} \n \n",
+    "query": "PREFIX my: <http://example.org/ApplicationSchema#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX geof: <http://www.opengis.net/def/function/geosparql/>\nSELECT (geof:asDggs(?dggss,\"https://h3geo.org/res/7\") as ?dggs)\nWHERE {\n  my:AExactGeom geo:asKML ?dggss\n} \n \n",
     "uri": "http://www.opengis.net/spec/geosparql/1.1/req/geometry-extension/geometry-as-dggs-literal",
     "weight": ""
   },
   "query-r38-5.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"geom\"]}, \"results\": {\"bindings\": [{\"geom\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#dggsLiteral\", \"type\": \"literal\", \"value\": \"<https://h3geo.org/res/7> CELLIST( '87f15d9acffffff', '87f143749ffffff', '87f15d9a1ffffff', '87f143296ffffff', '87f15d910ffffff', '87f143648ffffff', '87f14374bffffff', '87f15d9aeffffff', '87f15d98dffffff', '87f14366bffffff', '87f15d912ffffff', '87f14374dffffff', '87f15d9a5ffffff', '87f15d832ffffff', '87f15d914ffffff', '87f14364cffffff', '87f15d916ffffff', '87f15d9a9ffffff', '87f15d836ffffff', '87f15d988ffffff', '87f143748ffffff', '87f15d9abffffff', '87f143668ffffff', '87f15d9adffffff', '87f15d98cffffff', '87f14366affffff', '87f143649ffffff', '87f14366cffffff', '87f15d810ffffff', '87f143661ffffff', '87f15d913ffffff', '87f14364bffffff', '87f14366effffff', '87f14364dffffff', '87f15d9a8ffffff', '87f143292ffffff', '87f15d814ffffff', '87f143665ffffff', '87f15d9aaffffff', '87f15d989ffffff', '87f15d816ffffff' )\"}}]}}": true
+    },
     "definition": "Requirement 38 (Part 5): Implementations shall support geof:asDGGS as a SPARQL extension function: geo:asDGGS",
     "label": "Requirement 38-5: geof:asDGGS Function: geo:asDGGS",
     "module": "GEOEXT",
-    "query": "PREFIX my: <http://example.org/ApplicationSchema#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX geof: <http://www.opengis.net/def/function/geosparql/>\nSELECT (geof:asDggs(?dggss) as ?dggs)\nWHERE {\n  my:AExactGeom geo:asDGGS ?dggss\n} \n \n",
+    "query": "PREFIX my: <http://example.org/ApplicationSchema#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX geof: <http://www.opengis.net/def/function/geosparql/>\nSELECT (geof:asDggs(?dggss,\"https://h3geo.org/res/7\") as ?dggs)\nWHERE {\n  my:AExactGeom geo:asDGGS ?dggss\n} \n \n",
     "uri": "http://www.opengis.net/spec/geosparql/1.1/req/geometry-extension/geometry-as-dggs-literal",
     "weight": ""
   },
@@ -4288,7 +4402,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r44-1-1.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"equals\"]}, \"results\": {\"bindings\": [{\"equals\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 44 (Part 1) (WKT-WKT): Implementations shall support geof:sfEquals as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-1-1 (WKT-WKT): Simple Features Query Functions: geof:sfEquals",
     "module": "GTOP",
@@ -4333,7 +4449,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r44-2-1.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"disjoint\"]}, \"results\": {\"bindings\": [{\"disjoint\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 44 (Part 2) (WKT-WKT): Implementations shall support geof:sfDisjoint as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-2-1 (WKT-WKT): Simple Features Query Functions: geof:sfDisjoint",
     "module": "GTOP",
@@ -4342,7 +4460,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r44-2-10.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"disjoint\"]}, \"results\": {\"bindings\": [{\"disjoint\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 44 (Part 2) (GML-WKT): Implementations shall support geof:sfDisjoint as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-2-10 (GML-WKT): Simple Features Query Functions: geof:sfDisjoint",
     "module": "GTOP",
@@ -4351,7 +4471,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r44-2-11.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"disjoint\"]}, \"results\": {\"bindings\": [{\"disjoint\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 44 (Part 2) (GML-GeoJSON): Implementations shall support geof:sfDisjoint as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-2-11 (GML-GeoJSON): Simple Features Query Functions: geof:sfDisjoint",
     "module": "GTOP",
@@ -4360,7 +4482,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r44-2-12.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"disjoint\"]}, \"results\": {\"bindings\": [{\"disjoint\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 44 (Part 2) (GML-KML): Implementations shall support geof:sfDisjoint as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-2-12 (GML-KML): Simple Features Query Functions: geof:sfDisjoint",
     "module": "GTOP",
@@ -4369,7 +4493,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r44-2-13.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"disjoint\"]}, \"results\": {\"bindings\": [{\"disjoint\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 44 (Part 2) (GML-DGGS): Implementations shall support geof:sfDisjoint as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-2-13 (GML-DGGS): Simple Features Query Functions: geof:sfDisjoint",
     "module": "GTOP",
@@ -4378,7 +4504,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r44-2-14.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"disjoint\"]}, \"results\": {\"bindings\": [{\"disjoint\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 44 (Part 2) (GeoJSON-WKT): Implementations shall support geof:sfDisjoint as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-2-14 (GeoJSON-WKT): Simple Features Query Functions: geof:sfDisjoint",
     "module": "GTOP",
@@ -4387,7 +4515,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r44-2-15.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"disjoint\"]}, \"results\": {\"bindings\": [{\"disjoint\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 44 (Part 2) (GeoJSON-GML): Implementations shall support geof:sfDisjoint as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-2-15 (GeoJSON-GML): Simple Features Query Functions: geof:sfDisjoint",
     "module": "GTOP",
@@ -4396,7 +4526,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r44-2-16.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"disjoint\"]}, \"results\": {\"bindings\": [{\"disjoint\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 44 (Part 2) (GeoJSON-KML): Implementations shall support geof:sfDisjoint as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-2-16 (GeoJSON-KML): Simple Features Query Functions: geof:sfDisjoint",
     "module": "GTOP",
@@ -4405,7 +4537,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r44-2-17.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"disjoint\"]}, \"results\": {\"bindings\": [{\"disjoint\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 44 (Part 2) (GeoJSON-DGGS): Implementations shall support geof:sfDisjoint as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-2-17 (GeoJSON-DGGS): Simple Features Query Functions: geof:sfDisjoint",
     "module": "GTOP",
@@ -4414,7 +4548,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r44-2-18.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"disjoint\"]}, \"results\": {\"bindings\": [{\"disjoint\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 44 (Part 2) (KML-WKT): Implementations shall support geof:sfDisjoint as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-2-18 (KML-WKT): Simple Features Query Functions: geof:sfDisjoint",
     "module": "GTOP",
@@ -4423,7 +4559,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r44-2-19.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"disjoint\"]}, \"results\": {\"bindings\": [{\"disjoint\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 44 (Part 2) (KML-GML): Implementations shall support geof:sfDisjoint as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-2-19 (KML-GML): Simple Features Query Functions: geof:sfDisjoint",
     "module": "GTOP",
@@ -4432,7 +4570,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r44-2-2.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"disjoint\"]}, \"results\": {\"bindings\": [{\"disjoint\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 44 (Part 2) (GML-GML): Implementations shall support geof:sfDisjoint as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-2-2 (GML-GML): Simple Features Query Functions: geof:sfDisjoint",
     "module": "GTOP",
@@ -4441,7 +4581,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r44-2-20.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"disjoint\"]}, \"results\": {\"bindings\": [{\"disjoint\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 44 (Part 2) (KML-GeoJSON): Implementations shall support geof:sfDisjoint as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-2-20 (KML-GeoJSON): Simple Features Query Functions: geof:sfDisjoint",
     "module": "GTOP",
@@ -4450,7 +4592,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r44-2-21.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"disjoint\"]}, \"results\": {\"bindings\": [{\"disjoint\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 44 (Part 2) (KML-DGGS): Implementations shall support geof:sfDisjoint as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-2-21 (KML-DGGS): Simple Features Query Functions: geof:sfDisjoint",
     "module": "GTOP",
@@ -4459,7 +4603,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r44-2-22.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"disjoint\"]}, \"results\": {\"bindings\": [{\"disjoint\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 44 (Part 2) (DGGS-WKT): Implementations shall support geof:sfDisjoint as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-2-22 (DGGS-WKT): Simple Features Query Functions: geof:sfDisjoint",
     "module": "GTOP",
@@ -4468,7 +4614,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r44-2-23.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"disjoint\"]}, \"results\": {\"bindings\": [{\"disjoint\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 44 (Part 2) (DGGS-GML): Implementations shall support geof:sfDisjoint as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-2-23 (DGGS-GML): Simple Features Query Functions: geof:sfDisjoint",
     "module": "GTOP",
@@ -4477,7 +4625,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r44-2-24.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"disjoint\"]}, \"results\": {\"bindings\": [{\"disjoint\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 44 (Part 2) (DGGS-GeoJSON): Implementations shall support geof:sfDisjoint as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-2-24 (DGGS-GeoJSON): Simple Features Query Functions: geof:sfDisjoint",
     "module": "GTOP",
@@ -4486,7 +4636,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r44-2-25.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"disjoint\"]}, \"results\": {\"bindings\": [{\"disjoint\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 44 (Part 2) (DGGS-KML): Implementations shall support geof:sfDisjoint as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-2-25 (DGGS-KML): Simple Features Query Functions: geof:sfDisjoint",
     "module": "GTOP",
@@ -4495,7 +4647,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r44-2-3.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"disjoint\"]}, \"results\": {\"bindings\": [{\"disjoint\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 44 (Part 2) (GeoJSON-GeoJSON): Implementations shall support geof:sfDisjoint as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-2-3 (GeoJSON-GeoJSON): Simple Features Query Functions: geof:sfDisjoint",
     "module": "GTOP",
@@ -4504,7 +4658,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r44-2-4.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"disjoint\"]}, \"results\": {\"bindings\": [{\"disjoint\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 44 (Part 2) (KML-KML): Implementations shall support geof:sfDisjoint as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-2-4 (KML-KML): Simple Features Query Functions: geof:sfDisjoint",
     "module": "GTOP",
@@ -4513,7 +4669,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r44-2-5.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"disjoint\"]}, \"results\": {\"bindings\": [{\"disjoint\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 44 (Part 2) (DGGS-DGGS): Implementations shall support geof:sfDisjoint as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-2-5 (DGGS-DGGS): Simple Features Query Functions: geof:sfDisjoint",
     "module": "GTOP",
@@ -4522,7 +4680,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r44-2-6.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"disjoint\"]}, \"results\": {\"bindings\": [{\"disjoint\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 44 (Part 2) (WKT-GML): Implementations shall support geof:sfDisjoint as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-2-6 (WKT-GML): Simple Features Query Functions: geof:sfDisjoint",
     "module": "GTOP",
@@ -4531,7 +4691,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r44-2-7.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"disjoint\"]}, \"results\": {\"bindings\": [{\"disjoint\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 44 (Part 2) (WKT-GeoJSON): Implementations shall support geof:sfDisjoint as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-2-7 (WKT-GeoJSON): Simple Features Query Functions: geof:sfDisjoint",
     "module": "GTOP",
@@ -4540,7 +4702,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r44-2-8.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"disjoint\"]}, \"results\": {\"bindings\": [{\"disjoint\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 44 (Part 2) (WKT-KML): Implementations shall support geof:sfDisjoint as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-2-8 (WKT-KML): Simple Features Query Functions: geof:sfDisjoint",
     "module": "GTOP",
@@ -4549,7 +4713,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r44-2-9.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"disjoint\"]}, \"results\": {\"bindings\": [{\"disjoint\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 44 (Part 2) (WKT-DGGS): Implementations shall support geof:sfDisjoint as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-2-9 (WKT-DGGS): Simple Features Query Functions: geof:sfDisjoint",
     "module": "GTOP",
@@ -4558,7 +4724,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r44-3-1.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"intersects\"]}, \"results\": {\"bindings\": [{\"intersects\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 44 (Part 3) (WKT-WKT): Implementations shall support geof:sfIntersects as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-3-1 (WKT-WKT): Simple Features Query Functions: geof:sfIntersects",
     "module": "GTOP",
@@ -4567,7 +4735,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r44-3-10.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"intersects\"]}, \"results\": {\"bindings\": [{\"intersects\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 44 (Part 3) (GML-WKT): Implementations shall support geof:sfIntersects as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-3-10 (GML-WKT): Simple Features Query Functions: geof:sfIntersects",
     "module": "GTOP",
@@ -4576,7 +4746,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r44-3-11.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"intersects\"]}, \"results\": {\"bindings\": [{\"intersects\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 44 (Part 3) (GML-GeoJSON): Implementations shall support geof:sfIntersects as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-3-11 (GML-GeoJSON): Simple Features Query Functions: geof:sfIntersects",
     "module": "GTOP",
@@ -4585,7 +4757,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r44-3-12.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"intersects\"]}, \"results\": {\"bindings\": [{\"intersects\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 44 (Part 3) (GML-KML): Implementations shall support geof:sfIntersects as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-3-12 (GML-KML): Simple Features Query Functions: geof:sfIntersects",
     "module": "GTOP",
@@ -4594,7 +4768,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r44-3-13.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"intersects\"]}, \"results\": {\"bindings\": [{\"intersects\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 44 (Part 3) (GML-DGGS): Implementations shall support geof:sfIntersects as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-3-13 (GML-DGGS): Simple Features Query Functions: geof:sfIntersects",
     "module": "GTOP",
@@ -4603,7 +4779,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r44-3-14.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"intersects\"]}, \"results\": {\"bindings\": [{\"intersects\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 44 (Part 3) (GeoJSON-WKT): Implementations shall support geof:sfIntersects as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-3-14 (GeoJSON-WKT): Simple Features Query Functions: geof:sfIntersects",
     "module": "GTOP",
@@ -4612,7 +4790,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r44-3-15.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"intersects\"]}, \"results\": {\"bindings\": [{\"intersects\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 44 (Part 3) (GeoJSON-GML): Implementations shall support geof:sfIntersects as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-3-15 (GeoJSON-GML): Simple Features Query Functions: geof:sfIntersects",
     "module": "GTOP",
@@ -4621,7 +4801,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r44-3-16.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"intersects\"]}, \"results\": {\"bindings\": [{\"intersects\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 44 (Part 3) (GeoJSON-KML): Implementations shall support geof:sfIntersects as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-3-16 (GeoJSON-KML): Simple Features Query Functions: geof:sfIntersects",
     "module": "GTOP",
@@ -4630,7 +4812,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r44-3-17.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"intersects\"]}, \"results\": {\"bindings\": [{\"intersects\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 44 (Part 3) (GeoJSON-DGGS): Implementations shall support geof:sfIntersects as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-3-17 (GeoJSON-DGGS): Simple Features Query Functions: geof:sfIntersects",
     "module": "GTOP",
@@ -4639,7 +4823,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r44-3-18.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"intersects\"]}, \"results\": {\"bindings\": [{\"intersects\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 44 (Part 3) (KML-WKT): Implementations shall support geof:sfIntersects as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-3-18 (KML-WKT): Simple Features Query Functions: geof:sfIntersects",
     "module": "GTOP",
@@ -4648,7 +4834,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r44-3-19.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"intersects\"]}, \"results\": {\"bindings\": [{\"intersects\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 44 (Part 3) (KML-GML): Implementations shall support geof:sfIntersects as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-3-19 (KML-GML): Simple Features Query Functions: geof:sfIntersects",
     "module": "GTOP",
@@ -4657,7 +4845,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r44-3-2.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"intersects\"]}, \"results\": {\"bindings\": [{\"intersects\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 44 (Part 3) (GML-GML): Implementations shall support geof:sfIntersects as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-3-2 (GML-GML): Simple Features Query Functions: geof:sfIntersects",
     "module": "GTOP",
@@ -4666,7 +4856,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r44-3-20.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"intersects\"]}, \"results\": {\"bindings\": [{\"intersects\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 44 (Part 3) (KML-GeoJSON): Implementations shall support geof:sfIntersects as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-3-20 (KML-GeoJSON): Simple Features Query Functions: geof:sfIntersects",
     "module": "GTOP",
@@ -4675,7 +4867,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r44-3-21.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"intersects\"]}, \"results\": {\"bindings\": [{\"intersects\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 44 (Part 3) (KML-DGGS): Implementations shall support geof:sfIntersects as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-3-21 (KML-DGGS): Simple Features Query Functions: geof:sfIntersects",
     "module": "GTOP",
@@ -4684,7 +4878,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r44-3-22.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"intersects\"]}, \"results\": {\"bindings\": [{\"intersects\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 44 (Part 3) (DGGS-WKT): Implementations shall support geof:sfIntersects as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-3-22 (DGGS-WKT): Simple Features Query Functions: geof:sfIntersects",
     "module": "GTOP",
@@ -4693,7 +4889,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r44-3-23.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"intersects\"]}, \"results\": {\"bindings\": [{\"intersects\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 44 (Part 3) (DGGS-GML): Implementations shall support geof:sfIntersects as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-3-23 (DGGS-GML): Simple Features Query Functions: geof:sfIntersects",
     "module": "GTOP",
@@ -4702,7 +4900,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r44-3-24.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"intersects\"]}, \"results\": {\"bindings\": [{\"intersects\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 44 (Part 3) (DGGS-GeoJSON): Implementations shall support geof:sfIntersects as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-3-24 (DGGS-GeoJSON): Simple Features Query Functions: geof:sfIntersects",
     "module": "GTOP",
@@ -4711,7 +4911,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r44-3-25.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"intersects\"]}, \"results\": {\"bindings\": [{\"intersects\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 44 (Part 3) (DGGS-KML): Implementations shall support geof:sfIntersects as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-3-25 (DGGS-KML): Simple Features Query Functions: geof:sfIntersects",
     "module": "GTOP",
@@ -4720,7 +4922,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r44-3-3.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"intersects\"]}, \"results\": {\"bindings\": [{\"intersects\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 44 (Part 3) (GeoJSON-GeoJSON): Implementations shall support geof:sfIntersects as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-3-3 (GeoJSON-GeoJSON): Simple Features Query Functions: geof:sfIntersects",
     "module": "GTOP",
@@ -4729,7 +4933,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r44-3-4.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"intersects\"]}, \"results\": {\"bindings\": [{\"intersects\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 44 (Part 3) (KML-KML): Implementations shall support geof:sfIntersects as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-3-4 (KML-KML): Simple Features Query Functions: geof:sfIntersects",
     "module": "GTOP",
@@ -4738,7 +4944,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r44-3-5.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"intersects\"]}, \"results\": {\"bindings\": [{\"intersects\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 44 (Part 3) (DGGS-DGGS): Implementations shall support geof:sfIntersects as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-3-5 (DGGS-DGGS): Simple Features Query Functions: geof:sfIntersects",
     "module": "GTOP",
@@ -4747,7 +4955,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r44-3-6.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"intersects\"]}, \"results\": {\"bindings\": [{\"intersects\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 44 (Part 3) (WKT-GML): Implementations shall support geof:sfIntersects as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-3-6 (WKT-GML): Simple Features Query Functions: geof:sfIntersects",
     "module": "GTOP",
@@ -4756,7 +4966,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r44-3-7.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"intersects\"]}, \"results\": {\"bindings\": [{\"intersects\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 44 (Part 3) (WKT-GeoJSON): Implementations shall support geof:sfIntersects as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-3-7 (WKT-GeoJSON): Simple Features Query Functions: geof:sfIntersects",
     "module": "GTOP",
@@ -4765,7 +4977,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r44-3-8.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"intersects\"]}, \"results\": {\"bindings\": [{\"intersects\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 44 (Part 3) (WKT-KML): Implementations shall support geof:sfIntersects as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-3-8 (WKT-KML): Simple Features Query Functions: geof:sfIntersects",
     "module": "GTOP",
@@ -4774,7 +4988,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r44-3-9.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"intersects\"]}, \"results\": {\"bindings\": [{\"intersects\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 44 (Part 3) (WKT-DGGS): Implementations shall support geof:sfIntersects as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-3-9 (WKT-DGGS): Simple Features Query Functions: geof:sfIntersects",
     "module": "GTOP",
@@ -4783,7 +4999,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r44-4-1.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"touches\"]}, \"results\": {\"bindings\": [{\"touches\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 44 (Part 4) (WKT-WKT): Implementations shall support geof:sfTouches as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-4-1 (WKT-WKT): Simple Features Query Functions: geof:sfTouches",
     "module": "GTOP",
@@ -4792,7 +5010,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r44-4-10.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"touches\"]}, \"results\": {\"bindings\": [{\"touches\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 44 (Part 4) (GML-WKT): Implementations shall support geof:sfTouches as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-4-10 (GML-WKT): Simple Features Query Functions: geof:sfTouches",
     "module": "GTOP",
@@ -4801,7 +5021,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r44-4-11.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"touches\"]}, \"results\": {\"bindings\": [{\"touches\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 44 (Part 4) (GML-GeoJSON): Implementations shall support geof:sfTouches as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-4-11 (GML-GeoJSON): Simple Features Query Functions: geof:sfTouches",
     "module": "GTOP",
@@ -4810,7 +5032,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r44-4-12.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"touches\"]}, \"results\": {\"bindings\": [{\"touches\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 44 (Part 4) (GML-KML): Implementations shall support geof:sfTouches as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-4-12 (GML-KML): Simple Features Query Functions: geof:sfTouches",
     "module": "GTOP",
@@ -4819,7 +5043,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r44-4-13.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"touches\"]}, \"results\": {\"bindings\": [{\"touches\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 44 (Part 4) (GML-DGGS): Implementations shall support geof:sfTouches as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-4-13 (GML-DGGS): Simple Features Query Functions: geof:sfTouches",
     "module": "GTOP",
@@ -4828,7 +5054,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r44-4-14.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"touches\"]}, \"results\": {\"bindings\": [{\"touches\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 44 (Part 4) (GeoJSON-WKT): Implementations shall support geof:sfTouches as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-4-14 (GeoJSON-WKT): Simple Features Query Functions: geof:sfTouches",
     "module": "GTOP",
@@ -4837,7 +5065,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r44-4-15.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"touches\"]}, \"results\": {\"bindings\": [{\"touches\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 44 (Part 4) (GeoJSON-GML): Implementations shall support geof:sfTouches as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-4-15 (GeoJSON-GML): Simple Features Query Functions: geof:sfTouches",
     "module": "GTOP",
@@ -4846,7 +5076,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r44-4-16.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"touches\"]}, \"results\": {\"bindings\": [{\"touches\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 44 (Part 4) (GeoJSON-KML): Implementations shall support geof:sfTouches as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-4-16 (GeoJSON-KML): Simple Features Query Functions: geof:sfTouches",
     "module": "GTOP",
@@ -4855,7 +5087,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r44-4-17.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"touches\"]}, \"results\": {\"bindings\": [{\"touches\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 44 (Part 4) (GeoJSON-DGGS): Implementations shall support geof:sfTouches as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-4-17 (GeoJSON-DGGS): Simple Features Query Functions: geof:sfTouches",
     "module": "GTOP",
@@ -4864,7 +5098,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r44-4-18.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"touches\"]}, \"results\": {\"bindings\": [{\"touches\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 44 (Part 4) (KML-WKT): Implementations shall support geof:sfTouches as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-4-18 (KML-WKT): Simple Features Query Functions: geof:sfTouches",
     "module": "GTOP",
@@ -4873,7 +5109,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r44-4-19.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"touches\"]}, \"results\": {\"bindings\": [{\"touches\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 44 (Part 4) (KML-GML): Implementations shall support geof:sfTouches as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-4-19 (KML-GML): Simple Features Query Functions: geof:sfTouches",
     "module": "GTOP",
@@ -4882,7 +5120,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r44-4-2.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"touches\"]}, \"results\": {\"bindings\": [{\"touches\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 44 (Part 4) (GML-GML): Implementations shall support geof:sfTouches as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-4-2 (GML-GML): Simple Features Query Functions: geof:sfTouches",
     "module": "GTOP",
@@ -4891,7 +5131,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r44-4-20.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"touches\"]}, \"results\": {\"bindings\": [{\"touches\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 44 (Part 4) (KML-GeoJSON): Implementations shall support geof:sfTouches as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-4-20 (KML-GeoJSON): Simple Features Query Functions: geof:sfTouches",
     "module": "GTOP",
@@ -4900,7 +5142,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r44-4-21.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"touches\"]}, \"results\": {\"bindings\": [{\"touches\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 44 (Part 4) (KML-DGGS): Implementations shall support geof:sfTouches as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-4-21 (KML-DGGS): Simple Features Query Functions: geof:sfTouches",
     "module": "GTOP",
@@ -4909,7 +5153,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r44-4-22.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"touches\"]}, \"results\": {\"bindings\": [{\"touches\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 44 (Part 4) (DGGS-WKT): Implementations shall support geof:sfTouches as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-4-22 (DGGS-WKT): Simple Features Query Functions: geof:sfTouches",
     "module": "GTOP",
@@ -4918,7 +5164,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r44-4-23.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"touches\"]}, \"results\": {\"bindings\": [{\"touches\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 44 (Part 4) (DGGS-GML): Implementations shall support geof:sfTouches as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-4-23 (DGGS-GML): Simple Features Query Functions: geof:sfTouches",
     "module": "GTOP",
@@ -4927,7 +5175,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r44-4-24.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"touches\"]}, \"results\": {\"bindings\": [{\"touches\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 44 (Part 4) (DGGS-GeoJSON): Implementations shall support geof:sfTouches as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-4-24 (DGGS-GeoJSON): Simple Features Query Functions: geof:sfTouches",
     "module": "GTOP",
@@ -4936,7 +5186,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r44-4-25.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"touches\"]}, \"results\": {\"bindings\": [{\"touches\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 44 (Part 4) (DGGS-KML): Implementations shall support geof:sfTouches as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-4-25 (DGGS-KML): Simple Features Query Functions: geof:sfTouches",
     "module": "GTOP",
@@ -4945,7 +5197,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r44-4-3.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"touches\"]}, \"results\": {\"bindings\": [{\"touches\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 44 (Part 4) (GeoJSON-GeoJSON): Implementations shall support geof:sfTouches as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-4-3 (GeoJSON-GeoJSON): Simple Features Query Functions: geof:sfTouches",
     "module": "GTOP",
@@ -4954,7 +5208,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r44-4-4.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"touches\"]}, \"results\": {\"bindings\": [{\"touches\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 44 (Part 4) (KML-KML): Implementations shall support geof:sfTouches as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-4-4 (KML-KML): Simple Features Query Functions: geof:sfTouches",
     "module": "GTOP",
@@ -4963,7 +5219,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r44-4-5.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"touches\"]}, \"results\": {\"bindings\": [{\"touches\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 44 (Part 4) (DGGS-DGGS): Implementations shall support geof:sfTouches as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-4-5 (DGGS-DGGS): Simple Features Query Functions: geof:sfTouches",
     "module": "GTOP",
@@ -4972,7 +5230,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r44-4-6.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"touches\"]}, \"results\": {\"bindings\": [{\"touches\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 44 (Part 4) (WKT-GML): Implementations shall support geof:sfTouches as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-4-6 (WKT-GML): Simple Features Query Functions: geof:sfTouches",
     "module": "GTOP",
@@ -4981,7 +5241,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r44-4-7.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"touches\"]}, \"results\": {\"bindings\": [{\"touches\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 44 (Part 4) (WKT-GeoJSON): Implementations shall support geof:sfTouches as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-4-7 (WKT-GeoJSON): Simple Features Query Functions: geof:sfTouches",
     "module": "GTOP",
@@ -4990,7 +5252,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r44-4-8.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"touches\"]}, \"results\": {\"bindings\": [{\"touches\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 44 (Part 4) (WKT-KML): Implementations shall support geof:sfTouches as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-4-8 (WKT-KML): Simple Features Query Functions: geof:sfTouches",
     "module": "GTOP",
@@ -4999,7 +5263,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r44-4-9.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"touches\"]}, \"results\": {\"bindings\": [{\"touches\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 44 (Part 4) (WKT-DGGS): Implementations shall support geof:sfTouches as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-4-9 (WKT-DGGS): Simple Features Query Functions: geof:sfTouches",
     "module": "GTOP",
@@ -5008,7 +5274,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r44-5-1.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"crosses\"]}, \"results\": {\"bindings\": [{\"crosses\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 44 (Part 5) (WKT-WKT): Implementations shall support geof:sfCrosses as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-5-1 (WKT-WKT): Simple Features Query Functions: geof:sfCrosses",
     "module": "GTOP",
@@ -5017,7 +5285,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r44-5-10.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"crosses\"]}, \"results\": {\"bindings\": [{\"crosses\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 44 (Part 5) (GML-WKT): Implementations shall support geof:sfCrosses as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-5-10 (GML-WKT): Simple Features Query Functions: geof:sfCrosses",
     "module": "GTOP",
@@ -5026,7 +5296,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r44-5-11.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"crosses\"]}, \"results\": {\"bindings\": [{\"crosses\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 44 (Part 5) (GML-GeoJSON): Implementations shall support geof:sfCrosses as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-5-11 (GML-GeoJSON): Simple Features Query Functions: geof:sfCrosses",
     "module": "GTOP",
@@ -5035,7 +5307,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r44-5-12.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"crosses\"]}, \"results\": {\"bindings\": [{\"crosses\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 44 (Part 5) (GML-KML): Implementations shall support geof:sfCrosses as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-5-12 (GML-KML): Simple Features Query Functions: geof:sfCrosses",
     "module": "GTOP",
@@ -5044,7 +5318,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r44-5-13.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"crosses\"]}, \"results\": {\"bindings\": [{\"crosses\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 44 (Part 5) (GML-DGGS): Implementations shall support geof:sfCrosses as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-5-13 (GML-DGGS): Simple Features Query Functions: geof:sfCrosses",
     "module": "GTOP",
@@ -5053,7 +5329,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r44-5-14.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"crosses\"]}, \"results\": {\"bindings\": [{\"crosses\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 44 (Part 5) (GeoJSON-WKT): Implementations shall support geof:sfCrosses as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-5-14 (GeoJSON-WKT): Simple Features Query Functions: geof:sfCrosses",
     "module": "GTOP",
@@ -5062,7 +5340,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r44-5-15.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"crosses\"]}, \"results\": {\"bindings\": [{\"crosses\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 44 (Part 5) (GeoJSON-GML): Implementations shall support geof:sfCrosses as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-5-15 (GeoJSON-GML): Simple Features Query Functions: geof:sfCrosses",
     "module": "GTOP",
@@ -5071,7 +5351,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r44-5-16.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"crosses\"]}, \"results\": {\"bindings\": [{\"crosses\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 44 (Part 5) (GeoJSON-KML): Implementations shall support geof:sfCrosses as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-5-16 (GeoJSON-KML): Simple Features Query Functions: geof:sfCrosses",
     "module": "GTOP",
@@ -5080,7 +5362,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r44-5-17.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"crosses\"]}, \"results\": {\"bindings\": [{\"crosses\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 44 (Part 5) (GeoJSON-DGGS): Implementations shall support geof:sfCrosses as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-5-17 (GeoJSON-DGGS): Simple Features Query Functions: geof:sfCrosses",
     "module": "GTOP",
@@ -5089,7 +5373,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r44-5-18.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"crosses\"]}, \"results\": {\"bindings\": [{\"crosses\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 44 (Part 5) (KML-WKT): Implementations shall support geof:sfCrosses as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-5-18 (KML-WKT): Simple Features Query Functions: geof:sfCrosses",
     "module": "GTOP",
@@ -5098,7 +5384,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r44-5-19.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"crosses\"]}, \"results\": {\"bindings\": [{\"crosses\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 44 (Part 5) (KML-GML): Implementations shall support geof:sfCrosses as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-5-19 (KML-GML): Simple Features Query Functions: geof:sfCrosses",
     "module": "GTOP",
@@ -5107,7 +5395,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r44-5-2.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"crosses\"]}, \"results\": {\"bindings\": [{\"crosses\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 44 (Part 5) (GML-GML): Implementations shall support geof:sfCrosses as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-5-2 (GML-GML): Simple Features Query Functions: geof:sfCrosses",
     "module": "GTOP",
@@ -5116,7 +5406,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r44-5-20.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"crosses\"]}, \"results\": {\"bindings\": [{\"crosses\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 44 (Part 5) (KML-GeoJSON): Implementations shall support geof:sfCrosses as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-5-20 (KML-GeoJSON): Simple Features Query Functions: geof:sfCrosses",
     "module": "GTOP",
@@ -5125,7 +5417,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r44-5-21.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"crosses\"]}, \"results\": {\"bindings\": [{\"crosses\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 44 (Part 5) (KML-DGGS): Implementations shall support geof:sfCrosses as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-5-21 (KML-DGGS): Simple Features Query Functions: geof:sfCrosses",
     "module": "GTOP",
@@ -5134,7 +5428,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r44-5-22.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"crosses\"]}, \"results\": {\"bindings\": [{\"crosses\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 44 (Part 5) (DGGS-WKT): Implementations shall support geof:sfCrosses as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-5-22 (DGGS-WKT): Simple Features Query Functions: geof:sfCrosses",
     "module": "GTOP",
@@ -5143,7 +5439,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r44-5-23.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"crosses\"]}, \"results\": {\"bindings\": [{\"crosses\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 44 (Part 5) (DGGS-GML): Implementations shall support geof:sfCrosses as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-5-23 (DGGS-GML): Simple Features Query Functions: geof:sfCrosses",
     "module": "GTOP",
@@ -5152,7 +5450,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r44-5-24.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"crosses\"]}, \"results\": {\"bindings\": [{\"crosses\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 44 (Part 5) (DGGS-GeoJSON): Implementations shall support geof:sfCrosses as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-5-24 (DGGS-GeoJSON): Simple Features Query Functions: geof:sfCrosses",
     "module": "GTOP",
@@ -5161,7 +5461,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r44-5-25.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"crosses\"]}, \"results\": {\"bindings\": [{\"crosses\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 44 (Part 5) (DGGS-KML): Implementations shall support geof:sfCrosses as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-5-25 (DGGS-KML): Simple Features Query Functions: geof:sfCrosses",
     "module": "GTOP",
@@ -5170,7 +5472,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r44-5-3.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"crosses\"]}, \"results\": {\"bindings\": [{\"crosses\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 44 (Part 5) (GeoJSON-GeoJSON): Implementations shall support geof:sfCrosses as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-5-3 (GeoJSON-GeoJSON): Simple Features Query Functions: geof:sfCrosses",
     "module": "GTOP",
@@ -5179,7 +5483,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r44-5-4.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"crosses\"]}, \"results\": {\"bindings\": [{\"crosses\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 44 (Part 5) (KML-KML): Implementations shall support geof:sfCrosses as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-5-4 (KML-KML): Simple Features Query Functions: geof:sfCrosses",
     "module": "GTOP",
@@ -5188,7 +5494,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r44-5-5.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"crosses\"]}, \"results\": {\"bindings\": [{\"crosses\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 44 (Part 5) (DGGS-DGGS): Implementations shall support geof:sfCrosses as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-5-5 (DGGS-DGGS): Simple Features Query Functions: geof:sfCrosses",
     "module": "GTOP",
@@ -5197,7 +5505,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r44-5-6.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"crosses\"]}, \"results\": {\"bindings\": [{\"crosses\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 44 (Part 5) (WKT-GML): Implementations shall support geof:sfCrosses as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-5-6 (WKT-GML): Simple Features Query Functions: geof:sfCrosses",
     "module": "GTOP",
@@ -5206,7 +5516,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r44-5-7.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"crosses\"]}, \"results\": {\"bindings\": [{\"crosses\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 44 (Part 5) (WKT-GeoJSON): Implementations shall support geof:sfCrosses as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-5-7 (WKT-GeoJSON): Simple Features Query Functions: geof:sfCrosses",
     "module": "GTOP",
@@ -5215,7 +5527,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r44-5-8.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"crosses\"]}, \"results\": {\"bindings\": [{\"crosses\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 44 (Part 5) (WKT-KML): Implementations shall support geof:sfCrosses as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-5-8 (WKT-KML): Simple Features Query Functions: geof:sfCrosses",
     "module": "GTOP",
@@ -5224,7 +5538,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r44-5-9.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"crosses\"]}, \"results\": {\"bindings\": [{\"crosses\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 44 (Part 5) (WKT-DGGS): Implementations shall support geof:sfCrosses as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-5-9 (WKT-DGGS): Simple Features Query Functions: geof:sfCrosses",
     "module": "GTOP",
@@ -5233,7 +5549,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r44-6-1.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"within\"]}, \"results\": {\"bindings\": [{\"within\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 44 (Part 6) (WKT-WKT): Implementations shall support geof:sfWithin as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-6-1 (WKT-WKT): Simple Features Query Functions: geof:sfWithin",
     "module": "GTOP",
@@ -5242,7 +5560,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r44-6-10.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"within\"]}, \"results\": {\"bindings\": [{\"within\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 44 (Part 6) (GML-WKT): Implementations shall support geof:sfWithin as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-6-10 (GML-WKT): Simple Features Query Functions: geof:sfWithin",
     "module": "GTOP",
@@ -5251,7 +5571,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r44-6-11.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"within\"]}, \"results\": {\"bindings\": [{\"within\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 44 (Part 6) (GML-GeoJSON): Implementations shall support geof:sfWithin as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-6-11 (GML-GeoJSON): Simple Features Query Functions: geof:sfWithin",
     "module": "GTOP",
@@ -5260,7 +5582,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r44-6-12.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"within\"]}, \"results\": {\"bindings\": [{\"within\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 44 (Part 6) (GML-KML): Implementations shall support geof:sfWithin as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-6-12 (GML-KML): Simple Features Query Functions: geof:sfWithin",
     "module": "GTOP",
@@ -5269,7 +5593,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r44-6-13.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"within\"]}, \"results\": {\"bindings\": [{\"within\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 44 (Part 6) (GML-DGGS): Implementations shall support geof:sfWithin as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-6-13 (GML-DGGS): Simple Features Query Functions: geof:sfWithin",
     "module": "GTOP",
@@ -5278,7 +5604,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r44-6-14.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"within\"]}, \"results\": {\"bindings\": [{\"within\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 44 (Part 6) (GeoJSON-WKT): Implementations shall support geof:sfWithin as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-6-14 (GeoJSON-WKT): Simple Features Query Functions: geof:sfWithin",
     "module": "GTOP",
@@ -5287,7 +5615,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r44-6-15.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"within\"]}, \"results\": {\"bindings\": [{\"within\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 44 (Part 6) (GeoJSON-GML): Implementations shall support geof:sfWithin as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-6-15 (GeoJSON-GML): Simple Features Query Functions: geof:sfWithin",
     "module": "GTOP",
@@ -5296,7 +5626,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r44-6-16.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"within\"]}, \"results\": {\"bindings\": [{\"within\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 44 (Part 6) (GeoJSON-KML): Implementations shall support geof:sfWithin as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-6-16 (GeoJSON-KML): Simple Features Query Functions: geof:sfWithin",
     "module": "GTOP",
@@ -5305,7 +5637,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r44-6-17.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"within\"]}, \"results\": {\"bindings\": [{\"within\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 44 (Part 6) (GeoJSON-DGGS): Implementations shall support geof:sfWithin as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-6-17 (GeoJSON-DGGS): Simple Features Query Functions: geof:sfWithin",
     "module": "GTOP",
@@ -5314,7 +5648,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r44-6-18.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"within\"]}, \"results\": {\"bindings\": [{\"within\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 44 (Part 6) (KML-WKT): Implementations shall support geof:sfWithin as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-6-18 (KML-WKT): Simple Features Query Functions: geof:sfWithin",
     "module": "GTOP",
@@ -5323,7 +5659,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r44-6-19.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"within\"]}, \"results\": {\"bindings\": [{\"within\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 44 (Part 6) (KML-GML): Implementations shall support geof:sfWithin as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-6-19 (KML-GML): Simple Features Query Functions: geof:sfWithin",
     "module": "GTOP",
@@ -5332,7 +5670,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r44-6-2.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"within\"]}, \"results\": {\"bindings\": [{\"within\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 44 (Part 6) (GML-GML): Implementations shall support geof:sfWithin as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-6-2 (GML-GML): Simple Features Query Functions: geof:sfWithin",
     "module": "GTOP",
@@ -5341,7 +5681,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r44-6-20.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"within\"]}, \"results\": {\"bindings\": [{\"within\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 44 (Part 6) (KML-GeoJSON): Implementations shall support geof:sfWithin as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-6-20 (KML-GeoJSON): Simple Features Query Functions: geof:sfWithin",
     "module": "GTOP",
@@ -5350,7 +5692,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r44-6-21.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"within\"]}, \"results\": {\"bindings\": [{\"within\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 44 (Part 6) (KML-DGGS): Implementations shall support geof:sfWithin as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-6-21 (KML-DGGS): Simple Features Query Functions: geof:sfWithin",
     "module": "GTOP",
@@ -5359,7 +5703,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r44-6-22.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"within\"]}, \"results\": {\"bindings\": [{\"within\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 44 (Part 6) (DGGS-WKT): Implementations shall support geof:sfWithin as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-6-22 (DGGS-WKT): Simple Features Query Functions: geof:sfWithin",
     "module": "GTOP",
@@ -5368,7 +5714,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r44-6-23.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"within\"]}, \"results\": {\"bindings\": [{\"within\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 44 (Part 6) (DGGS-GML): Implementations shall support geof:sfWithin as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-6-23 (DGGS-GML): Simple Features Query Functions: geof:sfWithin",
     "module": "GTOP",
@@ -5377,7 +5725,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r44-6-24.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"within\"]}, \"results\": {\"bindings\": [{\"within\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 44 (Part 6) (DGGS-GeoJSON): Implementations shall support geof:sfWithin as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-6-24 (DGGS-GeoJSON): Simple Features Query Functions: geof:sfWithin",
     "module": "GTOP",
@@ -5386,7 +5736,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r44-6-25.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"within\"]}, \"results\": {\"bindings\": [{\"within\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 44 (Part 6) (DGGS-KML): Implementations shall support geof:sfWithin as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-6-25 (DGGS-KML): Simple Features Query Functions: geof:sfWithin",
     "module": "GTOP",
@@ -5395,7 +5747,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r44-6-3.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"within\"]}, \"results\": {\"bindings\": [{\"within\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 44 (Part 6) (GeoJSON-GeoJSON): Implementations shall support geof:sfWithin as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-6-3 (GeoJSON-GeoJSON): Simple Features Query Functions: geof:sfWithin",
     "module": "GTOP",
@@ -5404,7 +5758,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r44-6-4.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"within\"]}, \"results\": {\"bindings\": [{\"within\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 44 (Part 6) (KML-KML): Implementations shall support geof:sfWithin as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-6-4 (KML-KML): Simple Features Query Functions: geof:sfWithin",
     "module": "GTOP",
@@ -5413,7 +5769,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r44-6-5.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"within\"]}, \"results\": {\"bindings\": [{\"within\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 44 (Part 6) (DGGS-DGGS): Implementations shall support geof:sfWithin as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-6-5 (DGGS-DGGS): Simple Features Query Functions: geof:sfWithin",
     "module": "GTOP",
@@ -5422,7 +5780,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r44-6-6.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"within\"]}, \"results\": {\"bindings\": [{\"within\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 44 (Part 6) (WKT-GML): Implementations shall support geof:sfWithin as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-6-6 (WKT-GML): Simple Features Query Functions: geof:sfWithin",
     "module": "GTOP",
@@ -5431,7 +5791,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r44-6-7.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"within\"]}, \"results\": {\"bindings\": [{\"within\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 44 (Part 6) (WKT-GeoJSON): Implementations shall support geof:sfWithin as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-6-7 (WKT-GeoJSON): Simple Features Query Functions: geof:sfWithin",
     "module": "GTOP",
@@ -5440,7 +5802,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r44-6-8.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"within\"]}, \"results\": {\"bindings\": [{\"within\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 44 (Part 6) (WKT-KML): Implementations shall support geof:sfWithin as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-6-8 (WKT-KML): Simple Features Query Functions: geof:sfWithin",
     "module": "GTOP",
@@ -5449,7 +5813,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r44-6-9.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"within\"]}, \"results\": {\"bindings\": [{\"within\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 44 (Part 6) (WKT-DGGS): Implementations shall support geof:sfWithin as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-6-9 (WKT-DGGS): Simple Features Query Functions: geof:sfWithin",
     "module": "GTOP",
@@ -5458,7 +5824,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r44-7-1.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"contains\"]}, \"results\": {\"bindings\": [{\"contains\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 44 (Part 7) (WKT-WKT): Implementations shall support geof:sfContains as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-7-1 (WKT-WKT): Simple Features Query Functions: geof:sfContains",
     "module": "GTOP",
@@ -5467,7 +5835,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r44-7-10.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"contains\"]}, \"results\": {\"bindings\": [{\"contains\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 44 (Part 7) (GML-WKT): Implementations shall support geof:sfContains as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-7-10 (GML-WKT): Simple Features Query Functions: geof:sfContains",
     "module": "GTOP",
@@ -5476,7 +5846,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r44-7-11.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"contains\"]}, \"results\": {\"bindings\": [{\"contains\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 44 (Part 7) (GML-GeoJSON): Implementations shall support geof:sfContains as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-7-11 (GML-GeoJSON): Simple Features Query Functions: geof:sfContains",
     "module": "GTOP",
@@ -5485,7 +5857,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r44-7-12.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"contains\"]}, \"results\": {\"bindings\": [{\"contains\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 44 (Part 7) (GML-KML): Implementations shall support geof:sfContains as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-7-12 (GML-KML): Simple Features Query Functions: geof:sfContains",
     "module": "GTOP",
@@ -5494,7 +5868,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r44-7-13.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"contains\"]}, \"results\": {\"bindings\": [{\"contains\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 44 (Part 7) (GML-DGGS): Implementations shall support geof:sfContains as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-7-13 (GML-DGGS): Simple Features Query Functions: geof:sfContains",
     "module": "GTOP",
@@ -5503,7 +5879,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r44-7-14.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"contains\"]}, \"results\": {\"bindings\": [{\"contains\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 44 (Part 7) (GeoJSON-WKT): Implementations shall support geof:sfContains as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-7-14 (GeoJSON-WKT): Simple Features Query Functions: geof:sfContains",
     "module": "GTOP",
@@ -5512,7 +5890,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r44-7-15.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"contains\"]}, \"results\": {\"bindings\": [{\"contains\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 44 (Part 7) (GeoJSON-GML): Implementations shall support geof:sfContains as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-7-15 (GeoJSON-GML): Simple Features Query Functions: geof:sfContains",
     "module": "GTOP",
@@ -5521,7 +5901,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r44-7-16.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"contains\"]}, \"results\": {\"bindings\": [{\"contains\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 44 (Part 7) (GeoJSON-KML): Implementations shall support geof:sfContains as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-7-16 (GeoJSON-KML): Simple Features Query Functions: geof:sfContains",
     "module": "GTOP",
@@ -5530,7 +5912,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r44-7-17.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"contains\"]}, \"results\": {\"bindings\": [{\"contains\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 44 (Part 7) (GeoJSON-DGGS): Implementations shall support geof:sfContains as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-7-17 (GeoJSON-DGGS): Simple Features Query Functions: geof:sfContains",
     "module": "GTOP",
@@ -5539,7 +5923,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r44-7-18.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"contains\"]}, \"results\": {\"bindings\": [{\"contains\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 44 (Part 7) (KML-WKT): Implementations shall support geof:sfContains as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-7-18 (KML-WKT): Simple Features Query Functions: geof:sfContains",
     "module": "GTOP",
@@ -5548,7 +5934,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r44-7-19.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"contains\"]}, \"results\": {\"bindings\": [{\"contains\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 44 (Part 7) (KML-GML): Implementations shall support geof:sfContains as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-7-19 (KML-GML): Simple Features Query Functions: geof:sfContains",
     "module": "GTOP",
@@ -5557,7 +5945,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r44-7-2.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"contains\"]}, \"results\": {\"bindings\": [{\"contains\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 44 (Part 7) (GML-GML): Implementations shall support geof:sfContains as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-7-2 (GML-GML): Simple Features Query Functions: geof:sfContains",
     "module": "GTOP",
@@ -5566,7 +5956,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r44-7-20.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"contains\"]}, \"results\": {\"bindings\": [{\"contains\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 44 (Part 7) (KML-GeoJSON): Implementations shall support geof:sfContains as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-7-20 (KML-GeoJSON): Simple Features Query Functions: geof:sfContains",
     "module": "GTOP",
@@ -5575,7 +5967,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r44-7-21.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"contains\"]}, \"results\": {\"bindings\": [{\"contains\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 44 (Part 7) (KML-DGGS): Implementations shall support geof:sfContains as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-7-21 (KML-DGGS): Simple Features Query Functions: geof:sfContains",
     "module": "GTOP",
@@ -5584,7 +5978,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r44-7-22.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"contains\"]}, \"results\": {\"bindings\": [{\"contains\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 44 (Part 7) (DGGS-WKT): Implementations shall support geof:sfContains as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-7-22 (DGGS-WKT): Simple Features Query Functions: geof:sfContains",
     "module": "GTOP",
@@ -5593,7 +5989,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r44-7-23.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"contains\"]}, \"results\": {\"bindings\": [{\"contains\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 44 (Part 7) (DGGS-GML): Implementations shall support geof:sfContains as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-7-23 (DGGS-GML): Simple Features Query Functions: geof:sfContains",
     "module": "GTOP",
@@ -5602,7 +6000,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r44-7-24.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"contains\"]}, \"results\": {\"bindings\": [{\"contains\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 44 (Part 7) (DGGS-GeoJSON): Implementations shall support geof:sfContains as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-7-24 (DGGS-GeoJSON): Simple Features Query Functions: geof:sfContains",
     "module": "GTOP",
@@ -5611,7 +6011,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r44-7-25.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"contains\"]}, \"results\": {\"bindings\": [{\"contains\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 44 (Part 7) (DGGS-KML): Implementations shall support geof:sfContains as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-7-25 (DGGS-KML): Simple Features Query Functions: geof:sfContains",
     "module": "GTOP",
@@ -5620,7 +6022,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r44-7-3.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"contains\"]}, \"results\": {\"bindings\": [{\"contains\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 44 (Part 7) (GeoJSON-GeoJSON): Implementations shall support geof:sfContains as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-7-3 (GeoJSON-GeoJSON): Simple Features Query Functions: geof:sfContains",
     "module": "GTOP",
@@ -5629,7 +6033,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r44-7-4.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"contains\"]}, \"results\": {\"bindings\": [{\"contains\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 44 (Part 7) (KML-KML): Implementations shall support geof:sfContains as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-7-4 (KML-KML): Simple Features Query Functions: geof:sfContains",
     "module": "GTOP",
@@ -5638,7 +6044,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r44-7-5.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"contains\"]}, \"results\": {\"bindings\": [{\"contains\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 44 (Part 7) (DGGS-DGGS): Implementations shall support geof:sfContains as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-7-5 (DGGS-DGGS): Simple Features Query Functions: geof:sfContains",
     "module": "GTOP",
@@ -5647,7 +6055,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r44-7-6.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"contains\"]}, \"results\": {\"bindings\": [{\"contains\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 44 (Part 7) (WKT-GML): Implementations shall support geof:sfContains as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-7-6 (WKT-GML): Simple Features Query Functions: geof:sfContains",
     "module": "GTOP",
@@ -5656,7 +6066,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r44-7-7.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"contains\"]}, \"results\": {\"bindings\": [{\"contains\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 44 (Part 7) (WKT-GeoJSON): Implementations shall support geof:sfContains as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-7-7 (WKT-GeoJSON): Simple Features Query Functions: geof:sfContains",
     "module": "GTOP",
@@ -5665,7 +6077,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r44-7-8.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"contains\"]}, \"results\": {\"bindings\": [{\"contains\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 44 (Part 7) (WKT-KML): Implementations shall support geof:sfContains as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-7-8 (WKT-KML): Simple Features Query Functions: geof:sfContains",
     "module": "GTOP",
@@ -5674,7 +6088,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r44-7-9.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"contains\"]}, \"results\": {\"bindings\": [{\"contains\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 44 (Part 7) (WKT-DGGS): Implementations shall support geof:sfContains as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-7-9 (WKT-DGGS): Simple Features Query Functions: geof:sfContains",
     "module": "GTOP",
@@ -5683,7 +6099,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r44-8-1.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"overlaps\"]}, \"results\": {\"bindings\": [{\"overlaps\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 44 (Part 8) (WKT-WKT): Implementations shall support geof:sfOverlaps as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-8-1 (WKT-WKT): Simple Features Query Functions: geof:sfOverlaps",
     "module": "GTOP",
@@ -5692,7 +6110,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r44-8-10.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"overlaps\"]}, \"results\": {\"bindings\": [{\"overlaps\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 44 (Part 8) (GML-WKT): Implementations shall support geof:sfOverlaps as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-8-10 (GML-WKT): Simple Features Query Functions: geof:sfOverlaps",
     "module": "GTOP",
@@ -5701,7 +6121,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r44-8-11.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"overlaps\"]}, \"results\": {\"bindings\": [{\"overlaps\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 44 (Part 8) (GML-GeoJSON): Implementations shall support geof:sfOverlaps as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-8-11 (GML-GeoJSON): Simple Features Query Functions: geof:sfOverlaps",
     "module": "GTOP",
@@ -5710,7 +6132,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r44-8-12.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"overlaps\"]}, \"results\": {\"bindings\": [{\"overlaps\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 44 (Part 8) (GML-KML): Implementations shall support geof:sfOverlaps as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-8-12 (GML-KML): Simple Features Query Functions: geof:sfOverlaps",
     "module": "GTOP",
@@ -5719,7 +6143,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r44-8-13.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"overlaps\"]}, \"results\": {\"bindings\": [{\"overlaps\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 44 (Part 8) (GML-DGGS): Implementations shall support geof:sfOverlaps as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-8-13 (GML-DGGS): Simple Features Query Functions: geof:sfOverlaps",
     "module": "GTOP",
@@ -5728,7 +6154,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r44-8-14.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"overlaps\"]}, \"results\": {\"bindings\": [{\"overlaps\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 44 (Part 8) (GeoJSON-WKT): Implementations shall support geof:sfOverlaps as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-8-14 (GeoJSON-WKT): Simple Features Query Functions: geof:sfOverlaps",
     "module": "GTOP",
@@ -5737,7 +6165,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r44-8-15.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"overlaps\"]}, \"results\": {\"bindings\": [{\"overlaps\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 44 (Part 8) (GeoJSON-GML): Implementations shall support geof:sfOverlaps as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-8-15 (GeoJSON-GML): Simple Features Query Functions: geof:sfOverlaps",
     "module": "GTOP",
@@ -5746,7 +6176,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r44-8-16.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"overlaps\"]}, \"results\": {\"bindings\": [{\"overlaps\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 44 (Part 8) (GeoJSON-KML): Implementations shall support geof:sfOverlaps as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-8-16 (GeoJSON-KML): Simple Features Query Functions: geof:sfOverlaps",
     "module": "GTOP",
@@ -5755,7 +6187,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r44-8-17.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"overlaps\"]}, \"results\": {\"bindings\": [{\"overlaps\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 44 (Part 8) (GeoJSON-DGGS): Implementations shall support geof:sfOverlaps as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-8-17 (GeoJSON-DGGS): Simple Features Query Functions: geof:sfOverlaps",
     "module": "GTOP",
@@ -5764,7 +6198,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r44-8-18.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"overlaps\"]}, \"results\": {\"bindings\": [{\"overlaps\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 44 (Part 8) (KML-WKT): Implementations shall support geof:sfOverlaps as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-8-18 (KML-WKT): Simple Features Query Functions: geof:sfOverlaps",
     "module": "GTOP",
@@ -5773,7 +6209,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r44-8-19.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"overlaps\"]}, \"results\": {\"bindings\": [{\"overlaps\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 44 (Part 8) (KML-GML): Implementations shall support geof:sfOverlaps as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-8-19 (KML-GML): Simple Features Query Functions: geof:sfOverlaps",
     "module": "GTOP",
@@ -5782,7 +6220,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r44-8-2.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"overlaps\"]}, \"results\": {\"bindings\": [{\"overlaps\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 44 (Part 8) (GML-GML): Implementations shall support geof:sfOverlaps as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-8-2 (GML-GML): Simple Features Query Functions: geof:sfOverlaps",
     "module": "GTOP",
@@ -5791,7 +6231,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r44-8-20.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"overlaps\"]}, \"results\": {\"bindings\": [{\"overlaps\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 44 (Part 8) (KML-GeoJSON): Implementations shall support geof:sfOverlaps as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-8-20 (KML-GeoJSON): Simple Features Query Functions: geof:sfOverlaps",
     "module": "GTOP",
@@ -5800,7 +6242,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r44-8-21.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"overlaps\"]}, \"results\": {\"bindings\": [{\"overlaps\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 44 (Part 8) (KML-DGGS): Implementations shall support geof:sfOverlaps as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-8-21 (KML-DGGS): Simple Features Query Functions: geof:sfOverlaps",
     "module": "GTOP",
@@ -5809,7 +6253,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r44-8-22.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"overlaps\"]}, \"results\": {\"bindings\": [{\"overlaps\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 44 (Part 8) (DGGS-WKT): Implementations shall support geof:sfOverlaps as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-8-22 (DGGS-WKT): Simple Features Query Functions: geof:sfOverlaps",
     "module": "GTOP",
@@ -5818,7 +6264,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r44-8-23.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"overlaps\"]}, \"results\": {\"bindings\": [{\"overlaps\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 44 (Part 8) (DGGS-GML): Implementations shall support geof:sfOverlaps as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-8-23 (DGGS-GML): Simple Features Query Functions: geof:sfOverlaps",
     "module": "GTOP",
@@ -5827,7 +6275,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r44-8-24.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"overlaps\"]}, \"results\": {\"bindings\": [{\"overlaps\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 44 (Part 8) (DGGS-GeoJSON): Implementations shall support geof:sfOverlaps as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-8-24 (DGGS-GeoJSON): Simple Features Query Functions: geof:sfOverlaps",
     "module": "GTOP",
@@ -5836,7 +6286,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r44-8-25.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"overlaps\"]}, \"results\": {\"bindings\": [{\"overlaps\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 44 (Part 8) (DGGS-KML): Implementations shall support geof:sfOverlaps as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-8-25 (DGGS-KML): Simple Features Query Functions: geof:sfOverlaps",
     "module": "GTOP",
@@ -5845,7 +6297,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r44-8-3.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"overlaps\"]}, \"results\": {\"bindings\": [{\"overlaps\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 44 (Part 8) (GeoJSON-GeoJSON): Implementations shall support geof:sfOverlaps as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-8-3 (GeoJSON-GeoJSON): Simple Features Query Functions: geof:sfOverlaps",
     "module": "GTOP",
@@ -5854,7 +6308,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r44-8-4.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"overlaps\"]}, \"results\": {\"bindings\": [{\"overlaps\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 44 (Part 8) (KML-KML): Implementations shall support geof:sfOverlaps as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-8-4 (KML-KML): Simple Features Query Functions: geof:sfOverlaps",
     "module": "GTOP",
@@ -5863,7 +6319,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r44-8-5.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"overlaps\"]}, \"results\": {\"bindings\": [{\"overlaps\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 44 (Part 8) (DGGS-DGGS): Implementations shall support geof:sfOverlaps as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-8-5 (DGGS-DGGS): Simple Features Query Functions: geof:sfOverlaps",
     "module": "GTOP",
@@ -5872,7 +6330,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r44-8-6.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"overlaps\"]}, \"results\": {\"bindings\": [{\"overlaps\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 44 (Part 8) (WKT-GML): Implementations shall support geof:sfOverlaps as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-8-6 (WKT-GML): Simple Features Query Functions: geof:sfOverlaps",
     "module": "GTOP",
@@ -5881,7 +6341,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r44-8-7.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"overlaps\"]}, \"results\": {\"bindings\": [{\"overlaps\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 44 (Part 8) (WKT-GeoJSON): Implementations shall support geof:sfOverlaps as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-8-7 (WKT-GeoJSON): Simple Features Query Functions: geof:sfOverlaps",
     "module": "GTOP",
@@ -5890,7 +6352,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r44-8-8.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"overlaps\"]}, \"results\": {\"bindings\": [{\"overlaps\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 44 (Part 8) (WKT-KML): Implementations shall support geof:sfOverlaps as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-8-8 (WKT-KML): Simple Features Query Functions: geof:sfOverlaps",
     "module": "GTOP",
@@ -5899,7 +6363,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r44-8-9.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"overlaps\"]}, \"results\": {\"bindings\": [{\"overlaps\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 44 (Part 8) (WKT-DGGS): Implementations shall support geof:sfOverlaps as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-8-9 (WKT-DGGS): Simple Features Query Functions: geof:sfOverlaps",
     "module": "GTOP",
@@ -5908,7 +6374,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r45-1-1.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"equals\"]}, \"results\": {\"bindings\": [{\"equals\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 45 (Part 1) (WKT-WKT): Implementations shall support geof:ehEquals as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-1-1 (WKT-WKT): Egenhofer Query Functions: geof:ehEquals",
     "module": "GTOP",
@@ -5953,7 +6421,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r45-2-1.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"disjoint\"]}, \"results\": {\"bindings\": [{\"disjoint\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 45 (Part 2) (WKT-WKT): Implementations shall support geof:ehDisjoint as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-2-1 (WKT-WKT): Egenhofer Query Functions: geof:ehDisjoint",
     "module": "GTOP",
@@ -5962,7 +6432,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r45-2-10.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"disjoint\"]}, \"results\": {\"bindings\": [{\"disjoint\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 45 (Part 2) (GML-WKT): Implementations shall support geof:ehDisjoint as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-2-10 (GML-WKT): Egenhofer Query Functions: geof:ehDisjoint",
     "module": "GTOP",
@@ -5971,7 +6443,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r45-2-11.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"disjoint\"]}, \"results\": {\"bindings\": [{\"disjoint\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 45 (Part 2) (GML-GeoJSON): Implementations shall support geof:ehDisjoint as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-2-11 (GML-GeoJSON): Egenhofer Query Functions: geof:ehDisjoint",
     "module": "GTOP",
@@ -5980,7 +6454,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r45-2-12.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"disjoint\"]}, \"results\": {\"bindings\": [{\"disjoint\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 45 (Part 2) (GML-KML): Implementations shall support geof:ehDisjoint as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-2-12 (GML-KML): Egenhofer Query Functions: geof:ehDisjoint",
     "module": "GTOP",
@@ -5989,7 +6465,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r45-2-13.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"disjoint\"]}, \"results\": {\"bindings\": [{\"disjoint\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 45 (Part 2) (GML-DGGS): Implementations shall support geof:ehDisjoint as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-2-13 (GML-DGGS): Egenhofer Query Functions: geof:ehDisjoint",
     "module": "GTOP",
@@ -5998,7 +6476,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r45-2-14.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"disjoint\"]}, \"results\": {\"bindings\": [{\"disjoint\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 45 (Part 2) (GeoJSON-WKT): Implementations shall support geof:ehDisjoint as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-2-14 (GeoJSON-WKT): Egenhofer Query Functions: geof:ehDisjoint",
     "module": "GTOP",
@@ -6007,7 +6487,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r45-2-15.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"disjoint\"]}, \"results\": {\"bindings\": [{\"disjoint\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 45 (Part 2) (GeoJSON-GML): Implementations shall support geof:ehDisjoint as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-2-15 (GeoJSON-GML): Egenhofer Query Functions: geof:ehDisjoint",
     "module": "GTOP",
@@ -6016,7 +6498,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r45-2-16.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"disjoint\"]}, \"results\": {\"bindings\": [{\"disjoint\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 45 (Part 2) (GeoJSON-KML): Implementations shall support geof:ehDisjoint as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-2-16 (GeoJSON-KML): Egenhofer Query Functions: geof:ehDisjoint",
     "module": "GTOP",
@@ -6025,7 +6509,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r45-2-17.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"disjoint\"]}, \"results\": {\"bindings\": [{\"disjoint\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 45 (Part 2) (GeoJSON-DGGS): Implementations shall support geof:ehDisjoint as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-2-17 (GeoJSON-DGGS): Egenhofer Query Functions: geof:ehDisjoint",
     "module": "GTOP",
@@ -6034,7 +6520,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r45-2-18.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"disjoint\"]}, \"results\": {\"bindings\": [{\"disjoint\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 45 (Part 2) (KML-WKT): Implementations shall support geof:ehDisjoint as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-2-18 (KML-WKT): Egenhofer Query Functions: geof:ehDisjoint",
     "module": "GTOP",
@@ -6043,7 +6531,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r45-2-19.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"disjoint\"]}, \"results\": {\"bindings\": [{\"disjoint\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 45 (Part 2) (KML-GML): Implementations shall support geof:ehDisjoint as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-2-19 (KML-GML): Egenhofer Query Functions: geof:ehDisjoint",
     "module": "GTOP",
@@ -6052,7 +6542,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r45-2-2.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"disjoint\"]}, \"results\": {\"bindings\": [{\"disjoint\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 45 (Part 2) (GML-GML): Implementations shall support geof:ehDisjoint as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-2-2 (GML-GML): Egenhofer Query Functions: geof:ehDisjoint",
     "module": "GTOP",
@@ -6061,7 +6553,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r45-2-20.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"disjoint\"]}, \"results\": {\"bindings\": [{\"disjoint\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 45 (Part 2) (KML-GeoJSON): Implementations shall support geof:ehDisjoint as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-2-20 (KML-GeoJSON): Egenhofer Query Functions: geof:ehDisjoint",
     "module": "GTOP",
@@ -6070,7 +6564,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r45-2-21.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"disjoint\"]}, \"results\": {\"bindings\": [{\"disjoint\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 45 (Part 2) (KML-DGGS): Implementations shall support geof:ehDisjoint as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-2-21 (KML-DGGS): Egenhofer Query Functions: geof:ehDisjoint",
     "module": "GTOP",
@@ -6079,7 +6575,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r45-2-22.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"disjoint\"]}, \"results\": {\"bindings\": [{\"disjoint\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 45 (Part 2) (DGGS-WKT): Implementations shall support geof:ehDisjoint as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-2-22 (DGGS-WKT): Egenhofer Query Functions: geof:ehDisjoint",
     "module": "GTOP",
@@ -6088,7 +6586,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r45-2-23.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"disjoint\"]}, \"results\": {\"bindings\": [{\"disjoint\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 45 (Part 2) (DGGS-GML): Implementations shall support geof:ehDisjoint as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-2-23 (DGGS-GML): Egenhofer Query Functions: geof:ehDisjoint",
     "module": "GTOP",
@@ -6097,7 +6597,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r45-2-24.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"disjoint\"]}, \"results\": {\"bindings\": [{\"disjoint\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 45 (Part 2) (DGGS-GeoJSON): Implementations shall support geof:ehDisjoint as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-2-24 (DGGS-GeoJSON): Egenhofer Query Functions: geof:ehDisjoint",
     "module": "GTOP",
@@ -6106,7 +6608,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r45-2-25.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"disjoint\"]}, \"results\": {\"bindings\": [{\"disjoint\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 45 (Part 2) (DGGS-KML): Implementations shall support geof:ehDisjoint as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-2-25 (DGGS-KML): Egenhofer Query Functions: geof:ehDisjoint",
     "module": "GTOP",
@@ -6115,7 +6619,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r45-2-3.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"disjoint\"]}, \"results\": {\"bindings\": [{\"disjoint\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 45 (Part 2) (GeoJSON-GeoJSON): Implementations shall support geof:ehDisjoint as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-2-3 (GeoJSON-GeoJSON): Egenhofer Query Functions: geof:ehDisjoint",
     "module": "GTOP",
@@ -6124,7 +6630,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r45-2-4.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"disjoint\"]}, \"results\": {\"bindings\": [{\"disjoint\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 45 (Part 2) (KML-KML): Implementations shall support geof:ehDisjoint as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-2-4 (KML-KML): Egenhofer Query Functions: geof:ehDisjoint",
     "module": "GTOP",
@@ -6133,7 +6641,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r45-2-5.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"disjoint\"]}, \"results\": {\"bindings\": [{\"disjoint\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 45 (Part 2) (DGGS-DGGS): Implementations shall support geof:ehDisjoint as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-2-5 (DGGS-DGGS): Egenhofer Query Functions: geof:ehDisjoint",
     "module": "GTOP",
@@ -6142,7 +6652,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r45-2-6.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"disjoint\"]}, \"results\": {\"bindings\": [{\"disjoint\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 45 (Part 2) (WKT-GML): Implementations shall support geof:ehDisjoint as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-2-6 (WKT-GML): Egenhofer Query Functions: geof:ehDisjoint",
     "module": "GTOP",
@@ -6151,7 +6663,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r45-2-7.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"disjoint\"]}, \"results\": {\"bindings\": [{\"disjoint\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 45 (Part 2) (WKT-GeoJSON): Implementations shall support geof:ehDisjoint as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-2-7 (WKT-GeoJSON): Egenhofer Query Functions: geof:ehDisjoint",
     "module": "GTOP",
@@ -6160,7 +6674,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r45-2-8.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"disjoint\"]}, \"results\": {\"bindings\": [{\"disjoint\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 45 (Part 2) (WKT-KML): Implementations shall support geof:ehDisjoint as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-2-8 (WKT-KML): Egenhofer Query Functions: geof:ehDisjoint",
     "module": "GTOP",
@@ -6169,7 +6685,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r45-2-9.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"disjoint\"]}, \"results\": {\"bindings\": [{\"disjoint\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 45 (Part 2) (WKT-DGGS): Implementations shall support geof:ehDisjoint as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-2-9 (WKT-DGGS): Egenhofer Query Functions: geof:ehDisjoint",
     "module": "GTOP",
@@ -6178,7 +6696,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r45-3-1.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"meet\"]}, \"results\": {\"bindings\": [{\"meet\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 45 (Part 3) (WKT-WKT): Implementations shall support geof:ehMeet as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-3-1 (WKT-WKT): Egenhofer Query Functions: geof:ehMeet",
     "module": "GTOP",
@@ -6187,7 +6707,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r45-3-10.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"meet\"]}, \"results\": {\"bindings\": [{\"meet\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 45 (Part 3) (GML-WKT): Implementations shall support geof:ehMeet as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-3-10 (GML-WKT): Egenhofer Query Functions: geof:ehMeet",
     "module": "GTOP",
@@ -6196,7 +6718,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r45-3-11.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"meet\"]}, \"results\": {\"bindings\": [{\"meet\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 45 (Part 3) (GML-GeoJSON): Implementations shall support geof:ehMeet as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-3-11 (GML-GeoJSON): Egenhofer Query Functions: geof:ehMeet",
     "module": "GTOP",
@@ -6205,7 +6729,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r45-3-12.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"meet\"]}, \"results\": {\"bindings\": [{\"meet\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 45 (Part 3) (GML-KML): Implementations shall support geof:ehMeet as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-3-12 (GML-KML): Egenhofer Query Functions: geof:ehMeet",
     "module": "GTOP",
@@ -6214,7 +6740,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r45-3-13.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"meet\"]}, \"results\": {\"bindings\": [{\"meet\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 45 (Part 3) (GML-DGGS): Implementations shall support geof:ehMeet as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-3-13 (GML-DGGS): Egenhofer Query Functions: geof:ehMeet",
     "module": "GTOP",
@@ -6223,7 +6751,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r45-3-14.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"meet\"]}, \"results\": {\"bindings\": [{\"meet\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 45 (Part 3) (GeoJSON-WKT): Implementations shall support geof:ehMeet as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-3-14 (GeoJSON-WKT): Egenhofer Query Functions: geof:ehMeet",
     "module": "GTOP",
@@ -6232,7 +6762,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r45-3-15.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"meet\"]}, \"results\": {\"bindings\": [{\"meet\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 45 (Part 3) (GeoJSON-GML): Implementations shall support geof:ehMeet as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-3-15 (GeoJSON-GML): Egenhofer Query Functions: geof:ehMeet",
     "module": "GTOP",
@@ -6241,7 +6773,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r45-3-16.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"meet\"]}, \"results\": {\"bindings\": [{\"meet\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 45 (Part 3) (GeoJSON-KML): Implementations shall support geof:ehMeet as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-3-16 (GeoJSON-KML): Egenhofer Query Functions: geof:ehMeet",
     "module": "GTOP",
@@ -6250,7 +6784,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r45-3-17.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"meet\"]}, \"results\": {\"bindings\": [{\"meet\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 45 (Part 3) (GeoJSON-DGGS): Implementations shall support geof:ehMeet as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-3-17 (GeoJSON-DGGS): Egenhofer Query Functions: geof:ehMeet",
     "module": "GTOP",
@@ -6259,7 +6795,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r45-3-18.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"meet\"]}, \"results\": {\"bindings\": [{\"meet\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 45 (Part 3) (KML-WKT): Implementations shall support geof:ehMeet as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-3-18 (KML-WKT): Egenhofer Query Functions: geof:ehMeet",
     "module": "GTOP",
@@ -6268,7 +6806,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r45-3-19.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"meet\"]}, \"results\": {\"bindings\": [{\"meet\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 45 (Part 3) (KML-GML): Implementations shall support geof:ehMeet as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-3-19 (KML-GML): Egenhofer Query Functions: geof:ehMeet",
     "module": "GTOP",
@@ -6277,7 +6817,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r45-3-2.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"meet\"]}, \"results\": {\"bindings\": [{\"meet\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 45 (Part 3) (GML-GML): Implementations shall support geof:ehMeet as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-3-2 (GML-GML): Egenhofer Query Functions: geof:ehMeet",
     "module": "GTOP",
@@ -6286,7 +6828,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r45-3-20.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"meet\"]}, \"results\": {\"bindings\": [{\"meet\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 45 (Part 3) (KML-GeoJSON): Implementations shall support geof:ehMeet as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-3-20 (KML-GeoJSON): Egenhofer Query Functions: geof:ehMeet",
     "module": "GTOP",
@@ -6295,7 +6839,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r45-3-21.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"meet\"]}, \"results\": {\"bindings\": [{\"meet\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 45 (Part 3) (KML-DGGS): Implementations shall support geof:ehMeet as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-3-21 (KML-DGGS): Egenhofer Query Functions: geof:ehMeet",
     "module": "GTOP",
@@ -6304,7 +6850,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r45-3-22.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"meet\"]}, \"results\": {\"bindings\": [{\"meet\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 45 (Part 3) (DGGS-WKT): Implementations shall support geof:ehMeet as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-3-22 (DGGS-WKT): Egenhofer Query Functions: geof:ehMeet",
     "module": "GTOP",
@@ -6313,7 +6861,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r45-3-23.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"meet\"]}, \"results\": {\"bindings\": [{\"meet\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 45 (Part 3) (DGGS-GML): Implementations shall support geof:ehMeet as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-3-23 (DGGS-GML): Egenhofer Query Functions: geof:ehMeet",
     "module": "GTOP",
@@ -6322,7 +6872,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r45-3-24.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"meet\"]}, \"results\": {\"bindings\": [{\"meet\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 45 (Part 3) (DGGS-GeoJSON): Implementations shall support geof:ehMeet as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-3-24 (DGGS-GeoJSON): Egenhofer Query Functions: geof:ehMeet",
     "module": "GTOP",
@@ -6331,7 +6883,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r45-3-25.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"meet\"]}, \"results\": {\"bindings\": [{\"meet\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 45 (Part 3) (DGGS-KML): Implementations shall support geof:ehMeet as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-3-25 (DGGS-KML): Egenhofer Query Functions: geof:ehMeet",
     "module": "GTOP",
@@ -6340,7 +6894,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r45-3-3.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"meet\"]}, \"results\": {\"bindings\": [{\"meet\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 45 (Part 3) (GeoJSON-GeoJSON): Implementations shall support geof:ehMeet as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-3-3 (GeoJSON-GeoJSON): Egenhofer Query Functions: geof:ehMeet",
     "module": "GTOP",
@@ -6349,7 +6905,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r45-3-4.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"meet\"]}, \"results\": {\"bindings\": [{\"meet\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 45 (Part 3) (KML-KML): Implementations shall support geof:ehMeet as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-3-4 (KML-KML): Egenhofer Query Functions: geof:ehMeet",
     "module": "GTOP",
@@ -6358,7 +6916,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r45-3-5.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"meet\"]}, \"results\": {\"bindings\": [{\"meet\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 45 (Part 3) (DGGS-DGGS): Implementations shall support geof:ehMeet as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-3-5 (DGGS-DGGS): Egenhofer Query Functions: geof:ehMeet",
     "module": "GTOP",
@@ -6367,7 +6927,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r45-3-6.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"meet\"]}, \"results\": {\"bindings\": [{\"meet\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 45 (Part 3) (WKT-GML): Implementations shall support geof:ehMeet as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-3-6 (WKT-GML): Egenhofer Query Functions: geof:ehMeet",
     "module": "GTOP",
@@ -6376,7 +6938,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r45-3-7.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"meet\"]}, \"results\": {\"bindings\": [{\"meet\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 45 (Part 3) (WKT-GeoJSON): Implementations shall support geof:ehMeet as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-3-7 (WKT-GeoJSON): Egenhofer Query Functions: geof:ehMeet",
     "module": "GTOP",
@@ -6385,7 +6949,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r45-3-8.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"meet\"]}, \"results\": {\"bindings\": [{\"meet\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 45 (Part 3) (WKT-KML): Implementations shall support geof:ehMeet as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-3-8 (WKT-KML): Egenhofer Query Functions: geof:ehMeet",
     "module": "GTOP",
@@ -6394,7 +6960,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r45-3-9.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"meet\"]}, \"results\": {\"bindings\": [{\"meet\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 45 (Part 3) (WKT-DGGS): Implementations shall support geof:ehMeet as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-3-9 (WKT-DGGS): Egenhofer Query Functions: geof:ehMeet",
     "module": "GTOP",
@@ -6403,7 +6971,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r45-4-1.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"overlap\"]}, \"results\": {\"bindings\": [{\"overlap\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 45 (Part 4) (WKT-WKT): Implementations shall support geof:ehOverlap as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-4-1 (WKT-WKT): Egenhofer Query Functions: geof:ehOverlap",
     "module": "GTOP",
@@ -6412,7 +6982,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r45-4-10.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"overlap\"]}, \"results\": {\"bindings\": [{\"overlap\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 45 (Part 4) (GML-WKT): Implementations shall support geof:ehOverlap as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-4-10 (GML-WKT): Egenhofer Query Functions: geof:ehOverlap",
     "module": "GTOP",
@@ -6421,7 +6993,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r45-4-11.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"overlap\"]}, \"results\": {\"bindings\": [{\"overlap\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 45 (Part 4) (GML-GeoJSON): Implementations shall support geof:ehOverlap as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-4-11 (GML-GeoJSON): Egenhofer Query Functions: geof:ehOverlap",
     "module": "GTOP",
@@ -6430,7 +7004,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r45-4-12.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"overlap\"]}, \"results\": {\"bindings\": [{\"overlap\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 45 (Part 4) (GML-KML): Implementations shall support geof:ehOverlap as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-4-12 (GML-KML): Egenhofer Query Functions: geof:ehOverlap",
     "module": "GTOP",
@@ -6439,7 +7015,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r45-4-13.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"overlap\"]}, \"results\": {\"bindings\": [{\"overlap\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 45 (Part 4) (GML-DGGS): Implementations shall support geof:ehOverlap as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-4-13 (GML-DGGS): Egenhofer Query Functions: geof:ehOverlap",
     "module": "GTOP",
@@ -6448,7 +7026,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r45-4-14.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"overlap\"]}, \"results\": {\"bindings\": [{\"overlap\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 45 (Part 4) (GeoJSON-WKT): Implementations shall support geof:ehOverlap as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-4-14 (GeoJSON-WKT): Egenhofer Query Functions: geof:ehOverlap",
     "module": "GTOP",
@@ -6457,7 +7037,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r45-4-15.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"overlap\"]}, \"results\": {\"bindings\": [{\"overlap\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 45 (Part 4) (GeoJSON-GML): Implementations shall support geof:ehOverlap as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-4-15 (GeoJSON-GML): Egenhofer Query Functions: geof:ehOverlap",
     "module": "GTOP",
@@ -6466,7 +7048,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r45-4-16.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"overlap\"]}, \"results\": {\"bindings\": [{\"overlap\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 45 (Part 4) (GeoJSON-KML): Implementations shall support geof:ehOverlap as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-4-16 (GeoJSON-KML): Egenhofer Query Functions: geof:ehOverlap",
     "module": "GTOP",
@@ -6475,7 +7059,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r45-4-17.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"overlap\"]}, \"results\": {\"bindings\": [{\"overlap\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 45 (Part 4) (GeoJSON-DGGS): Implementations shall support geof:ehOverlap as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-4-17 (GeoJSON-DGGS): Egenhofer Query Functions: geof:ehOverlap",
     "module": "GTOP",
@@ -6484,7 +7070,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r45-4-18.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"overlap\"]}, \"results\": {\"bindings\": [{\"overlap\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 45 (Part 4) (KML-WKT): Implementations shall support geof:ehOverlap as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-4-18 (KML-WKT): Egenhofer Query Functions: geof:ehOverlap",
     "module": "GTOP",
@@ -6493,7 +7081,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r45-4-19.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"overlap\"]}, \"results\": {\"bindings\": [{\"overlap\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 45 (Part 4) (KML-GML): Implementations shall support geof:ehOverlap as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-4-19 (KML-GML): Egenhofer Query Functions: geof:ehOverlap",
     "module": "GTOP",
@@ -6502,7 +7092,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r45-4-2.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"overlap\"]}, \"results\": {\"bindings\": [{\"overlap\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 45 (Part 4) (GML-GML): Implementations shall support geof:ehOverlap as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-4-2 (GML-GML): Egenhofer Query Functions: geof:ehOverlap",
     "module": "GTOP",
@@ -6511,7 +7103,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r45-4-20.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"overlap\"]}, \"results\": {\"bindings\": [{\"overlap\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 45 (Part 4) (KML-GeoJSON): Implementations shall support geof:ehOverlap as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-4-20 (KML-GeoJSON): Egenhofer Query Functions: geof:ehOverlap",
     "module": "GTOP",
@@ -6520,7 +7114,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r45-4-21.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"overlap\"]}, \"results\": {\"bindings\": [{\"overlap\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 45 (Part 4) (KML-DGGS): Implementations shall support geof:ehOverlap as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-4-21 (KML-DGGS): Egenhofer Query Functions: geof:ehOverlap",
     "module": "GTOP",
@@ -6529,7 +7125,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r45-4-22.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"overlap\"]}, \"results\": {\"bindings\": [{\"overlap\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 45 (Part 4) (DGGS-WKT): Implementations shall support geof:ehOverlap as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-4-22 (DGGS-WKT): Egenhofer Query Functions: geof:ehOverlap",
     "module": "GTOP",
@@ -6538,7 +7136,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r45-4-23.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"overlap\"]}, \"results\": {\"bindings\": [{\"overlap\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 45 (Part 4) (DGGS-GML): Implementations shall support geof:ehOverlap as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-4-23 (DGGS-GML): Egenhofer Query Functions: geof:ehOverlap",
     "module": "GTOP",
@@ -6547,7 +7147,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r45-4-24.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"overlap\"]}, \"results\": {\"bindings\": [{\"overlap\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 45 (Part 4) (DGGS-GeoJSON): Implementations shall support geof:ehOverlap as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-4-24 (DGGS-GeoJSON): Egenhofer Query Functions: geof:ehOverlap",
     "module": "GTOP",
@@ -6556,7 +7158,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r45-4-25.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"overlap\"]}, \"results\": {\"bindings\": [{\"overlap\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 45 (Part 4) (DGGS-KML): Implementations shall support geof:ehOverlap as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-4-25 (DGGS-KML): Egenhofer Query Functions: geof:ehOverlap",
     "module": "GTOP",
@@ -6565,7 +7169,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r45-4-3.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"overlap\"]}, \"results\": {\"bindings\": [{\"overlap\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 45 (Part 4) (GeoJSON-GeoJSON): Implementations shall support geof:ehOverlap as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-4-3 (GeoJSON-GeoJSON): Egenhofer Query Functions: geof:ehOverlap",
     "module": "GTOP",
@@ -6574,7 +7180,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r45-4-4.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"overlap\"]}, \"results\": {\"bindings\": [{\"overlap\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 45 (Part 4) (KML-KML): Implementations shall support geof:ehOverlap as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-4-4 (KML-KML): Egenhofer Query Functions: geof:ehOverlap",
     "module": "GTOP",
@@ -6583,7 +7191,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r45-4-5.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"overlap\"]}, \"results\": {\"bindings\": [{\"overlap\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 45 (Part 4) (DGGS-DGGS): Implementations shall support geof:ehOverlap as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-4-5 (DGGS-DGGS): Egenhofer Query Functions: geof:ehOverlap",
     "module": "GTOP",
@@ -6592,7 +7202,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r45-4-6.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"overlap\"]}, \"results\": {\"bindings\": [{\"overlap\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 45 (Part 4) (WKT-GML): Implementations shall support geof:ehOverlap as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-4-6 (WKT-GML): Egenhofer Query Functions: geof:ehOverlap",
     "module": "GTOP",
@@ -6601,7 +7213,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r45-4-7.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"overlap\"]}, \"results\": {\"bindings\": [{\"overlap\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 45 (Part 4) (WKT-GeoJSON): Implementations shall support geof:ehOverlap as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-4-7 (WKT-GeoJSON): Egenhofer Query Functions: geof:ehOverlap",
     "module": "GTOP",
@@ -6610,7 +7224,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r45-4-8.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"overlap\"]}, \"results\": {\"bindings\": [{\"overlap\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 45 (Part 4) (WKT-KML): Implementations shall support geof:ehOverlap as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-4-8 (WKT-KML): Egenhofer Query Functions: geof:ehOverlap",
     "module": "GTOP",
@@ -6619,7 +7235,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r45-4-9.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"overlap\"]}, \"results\": {\"bindings\": [{\"overlap\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 45 (Part 4) (WKT-DGGS): Implementations shall support geof:ehOverlap as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-4-9 (WKT-DGGS): Egenhofer Query Functions: geof:ehOverlap",
     "module": "GTOP",
@@ -6628,7 +7246,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r45-5-1.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"covers\"]}, \"results\": {\"bindings\": [{\"covers\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 45 (Part 5) (WKT-WKT): Implementations shall support geof:ehCovers as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-5-1 (WKT-WKT): Egenhofer Query Functions: geof:ehCovers",
     "module": "GTOP",
@@ -6637,7 +7257,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r45-5-10.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"covers\"]}, \"results\": {\"bindings\": [{\"covers\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 45 (Part 5) (GML-WKT): Implementations shall support geof:ehCovers as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-5-10 (GML-WKT): Egenhofer Query Functions: geof:ehCovers",
     "module": "GTOP",
@@ -6646,7 +7268,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r45-5-11.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"covers\"]}, \"results\": {\"bindings\": [{\"covers\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 45 (Part 5) (GML-GeoJSON): Implementations shall support geof:ehCovers as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-5-11 (GML-GeoJSON): Egenhofer Query Functions: geof:ehCovers",
     "module": "GTOP",
@@ -6655,7 +7279,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r45-5-12.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"covers\"]}, \"results\": {\"bindings\": [{\"covers\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 45 (Part 5) (GML-KML): Implementations shall support geof:ehCovers as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-5-12 (GML-KML): Egenhofer Query Functions: geof:ehCovers",
     "module": "GTOP",
@@ -6664,7 +7290,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r45-5-13.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"covers\"]}, \"results\": {\"bindings\": [{\"covers\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 45 (Part 5) (GML-DGGS): Implementations shall support geof:ehCovers as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-5-13 (GML-DGGS): Egenhofer Query Functions: geof:ehCovers",
     "module": "GTOP",
@@ -6673,7 +7301,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r45-5-14.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"covers\"]}, \"results\": {\"bindings\": [{\"covers\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 45 (Part 5) (GeoJSON-WKT): Implementations shall support geof:ehCovers as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-5-14 (GeoJSON-WKT): Egenhofer Query Functions: geof:ehCovers",
     "module": "GTOP",
@@ -6682,7 +7312,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r45-5-15.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"covers\"]}, \"results\": {\"bindings\": [{\"covers\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 45 (Part 5) (GeoJSON-GML): Implementations shall support geof:ehCovers as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-5-15 (GeoJSON-GML): Egenhofer Query Functions: geof:ehCovers",
     "module": "GTOP",
@@ -6691,7 +7323,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r45-5-16.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"covers\"]}, \"results\": {\"bindings\": [{\"covers\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 45 (Part 5) (GeoJSON-KML): Implementations shall support geof:ehCovers as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-5-16 (GeoJSON-KML): Egenhofer Query Functions: geof:ehCovers",
     "module": "GTOP",
@@ -6700,7 +7334,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r45-5-17.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"covers\"]}, \"results\": {\"bindings\": [{\"covers\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 45 (Part 5) (GeoJSON-DGGS): Implementations shall support geof:ehCovers as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-5-17 (GeoJSON-DGGS): Egenhofer Query Functions: geof:ehCovers",
     "module": "GTOP",
@@ -6709,7 +7345,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r45-5-18.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"covers\"]}, \"results\": {\"bindings\": [{\"covers\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 45 (Part 5) (KML-WKT): Implementations shall support geof:ehCovers as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-5-18 (KML-WKT): Egenhofer Query Functions: geof:ehCovers",
     "module": "GTOP",
@@ -6718,7 +7356,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r45-5-19.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"covers\"]}, \"results\": {\"bindings\": [{\"covers\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 45 (Part 5) (KML-GML): Implementations shall support geof:ehCovers as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-5-19 (KML-GML): Egenhofer Query Functions: geof:ehCovers",
     "module": "GTOP",
@@ -6727,7 +7367,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r45-5-2.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"covers\"]}, \"results\": {\"bindings\": [{\"covers\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 45 (Part 5) (GML-GML): Implementations shall support geof:ehCovers as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-5-2 (GML-GML): Egenhofer Query Functions: geof:ehCovers",
     "module": "GTOP",
@@ -6736,7 +7378,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r45-5-20.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"covers\"]}, \"results\": {\"bindings\": [{\"covers\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 45 (Part 5) (KML-GeoJSON): Implementations shall support geof:ehCovers as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-5-20 (KML-GeoJSON): Egenhofer Query Functions: geof:ehCovers",
     "module": "GTOP",
@@ -6745,7 +7389,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r45-5-21.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"covers\"]}, \"results\": {\"bindings\": [{\"covers\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 45 (Part 5) (KML-DGGS): Implementations shall support geof:ehCovers as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-5-21 (KML-DGGS): Egenhofer Query Functions: geof:ehCovers",
     "module": "GTOP",
@@ -6754,7 +7400,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r45-5-22.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"covers\"]}, \"results\": {\"bindings\": [{\"covers\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 45 (Part 5) (DGGS-WKT): Implementations shall support geof:ehCovers as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-5-22 (DGGS-WKT): Egenhofer Query Functions: geof:ehCovers",
     "module": "GTOP",
@@ -6763,7 +7411,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r45-5-23.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"covers\"]}, \"results\": {\"bindings\": [{\"covers\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 45 (Part 5) (DGGS-GML): Implementations shall support geof:ehCovers as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-5-23 (DGGS-GML): Egenhofer Query Functions: geof:ehCovers",
     "module": "GTOP",
@@ -6772,7 +7422,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r45-5-24.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"covers\"]}, \"results\": {\"bindings\": [{\"covers\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 45 (Part 5) (DGGS-GeoJSON): Implementations shall support geof:ehCovers as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-5-24 (DGGS-GeoJSON): Egenhofer Query Functions: geof:ehCovers",
     "module": "GTOP",
@@ -6781,7 +7433,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r45-5-25.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"covers\"]}, \"results\": {\"bindings\": [{\"covers\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 45 (Part 5) (DGGS-KML): Implementations shall support geof:ehCovers as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-5-25 (DGGS-KML): Egenhofer Query Functions: geof:ehCovers",
     "module": "GTOP",
@@ -6790,7 +7444,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r45-5-3.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"covers\"]}, \"results\": {\"bindings\": [{\"covers\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 45 (Part 5) (GeoJSON-GeoJSON): Implementations shall support geof:ehCovers as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-5-3 (GeoJSON-GeoJSON): Egenhofer Query Functions: geof:ehCovers",
     "module": "GTOP",
@@ -6799,7 +7455,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r45-5-4.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"covers\"]}, \"results\": {\"bindings\": [{\"covers\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 45 (Part 5) (KML-KML): Implementations shall support geof:ehCovers as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-5-4 (KML-KML): Egenhofer Query Functions: geof:ehCovers",
     "module": "GTOP",
@@ -6808,7 +7466,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r45-5-5.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"covers\"]}, \"results\": {\"bindings\": [{\"covers\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 45 (Part 5) (DGGS-DGGS): Implementations shall support geof:ehCovers as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-5-5 (DGGS-DGGS): Egenhofer Query Functions: geof:ehCovers",
     "module": "GTOP",
@@ -6817,7 +7477,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r45-5-6.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"covers\"]}, \"results\": {\"bindings\": [{\"covers\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 45 (Part 5) (WKT-GML): Implementations shall support geof:ehCovers as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-5-6 (WKT-GML): Egenhofer Query Functions: geof:ehCovers",
     "module": "GTOP",
@@ -6826,7 +7488,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r45-5-7.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"covers\"]}, \"results\": {\"bindings\": [{\"covers\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 45 (Part 5) (WKT-GeoJSON): Implementations shall support geof:ehCovers as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-5-7 (WKT-GeoJSON): Egenhofer Query Functions: geof:ehCovers",
     "module": "GTOP",
@@ -6835,7 +7499,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r45-5-8.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"covers\"]}, \"results\": {\"bindings\": [{\"covers\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 45 (Part 5) (WKT-KML): Implementations shall support geof:ehCovers as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-5-8 (WKT-KML): Egenhofer Query Functions: geof:ehCovers",
     "module": "GTOP",
@@ -6844,7 +7510,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r45-5-9.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"covers\"]}, \"results\": {\"bindings\": [{\"covers\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 45 (Part 5) (WKT-DGGS): Implementations shall support geof:ehCovers as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-5-9 (WKT-DGGS): Egenhofer Query Functions: geof:ehCovers",
     "module": "GTOP",
@@ -6853,7 +7521,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r45-6-1.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"coveredBy\"]}, \"results\": {\"bindings\": [{\"coveredBy\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 45 (Part 6) (WKT-WKT): Implementations shall support geof:ehCoveredBy as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-6-1 (WKT-WKT): Egenhofer Query Functions: geof:ehCoveredBy",
     "module": "GTOP",
@@ -6862,7 +7532,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r45-6-10.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"coveredBy\"]}, \"results\": {\"bindings\": [{\"coveredBy\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 45 (Part 6) (GML-WKT): Implementations shall support geof:ehCoveredBy as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-6-10 (GML-WKT): Egenhofer Query Functions: geof:ehCoveredBy",
     "module": "GTOP",
@@ -6871,7 +7543,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r45-6-11.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"coveredBy\"]}, \"results\": {\"bindings\": [{\"coveredBy\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 45 (Part 6) (GML-GeoJSON): Implementations shall support geof:ehCoveredBy as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-6-11 (GML-GeoJSON): Egenhofer Query Functions: geof:ehCoveredBy",
     "module": "GTOP",
@@ -6880,7 +7554,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r45-6-12.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"coveredBy\"]}, \"results\": {\"bindings\": [{\"coveredBy\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 45 (Part 6) (GML-KML): Implementations shall support geof:ehCoveredBy as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-6-12 (GML-KML): Egenhofer Query Functions: geof:ehCoveredBy",
     "module": "GTOP",
@@ -6889,7 +7565,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r45-6-13.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"coveredBy\"]}, \"results\": {\"bindings\": [{\"coveredBy\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 45 (Part 6) (GML-DGGS): Implementations shall support geof:ehCoveredBy as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-6-13 (GML-DGGS): Egenhofer Query Functions: geof:ehCoveredBy",
     "module": "GTOP",
@@ -6898,7 +7576,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r45-6-14.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"coveredBy\"]}, \"results\": {\"bindings\": [{\"coveredBy\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 45 (Part 6) (GeoJSON-WKT): Implementations shall support geof:ehCoveredBy as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-6-14 (GeoJSON-WKT): Egenhofer Query Functions: geof:ehCoveredBy",
     "module": "GTOP",
@@ -6907,7 +7587,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r45-6-15.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"coveredBy\"]}, \"results\": {\"bindings\": [{\"coveredBy\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 45 (Part 6) (GeoJSON-GML): Implementations shall support geof:ehCoveredBy as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-6-15 (GeoJSON-GML): Egenhofer Query Functions: geof:ehCoveredBy",
     "module": "GTOP",
@@ -6916,7 +7598,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r45-6-16.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"coveredBy\"]}, \"results\": {\"bindings\": [{\"coveredBy\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 45 (Part 6) (GeoJSON-KML): Implementations shall support geof:ehCoveredBy as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-6-16 (GeoJSON-KML): Egenhofer Query Functions: geof:ehCoveredBy",
     "module": "GTOP",
@@ -6925,7 +7609,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r45-6-17.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"coveredBy\"]}, \"results\": {\"bindings\": [{\"coveredBy\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 45 (Part 6) (GeoJSON-DGGS): Implementations shall support geof:ehCoveredBy as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-6-17 (GeoJSON-DGGS): Egenhofer Query Functions: geof:ehCoveredBy",
     "module": "GTOP",
@@ -6934,7 +7620,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r45-6-18.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"coveredBy\"]}, \"results\": {\"bindings\": [{\"coveredBy\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 45 (Part 6) (KML-WKT): Implementations shall support geof:ehCoveredBy as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-6-18 (KML-WKT): Egenhofer Query Functions: geof:ehCoveredBy",
     "module": "GTOP",
@@ -6943,7 +7631,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r45-6-19.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"coveredBy\"]}, \"results\": {\"bindings\": [{\"coveredBy\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 45 (Part 6) (KML-GML): Implementations shall support geof:ehCoveredBy as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-6-19 (KML-GML): Egenhofer Query Functions: geof:ehCoveredBy",
     "module": "GTOP",
@@ -6952,7 +7642,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r45-6-2.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"coveredBy\"]}, \"results\": {\"bindings\": [{\"coveredBy\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 45 (Part 6) (GML-GML): Implementations shall support geof:ehCoveredBy as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-6-2 (GML-GML): Egenhofer Query Functions: geof:ehCoveredBy",
     "module": "GTOP",
@@ -6961,7 +7653,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r45-6-20.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"coveredBy\"]}, \"results\": {\"bindings\": [{\"coveredBy\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 45 (Part 6) (KML-GeoJSON): Implementations shall support geof:ehCoveredBy as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-6-20 (KML-GeoJSON): Egenhofer Query Functions: geof:ehCoveredBy",
     "module": "GTOP",
@@ -6970,7 +7664,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r45-6-21.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"coveredBy\"]}, \"results\": {\"bindings\": [{\"coveredBy\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 45 (Part 6) (KML-DGGS): Implementations shall support geof:ehCoveredBy as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-6-21 (KML-DGGS): Egenhofer Query Functions: geof:ehCoveredBy",
     "module": "GTOP",
@@ -6979,7 +7675,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r45-6-22.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"coveredBy\"]}, \"results\": {\"bindings\": [{\"coveredBy\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 45 (Part 6) (DGGS-WKT): Implementations shall support geof:ehCoveredBy as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-6-22 (DGGS-WKT): Egenhofer Query Functions: geof:ehCoveredBy",
     "module": "GTOP",
@@ -6988,7 +7686,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r45-6-23.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"coveredBy\"]}, \"results\": {\"bindings\": [{\"coveredBy\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 45 (Part 6) (DGGS-GML): Implementations shall support geof:ehCoveredBy as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-6-23 (DGGS-GML): Egenhofer Query Functions: geof:ehCoveredBy",
     "module": "GTOP",
@@ -6997,7 +7697,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r45-6-24.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"coveredBy\"]}, \"results\": {\"bindings\": [{\"coveredBy\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 45 (Part 6) (DGGS-GeoJSON): Implementations shall support geof:ehCoveredBy as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-6-24 (DGGS-GeoJSON): Egenhofer Query Functions: geof:ehCoveredBy",
     "module": "GTOP",
@@ -7006,7 +7708,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r45-6-25.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"coveredBy\"]}, \"results\": {\"bindings\": [{\"coveredBy\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 45 (Part 6) (DGGS-KML): Implementations shall support geof:ehCoveredBy as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-6-25 (DGGS-KML): Egenhofer Query Functions: geof:ehCoveredBy",
     "module": "GTOP",
@@ -7015,7 +7719,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r45-6-3.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"coveredBy\"]}, \"results\": {\"bindings\": [{\"coveredBy\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 45 (Part 6) (GeoJSON-GeoJSON): Implementations shall support geof:ehCoveredBy as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-6-3 (GeoJSON-GeoJSON): Egenhofer Query Functions: geof:ehCoveredBy",
     "module": "GTOP",
@@ -7024,7 +7730,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r45-6-4.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"coveredBy\"]}, \"results\": {\"bindings\": [{\"coveredBy\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 45 (Part 6) (KML-KML): Implementations shall support geof:ehCoveredBy as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-6-4 (KML-KML): Egenhofer Query Functions: geof:ehCoveredBy",
     "module": "GTOP",
@@ -7033,7 +7741,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r45-6-5.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"coveredBy\"]}, \"results\": {\"bindings\": [{\"coveredBy\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 45 (Part 6) (DGGS-DGGS): Implementations shall support geof:ehCoveredBy as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-6-5 (DGGS-DGGS): Egenhofer Query Functions: geof:ehCoveredBy",
     "module": "GTOP",
@@ -7042,7 +7752,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r45-6-6.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"coveredBy\"]}, \"results\": {\"bindings\": [{\"coveredBy\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 45 (Part 6) (WKT-GML): Implementations shall support geof:ehCoveredBy as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-6-6 (WKT-GML): Egenhofer Query Functions: geof:ehCoveredBy",
     "module": "GTOP",
@@ -7051,7 +7763,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r45-6-7.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"coveredBy\"]}, \"results\": {\"bindings\": [{\"coveredBy\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 45 (Part 6) (WKT-GeoJSON): Implementations shall support geof:ehCoveredBy as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-6-7 (WKT-GeoJSON): Egenhofer Query Functions: geof:ehCoveredBy",
     "module": "GTOP",
@@ -7060,7 +7774,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r45-6-8.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"coveredBy\"]}, \"results\": {\"bindings\": [{\"coveredBy\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 45 (Part 6) (WKT-KML): Implementations shall support geof:ehCoveredBy as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-6-8 (WKT-KML): Egenhofer Query Functions: geof:ehCoveredBy",
     "module": "GTOP",
@@ -7069,7 +7785,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r45-6-9.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"coveredBy\"]}, \"results\": {\"bindings\": [{\"coveredBy\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 45 (Part 6) (WKT-DGGS): Implementations shall support geof:ehCoveredBy as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-6-9 (WKT-DGGS): Egenhofer Query Functions: geof:ehCoveredBy",
     "module": "GTOP",
@@ -7078,7 +7796,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r45-7-1.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"inside\"]}, \"results\": {\"bindings\": [{\"inside\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 45 (Part 7) (WKT-WKT): Implementations shall support geof:ehInside as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-7-1 (WKT-WKT): Egenhofer Query Functions: geof:ehInside",
     "module": "GTOP",
@@ -7087,7 +7807,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r45-7-10.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"inside\"]}, \"results\": {\"bindings\": [{\"inside\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 45 (Part 7) (GML-WKT): Implementations shall support geof:ehInside as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-7-10 (GML-WKT): Egenhofer Query Functions: geof:ehInside",
     "module": "GTOP",
@@ -7096,7 +7818,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r45-7-11.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"inside\"]}, \"results\": {\"bindings\": [{\"inside\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 45 (Part 7) (GML-GeoJSON): Implementations shall support geof:ehInside as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-7-11 (GML-GeoJSON): Egenhofer Query Functions: geof:ehInside",
     "module": "GTOP",
@@ -7105,7 +7829,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r45-7-12.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"inside\"]}, \"results\": {\"bindings\": [{\"inside\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 45 (Part 7) (GML-KML): Implementations shall support geof:ehInside as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-7-12 (GML-KML): Egenhofer Query Functions: geof:ehInside",
     "module": "GTOP",
@@ -7114,7 +7840,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r45-7-13.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"inside\"]}, \"results\": {\"bindings\": [{\"inside\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 45 (Part 7) (GML-DGGS): Implementations shall support geof:ehInside as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-7-13 (GML-DGGS): Egenhofer Query Functions: geof:ehInside",
     "module": "GTOP",
@@ -7123,7 +7851,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r45-7-14.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"inside\"]}, \"results\": {\"bindings\": [{\"inside\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 45 (Part 7) (GeoJSON-WKT): Implementations shall support geof:ehInside as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-7-14 (GeoJSON-WKT): Egenhofer Query Functions: geof:ehInside",
     "module": "GTOP",
@@ -7132,7 +7862,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r45-7-15.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"inside\"]}, \"results\": {\"bindings\": [{\"inside\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 45 (Part 7) (GeoJSON-GML): Implementations shall support geof:ehInside as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-7-15 (GeoJSON-GML): Egenhofer Query Functions: geof:ehInside",
     "module": "GTOP",
@@ -7141,7 +7873,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r45-7-16.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"inside\"]}, \"results\": {\"bindings\": [{\"inside\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 45 (Part 7) (GeoJSON-KML): Implementations shall support geof:ehInside as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-7-16 (GeoJSON-KML): Egenhofer Query Functions: geof:ehInside",
     "module": "GTOP",
@@ -7150,7 +7884,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r45-7-17.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"inside\"]}, \"results\": {\"bindings\": [{\"inside\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 45 (Part 7) (GeoJSON-DGGS): Implementations shall support geof:ehInside as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-7-17 (GeoJSON-DGGS): Egenhofer Query Functions: geof:ehInside",
     "module": "GTOP",
@@ -7159,7 +7895,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r45-7-18.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"inside\"]}, \"results\": {\"bindings\": [{\"inside\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 45 (Part 7) (KML-WKT): Implementations shall support geof:ehInside as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-7-18 (KML-WKT): Egenhofer Query Functions: geof:ehInside",
     "module": "GTOP",
@@ -7168,7 +7906,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r45-7-19.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"inside\"]}, \"results\": {\"bindings\": [{\"inside\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 45 (Part 7) (KML-GML): Implementations shall support geof:ehInside as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-7-19 (KML-GML): Egenhofer Query Functions: geof:ehInside",
     "module": "GTOP",
@@ -7177,7 +7917,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r45-7-2.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"inside\"]}, \"results\": {\"bindings\": [{\"inside\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 45 (Part 7) (GML-GML): Implementations shall support geof:ehInside as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-7-2 (GML-GML): Egenhofer Query Functions: geof:ehInside",
     "module": "GTOP",
@@ -7186,7 +7928,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r45-7-20.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"inside\"]}, \"results\": {\"bindings\": [{\"inside\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 45 (Part 7) (KML-GeoJSON): Implementations shall support geof:ehInside as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-7-20 (KML-GeoJSON): Egenhofer Query Functions: geof:ehInside",
     "module": "GTOP",
@@ -7195,7 +7939,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r45-7-21.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"inside\"]}, \"results\": {\"bindings\": [{\"inside\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 45 (Part 7) (KML-DGGS): Implementations shall support geof:ehInside as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-7-21 (KML-DGGS): Egenhofer Query Functions: geof:ehInside",
     "module": "GTOP",
@@ -7204,7 +7950,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r45-7-22.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"inside\"]}, \"results\": {\"bindings\": [{\"inside\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 45 (Part 7) (DGGS-WKT): Implementations shall support geof:ehInside as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-7-22 (DGGS-WKT): Egenhofer Query Functions: geof:ehInside",
     "module": "GTOP",
@@ -7213,7 +7961,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r45-7-23.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"inside\"]}, \"results\": {\"bindings\": [{\"inside\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 45 (Part 7) (DGGS-GML): Implementations shall support geof:ehInside as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-7-23 (DGGS-GML): Egenhofer Query Functions: geof:ehInside",
     "module": "GTOP",
@@ -7222,7 +7972,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r45-7-24.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"inside\"]}, \"results\": {\"bindings\": [{\"inside\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 45 (Part 7) (DGGS-GeoJSON): Implementations shall support geof:ehInside as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-7-24 (DGGS-GeoJSON): Egenhofer Query Functions: geof:ehInside",
     "module": "GTOP",
@@ -7231,7 +7983,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r45-7-25.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"inside\"]}, \"results\": {\"bindings\": [{\"inside\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 45 (Part 7) (DGGS-KML): Implementations shall support geof:ehInside as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-7-25 (DGGS-KML): Egenhofer Query Functions: geof:ehInside",
     "module": "GTOP",
@@ -7240,7 +7994,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r45-7-3.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"inside\"]}, \"results\": {\"bindings\": [{\"inside\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 45 (Part 7) (GeoJSON-GeoJSON): Implementations shall support geof:ehInside as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-7-3 (GeoJSON-GeoJSON): Egenhofer Query Functions: geof:ehInside",
     "module": "GTOP",
@@ -7249,7 +8005,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r45-7-4.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"inside\"]}, \"results\": {\"bindings\": [{\"inside\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 45 (Part 7) (KML-KML): Implementations shall support geof:ehInside as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-7-4 (KML-KML): Egenhofer Query Functions: geof:ehInside",
     "module": "GTOP",
@@ -7258,7 +8016,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r45-7-5.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"inside\"]}, \"results\": {\"bindings\": [{\"inside\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 45 (Part 7) (DGGS-DGGS): Implementations shall support geof:ehInside as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-7-5 (DGGS-DGGS): Egenhofer Query Functions: geof:ehInside",
     "module": "GTOP",
@@ -7267,7 +8027,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r45-7-6.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"inside\"]}, \"results\": {\"bindings\": [{\"inside\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 45 (Part 7) (WKT-GML): Implementations shall support geof:ehInside as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-7-6 (WKT-GML): Egenhofer Query Functions: geof:ehInside",
     "module": "GTOP",
@@ -7276,7 +8038,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r45-7-7.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"inside\"]}, \"results\": {\"bindings\": [{\"inside\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 45 (Part 7) (WKT-GeoJSON): Implementations shall support geof:ehInside as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-7-7 (WKT-GeoJSON): Egenhofer Query Functions: geof:ehInside",
     "module": "GTOP",
@@ -7285,7 +8049,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r45-7-8.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"inside\"]}, \"results\": {\"bindings\": [{\"inside\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 45 (Part 7) (WKT-KML): Implementations shall support geof:ehInside as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-7-8 (WKT-KML): Egenhofer Query Functions: geof:ehInside",
     "module": "GTOP",
@@ -7294,7 +8060,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r45-7-9.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"inside\"]}, \"results\": {\"bindings\": [{\"inside\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 45 (Part 7) (WKT-DGGS): Implementations shall support geof:ehInside as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-7-9 (WKT-DGGS): Egenhofer Query Functions: geof:ehInside",
     "module": "GTOP",
@@ -7303,7 +8071,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r45-8-1.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"contains\"]}, \"results\": {\"bindings\": [{\"contains\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 45 (Part 8) (WKT-WKT): Implementations shall support geof:ehContains as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-8-1 (WKT-WKT): Egenhofer Query Functions: geof:ehContains",
     "module": "GTOP",
@@ -7312,7 +8082,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r45-8-10.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"contains\"]}, \"results\": {\"bindings\": [{\"contains\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 45 (Part 8) (GML-WKT): Implementations shall support geof:ehContains as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-8-10 (GML-WKT): Egenhofer Query Functions: geof:ehContains",
     "module": "GTOP",
@@ -7321,7 +8093,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r45-8-11.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"contains\"]}, \"results\": {\"bindings\": [{\"contains\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 45 (Part 8) (GML-GeoJSON): Implementations shall support geof:ehContains as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-8-11 (GML-GeoJSON): Egenhofer Query Functions: geof:ehContains",
     "module": "GTOP",
@@ -7330,7 +8104,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r45-8-12.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"contains\"]}, \"results\": {\"bindings\": [{\"contains\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 45 (Part 8) (GML-KML): Implementations shall support geof:ehContains as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-8-12 (GML-KML): Egenhofer Query Functions: geof:ehContains",
     "module": "GTOP",
@@ -7339,7 +8115,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r45-8-13.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"contains\"]}, \"results\": {\"bindings\": [{\"contains\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 45 (Part 8) (GML-DGGS): Implementations shall support geof:ehContains as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-8-13 (GML-DGGS): Egenhofer Query Functions: geof:ehContains",
     "module": "GTOP",
@@ -7348,7 +8126,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r45-8-14.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"contains\"]}, \"results\": {\"bindings\": [{\"contains\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 45 (Part 8) (GeoJSON-WKT): Implementations shall support geof:ehContains as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-8-14 (GeoJSON-WKT): Egenhofer Query Functions: geof:ehContains",
     "module": "GTOP",
@@ -7357,7 +8137,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r45-8-15.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"contains\"]}, \"results\": {\"bindings\": [{\"contains\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 45 (Part 8) (GeoJSON-GML): Implementations shall support geof:ehContains as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-8-15 (GeoJSON-GML): Egenhofer Query Functions: geof:ehContains",
     "module": "GTOP",
@@ -7366,7 +8148,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r45-8-16.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"contains\"]}, \"results\": {\"bindings\": [{\"contains\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 45 (Part 8) (GeoJSON-KML): Implementations shall support geof:ehContains as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-8-16 (GeoJSON-KML): Egenhofer Query Functions: geof:ehContains",
     "module": "GTOP",
@@ -7375,7 +8159,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r45-8-17.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"contains\"]}, \"results\": {\"bindings\": [{\"contains\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 45 (Part 8) (GeoJSON-DGGS): Implementations shall support geof:ehContains as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-8-17 (GeoJSON-DGGS): Egenhofer Query Functions: geof:ehContains",
     "module": "GTOP",
@@ -7384,7 +8170,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r45-8-18.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"contains\"]}, \"results\": {\"bindings\": [{\"contains\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 45 (Part 8) (KML-WKT): Implementations shall support geof:ehContains as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-8-18 (KML-WKT): Egenhofer Query Functions: geof:ehContains",
     "module": "GTOP",
@@ -7393,7 +8181,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r45-8-19.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"contains\"]}, \"results\": {\"bindings\": [{\"contains\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 45 (Part 8) (KML-GML): Implementations shall support geof:ehContains as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-8-19 (KML-GML): Egenhofer Query Functions: geof:ehContains",
     "module": "GTOP",
@@ -7402,7 +8192,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r45-8-2.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"contains\"]}, \"results\": {\"bindings\": [{\"contains\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 45 (Part 8) (GML-GML): Implementations shall support geof:ehContains as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-8-2 (GML-GML): Egenhofer Query Functions: geof:ehContains",
     "module": "GTOP",
@@ -7411,7 +8203,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r45-8-20.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"contains\"]}, \"results\": {\"bindings\": [{\"contains\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 45 (Part 8) (KML-GeoJSON): Implementations shall support geof:ehContains as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-8-20 (KML-GeoJSON): Egenhofer Query Functions: geof:ehContains",
     "module": "GTOP",
@@ -7420,7 +8214,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r45-8-21.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"contains\"]}, \"results\": {\"bindings\": [{\"contains\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 45 (Part 8) (KML-DGGS): Implementations shall support geof:ehContains as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-8-21 (KML-DGGS): Egenhofer Query Functions: geof:ehContains",
     "module": "GTOP",
@@ -7429,7 +8225,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r45-8-22.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"contains\"]}, \"results\": {\"bindings\": [{\"contains\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 45 (Part 8) (DGGS-WKT): Implementations shall support geof:ehContains as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-8-22 (DGGS-WKT): Egenhofer Query Functions: geof:ehContains",
     "module": "GTOP",
@@ -7438,7 +8236,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r45-8-23.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"contains\"]}, \"results\": {\"bindings\": [{\"contains\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 45 (Part 8) (DGGS-GML): Implementations shall support geof:ehContains as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-8-23 (DGGS-GML): Egenhofer Query Functions: geof:ehContains",
     "module": "GTOP",
@@ -7447,7 +8247,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r45-8-24.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"contains\"]}, \"results\": {\"bindings\": [{\"contains\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 45 (Part 8) (DGGS-GeoJSON): Implementations shall support geof:ehContains as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-8-24 (DGGS-GeoJSON): Egenhofer Query Functions: geof:ehContains",
     "module": "GTOP",
@@ -7456,7 +8258,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r45-8-25.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"contains\"]}, \"results\": {\"bindings\": [{\"contains\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 45 (Part 8) (DGGS-KML): Implementations shall support geof:ehContains as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-8-25 (DGGS-KML): Egenhofer Query Functions: geof:ehContains",
     "module": "GTOP",
@@ -7465,7 +8269,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r45-8-3.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"contains\"]}, \"results\": {\"bindings\": [{\"contains\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 45 (Part 8) (GeoJSON-GeoJSON): Implementations shall support geof:ehContains as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-8-3 (GeoJSON-GeoJSON): Egenhofer Query Functions: geof:ehContains",
     "module": "GTOP",
@@ -7474,7 +8280,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r45-8-4.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"contains\"]}, \"results\": {\"bindings\": [{\"contains\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 45 (Part 8) (KML-KML): Implementations shall support geof:ehContains as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-8-4 (KML-KML): Egenhofer Query Functions: geof:ehContains",
     "module": "GTOP",
@@ -7483,7 +8291,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r45-8-5.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"contains\"]}, \"results\": {\"bindings\": [{\"contains\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 45 (Part 8) (DGGS-DGGS): Implementations shall support geof:ehContains as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-8-5 (DGGS-DGGS): Egenhofer Query Functions: geof:ehContains",
     "module": "GTOP",
@@ -7492,7 +8302,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r45-8-6.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"contains\"]}, \"results\": {\"bindings\": [{\"contains\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 45 (Part 8) (WKT-GML): Implementations shall support geof:ehContains as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-8-6 (WKT-GML): Egenhofer Query Functions: geof:ehContains",
     "module": "GTOP",
@@ -7501,7 +8313,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r45-8-7.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"contains\"]}, \"results\": {\"bindings\": [{\"contains\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 45 (Part 8) (WKT-GeoJSON): Implementations shall support geof:ehContains as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-8-7 (WKT-GeoJSON): Egenhofer Query Functions: geof:ehContains",
     "module": "GTOP",
@@ -7510,7 +8324,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r45-8-8.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"contains\"]}, \"results\": {\"bindings\": [{\"contains\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 45 (Part 8) (WKT-KML): Implementations shall support geof:ehContains as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-8-8 (WKT-KML): Egenhofer Query Functions: geof:ehContains",
     "module": "GTOP",
@@ -7519,7 +8335,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r45-8-9.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"contains\"]}, \"results\": {\"bindings\": [{\"contains\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 45 (Part 8) (WKT-DGGS): Implementations shall support geof:ehContains as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-8-9 (WKT-DGGS): Egenhofer Query Functions: geof:ehContains",
     "module": "GTOP",
@@ -7528,7 +8346,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r46-1-1.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"equals\"]}, \"results\": {\"bindings\": [{\"equals\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 46 (Part 1) (WKT-WKT): Implementations shall support geof:rcc8eq as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-1-1 (WKT-WKT): RCC8 Query Functions: geof:rcc8eq",
     "module": "GTOP",
@@ -7573,7 +8393,10 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r46-2-1.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"disconnected\"]}, \"results\": {\"bindings\": [{\"disconnected\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true,
+      "{\"head\": {\"vars\": [\"externallyConnected\"]}, \"results\": {\"bindings\": [{\"externallyConnected\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 46 (Part 2) (WKT-WKT): Implementations shall support geof:rcc8dc as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-2-1 (WKT-WKT): RCC8 Query Functions: geof:rcc8dc",
     "module": "GTOP",
@@ -7582,7 +8405,10 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r46-2-10.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"disconnected\"]}, \"results\": {\"bindings\": [{\"disconnected\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true,
+      "{\"head\": {\"vars\": [\"externallyConnected\"]}, \"results\": {\"bindings\": [{\"externallyConnected\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 46 (Part 2) (GML-WKT): Implementations shall support geof:rcc8dc as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-2-10 (GML-WKT): RCC8 Query Functions: geof:rcc8dc",
     "module": "GTOP",
@@ -7591,7 +8417,10 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r46-2-11.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"disconnected\"]}, \"results\": {\"bindings\": [{\"disconnected\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true,
+      "{\"head\": {\"vars\": [\"externallyConnected\"]}, \"results\": {\"bindings\": [{\"externallyConnected\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 46 (Part 2) (GML-GeoJSON): Implementations shall support geof:rcc8dc as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-2-11 (GML-GeoJSON): RCC8 Query Functions: geof:rcc8dc",
     "module": "GTOP",
@@ -7600,7 +8429,10 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r46-2-12.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"disconnected\"]}, \"results\": {\"bindings\": [{\"disconnected\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true,
+      "{\"head\": {\"vars\": [\"externallyConnected\"]}, \"results\": {\"bindings\": [{\"externallyConnected\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 46 (Part 2) (GML-KML): Implementations shall support geof:rcc8dc as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-2-12 (GML-KML): RCC8 Query Functions: geof:rcc8dc",
     "module": "GTOP",
@@ -7609,7 +8441,10 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r46-2-13.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"disconnected\"]}, \"results\": {\"bindings\": [{\"disconnected\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true,
+      "{\"head\": {\"vars\": [\"externallyConnected\"]}, \"results\": {\"bindings\": [{\"externallyConnected\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 46 (Part 2) (GML-DGGS): Implementations shall support geof:rcc8dc as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-2-13 (GML-DGGS): RCC8 Query Functions: geof:rcc8dc",
     "module": "GTOP",
@@ -7618,7 +8453,10 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r46-2-14.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"disconnected\"]}, \"results\": {\"bindings\": [{\"disconnected\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true,
+      "{\"head\": {\"vars\": [\"externallyConnected\"]}, \"results\": {\"bindings\": [{\"externallyConnected\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 46 (Part 2) (GeoJSON-WKT): Implementations shall support geof:rcc8dc as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-2-14 (GeoJSON-WKT): RCC8 Query Functions: geof:rcc8dc",
     "module": "GTOP",
@@ -7627,7 +8465,10 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r46-2-15.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"disconnected\"]}, \"results\": {\"bindings\": [{\"disconnected\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true,
+      "{\"head\": {\"vars\": [\"externallyConnected\"]}, \"results\": {\"bindings\": [{\"externallyConnected\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 46 (Part 2) (GeoJSON-GML): Implementations shall support geof:rcc8dc as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-2-15 (GeoJSON-GML): RCC8 Query Functions: geof:rcc8dc",
     "module": "GTOP",
@@ -7636,7 +8477,10 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r46-2-16.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"disconnected\"]}, \"results\": {\"bindings\": [{\"disconnected\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true,
+      "{\"head\": {\"vars\": [\"externallyConnected\"]}, \"results\": {\"bindings\": [{\"externallyConnected\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 46 (Part 2) (GeoJSON-KML): Implementations shall support geof:rcc8dc as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-2-16 (GeoJSON-KML): RCC8 Query Functions: geof:rcc8dc",
     "module": "GTOP",
@@ -7645,7 +8489,10 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r46-2-17.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"disconnected\"]}, \"results\": {\"bindings\": [{\"disconnected\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true,
+      "{\"head\": {\"vars\": [\"externallyConnected\"]}, \"results\": {\"bindings\": [{\"externallyConnected\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 46 (Part 2) (GeoJSON-DGGS): Implementations shall support geof:rcc8dc as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-2-17 (GeoJSON-DGGS): RCC8 Query Functions: geof:rcc8dc",
     "module": "GTOP",
@@ -7654,7 +8501,10 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r46-2-18.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"disconnected\"]}, \"results\": {\"bindings\": [{\"disconnected\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true,
+      "{\"head\": {\"vars\": [\"externallyConnected\"]}, \"results\": {\"bindings\": [{\"externallyConnected\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 46 (Part 2) (KML-WKT): Implementations shall support geof:rcc8dc as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-2-18 (KML-WKT): RCC8 Query Functions: geof:rcc8dc",
     "module": "GTOP",
@@ -7663,7 +8513,10 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r46-2-19.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"disconnected\"]}, \"results\": {\"bindings\": [{\"disconnected\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true,
+      "{\"head\": {\"vars\": [\"externallyConnected\"]}, \"results\": {\"bindings\": [{\"externallyConnected\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 46 (Part 2) (KML-GML): Implementations shall support geof:rcc8dc as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-2-19 (KML-GML): RCC8 Query Functions: geof:rcc8dc",
     "module": "GTOP",
@@ -7672,7 +8525,10 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r46-2-2.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"disconnected\"]}, \"results\": {\"bindings\": [{\"disconnected\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true,
+      "{\"head\": {\"vars\": [\"externallyConnected\"]}, \"results\": {\"bindings\": [{\"externallyConnected\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 46 (Part 2) (GML-GML): Implementations shall support geof:rcc8dc as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-2-2 (GML-GML): RCC8 Query Functions: geof:rcc8dc",
     "module": "GTOP",
@@ -7681,7 +8537,10 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r46-2-20.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"disconnected\"]}, \"results\": {\"bindings\": [{\"disconnected\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true,
+      "{\"head\": {\"vars\": [\"externallyConnected\"]}, \"results\": {\"bindings\": [{\"externallyConnected\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 46 (Part 2) (KML-GeoJSON): Implementations shall support geof:rcc8dc as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-2-20 (KML-GeoJSON): RCC8 Query Functions: geof:rcc8dc",
     "module": "GTOP",
@@ -7690,7 +8549,10 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r46-2-21.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"disconnected\"]}, \"results\": {\"bindings\": [{\"disconnected\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true,
+      "{\"head\": {\"vars\": [\"externallyConnected\"]}, \"results\": {\"bindings\": [{\"externallyConnected\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 46 (Part 2) (KML-DGGS): Implementations shall support geof:rcc8dc as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-2-21 (KML-DGGS): RCC8 Query Functions: geof:rcc8dc",
     "module": "GTOP",
@@ -7699,7 +8561,10 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r46-2-22.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"disconnected\"]}, \"results\": {\"bindings\": [{\"disconnected\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true,
+      "{\"head\": {\"vars\": [\"externallyConnected\"]}, \"results\": {\"bindings\": [{\"externallyConnected\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 46 (Part 2) (DGGS-WKT): Implementations shall support geof:rcc8dc as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-2-22 (DGGS-WKT): RCC8 Query Functions: geof:rcc8dc",
     "module": "GTOP",
@@ -7708,7 +8573,10 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r46-2-23.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"disconnected\"]}, \"results\": {\"bindings\": [{\"disconnected\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true,
+      "{\"head\": {\"vars\": [\"externallyConnected\"]}, \"results\": {\"bindings\": [{\"externallyConnected\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 46 (Part 2) (DGGS-GML): Implementations shall support geof:rcc8dc as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-2-23 (DGGS-GML): RCC8 Query Functions: geof:rcc8dc",
     "module": "GTOP",
@@ -7717,7 +8585,10 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r46-2-24.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"disconnected\"]}, \"results\": {\"bindings\": [{\"disconnected\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true,
+      "{\"head\": {\"vars\": [\"externallyConnected\"]}, \"results\": {\"bindings\": [{\"externallyConnected\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 46 (Part 2) (DGGS-GeoJSON): Implementations shall support geof:rcc8dc as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-2-24 (DGGS-GeoJSON): RCC8 Query Functions: geof:rcc8dc",
     "module": "GTOP",
@@ -7726,7 +8597,10 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r46-2-25.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"disconnected\"]}, \"results\": {\"bindings\": [{\"disconnected\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true,
+      "{\"head\": {\"vars\": [\"externallyConnected\"]}, \"results\": {\"bindings\": [{\"externallyConnected\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 46 (Part 2) (DGGS-KML): Implementations shall support geof:rcc8dc as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-2-25 (DGGS-KML): RCC8 Query Functions: geof:rcc8dc",
     "module": "GTOP",
@@ -7735,7 +8609,10 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r46-2-3.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"disconnected\"]}, \"results\": {\"bindings\": [{\"disconnected\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true,
+      "{\"head\": {\"vars\": [\"externallyConnected\"]}, \"results\": {\"bindings\": [{\"externallyConnected\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 46 (Part 2) (GeoJSON-GeoJSON): Implementations shall support geof:rcc8dc as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-2-3 (GeoJSON-GeoJSON): RCC8 Query Functions: geof:rcc8dc",
     "module": "GTOP",
@@ -7744,7 +8621,10 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r46-2-4.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"disconnected\"]}, \"results\": {\"bindings\": [{\"disconnected\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true,
+      "{\"head\": {\"vars\": [\"externallyConnected\"]}, \"results\": {\"bindings\": [{\"externallyConnected\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 46 (Part 2) (KML-KML): Implementations shall support geof:rcc8dc as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-2-4 (KML-KML): RCC8 Query Functions: geof:rcc8dc",
     "module": "GTOP",
@@ -7753,7 +8633,10 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r46-2-5.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"disconnected\"]}, \"results\": {\"bindings\": [{\"disconnected\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true,
+      "{\"head\": {\"vars\": [\"externallyConnected\"]}, \"results\": {\"bindings\": [{\"externallyConnected\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 46 (Part 2) (DGGS-DGGS): Implementations shall support geof:rcc8dc as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-2-5 (DGGS-DGGS): RCC8 Query Functions: geof:rcc8dc",
     "module": "GTOP",
@@ -7762,7 +8645,10 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r46-2-6.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"disconnected\"]}, \"results\": {\"bindings\": [{\"disconnected\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true,
+      "{\"head\": {\"vars\": [\"externallyConnected\"]}, \"results\": {\"bindings\": [{\"externallyConnected\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 46 (Part 2) (WKT-GML): Implementations shall support geof:rcc8dc as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-2-6 (WKT-GML): RCC8 Query Functions: geof:rcc8dc",
     "module": "GTOP",
@@ -7771,7 +8657,10 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r46-2-7.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"disconnected\"]}, \"results\": {\"bindings\": [{\"disconnected\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true,
+      "{\"head\": {\"vars\": [\"externallyConnected\"]}, \"results\": {\"bindings\": [{\"externallyConnected\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 46 (Part 2) (WKT-GeoJSON): Implementations shall support geof:rcc8dc as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-2-7 (WKT-GeoJSON): RCC8 Query Functions: geof:rcc8dc",
     "module": "GTOP",
@@ -7780,7 +8669,10 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r46-2-8.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"disconnected\"]}, \"results\": {\"bindings\": [{\"disconnected\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true,
+      "{\"head\": {\"vars\": [\"externallyConnected\"]}, \"results\": {\"bindings\": [{\"externallyConnected\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 46 (Part 2) (WKT-KML): Implementations shall support geof:rcc8dc as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-2-8 (WKT-KML): RCC8 Query Functions: geof:rcc8dc",
     "module": "GTOP",
@@ -7789,7 +8681,10 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r46-2-9.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"disconnected\"]}, \"results\": {\"bindings\": [{\"disconnected\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true,
+      "{\"head\": {\"vars\": [\"externallyConnected\"]}, \"results\": {\"bindings\": [{\"externallyConnected\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 46 (Part 2) (WKT-DGGS): Implementations shall support geof:rcc8dc as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-2-9 (WKT-DGGS): RCC8 Query Functions: geof:rcc8dc",
     "module": "GTOP",
@@ -7798,7 +8693,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r46-3-1.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"externallyConnected\"]}, \"results\": {\"bindings\": [{\"externallyConnected\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 46 (Part 3) (WKT-WKT): Implementations shall support geof:rcc8ec as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-3-1 (WKT-WKT): RCC8 Query Functions: geof:rcc8ec",
     "module": "GTOP",
@@ -7807,7 +8704,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r46-3-10.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"externallyConnected\"]}, \"results\": {\"bindings\": [{\"externallyConnected\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 46 (Part 3) (GML-WKT): Implementations shall support geof:rcc8ec as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-3-10 (GML-WKT): RCC8 Query Functions: geof:rcc8ec",
     "module": "GTOP",
@@ -7816,7 +8715,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r46-3-11.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"externallyConnected\"]}, \"results\": {\"bindings\": [{\"externallyConnected\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 46 (Part 3) (GML-GeoJSON): Implementations shall support geof:rcc8ec as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-3-11 (GML-GeoJSON): RCC8 Query Functions: geof:rcc8ec",
     "module": "GTOP",
@@ -7825,7 +8726,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r46-3-12.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"externallyConnected\"]}, \"results\": {\"bindings\": [{\"externallyConnected\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 46 (Part 3) (GML-KML): Implementations shall support geof:rcc8ec as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-3-12 (GML-KML): RCC8 Query Functions: geof:rcc8ec",
     "module": "GTOP",
@@ -7834,7 +8737,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r46-3-13.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"externallyConnected\"]}, \"results\": {\"bindings\": [{\"externallyConnected\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 46 (Part 3) (GML-DGGS): Implementations shall support geof:rcc8ec as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-3-13 (GML-DGGS): RCC8 Query Functions: geof:rcc8ec",
     "module": "GTOP",
@@ -7843,7 +8748,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r46-3-14.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"externallyConnected\"]}, \"results\": {\"bindings\": [{\"externallyConnected\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 46 (Part 3) (GeoJSON-WKT): Implementations shall support geof:rcc8ec as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-3-14 (GeoJSON-WKT): RCC8 Query Functions: geof:rcc8ec",
     "module": "GTOP",
@@ -7852,7 +8759,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r46-3-15.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"externallyConnected\"]}, \"results\": {\"bindings\": [{\"externallyConnected\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 46 (Part 3) (GeoJSON-GML): Implementations shall support geof:rcc8ec as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-3-15 (GeoJSON-GML): RCC8 Query Functions: geof:rcc8ec",
     "module": "GTOP",
@@ -7861,7 +8770,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r46-3-16.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"externallyConnected\"]}, \"results\": {\"bindings\": [{\"externallyConnected\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 46 (Part 3) (GeoJSON-KML): Implementations shall support geof:rcc8ec as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-3-16 (GeoJSON-KML): RCC8 Query Functions: geof:rcc8ec",
     "module": "GTOP",
@@ -7870,7 +8781,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r46-3-17.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"externallyConnected\"]}, \"results\": {\"bindings\": [{\"externallyConnected\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 46 (Part 3) (GeoJSON-DGGS): Implementations shall support geof:rcc8ec as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-3-17 (GeoJSON-DGGS): RCC8 Query Functions: geof:rcc8ec",
     "module": "GTOP",
@@ -7879,7 +8792,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r46-3-18.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"externallyConnected\"]}, \"results\": {\"bindings\": [{\"externallyConnected\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 46 (Part 3) (KML-WKT): Implementations shall support geof:rcc8ec as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-3-18 (KML-WKT): RCC8 Query Functions: geof:rcc8ec",
     "module": "GTOP",
@@ -7888,7 +8803,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r46-3-19.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"externallyConnected\"]}, \"results\": {\"bindings\": [{\"externallyConnected\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 46 (Part 3) (KML-GML): Implementations shall support geof:rcc8ec as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-3-19 (KML-GML): RCC8 Query Functions: geof:rcc8ec",
     "module": "GTOP",
@@ -7897,7 +8814,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r46-3-2.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"externallyConnected\"]}, \"results\": {\"bindings\": [{\"externallyConnected\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 46 (Part 3) (GML-GML): Implementations shall support geof:rcc8ec as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-3-2 (GML-GML): RCC8 Query Functions: geof:rcc8ec",
     "module": "GTOP",
@@ -7906,7 +8825,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r46-3-20.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"externallyConnected\"]}, \"results\": {\"bindings\": [{\"externallyConnected\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 46 (Part 3) (KML-GeoJSON): Implementations shall support geof:rcc8ec as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-3-20 (KML-GeoJSON): RCC8 Query Functions: geof:rcc8ec",
     "module": "GTOP",
@@ -7915,7 +8836,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r46-3-21.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"externallyConnected\"]}, \"results\": {\"bindings\": [{\"externallyConnected\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 46 (Part 3) (KML-DGGS): Implementations shall support geof:rcc8ec as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-3-21 (KML-DGGS): RCC8 Query Functions: geof:rcc8ec",
     "module": "GTOP",
@@ -7924,7 +8847,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r46-3-22.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"externallyConnected\"]}, \"results\": {\"bindings\": [{\"externallyConnected\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 46 (Part 3) (DGGS-WKT): Implementations shall support geof:rcc8ec as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-3-22 (DGGS-WKT): RCC8 Query Functions: geof:rcc8ec",
     "module": "GTOP",
@@ -7933,7 +8858,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r46-3-23.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"externallyConnected\"]}, \"results\": {\"bindings\": [{\"externallyConnected\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 46 (Part 3) (DGGS-GML): Implementations shall support geof:rcc8ec as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-3-23 (DGGS-GML): RCC8 Query Functions: geof:rcc8ec",
     "module": "GTOP",
@@ -7942,7 +8869,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r46-3-24.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"externallyConnected\"]}, \"results\": {\"bindings\": [{\"externallyConnected\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 46 (Part 3) (DGGS-GeoJSON): Implementations shall support geof:rcc8ec as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-3-24 (DGGS-GeoJSON): RCC8 Query Functions: geof:rcc8ec",
     "module": "GTOP",
@@ -7951,7 +8880,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r46-3-25.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"externallyConnected\"]}, \"results\": {\"bindings\": [{\"externallyConnected\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 46 (Part 3) (DGGS-KML): Implementations shall support geof:rcc8ec as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-3-25 (DGGS-KML): RCC8 Query Functions: geof:rcc8ec",
     "module": "GTOP",
@@ -7960,7 +8891,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r46-3-3.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"externallyConnected\"]}, \"results\": {\"bindings\": [{\"externallyConnected\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 46 (Part 3) (GeoJSON-GeoJSON): Implementations shall support geof:rcc8ec as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-3-3 (GeoJSON-GeoJSON): RCC8 Query Functions: geof:rcc8ec",
     "module": "GTOP",
@@ -7969,7 +8902,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r46-3-4.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"externallyConnected\"]}, \"results\": {\"bindings\": [{\"externallyConnected\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 46 (Part 3) (KML-KML): Implementations shall support geof:rcc8ec as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-3-4 (KML-KML): RCC8 Query Functions: geof:rcc8ec",
     "module": "GTOP",
@@ -7978,7 +8913,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r46-3-5.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"externallyConnected\"]}, \"results\": {\"bindings\": [{\"externallyConnected\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 46 (Part 3) (DGGS-DGGS): Implementations shall support geof:rcc8ec as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-3-5 (DGGS-DGGS): RCC8 Query Functions: geof:rcc8ec",
     "module": "GTOP",
@@ -7987,7 +8924,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r46-3-6.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"externallyConnected\"]}, \"results\": {\"bindings\": [{\"externallyConnected\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 46 (Part 3) (WKT-GML): Implementations shall support geof:rcc8ec as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-3-6 (WKT-GML): RCC8 Query Functions: geof:rcc8ec",
     "module": "GTOP",
@@ -7996,7 +8935,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r46-3-7.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"externallyConnected\"]}, \"results\": {\"bindings\": [{\"externallyConnected\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 46 (Part 3) (WKT-GeoJSON): Implementations shall support geof:rcc8ec as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-3-7 (WKT-GeoJSON): RCC8 Query Functions: geof:rcc8ec",
     "module": "GTOP",
@@ -8005,7 +8946,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r46-3-8.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"externallyConnected\"]}, \"results\": {\"bindings\": [{\"externallyConnected\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 46 (Part 3) (WKT-KML): Implementations shall support geof:rcc8ec as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-3-8 (WKT-KML): RCC8 Query Functions: geof:rcc8ec",
     "module": "GTOP",
@@ -8014,7 +8957,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r46-3-9.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"externallyConnected\"]}, \"results\": {\"bindings\": [{\"externallyConnected\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 46 (Part 3) (WKT-DGGS): Implementations shall support geof:rcc8ec as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-3-9 (WKT-DGGS): RCC8 Query Functions: geof:rcc8ec",
     "module": "GTOP",
@@ -8023,7 +8968,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r46-4-1.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"partiallyOverlapping\"]}, \"results\": {\"bindings\": [{\"partiallyOverlapping\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 46 (Part 4) (WKT-WKT): Implementations shall support geof:rcc8po as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-4-1 (WKT-WKT): RCC8 Query Functions: geof:rcc8po",
     "module": "GTOP",
@@ -8032,7 +8979,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r46-4-10.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"partiallyOverlapping\"]}, \"results\": {\"bindings\": [{\"partiallyOverlapping\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 46 (Part 4) (GML-WKT): Implementations shall support geof:rcc8po as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-4-10 (GML-WKT): RCC8 Query Functions: geof:rcc8po",
     "module": "GTOP",
@@ -8041,7 +8990,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r46-4-11.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"partiallyOverlapping\"]}, \"results\": {\"bindings\": [{\"partiallyOverlapping\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 46 (Part 4) (GML-GeoJSON): Implementations shall support geof:rcc8po as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-4-11 (GML-GeoJSON): RCC8 Query Functions: geof:rcc8po",
     "module": "GTOP",
@@ -8050,7 +9001,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r46-4-12.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"partiallyOverlapping\"]}, \"results\": {\"bindings\": [{\"partiallyOverlapping\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 46 (Part 4) (GML-KML): Implementations shall support geof:rcc8po as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-4-12 (GML-KML): RCC8 Query Functions: geof:rcc8po",
     "module": "GTOP",
@@ -8059,7 +9012,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r46-4-13.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"partiallyOverlapping\"]}, \"results\": {\"bindings\": [{\"partiallyOverlapping\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 46 (Part 4) (GML-DGGS): Implementations shall support geof:rcc8po as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-4-13 (GML-DGGS): RCC8 Query Functions: geof:rcc8po",
     "module": "GTOP",
@@ -8068,7 +9023,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r46-4-14.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"partiallyOverlapping\"]}, \"results\": {\"bindings\": [{\"partiallyOverlapping\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 46 (Part 4) (GeoJSON-WKT): Implementations shall support geof:rcc8po as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-4-14 (GeoJSON-WKT): RCC8 Query Functions: geof:rcc8po",
     "module": "GTOP",
@@ -8077,7 +9034,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r46-4-15.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"partiallyOverlapping\"]}, \"results\": {\"bindings\": [{\"partiallyOverlapping\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 46 (Part 4) (GeoJSON-GML): Implementations shall support geof:rcc8po as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-4-15 (GeoJSON-GML): RCC8 Query Functions: geof:rcc8po",
     "module": "GTOP",
@@ -8086,7 +9045,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r46-4-16.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"partiallyOverlapping\"]}, \"results\": {\"bindings\": [{\"partiallyOverlapping\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 46 (Part 4) (GeoJSON-KML): Implementations shall support geof:rcc8po as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-4-16 (GeoJSON-KML): RCC8 Query Functions: geof:rcc8po",
     "module": "GTOP",
@@ -8095,7 +9056,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r46-4-17.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"partiallyOverlapping\"]}, \"results\": {\"bindings\": [{\"partiallyOverlapping\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 46 (Part 4) (GeoJSON-DGGS): Implementations shall support geof:rcc8po as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-4-17 (GeoJSON-DGGS): RCC8 Query Functions: geof:rcc8po",
     "module": "GTOP",
@@ -8104,7 +9067,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r46-4-18.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"partiallyOverlapping\"]}, \"results\": {\"bindings\": [{\"partiallyOverlapping\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 46 (Part 4) (KML-WKT): Implementations shall support geof:rcc8po as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-4-18 (KML-WKT): RCC8 Query Functions: geof:rcc8po",
     "module": "GTOP",
@@ -8113,7 +9078,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r46-4-19.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"partiallyOverlapping\"]}, \"results\": {\"bindings\": [{\"partiallyOverlapping\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 46 (Part 4) (KML-GML): Implementations shall support geof:rcc8po as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-4-19 (KML-GML): RCC8 Query Functions: geof:rcc8po",
     "module": "GTOP",
@@ -8122,7 +9089,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r46-4-2.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"partiallyOverlapping\"]}, \"results\": {\"bindings\": [{\"partiallyOverlapping\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 46 (Part 4) (GML-GML): Implementations shall support geof:rcc8po as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-4-2 (GML-GML): RCC8 Query Functions: geof:rcc8po",
     "module": "GTOP",
@@ -8131,7 +9100,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r46-4-20.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"partiallyOverlapping\"]}, \"results\": {\"bindings\": [{\"partiallyOverlapping\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 46 (Part 4) (KML-GeoJSON): Implementations shall support geof:rcc8po as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-4-20 (KML-GeoJSON): RCC8 Query Functions: geof:rcc8po",
     "module": "GTOP",
@@ -8140,7 +9111,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r46-4-21.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"partiallyOverlapping\"]}, \"results\": {\"bindings\": [{\"partiallyOverlapping\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 46 (Part 4) (KML-DGGS): Implementations shall support geof:rcc8po as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-4-21 (KML-DGGS): RCC8 Query Functions: geof:rcc8po",
     "module": "GTOP",
@@ -8149,7 +9122,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r46-4-22.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"partiallyOverlapping\"]}, \"results\": {\"bindings\": [{\"partiallyOverlapping\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 46 (Part 4) (DGGS-WKT): Implementations shall support geof:rcc8po as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-4-22 (DGGS-WKT): RCC8 Query Functions: geof:rcc8po",
     "module": "GTOP",
@@ -8158,7 +9133,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r46-4-23.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"partiallyOverlapping\"]}, \"results\": {\"bindings\": [{\"partiallyOverlapping\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 46 (Part 4) (DGGS-GML): Implementations shall support geof:rcc8po as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-4-23 (DGGS-GML): RCC8 Query Functions: geof:rcc8po",
     "module": "GTOP",
@@ -8167,7 +9144,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r46-4-24.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"partiallyOverlapping\"]}, \"results\": {\"bindings\": [{\"partiallyOverlapping\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 46 (Part 4) (DGGS-GeoJSON): Implementations shall support geof:rcc8po as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-4-24 (DGGS-GeoJSON): RCC8 Query Functions: geof:rcc8po",
     "module": "GTOP",
@@ -8176,7 +9155,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r46-4-25.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"partiallyOverlapping\"]}, \"results\": {\"bindings\": [{\"partiallyOverlapping\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 46 (Part 4) (DGGS-KML): Implementations shall support geof:rcc8po as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-4-25 (DGGS-KML): RCC8 Query Functions: geof:rcc8po",
     "module": "GTOP",
@@ -8185,7 +9166,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r46-4-3.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"partiallyOverlapping\"]}, \"results\": {\"bindings\": [{\"partiallyOverlapping\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 46 (Part 4) (GeoJSON-GeoJSON): Implementations shall support geof:rcc8po as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-4-3 (GeoJSON-GeoJSON): RCC8 Query Functions: geof:rcc8po",
     "module": "GTOP",
@@ -8194,7 +9177,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r46-4-4.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"partiallyOverlapping\"]}, \"results\": {\"bindings\": [{\"partiallyOverlapping\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 46 (Part 4) (KML-KML): Implementations shall support geof:rcc8po as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-4-4 (KML-KML): RCC8 Query Functions: geof:rcc8po",
     "module": "GTOP",
@@ -8203,7 +9188,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r46-4-5.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"partiallyOverlapping\"]}, \"results\": {\"bindings\": [{\"partiallyOverlapping\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 46 (Part 4) (DGGS-DGGS): Implementations shall support geof:rcc8po as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-4-5 (DGGS-DGGS): RCC8 Query Functions: geof:rcc8po",
     "module": "GTOP",
@@ -8212,7 +9199,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r46-4-6.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"partiallyOverlapping\"]}, \"results\": {\"bindings\": [{\"partiallyOverlapping\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 46 (Part 4) (WKT-GML): Implementations shall support geof:rcc8po as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-4-6 (WKT-GML): RCC8 Query Functions: geof:rcc8po",
     "module": "GTOP",
@@ -8221,7 +9210,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r46-4-7.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"partiallyOverlapping\"]}, \"results\": {\"bindings\": [{\"partiallyOverlapping\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 46 (Part 4) (WKT-GeoJSON): Implementations shall support geof:rcc8po as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-4-7 (WKT-GeoJSON): RCC8 Query Functions: geof:rcc8po",
     "module": "GTOP",
@@ -8230,7 +9221,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r46-4-8.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"partiallyOverlapping\"]}, \"results\": {\"bindings\": [{\"partiallyOverlapping\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 46 (Part 4) (WKT-KML): Implementations shall support geof:rcc8po as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-4-8 (WKT-KML): RCC8 Query Functions: geof:rcc8po",
     "module": "GTOP",
@@ -8239,7 +9232,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r46-4-9.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"partiallyOverlapping\"]}, \"results\": {\"bindings\": [{\"partiallyOverlapping\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 46 (Part 4) (WKT-DGGS): Implementations shall support geof:rcc8po as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-4-9 (WKT-DGGS): RCC8 Query Functions: geof:rcc8po",
     "module": "GTOP",
@@ -8248,7 +9243,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r46-5-1.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"tangentialProperPartInverse\"]}, \"results\": {\"bindings\": [{\"tangentialProperPartInverse\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 46 (Part 5) (WKT-WKT): Implementations shall support geof:rcc8tppi as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-5-1 (WKT-WKT): RCC8 Query Functions: geof:rcc8tppi",
     "module": "GTOP",
@@ -8257,7 +9254,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r46-5-10.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"tangentialProperPartInverse\"]}, \"results\": {\"bindings\": [{\"tangentialProperPartInverse\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 46 (Part 5) (GML-WKT): Implementations shall support geof:rcc8tppi as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-5-10 (GML-WKT): RCC8 Query Functions: geof:rcc8tppi",
     "module": "GTOP",
@@ -8266,7 +9265,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r46-5-11.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"tangentialProperPartInverse\"]}, \"results\": {\"bindings\": [{\"tangentialProperPartInverse\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 46 (Part 5) (GML-GeoJSON): Implementations shall support geof:rcc8tppi as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-5-11 (GML-GeoJSON): RCC8 Query Functions: geof:rcc8tppi",
     "module": "GTOP",
@@ -8275,7 +9276,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r46-5-12.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"tangentialProperPartInverse\"]}, \"results\": {\"bindings\": [{\"tangentialProperPartInverse\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 46 (Part 5) (GML-KML): Implementations shall support geof:rcc8tppi as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-5-12 (GML-KML): RCC8 Query Functions: geof:rcc8tppi",
     "module": "GTOP",
@@ -8284,7 +9287,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r46-5-13.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"tangentialProperPartInverse\"]}, \"results\": {\"bindings\": [{\"tangentialProperPartInverse\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 46 (Part 5) (GML-DGGS): Implementations shall support geof:rcc8tppi as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-5-13 (GML-DGGS): RCC8 Query Functions: geof:rcc8tppi",
     "module": "GTOP",
@@ -8293,7 +9298,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r46-5-14.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"tangentialProperPartInverse\"]}, \"results\": {\"bindings\": [{\"tangentialProperPartInverse\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 46 (Part 5) (GeoJSON-WKT): Implementations shall support geof:rcc8tppi as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-5-14 (GeoJSON-WKT): RCC8 Query Functions: geof:rcc8tppi",
     "module": "GTOP",
@@ -8302,7 +9309,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r46-5-15.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"tangentialProperPartInverse\"]}, \"results\": {\"bindings\": [{\"tangentialProperPartInverse\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 46 (Part 5) (GeoJSON-GML): Implementations shall support geof:rcc8tppi as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-5-15 (GeoJSON-GML): RCC8 Query Functions: geof:rcc8tppi",
     "module": "GTOP",
@@ -8311,7 +9320,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r46-5-16.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"tangentialProperPartInverse\"]}, \"results\": {\"bindings\": [{\"tangentialProperPartInverse\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 46 (Part 5) (GeoJSON-KML): Implementations shall support geof:rcc8tppi as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-5-16 (GeoJSON-KML): RCC8 Query Functions: geof:rcc8tppi",
     "module": "GTOP",
@@ -8320,7 +9331,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r46-5-17.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"tangentialProperPartInverse\"]}, \"results\": {\"bindings\": [{\"tangentialProperPartInverse\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 46 (Part 5) (GeoJSON-DGGS): Implementations shall support geof:rcc8tppi as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-5-17 (GeoJSON-DGGS): RCC8 Query Functions: geof:rcc8tppi",
     "module": "GTOP",
@@ -8329,7 +9342,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r46-5-18.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"tangentialProperPartInverse\"]}, \"results\": {\"bindings\": [{\"tangentialProperPartInverse\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 46 (Part 5) (KML-WKT): Implementations shall support geof:rcc8tppi as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-5-18 (KML-WKT): RCC8 Query Functions: geof:rcc8tppi",
     "module": "GTOP",
@@ -8338,7 +9353,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r46-5-19.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"tangentialProperPartInverse\"]}, \"results\": {\"bindings\": [{\"tangentialProperPartInverse\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 46 (Part 5) (KML-GML): Implementations shall support geof:rcc8tppi as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-5-19 (KML-GML): RCC8 Query Functions: geof:rcc8tppi",
     "module": "GTOP",
@@ -8347,7 +9364,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r46-5-2.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"tangentialProperPartInverse\"]}, \"results\": {\"bindings\": [{\"tangentialProperPartInverse\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 46 (Part 5) (GML-GML): Implementations shall support geof:rcc8tppi as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-5-2 (GML-GML): RCC8 Query Functions: geof:rcc8tppi",
     "module": "GTOP",
@@ -8356,7 +9375,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r46-5-20.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"tangentialProperPartInverse\"]}, \"results\": {\"bindings\": [{\"tangentialProperPartInverse\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 46 (Part 5) (KML-GeoJSON): Implementations shall support geof:rcc8tppi as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-5-20 (KML-GeoJSON): RCC8 Query Functions: geof:rcc8tppi",
     "module": "GTOP",
@@ -8365,7 +9386,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r46-5-21.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"tangentialProperPartInverse\"]}, \"results\": {\"bindings\": [{\"tangentialProperPartInverse\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 46 (Part 5) (KML-DGGS): Implementations shall support geof:rcc8tppi as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-5-21 (KML-DGGS): RCC8 Query Functions: geof:rcc8tppi",
     "module": "GTOP",
@@ -8374,7 +9397,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r46-5-22.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"tangentialProperPartInverse\"]}, \"results\": {\"bindings\": [{\"tangentialProperPartInverse\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 46 (Part 5) (DGGS-WKT): Implementations shall support geof:rcc8tppi as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-5-22 (DGGS-WKT): RCC8 Query Functions: geof:rcc8tppi",
     "module": "GTOP",
@@ -8383,7 +9408,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r46-5-23.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"tangentialProperPartInverse\"]}, \"results\": {\"bindings\": [{\"tangentialProperPartInverse\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 46 (Part 5) (DGGS-GML): Implementations shall support geof:rcc8tppi as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-5-23 (DGGS-GML): RCC8 Query Functions: geof:rcc8tppi",
     "module": "GTOP",
@@ -8392,7 +9419,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r46-5-24.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"tangentialProperPartInverse\"]}, \"results\": {\"bindings\": [{\"tangentialProperPartInverse\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 46 (Part 5) (DGGS-GeoJSON): Implementations shall support geof:rcc8tppi as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-5-24 (DGGS-GeoJSON): RCC8 Query Functions: geof:rcc8tppi",
     "module": "GTOP",
@@ -8401,7 +9430,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r46-5-25.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"tangentialProperPartInverse\"]}, \"results\": {\"bindings\": [{\"tangentialProperPartInverse\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 46 (Part 5) (DGGS-KML): Implementations shall support geof:rcc8tppi as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-5-25 (DGGS-KML): RCC8 Query Functions: geof:rcc8tppi",
     "module": "GTOP",
@@ -8410,7 +9441,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r46-5-3.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"tangentialProperPartInverse\"]}, \"results\": {\"bindings\": [{\"tangentialProperPartInverse\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 46 (Part 5) (GeoJSON-GeoJSON): Implementations shall support geof:rcc8tppi as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-5-3 (GeoJSON-GeoJSON): RCC8 Query Functions: geof:rcc8tppi",
     "module": "GTOP",
@@ -8419,7 +9452,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r46-5-4.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"tangentialProperPartInverse\"]}, \"results\": {\"bindings\": [{\"tangentialProperPartInverse\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 46 (Part 5) (KML-KML): Implementations shall support geof:rcc8tppi as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-5-4 (KML-KML): RCC8 Query Functions: geof:rcc8tppi",
     "module": "GTOP",
@@ -8428,7 +9463,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r46-5-5.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"tangentialProperPartInverse\"]}, \"results\": {\"bindings\": [{\"tangentialProperPartInverse\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 46 (Part 5) (DGGS-DGGS): Implementations shall support geof:rcc8tppi as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-5-5 (DGGS-DGGS): RCC8 Query Functions: geof:rcc8tppi",
     "module": "GTOP",
@@ -8437,7 +9474,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r46-5-6.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"tangentialProperPartInverse\"]}, \"results\": {\"bindings\": [{\"tangentialProperPartInverse\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 46 (Part 5) (WKT-GML): Implementations shall support geof:rcc8tppi as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-5-6 (WKT-GML): RCC8 Query Functions: geof:rcc8tppi",
     "module": "GTOP",
@@ -8446,7 +9485,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r46-5-7.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"tangentialProperPartInverse\"]}, \"results\": {\"bindings\": [{\"tangentialProperPartInverse\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 46 (Part 5) (WKT-GeoJSON): Implementations shall support geof:rcc8tppi as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-5-7 (WKT-GeoJSON): RCC8 Query Functions: geof:rcc8tppi",
     "module": "GTOP",
@@ -8455,7 +9496,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r46-5-8.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"tangentialProperPartInverse\"]}, \"results\": {\"bindings\": [{\"tangentialProperPartInverse\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 46 (Part 5) (WKT-KML): Implementations shall support geof:rcc8tppi as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-5-8 (WKT-KML): RCC8 Query Functions: geof:rcc8tppi",
     "module": "GTOP",
@@ -8464,7 +9507,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r46-5-9.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"tangentialProperPartInverse\"]}, \"results\": {\"bindings\": [{\"tangentialProperPartInverse\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 46 (Part 5) (WKT-DGGS): Implementations shall support geof:rcc8tppi as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-5-9 (WKT-DGGS): RCC8 Query Functions: geof:rcc8tppi",
     "module": "GTOP",
@@ -8473,7 +9518,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r46-6-1.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"tangentialProperPart\"]}, \"results\": {\"bindings\": [{\"tangentialProperPart\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 46 (Part 6) (WKT-WKT): Implementations shall support geof:rcc8tpp as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-6-1 (WKT-WKT): RCC8 Query Functions: geof:rcc8tpp",
     "module": "GTOP",
@@ -8482,7 +9529,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r46-6-10.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"tangentialProperPart\"]}, \"results\": {\"bindings\": [{\"tangentialProperPart\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 46 (Part 6) (GML-WKT): Implementations shall support geof:rcc8tpp as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-6-10 (GML-WKT): RCC8 Query Functions: geof:rcc8tpp",
     "module": "GTOP",
@@ -8491,7 +9540,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r46-6-11.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"tangentialProperPart\"]}, \"results\": {\"bindings\": [{\"tangentialProperPart\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 46 (Part 6) (GML-GeoJSON): Implementations shall support geof:rcc8tpp as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-6-11 (GML-GeoJSON): RCC8 Query Functions: geof:rcc8tpp",
     "module": "GTOP",
@@ -8500,7 +9551,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r46-6-12.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"tangentialProperPart\"]}, \"results\": {\"bindings\": [{\"tangentialProperPart\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 46 (Part 6) (GML-KML): Implementations shall support geof:rcc8tpp as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-6-12 (GML-KML): RCC8 Query Functions: geof:rcc8tpp",
     "module": "GTOP",
@@ -8509,7 +9562,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r46-6-13.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"tangentialProperPart\"]}, \"results\": {\"bindings\": [{\"tangentialProperPart\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 46 (Part 6) (GML-DGGS): Implementations shall support geof:rcc8tpp as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-6-13 (GML-DGGS): RCC8 Query Functions: geof:rcc8tpp",
     "module": "GTOP",
@@ -8518,7 +9573,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r46-6-14.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"tangentialProperPart\"]}, \"results\": {\"bindings\": [{\"tangentialProperPart\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 46 (Part 6) (GeoJSON-WKT): Implementations shall support geof:rcc8tpp as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-6-14 (GeoJSON-WKT): RCC8 Query Functions: geof:rcc8tpp",
     "module": "GTOP",
@@ -8527,7 +9584,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r46-6-15.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"tangentialProperPart\"]}, \"results\": {\"bindings\": [{\"tangentialProperPart\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 46 (Part 6) (GeoJSON-GML): Implementations shall support geof:rcc8tpp as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-6-15 (GeoJSON-GML): RCC8 Query Functions: geof:rcc8tpp",
     "module": "GTOP",
@@ -8536,7 +9595,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r46-6-16.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"tangentialProperPart\"]}, \"results\": {\"bindings\": [{\"tangentialProperPart\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 46 (Part 6) (GeoJSON-KML): Implementations shall support geof:rcc8tpp as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-6-16 (GeoJSON-KML): RCC8 Query Functions: geof:rcc8tpp",
     "module": "GTOP",
@@ -8545,7 +9606,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r46-6-17.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"tangentialProperPart\"]}, \"results\": {\"bindings\": [{\"tangentialProperPart\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 46 (Part 6) (GeoJSON-DGGS): Implementations shall support geof:rcc8tpp as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-6-17 (GeoJSON-DGGS): RCC8 Query Functions: geof:rcc8tpp",
     "module": "GTOP",
@@ -8554,7 +9617,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r46-6-18.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"tangentialProperPart\"]}, \"results\": {\"bindings\": [{\"tangentialProperPart\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 46 (Part 6) (KML-WKT): Implementations shall support geof:rcc8tpp as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-6-18 (KML-WKT): RCC8 Query Functions: geof:rcc8tpp",
     "module": "GTOP",
@@ -8563,7 +9628,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r46-6-19.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"tangentialProperPart\"]}, \"results\": {\"bindings\": [{\"tangentialProperPart\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 46 (Part 6) (KML-GML): Implementations shall support geof:rcc8tpp as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-6-19 (KML-GML): RCC8 Query Functions: geof:rcc8tpp",
     "module": "GTOP",
@@ -8572,7 +9639,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r46-6-2.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"tangentialProperPart\"]}, \"results\": {\"bindings\": [{\"tangentialProperPart\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 46 (Part 6) (GML-GML): Implementations shall support geof:rcc8tpp as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-6-2 (GML-GML): RCC8 Query Functions: geof:rcc8tpp",
     "module": "GTOP",
@@ -8581,7 +9650,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r46-6-20.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"tangentialProperPart\"]}, \"results\": {\"bindings\": [{\"tangentialProperPart\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 46 (Part 6) (KML-GeoJSON): Implementations shall support geof:rcc8tpp as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-6-20 (KML-GeoJSON): RCC8 Query Functions: geof:rcc8tpp",
     "module": "GTOP",
@@ -8590,7 +9661,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r46-6-21.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"tangentialProperPart\"]}, \"results\": {\"bindings\": [{\"tangentialProperPart\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 46 (Part 6) (KML-DGGS): Implementations shall support geof:rcc8tpp as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-6-21 (KML-DGGS): RCC8 Query Functions: geof:rcc8tpp",
     "module": "GTOP",
@@ -8599,7 +9672,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r46-6-22.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"tangentialProperPart\"]}, \"results\": {\"bindings\": [{\"tangentialProperPart\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 46 (Part 6) (DGGS-WKT): Implementations shall support geof:rcc8tpp as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-6-22 (DGGS-WKT): RCC8 Query Functions: geof:rcc8tpp",
     "module": "GTOP",
@@ -8608,7 +9683,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r46-6-23.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"tangentialProperPart\"]}, \"results\": {\"bindings\": [{\"tangentialProperPart\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 46 (Part 6) (DGGS-GML): Implementations shall support geof:rcc8tpp as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-6-23 (DGGS-GML): RCC8 Query Functions: geof:rcc8tpp",
     "module": "GTOP",
@@ -8617,7 +9694,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r46-6-24.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"tangentialProperPart\"]}, \"results\": {\"bindings\": [{\"tangentialProperPart\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 46 (Part 6) (DGGS-GeoJSON): Implementations shall support geof:rcc8tpp as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-6-24 (DGGS-GeoJSON): RCC8 Query Functions: geof:rcc8tpp",
     "module": "GTOP",
@@ -8626,7 +9705,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r46-6-25.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"tangentialProperPart\"]}, \"results\": {\"bindings\": [{\"tangentialProperPart\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 46 (Part 6) (DGGS-KML): Implementations shall support geof:rcc8tpp as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-6-25 (DGGS-KML): RCC8 Query Functions: geof:rcc8tpp",
     "module": "GTOP",
@@ -8635,7 +9716,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r46-6-3.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"tangentialProperPart\"]}, \"results\": {\"bindings\": [{\"tangentialProperPart\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 46 (Part 6) (GeoJSON-GeoJSON): Implementations shall support geof:rcc8tpp as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-6-3 (GeoJSON-GeoJSON): RCC8 Query Functions: geof:rcc8tpp",
     "module": "GTOP",
@@ -8644,7 +9727,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r46-6-4.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"tangentialProperPart\"]}, \"results\": {\"bindings\": [{\"tangentialProperPart\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 46 (Part 6) (KML-KML): Implementations shall support geof:rcc8tpp as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-6-4 (KML-KML): RCC8 Query Functions: geof:rcc8tpp",
     "module": "GTOP",
@@ -8653,7 +9738,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r46-6-5.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"tangentialProperPart\"]}, \"results\": {\"bindings\": [{\"tangentialProperPart\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 46 (Part 6) (DGGS-DGGS): Implementations shall support geof:rcc8tpp as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-6-5 (DGGS-DGGS): RCC8 Query Functions: geof:rcc8tpp",
     "module": "GTOP",
@@ -8662,7 +9749,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r46-6-6.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"tangentialProperPart\"]}, \"results\": {\"bindings\": [{\"tangentialProperPart\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 46 (Part 6) (WKT-GML): Implementations shall support geof:rcc8tpp as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-6-6 (WKT-GML): RCC8 Query Functions: geof:rcc8tpp",
     "module": "GTOP",
@@ -8671,7 +9760,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r46-6-7.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"tangentialProperPart\"]}, \"results\": {\"bindings\": [{\"tangentialProperPart\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 46 (Part 6) (WKT-GeoJSON): Implementations shall support geof:rcc8tpp as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-6-7 (WKT-GeoJSON): RCC8 Query Functions: geof:rcc8tpp",
     "module": "GTOP",
@@ -8680,7 +9771,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r46-6-8.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"tangentialProperPart\"]}, \"results\": {\"bindings\": [{\"tangentialProperPart\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 46 (Part 6) (WKT-KML): Implementations shall support geof:rcc8tpp as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-6-8 (WKT-KML): RCC8 Query Functions: geof:rcc8tpp",
     "module": "GTOP",
@@ -8689,7 +9782,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r46-6-9.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"tangentialProperPart\"]}, \"results\": {\"bindings\": [{\"tangentialProperPart\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 46 (Part 6) (WKT-DGGS): Implementations shall support geof:rcc8tpp as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-6-9 (WKT-DGGS): RCC8 Query Functions: geof:rcc8tpp",
     "module": "GTOP",
@@ -8698,7 +9793,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r46-7-1.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"nonTangentialProperPart\"]}, \"results\": {\"bindings\": [{\"nonTangentialProperPart\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 46 (Part 7) (WKT-WKT): Implementations shall support geof:rcc8ntpp as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-7-1 (WKT-WKT): RCC8 Query Functions: geof:rcc8ntpp",
     "module": "GTOP",
@@ -8707,7 +9804,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r46-7-10.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"nonTangentialProperPart\"]}, \"results\": {\"bindings\": [{\"nonTangentialProperPart\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 46 (Part 7) (GML-WKT): Implementations shall support geof:rcc8ntpp as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-7-10 (GML-WKT): RCC8 Query Functions: geof:rcc8ntpp",
     "module": "GTOP",
@@ -8716,7 +9815,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r46-7-11.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"nonTangentialProperPart\"]}, \"results\": {\"bindings\": [{\"nonTangentialProperPart\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 46 (Part 7) (GML-GeoJSON): Implementations shall support geof:rcc8ntpp as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-7-11 (GML-GeoJSON): RCC8 Query Functions: geof:rcc8ntpp",
     "module": "GTOP",
@@ -8725,7 +9826,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r46-7-12.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"nonTangentialProperPart\"]}, \"results\": {\"bindings\": [{\"nonTangentialProperPart\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 46 (Part 7) (GML-KML): Implementations shall support geof:rcc8ntpp as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-7-12 (GML-KML): RCC8 Query Functions: geof:rcc8ntpp",
     "module": "GTOP",
@@ -8734,7 +9837,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r46-7-13.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"nonTangentialProperPart\"]}, \"results\": {\"bindings\": [{\"nonTangentialProperPart\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 46 (Part 7) (GML-DGGS): Implementations shall support geof:rcc8ntpp as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-7-13 (GML-DGGS): RCC8 Query Functions: geof:rcc8ntpp",
     "module": "GTOP",
@@ -8743,7 +9848,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r46-7-14.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"nonTangentialProperPart\"]}, \"results\": {\"bindings\": [{\"nonTangentialProperPart\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 46 (Part 7) (GeoJSON-WKT): Implementations shall support geof:rcc8ntpp as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-7-14 (GeoJSON-WKT): RCC8 Query Functions: geof:rcc8ntpp",
     "module": "GTOP",
@@ -8752,7 +9859,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r46-7-15.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"nonTangentialProperPart\"]}, \"results\": {\"bindings\": [{\"nonTangentialProperPart\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 46 (Part 7) (GeoJSON-GML): Implementations shall support geof:rcc8ntpp as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-7-15 (GeoJSON-GML): RCC8 Query Functions: geof:rcc8ntpp",
     "module": "GTOP",
@@ -8761,7 +9870,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r46-7-16.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"nonTangentialProperPart\"]}, \"results\": {\"bindings\": [{\"nonTangentialProperPart\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 46 (Part 7) (GeoJSON-KML): Implementations shall support geof:rcc8ntpp as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-7-16 (GeoJSON-KML): RCC8 Query Functions: geof:rcc8ntpp",
     "module": "GTOP",
@@ -8770,7 +9881,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r46-7-17.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"nonTangentialProperPart\"]}, \"results\": {\"bindings\": [{\"nonTangentialProperPart\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 46 (Part 7) (GeoJSON-DGGS): Implementations shall support geof:rcc8ntpp as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-7-17 (GeoJSON-DGGS): RCC8 Query Functions: geof:rcc8ntpp",
     "module": "GTOP",
@@ -8779,7 +9892,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r46-7-18.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"nonTangentialProperPart\"]}, \"results\": {\"bindings\": [{\"nonTangentialProperPart\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 46 (Part 7) (KML-WKT): Implementations shall support geof:rcc8ntpp as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-7-18 (KML-WKT): RCC8 Query Functions: geof:rcc8ntpp",
     "module": "GTOP",
@@ -8788,7 +9903,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r46-7-19.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"nonTangentialProperPart\"]}, \"results\": {\"bindings\": [{\"nonTangentialProperPart\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 46 (Part 7) (KML-GML): Implementations shall support geof:rcc8ntpp as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-7-19 (KML-GML): RCC8 Query Functions: geof:rcc8ntpp",
     "module": "GTOP",
@@ -8797,7 +9914,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r46-7-2.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"nonTangentialProperPart\"]}, \"results\": {\"bindings\": [{\"nonTangentialProperPart\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 46 (Part 7) (GML-GML): Implementations shall support geof:rcc8ntpp as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-7-2 (GML-GML): RCC8 Query Functions: geof:rcc8ntpp",
     "module": "GTOP",
@@ -8806,7 +9925,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r46-7-20.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"nonTangentialProperPart\"]}, \"results\": {\"bindings\": [{\"nonTangentialProperPart\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 46 (Part 7) (KML-GeoJSON): Implementations shall support geof:rcc8ntpp as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-7-20 (KML-GeoJSON): RCC8 Query Functions: geof:rcc8ntpp",
     "module": "GTOP",
@@ -8815,7 +9936,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r46-7-21.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"nonTangentialProperPart\"]}, \"results\": {\"bindings\": [{\"nonTangentialProperPart\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 46 (Part 7) (KML-DGGS): Implementations shall support geof:rcc8ntpp as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-7-21 (KML-DGGS): RCC8 Query Functions: geof:rcc8ntpp",
     "module": "GTOP",
@@ -8824,7 +9947,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r46-7-22.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"nonTangentialProperPart\"]}, \"results\": {\"bindings\": [{\"nonTangentialProperPart\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 46 (Part 7) (DGGS-WKT): Implementations shall support geof:rcc8ntpp as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-7-22 (DGGS-WKT): RCC8 Query Functions: geof:rcc8ntpp",
     "module": "GTOP",
@@ -8833,7 +9958,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r46-7-23.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"nonTangentialProperPart\"]}, \"results\": {\"bindings\": [{\"nonTangentialProperPart\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 46 (Part 7) (DGGS-GML): Implementations shall support geof:rcc8ntpp as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-7-23 (DGGS-GML): RCC8 Query Functions: geof:rcc8ntpp",
     "module": "GTOP",
@@ -8842,7 +9969,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r46-7-24.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"nonTangentialProperPart\"]}, \"results\": {\"bindings\": [{\"nonTangentialProperPart\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 46 (Part 7) (DGGS-GeoJSON): Implementations shall support geof:rcc8ntpp as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-7-24 (DGGS-GeoJSON): RCC8 Query Functions: geof:rcc8ntpp",
     "module": "GTOP",
@@ -8851,7 +9980,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r46-7-25.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"nonTangentialProperPart\"]}, \"results\": {\"bindings\": [{\"nonTangentialProperPart\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 46 (Part 7) (DGGS-KML): Implementations shall support geof:rcc8ntpp as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-7-25 (DGGS-KML): RCC8 Query Functions: geof:rcc8ntpp",
     "module": "GTOP",
@@ -8860,7 +9991,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r46-7-3.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"nonTangentialProperPart\"]}, \"results\": {\"bindings\": [{\"nonTangentialProperPart\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 46 (Part 7) (GeoJSON-GeoJSON): Implementations shall support geof:rcc8ntpp as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-7-3 (GeoJSON-GeoJSON): RCC8 Query Functions: geof:rcc8ntpp",
     "module": "GTOP",
@@ -8869,7 +10002,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r46-7-4.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"nonTangentialProperPart\"]}, \"results\": {\"bindings\": [{\"nonTangentialProperPart\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 46 (Part 7) (KML-KML): Implementations shall support geof:rcc8ntpp as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-7-4 (KML-KML): RCC8 Query Functions: geof:rcc8ntpp",
     "module": "GTOP",
@@ -8878,7 +10013,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r46-7-5.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"nonTangentialProperPart\"]}, \"results\": {\"bindings\": [{\"nonTangentialProperPart\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 46 (Part 7) (DGGS-DGGS): Implementations shall support geof:rcc8ntpp as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-7-5 (DGGS-DGGS): RCC8 Query Functions: geof:rcc8ntpp",
     "module": "GTOP",
@@ -8887,7 +10024,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r46-7-6.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"nonTangentialProperPart\"]}, \"results\": {\"bindings\": [{\"nonTangentialProperPart\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 46 (Part 7) (WKT-GML): Implementations shall support geof:rcc8ntpp as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-7-6 (WKT-GML): RCC8 Query Functions: geof:rcc8ntpp",
     "module": "GTOP",
@@ -8896,7 +10035,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r46-7-7.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"nonTangentialProperPart\"]}, \"results\": {\"bindings\": [{\"nonTangentialProperPart\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 46 (Part 7) (WKT-GeoJSON): Implementations shall support geof:rcc8ntpp as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-7-7 (WKT-GeoJSON): RCC8 Query Functions: geof:rcc8ntpp",
     "module": "GTOP",
@@ -8905,7 +10046,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r46-7-8.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"nonTangentialProperPart\"]}, \"results\": {\"bindings\": [{\"nonTangentialProperPart\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 46 (Part 7) (WKT-KML): Implementations shall support geof:rcc8ntpp as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-7-8 (WKT-KML): RCC8 Query Functions: geof:rcc8ntpp",
     "module": "GTOP",
@@ -8914,7 +10057,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r46-7-9.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"nonTangentialProperPart\"]}, \"results\": {\"bindings\": [{\"nonTangentialProperPart\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 46 (Part 7) (WKT-DGGS): Implementations shall support geof:rcc8ntpp as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-7-9 (WKT-DGGS): RCC8 Query Functions: geof:rcc8ntpp",
     "module": "GTOP",
@@ -8923,7 +10068,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r46-8-1.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"nonTangentialProperPartInverse\"]}, \"results\": {\"bindings\": [{\"nonTangentialProperPartInverse\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 46 (Part 8) (WKT-WKT): Implementations shall support geof:rcc8ntppi as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-8-1 (WKT-WKT): RCC8 Query Functions: geof:rcc8ntppi",
     "module": "GTOP",
@@ -8932,7 +10079,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r46-8-10.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"nonTangentialProperPartInverse\"]}, \"results\": {\"bindings\": [{\"nonTangentialProperPartInverse\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 46 (Part 8) (GML-WKT): Implementations shall support geof:rcc8ntppi as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-8-10 (GML-WKT): RCC8 Query Functions: geof:rcc8ntppi",
     "module": "GTOP",
@@ -8941,7 +10090,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r46-8-11.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"nonTangentialProperPartInverse\"]}, \"results\": {\"bindings\": [{\"nonTangentialProperPartInverse\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 46 (Part 8) (GML-GeoJSON): Implementations shall support geof:rcc8ntppi as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-8-11 (GML-GeoJSON): RCC8 Query Functions: geof:rcc8ntppi",
     "module": "GTOP",
@@ -8950,7 +10101,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r46-8-12.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"nonTangentialProperPartInverse\"]}, \"results\": {\"bindings\": [{\"nonTangentialProperPartInverse\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 46 (Part 8) (GML-KML): Implementations shall support geof:rcc8ntppi as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-8-12 (GML-KML): RCC8 Query Functions: geof:rcc8ntppi",
     "module": "GTOP",
@@ -8959,7 +10112,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r46-8-13.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"nonTangentialProperPartInverse\"]}, \"results\": {\"bindings\": [{\"nonTangentialProperPartInverse\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 46 (Part 8) (GML-DGGS): Implementations shall support geof:rcc8ntppi as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-8-13 (GML-DGGS): RCC8 Query Functions: geof:rcc8ntppi",
     "module": "GTOP",
@@ -8968,7 +10123,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r46-8-14.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"nonTangentialProperPartInverse\"]}, \"results\": {\"bindings\": [{\"nonTangentialProperPartInverse\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 46 (Part 8) (GeoJSON-WKT): Implementations shall support geof:rcc8ntppi as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-8-14 (GeoJSON-WKT): RCC8 Query Functions: geof:rcc8ntppi",
     "module": "GTOP",
@@ -8977,7 +10134,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r46-8-15.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"nonTangentialProperPartInverse\"]}, \"results\": {\"bindings\": [{\"nonTangentialProperPartInverse\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 46 (Part 8) (GeoJSON-GML): Implementations shall support geof:rcc8ntppi as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-8-15 (GeoJSON-GML): RCC8 Query Functions: geof:rcc8ntppi",
     "module": "GTOP",
@@ -8986,7 +10145,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r46-8-16.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"nonTangentialProperPartInverse\"]}, \"results\": {\"bindings\": [{\"nonTangentialProperPartInverse\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 46 (Part 8) (GeoJSON-KML): Implementations shall support geof:rcc8ntppi as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-8-16 (GeoJSON-KML): RCC8 Query Functions: geof:rcc8ntppi",
     "module": "GTOP",
@@ -8995,7 +10156,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r46-8-17.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"nonTangentialProperPartInverse\"]}, \"results\": {\"bindings\": [{\"nonTangentialProperPartInverse\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 46 (Part 8) (GeoJSON-DGGS): Implementations shall support geof:rcc8ntppi as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-8-17 (GeoJSON-DGGS): RCC8 Query Functions: geof:rcc8ntppi",
     "module": "GTOP",
@@ -9004,7 +10167,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r46-8-18.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"nonTangentialProperPartInverse\"]}, \"results\": {\"bindings\": [{\"nonTangentialProperPartInverse\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 46 (Part 8) (KML-WKT): Implementations shall support geof:rcc8ntppi as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-8-18 (KML-WKT): RCC8 Query Functions: geof:rcc8ntppi",
     "module": "GTOP",
@@ -9013,7 +10178,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r46-8-19.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"nonTangentialProperPartInverse\"]}, \"results\": {\"bindings\": [{\"nonTangentialProperPartInverse\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 46 (Part 8) (KML-GML): Implementations shall support geof:rcc8ntppi as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-8-19 (KML-GML): RCC8 Query Functions: geof:rcc8ntppi",
     "module": "GTOP",
@@ -9022,7 +10189,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r46-8-2.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"nonTangentialProperPartInverse\"]}, \"results\": {\"bindings\": [{\"nonTangentialProperPartInverse\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 46 (Part 8) (GML-GML): Implementations shall support geof:rcc8ntppi as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-8-2 (GML-GML): RCC8 Query Functions: geof:rcc8ntppi",
     "module": "GTOP",
@@ -9031,7 +10200,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r46-8-20.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"nonTangentialProperPartInverse\"]}, \"results\": {\"bindings\": [{\"nonTangentialProperPartInverse\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 46 (Part 8) (KML-GeoJSON): Implementations shall support geof:rcc8ntppi as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-8-20 (KML-GeoJSON): RCC8 Query Functions: geof:rcc8ntppi",
     "module": "GTOP",
@@ -9040,7 +10211,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r46-8-21.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"nonTangentialProperPartInverse\"]}, \"results\": {\"bindings\": [{\"nonTangentialProperPartInverse\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 46 (Part 8) (KML-DGGS): Implementations shall support geof:rcc8ntppi as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-8-21 (KML-DGGS): RCC8 Query Functions: geof:rcc8ntppi",
     "module": "GTOP",
@@ -9049,7 +10222,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r46-8-22.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"nonTangentialProperPartInverse\"]}, \"results\": {\"bindings\": [{\"nonTangentialProperPartInverse\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 46 (Part 8) (DGGS-WKT): Implementations shall support geof:rcc8ntppi as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-8-22 (DGGS-WKT): RCC8 Query Functions: geof:rcc8ntppi",
     "module": "GTOP",
@@ -9058,7 +10233,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r46-8-23.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"nonTangentialProperPartInverse\"]}, \"results\": {\"bindings\": [{\"nonTangentialProperPartInverse\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 46 (Part 8) (DGGS-GML): Implementations shall support geof:rcc8ntppi as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-8-23 (DGGS-GML): RCC8 Query Functions: geof:rcc8ntppi",
     "module": "GTOP",
@@ -9067,7 +10244,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r46-8-24.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"nonTangentialProperPartInverse\"]}, \"results\": {\"bindings\": [{\"nonTangentialProperPartInverse\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 46 (Part 8) (DGGS-GeoJSON): Implementations shall support geof:rcc8ntppi as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-8-24 (DGGS-GeoJSON): RCC8 Query Functions: geof:rcc8ntppi",
     "module": "GTOP",
@@ -9076,7 +10255,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r46-8-25.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"nonTangentialProperPartInverse\"]}, \"results\": {\"bindings\": [{\"nonTangentialProperPartInverse\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 46 (Part 8) (DGGS-KML): Implementations shall support geof:rcc8ntppi as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-8-25 (DGGS-KML): RCC8 Query Functions: geof:rcc8ntppi",
     "module": "GTOP",
@@ -9085,7 +10266,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r46-8-3.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"nonTangentialProperPartInverse\"]}, \"results\": {\"bindings\": [{\"nonTangentialProperPartInverse\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 46 (Part 8) (GeoJSON-GeoJSON): Implementations shall support geof:rcc8ntppi as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-8-3 (GeoJSON-GeoJSON): RCC8 Query Functions: geof:rcc8ntppi",
     "module": "GTOP",
@@ -9094,7 +10277,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r46-8-4.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"nonTangentialProperPartInverse\"]}, \"results\": {\"bindings\": [{\"nonTangentialProperPartInverse\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 46 (Part 8) (KML-KML): Implementations shall support geof:rcc8ntppi as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-8-4 (KML-KML): RCC8 Query Functions: geof:rcc8ntppi",
     "module": "GTOP",
@@ -9103,7 +10288,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r46-8-5.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"nonTangentialProperPartInverse\"]}, \"results\": {\"bindings\": [{\"nonTangentialProperPartInverse\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 46 (Part 8) (DGGS-DGGS): Implementations shall support geof:rcc8ntppi as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-8-5 (DGGS-DGGS): RCC8 Query Functions: geof:rcc8ntppi",
     "module": "GTOP",
@@ -9112,7 +10299,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r46-8-6.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"nonTangentialProperPartInverse\"]}, \"results\": {\"bindings\": [{\"nonTangentialProperPartInverse\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 46 (Part 8) (WKT-GML): Implementations shall support geof:rcc8ntppi as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-8-6 (WKT-GML): RCC8 Query Functions: geof:rcc8ntppi",
     "module": "GTOP",
@@ -9121,7 +10310,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r46-8-7.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"nonTangentialProperPartInverse\"]}, \"results\": {\"bindings\": [{\"nonTangentialProperPartInverse\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 46 (Part 8) (WKT-GeoJSON): Implementations shall support geof:rcc8ntppi as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-8-7 (WKT-GeoJSON): RCC8 Query Functions: geof:rcc8ntppi",
     "module": "GTOP",
@@ -9130,7 +10321,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r46-8-8.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"nonTangentialProperPartInverse\"]}, \"results\": {\"bindings\": [{\"nonTangentialProperPartInverse\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 46 (Part 8) (WKT-KML): Implementations shall support geof:rcc8ntppi as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-8-8 (WKT-KML): RCC8 Query Functions: geof:rcc8ntppi",
     "module": "GTOP",
@@ -9139,7 +10332,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r46-8-9.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"nonTangentialProperPartInverse\"]}, \"results\": {\"bindings\": [{\"nonTangentialProperPartInverse\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 46 (Part 8) (WKT-DGGS): Implementations shall support geof:rcc8ntppi as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-8-9 (WKT-DGGS): RCC8 Query Functions: geof:rcc8ntppi",
     "module": "GTOP",

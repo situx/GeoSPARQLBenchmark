@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+<sparql xmlns="http://www.w3.org/2005/sparql-results#" xmlns:xml="http://www.w3.org/XML/1998/namespace">
+        <head>
+                <variable name="centroid"/>
+        </head>
+        <results>
+                <result>
+					<binding name="centroid"><literal datatype="http://www.opengis.net/ont/geosparql#kmlLiteral"><![CDATA[<Point><coordinates>-83.4,34.3</coordinates></Point>]]></literal></binding>
+				</result>
+        </results>
+</sparql>

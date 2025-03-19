@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<sparql xmlns="http://www.w3.org/2005/sparql-results#" xmlns:xml="http://www.w3.org/XML/1998/namespace">
+        <head>
+                <variable name="marea"/>
+        </head>
+        <results>
+                <result><binding name="marea"><literal datatype="http://www.w3.org/2001/XMLSchema#double">1.6338971063552246E9</literal></binding></result>
+        </results>
+</sparql>

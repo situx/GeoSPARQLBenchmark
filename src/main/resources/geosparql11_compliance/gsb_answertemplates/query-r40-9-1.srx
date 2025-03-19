@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<sparql xmlns="http://www.w3.org/2005/sparql-results#" xmlns:xml="http://www.w3.org/XML/1998/namespace">
+        <head>
+                <variable name="maxY"/>
+        </head>
+        <results>
+                <result><binding name="maxY"><literal datatype="http://www.w3.org/2001/XMLSchema#double">34.5</literal></binding></result>
+        </results>
+</sparql>

@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<sparql xmlns="http://www.w3.org/2005/sparql-results#" xmlns:xml="http://www.w3.org/XML/1998/namespace">
+        <head>
+                <variable name="wkt"/>
+        </head>
+        <results>
+                <result>
+                        <binding name="wkt">
+                                <literal datatype="http://www.opengis.net/ont/geosparql#wktLiteral">
+
+            &lt;http://www.opengis.net/def/crs/OGC/1.3/CRS84&gt; Polygon((-83.6 34.1, -83.2 34.1, -83.2 34.5, -83.6 34.5, -83.6 34.1))
+
+    </literal>
+                        </binding>
+                </result>
+        </results>
+</sparql>

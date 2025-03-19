@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<sparql xmlns="http://www.w3.org/2005/sparql-results#" xmlns:xml="http://www.w3.org/XML/1998/namespace">
+        <head>
+                <variable name="centroid"/>
+        </head>
+        <results>
+                <result>
+                        <binding name="centroid">
+                                <uri>http://example.org/ApplicationSchema#APointGeom</uri>
+                        </binding>
+                </result>
+        </results>
+</sparql>

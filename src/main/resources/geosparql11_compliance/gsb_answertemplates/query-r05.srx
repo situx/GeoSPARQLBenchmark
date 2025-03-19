@@ -1,0 +1,12 @@
+<sparql xmlns="http://www.w3.org/2005/sparql-results#" xmlns:xml="http://www.w3.org/XML/1998/namespace">
+        <head>
+                <variable name="f"/>
+        </head>
+        <results>
+                <result>
+                        <binding name="f">
+                                <uri>http://example.org/ApplicationSchema#AFeatureCollection</uri>
+                        </binding>
+                </result>
+        </results>
+</sparql>

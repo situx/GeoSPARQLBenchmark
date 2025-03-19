@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<sparql xmlns="http://www.w3.org/2005/sparql-results#" xmlns:xml="http://www.w3.org/XML/1998/namespace">
+        <head>
+                <variable name="minY"/>
+        </head>
+        <results>
+                <result><binding name="minY"><literal datatype="http://www.w3.org/2001/XMLSchema#double">34.1</literal></binding></result>
+        </results>
+</sparql>

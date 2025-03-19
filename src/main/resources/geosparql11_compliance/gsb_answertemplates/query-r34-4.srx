@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<sparql xmlns="http://www.w3.org/2005/sparql-results#" xmlns:xml="http://www.w3.org/XML/1998/namespace">
+        <head>
+                <variable name="kml"/>
+        </head>
+        <results>
+                <result>
+                        <binding name="kml">
+                                <literal datatype="http://www.opengis.net/ont/geosparql#asKML">&lt;Polygon&gt;&lt;outerBoundaryIs&gt;&lt;LinearRing&gt;&lt;coordinates&gt;-83.6,34.1 -83.2,34.1 -83.2,34.5 -83.6,34.5 -83.6,34.1&lt;/coordinates&gt;&lt;/LinearRing&gt;&lt;/outerBoundaryIs&gt;&lt;/Polygon&gt;</literal>
+                        </binding>
+                </result>
+        </results>
+</sparql>
