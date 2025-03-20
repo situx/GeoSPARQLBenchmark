@@ -15,7 +15,9 @@ answerpath = 'src/main/resources/geosparql11_compliance/gsb_answertemplates/'
 
 configpath = 'src/main/resources/geosparql10_compliance/gsb_config/geosparql10_compliance.json'
 
-answerpaths = ['src/main/resources/geosparql10_compliance/gsb_answers/','src/main/resources/geosparql11_compliance/gsb_answers/']
+answerpaths = ['src/main/resources/geosparql10_compliance/gsb_answers/','src/main/resources/geosparql11_compliance/gsb_answertemplates/result/']
+
+answertemplatepaths = ['src/main/resources/geosparql10_compliance/gsb_answers/','src/main/resources/geosparql11_compliance/gsb_answertemplates/']
 
 querytemplatepaths = ['src/main/resources/geosparql10_compliance/gsb_querytemplates/','src/main/resources/geosparql11_compliance/gsb_querytemplates/']
 
@@ -126,7 +128,7 @@ def generateConfigLabelsFromTemplate(benchmarkconfig):
     geom_literals=benchmarkconfig["geoProperties"]
     geom_literals2=benchmarkconfig["literalTypes"]
     combinations=list(itertools.permutations(geom_literals,2))
-    print(combinations)
+    #print(combinations)
     combinations=list(map(lambda x, y:(x,y), geom_literals.keys(), geom_literals.keys()))+combinations
     if "reqTemplates" in benchmarkconfig:
         benchmarkconfig["reqLabels"]={}
@@ -208,8 +210,8 @@ def generateConfigLabelsFromTemplate(benchmarkconfig):
                 else:
                     hreqnum=temp.replace(".rq","").replace("query-","").replace("r0","").replace("r","")
                     benchmarkconfig["reqToDescs"][temp]="Requirement "+str(hreqnum)+": "+benchmarkconfig["reqTemplates"][temp]["deftemplate"]  
-    print(benchmarkconfig["reqLabels"])
-    print(benchmarkconfig["reqToDescs"])
+    #print(benchmarkconfig["reqLabels"])
+    #print(benchmarkconfig["reqToDescs"])
     #print(combinations)
 
 def find_nth_occurrence(string, sub_string, n):
@@ -219,41 +221,75 @@ def find_nth_occurrence(string, sub_string, n):
         n -= 1
     return start_index
 
-def createWeightsForQueries(quervarmap):
+def createWeightsForQueries(quervarmap,benchmarkname):
     numberreqs=len(quervarmap)+1
     print("Number Of Reqs: "+str(numberreqs))
     reqweight=100/numberreqs
     print("ReqWeight: "+str(reqweight))
     reqToWeights={}
     for var in quervarmap:
-        #print(str(var)+": "+str(len(quervarmap[var])))
         if len(quervarmap[var])==1:
             reqToWeights[var]=reqweight
         elif len(quervarmap[var])>1:
             partweight=reqweight/len(quervarmap[var])
-            print("PartWeight: "+str(partweight))
+            print(var)
+            print("ReqWeight: "+str(reqweight))
+            print("PartWeight: "+str(reqweight)+"/"+str(len(quervarmap[var]))+" "+str(partweight))
+            highweightsum=(2/3)*reqweight
+            lowweightsum=(1/3)*reqweight
+
+            print("ReqWeight * 2/3 sum for high weights: "+str((2/3)*reqweight))
+            print("ReqWeight * 1/3 sum for low weights: "+str((1/3)*reqweight))
             print(quervarmap[var])
-            highweightcount=0
+            highweightcount=1
+            lowweightcount=1
+            highweightperQuer={}
             for quer in quervarmap[var]:
+                if quer not in highweightperQuer:
+                    highweightperQuer[quer]=0
                 if quervarmap[var][quer]:
                     highweightcount+=1
-            highpartweight=partweight
-            weightdiff=partweight*highweightcount
-            lowweightcount=len(quervarmap[var])-highweightcount
+                    highweightperQuer[quer]+=1
+            countperquer=0
+            quersum=0
+            for inp in highweightperQuer:
+                quersum+=highweightperQuer[inp]
+                countperquer+=1          
+            if highweightcount==0:
+                highweightcount=1       
+            lowweightcount=len(quervarmap[var])-highweightcount           
+            if lowweightcount==0:
+                lowweightcount=1
+            
+            highpartweight=(1/highweightcount)*highweightsum
+            lowpartweight=(1/lowweightcount)*lowweightsum
+            print("HighPartWeight: "+str(highpartweight))
+            print("LowPartWeight: "+str(lowpartweight))
+            added={}
             if lowweightcount>0:
-                subtractweight=weightdiff/lowweightcount
                 for quer in quervarmap[var]:
                     if quervarmap[var][quer]:
                         reqToWeights[quer]=highpartweight
+                        added[quer]=highpartweight
                     else:
-                        reqToWeights[quer]=partweight-subtractweight
+                        reqToWeights[quer]=lowpartweight
+                        added[quer]=lowpartweight
             else:
                 for quer in quervarmap[var]:
                     if quervarmap[var][quer]:
                         reqToWeights[quer]=partweight
+                        added[quer]=partweight
                     else:
                         reqToWeights[quer]=partweight
-    print(reqToWeights)
+                        added[quer]=partweight
+            print(added)
+            addedsum=0
+            for item in added:
+                addedsum+=added[item]
+            print("AddedSum: "+str(addedsum)+" - "+str(reqweight))
+    #print(reqToWeights)
+    with open(benchmarkname+"_weights.js", "w", encoding="utf-8") as f2:
+        f2.write(json.dumps(reqToWeights,indent=2,sort_keys=True))
 
 def convertXMLResultToJSONResult(xmlresultstring):
     jsonio=StringIO("")
@@ -309,6 +345,7 @@ def expandLiteralsFromTemplates(benchmarkconfig,querypath,answerpath):
             curreqcounter=0
         reqstring=fileprefix
         answerfiles={}
+        #print("ANSWERPAAATHCONFIG: "+str(answerpath))
         for ans in answerp:
             if fileprefix in ans:
                 #print(ans+" - "+fileprefix)
@@ -319,8 +356,24 @@ def expandLiteralsFromTemplates(benchmarkconfig,querypath,answerpath):
         variantcounter=1
         if not "%%literal1%%" in filecontent and not "%%literalrel1%%" in filecontent and not "%%literal2%%" in filecontent and not "%%literalrel1%%" in filecontent:
             queryToVariants[f[0:index]][f]=True            
-            with open(querypath+"result/"+f, "w") as f2:
+            with open(querypath+"result/"+f, "w", encoding="utf-8") as f2:
                 f2.write(filecontent)
+                answercounter=0
+            for ans in answerfiles:
+                if first:
+                    try:
+                        with open(answerpath+"result/"+ans.replace(".rq",".srx"), "w", encoding="utf-8") as f2:
+                            f2.write(answerfiles[ans])
+                    except:
+                        print("except")
+                    first=False                    
+                else:
+                    try:
+                        with open(answerpath+"result/"+ans.replace(".rq",".srx"), "w", encoding="utf-8") as f2:
+                            f2.write(answerfiles[ans])	
+                    except:
+                        print("except")                    
+                answercounter+=1   
             file.close()
             continue
         if "%%literalrel1%%" in filecontent and not "%%literal2%%" in filecontent and not "%%literal1%%" in filecontent:
@@ -328,16 +381,16 @@ def expandLiteralsFromTemplates(benchmarkconfig,querypath,answerpath):
                 #print(lit[0]+" "+lit[1])
                 newfile=replaceInString(filecontent,"","",geom_literals[lit],geom_literals[lit])
                 if f.find("-")==f.rfind("-"):
-                    queryToVariants[f[0:index]][f.replace(".rq","")+"-"+str(variantcounter)+".rq"]=False
+                    queryToVariants[f[0:index]][f.replace(".rq","")+"-"+str(variantcounter)+".rq"]=True
                     try:
-                        with open(querypath+"result/"+f.replace(".rq","")+"-"+str(variantcounter)+".rq", "w") as f2:
+                        with open(querypath+"result/"+f.replace(".rq","")+"-"+str(variantcounter)+".rq", "w", encoding="utf-8") as f2:
                             f2.write(newfile)
                     except:
                         print("except")                    
                 else:
-                    queryToVariants[f[0:index]][f[0:index]+"-"+str(variantcounter)+".rq"]=False
+                    queryToVariants[f[0:index]][f[0:index]+"-"+str(variantcounter)+".rq"]=True
                     try:
-                        with open(querypath+"result/"+f[0:index]+"-"+str(variantcounter)+".rq", "w") as f2:
+                        with open(querypath+"result/"+f[0:index]+"-"+str(variantcounter)+".rq", "w", encoding="utf-8") as f2:
                             f2.write(newfile)
                     except:
                         print("except")
@@ -359,14 +412,14 @@ def expandLiteralsFromTemplates(benchmarkconfig,querypath,answerpath):
                 for ans in answerfiles:
                     if first:
                         try:
-                            with open(answerpath+"result/"+f[0:f.rfind("-")]+"-"+str(variantcounter)+".srx", "w") as f2:
+                            with open(answerpath+"result/"+f[0:f.rfind("-")]+"-"+str(variantcounter)+".srx", "w", encoding="utf-8") as f2:
                                 f2.write(answerfiles[ans])
                         except:
                             print("except")
                         first=False                    
                     else:
                         try:
-                            with open(answerpath+"result/"+f[0:f.rfind("-")]+"-"+str(variantcounter)+"-alternative-"+str(answercounter)+".srx", "w") as f2:
+                            with open(answerpath+"result/"+f[0:f.rfind("-")]+"-"+str(variantcounter)+"-alternative-"+str(answercounter)+".srx", "w", encoding="utf-8") as f2:
                                 f2.write(answerfiles[ans])	
                         except:
                             print("except")                    
@@ -382,12 +435,28 @@ def expandLiteralsFromTemplates(benchmarkconfig,querypath,answerpath):
                 else:
                     queryToVariants[f[0:index]][f[0:f.rfind("-")]+"-"+str(variantcounter)+".rq"]=False
                 try:
-                    with open(querypath+"result/"+f[0:f.rfind("-")]+"-"+str(variantcounter)+".rq", "w") as f2:
+                    with open(querypath+"result/"+f[0:f.rfind("-")]+"-"+str(variantcounter)+".rq", "w", encoding="utf-8") as f2:
                         f2.write(newfile)
                 except:
                     print("except")
                 gsbquerycounter+=1
                 variantcounter=variantcounter+1
+            answercounter=0
+            for ans in answerfiles:
+                if first:
+                    try:
+                        with open(answerpath+"result/"+ans, "w", encoding="utf-8") as f2:
+                            f2.write(answerfiles[ans])
+                    except:
+                        print("except")
+                    first=False                    
+                else:
+                    try:
+                        with open(answerpath+"result/"+ans, "w", encoding="utf-8") as f2:
+                            f2.write(answerfiles[ans])	
+                    except:
+                        print("except")                    
+                answercounter+=1   
             file.close()
 
 def generateConfiguration(querypath,answerpath,benchmarkconfig,benchmarkconfigttl):
@@ -398,6 +467,7 @@ def generateConfiguration(querypath,answerpath,benchmarkconfig,benchmarkconfigtt
     reqstring=""
     files = os.listdir(querypath)
     answerp = os.listdir(answerpath)
+    #print("ANSWERPAAAATH: "+str(answerpath))
     benchmarkname="The Benchmark"
     if "benchmarkshorturi" in benchmarkconfig:
         benchmarkname=benchmarkconfig["benchmarkshorturi"]
@@ -406,17 +476,19 @@ def generateConfiguration(querypath,answerpath,benchmarkconfig,benchmarkconfigtt
         #print(querypath+f)
         if not os.path.isfile(querypath+f):
             continue
-        file = open(querypath+f, "r")
+        file = open(querypath+f, "r", encoding="utf-8")
         filecontent=file.read()
         benchmarkjs[f]={"query":filecontent,"answers":{},"label":"","definition":"","uri":"","weight":""}
+        #print("EXISTS: "+str(answerpath+f.replace(".rq",".srx")))
         if os.path.exists(answerpath+f.replace(".rq",".srx")):
-            afile = open(answerpath+f.replace(".rq",".srx"), "r")
+            afile = open(answerpath+f.replace(".rq",".srx"), "r", encoding="utf-8")
             afilecontent=afile.read()
+            #print(afilecontent)
             jsonres=convertXMLResultToJSONResult(afilecontent)
             benchmarkjs[f]["answers"][jsonres]=True
         for i in range(1,10):
             if os.path.exists(answerpath+f.replace(".rq","")+"-alternative-"+str(i)+".srx"):
-                afile = open(answerpath+f.replace(".rq","")+"-alternative-"+str(i)+".srx", "r")
+                afile = open(answerpath+f.replace(".rq","")+"-alternative-"+str(i)+".srx", "r", encoding="utf-8")
                 afilecontent=afile.read()
                 jsonres=convertXMLResultToJSONResult(afilecontent)
                 benchmarkjs[f]["answers"][jsonres]=True
@@ -543,7 +615,7 @@ def generateConfiguration(querypath,answerpath,benchmarkconfig,benchmarkconfigtt
                 first=True                
                 variantcounter=variantcounter+1
             file.close()
-    with open("js/"+benchmarkname+"_benchmark.js", "w") as f2:
+    with open("js/"+benchmarkname+"_benchmark.js", "w", encoding="utf-8") as f2:
         f2.write("var "+benchmarkname+"_benchmarkconfig="+json.dumps(benchmarkjs,indent=2,sort_keys=True))
     return benchmarkconfigttl
 
@@ -559,22 +631,22 @@ i=0
 for bencon in configpaths:
     with open(bencon) as json_file:
         benchmarkconfig = json.load(json_file)
-    #if i==0:
-    generateConfigLabelsFromTemplate(benchmarkconfig)
-    expandLiteralsFromTemplates(benchmarkconfig,querytemplatepaths[i],answerpaths[i])        
-    benchmarkconfigttl.parse(data=benchmarkconfigttlhead)
-    benchmarkconfigttl=generateConfiguration(querypaths[i],answerpaths[i],benchmarkconfig,benchmarkconfigttl)
-    benchmarkconfigttl.serialize(destination='hobbit-settings/benchmark_'+str(benchmarkconfig["benchmarkshorturi"])+'.ttl', format='turtle')
-    print(queryToVariants)
-    createWeightsForQueries(queryToVariants)
-    #benchmarkconfigttlhead+="    hobbit:measuresKPI  bench:totalCorrectAnswers ;\n    hobbit:measuresKPI  bench:percentageCorrectAnswers . bench:percentageCorrectAnswers rdf:type hobbit:KPI .\n"
-    #print(benchmarkconfigttlhead+benchmarkconfigttl)
-    #graph2 = Graph()
-    #graph2.parse(data = benchmarkconfigttlhead+benchmarkconfigttl, format='n3')
-    #
+    if i>=0:
+        generateConfigLabelsFromTemplate(benchmarkconfig)
+        expandLiteralsFromTemplates(benchmarkconfig,querytemplatepaths[i],answertemplatepaths[i])        
+        benchmarkconfigttl.parse(data=benchmarkconfigttlhead)
+        benchmarkconfigttl=generateConfiguration(querypaths[i],answerpaths[i],benchmarkconfig,benchmarkconfigttl)
+        benchmarkconfigttl.serialize(destination='hobbit-settings/benchmark_'+str(benchmarkconfig["benchmarkshorturi"])+'.ttl', format='turtle')
+        #print(queryToVariants)
+        createWeightsForQueries(queryToVariants,benchmarkconfig["benchmarkshorturi"])
+        #benchmarkconfigttlhead+="    hobbit:measuresKPI  bench:totalCorrectAnswers ;\n    hobbit:measuresKPI  bench:percentageCorrectAnswers . bench:percentageCorrectAnswers rdf:type hobbit:KPI .\n"
+        #print(benchmarkconfigttlhead+benchmarkconfigttl)
+        #graph2 = Graph()
+        #graph2.parse(data = benchmarkconfigttlhead+benchmarkconfigttl, format='n3')
+        #
     i+=1
 
 
-#with open("benchmarkconfig_gen.ttl", "w") as f2:
+#with open("benchmarkconfig_gen.ttl", "w", encoding="utf-8") as f2:
 #    f2.write(benchmarkconfigttlhead)
 #    f2.write(benchmarkconfigttl)

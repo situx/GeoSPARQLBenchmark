@@ -1,8 +1,8 @@
 PREFIX my: <http://example.org/ApplicationSchema#>
 PREFIX geo: <http://www.opengis.net/ont/geosparql#>
 PREFIX geof: <http://www.opengis.net/def/function/geosparql/>
-SELECT (geof:asDggs(?dggss) as ?dggs)
+SELECT (geof:asDggs(?dggss,"https://h3geo.org/res/7") as ?dggs)
 WHERE {
-  my:AExactGeom geo:%%literalrel1%% ?dggss
+  my:AExactGeom %%literalrel1%% ?dggss
 } 
  

@@ -6,5 +6,6 @@ SELECT (xsd:boolean(?sfEquals) as ?equals)
 WHERE {
   my:A geo:hasDefaultGeometry ?aGeom .
   ?aGeom %%literalrel1%% ?%%literal1%% .
-  BIND (geof:sfEquals(?%%literal1%%, ?%%literal1%%) as ?sfEquals)
+  ?aGeom %%literalrel2%% ?%%literal2%% .
+  BIND (geof:sfEquals(?%%literal1%%, ?%%literal2%%) as ?sfEquals)
 }
