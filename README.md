@@ -1,7 +1,7 @@
 # GeoSPARQL Compliance Benchmark
  
 This is the GeoSPARQL Compliance Benchmark, integrated into the [HOBBIT Platform](https://github.com/hobbit-project/platform).
-     
+      
 The GeoSPARQL Compliance Benchmark aims to evaluate the GeoSPARQL compliance of RDF storage systems. The benchmark uses
 206 SPARQL queries to test the extent to which the benchmarked system supports the 30 requirements defined in the [GeoSPARQL standard](https://www.ogc.org/standards/geosparql).
  
