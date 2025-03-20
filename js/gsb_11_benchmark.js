@@ -534,9 +534,7 @@ var gsb_11_benchmarkconfig={
     "weight": 0.003205128205128205
   },
   "query-r13-4.rq": {
-    "answers": {
-      "{\"head\": {\"vars\": [\"isSimple\"]}, \"results\": {\"bindings\": [{\"isSimple\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
-    },
+    "answers": {},
     "definition": "query-r13-4",
     "label": "Requirement 13-4:  Geometry Properties: geo:hasSpatialResolution",
     "module": "GEOEXT",
@@ -545,9 +543,7 @@ var gsb_11_benchmarkconfig={
     "weight": 0.003205128205128205
   },
   "query-r13-5.rq": {
-    "answers": {
-      "{\"head\": {\"vars\": [\"isSimple\"]}, \"results\": {\"bindings\": [{\"isSimple\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
-    },
+    "answers": {},
     "definition": "query-r13-5",
     "label": "Requirement 13-5:  Geometry Properties: geo:hasMetricSpatialResolution",
     "module": "GEOEXT",
@@ -556,9 +552,7 @@ var gsb_11_benchmarkconfig={
     "weight": 0.003205128205128205
   },
   "query-r13-6.rq": {
-    "answers": {
-      "{\"head\": {\"vars\": [\"isSimple\"]}, \"results\": {\"bindings\": [{\"isSimple\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
-    },
+    "answers": {},
     "definition": "query-r13-6",
     "label": "Requirement 13-6:  Geometry Properties: geo:hasSpatialAccuracy",
     "module": "GEOEXT",
@@ -567,9 +561,7 @@ var gsb_11_benchmarkconfig={
     "weight": 0.003205128205128205
   },
   "query-r13-7.rq": {
-    "answers": {
-      "{\"head\": {\"vars\": [\"isSimple\"]}, \"results\": {\"bindings\": [{\"isSimple\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
-    },
+    "answers": {},
     "definition": "query-r13-7",
     "label": "Requirement 13-7:  Geometry Properties: geo:hasMetricSpatialAccuracy",
     "module": "GEOEXT",
@@ -1051,9 +1043,7 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r37.rq": {
-    "answers": {
-      "{\"head\": {\"vars\": [\"f\"]}, \"results\": {\"bindings\": [{\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#A\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#AExactGeom\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#G\"}}, {\"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#GExactGeom\"}}]}}": true
-    },
+    "answers": {},
     "definition": "Requirement 37: Implementations shall allow the RDF property geo:asDGGS to be used in SPARQL graph patterns.",
     "label": "Requirement 37: geo:asDGGS Property",
     "module": "GEOEXT",
@@ -1117,7 +1107,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r39-1-1.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"boundary\"]}, \"results\": {\"bindings\": [{\"boundary\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#wktLiteral\", \"type\": \"literal\", \"value\": \"LINESTRING(-83.6 34.1,-83.2 34.1,-83.2 34.5,-83.6 34.5,-83.6 34.1)\"}}]}}": true
+    },
     "definition": "Requirement 39 (Part 1) (WKT): Requirement 39 (Part 1) (WKT): Implementations shall support the function geof:boundary as a SPARQL extension function, consistent with definitions of these functions in Simple Features [OGCSFACA] ISO 19125-1, for non-DGGS geometry literals.",
     "label": "Requirement 39-1-1 (WKT): Non-topological Query functions (Simple Features) geof:boundary",
     "module": "GEOEXT",
@@ -1126,7 +1118,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r39-1-2.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"boundary\"]}, \"results\": {\"bindings\": [{\"boundary\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#gmlLiteral\", \"type\": \"literal\", \"value\": \"<gml:LineString srsName=\\\"http://www.opengis.net/def/crs/OGC/1.3/CRS84\\\" xmlns:gml=\\\"http://www.opengis.net/ont/gml\\\"><gml:posList>-83.6 34.1 -83.2 34.1 -83.2 34.5 -83.6 34.5 -83.6 34.1</gml:posList></gml:LineString>\"}}]}}": true
+    },
     "definition": "Requirement 39 (Part 1) (GML): Requirement 39 (Part 1) (WKT): Implementations shall support the function geof:boundary as a SPARQL extension function, consistent with definitions of these functions in Simple Features [OGCSFACA] ISO 19125-1, for non-DGGS geometry literals.",
     "label": "Requirement 39-1-2 (GML): Non-topological Query functions (Simple Features) geof:boundary",
     "module": "GEOEXT",
@@ -1162,7 +1156,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r39-10-1.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"dimension\"]}, \"results\": {\"bindings\": [{\"dimension\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#integer\", \"type\": \"literal\", \"value\": \"2\"}}]}}": true
+    },
     "definition": "Requirement 39 (Part 10) (WKT): Requirement 39 (Part 1) (WKT): Implementations shall support the function geof:dimension as a SPARQL extension function, consistent with definitions of these functions in Simple Features [OGCSFACA] ISO 19125-1, for non-DGGS geometry literals.",
     "label": "Requirement 39-10-1 (WKT): Non-topological Query functions (Simple Features) geof:dimension",
     "module": "GEOEXT",
@@ -1171,7 +1167,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r39-10-2.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"dimension\"]}, \"results\": {\"bindings\": [{\"dimension\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#integer\", \"type\": \"literal\", \"value\": \"2\"}}]}}": true
+    },
     "definition": "Requirement 39 (Part 10) (GML): Requirement 39 (Part 1) (WKT): Implementations shall support the function geof:dimension as a SPARQL extension function, consistent with definitions of these functions in Simple Features [OGCSFACA] ISO 19125-1, for non-DGGS geometry literals.",
     "label": "Requirement 39-10-2 (GML): Non-topological Query functions (Simple Features) geof:dimension",
     "module": "GEOEXT",
@@ -1180,7 +1178,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r39-10-3.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"dimension\"]}, \"results\": {\"bindings\": [{\"dimension\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#integer\", \"type\": \"literal\", \"value\": \"2\"}}]}}": true
+    },
     "definition": "Requirement 39 (Part 10) (GeoJSON): Requirement 39 (Part 1) (WKT): Implementations shall support the function geof:dimension as a SPARQL extension function, consistent with definitions of these functions in Simple Features [OGCSFACA] ISO 19125-1, for non-DGGS geometry literals.",
     "label": "Requirement 39-10-3 (GeoJSON): Non-topological Query functions (Simple Features) geof:dimension",
     "module": "GEOEXT",
@@ -1189,7 +1189,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r39-10-4.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"dimension\"]}, \"results\": {\"bindings\": [{\"dimension\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#integer\", \"type\": \"literal\", \"value\": \"2\"}}]}}": true
+    },
     "definition": "Requirement 39 (Part 10) (KML): Requirement 39 (Part 1) (WKT): Implementations shall support the function geof:dimension as a SPARQL extension function, consistent with definitions of these functions in Simple Features [OGCSFACA] ISO 19125-1, for non-DGGS geometry literals.",
     "label": "Requirement 39-10-4 (KML): Non-topological Query functions (Simple Features) geof:dimension",
     "module": "GEOEXT",
@@ -1198,7 +1200,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r39-10-5.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"dimension\"]}, \"results\": {\"bindings\": [{\"dimension\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#integer\", \"type\": \"literal\", \"value\": \"2\"}}]}}": true
+    },
     "definition": "Requirement 39 (Part 10) (DGGS): Requirement 39 (Part 1) (WKT): Implementations shall support the function geof:dimension as a SPARQL extension function, consistent with definitions of these functions in Simple Features [OGCSFACA] ISO 19125-1, for non-DGGS geometry literals.",
     "label": "Requirement 39-10-5 (DGGS): Non-topological Query functions (Simple Features) geof:dimension",
     "module": "GEOEXT",
@@ -1432,7 +1436,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r39-12-1.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"f\", \"distance\"]}, \"results\": {\"bindings\": [{\"distance\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#double\", \"type\": \"literal\", \"value\": \"0.0\"}, \"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#A\"}}, {\"distance\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#double\", \"type\": \"literal\", \"value\": \"9387.01\"}, \"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#G\"}}, {\"distance\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#double\", \"type\": \"literal\", \"value\": \"10194.1\"}, \"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#E\"}}]}}": true
+    },
     "definition": "Requirement 39 (Part 12) (WKT-WKT): Requirement 39 (Part 1) (WKT): Implementations shall support the function geof:distance as a SPARQL extension function, consistent with definitions of these functions in Simple Features [OGCSFACA] ISO 19125-1, for non-DGGS geometry literals.",
     "label": "Requirement 39-12-1 (WKT-WKT): Non-topological Query functions (Simple Features) geof:distance",
     "module": "GEOEXT",
@@ -1441,7 +1447,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r39-12-10.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"f\", \"distance\"]}, \"results\": {\"bindings\": [{\"distance\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#double\", \"type\": \"literal\", \"value\": \"0.0\"}, \"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#A\"}}, {\"distance\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#double\", \"type\": \"literal\", \"value\": \"9387.01\"}, \"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#G\"}}, {\"distance\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#double\", \"type\": \"literal\", \"value\": \"10194.1\"}, \"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#E\"}}]}}": true
+    },
     "definition": "Requirement 39 (Part 12) (GML-WKT): Requirement 39 (Part 1) (WKT): Implementations shall support the function geof:distance as a SPARQL extension function, consistent with definitions of these functions in Simple Features [OGCSFACA] ISO 19125-1, for non-DGGS geometry literals.",
     "label": "Requirement 39-12-10 (GML-WKT): Non-topological Query functions (Simple Features) geof:distance",
     "module": "GEOEXT",
@@ -1450,7 +1458,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r39-12-11.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"f\", \"distance\"]}, \"results\": {\"bindings\": [{\"distance\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#double\", \"type\": \"literal\", \"value\": \"0.0\"}, \"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#A\"}}, {\"distance\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#double\", \"type\": \"literal\", \"value\": \"9387.01\"}, \"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#G\"}}, {\"distance\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#double\", \"type\": \"literal\", \"value\": \"10194.1\"}, \"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#E\"}}]}}": true
+    },
     "definition": "Requirement 39 (Part 12) (GML-GeoJSON): Requirement 39 (Part 1) (WKT): Implementations shall support the function geof:distance as a SPARQL extension function, consistent with definitions of these functions in Simple Features [OGCSFACA] ISO 19125-1, for non-DGGS geometry literals.",
     "label": "Requirement 39-12-11 (GML-GeoJSON): Non-topological Query functions (Simple Features) geof:distance",
     "module": "GEOEXT",
@@ -1459,7 +1469,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r39-12-12.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"f\", \"distance\"]}, \"results\": {\"bindings\": [{\"distance\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#double\", \"type\": \"literal\", \"value\": \"0.0\"}, \"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#A\"}}, {\"distance\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#double\", \"type\": \"literal\", \"value\": \"9387.01\"}, \"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#G\"}}, {\"distance\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#double\", \"type\": \"literal\", \"value\": \"10194.1\"}, \"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#E\"}}]}}": true
+    },
     "definition": "Requirement 39 (Part 12) (GML-KML): Requirement 39 (Part 1) (WKT): Implementations shall support the function geof:distance as a SPARQL extension function, consistent with definitions of these functions in Simple Features [OGCSFACA] ISO 19125-1, for non-DGGS geometry literals.",
     "label": "Requirement 39-12-12 (GML-KML): Non-topological Query functions (Simple Features) geof:distance",
     "module": "GEOEXT",
@@ -1468,7 +1480,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r39-12-13.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"f\", \"distance\"]}, \"results\": {\"bindings\": [{\"distance\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#double\", \"type\": \"literal\", \"value\": \"0.0\"}, \"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#A\"}}, {\"distance\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#double\", \"type\": \"literal\", \"value\": \"9387.01\"}, \"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#G\"}}, {\"distance\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#double\", \"type\": \"literal\", \"value\": \"10194.1\"}, \"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#E\"}}]}}": true
+    },
     "definition": "Requirement 39 (Part 12) (GML-DGGS): Requirement 39 (Part 1) (WKT): Implementations shall support the function geof:distance as a SPARQL extension function, consistent with definitions of these functions in Simple Features [OGCSFACA] ISO 19125-1, for non-DGGS geometry literals.",
     "label": "Requirement 39-12-13 (GML-DGGS): Non-topological Query functions (Simple Features) geof:distance",
     "module": "GEOEXT",
@@ -1477,7 +1491,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r39-12-14.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"f\", \"distance\"]}, \"results\": {\"bindings\": [{\"distance\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#double\", \"type\": \"literal\", \"value\": \"0.0\"}, \"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#A\"}}, {\"distance\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#double\", \"type\": \"literal\", \"value\": \"9387.01\"}, \"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#G\"}}, {\"distance\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#double\", \"type\": \"literal\", \"value\": \"10194.1\"}, \"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#E\"}}]}}": true
+    },
     "definition": "Requirement 39 (Part 12) (GeoJSON-WKT): Requirement 39 (Part 1) (WKT): Implementations shall support the function geof:distance as a SPARQL extension function, consistent with definitions of these functions in Simple Features [OGCSFACA] ISO 19125-1, for non-DGGS geometry literals.",
     "label": "Requirement 39-12-14 (GeoJSON-WKT): Non-topological Query functions (Simple Features) geof:distance",
     "module": "GEOEXT",
@@ -1486,7 +1502,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r39-12-15.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"f\", \"distance\"]}, \"results\": {\"bindings\": [{\"distance\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#double\", \"type\": \"literal\", \"value\": \"0.0\"}, \"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#A\"}}, {\"distance\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#double\", \"type\": \"literal\", \"value\": \"9387.01\"}, \"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#G\"}}, {\"distance\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#double\", \"type\": \"literal\", \"value\": \"10194.1\"}, \"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#E\"}}]}}": true
+    },
     "definition": "Requirement 39 (Part 12) (GeoJSON-GML): Requirement 39 (Part 1) (WKT): Implementations shall support the function geof:distance as a SPARQL extension function, consistent with definitions of these functions in Simple Features [OGCSFACA] ISO 19125-1, for non-DGGS geometry literals.",
     "label": "Requirement 39-12-15 (GeoJSON-GML): Non-topological Query functions (Simple Features) geof:distance",
     "module": "GEOEXT",
@@ -1495,7 +1513,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r39-12-16.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"f\", \"distance\"]}, \"results\": {\"bindings\": [{\"distance\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#double\", \"type\": \"literal\", \"value\": \"0.0\"}, \"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#A\"}}, {\"distance\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#double\", \"type\": \"literal\", \"value\": \"9387.01\"}, \"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#G\"}}, {\"distance\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#double\", \"type\": \"literal\", \"value\": \"10194.1\"}, \"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#E\"}}]}}": true
+    },
     "definition": "Requirement 39 (Part 12) (GeoJSON-KML): Requirement 39 (Part 1) (WKT): Implementations shall support the function geof:distance as a SPARQL extension function, consistent with definitions of these functions in Simple Features [OGCSFACA] ISO 19125-1, for non-DGGS geometry literals.",
     "label": "Requirement 39-12-16 (GeoJSON-KML): Non-topological Query functions (Simple Features) geof:distance",
     "module": "GEOEXT",
@@ -1504,7 +1524,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r39-12-17.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"f\", \"distance\"]}, \"results\": {\"bindings\": [{\"distance\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#double\", \"type\": \"literal\", \"value\": \"0.0\"}, \"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#A\"}}, {\"distance\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#double\", \"type\": \"literal\", \"value\": \"9387.01\"}, \"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#G\"}}, {\"distance\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#double\", \"type\": \"literal\", \"value\": \"10194.1\"}, \"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#E\"}}]}}": true
+    },
     "definition": "Requirement 39 (Part 12) (GeoJSON-DGGS): Requirement 39 (Part 1) (WKT): Implementations shall support the function geof:distance as a SPARQL extension function, consistent with definitions of these functions in Simple Features [OGCSFACA] ISO 19125-1, for non-DGGS geometry literals.",
     "label": "Requirement 39-12-17 (GeoJSON-DGGS): Non-topological Query functions (Simple Features) geof:distance",
     "module": "GEOEXT",
@@ -1513,7 +1535,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r39-12-18.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"f\", \"distance\"]}, \"results\": {\"bindings\": [{\"distance\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#double\", \"type\": \"literal\", \"value\": \"0.0\"}, \"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#A\"}}, {\"distance\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#double\", \"type\": \"literal\", \"value\": \"9387.01\"}, \"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#G\"}}, {\"distance\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#double\", \"type\": \"literal\", \"value\": \"10194.1\"}, \"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#E\"}}]}}": true
+    },
     "definition": "Requirement 39 (Part 12) (KML-WKT): Requirement 39 (Part 1) (WKT): Implementations shall support the function geof:distance as a SPARQL extension function, consistent with definitions of these functions in Simple Features [OGCSFACA] ISO 19125-1, for non-DGGS geometry literals.",
     "label": "Requirement 39-12-18 (KML-WKT): Non-topological Query functions (Simple Features) geof:distance",
     "module": "GEOEXT",
@@ -1522,7 +1546,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r39-12-19.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"f\", \"distance\"]}, \"results\": {\"bindings\": [{\"distance\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#double\", \"type\": \"literal\", \"value\": \"0.0\"}, \"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#A\"}}, {\"distance\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#double\", \"type\": \"literal\", \"value\": \"9387.01\"}, \"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#G\"}}, {\"distance\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#double\", \"type\": \"literal\", \"value\": \"10194.1\"}, \"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#E\"}}]}}": true
+    },
     "definition": "Requirement 39 (Part 12) (KML-GML): Requirement 39 (Part 1) (WKT): Implementations shall support the function geof:distance as a SPARQL extension function, consistent with definitions of these functions in Simple Features [OGCSFACA] ISO 19125-1, for non-DGGS geometry literals.",
     "label": "Requirement 39-12-19 (KML-GML): Non-topological Query functions (Simple Features) geof:distance",
     "module": "GEOEXT",
@@ -1531,7 +1557,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r39-12-2.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"f\", \"distance\"]}, \"results\": {\"bindings\": [{\"distance\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#double\", \"type\": \"literal\", \"value\": \"0.0\"}, \"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#A\"}}, {\"distance\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#double\", \"type\": \"literal\", \"value\": \"9387.01\"}, \"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#G\"}}, {\"distance\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#double\", \"type\": \"literal\", \"value\": \"10194.1\"}, \"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#E\"}}]}}": true
+    },
     "definition": "Requirement 39 (Part 12) (GML-GML): Requirement 39 (Part 1) (WKT): Implementations shall support the function geof:distance as a SPARQL extension function, consistent with definitions of these functions in Simple Features [OGCSFACA] ISO 19125-1, for non-DGGS geometry literals.",
     "label": "Requirement 39-12-2 (GML-GML): Non-topological Query functions (Simple Features) geof:distance",
     "module": "GEOEXT",
@@ -1540,7 +1568,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r39-12-20.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"f\", \"distance\"]}, \"results\": {\"bindings\": [{\"distance\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#double\", \"type\": \"literal\", \"value\": \"0.0\"}, \"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#A\"}}, {\"distance\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#double\", \"type\": \"literal\", \"value\": \"9387.01\"}, \"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#G\"}}, {\"distance\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#double\", \"type\": \"literal\", \"value\": \"10194.1\"}, \"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#E\"}}]}}": true
+    },
     "definition": "Requirement 39 (Part 12) (KML-GeoJSON): Requirement 39 (Part 1) (WKT): Implementations shall support the function geof:distance as a SPARQL extension function, consistent with definitions of these functions in Simple Features [OGCSFACA] ISO 19125-1, for non-DGGS geometry literals.",
     "label": "Requirement 39-12-20 (KML-GeoJSON): Non-topological Query functions (Simple Features) geof:distance",
     "module": "GEOEXT",
@@ -1549,7 +1579,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r39-12-21.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"f\", \"distance\"]}, \"results\": {\"bindings\": [{\"distance\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#double\", \"type\": \"literal\", \"value\": \"0.0\"}, \"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#A\"}}, {\"distance\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#double\", \"type\": \"literal\", \"value\": \"9387.01\"}, \"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#G\"}}, {\"distance\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#double\", \"type\": \"literal\", \"value\": \"10194.1\"}, \"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#E\"}}]}}": true
+    },
     "definition": "Requirement 39 (Part 12) (KML-DGGS): Requirement 39 (Part 1) (WKT): Implementations shall support the function geof:distance as a SPARQL extension function, consistent with definitions of these functions in Simple Features [OGCSFACA] ISO 19125-1, for non-DGGS geometry literals.",
     "label": "Requirement 39-12-21 (KML-DGGS): Non-topological Query functions (Simple Features) geof:distance",
     "module": "GEOEXT",
@@ -1558,7 +1590,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r39-12-22.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"f\", \"distance\"]}, \"results\": {\"bindings\": [{\"distance\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#double\", \"type\": \"literal\", \"value\": \"0.0\"}, \"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#A\"}}, {\"distance\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#double\", \"type\": \"literal\", \"value\": \"9387.01\"}, \"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#G\"}}, {\"distance\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#double\", \"type\": \"literal\", \"value\": \"10194.1\"}, \"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#E\"}}]}}": true
+    },
     "definition": "Requirement 39 (Part 12) (DGGS-WKT): Requirement 39 (Part 1) (WKT): Implementations shall support the function geof:distance as a SPARQL extension function, consistent with definitions of these functions in Simple Features [OGCSFACA] ISO 19125-1, for non-DGGS geometry literals.",
     "label": "Requirement 39-12-22 (DGGS-WKT): Non-topological Query functions (Simple Features) geof:distance",
     "module": "GEOEXT",
@@ -1567,7 +1601,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r39-12-23.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"f\", \"distance\"]}, \"results\": {\"bindings\": [{\"distance\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#double\", \"type\": \"literal\", \"value\": \"0.0\"}, \"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#A\"}}, {\"distance\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#double\", \"type\": \"literal\", \"value\": \"9387.01\"}, \"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#G\"}}, {\"distance\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#double\", \"type\": \"literal\", \"value\": \"10194.1\"}, \"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#E\"}}]}}": true
+    },
     "definition": "Requirement 39 (Part 12) (DGGS-GML): Requirement 39 (Part 1) (WKT): Implementations shall support the function geof:distance as a SPARQL extension function, consistent with definitions of these functions in Simple Features [OGCSFACA] ISO 19125-1, for non-DGGS geometry literals.",
     "label": "Requirement 39-12-23 (DGGS-GML): Non-topological Query functions (Simple Features) geof:distance",
     "module": "GEOEXT",
@@ -1576,7 +1612,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r39-12-24.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"f\", \"distance\"]}, \"results\": {\"bindings\": [{\"distance\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#double\", \"type\": \"literal\", \"value\": \"0.0\"}, \"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#A\"}}, {\"distance\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#double\", \"type\": \"literal\", \"value\": \"9387.01\"}, \"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#G\"}}, {\"distance\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#double\", \"type\": \"literal\", \"value\": \"10194.1\"}, \"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#E\"}}]}}": true
+    },
     "definition": "Requirement 39 (Part 12) (DGGS-GeoJSON): Requirement 39 (Part 1) (WKT): Implementations shall support the function geof:distance as a SPARQL extension function, consistent with definitions of these functions in Simple Features [OGCSFACA] ISO 19125-1, for non-DGGS geometry literals.",
     "label": "Requirement 39-12-24 (DGGS-GeoJSON): Non-topological Query functions (Simple Features) geof:distance",
     "module": "GEOEXT",
@@ -1585,7 +1623,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r39-12-25.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"f\", \"distance\"]}, \"results\": {\"bindings\": [{\"distance\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#double\", \"type\": \"literal\", \"value\": \"0.0\"}, \"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#A\"}}, {\"distance\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#double\", \"type\": \"literal\", \"value\": \"9387.01\"}, \"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#G\"}}, {\"distance\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#double\", \"type\": \"literal\", \"value\": \"10194.1\"}, \"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#E\"}}]}}": true
+    },
     "definition": "Requirement 39 (Part 12) (DGGS-KML): Requirement 39 (Part 1) (WKT): Implementations shall support the function geof:distance as a SPARQL extension function, consistent with definitions of these functions in Simple Features [OGCSFACA] ISO 19125-1, for non-DGGS geometry literals.",
     "label": "Requirement 39-12-25 (DGGS-KML): Non-topological Query functions (Simple Features) geof:distance",
     "module": "GEOEXT",
@@ -1594,7 +1634,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r39-12-3.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"f\", \"distance\"]}, \"results\": {\"bindings\": [{\"distance\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#double\", \"type\": \"literal\", \"value\": \"0.0\"}, \"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#A\"}}, {\"distance\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#double\", \"type\": \"literal\", \"value\": \"9387.01\"}, \"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#G\"}}, {\"distance\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#double\", \"type\": \"literal\", \"value\": \"10194.1\"}, \"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#E\"}}]}}": true
+    },
     "definition": "Requirement 39 (Part 12) (GeoJSON-GeoJSON): Requirement 39 (Part 1) (WKT): Implementations shall support the function geof:distance as a SPARQL extension function, consistent with definitions of these functions in Simple Features [OGCSFACA] ISO 19125-1, for non-DGGS geometry literals.",
     "label": "Requirement 39-12-3 (GeoJSON-GeoJSON): Non-topological Query functions (Simple Features) geof:distance",
     "module": "GEOEXT",
@@ -1603,7 +1645,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r39-12-4.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"f\", \"distance\"]}, \"results\": {\"bindings\": [{\"distance\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#double\", \"type\": \"literal\", \"value\": \"0.0\"}, \"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#A\"}}, {\"distance\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#double\", \"type\": \"literal\", \"value\": \"9387.01\"}, \"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#G\"}}, {\"distance\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#double\", \"type\": \"literal\", \"value\": \"10194.1\"}, \"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#E\"}}]}}": true
+    },
     "definition": "Requirement 39 (Part 12) (KML-KML): Requirement 39 (Part 1) (WKT): Implementations shall support the function geof:distance as a SPARQL extension function, consistent with definitions of these functions in Simple Features [OGCSFACA] ISO 19125-1, for non-DGGS geometry literals.",
     "label": "Requirement 39-12-4 (KML-KML): Non-topological Query functions (Simple Features) geof:distance",
     "module": "GEOEXT",
@@ -1612,7 +1656,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r39-12-5.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"f\", \"distance\"]}, \"results\": {\"bindings\": [{\"distance\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#double\", \"type\": \"literal\", \"value\": \"0.0\"}, \"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#A\"}}, {\"distance\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#double\", \"type\": \"literal\", \"value\": \"9387.01\"}, \"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#G\"}}, {\"distance\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#double\", \"type\": \"literal\", \"value\": \"10194.1\"}, \"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#E\"}}]}}": true
+    },
     "definition": "Requirement 39 (Part 12) (DGGS-DGGS): Requirement 39 (Part 1) (WKT): Implementations shall support the function geof:distance as a SPARQL extension function, consistent with definitions of these functions in Simple Features [OGCSFACA] ISO 19125-1, for non-DGGS geometry literals.",
     "label": "Requirement 39-12-5 (DGGS-DGGS): Non-topological Query functions (Simple Features) geof:distance",
     "module": "GEOEXT",
@@ -1621,7 +1667,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r39-12-6.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"f\", \"distance\"]}, \"results\": {\"bindings\": [{\"distance\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#double\", \"type\": \"literal\", \"value\": \"0.0\"}, \"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#A\"}}, {\"distance\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#double\", \"type\": \"literal\", \"value\": \"9387.01\"}, \"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#G\"}}, {\"distance\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#double\", \"type\": \"literal\", \"value\": \"10194.1\"}, \"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#E\"}}]}}": true
+    },
     "definition": "Requirement 39 (Part 12) (WKT-GML): Requirement 39 (Part 1) (WKT): Implementations shall support the function geof:distance as a SPARQL extension function, consistent with definitions of these functions in Simple Features [OGCSFACA] ISO 19125-1, for non-DGGS geometry literals.",
     "label": "Requirement 39-12-6 (WKT-GML): Non-topological Query functions (Simple Features) geof:distance",
     "module": "GEOEXT",
@@ -1630,7 +1678,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r39-12-7.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"f\", \"distance\"]}, \"results\": {\"bindings\": [{\"distance\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#double\", \"type\": \"literal\", \"value\": \"0.0\"}, \"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#A\"}}, {\"distance\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#double\", \"type\": \"literal\", \"value\": \"9387.01\"}, \"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#G\"}}, {\"distance\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#double\", \"type\": \"literal\", \"value\": \"10194.1\"}, \"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#E\"}}]}}": true
+    },
     "definition": "Requirement 39 (Part 12) (WKT-GeoJSON): Requirement 39 (Part 1) (WKT): Implementations shall support the function geof:distance as a SPARQL extension function, consistent with definitions of these functions in Simple Features [OGCSFACA] ISO 19125-1, for non-DGGS geometry literals.",
     "label": "Requirement 39-12-7 (WKT-GeoJSON): Non-topological Query functions (Simple Features) geof:distance",
     "module": "GEOEXT",
@@ -1639,7 +1689,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r39-12-8.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"f\", \"distance\"]}, \"results\": {\"bindings\": [{\"distance\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#double\", \"type\": \"literal\", \"value\": \"0.0\"}, \"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#A\"}}, {\"distance\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#double\", \"type\": \"literal\", \"value\": \"9387.01\"}, \"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#G\"}}, {\"distance\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#double\", \"type\": \"literal\", \"value\": \"10194.1\"}, \"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#E\"}}]}}": true
+    },
     "definition": "Requirement 39 (Part 12) (WKT-KML): Requirement 39 (Part 1) (WKT): Implementations shall support the function geof:distance as a SPARQL extension function, consistent with definitions of these functions in Simple Features [OGCSFACA] ISO 19125-1, for non-DGGS geometry literals.",
     "label": "Requirement 39-12-8 (WKT-KML): Non-topological Query functions (Simple Features) geof:distance",
     "module": "GEOEXT",
@@ -1648,7 +1700,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r39-12-9.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"f\", \"distance\"]}, \"results\": {\"bindings\": [{\"distance\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#double\", \"type\": \"literal\", \"value\": \"0.0\"}, \"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#A\"}}, {\"distance\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#double\", \"type\": \"literal\", \"value\": \"9387.01\"}, \"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#G\"}}, {\"distance\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#double\", \"type\": \"literal\", \"value\": \"10194.1\"}, \"f\": {\"type\": \"uri\", \"value\": \"http://example.org/ApplicationSchema#E\"}}]}}": true
+    },
     "definition": "Requirement 39 (Part 12) (WKT-DGGS): Requirement 39 (Part 1) (WKT): Implementations shall support the function geof:distance as a SPARQL extension function, consistent with definitions of these functions in Simple Features [OGCSFACA] ISO 19125-1, for non-DGGS geometry literals.",
     "label": "Requirement 39-12-9 (WKT-DGGS): Non-topological Query functions (Simple Features) geof:distance",
     "module": "GEOEXT",
@@ -1657,7 +1711,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r39-13-1.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"envelope\"]}, \"results\": {\"bindings\": [{\"envelope\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#wktLiteral\", \"type\": \"literal\", \"value\": \"BOX(-83.600009965897 34.099995934963,-83.199990081787 34.50000411272)\"}}]}}": true
+    },
     "definition": "Requirement 39 (Part 13) (WKT): Requirement 39 (Part 1) (WKT): Implementations shall support the function geof:envelope as a SPARQL extension function, consistent with definitions of these functions in Simple Features [OGCSFACA] ISO 19125-1, for non-DGGS geometry literals.",
     "label": "Requirement 39-13-1 (WKT): Non-topological Query functions (Simple Features) geof:envelope",
     "module": "GEOEXT",
@@ -1666,7 +1722,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r39-13-2.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"envelope\"]}, \"results\": {\"bindings\": [{\"envelope\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#gmlLiteral\", \"type\": \"literal\", \"value\": \"<gml:Polygon srsName=\\\"http://www.opengis.net/def/crs/OGC/1.3/CRS84\\\" xmlns:gml=\\\"http://www.opengis.net/ont/gml\\\"><gml:exterior><gml:LinearRing><gml:posList>-83.6 34.1 -83.2 34.5 -83.2 34.1 -83.6 34.1 -83.6 34.5</gml:posList></gml:LinearRing></gml:exterior></gml:Polygon>\"}}]}}": true
+    },
     "definition": "Requirement 39 (Part 13) (GML): Requirement 39 (Part 1) (WKT): Implementations shall support the function geof:envelope as a SPARQL extension function, consistent with definitions of these functions in Simple Features [OGCSFACA] ISO 19125-1, for non-DGGS geometry literals.",
     "label": "Requirement 39-13-2 (GML): Non-topological Query functions (Simple Features) geof:envelope",
     "module": "GEOEXT",
@@ -1702,7 +1760,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r39-14-1.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"geometryType\"]}, \"results\": {\"bindings\": [{\"geometryType\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#string\", \"type\": \"literal\", \"value\": \"Polygon\"}}]}}": true
+    },
     "definition": "Requirement 39 (Part 14) (WKT): Requirement 39 (Part 1) (WKT): Implementations shall support the function geof:geometryType as a SPARQL extension function, consistent with definitions of these functions in Simple Features [OGCSFACA] ISO 19125-1, for non-DGGS geometry literals.",
     "label": "Requirement 39-14-1 (WKT): Non-topological Query functions (Simple Features) geof:geometryType",
     "module": "GEOEXT",
@@ -1711,7 +1771,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r39-14-2.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"geometryType\"]}, \"results\": {\"bindings\": [{\"geometryType\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#string\", \"type\": \"literal\", \"value\": \"Polygon\"}}]}}": true
+    },
     "definition": "Requirement 39 (Part 14) (GML): Requirement 39 (Part 1) (WKT): Implementations shall support the function geof:geometryType as a SPARQL extension function, consistent with definitions of these functions in Simple Features [OGCSFACA] ISO 19125-1, for non-DGGS geometry literals.",
     "label": "Requirement 39-14-2 (GML): Non-topological Query functions (Simple Features) geof:geometryType",
     "module": "GEOEXT",
@@ -1720,7 +1782,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r39-14-3.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"geometryType\"]}, \"results\": {\"bindings\": [{\"geometryType\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#string\", \"type\": \"literal\", \"value\": \"Polygon\"}}]}}": true
+    },
     "definition": "Requirement 39 (Part 14) (GeoJSON): Requirement 39 (Part 1) (WKT): Implementations shall support the function geof:geometryType as a SPARQL extension function, consistent with definitions of these functions in Simple Features [OGCSFACA] ISO 19125-1, for non-DGGS geometry literals.",
     "label": "Requirement 39-14-3 (GeoJSON): Non-topological Query functions (Simple Features) geof:geometryType",
     "module": "GEOEXT",
@@ -1729,7 +1793,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r39-14-4.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"geometryType\"]}, \"results\": {\"bindings\": [{\"geometryType\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#string\", \"type\": \"literal\", \"value\": \"Polygon\"}}]}}": true
+    },
     "definition": "Requirement 39 (Part 14) (KML): Requirement 39 (Part 1) (WKT): Implementations shall support the function geof:geometryType as a SPARQL extension function, consistent with definitions of these functions in Simple Features [OGCSFACA] ISO 19125-1, for non-DGGS geometry literals.",
     "label": "Requirement 39-14-4 (KML): Non-topological Query functions (Simple Features) geof:geometryType",
     "module": "GEOEXT",
@@ -1738,7 +1804,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r39-14-5.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"geometryType\"]}, \"results\": {\"bindings\": [{\"geometryType\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#string\", \"type\": \"literal\", \"value\": \"Polygon\"}}]}}": true
+    },
     "definition": "Requirement 39 (Part 14) (DGGS): Requirement 39 (Part 1) (WKT): Implementations shall support the function geof:geometryType as a SPARQL extension function, consistent with definitions of these functions in Simple Features [OGCSFACA] ISO 19125-1, for non-DGGS geometry literals.",
     "label": "Requirement 39-14-5 (DGGS): Non-topological Query functions (Simple Features) geof:geometryType",
     "module": "GEOEXT",
@@ -1747,7 +1815,10 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r39-15-1.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"intersection\"]}, \"results\": {\"bindings\": [{\"intersection\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#gmlLiteral\", \"type\": \"literal\", \"value\": \"<gml:Polygon xmlns:gml=\\\"http://www.opengis.net/ont/gml\\\" srsName=\\\"http://www.opengis.net/def/crs/OGC/1.3/CRS84\\\"><gml:exterior><gml:LinearRing><gml:posList>-83.4 34.1 -83.6 34.1 -83.6 34.3 -83.4 34.3 -83.4 34.1</gml:posList></gml:LinearRing></gml:exterior></gml:Polygon>\"}}]}}": true,
+      "{\"head\": {\"vars\": [\"intersection\"]}, \"results\": {\"bindings\": [{\"intersection\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#wktLiteral\", \"type\": \"literal\", \"value\": \"POLYGON((-83.4 34.1,-83.6 34.1,-83.6 34.3,-83.4 34.3,-83.4 34.1))\"}}]}}": true
+    },
     "definition": "Requirement 39 (Part 15) (WKT-WKT): Requirement 39 (Part 1) (WKT): Implementations shall support the function geof:intersection as a SPARQL extension function, consistent with definitions of these functions in Simple Features [OGCSFACA] ISO 19125-1, for non-DGGS geometry literals.",
     "label": "Requirement 39-15-1 (WKT-WKT): Non-topological Query functions (Simple Features) geof:intersection",
     "module": "GEOEXT",
@@ -1756,7 +1827,10 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r39-15-10.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"intersection\"]}, \"results\": {\"bindings\": [{\"intersection\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#gmlLiteral\", \"type\": \"literal\", \"value\": \"<gml:Polygon xmlns:gml=\\\"http://www.opengis.net/ont/gml\\\" srsName=\\\"http://www.opengis.net/def/crs/OGC/1.3/CRS84\\\"><gml:exterior><gml:LinearRing><gml:posList>-83.4 34.1 -83.6 34.1 -83.6 34.3 -83.4 34.3 -83.4 34.1</gml:posList></gml:LinearRing></gml:exterior></gml:Polygon>\"}}]}}": true,
+      "{\"head\": {\"vars\": [\"intersection\"]}, \"results\": {\"bindings\": [{\"intersection\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#wktLiteral\", \"type\": \"literal\", \"value\": \"POLYGON((-83.4 34.1,-83.6 34.1,-83.6 34.3,-83.4 34.3,-83.4 34.1))\"}}]}}": true
+    },
     "definition": "Requirement 39 (Part 15) (GML-WKT): Requirement 39 (Part 1) (WKT): Implementations shall support the function geof:intersection as a SPARQL extension function, consistent with definitions of these functions in Simple Features [OGCSFACA] ISO 19125-1, for non-DGGS geometry literals.",
     "label": "Requirement 39-15-10 (GML-WKT): Non-topological Query functions (Simple Features) geof:intersection",
     "module": "GEOEXT",
@@ -1765,7 +1839,10 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r39-15-11.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"intersection\"]}, \"results\": {\"bindings\": [{\"intersection\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#gmlLiteral\", \"type\": \"literal\", \"value\": \"<gml:Polygon xmlns:gml=\\\"http://www.opengis.net/ont/gml\\\" srsName=\\\"http://www.opengis.net/def/crs/OGC/1.3/CRS84\\\"><gml:exterior><gml:LinearRing><gml:posList>-83.4 34.1 -83.6 34.1 -83.6 34.3 -83.4 34.3 -83.4 34.1</gml:posList></gml:LinearRing></gml:exterior></gml:Polygon>\"}}]}}": true,
+      "{\"head\": {\"vars\": [\"intersection\"]}, \"results\": {\"bindings\": [{\"intersection\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#wktLiteral\", \"type\": \"literal\", \"value\": \"POLYGON((-83.4 34.1,-83.6 34.1,-83.6 34.3,-83.4 34.3,-83.4 34.1))\"}}]}}": true
+    },
     "definition": "Requirement 39 (Part 15) (GML-GeoJSON): Requirement 39 (Part 1) (WKT): Implementations shall support the function geof:intersection as a SPARQL extension function, consistent with definitions of these functions in Simple Features [OGCSFACA] ISO 19125-1, for non-DGGS geometry literals.",
     "label": "Requirement 39-15-11 (GML-GeoJSON): Non-topological Query functions (Simple Features) geof:intersection",
     "module": "GEOEXT",
@@ -1774,7 +1851,10 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r39-15-12.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"intersection\"]}, \"results\": {\"bindings\": [{\"intersection\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#gmlLiteral\", \"type\": \"literal\", \"value\": \"<gml:Polygon xmlns:gml=\\\"http://www.opengis.net/ont/gml\\\" srsName=\\\"http://www.opengis.net/def/crs/OGC/1.3/CRS84\\\"><gml:exterior><gml:LinearRing><gml:posList>-83.4 34.1 -83.6 34.1 -83.6 34.3 -83.4 34.3 -83.4 34.1</gml:posList></gml:LinearRing></gml:exterior></gml:Polygon>\"}}]}}": true,
+      "{\"head\": {\"vars\": [\"intersection\"]}, \"results\": {\"bindings\": [{\"intersection\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#wktLiteral\", \"type\": \"literal\", \"value\": \"POLYGON((-83.4 34.1,-83.6 34.1,-83.6 34.3,-83.4 34.3,-83.4 34.1))\"}}]}}": true
+    },
     "definition": "Requirement 39 (Part 15) (GML-KML): Requirement 39 (Part 1) (WKT): Implementations shall support the function geof:intersection as a SPARQL extension function, consistent with definitions of these functions in Simple Features [OGCSFACA] ISO 19125-1, for non-DGGS geometry literals.",
     "label": "Requirement 39-15-12 (GML-KML): Non-topological Query functions (Simple Features) geof:intersection",
     "module": "GEOEXT",
@@ -1783,7 +1863,10 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r39-15-13.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"intersection\"]}, \"results\": {\"bindings\": [{\"intersection\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#gmlLiteral\", \"type\": \"literal\", \"value\": \"<gml:Polygon xmlns:gml=\\\"http://www.opengis.net/ont/gml\\\" srsName=\\\"http://www.opengis.net/def/crs/OGC/1.3/CRS84\\\"><gml:exterior><gml:LinearRing><gml:posList>-83.4 34.1 -83.6 34.1 -83.6 34.3 -83.4 34.3 -83.4 34.1</gml:posList></gml:LinearRing></gml:exterior></gml:Polygon>\"}}]}}": true,
+      "{\"head\": {\"vars\": [\"intersection\"]}, \"results\": {\"bindings\": [{\"intersection\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#wktLiteral\", \"type\": \"literal\", \"value\": \"POLYGON((-83.4 34.1,-83.6 34.1,-83.6 34.3,-83.4 34.3,-83.4 34.1))\"}}]}}": true
+    },
     "definition": "Requirement 39 (Part 15) (GML-DGGS): Requirement 39 (Part 1) (WKT): Implementations shall support the function geof:intersection as a SPARQL extension function, consistent with definitions of these functions in Simple Features [OGCSFACA] ISO 19125-1, for non-DGGS geometry literals.",
     "label": "Requirement 39-15-13 (GML-DGGS): Non-topological Query functions (Simple Features) geof:intersection",
     "module": "GEOEXT",
@@ -1792,7 +1875,10 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r39-15-14.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"intersection\"]}, \"results\": {\"bindings\": [{\"intersection\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#gmlLiteral\", \"type\": \"literal\", \"value\": \"<gml:Polygon xmlns:gml=\\\"http://www.opengis.net/ont/gml\\\" srsName=\\\"http://www.opengis.net/def/crs/OGC/1.3/CRS84\\\"><gml:exterior><gml:LinearRing><gml:posList>-83.4 34.1 -83.6 34.1 -83.6 34.3 -83.4 34.3 -83.4 34.1</gml:posList></gml:LinearRing></gml:exterior></gml:Polygon>\"}}]}}": true,
+      "{\"head\": {\"vars\": [\"intersection\"]}, \"results\": {\"bindings\": [{\"intersection\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#wktLiteral\", \"type\": \"literal\", \"value\": \"POLYGON((-83.4 34.1,-83.6 34.1,-83.6 34.3,-83.4 34.3,-83.4 34.1))\"}}]}}": true
+    },
     "definition": "Requirement 39 (Part 15) (GeoJSON-WKT): Requirement 39 (Part 1) (WKT): Implementations shall support the function geof:intersection as a SPARQL extension function, consistent with definitions of these functions in Simple Features [OGCSFACA] ISO 19125-1, for non-DGGS geometry literals.",
     "label": "Requirement 39-15-14 (GeoJSON-WKT): Non-topological Query functions (Simple Features) geof:intersection",
     "module": "GEOEXT",
@@ -1801,7 +1887,10 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r39-15-15.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"intersection\"]}, \"results\": {\"bindings\": [{\"intersection\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#gmlLiteral\", \"type\": \"literal\", \"value\": \"<gml:Polygon xmlns:gml=\\\"http://www.opengis.net/ont/gml\\\" srsName=\\\"http://www.opengis.net/def/crs/OGC/1.3/CRS84\\\"><gml:exterior><gml:LinearRing><gml:posList>-83.4 34.1 -83.6 34.1 -83.6 34.3 -83.4 34.3 -83.4 34.1</gml:posList></gml:LinearRing></gml:exterior></gml:Polygon>\"}}]}}": true,
+      "{\"head\": {\"vars\": [\"intersection\"]}, \"results\": {\"bindings\": [{\"intersection\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#wktLiteral\", \"type\": \"literal\", \"value\": \"POLYGON((-83.4 34.1,-83.6 34.1,-83.6 34.3,-83.4 34.3,-83.4 34.1))\"}}]}}": true
+    },
     "definition": "Requirement 39 (Part 15) (GeoJSON-GML): Requirement 39 (Part 1) (WKT): Implementations shall support the function geof:intersection as a SPARQL extension function, consistent with definitions of these functions in Simple Features [OGCSFACA] ISO 19125-1, for non-DGGS geometry literals.",
     "label": "Requirement 39-15-15 (GeoJSON-GML): Non-topological Query functions (Simple Features) geof:intersection",
     "module": "GEOEXT",
@@ -1810,7 +1899,10 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r39-15-16.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"intersection\"]}, \"results\": {\"bindings\": [{\"intersection\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#gmlLiteral\", \"type\": \"literal\", \"value\": \"<gml:Polygon xmlns:gml=\\\"http://www.opengis.net/ont/gml\\\" srsName=\\\"http://www.opengis.net/def/crs/OGC/1.3/CRS84\\\"><gml:exterior><gml:LinearRing><gml:posList>-83.4 34.1 -83.6 34.1 -83.6 34.3 -83.4 34.3 -83.4 34.1</gml:posList></gml:LinearRing></gml:exterior></gml:Polygon>\"}}]}}": true,
+      "{\"head\": {\"vars\": [\"intersection\"]}, \"results\": {\"bindings\": [{\"intersection\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#wktLiteral\", \"type\": \"literal\", \"value\": \"POLYGON((-83.4 34.1,-83.6 34.1,-83.6 34.3,-83.4 34.3,-83.4 34.1))\"}}]}}": true
+    },
     "definition": "Requirement 39 (Part 15) (GeoJSON-KML): Requirement 39 (Part 1) (WKT): Implementations shall support the function geof:intersection as a SPARQL extension function, consistent with definitions of these functions in Simple Features [OGCSFACA] ISO 19125-1, for non-DGGS geometry literals.",
     "label": "Requirement 39-15-16 (GeoJSON-KML): Non-topological Query functions (Simple Features) geof:intersection",
     "module": "GEOEXT",
@@ -1819,7 +1911,10 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r39-15-17.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"intersection\"]}, \"results\": {\"bindings\": [{\"intersection\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#gmlLiteral\", \"type\": \"literal\", \"value\": \"<gml:Polygon xmlns:gml=\\\"http://www.opengis.net/ont/gml\\\" srsName=\\\"http://www.opengis.net/def/crs/OGC/1.3/CRS84\\\"><gml:exterior><gml:LinearRing><gml:posList>-83.4 34.1 -83.6 34.1 -83.6 34.3 -83.4 34.3 -83.4 34.1</gml:posList></gml:LinearRing></gml:exterior></gml:Polygon>\"}}]}}": true,
+      "{\"head\": {\"vars\": [\"intersection\"]}, \"results\": {\"bindings\": [{\"intersection\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#wktLiteral\", \"type\": \"literal\", \"value\": \"POLYGON((-83.4 34.1,-83.6 34.1,-83.6 34.3,-83.4 34.3,-83.4 34.1))\"}}]}}": true
+    },
     "definition": "Requirement 39 (Part 15) (GeoJSON-DGGS): Requirement 39 (Part 1) (WKT): Implementations shall support the function geof:intersection as a SPARQL extension function, consistent with definitions of these functions in Simple Features [OGCSFACA] ISO 19125-1, for non-DGGS geometry literals.",
     "label": "Requirement 39-15-17 (GeoJSON-DGGS): Non-topological Query functions (Simple Features) geof:intersection",
     "module": "GEOEXT",
@@ -1828,7 +1923,10 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r39-15-18.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"intersection\"]}, \"results\": {\"bindings\": [{\"intersection\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#gmlLiteral\", \"type\": \"literal\", \"value\": \"<gml:Polygon xmlns:gml=\\\"http://www.opengis.net/ont/gml\\\" srsName=\\\"http://www.opengis.net/def/crs/OGC/1.3/CRS84\\\"><gml:exterior><gml:LinearRing><gml:posList>-83.4 34.1 -83.6 34.1 -83.6 34.3 -83.4 34.3 -83.4 34.1</gml:posList></gml:LinearRing></gml:exterior></gml:Polygon>\"}}]}}": true,
+      "{\"head\": {\"vars\": [\"intersection\"]}, \"results\": {\"bindings\": [{\"intersection\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#wktLiteral\", \"type\": \"literal\", \"value\": \"POLYGON((-83.4 34.1,-83.6 34.1,-83.6 34.3,-83.4 34.3,-83.4 34.1))\"}}]}}": true
+    },
     "definition": "Requirement 39 (Part 15) (KML-WKT): Requirement 39 (Part 1) (WKT): Implementations shall support the function geof:intersection as a SPARQL extension function, consistent with definitions of these functions in Simple Features [OGCSFACA] ISO 19125-1, for non-DGGS geometry literals.",
     "label": "Requirement 39-15-18 (KML-WKT): Non-topological Query functions (Simple Features) geof:intersection",
     "module": "GEOEXT",
@@ -1837,7 +1935,10 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r39-15-19.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"intersection\"]}, \"results\": {\"bindings\": [{\"intersection\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#gmlLiteral\", \"type\": \"literal\", \"value\": \"<gml:Polygon xmlns:gml=\\\"http://www.opengis.net/ont/gml\\\" srsName=\\\"http://www.opengis.net/def/crs/OGC/1.3/CRS84\\\"><gml:exterior><gml:LinearRing><gml:posList>-83.4 34.1 -83.6 34.1 -83.6 34.3 -83.4 34.3 -83.4 34.1</gml:posList></gml:LinearRing></gml:exterior></gml:Polygon>\"}}]}}": true,
+      "{\"head\": {\"vars\": [\"intersection\"]}, \"results\": {\"bindings\": [{\"intersection\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#wktLiteral\", \"type\": \"literal\", \"value\": \"POLYGON((-83.4 34.1,-83.6 34.1,-83.6 34.3,-83.4 34.3,-83.4 34.1))\"}}]}}": true
+    },
     "definition": "Requirement 39 (Part 15) (KML-GML): Requirement 39 (Part 1) (WKT): Implementations shall support the function geof:intersection as a SPARQL extension function, consistent with definitions of these functions in Simple Features [OGCSFACA] ISO 19125-1, for non-DGGS geometry literals.",
     "label": "Requirement 39-15-19 (KML-GML): Non-topological Query functions (Simple Features) geof:intersection",
     "module": "GEOEXT",
@@ -1846,7 +1947,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r39-15-2.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"intersection\"]}, \"results\": {\"bindings\": [{\"intersection\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#gmlLiteral\", \"type\": \"literal\", \"value\": \"<gml:Polygon xmlns:gml=\\\"http://www.opengis.net/ont/gml\\\" srsName=\\\"http://www.opengis.net/def/crs/OGC/1.3/CRS84\\\"><gml:exterior><gml:LinearRing><gml:posList>-83.4 34.1 -83.6 34.1 -83.6 34.3 -83.4 34.3 -83.4 34.1</gml:posList></gml:LinearRing></gml:exterior></gml:Polygon>\"}}]}}": true
+    },
     "definition": "Requirement 39 (Part 15) (GML-GML): Requirement 39 (Part 1) (WKT): Implementations shall support the function geof:intersection as a SPARQL extension function, consistent with definitions of these functions in Simple Features [OGCSFACA] ISO 19125-1, for non-DGGS geometry literals.",
     "label": "Requirement 39-15-2 (GML-GML): Non-topological Query functions (Simple Features) geof:intersection",
     "module": "GEOEXT",
@@ -1855,7 +1958,10 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r39-15-20.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"intersection\"]}, \"results\": {\"bindings\": [{\"intersection\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#gmlLiteral\", \"type\": \"literal\", \"value\": \"<gml:Polygon xmlns:gml=\\\"http://www.opengis.net/ont/gml\\\" srsName=\\\"http://www.opengis.net/def/crs/OGC/1.3/CRS84\\\"><gml:exterior><gml:LinearRing><gml:posList>-83.4 34.1 -83.6 34.1 -83.6 34.3 -83.4 34.3 -83.4 34.1</gml:posList></gml:LinearRing></gml:exterior></gml:Polygon>\"}}]}}": true,
+      "{\"head\": {\"vars\": [\"intersection\"]}, \"results\": {\"bindings\": [{\"intersection\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#wktLiteral\", \"type\": \"literal\", \"value\": \"POLYGON((-83.4 34.1,-83.6 34.1,-83.6 34.3,-83.4 34.3,-83.4 34.1))\"}}]}}": true
+    },
     "definition": "Requirement 39 (Part 15) (KML-GeoJSON): Requirement 39 (Part 1) (WKT): Implementations shall support the function geof:intersection as a SPARQL extension function, consistent with definitions of these functions in Simple Features [OGCSFACA] ISO 19125-1, for non-DGGS geometry literals.",
     "label": "Requirement 39-15-20 (KML-GeoJSON): Non-topological Query functions (Simple Features) geof:intersection",
     "module": "GEOEXT",
@@ -1864,7 +1970,10 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r39-15-21.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"intersection\"]}, \"results\": {\"bindings\": [{\"intersection\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#gmlLiteral\", \"type\": \"literal\", \"value\": \"<gml:Polygon xmlns:gml=\\\"http://www.opengis.net/ont/gml\\\" srsName=\\\"http://www.opengis.net/def/crs/OGC/1.3/CRS84\\\"><gml:exterior><gml:LinearRing><gml:posList>-83.4 34.1 -83.6 34.1 -83.6 34.3 -83.4 34.3 -83.4 34.1</gml:posList></gml:LinearRing></gml:exterior></gml:Polygon>\"}}]}}": true,
+      "{\"head\": {\"vars\": [\"intersection\"]}, \"results\": {\"bindings\": [{\"intersection\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#wktLiteral\", \"type\": \"literal\", \"value\": \"POLYGON((-83.4 34.1,-83.6 34.1,-83.6 34.3,-83.4 34.3,-83.4 34.1))\"}}]}}": true
+    },
     "definition": "Requirement 39 (Part 15) (KML-DGGS): Requirement 39 (Part 1) (WKT): Implementations shall support the function geof:intersection as a SPARQL extension function, consistent with definitions of these functions in Simple Features [OGCSFACA] ISO 19125-1, for non-DGGS geometry literals.",
     "label": "Requirement 39-15-21 (KML-DGGS): Non-topological Query functions (Simple Features) geof:intersection",
     "module": "GEOEXT",
@@ -1873,7 +1982,10 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r39-15-22.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"intersection\"]}, \"results\": {\"bindings\": [{\"intersection\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#gmlLiteral\", \"type\": \"literal\", \"value\": \"<gml:Polygon xmlns:gml=\\\"http://www.opengis.net/ont/gml\\\" srsName=\\\"http://www.opengis.net/def/crs/OGC/1.3/CRS84\\\"><gml:exterior><gml:LinearRing><gml:posList>-83.4 34.1 -83.6 34.1 -83.6 34.3 -83.4 34.3 -83.4 34.1</gml:posList></gml:LinearRing></gml:exterior></gml:Polygon>\"}}]}}": true,
+      "{\"head\": {\"vars\": [\"intersection\"]}, \"results\": {\"bindings\": [{\"intersection\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#wktLiteral\", \"type\": \"literal\", \"value\": \"POLYGON((-83.4 34.1,-83.6 34.1,-83.6 34.3,-83.4 34.3,-83.4 34.1))\"}}]}}": true
+    },
     "definition": "Requirement 39 (Part 15) (DGGS-WKT): Requirement 39 (Part 1) (WKT): Implementations shall support the function geof:intersection as a SPARQL extension function, consistent with definitions of these functions in Simple Features [OGCSFACA] ISO 19125-1, for non-DGGS geometry literals.",
     "label": "Requirement 39-15-22 (DGGS-WKT): Non-topological Query functions (Simple Features) geof:intersection",
     "module": "GEOEXT",
@@ -1882,7 +1994,10 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r39-15-23.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"intersection\"]}, \"results\": {\"bindings\": [{\"intersection\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#gmlLiteral\", \"type\": \"literal\", \"value\": \"<gml:Polygon xmlns:gml=\\\"http://www.opengis.net/ont/gml\\\" srsName=\\\"http://www.opengis.net/def/crs/OGC/1.3/CRS84\\\"><gml:exterior><gml:LinearRing><gml:posList>-83.4 34.1 -83.6 34.1 -83.6 34.3 -83.4 34.3 -83.4 34.1</gml:posList></gml:LinearRing></gml:exterior></gml:Polygon>\"}}]}}": true,
+      "{\"head\": {\"vars\": [\"intersection\"]}, \"results\": {\"bindings\": [{\"intersection\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#wktLiteral\", \"type\": \"literal\", \"value\": \"POLYGON((-83.4 34.1,-83.6 34.1,-83.6 34.3,-83.4 34.3,-83.4 34.1))\"}}]}}": true
+    },
     "definition": "Requirement 39 (Part 15) (DGGS-GML): Requirement 39 (Part 1) (WKT): Implementations shall support the function geof:intersection as a SPARQL extension function, consistent with definitions of these functions in Simple Features [OGCSFACA] ISO 19125-1, for non-DGGS geometry literals.",
     "label": "Requirement 39-15-23 (DGGS-GML): Non-topological Query functions (Simple Features) geof:intersection",
     "module": "GEOEXT",
@@ -1891,7 +2006,10 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r39-15-24.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"intersection\"]}, \"results\": {\"bindings\": [{\"intersection\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#gmlLiteral\", \"type\": \"literal\", \"value\": \"<gml:Polygon xmlns:gml=\\\"http://www.opengis.net/ont/gml\\\" srsName=\\\"http://www.opengis.net/def/crs/OGC/1.3/CRS84\\\"><gml:exterior><gml:LinearRing><gml:posList>-83.4 34.1 -83.6 34.1 -83.6 34.3 -83.4 34.3 -83.4 34.1</gml:posList></gml:LinearRing></gml:exterior></gml:Polygon>\"}}]}}": true,
+      "{\"head\": {\"vars\": [\"intersection\"]}, \"results\": {\"bindings\": [{\"intersection\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#wktLiteral\", \"type\": \"literal\", \"value\": \"POLYGON((-83.4 34.1,-83.6 34.1,-83.6 34.3,-83.4 34.3,-83.4 34.1))\"}}]}}": true
+    },
     "definition": "Requirement 39 (Part 15) (DGGS-GeoJSON): Requirement 39 (Part 1) (WKT): Implementations shall support the function geof:intersection as a SPARQL extension function, consistent with definitions of these functions in Simple Features [OGCSFACA] ISO 19125-1, for non-DGGS geometry literals.",
     "label": "Requirement 39-15-24 (DGGS-GeoJSON): Non-topological Query functions (Simple Features) geof:intersection",
     "module": "GEOEXT",
@@ -1900,7 +2018,10 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r39-15-25.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"intersection\"]}, \"results\": {\"bindings\": [{\"intersection\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#gmlLiteral\", \"type\": \"literal\", \"value\": \"<gml:Polygon xmlns:gml=\\\"http://www.opengis.net/ont/gml\\\" srsName=\\\"http://www.opengis.net/def/crs/OGC/1.3/CRS84\\\"><gml:exterior><gml:LinearRing><gml:posList>-83.4 34.1 -83.6 34.1 -83.6 34.3 -83.4 34.3 -83.4 34.1</gml:posList></gml:LinearRing></gml:exterior></gml:Polygon>\"}}]}}": true,
+      "{\"head\": {\"vars\": [\"intersection\"]}, \"results\": {\"bindings\": [{\"intersection\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#wktLiteral\", \"type\": \"literal\", \"value\": \"POLYGON((-83.4 34.1,-83.6 34.1,-83.6 34.3,-83.4 34.3,-83.4 34.1))\"}}]}}": true
+    },
     "definition": "Requirement 39 (Part 15) (DGGS-KML): Requirement 39 (Part 1) (WKT): Implementations shall support the function geof:intersection as a SPARQL extension function, consistent with definitions of these functions in Simple Features [OGCSFACA] ISO 19125-1, for non-DGGS geometry literals.",
     "label": "Requirement 39-15-25 (DGGS-KML): Non-topological Query functions (Simple Features) geof:intersection",
     "module": "GEOEXT",
@@ -1909,7 +2030,10 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r39-15-3.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"intersection\"]}, \"results\": {\"bindings\": [{\"intersection\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#gmlLiteral\", \"type\": \"literal\", \"value\": \"<gml:Polygon xmlns:gml=\\\"http://www.opengis.net/ont/gml\\\" srsName=\\\"http://www.opengis.net/def/crs/OGC/1.3/CRS84\\\"><gml:exterior><gml:LinearRing><gml:posList>-83.4 34.1 -83.6 34.1 -83.6 34.3 -83.4 34.3 -83.4 34.1</gml:posList></gml:LinearRing></gml:exterior></gml:Polygon>\"}}]}}": true,
+      "{\"head\": {\"vars\": [\"intersection\"]}, \"results\": {\"bindings\": [{\"intersection\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#wktLiteral\", \"type\": \"literal\", \"value\": \"POLYGON((-83.4 34.1,-83.6 34.1,-83.6 34.3,-83.4 34.3,-83.4 34.1))\"}}]}}": true
+    },
     "definition": "Requirement 39 (Part 15) (GeoJSON-GeoJSON): Requirement 39 (Part 1) (WKT): Implementations shall support the function geof:intersection as a SPARQL extension function, consistent with definitions of these functions in Simple Features [OGCSFACA] ISO 19125-1, for non-DGGS geometry literals.",
     "label": "Requirement 39-15-3 (GeoJSON-GeoJSON): Non-topological Query functions (Simple Features) geof:intersection",
     "module": "GEOEXT",
@@ -1918,7 +2042,10 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r39-15-4.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"intersection\"]}, \"results\": {\"bindings\": [{\"intersection\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#gmlLiteral\", \"type\": \"literal\", \"value\": \"<gml:Polygon xmlns:gml=\\\"http://www.opengis.net/ont/gml\\\" srsName=\\\"http://www.opengis.net/def/crs/OGC/1.3/CRS84\\\"><gml:exterior><gml:LinearRing><gml:posList>-83.4 34.1 -83.6 34.1 -83.6 34.3 -83.4 34.3 -83.4 34.1</gml:posList></gml:LinearRing></gml:exterior></gml:Polygon>\"}}]}}": true,
+      "{\"head\": {\"vars\": [\"intersection\"]}, \"results\": {\"bindings\": [{\"intersection\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#wktLiteral\", \"type\": \"literal\", \"value\": \"POLYGON((-83.4 34.1,-83.6 34.1,-83.6 34.3,-83.4 34.3,-83.4 34.1))\"}}]}}": true
+    },
     "definition": "Requirement 39 (Part 15) (KML-KML): Requirement 39 (Part 1) (WKT): Implementations shall support the function geof:intersection as a SPARQL extension function, consistent with definitions of these functions in Simple Features [OGCSFACA] ISO 19125-1, for non-DGGS geometry literals.",
     "label": "Requirement 39-15-4 (KML-KML): Non-topological Query functions (Simple Features) geof:intersection",
     "module": "GEOEXT",
@@ -1927,7 +2054,10 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r39-15-5.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"intersection\"]}, \"results\": {\"bindings\": [{\"intersection\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#gmlLiteral\", \"type\": \"literal\", \"value\": \"<gml:Polygon xmlns:gml=\\\"http://www.opengis.net/ont/gml\\\" srsName=\\\"http://www.opengis.net/def/crs/OGC/1.3/CRS84\\\"><gml:exterior><gml:LinearRing><gml:posList>-83.4 34.1 -83.6 34.1 -83.6 34.3 -83.4 34.3 -83.4 34.1</gml:posList></gml:LinearRing></gml:exterior></gml:Polygon>\"}}]}}": true,
+      "{\"head\": {\"vars\": [\"intersection\"]}, \"results\": {\"bindings\": [{\"intersection\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#wktLiteral\", \"type\": \"literal\", \"value\": \"POLYGON((-83.4 34.1,-83.6 34.1,-83.6 34.3,-83.4 34.3,-83.4 34.1))\"}}]}}": true
+    },
     "definition": "Requirement 39 (Part 15) (DGGS-DGGS): Requirement 39 (Part 1) (WKT): Implementations shall support the function geof:intersection as a SPARQL extension function, consistent with definitions of these functions in Simple Features [OGCSFACA] ISO 19125-1, for non-DGGS geometry literals.",
     "label": "Requirement 39-15-5 (DGGS-DGGS): Non-topological Query functions (Simple Features) geof:intersection",
     "module": "GEOEXT",
@@ -1936,7 +2066,10 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r39-15-6.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"intersection\"]}, \"results\": {\"bindings\": [{\"intersection\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#gmlLiteral\", \"type\": \"literal\", \"value\": \"<gml:Polygon xmlns:gml=\\\"http://www.opengis.net/ont/gml\\\" srsName=\\\"http://www.opengis.net/def/crs/OGC/1.3/CRS84\\\"><gml:exterior><gml:LinearRing><gml:posList>-83.4 34.1 -83.6 34.1 -83.6 34.3 -83.4 34.3 -83.4 34.1</gml:posList></gml:LinearRing></gml:exterior></gml:Polygon>\"}}]}}": true,
+      "{\"head\": {\"vars\": [\"intersection\"]}, \"results\": {\"bindings\": [{\"intersection\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#wktLiteral\", \"type\": \"literal\", \"value\": \"POLYGON((-83.4 34.1,-83.6 34.1,-83.6 34.3,-83.4 34.3,-83.4 34.1))\"}}]}}": true
+    },
     "definition": "Requirement 39 (Part 15) (WKT-GML): Requirement 39 (Part 1) (WKT): Implementations shall support the function geof:intersection as a SPARQL extension function, consistent with definitions of these functions in Simple Features [OGCSFACA] ISO 19125-1, for non-DGGS geometry literals.",
     "label": "Requirement 39-15-6 (WKT-GML): Non-topological Query functions (Simple Features) geof:intersection",
     "module": "GEOEXT",
@@ -1945,7 +2078,10 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r39-15-7.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"intersection\"]}, \"results\": {\"bindings\": [{\"intersection\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#gmlLiteral\", \"type\": \"literal\", \"value\": \"<gml:Polygon xmlns:gml=\\\"http://www.opengis.net/ont/gml\\\" srsName=\\\"http://www.opengis.net/def/crs/OGC/1.3/CRS84\\\"><gml:exterior><gml:LinearRing><gml:posList>-83.4 34.1 -83.6 34.1 -83.6 34.3 -83.4 34.3 -83.4 34.1</gml:posList></gml:LinearRing></gml:exterior></gml:Polygon>\"}}]}}": true,
+      "{\"head\": {\"vars\": [\"intersection\"]}, \"results\": {\"bindings\": [{\"intersection\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#wktLiteral\", \"type\": \"literal\", \"value\": \"POLYGON((-83.4 34.1,-83.6 34.1,-83.6 34.3,-83.4 34.3,-83.4 34.1))\"}}]}}": true
+    },
     "definition": "Requirement 39 (Part 15) (WKT-GeoJSON): Requirement 39 (Part 1) (WKT): Implementations shall support the function geof:intersection as a SPARQL extension function, consistent with definitions of these functions in Simple Features [OGCSFACA] ISO 19125-1, for non-DGGS geometry literals.",
     "label": "Requirement 39-15-7 (WKT-GeoJSON): Non-topological Query functions (Simple Features) geof:intersection",
     "module": "GEOEXT",
@@ -1954,7 +2090,10 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r39-15-8.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"intersection\"]}, \"results\": {\"bindings\": [{\"intersection\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#gmlLiteral\", \"type\": \"literal\", \"value\": \"<gml:Polygon xmlns:gml=\\\"http://www.opengis.net/ont/gml\\\" srsName=\\\"http://www.opengis.net/def/crs/OGC/1.3/CRS84\\\"><gml:exterior><gml:LinearRing><gml:posList>-83.4 34.1 -83.6 34.1 -83.6 34.3 -83.4 34.3 -83.4 34.1</gml:posList></gml:LinearRing></gml:exterior></gml:Polygon>\"}}]}}": true,
+      "{\"head\": {\"vars\": [\"intersection\"]}, \"results\": {\"bindings\": [{\"intersection\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#wktLiteral\", \"type\": \"literal\", \"value\": \"POLYGON((-83.4 34.1,-83.6 34.1,-83.6 34.3,-83.4 34.3,-83.4 34.1))\"}}]}}": true
+    },
     "definition": "Requirement 39 (Part 15) (WKT-KML): Requirement 39 (Part 1) (WKT): Implementations shall support the function geof:intersection as a SPARQL extension function, consistent with definitions of these functions in Simple Features [OGCSFACA] ISO 19125-1, for non-DGGS geometry literals.",
     "label": "Requirement 39-15-8 (WKT-KML): Non-topological Query functions (Simple Features) geof:intersection",
     "module": "GEOEXT",
@@ -1963,7 +2102,10 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r39-15-9.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"intersection\"]}, \"results\": {\"bindings\": [{\"intersection\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#gmlLiteral\", \"type\": \"literal\", \"value\": \"<gml:Polygon xmlns:gml=\\\"http://www.opengis.net/ont/gml\\\" srsName=\\\"http://www.opengis.net/def/crs/OGC/1.3/CRS84\\\"><gml:exterior><gml:LinearRing><gml:posList>-83.4 34.1 -83.6 34.1 -83.6 34.3 -83.4 34.3 -83.4 34.1</gml:posList></gml:LinearRing></gml:exterior></gml:Polygon>\"}}]}}": true,
+      "{\"head\": {\"vars\": [\"intersection\"]}, \"results\": {\"bindings\": [{\"intersection\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#wktLiteral\", \"type\": \"literal\", \"value\": \"POLYGON((-83.4 34.1,-83.6 34.1,-83.6 34.3,-83.4 34.3,-83.4 34.1))\"}}]}}": true
+    },
     "definition": "Requirement 39 (Part 15) (WKT-DGGS): Requirement 39 (Part 1) (WKT): Implementations shall support the function geof:intersection as a SPARQL extension function, consistent with definitions of these functions in Simple Features [OGCSFACA] ISO 19125-1, for non-DGGS geometry literals.",
     "label": "Requirement 39-15-9 (WKT-DGGS): Non-topological Query functions (Simple Features) geof:intersection",
     "module": "GEOEXT",
@@ -2152,7 +2294,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r39-2-1.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"boundingCircle\"]}, \"results\": {\"bindings\": [{\"boundingCircle\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#wktLiteral\", \"type\": \"literal\", \"value\": \"POLYGON ((-83.2 34.5,-83.1833299118321 34.4818077910688,-83.1683088138642 34.462231915069,-83.1550510257217 34.4414213562373,-83.1436574471777 34.419534495492,-83.1342147902445 34.3967379050592,-83.1267949192431 34.3732050807569,-83.121454303872 34.3491151215876,-83.1182335894389 34.3246513666865,-83.1171572875254 34.3,-83.1182335894389 34.2753486333135,-83.121454303872 34.2508848784124,-83.1267949192431 34.2267949192431,-83.1342147902445 34.2032620949408,-83.1436574471777 34.1804655045079,-83.1550510257217 34.1585786437627,-83.1683088138642 34.1377680849309,-83.1833299118321 34.1181922089312,-83.2 34.1,-83.2181922089312 34.0833299118321,-83.2377680849309 34.0683088138642,-83.2585786437627 34.0550510257217,-83.280465504508 34.0436574471777,-83.3032620949408 34.0342147902445,-83.3267949192431 34.0267949192431,-83.3508848784124 34.021454303872,-83.3753486333135 34.0182335894389,-83.4 34.0171572875254,-83.4246513666865 34.0182335894389,-83.4491151215876 34.021454303872,-83.4732050807569 34.0267949192431,-83.4967379050592 34.0342147902445,-83.5195344954921 34.0436574471777,-83.5414213562373 34.0550510257217,-83.5622319150691 34.0683088138642,-83.5818077910688 34.0833299118321,-83.6 34.1,-83.6166700881679 34.1181922089312,-83.6316911861358 34.1377680849309,-83.6449489742783 34.1585786437627,-83.6563425528223 34.1804655045079,-83.6657852097555 34.2032620949408,-83.6732050807569 34.2267949192431,-83.678545696128 34.2508848784124,-83.6817664105611 34.2753486333135,-83.6828427124746 34.3,-83.6817664105611 34.3246513666865,-83.678545696128 34.3491151215876,-83.6732050807569 34.3732050807569,-83.6657852097555 34.3967379050592,-83.6563425528223 34.419534495492,-83.6449489742783 34.4414213562373,-83.6316911861358 34.462231915069,-83.6166700881679 34.4818077910688,-83.6 34.5,-83.5818077910688 34.5166700881679,-83.5622319150691 34.5316911861358,-83.5414213562373 34.5449489742783,-83.5195344954921 34.5563425528223,-83.4967379050592 34.5657852097555,-83.4732050807569 34.5732050807569,-83.4491151215876 34.578545696128,-83.4246513666865 34.5817664105611,-83.4 34.5828427124746,-83.3753486333135 34.5817664105611,-83.3508848784124 34.578545696128,-83.3267949192431 34.5732050807569,-83.3032620949408 34.5657852097555,-83.280465504508 34.5563425528223,-83.2585786437627 34.5449489742783,-83.2377680849309 34.5316911861358,-83.2181922089312 34.5166700881679,-83.2 34.5))\"}}]}}": true
+    },
     "definition": "Requirement 39 (Part 2) (WKT): Requirement 39 (Part 1) (WKT): Implementations shall support the function geof:boundingCircle as a SPARQL extension function, consistent with definitions of these functions in Simple Features [OGCSFACA] ISO 19125-1, for non-DGGS geometry literals.",
     "label": "Requirement 39-2-1 (WKT): Non-topological Query functions (Simple Features) geof:boundingCircle",
     "module": "GEOEXT",
@@ -2737,7 +2881,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r39-3-1.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"buffer\"]}, \"results\": {\"bindings\": [{\"buffer\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#wktLiteral\", \"type\": \"literal\", \"value\": \"POLYGON((-93.6 34.1,-93.6 34.5,-93.407852804032 36.450903220161,-92.838795325113 38.326834323651,-91.914696123025 40.055702330196,-90.671067811865 41.571067811865,-89.155702330196 42.814696123025,-87.426834323651 43.738795325113,-85.550903220161 44.307852804032,-83.6 44.5,-83.2 44.5,-81.249096779839 44.307852804032,-79.373165676349 43.738795325113,-77.644297669804 42.814696123025,-76.128932188135 41.571067811865,-74.885303876975 40.055702330196,-73.961204674887 38.326834323651,-73.392147195968 36.450903220161,-73.2 34.5,-73.2 34.1,-73.392147195968 32.149096779839,-73.961204674887 30.273165676349,-74.885303876975 28.544297669804,-76.128932188135 27.028932188135,-77.644297669804 25.785303876975,-79.373165676349 24.861204674887,-81.249096779839 24.292147195968,-83.2 24.1,-83.6 24.1,-85.550903220161 24.292147195968,-87.426834323651 24.861204674887,-89.155702330196 25.785303876975,-90.671067811865 27.028932188135,-91.914696123025 28.544297669804,-92.838795325113 30.273165676349,-93.407852804032 32.149096779839,-93.6 34.1))\"}}]}}": true
+    },
     "definition": "Requirement 39 (Part 3) (WKT): Requirement 39 (Part 1) (WKT): Implementations shall support the function geof:metricBuffer as a SPARQL extension function, consistent with definitions of these functions in Simple Features [OGCSFACA] ISO 19125-1, for non-DGGS geometry literals.",
     "label": "Requirement 39-3-1 (WKT): Non-topological Query functions (Simple Features) geof:metricBuffer",
     "module": "GEOEXT",
@@ -2782,7 +2928,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r39-4-1.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"buffer\"]}, \"results\": {\"bindings\": [{\"buffer\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#wktLiteral\", \"type\": \"literal\", \"value\": \"POLYGON((-93.6 34.1,-93.6 34.5,-93.407852804032 36.450903220161,-92.838795325113 38.326834323651,-91.914696123025 40.055702330196,-90.671067811865 41.571067811865,-89.155702330196 42.814696123025,-87.426834323651 43.738795325113,-85.550903220161 44.307852804032,-83.6 44.5,-83.2 44.5,-81.249096779839 44.307852804032,-79.373165676349 43.738795325113,-77.644297669804 42.814696123025,-76.128932188135 41.571067811865,-74.885303876975 40.055702330196,-73.961204674887 38.326834323651,-73.392147195968 36.450903220161,-73.2 34.5,-73.2 34.1,-73.392147195968 32.149096779839,-73.961204674887 30.273165676349,-74.885303876975 28.544297669804,-76.128932188135 27.028932188135,-77.644297669804 25.785303876975,-79.373165676349 24.861204674887,-81.249096779839 24.292147195968,-83.2 24.1,-83.6 24.1,-85.550903220161 24.292147195968,-87.426834323651 24.861204674887,-89.155702330196 25.785303876975,-90.671067811865 27.028932188135,-91.914696123025 28.544297669804,-92.838795325113 30.273165676349,-93.407852804032 32.149096779839,-93.6 34.1))\"}}]}}": true
+    },
     "definition": "Requirement 39 (Part 4) (WKT): Requirement 39 (Part 1) (WKT): Implementations shall support the function geof:buffer as a SPARQL extension function, consistent with definitions of these functions in Simple Features [OGCSFACA] ISO 19125-1, for non-DGGS geometry literals.",
     "label": "Requirement 39-4-1 (WKT): Non-topological Query functions (Simple Features) geof:buffer",
     "module": "GEOEXT",
@@ -2791,7 +2939,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r39-4-2.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"buffer\"]}, \"results\": {\"bindings\": [{\"buffer\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#gmlLiteral\", \"type\": \"literal\", \"value\": \"<gml:Polygon xmlns:gml=\\\"http://www.opengis.net/ont/gml\\\" srsName=\\\"http://www.opengis.net/def/crs/OGC/1.3/CRS84\\\"><gml:exterior><gml:LinearRing><gml:posList>-93.6 34.1 -93.6 34.5 -93.407852804032 36.450903220161 -92.838795325113 38.326834323651 -91.914696123025 40.055702330196 -90.671067811865 41.571067811865 -89.155702330196 42.814696123025 -87.426834323651 43.738795325113 -85.550903220161 44.307852804032 -83.6 44.5 -83.2 44.5 -81.249096779839 44.307852804032 -79.373165676349 43.738795325113 -77.644297669804 42.814696123025 -76.128932188135 41.571067811865 -74.885303876975 40.055702330196 -73.961204674887 38.326834323651 -73.392147195968 36.450903220161 -73.2 34.5 -73.2 34.1 -73.392147195968 32.149096779839 -73.961204674887 30.273165676349 -74.885303876975 28.544297669804 -76.128932188135 27.028932188135 -77.644297669804 25.785303876975 -79.373165676349 24.861204674887 -81.249096779839 24.292147195968 -83.2 24.1 -83.6 24.1 -85.550903220161 24.292147195968 -87.426834323651 24.861204674887 -89.155702330196 25.785303876975 -90.671067811865 27.028932188135 -91.914696123025 28.544297669804 -92.838795325113 30.273165676349 -93.407852804032 32.149096779839 -93.6 34.1</gml:posList></gml:LinearRing></gml:exterior></gml:Polygon>\"}}]}}": true
+    },
     "definition": "Requirement 39 (Part 4) (GML): Requirement 39 (Part 1) (WKT): Implementations shall support the function geof:buffer as a SPARQL extension function, consistent with definitions of these functions in Simple Features [OGCSFACA] ISO 19125-1, for non-DGGS geometry literals.",
     "label": "Requirement 39-4-2 (GML): Non-topological Query functions (Simple Features) geof:buffer",
     "module": "GEOEXT",
@@ -2827,7 +2977,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r39-5-1.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"centroid\"]}, \"results\": {\"bindings\": [{\"centroid\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#wktLiteral\", \"type\": \"literal\", \"value\": \"<http://www.opengis.net/def/crs/OGC/1.3/CRS84> Point(-83.4 34.3)\"}}]}}": true
+    },
     "definition": "Requirement 39 (Part 5) (WKT): Requirement 39 (Part 1) (WKT): Implementations shall support the function geof:centroid as a SPARQL extension function, consistent with definitions of these functions in Simple Features [OGCSFACA] ISO 19125-1, for non-DGGS geometry literals.",
     "label": "Requirement 39-5-1 (WKT): Non-topological Query functions (Simple Features) geof:centroid",
     "module": "GEOEXT",
@@ -2836,7 +2988,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r39-5-2.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"centroid\"]}, \"results\": {\"bindings\": [{\"centroid\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#gmlLiteral\", \"type\": \"literal\", \"value\": \"<gml:Point xmlns:gml=\\\\\\\"http://www.opengis.net/ont/gml\\\\\\\" srsName=\\\\\\\"http://www.opengis.net/def/crs/OGC/1.3/CRS84\\\\\\\"><gml:pos>-83.4 34.3</gml:pos></gml:Point>\"}}]}}": true
+    },
     "definition": "Requirement 39 (Part 5) (GML): Requirement 39 (Part 1) (WKT): Implementations shall support the function geof:centroid as a SPARQL extension function, consistent with definitions of these functions in Simple Features [OGCSFACA] ISO 19125-1, for non-DGGS geometry literals.",
     "label": "Requirement 39-5-2 (GML): Non-topological Query functions (Simple Features) geof:centroid",
     "module": "GEOEXT",
@@ -2845,7 +2999,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r39-5-3.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"centroid\"]}, \"results\": {\"bindings\": [{\"centroid\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#geoJSONLiteral\", \"type\": \"literal\", \"value\": \"{\\\\\\\"type\\\\\\\":\\\\\\\"Point\\\\\\\",\\\\\\\"coordinates\\\\\\\":[-83.4, 34.3]}\"}}]}}": true
+    },
     "definition": "Requirement 39 (Part 5) (GeoJSON): Requirement 39 (Part 1) (WKT): Implementations shall support the function geof:centroid as a SPARQL extension function, consistent with definitions of these functions in Simple Features [OGCSFACA] ISO 19125-1, for non-DGGS geometry literals.",
     "label": "Requirement 39-5-3 (GeoJSON): Non-topological Query functions (Simple Features) geof:centroid",
     "module": "GEOEXT",
@@ -2854,7 +3010,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r39-5-4.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"centroid\"]}, \"results\": {\"bindings\": [{\"centroid\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#kmlLiteral\", \"type\": \"literal\", \"value\": \"<Point><coordinates>-83.4,34.3</coordinates></Point>\"}}]}}": true
+    },
     "definition": "Requirement 39 (Part 5) (KML): Requirement 39 (Part 1) (WKT): Implementations shall support the function geof:centroid as a SPARQL extension function, consistent with definitions of these functions in Simple Features [OGCSFACA] ISO 19125-1, for non-DGGS geometry literals.",
     "label": "Requirement 39-5-4 (KML): Non-topological Query functions (Simple Features) geof:centroid",
     "module": "GEOEXT",
@@ -2863,7 +3021,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r39-5-5.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"centroid\"]}, \"results\": {\"bindings\": [{\"centroid\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#dggsLiteral\", \"type\": \"literal\", \"value\": \"<https://h3geo.org/res/7> CELLIST( 87f143649ffffff )\"}}]}}": true
+    },
     "definition": "Requirement 39 (Part 5) (DGGS): Requirement 39 (Part 1) (WKT): Implementations shall support the function geof:centroid as a SPARQL extension function, consistent with definitions of these functions in Simple Features [OGCSFACA] ISO 19125-1, for non-DGGS geometry literals.",
     "label": "Requirement 39-5-5 (DGGS): Non-topological Query functions (Simple Features) geof:centroid",
     "module": "GEOEXT",
@@ -2872,7 +3032,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r39-6-1.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"convexHull\"]}, \"results\": {\"bindings\": [{\"convexHull\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#wktLiteral\", \"type\": \"literal\", \"value\": \"POLYGON((-83.6 34.1,-83.6 34.5,-83.2 34.5,-83.2 34.1,-83.6 34.1))\"}}]}}": true
+    },
     "definition": "Requirement 39 (Part 6) (WKT): Requirement 39 (Part 1) (WKT): Implementations shall support the function geof:convexHull as a SPARQL extension function, consistent with definitions of these functions in Simple Features [OGCSFACA] ISO 19125-1, for non-DGGS geometry literals.",
     "label": "Requirement 39-6-1 (WKT): Non-topological Query functions (Simple Features) geof:convexHull",
     "module": "GEOEXT",
@@ -2881,7 +3043,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r39-6-2.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"convexHull\"]}, \"results\": {\"bindings\": [{\"convexHull\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#gmlLiteral\", \"type\": \"literal\", \"value\": \"<gml:Polygon xmlns:gml=\\\"http://www.opengis.net/ont/gml\\\" srsName=\\\"http://www.opengis.net/def/crs/OGC/1.3/CRS84\\\"><gml:exterior><gml:LinearRing><gml:posList>-83.6 34.1 -83.6 34.5 -83.2 34.5 -83.2 34.1 -83.6 34.1</gml:posList></gml:LinearRing></gml:exterior></gml:Polygon>\"}}]}}": true
+    },
     "definition": "Requirement 39 (Part 6) (GML): Requirement 39 (Part 1) (WKT): Implementations shall support the function geof:convexHull as a SPARQL extension function, consistent with definitions of these functions in Simple Features [OGCSFACA] ISO 19125-1, for non-DGGS geometry literals.",
     "label": "Requirement 39-6-2 (GML): Non-topological Query functions (Simple Features) geof:convexHull",
     "module": "GEOEXT",
@@ -2962,7 +3126,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r39-8-1.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"coordinateDimension\"]}, \"results\": {\"bindings\": [{\"coordinateDimension\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#integer\", \"type\": \"literal\", \"value\": \"2\"}}]}}": true
+    },
     "definition": "Requirement 39 (Part 8) (WKT): Requirement 39 (Part 1) (WKT): Implementations shall support the function geof:coordinateDimension as a SPARQL extension function, consistent with definitions of these functions in Simple Features [OGCSFACA] ISO 19125-1, for non-DGGS geometry literals.",
     "label": "Requirement 39-8-1 (WKT): Non-topological Query functions (Simple Features) geof:coordinateDimension",
     "module": "GEOEXT",
@@ -2971,7 +3137,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r39-8-2.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"coordinateDimension\"]}, \"results\": {\"bindings\": [{\"coordinateDimension\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#integer\", \"type\": \"literal\", \"value\": \"2\"}}]}}": true
+    },
     "definition": "Requirement 39 (Part 8) (GML): Requirement 39 (Part 1) (WKT): Implementations shall support the function geof:coordinateDimension as a SPARQL extension function, consistent with definitions of these functions in Simple Features [OGCSFACA] ISO 19125-1, for non-DGGS geometry literals.",
     "label": "Requirement 39-8-2 (GML): Non-topological Query functions (Simple Features) geof:coordinateDimension",
     "module": "GEOEXT",
@@ -2980,7 +3148,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r39-8-3.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"coordinateDimension\"]}, \"results\": {\"bindings\": [{\"coordinateDimension\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#integer\", \"type\": \"literal\", \"value\": \"2\"}}]}}": true
+    },
     "definition": "Requirement 39 (Part 8) (GeoJSON): Requirement 39 (Part 1) (WKT): Implementations shall support the function geof:coordinateDimension as a SPARQL extension function, consistent with definitions of these functions in Simple Features [OGCSFACA] ISO 19125-1, for non-DGGS geometry literals.",
     "label": "Requirement 39-8-3 (GeoJSON): Non-topological Query functions (Simple Features) geof:coordinateDimension",
     "module": "GEOEXT",
@@ -2989,7 +3159,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r39-8-4.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"coordinateDimension\"]}, \"results\": {\"bindings\": [{\"coordinateDimension\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#integer\", \"type\": \"literal\", \"value\": \"2\"}}]}}": true
+    },
     "definition": "Requirement 39 (Part 8) (KML): Requirement 39 (Part 1) (WKT): Implementations shall support the function geof:coordinateDimension as a SPARQL extension function, consistent with definitions of these functions in Simple Features [OGCSFACA] ISO 19125-1, for non-DGGS geometry literals.",
     "label": "Requirement 39-8-4 (KML): Non-topological Query functions (Simple Features) geof:coordinateDimension",
     "module": "GEOEXT",
@@ -2998,7 +3170,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r39-8-5.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"coordinateDimension\"]}, \"results\": {\"bindings\": [{\"coordinateDimension\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#integer\", \"type\": \"literal\", \"value\": \"2\"}}]}}": true
+    },
     "definition": "Requirement 39 (Part 8) (DGGS): Requirement 39 (Part 1) (WKT): Implementations shall support the function geof:coordinateDimension as a SPARQL extension function, consistent with definitions of these functions in Simple Features [OGCSFACA] ISO 19125-1, for non-DGGS geometry literals.",
     "label": "Requirement 39-8-5 (DGGS): Non-topological Query functions (Simple Features) geof:coordinateDimension",
     "module": "GEOEXT",
@@ -3007,7 +3181,10 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r39-9-1.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"difference\"]}, \"results\": {\"bindings\": [{\"difference\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#gmlLiteral\", \"type\": \"literal\", \"value\": \"<gml:Polygon srsName=\\\"http://www.opengis.net/def/crs/OGC/1.3/CRS84\\\" xmlns:gml=\\\"http://www.opengis.net/ont/gml\\\"><gml:exterior><gml:LinearRing><gml:posList>-83.6 34.3 -83.6 34.5 -83.2 34.5 -83.2 34.1 -83.4 34.1 -83.4 34.3 -83.6 34.3</gml:posList></gml:LinearRing></gml:exterior></gml:Polygon>\"}}]}}": true,
+      "{\"head\": {\"vars\": [\"difference\"]}, \"results\": {\"bindings\": [{\"difference\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#wktLiteral\", \"type\": \"literal\", \"value\": \"POLYGON((-83.6 34.3,-83.6 34.5,-83.2 34.5,-83.2 34.1,-83.4 34.1,-83.4 34.3,-83.6 34.3))\"}}]}}": true
+    },
     "definition": "Requirement 39 (Part 9) (WKT-WKT): Requirement 39 (Part 1) (WKT): Implementations shall support the function geof:difference as a SPARQL extension function, consistent with definitions of these functions in Simple Features [OGCSFACA] ISO 19125-1, for non-DGGS geometry literals.",
     "label": "Requirement 39-9-1 (WKT-WKT): Non-topological Query functions (Simple Features) geof:difference",
     "module": "GEOEXT",
@@ -3016,7 +3193,10 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r39-9-10.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"difference\"]}, \"results\": {\"bindings\": [{\"difference\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#gmlLiteral\", \"type\": \"literal\", \"value\": \"<gml:Polygon srsName=\\\"http://www.opengis.net/def/crs/OGC/1.3/CRS84\\\" xmlns:gml=\\\"http://www.opengis.net/ont/gml\\\"><gml:exterior><gml:LinearRing><gml:posList>-83.6 34.3 -83.6 34.5 -83.2 34.5 -83.2 34.1 -83.4 34.1 -83.4 34.3 -83.6 34.3</gml:posList></gml:LinearRing></gml:exterior></gml:Polygon>\"}}]}}": true,
+      "{\"head\": {\"vars\": [\"difference\"]}, \"results\": {\"bindings\": [{\"difference\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#wktLiteral\", \"type\": \"literal\", \"value\": \"POLYGON((-83.6 34.3,-83.6 34.5,-83.2 34.5,-83.2 34.1,-83.4 34.1,-83.4 34.3,-83.6 34.3))\"}}]}}": true
+    },
     "definition": "Requirement 39 (Part 9) (GML-WKT): Requirement 39 (Part 1) (WKT): Implementations shall support the function geof:difference as a SPARQL extension function, consistent with definitions of these functions in Simple Features [OGCSFACA] ISO 19125-1, for non-DGGS geometry literals.",
     "label": "Requirement 39-9-10 (GML-WKT): Non-topological Query functions (Simple Features) geof:difference",
     "module": "GEOEXT",
@@ -3025,7 +3205,10 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r39-9-11.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"difference\"]}, \"results\": {\"bindings\": [{\"difference\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#gmlLiteral\", \"type\": \"literal\", \"value\": \"<gml:Polygon srsName=\\\"http://www.opengis.net/def/crs/OGC/1.3/CRS84\\\" xmlns:gml=\\\"http://www.opengis.net/ont/gml\\\"><gml:exterior><gml:LinearRing><gml:posList>-83.6 34.3 -83.6 34.5 -83.2 34.5 -83.2 34.1 -83.4 34.1 -83.4 34.3 -83.6 34.3</gml:posList></gml:LinearRing></gml:exterior></gml:Polygon>\"}}]}}": true,
+      "{\"head\": {\"vars\": [\"difference\"]}, \"results\": {\"bindings\": [{\"difference\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#wktLiteral\", \"type\": \"literal\", \"value\": \"POLYGON((-83.6 34.3,-83.6 34.5,-83.2 34.5,-83.2 34.1,-83.4 34.1,-83.4 34.3,-83.6 34.3))\"}}]}}": true
+    },
     "definition": "Requirement 39 (Part 9) (GML-GeoJSON): Requirement 39 (Part 1) (WKT): Implementations shall support the function geof:difference as a SPARQL extension function, consistent with definitions of these functions in Simple Features [OGCSFACA] ISO 19125-1, for non-DGGS geometry literals.",
     "label": "Requirement 39-9-11 (GML-GeoJSON): Non-topological Query functions (Simple Features) geof:difference",
     "module": "GEOEXT",
@@ -3034,7 +3217,10 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r39-9-12.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"difference\"]}, \"results\": {\"bindings\": [{\"difference\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#gmlLiteral\", \"type\": \"literal\", \"value\": \"<gml:Polygon srsName=\\\"http://www.opengis.net/def/crs/OGC/1.3/CRS84\\\" xmlns:gml=\\\"http://www.opengis.net/ont/gml\\\"><gml:exterior><gml:LinearRing><gml:posList>-83.6 34.3 -83.6 34.5 -83.2 34.5 -83.2 34.1 -83.4 34.1 -83.4 34.3 -83.6 34.3</gml:posList></gml:LinearRing></gml:exterior></gml:Polygon>\"}}]}}": true,
+      "{\"head\": {\"vars\": [\"difference\"]}, \"results\": {\"bindings\": [{\"difference\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#wktLiteral\", \"type\": \"literal\", \"value\": \"POLYGON((-83.6 34.3,-83.6 34.5,-83.2 34.5,-83.2 34.1,-83.4 34.1,-83.4 34.3,-83.6 34.3))\"}}]}}": true
+    },
     "definition": "Requirement 39 (Part 9) (GML-KML): Requirement 39 (Part 1) (WKT): Implementations shall support the function geof:difference as a SPARQL extension function, consistent with definitions of these functions in Simple Features [OGCSFACA] ISO 19125-1, for non-DGGS geometry literals.",
     "label": "Requirement 39-9-12 (GML-KML): Non-topological Query functions (Simple Features) geof:difference",
     "module": "GEOEXT",
@@ -3043,7 +3229,10 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r39-9-13.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"difference\"]}, \"results\": {\"bindings\": [{\"difference\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#gmlLiteral\", \"type\": \"literal\", \"value\": \"<gml:Polygon srsName=\\\"http://www.opengis.net/def/crs/OGC/1.3/CRS84\\\" xmlns:gml=\\\"http://www.opengis.net/ont/gml\\\"><gml:exterior><gml:LinearRing><gml:posList>-83.6 34.3 -83.6 34.5 -83.2 34.5 -83.2 34.1 -83.4 34.1 -83.4 34.3 -83.6 34.3</gml:posList></gml:LinearRing></gml:exterior></gml:Polygon>\"}}]}}": true,
+      "{\"head\": {\"vars\": [\"difference\"]}, \"results\": {\"bindings\": [{\"difference\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#wktLiteral\", \"type\": \"literal\", \"value\": \"POLYGON((-83.6 34.3,-83.6 34.5,-83.2 34.5,-83.2 34.1,-83.4 34.1,-83.4 34.3,-83.6 34.3))\"}}]}}": true
+    },
     "definition": "Requirement 39 (Part 9) (GML-DGGS): Requirement 39 (Part 1) (WKT): Implementations shall support the function geof:difference as a SPARQL extension function, consistent with definitions of these functions in Simple Features [OGCSFACA] ISO 19125-1, for non-DGGS geometry literals.",
     "label": "Requirement 39-9-13 (GML-DGGS): Non-topological Query functions (Simple Features) geof:difference",
     "module": "GEOEXT",
@@ -3052,7 +3241,10 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r39-9-14.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"difference\"]}, \"results\": {\"bindings\": [{\"difference\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#gmlLiteral\", \"type\": \"literal\", \"value\": \"<gml:Polygon srsName=\\\"http://www.opengis.net/def/crs/OGC/1.3/CRS84\\\" xmlns:gml=\\\"http://www.opengis.net/ont/gml\\\"><gml:exterior><gml:LinearRing><gml:posList>-83.6 34.3 -83.6 34.5 -83.2 34.5 -83.2 34.1 -83.4 34.1 -83.4 34.3 -83.6 34.3</gml:posList></gml:LinearRing></gml:exterior></gml:Polygon>\"}}]}}": true,
+      "{\"head\": {\"vars\": [\"difference\"]}, \"results\": {\"bindings\": [{\"difference\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#wktLiteral\", \"type\": \"literal\", \"value\": \"POLYGON((-83.6 34.3,-83.6 34.5,-83.2 34.5,-83.2 34.1,-83.4 34.1,-83.4 34.3,-83.6 34.3))\"}}]}}": true
+    },
     "definition": "Requirement 39 (Part 9) (GeoJSON-WKT): Requirement 39 (Part 1) (WKT): Implementations shall support the function geof:difference as a SPARQL extension function, consistent with definitions of these functions in Simple Features [OGCSFACA] ISO 19125-1, for non-DGGS geometry literals.",
     "label": "Requirement 39-9-14 (GeoJSON-WKT): Non-topological Query functions (Simple Features) geof:difference",
     "module": "GEOEXT",
@@ -3061,7 +3253,10 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r39-9-15.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"difference\"]}, \"results\": {\"bindings\": [{\"difference\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#gmlLiteral\", \"type\": \"literal\", \"value\": \"<gml:Polygon srsName=\\\"http://www.opengis.net/def/crs/OGC/1.3/CRS84\\\" xmlns:gml=\\\"http://www.opengis.net/ont/gml\\\"><gml:exterior><gml:LinearRing><gml:posList>-83.6 34.3 -83.6 34.5 -83.2 34.5 -83.2 34.1 -83.4 34.1 -83.4 34.3 -83.6 34.3</gml:posList></gml:LinearRing></gml:exterior></gml:Polygon>\"}}]}}": true,
+      "{\"head\": {\"vars\": [\"difference\"]}, \"results\": {\"bindings\": [{\"difference\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#wktLiteral\", \"type\": \"literal\", \"value\": \"POLYGON((-83.6 34.3,-83.6 34.5,-83.2 34.5,-83.2 34.1,-83.4 34.1,-83.4 34.3,-83.6 34.3))\"}}]}}": true
+    },
     "definition": "Requirement 39 (Part 9) (GeoJSON-GML): Requirement 39 (Part 1) (WKT): Implementations shall support the function geof:difference as a SPARQL extension function, consistent with definitions of these functions in Simple Features [OGCSFACA] ISO 19125-1, for non-DGGS geometry literals.",
     "label": "Requirement 39-9-15 (GeoJSON-GML): Non-topological Query functions (Simple Features) geof:difference",
     "module": "GEOEXT",
@@ -3070,7 +3265,10 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r39-9-16.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"difference\"]}, \"results\": {\"bindings\": [{\"difference\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#gmlLiteral\", \"type\": \"literal\", \"value\": \"<gml:Polygon srsName=\\\"http://www.opengis.net/def/crs/OGC/1.3/CRS84\\\" xmlns:gml=\\\"http://www.opengis.net/ont/gml\\\"><gml:exterior><gml:LinearRing><gml:posList>-83.6 34.3 -83.6 34.5 -83.2 34.5 -83.2 34.1 -83.4 34.1 -83.4 34.3 -83.6 34.3</gml:posList></gml:LinearRing></gml:exterior></gml:Polygon>\"}}]}}": true,
+      "{\"head\": {\"vars\": [\"difference\"]}, \"results\": {\"bindings\": [{\"difference\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#wktLiteral\", \"type\": \"literal\", \"value\": \"POLYGON((-83.6 34.3,-83.6 34.5,-83.2 34.5,-83.2 34.1,-83.4 34.1,-83.4 34.3,-83.6 34.3))\"}}]}}": true
+    },
     "definition": "Requirement 39 (Part 9) (GeoJSON-KML): Requirement 39 (Part 1) (WKT): Implementations shall support the function geof:difference as a SPARQL extension function, consistent with definitions of these functions in Simple Features [OGCSFACA] ISO 19125-1, for non-DGGS geometry literals.",
     "label": "Requirement 39-9-16 (GeoJSON-KML): Non-topological Query functions (Simple Features) geof:difference",
     "module": "GEOEXT",
@@ -3079,7 +3277,10 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r39-9-17.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"difference\"]}, \"results\": {\"bindings\": [{\"difference\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#gmlLiteral\", \"type\": \"literal\", \"value\": \"<gml:Polygon srsName=\\\"http://www.opengis.net/def/crs/OGC/1.3/CRS84\\\" xmlns:gml=\\\"http://www.opengis.net/ont/gml\\\"><gml:exterior><gml:LinearRing><gml:posList>-83.6 34.3 -83.6 34.5 -83.2 34.5 -83.2 34.1 -83.4 34.1 -83.4 34.3 -83.6 34.3</gml:posList></gml:LinearRing></gml:exterior></gml:Polygon>\"}}]}}": true,
+      "{\"head\": {\"vars\": [\"difference\"]}, \"results\": {\"bindings\": [{\"difference\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#wktLiteral\", \"type\": \"literal\", \"value\": \"POLYGON((-83.6 34.3,-83.6 34.5,-83.2 34.5,-83.2 34.1,-83.4 34.1,-83.4 34.3,-83.6 34.3))\"}}]}}": true
+    },
     "definition": "Requirement 39 (Part 9) (GeoJSON-DGGS): Requirement 39 (Part 1) (WKT): Implementations shall support the function geof:difference as a SPARQL extension function, consistent with definitions of these functions in Simple Features [OGCSFACA] ISO 19125-1, for non-DGGS geometry literals.",
     "label": "Requirement 39-9-17 (GeoJSON-DGGS): Non-topological Query functions (Simple Features) geof:difference",
     "module": "GEOEXT",
@@ -3088,7 +3289,10 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r39-9-18.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"difference\"]}, \"results\": {\"bindings\": [{\"difference\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#gmlLiteral\", \"type\": \"literal\", \"value\": \"<gml:Polygon srsName=\\\"http://www.opengis.net/def/crs/OGC/1.3/CRS84\\\" xmlns:gml=\\\"http://www.opengis.net/ont/gml\\\"><gml:exterior><gml:LinearRing><gml:posList>-83.6 34.3 -83.6 34.5 -83.2 34.5 -83.2 34.1 -83.4 34.1 -83.4 34.3 -83.6 34.3</gml:posList></gml:LinearRing></gml:exterior></gml:Polygon>\"}}]}}": true,
+      "{\"head\": {\"vars\": [\"difference\"]}, \"results\": {\"bindings\": [{\"difference\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#wktLiteral\", \"type\": \"literal\", \"value\": \"POLYGON((-83.6 34.3,-83.6 34.5,-83.2 34.5,-83.2 34.1,-83.4 34.1,-83.4 34.3,-83.6 34.3))\"}}]}}": true
+    },
     "definition": "Requirement 39 (Part 9) (KML-WKT): Requirement 39 (Part 1) (WKT): Implementations shall support the function geof:difference as a SPARQL extension function, consistent with definitions of these functions in Simple Features [OGCSFACA] ISO 19125-1, for non-DGGS geometry literals.",
     "label": "Requirement 39-9-18 (KML-WKT): Non-topological Query functions (Simple Features) geof:difference",
     "module": "GEOEXT",
@@ -3097,7 +3301,10 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r39-9-19.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"difference\"]}, \"results\": {\"bindings\": [{\"difference\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#gmlLiteral\", \"type\": \"literal\", \"value\": \"<gml:Polygon srsName=\\\"http://www.opengis.net/def/crs/OGC/1.3/CRS84\\\" xmlns:gml=\\\"http://www.opengis.net/ont/gml\\\"><gml:exterior><gml:LinearRing><gml:posList>-83.6 34.3 -83.6 34.5 -83.2 34.5 -83.2 34.1 -83.4 34.1 -83.4 34.3 -83.6 34.3</gml:posList></gml:LinearRing></gml:exterior></gml:Polygon>\"}}]}}": true,
+      "{\"head\": {\"vars\": [\"difference\"]}, \"results\": {\"bindings\": [{\"difference\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#wktLiteral\", \"type\": \"literal\", \"value\": \"POLYGON((-83.6 34.3,-83.6 34.5,-83.2 34.5,-83.2 34.1,-83.4 34.1,-83.4 34.3,-83.6 34.3))\"}}]}}": true
+    },
     "definition": "Requirement 39 (Part 9) (KML-GML): Requirement 39 (Part 1) (WKT): Implementations shall support the function geof:difference as a SPARQL extension function, consistent with definitions of these functions in Simple Features [OGCSFACA] ISO 19125-1, for non-DGGS geometry literals.",
     "label": "Requirement 39-9-19 (KML-GML): Non-topological Query functions (Simple Features) geof:difference",
     "module": "GEOEXT",
@@ -3106,7 +3313,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r39-9-2.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"difference\"]}, \"results\": {\"bindings\": [{\"difference\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#gmlLiteral\", \"type\": \"literal\", \"value\": \"<gml:Polygon srsName=\\\"http://www.opengis.net/def/crs/OGC/1.3/CRS84\\\" xmlns:gml=\\\"http://www.opengis.net/ont/gml\\\"><gml:exterior><gml:LinearRing><gml:posList>-83.6 34.3 -83.6 34.5 -83.2 34.5 -83.2 34.1 -83.4 34.1 -83.4 34.3 -83.6 34.3</gml:posList></gml:LinearRing></gml:exterior></gml:Polygon>\"}}]}}": true
+    },
     "definition": "Requirement 39 (Part 9) (GML-GML): Requirement 39 (Part 1) (WKT): Implementations shall support the function geof:difference as a SPARQL extension function, consistent with definitions of these functions in Simple Features [OGCSFACA] ISO 19125-1, for non-DGGS geometry literals.",
     "label": "Requirement 39-9-2 (GML-GML): Non-topological Query functions (Simple Features) geof:difference",
     "module": "GEOEXT",
@@ -3115,7 +3324,10 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r39-9-20.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"difference\"]}, \"results\": {\"bindings\": [{\"difference\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#gmlLiteral\", \"type\": \"literal\", \"value\": \"<gml:Polygon srsName=\\\"http://www.opengis.net/def/crs/OGC/1.3/CRS84\\\" xmlns:gml=\\\"http://www.opengis.net/ont/gml\\\"><gml:exterior><gml:LinearRing><gml:posList>-83.6 34.3 -83.6 34.5 -83.2 34.5 -83.2 34.1 -83.4 34.1 -83.4 34.3 -83.6 34.3</gml:posList></gml:LinearRing></gml:exterior></gml:Polygon>\"}}]}}": true,
+      "{\"head\": {\"vars\": [\"difference\"]}, \"results\": {\"bindings\": [{\"difference\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#wktLiteral\", \"type\": \"literal\", \"value\": \"POLYGON((-83.6 34.3,-83.6 34.5,-83.2 34.5,-83.2 34.1,-83.4 34.1,-83.4 34.3,-83.6 34.3))\"}}]}}": true
+    },
     "definition": "Requirement 39 (Part 9) (KML-GeoJSON): Requirement 39 (Part 1) (WKT): Implementations shall support the function geof:difference as a SPARQL extension function, consistent with definitions of these functions in Simple Features [OGCSFACA] ISO 19125-1, for non-DGGS geometry literals.",
     "label": "Requirement 39-9-20 (KML-GeoJSON): Non-topological Query functions (Simple Features) geof:difference",
     "module": "GEOEXT",
@@ -3124,7 +3336,10 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r39-9-21.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"difference\"]}, \"results\": {\"bindings\": [{\"difference\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#gmlLiteral\", \"type\": \"literal\", \"value\": \"<gml:Polygon srsName=\\\"http://www.opengis.net/def/crs/OGC/1.3/CRS84\\\" xmlns:gml=\\\"http://www.opengis.net/ont/gml\\\"><gml:exterior><gml:LinearRing><gml:posList>-83.6 34.3 -83.6 34.5 -83.2 34.5 -83.2 34.1 -83.4 34.1 -83.4 34.3 -83.6 34.3</gml:posList></gml:LinearRing></gml:exterior></gml:Polygon>\"}}]}}": true,
+      "{\"head\": {\"vars\": [\"difference\"]}, \"results\": {\"bindings\": [{\"difference\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#wktLiteral\", \"type\": \"literal\", \"value\": \"POLYGON((-83.6 34.3,-83.6 34.5,-83.2 34.5,-83.2 34.1,-83.4 34.1,-83.4 34.3,-83.6 34.3))\"}}]}}": true
+    },
     "definition": "Requirement 39 (Part 9) (KML-DGGS): Requirement 39 (Part 1) (WKT): Implementations shall support the function geof:difference as a SPARQL extension function, consistent with definitions of these functions in Simple Features [OGCSFACA] ISO 19125-1, for non-DGGS geometry literals.",
     "label": "Requirement 39-9-21 (KML-DGGS): Non-topological Query functions (Simple Features) geof:difference",
     "module": "GEOEXT",
@@ -3133,7 +3348,10 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r39-9-22.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"difference\"]}, \"results\": {\"bindings\": [{\"difference\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#gmlLiteral\", \"type\": \"literal\", \"value\": \"<gml:Polygon srsName=\\\"http://www.opengis.net/def/crs/OGC/1.3/CRS84\\\" xmlns:gml=\\\"http://www.opengis.net/ont/gml\\\"><gml:exterior><gml:LinearRing><gml:posList>-83.6 34.3 -83.6 34.5 -83.2 34.5 -83.2 34.1 -83.4 34.1 -83.4 34.3 -83.6 34.3</gml:posList></gml:LinearRing></gml:exterior></gml:Polygon>\"}}]}}": true,
+      "{\"head\": {\"vars\": [\"difference\"]}, \"results\": {\"bindings\": [{\"difference\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#wktLiteral\", \"type\": \"literal\", \"value\": \"POLYGON((-83.6 34.3,-83.6 34.5,-83.2 34.5,-83.2 34.1,-83.4 34.1,-83.4 34.3,-83.6 34.3))\"}}]}}": true
+    },
     "definition": "Requirement 39 (Part 9) (DGGS-WKT): Requirement 39 (Part 1) (WKT): Implementations shall support the function geof:difference as a SPARQL extension function, consistent with definitions of these functions in Simple Features [OGCSFACA] ISO 19125-1, for non-DGGS geometry literals.",
     "label": "Requirement 39-9-22 (DGGS-WKT): Non-topological Query functions (Simple Features) geof:difference",
     "module": "GEOEXT",
@@ -3142,7 +3360,10 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r39-9-23.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"difference\"]}, \"results\": {\"bindings\": [{\"difference\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#gmlLiteral\", \"type\": \"literal\", \"value\": \"<gml:Polygon srsName=\\\"http://www.opengis.net/def/crs/OGC/1.3/CRS84\\\" xmlns:gml=\\\"http://www.opengis.net/ont/gml\\\"><gml:exterior><gml:LinearRing><gml:posList>-83.6 34.3 -83.6 34.5 -83.2 34.5 -83.2 34.1 -83.4 34.1 -83.4 34.3 -83.6 34.3</gml:posList></gml:LinearRing></gml:exterior></gml:Polygon>\"}}]}}": true,
+      "{\"head\": {\"vars\": [\"difference\"]}, \"results\": {\"bindings\": [{\"difference\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#wktLiteral\", \"type\": \"literal\", \"value\": \"POLYGON((-83.6 34.3,-83.6 34.5,-83.2 34.5,-83.2 34.1,-83.4 34.1,-83.4 34.3,-83.6 34.3))\"}}]}}": true
+    },
     "definition": "Requirement 39 (Part 9) (DGGS-GML): Requirement 39 (Part 1) (WKT): Implementations shall support the function geof:difference as a SPARQL extension function, consistent with definitions of these functions in Simple Features [OGCSFACA] ISO 19125-1, for non-DGGS geometry literals.",
     "label": "Requirement 39-9-23 (DGGS-GML): Non-topological Query functions (Simple Features) geof:difference",
     "module": "GEOEXT",
@@ -3151,7 +3372,10 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r39-9-24.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"difference\"]}, \"results\": {\"bindings\": [{\"difference\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#gmlLiteral\", \"type\": \"literal\", \"value\": \"<gml:Polygon srsName=\\\"http://www.opengis.net/def/crs/OGC/1.3/CRS84\\\" xmlns:gml=\\\"http://www.opengis.net/ont/gml\\\"><gml:exterior><gml:LinearRing><gml:posList>-83.6 34.3 -83.6 34.5 -83.2 34.5 -83.2 34.1 -83.4 34.1 -83.4 34.3 -83.6 34.3</gml:posList></gml:LinearRing></gml:exterior></gml:Polygon>\"}}]}}": true,
+      "{\"head\": {\"vars\": [\"difference\"]}, \"results\": {\"bindings\": [{\"difference\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#wktLiteral\", \"type\": \"literal\", \"value\": \"POLYGON((-83.6 34.3,-83.6 34.5,-83.2 34.5,-83.2 34.1,-83.4 34.1,-83.4 34.3,-83.6 34.3))\"}}]}}": true
+    },
     "definition": "Requirement 39 (Part 9) (DGGS-GeoJSON): Requirement 39 (Part 1) (WKT): Implementations shall support the function geof:difference as a SPARQL extension function, consistent with definitions of these functions in Simple Features [OGCSFACA] ISO 19125-1, for non-DGGS geometry literals.",
     "label": "Requirement 39-9-24 (DGGS-GeoJSON): Non-topological Query functions (Simple Features) geof:difference",
     "module": "GEOEXT",
@@ -3160,7 +3384,10 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r39-9-25.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"difference\"]}, \"results\": {\"bindings\": [{\"difference\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#gmlLiteral\", \"type\": \"literal\", \"value\": \"<gml:Polygon srsName=\\\"http://www.opengis.net/def/crs/OGC/1.3/CRS84\\\" xmlns:gml=\\\"http://www.opengis.net/ont/gml\\\"><gml:exterior><gml:LinearRing><gml:posList>-83.6 34.3 -83.6 34.5 -83.2 34.5 -83.2 34.1 -83.4 34.1 -83.4 34.3 -83.6 34.3</gml:posList></gml:LinearRing></gml:exterior></gml:Polygon>\"}}]}}": true,
+      "{\"head\": {\"vars\": [\"difference\"]}, \"results\": {\"bindings\": [{\"difference\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#wktLiteral\", \"type\": \"literal\", \"value\": \"POLYGON((-83.6 34.3,-83.6 34.5,-83.2 34.5,-83.2 34.1,-83.4 34.1,-83.4 34.3,-83.6 34.3))\"}}]}}": true
+    },
     "definition": "Requirement 39 (Part 9) (DGGS-KML): Requirement 39 (Part 1) (WKT): Implementations shall support the function geof:difference as a SPARQL extension function, consistent with definitions of these functions in Simple Features [OGCSFACA] ISO 19125-1, for non-DGGS geometry literals.",
     "label": "Requirement 39-9-25 (DGGS-KML): Non-topological Query functions (Simple Features) geof:difference",
     "module": "GEOEXT",
@@ -3169,7 +3396,10 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r39-9-3.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"difference\"]}, \"results\": {\"bindings\": [{\"difference\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#gmlLiteral\", \"type\": \"literal\", \"value\": \"<gml:Polygon srsName=\\\"http://www.opengis.net/def/crs/OGC/1.3/CRS84\\\" xmlns:gml=\\\"http://www.opengis.net/ont/gml\\\"><gml:exterior><gml:LinearRing><gml:posList>-83.6 34.3 -83.6 34.5 -83.2 34.5 -83.2 34.1 -83.4 34.1 -83.4 34.3 -83.6 34.3</gml:posList></gml:LinearRing></gml:exterior></gml:Polygon>\"}}]}}": true,
+      "{\"head\": {\"vars\": [\"difference\"]}, \"results\": {\"bindings\": [{\"difference\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#wktLiteral\", \"type\": \"literal\", \"value\": \"POLYGON((-83.6 34.3,-83.6 34.5,-83.2 34.5,-83.2 34.1,-83.4 34.1,-83.4 34.3,-83.6 34.3))\"}}]}}": true
+    },
     "definition": "Requirement 39 (Part 9) (GeoJSON-GeoJSON): Requirement 39 (Part 1) (WKT): Implementations shall support the function geof:difference as a SPARQL extension function, consistent with definitions of these functions in Simple Features [OGCSFACA] ISO 19125-1, for non-DGGS geometry literals.",
     "label": "Requirement 39-9-3 (GeoJSON-GeoJSON): Non-topological Query functions (Simple Features) geof:difference",
     "module": "GEOEXT",
@@ -3178,7 +3408,10 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r39-9-4.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"difference\"]}, \"results\": {\"bindings\": [{\"difference\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#gmlLiteral\", \"type\": \"literal\", \"value\": \"<gml:Polygon srsName=\\\"http://www.opengis.net/def/crs/OGC/1.3/CRS84\\\" xmlns:gml=\\\"http://www.opengis.net/ont/gml\\\"><gml:exterior><gml:LinearRing><gml:posList>-83.6 34.3 -83.6 34.5 -83.2 34.5 -83.2 34.1 -83.4 34.1 -83.4 34.3 -83.6 34.3</gml:posList></gml:LinearRing></gml:exterior></gml:Polygon>\"}}]}}": true,
+      "{\"head\": {\"vars\": [\"difference\"]}, \"results\": {\"bindings\": [{\"difference\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#wktLiteral\", \"type\": \"literal\", \"value\": \"POLYGON((-83.6 34.3,-83.6 34.5,-83.2 34.5,-83.2 34.1,-83.4 34.1,-83.4 34.3,-83.6 34.3))\"}}]}}": true
+    },
     "definition": "Requirement 39 (Part 9) (KML-KML): Requirement 39 (Part 1) (WKT): Implementations shall support the function geof:difference as a SPARQL extension function, consistent with definitions of these functions in Simple Features [OGCSFACA] ISO 19125-1, for non-DGGS geometry literals.",
     "label": "Requirement 39-9-4 (KML-KML): Non-topological Query functions (Simple Features) geof:difference",
     "module": "GEOEXT",
@@ -3187,7 +3420,10 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r39-9-5.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"difference\"]}, \"results\": {\"bindings\": [{\"difference\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#gmlLiteral\", \"type\": \"literal\", \"value\": \"<gml:Polygon srsName=\\\"http://www.opengis.net/def/crs/OGC/1.3/CRS84\\\" xmlns:gml=\\\"http://www.opengis.net/ont/gml\\\"><gml:exterior><gml:LinearRing><gml:posList>-83.6 34.3 -83.6 34.5 -83.2 34.5 -83.2 34.1 -83.4 34.1 -83.4 34.3 -83.6 34.3</gml:posList></gml:LinearRing></gml:exterior></gml:Polygon>\"}}]}}": true,
+      "{\"head\": {\"vars\": [\"difference\"]}, \"results\": {\"bindings\": [{\"difference\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#wktLiteral\", \"type\": \"literal\", \"value\": \"POLYGON((-83.6 34.3,-83.6 34.5,-83.2 34.5,-83.2 34.1,-83.4 34.1,-83.4 34.3,-83.6 34.3))\"}}]}}": true
+    },
     "definition": "Requirement 39 (Part 9) (DGGS-DGGS): Requirement 39 (Part 1) (WKT): Implementations shall support the function geof:difference as a SPARQL extension function, consistent with definitions of these functions in Simple Features [OGCSFACA] ISO 19125-1, for non-DGGS geometry literals.",
     "label": "Requirement 39-9-5 (DGGS-DGGS): Non-topological Query functions (Simple Features) geof:difference",
     "module": "GEOEXT",
@@ -3196,7 +3432,10 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r39-9-6.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"difference\"]}, \"results\": {\"bindings\": [{\"difference\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#gmlLiteral\", \"type\": \"literal\", \"value\": \"<gml:Polygon srsName=\\\"http://www.opengis.net/def/crs/OGC/1.3/CRS84\\\" xmlns:gml=\\\"http://www.opengis.net/ont/gml\\\"><gml:exterior><gml:LinearRing><gml:posList>-83.6 34.3 -83.6 34.5 -83.2 34.5 -83.2 34.1 -83.4 34.1 -83.4 34.3 -83.6 34.3</gml:posList></gml:LinearRing></gml:exterior></gml:Polygon>\"}}]}}": true,
+      "{\"head\": {\"vars\": [\"difference\"]}, \"results\": {\"bindings\": [{\"difference\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#wktLiteral\", \"type\": \"literal\", \"value\": \"POLYGON((-83.6 34.3,-83.6 34.5,-83.2 34.5,-83.2 34.1,-83.4 34.1,-83.4 34.3,-83.6 34.3))\"}}]}}": true
+    },
     "definition": "Requirement 39 (Part 9) (WKT-GML): Requirement 39 (Part 1) (WKT): Implementations shall support the function geof:difference as a SPARQL extension function, consistent with definitions of these functions in Simple Features [OGCSFACA] ISO 19125-1, for non-DGGS geometry literals.",
     "label": "Requirement 39-9-6 (WKT-GML): Non-topological Query functions (Simple Features) geof:difference",
     "module": "GEOEXT",
@@ -3205,7 +3444,10 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r39-9-7.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"difference\"]}, \"results\": {\"bindings\": [{\"difference\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#gmlLiteral\", \"type\": \"literal\", \"value\": \"<gml:Polygon srsName=\\\"http://www.opengis.net/def/crs/OGC/1.3/CRS84\\\" xmlns:gml=\\\"http://www.opengis.net/ont/gml\\\"><gml:exterior><gml:LinearRing><gml:posList>-83.6 34.3 -83.6 34.5 -83.2 34.5 -83.2 34.1 -83.4 34.1 -83.4 34.3 -83.6 34.3</gml:posList></gml:LinearRing></gml:exterior></gml:Polygon>\"}}]}}": true,
+      "{\"head\": {\"vars\": [\"difference\"]}, \"results\": {\"bindings\": [{\"difference\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#wktLiteral\", \"type\": \"literal\", \"value\": \"POLYGON((-83.6 34.3,-83.6 34.5,-83.2 34.5,-83.2 34.1,-83.4 34.1,-83.4 34.3,-83.6 34.3))\"}}]}}": true
+    },
     "definition": "Requirement 39 (Part 9) (WKT-GeoJSON): Requirement 39 (Part 1) (WKT): Implementations shall support the function geof:difference as a SPARQL extension function, consistent with definitions of these functions in Simple Features [OGCSFACA] ISO 19125-1, for non-DGGS geometry literals.",
     "label": "Requirement 39-9-7 (WKT-GeoJSON): Non-topological Query functions (Simple Features) geof:difference",
     "module": "GEOEXT",
@@ -3214,7 +3456,10 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r39-9-8.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"difference\"]}, \"results\": {\"bindings\": [{\"difference\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#gmlLiteral\", \"type\": \"literal\", \"value\": \"<gml:Polygon srsName=\\\"http://www.opengis.net/def/crs/OGC/1.3/CRS84\\\" xmlns:gml=\\\"http://www.opengis.net/ont/gml\\\"><gml:exterior><gml:LinearRing><gml:posList>-83.6 34.3 -83.6 34.5 -83.2 34.5 -83.2 34.1 -83.4 34.1 -83.4 34.3 -83.6 34.3</gml:posList></gml:LinearRing></gml:exterior></gml:Polygon>\"}}]}}": true,
+      "{\"head\": {\"vars\": [\"difference\"]}, \"results\": {\"bindings\": [{\"difference\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#wktLiteral\", \"type\": \"literal\", \"value\": \"POLYGON((-83.6 34.3,-83.6 34.5,-83.2 34.5,-83.2 34.1,-83.4 34.1,-83.4 34.3,-83.6 34.3))\"}}]}}": true
+    },
     "definition": "Requirement 39 (Part 9) (WKT-KML): Requirement 39 (Part 1) (WKT): Implementations shall support the function geof:difference as a SPARQL extension function, consistent with definitions of these functions in Simple Features [OGCSFACA] ISO 19125-1, for non-DGGS geometry literals.",
     "label": "Requirement 39-9-8 (WKT-KML): Non-topological Query functions (Simple Features) geof:difference",
     "module": "GEOEXT",
@@ -3223,7 +3468,10 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r39-9-9.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"difference\"]}, \"results\": {\"bindings\": [{\"difference\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#gmlLiteral\", \"type\": \"literal\", \"value\": \"<gml:Polygon srsName=\\\"http://www.opengis.net/def/crs/OGC/1.3/CRS84\\\" xmlns:gml=\\\"http://www.opengis.net/ont/gml\\\"><gml:exterior><gml:LinearRing><gml:posList>-83.6 34.3 -83.6 34.5 -83.2 34.5 -83.2 34.1 -83.4 34.1 -83.4 34.3 -83.6 34.3</gml:posList></gml:LinearRing></gml:exterior></gml:Polygon>\"}}]}}": true,
+      "{\"head\": {\"vars\": [\"difference\"]}, \"results\": {\"bindings\": [{\"difference\": {\"datatype\": \"http://www.opengis.net/ont/geosparql#wktLiteral\", \"type\": \"literal\", \"value\": \"POLYGON((-83.6 34.3,-83.6 34.5,-83.2 34.5,-83.2 34.1,-83.4 34.1,-83.4 34.3,-83.6 34.3))\"}}]}}": true
+    },
     "definition": "Requirement 39 (Part 9) (WKT-DGGS): Requirement 39 (Part 1) (WKT): Implementations shall support the function geof:difference as a SPARQL extension function, consistent with definitions of these functions in Simple Features [OGCSFACA] ISO 19125-1, for non-DGGS geometry literals.",
     "label": "Requirement 39-9-9 (WKT-DGGS): Non-topological Query functions (Simple Features) geof:difference",
     "module": "GEOEXT",
@@ -3322,7 +3570,9 @@ var gsb_11_benchmarkconfig={
     "weight": 0.0038461538461538
   },
   "query-r40-11-1.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"minX\"]}, \"results\": {\"bindings\": [{\"minX\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#double\", \"type\": \"literal\", \"value\": \"-83.6\"}}]}}": true
+    },
     "definition": "Requirement 40 (Part 11) (WKT-WKT): Implementations shall support the function geof:minX as SPARQL extension functions which are defined in this standard, for non-DGGS geometry literals.",
     "label": "Requirement 40-11-1 (WKT-WKT): Non-topological Query functions (Non Simple Features) geof:minX",
     "module": "GEOEXT",
@@ -3367,7 +3617,9 @@ var gsb_11_benchmarkconfig={
     "weight": 0.0038461538461538
   },
   "query-r40-12-1.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"minY\"]}, \"results\": {\"bindings\": [{\"minY\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#double\", \"type\": \"literal\", \"value\": \"34.1\"}}]}}": true
+    },
     "definition": "Requirement 40 (Part 12) (WKT-WKT): Implementations shall support the function geof:minY as SPARQL extension functions which are defined in this standard, for non-DGGS geometry literals.",
     "label": "Requirement 40-12-1 (WKT-WKT): Non-topological Query functions (Non Simple Features) geof:minY",
     "module": "GEOEXT",
@@ -3547,7 +3799,9 @@ var gsb_11_benchmarkconfig={
     "weight": 0.0038461538461538
   },
   "query-r40-3-1.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"mperimeter\"]}, \"results\": {\"bindings\": [{\"mperimeter\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#double\", \"type\": \"literal\", \"value\": \"\"}}]}}": true
+    },
     "definition": "Requirement 40 (Part 3) (WKT): Implementations shall support the function geof:metricPerimeter as SPARQL extension functions which are defined in this standard, for non-DGGS geometry literals.",
     "label": "Requirement 40-3-1 (WKT): Non-topological Query functions (Non Simple Features) geof:metricPerimeter",
     "module": "GEOEXT",
@@ -3637,7 +3891,9 @@ var gsb_11_benchmarkconfig={
     "weight": 0.0007692307692307692
   },
   "query-r40-5-1.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"marea\"]}, \"results\": {\"bindings\": [{\"marea\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#double\", \"type\": \"literal\", \"value\": \"1633897106.3552246\"}}]}}": true
+    },
     "definition": "Requirement 40 (Part 5) (WKT): Implementations shall support the function geof:metricArea as SPARQL extension functions which are defined in this standard, for non-DGGS geometry literals.",
     "label": "Requirement 40-5-1 (WKT): Non-topological Query functions (Non Simple Features) geof:metricArea",
     "module": "GEOEXT",
@@ -3772,7 +4028,9 @@ var gsb_11_benchmarkconfig={
     "weight": 0.0038461538461538
   },
   "query-r40-8-1.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"maxX\"]}, \"results\": {\"bindings\": [{\"maxX\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#double\", \"type\": \"literal\", \"value\": \"-83.2\"}}]}}": true
+    },
     "definition": "Requirement 40 (Part 8) (WKT): Implementations shall support the function geof:maxX as SPARQL extension functions which are defined in this standard, for non-DGGS geometry literals.",
     "label": "Requirement 40-8-1 (WKT): Non-topological Query functions (Non Simple Features) geof:maxX",
     "module": "GEOEXT",
@@ -3817,7 +4075,9 @@ var gsb_11_benchmarkconfig={
     "weight": 0.0038461538461538
   },
   "query-r40-9-1.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"maxY\"]}, \"results\": {\"bindings\": [{\"maxY\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#double\", \"type\": \"literal\", \"value\": \"34.5\"}}]}}": true
+    },
     "definition": "Requirement 40 (Part 9) (WKT): Implementations shall support the function geof:maxY as SPARQL extension functions which are defined in this standard, for non-DGGS geometry literals.",
     "label": "Requirement 40-9-1 (WKT): Non-topological Query functions (Non Simple Features) geof:maxY",
     "module": "GEOEXT",
@@ -3862,7 +4122,9 @@ var gsb_11_benchmarkconfig={
     "weight": 0.0038461538461538
   },
   "query-r41-1.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"srid\"]}, \"results\": {\"bindings\": [{\"srid\": {\"type\": \"literal\", \"value\": \"http://www.opengis.net/def/crs/OGC/1.3/CRS84\"}}]}}": true
+    },
     "definition": "Requirement 41 (Part 1) (WKT): Implementations shall support geof:getSRID as a SPARQL extension function.",
     "label": "Requirement 41-1 (WKT): SRID Function: geof:getSRID",
     "module": "GEOEXT",
@@ -4177,7 +4439,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r43-1.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"relates\"]}, \"results\": {\"bindings\": [{\"relates\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 43 (Part 1) (WKT-WKT): Implementations shall support geof:relate as a SPARQL extension function, consistent with the relate operator defined in Simple Features [ISO 19125-1].",
     "label": "Requirement 43-1 (WKT-WKT): Relate Function: geof:relate",
     "module": "GTOP",
@@ -4186,7 +4450,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r43-10.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"relates\"]}, \"results\": {\"bindings\": [{\"relates\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 43 (Part 10) (GML-WKT): Implementations shall support geof:relate as a SPARQL extension function, consistent with the relate operator defined in Simple Features [ISO 19125-1].",
     "label": "Requirement 43-10 (GML-WKT): Relate Function: geof:relate",
     "module": "GTOP",
@@ -4195,7 +4461,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r43-11.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"relates\"]}, \"results\": {\"bindings\": [{\"relates\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 43 (Part 11) (GML-GeoJSON): Implementations shall support geof:relate as a SPARQL extension function, consistent with the relate operator defined in Simple Features [ISO 19125-1].",
     "label": "Requirement 43-11 (GML-GeoJSON): Relate Function: geof:relate",
     "module": "GTOP",
@@ -4204,7 +4472,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r43-12.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"relates\"]}, \"results\": {\"bindings\": [{\"relates\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 43 (Part 12) (GML-KML): Implementations shall support geof:relate as a SPARQL extension function, consistent with the relate operator defined in Simple Features [ISO 19125-1].",
     "label": "Requirement 43-12 (GML-KML): Relate Function: geof:relate",
     "module": "GTOP",
@@ -4213,7 +4483,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r43-13.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"relates\"]}, \"results\": {\"bindings\": [{\"relates\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 43 (Part 13) (GML-DGGS): Implementations shall support geof:relate as a SPARQL extension function, consistent with the relate operator defined in Simple Features [ISO 19125-1].",
     "label": "Requirement 43-13 (GML-DGGS): Relate Function: geof:relate",
     "module": "GTOP",
@@ -4222,7 +4494,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r43-14.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"relates\"]}, \"results\": {\"bindings\": [{\"relates\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 43 (Part 14) (GeoJSON-WKT): Implementations shall support geof:relate as a SPARQL extension function, consistent with the relate operator defined in Simple Features [ISO 19125-1].",
     "label": "Requirement 43-14 (GeoJSON-WKT): Relate Function: geof:relate",
     "module": "GTOP",
@@ -4231,7 +4505,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r43-15.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"relates\"]}, \"results\": {\"bindings\": [{\"relates\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 43 (Part 15) (GeoJSON-GML): Implementations shall support geof:relate as a SPARQL extension function, consistent with the relate operator defined in Simple Features [ISO 19125-1].",
     "label": "Requirement 43-15 (GeoJSON-GML): Relate Function: geof:relate",
     "module": "GTOP",
@@ -4240,7 +4516,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r43-16.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"relates\"]}, \"results\": {\"bindings\": [{\"relates\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 43 (Part 16) (GeoJSON-KML): Implementations shall support geof:relate as a SPARQL extension function, consistent with the relate operator defined in Simple Features [ISO 19125-1].",
     "label": "Requirement 43-16 (GeoJSON-KML): Relate Function: geof:relate",
     "module": "GTOP",
@@ -4249,7 +4527,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r43-17.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"relates\"]}, \"results\": {\"bindings\": [{\"relates\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 43 (Part 17) (GeoJSON-DGGS): Implementations shall support geof:relate as a SPARQL extension function, consistent with the relate operator defined in Simple Features [ISO 19125-1].",
     "label": "Requirement 43-17 (GeoJSON-DGGS): Relate Function: geof:relate",
     "module": "GTOP",
@@ -4258,7 +4538,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r43-18.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"relates\"]}, \"results\": {\"bindings\": [{\"relates\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 43 (Part 18) (KML-WKT): Implementations shall support geof:relate as a SPARQL extension function, consistent with the relate operator defined in Simple Features [ISO 19125-1].",
     "label": "Requirement 43-18 (KML-WKT): Relate Function: geof:relate",
     "module": "GTOP",
@@ -4267,7 +4549,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r43-19.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"relates\"]}, \"results\": {\"bindings\": [{\"relates\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 43 (Part 19) (KML-GML): Implementations shall support geof:relate as a SPARQL extension function, consistent with the relate operator defined in Simple Features [ISO 19125-1].",
     "label": "Requirement 43-19 (KML-GML): Relate Function: geof:relate",
     "module": "GTOP",
@@ -4276,7 +4560,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r43-2.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"relates\"]}, \"results\": {\"bindings\": [{\"relates\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 43 (Part 2) (GML-GML): Implementations shall support geof:relate as a SPARQL extension function, consistent with the relate operator defined in Simple Features [ISO 19125-1].",
     "label": "Requirement 43-2 (GML-GML): Relate Function: geof:relate",
     "module": "GTOP",
@@ -4285,7 +4571,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r43-20.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"relates\"]}, \"results\": {\"bindings\": [{\"relates\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 43 (Part 20) (KML-GeoJSON): Implementations shall support geof:relate as a SPARQL extension function, consistent with the relate operator defined in Simple Features [ISO 19125-1].",
     "label": "Requirement 43-20 (KML-GeoJSON): Relate Function: geof:relate",
     "module": "GTOP",
@@ -4294,7 +4582,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r43-21.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"relates\"]}, \"results\": {\"bindings\": [{\"relates\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 43 (Part 21) (KML-DGGS): Implementations shall support geof:relate as a SPARQL extension function, consistent with the relate operator defined in Simple Features [ISO 19125-1].",
     "label": "Requirement 43-21 (KML-DGGS): Relate Function: geof:relate",
     "module": "GTOP",
@@ -4303,7 +4593,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r43-22.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"relates\"]}, \"results\": {\"bindings\": [{\"relates\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 43 (Part 22) (DGGS-WKT): Implementations shall support geof:relate as a SPARQL extension function, consistent with the relate operator defined in Simple Features [ISO 19125-1].",
     "label": "Requirement 43-22 (DGGS-WKT): Relate Function: geof:relate",
     "module": "GTOP",
@@ -4312,7 +4604,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r43-23.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"relates\"]}, \"results\": {\"bindings\": [{\"relates\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 43 (Part 23) (DGGS-GML): Implementations shall support geof:relate as a SPARQL extension function, consistent with the relate operator defined in Simple Features [ISO 19125-1].",
     "label": "Requirement 43-23 (DGGS-GML): Relate Function: geof:relate",
     "module": "GTOP",
@@ -4321,7 +4615,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r43-24.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"relates\"]}, \"results\": {\"bindings\": [{\"relates\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 43 (Part 24) (DGGS-GeoJSON): Implementations shall support geof:relate as a SPARQL extension function, consistent with the relate operator defined in Simple Features [ISO 19125-1].",
     "label": "Requirement 43-24 (DGGS-GeoJSON): Relate Function: geof:relate",
     "module": "GTOP",
@@ -4330,7 +4626,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r43-25.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"relates\"]}, \"results\": {\"bindings\": [{\"relates\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 43 (Part 25) (DGGS-KML): Implementations shall support geof:relate as a SPARQL extension function, consistent with the relate operator defined in Simple Features [ISO 19125-1].",
     "label": "Requirement 43-25 (DGGS-KML): Relate Function: geof:relate",
     "module": "GTOP",
@@ -4339,7 +4637,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r43-3.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"relates\"]}, \"results\": {\"bindings\": [{\"relates\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 43 (Part 3) (GeoJSON-GeoJSON): Implementations shall support geof:relate as a SPARQL extension function, consistent with the relate operator defined in Simple Features [ISO 19125-1].",
     "label": "Requirement 43-3 (GeoJSON-GeoJSON): Relate Function: geof:relate",
     "module": "GTOP",
@@ -4348,7 +4648,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r43-4.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"relates\"]}, \"results\": {\"bindings\": [{\"relates\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 43 (Part 4) (KML-KML): Implementations shall support geof:relate as a SPARQL extension function, consistent with the relate operator defined in Simple Features [ISO 19125-1].",
     "label": "Requirement 43-4 (KML-KML): Relate Function: geof:relate",
     "module": "GTOP",
@@ -4357,7 +4659,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r43-5.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"relates\"]}, \"results\": {\"bindings\": [{\"relates\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 43 (Part 5) (DGGS-DGGS): Implementations shall support geof:relate as a SPARQL extension function, consistent with the relate operator defined in Simple Features [ISO 19125-1].",
     "label": "Requirement 43-5 (DGGS-DGGS): Relate Function: geof:relate",
     "module": "GTOP",
@@ -4366,7 +4670,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r43-6.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"relates\"]}, \"results\": {\"bindings\": [{\"relates\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 43 (Part 6) (WKT-GML): Implementations shall support geof:relate as a SPARQL extension function, consistent with the relate operator defined in Simple Features [ISO 19125-1].",
     "label": "Requirement 43-6 (WKT-GML): Relate Function: geof:relate",
     "module": "GTOP",
@@ -4375,7 +4681,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r43-7.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"relates\"]}, \"results\": {\"bindings\": [{\"relates\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 43 (Part 7) (WKT-GeoJSON): Implementations shall support geof:relate as a SPARQL extension function, consistent with the relate operator defined in Simple Features [ISO 19125-1].",
     "label": "Requirement 43-7 (WKT-GeoJSON): Relate Function: geof:relate",
     "module": "GTOP",
@@ -4384,7 +4692,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r43-8.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"relates\"]}, \"results\": {\"bindings\": [{\"relates\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 43 (Part 8) (WKT-KML): Implementations shall support geof:relate as a SPARQL extension function, consistent with the relate operator defined in Simple Features [ISO 19125-1].",
     "label": "Requirement 43-8 (WKT-KML): Relate Function: geof:relate",
     "module": "GTOP",
@@ -4393,7 +4703,9 @@ var gsb_11_benchmarkconfig={
     "weight": ""
   },
   "query-r43-9.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"relates\"]}, \"results\": {\"bindings\": [{\"relates\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 43 (Part 9) (WKT-DGGS): Implementations shall support geof:relate as a SPARQL extension function, consistent with the relate operator defined in Simple Features [ISO 19125-1].",
     "label": "Requirement 43-9 (WKT-DGGS): Relate Function: geof:relate",
     "module": "GTOP",
@@ -4408,43 +4720,271 @@ var gsb_11_benchmarkconfig={
     "definition": "Requirement 44 (Part 1) (WKT-WKT): Implementations shall support geof:sfEquals as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-1-1 (WKT-WKT): Simple Features Query Functions: geof:sfEquals",
     "module": "GTOP",
-    "query": "PREFIX my: <http://example.org/ApplicationSchema#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX geof: <http://www.opengis.net/def/function/geosparql/>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\nSELECT (xsd:boolean(?sfEquals) as ?equals)\nWHERE {\n  my:A geo:hasDefaultGeometry ?aGeom .\n  ?aGeom geo:asWKT ?aWKT .\n  BIND (geof:sfEquals(?aWKT, ?aWKT) as ?sfEquals)\n}\n",
+    "query": "PREFIX my: <http://example.org/ApplicationSchema#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX geof: <http://www.opengis.net/def/function/geosparql/>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\nSELECT (xsd:boolean(?sfEquals) as ?equals)\nWHERE {\n  my:A geo:hasDefaultGeometry ?aGeom .\n  ?aGeom geo:asWKT ?aWKT .\n  ?aGeom geo:asWKT ?aWKT .\n  BIND (geof:sfEquals(?aWKT, ?aWKT) as ?sfEquals)\n}\n",
+    "uri": "",
+    "weight": ""
+  },
+  "query-r44-1-10.rq": {
+    "answers": {
+      "{\"head\": {\"vars\": [\"equals\"]}, \"results\": {\"bindings\": [{\"equals\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
+    "definition": "Requirement 44 (Part 1) (GML-WKT): Implementations shall support geof:sfEquals as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
+    "label": "Requirement 44-1-10 (GML-WKT): Simple Features Query Functions: geof:sfEquals",
+    "module": "GTOP",
+    "query": "PREFIX my: <http://example.org/ApplicationSchema#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX geof: <http://www.opengis.net/def/function/geosparql/>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\nSELECT (xsd:boolean(?sfEquals) as ?equals)\nWHERE {\n  my:A geo:hasDefaultGeometry ?aGeom .\n  ?aGeom geo:asGML ?aGML .\n  ?aGeom geo:asWKT ?aWKT .\n  BIND (geof:sfEquals(?aGML, ?aWKT) as ?sfEquals)\n}\n",
+    "uri": "",
+    "weight": ""
+  },
+  "query-r44-1-11.rq": {
+    "answers": {
+      "{\"head\": {\"vars\": [\"equals\"]}, \"results\": {\"bindings\": [{\"equals\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
+    "definition": "Requirement 44 (Part 1) (GML-GeoJSON): Implementations shall support geof:sfEquals as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
+    "label": "Requirement 44-1-11 (GML-GeoJSON): Simple Features Query Functions: geof:sfEquals",
+    "module": "GTOP",
+    "query": "PREFIX my: <http://example.org/ApplicationSchema#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX geof: <http://www.opengis.net/def/function/geosparql/>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\nSELECT (xsd:boolean(?sfEquals) as ?equals)\nWHERE {\n  my:A geo:hasDefaultGeometry ?aGeom .\n  ?aGeom geo:asGML ?aGML .\n  ?aGeom geo:asGeoJSON ?aGeoJSON .\n  BIND (geof:sfEquals(?aGML, ?aGeoJSON) as ?sfEquals)\n}\n",
+    "uri": "",
+    "weight": ""
+  },
+  "query-r44-1-12.rq": {
+    "answers": {
+      "{\"head\": {\"vars\": [\"equals\"]}, \"results\": {\"bindings\": [{\"equals\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
+    "definition": "Requirement 44 (Part 1) (GML-KML): Implementations shall support geof:sfEquals as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
+    "label": "Requirement 44-1-12 (GML-KML): Simple Features Query Functions: geof:sfEquals",
+    "module": "GTOP",
+    "query": "PREFIX my: <http://example.org/ApplicationSchema#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX geof: <http://www.opengis.net/def/function/geosparql/>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\nSELECT (xsd:boolean(?sfEquals) as ?equals)\nWHERE {\n  my:A geo:hasDefaultGeometry ?aGeom .\n  ?aGeom geo:asGML ?aGML .\n  ?aGeom geo:asKML ?aKML .\n  BIND (geof:sfEquals(?aGML, ?aKML) as ?sfEquals)\n}\n",
+    "uri": "",
+    "weight": ""
+  },
+  "query-r44-1-13.rq": {
+    "answers": {
+      "{\"head\": {\"vars\": [\"equals\"]}, \"results\": {\"bindings\": [{\"equals\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
+    "definition": "Requirement 44 (Part 1) (GML-DGGS): Implementations shall support geof:sfEquals as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
+    "label": "Requirement 44-1-13 (GML-DGGS): Simple Features Query Functions: geof:sfEquals",
+    "module": "GTOP",
+    "query": "PREFIX my: <http://example.org/ApplicationSchema#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX geof: <http://www.opengis.net/def/function/geosparql/>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\nSELECT (xsd:boolean(?sfEquals) as ?equals)\nWHERE {\n  my:A geo:hasDefaultGeometry ?aGeom .\n  ?aGeom geo:asGML ?aGML .\n  ?aGeom geo:asDGGS ?aDGGS .\n  BIND (geof:sfEquals(?aGML, ?aDGGS) as ?sfEquals)\n}\n",
+    "uri": "",
+    "weight": ""
+  },
+  "query-r44-1-14.rq": {
+    "answers": {
+      "{\"head\": {\"vars\": [\"equals\"]}, \"results\": {\"bindings\": [{\"equals\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
+    "definition": "Requirement 44 (Part 1) (GeoJSON-WKT): Implementations shall support geof:sfEquals as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
+    "label": "Requirement 44-1-14 (GeoJSON-WKT): Simple Features Query Functions: geof:sfEquals",
+    "module": "GTOP",
+    "query": "PREFIX my: <http://example.org/ApplicationSchema#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX geof: <http://www.opengis.net/def/function/geosparql/>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\nSELECT (xsd:boolean(?sfEquals) as ?equals)\nWHERE {\n  my:A geo:hasDefaultGeometry ?aGeom .\n  ?aGeom geo:asGeoJSON ?aGeoJSON .\n  ?aGeom geo:asWKT ?aWKT .\n  BIND (geof:sfEquals(?aGeoJSON, ?aWKT) as ?sfEquals)\n}\n",
+    "uri": "",
+    "weight": ""
+  },
+  "query-r44-1-15.rq": {
+    "answers": {
+      "{\"head\": {\"vars\": [\"equals\"]}, \"results\": {\"bindings\": [{\"equals\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
+    "definition": "Requirement 44 (Part 1) (GeoJSON-GML): Implementations shall support geof:sfEquals as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
+    "label": "Requirement 44-1-15 (GeoJSON-GML): Simple Features Query Functions: geof:sfEquals",
+    "module": "GTOP",
+    "query": "PREFIX my: <http://example.org/ApplicationSchema#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX geof: <http://www.opengis.net/def/function/geosparql/>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\nSELECT (xsd:boolean(?sfEquals) as ?equals)\nWHERE {\n  my:A geo:hasDefaultGeometry ?aGeom .\n  ?aGeom geo:asGeoJSON ?aGeoJSON .\n  ?aGeom geo:asGML ?aGML .\n  BIND (geof:sfEquals(?aGeoJSON, ?aGML) as ?sfEquals)\n}\n",
+    "uri": "",
+    "weight": ""
+  },
+  "query-r44-1-16.rq": {
+    "answers": {
+      "{\"head\": {\"vars\": [\"equals\"]}, \"results\": {\"bindings\": [{\"equals\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
+    "definition": "Requirement 44 (Part 1) (GeoJSON-KML): Implementations shall support geof:sfEquals as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
+    "label": "Requirement 44-1-16 (GeoJSON-KML): Simple Features Query Functions: geof:sfEquals",
+    "module": "GTOP",
+    "query": "PREFIX my: <http://example.org/ApplicationSchema#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX geof: <http://www.opengis.net/def/function/geosparql/>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\nSELECT (xsd:boolean(?sfEquals) as ?equals)\nWHERE {\n  my:A geo:hasDefaultGeometry ?aGeom .\n  ?aGeom geo:asGeoJSON ?aGeoJSON .\n  ?aGeom geo:asKML ?aKML .\n  BIND (geof:sfEquals(?aGeoJSON, ?aKML) as ?sfEquals)\n}\n",
+    "uri": "",
+    "weight": ""
+  },
+  "query-r44-1-17.rq": {
+    "answers": {
+      "{\"head\": {\"vars\": [\"equals\"]}, \"results\": {\"bindings\": [{\"equals\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
+    "definition": "Requirement 44 (Part 1) (GeoJSON-DGGS): Implementations shall support geof:sfEquals as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
+    "label": "Requirement 44-1-17 (GeoJSON-DGGS): Simple Features Query Functions: geof:sfEquals",
+    "module": "GTOP",
+    "query": "PREFIX my: <http://example.org/ApplicationSchema#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX geof: <http://www.opengis.net/def/function/geosparql/>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\nSELECT (xsd:boolean(?sfEquals) as ?equals)\nWHERE {\n  my:A geo:hasDefaultGeometry ?aGeom .\n  ?aGeom geo:asGeoJSON ?aGeoJSON .\n  ?aGeom geo:asDGGS ?aDGGS .\n  BIND (geof:sfEquals(?aGeoJSON, ?aDGGS) as ?sfEquals)\n}\n",
+    "uri": "",
+    "weight": ""
+  },
+  "query-r44-1-18.rq": {
+    "answers": {
+      "{\"head\": {\"vars\": [\"equals\"]}, \"results\": {\"bindings\": [{\"equals\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
+    "definition": "Requirement 44 (Part 1) (KML-WKT): Implementations shall support geof:sfEquals as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
+    "label": "Requirement 44-1-18 (KML-WKT): Simple Features Query Functions: geof:sfEquals",
+    "module": "GTOP",
+    "query": "PREFIX my: <http://example.org/ApplicationSchema#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX geof: <http://www.opengis.net/def/function/geosparql/>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\nSELECT (xsd:boolean(?sfEquals) as ?equals)\nWHERE {\n  my:A geo:hasDefaultGeometry ?aGeom .\n  ?aGeom geo:asKML ?aKML .\n  ?aGeom geo:asWKT ?aWKT .\n  BIND (geof:sfEquals(?aKML, ?aWKT) as ?sfEquals)\n}\n",
+    "uri": "",
+    "weight": ""
+  },
+  "query-r44-1-19.rq": {
+    "answers": {
+      "{\"head\": {\"vars\": [\"equals\"]}, \"results\": {\"bindings\": [{\"equals\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
+    "definition": "Requirement 44 (Part 1) (KML-GML): Implementations shall support geof:sfEquals as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
+    "label": "Requirement 44-1-19 (KML-GML): Simple Features Query Functions: geof:sfEquals",
+    "module": "GTOP",
+    "query": "PREFIX my: <http://example.org/ApplicationSchema#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX geof: <http://www.opengis.net/def/function/geosparql/>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\nSELECT (xsd:boolean(?sfEquals) as ?equals)\nWHERE {\n  my:A geo:hasDefaultGeometry ?aGeom .\n  ?aGeom geo:asKML ?aKML .\n  ?aGeom geo:asGML ?aGML .\n  BIND (geof:sfEquals(?aKML, ?aGML) as ?sfEquals)\n}\n",
     "uri": "",
     "weight": ""
   },
   "query-r44-1-2.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"equals\"]}, \"results\": {\"bindings\": [{\"equals\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 44 (Part 1) (GML-GML): Implementations shall support geof:sfEquals as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-1-2 (GML-GML): Simple Features Query Functions: geof:sfEquals",
     "module": "GTOP",
-    "query": "PREFIX my: <http://example.org/ApplicationSchema#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX geof: <http://www.opengis.net/def/function/geosparql/>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\nSELECT (xsd:boolean(?sfEquals) as ?equals)\nWHERE {\n  my:A geo:hasDefaultGeometry ?aGeom .\n  ?aGeom geo:asGML ?aGML .\n  BIND (geof:sfEquals(?aGML, ?aGML) as ?sfEquals)\n}\n",
+    "query": "PREFIX my: <http://example.org/ApplicationSchema#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX geof: <http://www.opengis.net/def/function/geosparql/>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\nSELECT (xsd:boolean(?sfEquals) as ?equals)\nWHERE {\n  my:A geo:hasDefaultGeometry ?aGeom .\n  ?aGeom geo:asGML ?aGML .\n  ?aGeom geo:asGML ?aGML .\n  BIND (geof:sfEquals(?aGML, ?aGML) as ?sfEquals)\n}\n",
+    "uri": "",
+    "weight": ""
+  },
+  "query-r44-1-20.rq": {
+    "answers": {
+      "{\"head\": {\"vars\": [\"equals\"]}, \"results\": {\"bindings\": [{\"equals\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
+    "definition": "Requirement 44 (Part 1) (KML-GeoJSON): Implementations shall support geof:sfEquals as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
+    "label": "Requirement 44-1-20 (KML-GeoJSON): Simple Features Query Functions: geof:sfEquals",
+    "module": "GTOP",
+    "query": "PREFIX my: <http://example.org/ApplicationSchema#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX geof: <http://www.opengis.net/def/function/geosparql/>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\nSELECT (xsd:boolean(?sfEquals) as ?equals)\nWHERE {\n  my:A geo:hasDefaultGeometry ?aGeom .\n  ?aGeom geo:asKML ?aKML .\n  ?aGeom geo:asGeoJSON ?aGeoJSON .\n  BIND (geof:sfEquals(?aKML, ?aGeoJSON) as ?sfEquals)\n}\n",
+    "uri": "",
+    "weight": ""
+  },
+  "query-r44-1-21.rq": {
+    "answers": {
+      "{\"head\": {\"vars\": [\"equals\"]}, \"results\": {\"bindings\": [{\"equals\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
+    "definition": "Requirement 44 (Part 1) (KML-DGGS): Implementations shall support geof:sfEquals as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
+    "label": "Requirement 44-1-21 (KML-DGGS): Simple Features Query Functions: geof:sfEquals",
+    "module": "GTOP",
+    "query": "PREFIX my: <http://example.org/ApplicationSchema#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX geof: <http://www.opengis.net/def/function/geosparql/>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\nSELECT (xsd:boolean(?sfEquals) as ?equals)\nWHERE {\n  my:A geo:hasDefaultGeometry ?aGeom .\n  ?aGeom geo:asKML ?aKML .\n  ?aGeom geo:asDGGS ?aDGGS .\n  BIND (geof:sfEquals(?aKML, ?aDGGS) as ?sfEquals)\n}\n",
+    "uri": "",
+    "weight": ""
+  },
+  "query-r44-1-22.rq": {
+    "answers": {
+      "{\"head\": {\"vars\": [\"equals\"]}, \"results\": {\"bindings\": [{\"equals\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
+    "definition": "Requirement 44 (Part 1) (DGGS-WKT): Implementations shall support geof:sfEquals as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
+    "label": "Requirement 44-1-22 (DGGS-WKT): Simple Features Query Functions: geof:sfEquals",
+    "module": "GTOP",
+    "query": "PREFIX my: <http://example.org/ApplicationSchema#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX geof: <http://www.opengis.net/def/function/geosparql/>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\nSELECT (xsd:boolean(?sfEquals) as ?equals)\nWHERE {\n  my:A geo:hasDefaultGeometry ?aGeom .\n  ?aGeom geo:asDGGS ?aDGGS .\n  ?aGeom geo:asWKT ?aWKT .\n  BIND (geof:sfEquals(?aDGGS, ?aWKT) as ?sfEquals)\n}\n",
+    "uri": "",
+    "weight": ""
+  },
+  "query-r44-1-23.rq": {
+    "answers": {
+      "{\"head\": {\"vars\": [\"equals\"]}, \"results\": {\"bindings\": [{\"equals\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
+    "definition": "Requirement 44 (Part 1) (DGGS-GML): Implementations shall support geof:sfEquals as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
+    "label": "Requirement 44-1-23 (DGGS-GML): Simple Features Query Functions: geof:sfEquals",
+    "module": "GTOP",
+    "query": "PREFIX my: <http://example.org/ApplicationSchema#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX geof: <http://www.opengis.net/def/function/geosparql/>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\nSELECT (xsd:boolean(?sfEquals) as ?equals)\nWHERE {\n  my:A geo:hasDefaultGeometry ?aGeom .\n  ?aGeom geo:asDGGS ?aDGGS .\n  ?aGeom geo:asGML ?aGML .\n  BIND (geof:sfEquals(?aDGGS, ?aGML) as ?sfEquals)\n}\n",
+    "uri": "",
+    "weight": ""
+  },
+  "query-r44-1-24.rq": {
+    "answers": {
+      "{\"head\": {\"vars\": [\"equals\"]}, \"results\": {\"bindings\": [{\"equals\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
+    "definition": "Requirement 44 (Part 1) (DGGS-GeoJSON): Implementations shall support geof:sfEquals as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
+    "label": "Requirement 44-1-24 (DGGS-GeoJSON): Simple Features Query Functions: geof:sfEquals",
+    "module": "GTOP",
+    "query": "PREFIX my: <http://example.org/ApplicationSchema#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX geof: <http://www.opengis.net/def/function/geosparql/>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\nSELECT (xsd:boolean(?sfEquals) as ?equals)\nWHERE {\n  my:A geo:hasDefaultGeometry ?aGeom .\n  ?aGeom geo:asDGGS ?aDGGS .\n  ?aGeom geo:asGeoJSON ?aGeoJSON .\n  BIND (geof:sfEquals(?aDGGS, ?aGeoJSON) as ?sfEquals)\n}\n",
+    "uri": "",
+    "weight": ""
+  },
+  "query-r44-1-25.rq": {
+    "answers": {
+      "{\"head\": {\"vars\": [\"equals\"]}, \"results\": {\"bindings\": [{\"equals\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
+    "definition": "Requirement 44 (Part 1) (DGGS-KML): Implementations shall support geof:sfEquals as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
+    "label": "Requirement 44-1-25 (DGGS-KML): Simple Features Query Functions: geof:sfEquals",
+    "module": "GTOP",
+    "query": "PREFIX my: <http://example.org/ApplicationSchema#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX geof: <http://www.opengis.net/def/function/geosparql/>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\nSELECT (xsd:boolean(?sfEquals) as ?equals)\nWHERE {\n  my:A geo:hasDefaultGeometry ?aGeom .\n  ?aGeom geo:asDGGS ?aDGGS .\n  ?aGeom geo:asKML ?aKML .\n  BIND (geof:sfEquals(?aDGGS, ?aKML) as ?sfEquals)\n}\n",
     "uri": "",
     "weight": ""
   },
   "query-r44-1-3.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"equals\"]}, \"results\": {\"bindings\": [{\"equals\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 44 (Part 1) (GeoJSON-GeoJSON): Implementations shall support geof:sfEquals as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-1-3 (GeoJSON-GeoJSON): Simple Features Query Functions: geof:sfEquals",
     "module": "GTOP",
-    "query": "PREFIX my: <http://example.org/ApplicationSchema#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX geof: <http://www.opengis.net/def/function/geosparql/>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\nSELECT (xsd:boolean(?sfEquals) as ?equals)\nWHERE {\n  my:A geo:hasDefaultGeometry ?aGeom .\n  ?aGeom geo:asGeoJSON ?aGeoJSON .\n  BIND (geof:sfEquals(?aGeoJSON, ?aGeoJSON) as ?sfEquals)\n}\n",
+    "query": "PREFIX my: <http://example.org/ApplicationSchema#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX geof: <http://www.opengis.net/def/function/geosparql/>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\nSELECT (xsd:boolean(?sfEquals) as ?equals)\nWHERE {\n  my:A geo:hasDefaultGeometry ?aGeom .\n  ?aGeom geo:asGeoJSON ?aGeoJSON .\n  ?aGeom geo:asGeoJSON ?aGeoJSON .\n  BIND (geof:sfEquals(?aGeoJSON, ?aGeoJSON) as ?sfEquals)\n}\n",
     "uri": "",
     "weight": ""
   },
   "query-r44-1-4.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"equals\"]}, \"results\": {\"bindings\": [{\"equals\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 44 (Part 1) (KML-KML): Implementations shall support geof:sfEquals as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-1-4 (KML-KML): Simple Features Query Functions: geof:sfEquals",
     "module": "GTOP",
-    "query": "PREFIX my: <http://example.org/ApplicationSchema#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX geof: <http://www.opengis.net/def/function/geosparql/>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\nSELECT (xsd:boolean(?sfEquals) as ?equals)\nWHERE {\n  my:A geo:hasDefaultGeometry ?aGeom .\n  ?aGeom geo:asKML ?aKML .\n  BIND (geof:sfEquals(?aKML, ?aKML) as ?sfEquals)\n}\n",
+    "query": "PREFIX my: <http://example.org/ApplicationSchema#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX geof: <http://www.opengis.net/def/function/geosparql/>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\nSELECT (xsd:boolean(?sfEquals) as ?equals)\nWHERE {\n  my:A geo:hasDefaultGeometry ?aGeom .\n  ?aGeom geo:asKML ?aKML .\n  ?aGeom geo:asKML ?aKML .\n  BIND (geof:sfEquals(?aKML, ?aKML) as ?sfEquals)\n}\n",
     "uri": "",
     "weight": ""
   },
   "query-r44-1-5.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"equals\"]}, \"results\": {\"bindings\": [{\"equals\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 44 (Part 1) (DGGS-DGGS): Implementations shall support geof:sfEquals as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 44-1-5 (DGGS-DGGS): Simple Features Query Functions: geof:sfEquals",
     "module": "GTOP",
-    "query": "PREFIX my: <http://example.org/ApplicationSchema#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX geof: <http://www.opengis.net/def/function/geosparql/>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\nSELECT (xsd:boolean(?sfEquals) as ?equals)\nWHERE {\n  my:A geo:hasDefaultGeometry ?aGeom .\n  ?aGeom geo:asDGGS ?aDGGS .\n  BIND (geof:sfEquals(?aDGGS, ?aDGGS) as ?sfEquals)\n}\n",
+    "query": "PREFIX my: <http://example.org/ApplicationSchema#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX geof: <http://www.opengis.net/def/function/geosparql/>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\nSELECT (xsd:boolean(?sfEquals) as ?equals)\nWHERE {\n  my:A geo:hasDefaultGeometry ?aGeom .\n  ?aGeom geo:asDGGS ?aDGGS .\n  ?aGeom geo:asDGGS ?aDGGS .\n  BIND (geof:sfEquals(?aDGGS, ?aDGGS) as ?sfEquals)\n}\n",
+    "uri": "",
+    "weight": ""
+  },
+  "query-r44-1-6.rq": {
+    "answers": {
+      "{\"head\": {\"vars\": [\"equals\"]}, \"results\": {\"bindings\": [{\"equals\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
+    "definition": "Requirement 44 (Part 1) (WKT-GML): Implementations shall support geof:sfEquals as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
+    "label": "Requirement 44-1-6 (WKT-GML): Simple Features Query Functions: geof:sfEquals",
+    "module": "GTOP",
+    "query": "PREFIX my: <http://example.org/ApplicationSchema#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX geof: <http://www.opengis.net/def/function/geosparql/>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\nSELECT (xsd:boolean(?sfEquals) as ?equals)\nWHERE {\n  my:A geo:hasDefaultGeometry ?aGeom .\n  ?aGeom geo:asWKT ?aWKT .\n  ?aGeom geo:asGML ?aGML .\n  BIND (geof:sfEquals(?aWKT, ?aGML) as ?sfEquals)\n}\n",
+    "uri": "",
+    "weight": ""
+  },
+  "query-r44-1-7.rq": {
+    "answers": {
+      "{\"head\": {\"vars\": [\"equals\"]}, \"results\": {\"bindings\": [{\"equals\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
+    "definition": "Requirement 44 (Part 1) (WKT-GeoJSON): Implementations shall support geof:sfEquals as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
+    "label": "Requirement 44-1-7 (WKT-GeoJSON): Simple Features Query Functions: geof:sfEquals",
+    "module": "GTOP",
+    "query": "PREFIX my: <http://example.org/ApplicationSchema#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX geof: <http://www.opengis.net/def/function/geosparql/>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\nSELECT (xsd:boolean(?sfEquals) as ?equals)\nWHERE {\n  my:A geo:hasDefaultGeometry ?aGeom .\n  ?aGeom geo:asWKT ?aWKT .\n  ?aGeom geo:asGeoJSON ?aGeoJSON .\n  BIND (geof:sfEquals(?aWKT, ?aGeoJSON) as ?sfEquals)\n}\n",
+    "uri": "",
+    "weight": ""
+  },
+  "query-r44-1-8.rq": {
+    "answers": {
+      "{\"head\": {\"vars\": [\"equals\"]}, \"results\": {\"bindings\": [{\"equals\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
+    "definition": "Requirement 44 (Part 1) (WKT-KML): Implementations shall support geof:sfEquals as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
+    "label": "Requirement 44-1-8 (WKT-KML): Simple Features Query Functions: geof:sfEquals",
+    "module": "GTOP",
+    "query": "PREFIX my: <http://example.org/ApplicationSchema#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX geof: <http://www.opengis.net/def/function/geosparql/>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\nSELECT (xsd:boolean(?sfEquals) as ?equals)\nWHERE {\n  my:A geo:hasDefaultGeometry ?aGeom .\n  ?aGeom geo:asWKT ?aWKT .\n  ?aGeom geo:asKML ?aKML .\n  BIND (geof:sfEquals(?aWKT, ?aKML) as ?sfEquals)\n}\n",
+    "uri": "",
+    "weight": ""
+  },
+  "query-r44-1-9.rq": {
+    "answers": {
+      "{\"head\": {\"vars\": [\"equals\"]}, \"results\": {\"bindings\": [{\"equals\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
+    "definition": "Requirement 44 (Part 1) (WKT-DGGS): Implementations shall support geof:sfEquals as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
+    "label": "Requirement 44-1-9 (WKT-DGGS): Simple Features Query Functions: geof:sfEquals",
+    "module": "GTOP",
+    "query": "PREFIX my: <http://example.org/ApplicationSchema#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX geof: <http://www.opengis.net/def/function/geosparql/>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\nSELECT (xsd:boolean(?sfEquals) as ?equals)\nWHERE {\n  my:A geo:hasDefaultGeometry ?aGeom .\n  ?aGeom geo:asWKT ?aWKT .\n  ?aGeom geo:asDGGS ?aDGGS .\n  BIND (geof:sfEquals(?aWKT, ?aDGGS) as ?sfEquals)\n}\n",
     "uri": "",
     "weight": ""
   },
@@ -6380,43 +6920,271 @@ var gsb_11_benchmarkconfig={
     "definition": "Requirement 45 (Part 1) (WKT-WKT): Implementations shall support geof:ehEquals as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-1-1 (WKT-WKT): Egenhofer Query Functions: geof:ehEquals",
     "module": "GTOP",
-    "query": "PREFIX my: <http://example.org/ApplicationSchema#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX geof: <http://www.opengis.net/def/function/geosparql/>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\nSELECT (xsd:boolean(?ehEquals) as ?equals)\nWHERE {\n  my:A geo:hasDefaultGeometry ?aGeom .\n  ?aGeom geo:asWKT ?aWKT .\n  BIND (geof:ehEquals(?aWKT, ?aWKT) as ?ehEquals)\n}\n",
+    "query": "PREFIX my: <http://example.org/ApplicationSchema#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX geof: <http://www.opengis.net/def/function/geosparql/>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\nSELECT (xsd:boolean(?ehEquals) as ?equals)\nWHERE {\n  my:A geo:hasDefaultGeometry ?aGeom .\n  ?aGeom geo:asWKT ?aWKT .\n  ?aGeom geo:asWKT ?aWKT .\n  BIND (geof:ehEquals(?aWKT, ?aWKT) as ?ehEquals)\n}\n",
+    "uri": "",
+    "weight": ""
+  },
+  "query-r45-1-10.rq": {
+    "answers": {
+      "{\"head\": {\"vars\": [\"equals\"]}, \"results\": {\"bindings\": [{\"equals\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
+    "definition": "Requirement 45 (Part 1) (GML-WKT): Implementations shall support geof:ehEquals as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
+    "label": "Requirement 45-1-10 (GML-WKT): Egenhofer Query Functions: geof:ehEquals",
+    "module": "GTOP",
+    "query": "PREFIX my: <http://example.org/ApplicationSchema#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX geof: <http://www.opengis.net/def/function/geosparql/>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\nSELECT (xsd:boolean(?ehEquals) as ?equals)\nWHERE {\n  my:A geo:hasDefaultGeometry ?aGeom .\n  ?aGeom geo:asGML ?aGML .\n  ?aGeom geo:asWKT ?aWKT .\n  BIND (geof:ehEquals(?aGML, ?aWKT) as ?ehEquals)\n}\n",
+    "uri": "",
+    "weight": ""
+  },
+  "query-r45-1-11.rq": {
+    "answers": {
+      "{\"head\": {\"vars\": [\"equals\"]}, \"results\": {\"bindings\": [{\"equals\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
+    "definition": "Requirement 45 (Part 1) (GML-GeoJSON): Implementations shall support geof:ehEquals as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
+    "label": "Requirement 45-1-11 (GML-GeoJSON): Egenhofer Query Functions: geof:ehEquals",
+    "module": "GTOP",
+    "query": "PREFIX my: <http://example.org/ApplicationSchema#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX geof: <http://www.opengis.net/def/function/geosparql/>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\nSELECT (xsd:boolean(?ehEquals) as ?equals)\nWHERE {\n  my:A geo:hasDefaultGeometry ?aGeom .\n  ?aGeom geo:asGML ?aGML .\n  ?aGeom geo:asGeoJSON ?aGeoJSON .\n  BIND (geof:ehEquals(?aGML, ?aGeoJSON) as ?ehEquals)\n}\n",
+    "uri": "",
+    "weight": ""
+  },
+  "query-r45-1-12.rq": {
+    "answers": {
+      "{\"head\": {\"vars\": [\"equals\"]}, \"results\": {\"bindings\": [{\"equals\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
+    "definition": "Requirement 45 (Part 1) (GML-KML): Implementations shall support geof:ehEquals as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
+    "label": "Requirement 45-1-12 (GML-KML): Egenhofer Query Functions: geof:ehEquals",
+    "module": "GTOP",
+    "query": "PREFIX my: <http://example.org/ApplicationSchema#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX geof: <http://www.opengis.net/def/function/geosparql/>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\nSELECT (xsd:boolean(?ehEquals) as ?equals)\nWHERE {\n  my:A geo:hasDefaultGeometry ?aGeom .\n  ?aGeom geo:asGML ?aGML .\n  ?aGeom geo:asKML ?aKML .\n  BIND (geof:ehEquals(?aGML, ?aKML) as ?ehEquals)\n}\n",
+    "uri": "",
+    "weight": ""
+  },
+  "query-r45-1-13.rq": {
+    "answers": {
+      "{\"head\": {\"vars\": [\"equals\"]}, \"results\": {\"bindings\": [{\"equals\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
+    "definition": "Requirement 45 (Part 1) (GML-DGGS): Implementations shall support geof:ehEquals as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
+    "label": "Requirement 45-1-13 (GML-DGGS): Egenhofer Query Functions: geof:ehEquals",
+    "module": "GTOP",
+    "query": "PREFIX my: <http://example.org/ApplicationSchema#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX geof: <http://www.opengis.net/def/function/geosparql/>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\nSELECT (xsd:boolean(?ehEquals) as ?equals)\nWHERE {\n  my:A geo:hasDefaultGeometry ?aGeom .\n  ?aGeom geo:asGML ?aGML .\n  ?aGeom geo:asDGGS ?aDGGS .\n  BIND (geof:ehEquals(?aGML, ?aDGGS) as ?ehEquals)\n}\n",
+    "uri": "",
+    "weight": ""
+  },
+  "query-r45-1-14.rq": {
+    "answers": {
+      "{\"head\": {\"vars\": [\"equals\"]}, \"results\": {\"bindings\": [{\"equals\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
+    "definition": "Requirement 45 (Part 1) (GeoJSON-WKT): Implementations shall support geof:ehEquals as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
+    "label": "Requirement 45-1-14 (GeoJSON-WKT): Egenhofer Query Functions: geof:ehEquals",
+    "module": "GTOP",
+    "query": "PREFIX my: <http://example.org/ApplicationSchema#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX geof: <http://www.opengis.net/def/function/geosparql/>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\nSELECT (xsd:boolean(?ehEquals) as ?equals)\nWHERE {\n  my:A geo:hasDefaultGeometry ?aGeom .\n  ?aGeom geo:asGeoJSON ?aGeoJSON .\n  ?aGeom geo:asWKT ?aWKT .\n  BIND (geof:ehEquals(?aGeoJSON, ?aWKT) as ?ehEquals)\n}\n",
+    "uri": "",
+    "weight": ""
+  },
+  "query-r45-1-15.rq": {
+    "answers": {
+      "{\"head\": {\"vars\": [\"equals\"]}, \"results\": {\"bindings\": [{\"equals\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
+    "definition": "Requirement 45 (Part 1) (GeoJSON-GML): Implementations shall support geof:ehEquals as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
+    "label": "Requirement 45-1-15 (GeoJSON-GML): Egenhofer Query Functions: geof:ehEquals",
+    "module": "GTOP",
+    "query": "PREFIX my: <http://example.org/ApplicationSchema#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX geof: <http://www.opengis.net/def/function/geosparql/>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\nSELECT (xsd:boolean(?ehEquals) as ?equals)\nWHERE {\n  my:A geo:hasDefaultGeometry ?aGeom .\n  ?aGeom geo:asGeoJSON ?aGeoJSON .\n  ?aGeom geo:asGML ?aGML .\n  BIND (geof:ehEquals(?aGeoJSON, ?aGML) as ?ehEquals)\n}\n",
+    "uri": "",
+    "weight": ""
+  },
+  "query-r45-1-16.rq": {
+    "answers": {
+      "{\"head\": {\"vars\": [\"equals\"]}, \"results\": {\"bindings\": [{\"equals\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
+    "definition": "Requirement 45 (Part 1) (GeoJSON-KML): Implementations shall support geof:ehEquals as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
+    "label": "Requirement 45-1-16 (GeoJSON-KML): Egenhofer Query Functions: geof:ehEquals",
+    "module": "GTOP",
+    "query": "PREFIX my: <http://example.org/ApplicationSchema#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX geof: <http://www.opengis.net/def/function/geosparql/>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\nSELECT (xsd:boolean(?ehEquals) as ?equals)\nWHERE {\n  my:A geo:hasDefaultGeometry ?aGeom .\n  ?aGeom geo:asGeoJSON ?aGeoJSON .\n  ?aGeom geo:asKML ?aKML .\n  BIND (geof:ehEquals(?aGeoJSON, ?aKML) as ?ehEquals)\n}\n",
+    "uri": "",
+    "weight": ""
+  },
+  "query-r45-1-17.rq": {
+    "answers": {
+      "{\"head\": {\"vars\": [\"equals\"]}, \"results\": {\"bindings\": [{\"equals\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
+    "definition": "Requirement 45 (Part 1) (GeoJSON-DGGS): Implementations shall support geof:ehEquals as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
+    "label": "Requirement 45-1-17 (GeoJSON-DGGS): Egenhofer Query Functions: geof:ehEquals",
+    "module": "GTOP",
+    "query": "PREFIX my: <http://example.org/ApplicationSchema#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX geof: <http://www.opengis.net/def/function/geosparql/>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\nSELECT (xsd:boolean(?ehEquals) as ?equals)\nWHERE {\n  my:A geo:hasDefaultGeometry ?aGeom .\n  ?aGeom geo:asGeoJSON ?aGeoJSON .\n  ?aGeom geo:asDGGS ?aDGGS .\n  BIND (geof:ehEquals(?aGeoJSON, ?aDGGS) as ?ehEquals)\n}\n",
+    "uri": "",
+    "weight": ""
+  },
+  "query-r45-1-18.rq": {
+    "answers": {
+      "{\"head\": {\"vars\": [\"equals\"]}, \"results\": {\"bindings\": [{\"equals\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
+    "definition": "Requirement 45 (Part 1) (KML-WKT): Implementations shall support geof:ehEquals as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
+    "label": "Requirement 45-1-18 (KML-WKT): Egenhofer Query Functions: geof:ehEquals",
+    "module": "GTOP",
+    "query": "PREFIX my: <http://example.org/ApplicationSchema#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX geof: <http://www.opengis.net/def/function/geosparql/>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\nSELECT (xsd:boolean(?ehEquals) as ?equals)\nWHERE {\n  my:A geo:hasDefaultGeometry ?aGeom .\n  ?aGeom geo:asKML ?aKML .\n  ?aGeom geo:asWKT ?aWKT .\n  BIND (geof:ehEquals(?aKML, ?aWKT) as ?ehEquals)\n}\n",
+    "uri": "",
+    "weight": ""
+  },
+  "query-r45-1-19.rq": {
+    "answers": {
+      "{\"head\": {\"vars\": [\"equals\"]}, \"results\": {\"bindings\": [{\"equals\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
+    "definition": "Requirement 45 (Part 1) (KML-GML): Implementations shall support geof:ehEquals as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
+    "label": "Requirement 45-1-19 (KML-GML): Egenhofer Query Functions: geof:ehEquals",
+    "module": "GTOP",
+    "query": "PREFIX my: <http://example.org/ApplicationSchema#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX geof: <http://www.opengis.net/def/function/geosparql/>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\nSELECT (xsd:boolean(?ehEquals) as ?equals)\nWHERE {\n  my:A geo:hasDefaultGeometry ?aGeom .\n  ?aGeom geo:asKML ?aKML .\n  ?aGeom geo:asGML ?aGML .\n  BIND (geof:ehEquals(?aKML, ?aGML) as ?ehEquals)\n}\n",
     "uri": "",
     "weight": ""
   },
   "query-r45-1-2.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"equals\"]}, \"results\": {\"bindings\": [{\"equals\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 45 (Part 1) (GML-GML): Implementations shall support geof:ehEquals as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-1-2 (GML-GML): Egenhofer Query Functions: geof:ehEquals",
     "module": "GTOP",
-    "query": "PREFIX my: <http://example.org/ApplicationSchema#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX geof: <http://www.opengis.net/def/function/geosparql/>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\nSELECT (xsd:boolean(?ehEquals) as ?equals)\nWHERE {\n  my:A geo:hasDefaultGeometry ?aGeom .\n  ?aGeom geo:asGML ?aGML .\n  BIND (geof:ehEquals(?aGML, ?aGML) as ?ehEquals)\n}\n",
+    "query": "PREFIX my: <http://example.org/ApplicationSchema#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX geof: <http://www.opengis.net/def/function/geosparql/>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\nSELECT (xsd:boolean(?ehEquals) as ?equals)\nWHERE {\n  my:A geo:hasDefaultGeometry ?aGeom .\n  ?aGeom geo:asGML ?aGML .\n  ?aGeom geo:asGML ?aGML .\n  BIND (geof:ehEquals(?aGML, ?aGML) as ?ehEquals)\n}\n",
+    "uri": "",
+    "weight": ""
+  },
+  "query-r45-1-20.rq": {
+    "answers": {
+      "{\"head\": {\"vars\": [\"equals\"]}, \"results\": {\"bindings\": [{\"equals\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
+    "definition": "Requirement 45 (Part 1) (KML-GeoJSON): Implementations shall support geof:ehEquals as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
+    "label": "Requirement 45-1-20 (KML-GeoJSON): Egenhofer Query Functions: geof:ehEquals",
+    "module": "GTOP",
+    "query": "PREFIX my: <http://example.org/ApplicationSchema#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX geof: <http://www.opengis.net/def/function/geosparql/>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\nSELECT (xsd:boolean(?ehEquals) as ?equals)\nWHERE {\n  my:A geo:hasDefaultGeometry ?aGeom .\n  ?aGeom geo:asKML ?aKML .\n  ?aGeom geo:asGeoJSON ?aGeoJSON .\n  BIND (geof:ehEquals(?aKML, ?aGeoJSON) as ?ehEquals)\n}\n",
+    "uri": "",
+    "weight": ""
+  },
+  "query-r45-1-21.rq": {
+    "answers": {
+      "{\"head\": {\"vars\": [\"equals\"]}, \"results\": {\"bindings\": [{\"equals\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
+    "definition": "Requirement 45 (Part 1) (KML-DGGS): Implementations shall support geof:ehEquals as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
+    "label": "Requirement 45-1-21 (KML-DGGS): Egenhofer Query Functions: geof:ehEquals",
+    "module": "GTOP",
+    "query": "PREFIX my: <http://example.org/ApplicationSchema#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX geof: <http://www.opengis.net/def/function/geosparql/>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\nSELECT (xsd:boolean(?ehEquals) as ?equals)\nWHERE {\n  my:A geo:hasDefaultGeometry ?aGeom .\n  ?aGeom geo:asKML ?aKML .\n  ?aGeom geo:asDGGS ?aDGGS .\n  BIND (geof:ehEquals(?aKML, ?aDGGS) as ?ehEquals)\n}\n",
+    "uri": "",
+    "weight": ""
+  },
+  "query-r45-1-22.rq": {
+    "answers": {
+      "{\"head\": {\"vars\": [\"equals\"]}, \"results\": {\"bindings\": [{\"equals\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
+    "definition": "Requirement 45 (Part 1) (DGGS-WKT): Implementations shall support geof:ehEquals as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
+    "label": "Requirement 45-1-22 (DGGS-WKT): Egenhofer Query Functions: geof:ehEquals",
+    "module": "GTOP",
+    "query": "PREFIX my: <http://example.org/ApplicationSchema#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX geof: <http://www.opengis.net/def/function/geosparql/>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\nSELECT (xsd:boolean(?ehEquals) as ?equals)\nWHERE {\n  my:A geo:hasDefaultGeometry ?aGeom .\n  ?aGeom geo:asDGGS ?aDGGS .\n  ?aGeom geo:asWKT ?aWKT .\n  BIND (geof:ehEquals(?aDGGS, ?aWKT) as ?ehEquals)\n}\n",
+    "uri": "",
+    "weight": ""
+  },
+  "query-r45-1-23.rq": {
+    "answers": {
+      "{\"head\": {\"vars\": [\"equals\"]}, \"results\": {\"bindings\": [{\"equals\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
+    "definition": "Requirement 45 (Part 1) (DGGS-GML): Implementations shall support geof:ehEquals as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
+    "label": "Requirement 45-1-23 (DGGS-GML): Egenhofer Query Functions: geof:ehEquals",
+    "module": "GTOP",
+    "query": "PREFIX my: <http://example.org/ApplicationSchema#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX geof: <http://www.opengis.net/def/function/geosparql/>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\nSELECT (xsd:boolean(?ehEquals) as ?equals)\nWHERE {\n  my:A geo:hasDefaultGeometry ?aGeom .\n  ?aGeom geo:asDGGS ?aDGGS .\n  ?aGeom geo:asGML ?aGML .\n  BIND (geof:ehEquals(?aDGGS, ?aGML) as ?ehEquals)\n}\n",
+    "uri": "",
+    "weight": ""
+  },
+  "query-r45-1-24.rq": {
+    "answers": {
+      "{\"head\": {\"vars\": [\"equals\"]}, \"results\": {\"bindings\": [{\"equals\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
+    "definition": "Requirement 45 (Part 1) (DGGS-GeoJSON): Implementations shall support geof:ehEquals as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
+    "label": "Requirement 45-1-24 (DGGS-GeoJSON): Egenhofer Query Functions: geof:ehEquals",
+    "module": "GTOP",
+    "query": "PREFIX my: <http://example.org/ApplicationSchema#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX geof: <http://www.opengis.net/def/function/geosparql/>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\nSELECT (xsd:boolean(?ehEquals) as ?equals)\nWHERE {\n  my:A geo:hasDefaultGeometry ?aGeom .\n  ?aGeom geo:asDGGS ?aDGGS .\n  ?aGeom geo:asGeoJSON ?aGeoJSON .\n  BIND (geof:ehEquals(?aDGGS, ?aGeoJSON) as ?ehEquals)\n}\n",
+    "uri": "",
+    "weight": ""
+  },
+  "query-r45-1-25.rq": {
+    "answers": {
+      "{\"head\": {\"vars\": [\"equals\"]}, \"results\": {\"bindings\": [{\"equals\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
+    "definition": "Requirement 45 (Part 1) (DGGS-KML): Implementations shall support geof:ehEquals as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
+    "label": "Requirement 45-1-25 (DGGS-KML): Egenhofer Query Functions: geof:ehEquals",
+    "module": "GTOP",
+    "query": "PREFIX my: <http://example.org/ApplicationSchema#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX geof: <http://www.opengis.net/def/function/geosparql/>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\nSELECT (xsd:boolean(?ehEquals) as ?equals)\nWHERE {\n  my:A geo:hasDefaultGeometry ?aGeom .\n  ?aGeom geo:asDGGS ?aDGGS .\n  ?aGeom geo:asKML ?aKML .\n  BIND (geof:ehEquals(?aDGGS, ?aKML) as ?ehEquals)\n}\n",
     "uri": "",
     "weight": ""
   },
   "query-r45-1-3.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"equals\"]}, \"results\": {\"bindings\": [{\"equals\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 45 (Part 1) (GeoJSON-GeoJSON): Implementations shall support geof:ehEquals as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-1-3 (GeoJSON-GeoJSON): Egenhofer Query Functions: geof:ehEquals",
     "module": "GTOP",
-    "query": "PREFIX my: <http://example.org/ApplicationSchema#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX geof: <http://www.opengis.net/def/function/geosparql/>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\nSELECT (xsd:boolean(?ehEquals) as ?equals)\nWHERE {\n  my:A geo:hasDefaultGeometry ?aGeom .\n  ?aGeom geo:asGeoJSON ?aGeoJSON .\n  BIND (geof:ehEquals(?aGeoJSON, ?aGeoJSON) as ?ehEquals)\n}\n",
+    "query": "PREFIX my: <http://example.org/ApplicationSchema#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX geof: <http://www.opengis.net/def/function/geosparql/>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\nSELECT (xsd:boolean(?ehEquals) as ?equals)\nWHERE {\n  my:A geo:hasDefaultGeometry ?aGeom .\n  ?aGeom geo:asGeoJSON ?aGeoJSON .\n  ?aGeom geo:asGeoJSON ?aGeoJSON .\n  BIND (geof:ehEquals(?aGeoJSON, ?aGeoJSON) as ?ehEquals)\n}\n",
     "uri": "",
     "weight": ""
   },
   "query-r45-1-4.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"equals\"]}, \"results\": {\"bindings\": [{\"equals\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 45 (Part 1) (KML-KML): Implementations shall support geof:ehEquals as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-1-4 (KML-KML): Egenhofer Query Functions: geof:ehEquals",
     "module": "GTOP",
-    "query": "PREFIX my: <http://example.org/ApplicationSchema#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX geof: <http://www.opengis.net/def/function/geosparql/>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\nSELECT (xsd:boolean(?ehEquals) as ?equals)\nWHERE {\n  my:A geo:hasDefaultGeometry ?aGeom .\n  ?aGeom geo:asKML ?aKML .\n  BIND (geof:ehEquals(?aKML, ?aKML) as ?ehEquals)\n}\n",
+    "query": "PREFIX my: <http://example.org/ApplicationSchema#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX geof: <http://www.opengis.net/def/function/geosparql/>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\nSELECT (xsd:boolean(?ehEquals) as ?equals)\nWHERE {\n  my:A geo:hasDefaultGeometry ?aGeom .\n  ?aGeom geo:asKML ?aKML .\n  ?aGeom geo:asKML ?aKML .\n  BIND (geof:ehEquals(?aKML, ?aKML) as ?ehEquals)\n}\n",
     "uri": "",
     "weight": ""
   },
   "query-r45-1-5.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"equals\"]}, \"results\": {\"bindings\": [{\"equals\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 45 (Part 1) (DGGS-DGGS): Implementations shall support geof:ehEquals as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 45-1-5 (DGGS-DGGS): Egenhofer Query Functions: geof:ehEquals",
     "module": "GTOP",
-    "query": "PREFIX my: <http://example.org/ApplicationSchema#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX geof: <http://www.opengis.net/def/function/geosparql/>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\nSELECT (xsd:boolean(?ehEquals) as ?equals)\nWHERE {\n  my:A geo:hasDefaultGeometry ?aGeom .\n  ?aGeom geo:asDGGS ?aDGGS .\n  BIND (geof:ehEquals(?aDGGS, ?aDGGS) as ?ehEquals)\n}\n",
+    "query": "PREFIX my: <http://example.org/ApplicationSchema#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX geof: <http://www.opengis.net/def/function/geosparql/>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\nSELECT (xsd:boolean(?ehEquals) as ?equals)\nWHERE {\n  my:A geo:hasDefaultGeometry ?aGeom .\n  ?aGeom geo:asDGGS ?aDGGS .\n  ?aGeom geo:asDGGS ?aDGGS .\n  BIND (geof:ehEquals(?aDGGS, ?aDGGS) as ?ehEquals)\n}\n",
+    "uri": "",
+    "weight": ""
+  },
+  "query-r45-1-6.rq": {
+    "answers": {
+      "{\"head\": {\"vars\": [\"equals\"]}, \"results\": {\"bindings\": [{\"equals\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
+    "definition": "Requirement 45 (Part 1) (WKT-GML): Implementations shall support geof:ehEquals as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
+    "label": "Requirement 45-1-6 (WKT-GML): Egenhofer Query Functions: geof:ehEquals",
+    "module": "GTOP",
+    "query": "PREFIX my: <http://example.org/ApplicationSchema#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX geof: <http://www.opengis.net/def/function/geosparql/>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\nSELECT (xsd:boolean(?ehEquals) as ?equals)\nWHERE {\n  my:A geo:hasDefaultGeometry ?aGeom .\n  ?aGeom geo:asWKT ?aWKT .\n  ?aGeom geo:asGML ?aGML .\n  BIND (geof:ehEquals(?aWKT, ?aGML) as ?ehEquals)\n}\n",
+    "uri": "",
+    "weight": ""
+  },
+  "query-r45-1-7.rq": {
+    "answers": {
+      "{\"head\": {\"vars\": [\"equals\"]}, \"results\": {\"bindings\": [{\"equals\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
+    "definition": "Requirement 45 (Part 1) (WKT-GeoJSON): Implementations shall support geof:ehEquals as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
+    "label": "Requirement 45-1-7 (WKT-GeoJSON): Egenhofer Query Functions: geof:ehEquals",
+    "module": "GTOP",
+    "query": "PREFIX my: <http://example.org/ApplicationSchema#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX geof: <http://www.opengis.net/def/function/geosparql/>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\nSELECT (xsd:boolean(?ehEquals) as ?equals)\nWHERE {\n  my:A geo:hasDefaultGeometry ?aGeom .\n  ?aGeom geo:asWKT ?aWKT .\n  ?aGeom geo:asGeoJSON ?aGeoJSON .\n  BIND (geof:ehEquals(?aWKT, ?aGeoJSON) as ?ehEquals)\n}\n",
+    "uri": "",
+    "weight": ""
+  },
+  "query-r45-1-8.rq": {
+    "answers": {
+      "{\"head\": {\"vars\": [\"equals\"]}, \"results\": {\"bindings\": [{\"equals\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
+    "definition": "Requirement 45 (Part 1) (WKT-KML): Implementations shall support geof:ehEquals as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
+    "label": "Requirement 45-1-8 (WKT-KML): Egenhofer Query Functions: geof:ehEquals",
+    "module": "GTOP",
+    "query": "PREFIX my: <http://example.org/ApplicationSchema#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX geof: <http://www.opengis.net/def/function/geosparql/>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\nSELECT (xsd:boolean(?ehEquals) as ?equals)\nWHERE {\n  my:A geo:hasDefaultGeometry ?aGeom .\n  ?aGeom geo:asWKT ?aWKT .\n  ?aGeom geo:asKML ?aKML .\n  BIND (geof:ehEquals(?aWKT, ?aKML) as ?ehEquals)\n}\n",
+    "uri": "",
+    "weight": ""
+  },
+  "query-r45-1-9.rq": {
+    "answers": {
+      "{\"head\": {\"vars\": [\"equals\"]}, \"results\": {\"bindings\": [{\"equals\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
+    "definition": "Requirement 45 (Part 1) (WKT-DGGS): Implementations shall support geof:ehEquals as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
+    "label": "Requirement 45-1-9 (WKT-DGGS): Egenhofer Query Functions: geof:ehEquals",
+    "module": "GTOP",
+    "query": "PREFIX my: <http://example.org/ApplicationSchema#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX geof: <http://www.opengis.net/def/function/geosparql/>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\nSELECT (xsd:boolean(?ehEquals) as ?equals)\nWHERE {\n  my:A geo:hasDefaultGeometry ?aGeom .\n  ?aGeom geo:asWKT ?aWKT .\n  ?aGeom geo:asDGGS ?aDGGS .\n  BIND (geof:ehEquals(?aWKT, ?aDGGS) as ?ehEquals)\n}\n",
     "uri": "",
     "weight": ""
   },
@@ -8352,43 +9120,271 @@ var gsb_11_benchmarkconfig={
     "definition": "Requirement 46 (Part 1) (WKT-WKT): Implementations shall support geof:rcc8eq as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-1-1 (WKT-WKT): RCC8 Query Functions: geof:rcc8eq",
     "module": "GTOP",
-    "query": "PREFIX my: <http://example.org/ApplicationSchema#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX geof: <http://www.opengis.net/def/function/geosparql/>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\nSELECT (xsd:boolean(?rcc8eq) as ?equals)\nWHERE {\n  my:A geo:hasDefaultGeometry ?aGeom .\n  ?aGeom geo:asWKT ?aWKT .\n  BIND (geof:rcc8eq(?aWKT, ?aWKT) as ?rcc8eq)\n}\n",
+    "query": "PREFIX my: <http://example.org/ApplicationSchema#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX geof: <http://www.opengis.net/def/function/geosparql/>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\nSELECT (xsd:boolean(?rcc8eq) as ?equals)\nWHERE {\n  my:A geo:hasDefaultGeometry ?aGeom .\n  ?aGeom geo:asWKT ?aWKT .\n  ?aGeom geo:asWKT ?aWKT .\n  BIND (geof:rcc8eq(?aWKT, ?aWKT) as ?rcc8eq)\n}\n",
+    "uri": "",
+    "weight": ""
+  },
+  "query-r46-1-10.rq": {
+    "answers": {
+      "{\"head\": {\"vars\": [\"equals\"]}, \"results\": {\"bindings\": [{\"equals\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
+    "definition": "Requirement 46 (Part 1) (GML-WKT): Implementations shall support geof:rcc8eq as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
+    "label": "Requirement 46-1-10 (GML-WKT): RCC8 Query Functions: geof:rcc8eq",
+    "module": "GTOP",
+    "query": "PREFIX my: <http://example.org/ApplicationSchema#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX geof: <http://www.opengis.net/def/function/geosparql/>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\nSELECT (xsd:boolean(?rcc8eq) as ?equals)\nWHERE {\n  my:A geo:hasDefaultGeometry ?aGeom .\n  ?aGeom geo:asGML ?aGML .\n  ?aGeom geo:asWKT ?aWKT .\n  BIND (geof:rcc8eq(?aGML, ?aWKT) as ?rcc8eq)\n}\n",
+    "uri": "",
+    "weight": ""
+  },
+  "query-r46-1-11.rq": {
+    "answers": {
+      "{\"head\": {\"vars\": [\"equals\"]}, \"results\": {\"bindings\": [{\"equals\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
+    "definition": "Requirement 46 (Part 1) (GML-GeoJSON): Implementations shall support geof:rcc8eq as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
+    "label": "Requirement 46-1-11 (GML-GeoJSON): RCC8 Query Functions: geof:rcc8eq",
+    "module": "GTOP",
+    "query": "PREFIX my: <http://example.org/ApplicationSchema#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX geof: <http://www.opengis.net/def/function/geosparql/>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\nSELECT (xsd:boolean(?rcc8eq) as ?equals)\nWHERE {\n  my:A geo:hasDefaultGeometry ?aGeom .\n  ?aGeom geo:asGML ?aGML .\n  ?aGeom geo:asGeoJSON ?aGeoJSON .\n  BIND (geof:rcc8eq(?aGML, ?aGeoJSON) as ?rcc8eq)\n}\n",
+    "uri": "",
+    "weight": ""
+  },
+  "query-r46-1-12.rq": {
+    "answers": {
+      "{\"head\": {\"vars\": [\"equals\"]}, \"results\": {\"bindings\": [{\"equals\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
+    "definition": "Requirement 46 (Part 1) (GML-KML): Implementations shall support geof:rcc8eq as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
+    "label": "Requirement 46-1-12 (GML-KML): RCC8 Query Functions: geof:rcc8eq",
+    "module": "GTOP",
+    "query": "PREFIX my: <http://example.org/ApplicationSchema#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX geof: <http://www.opengis.net/def/function/geosparql/>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\nSELECT (xsd:boolean(?rcc8eq) as ?equals)\nWHERE {\n  my:A geo:hasDefaultGeometry ?aGeom .\n  ?aGeom geo:asGML ?aGML .\n  ?aGeom geo:asKML ?aKML .\n  BIND (geof:rcc8eq(?aGML, ?aKML) as ?rcc8eq)\n}\n",
+    "uri": "",
+    "weight": ""
+  },
+  "query-r46-1-13.rq": {
+    "answers": {
+      "{\"head\": {\"vars\": [\"equals\"]}, \"results\": {\"bindings\": [{\"equals\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
+    "definition": "Requirement 46 (Part 1) (GML-DGGS): Implementations shall support geof:rcc8eq as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
+    "label": "Requirement 46-1-13 (GML-DGGS): RCC8 Query Functions: geof:rcc8eq",
+    "module": "GTOP",
+    "query": "PREFIX my: <http://example.org/ApplicationSchema#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX geof: <http://www.opengis.net/def/function/geosparql/>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\nSELECT (xsd:boolean(?rcc8eq) as ?equals)\nWHERE {\n  my:A geo:hasDefaultGeometry ?aGeom .\n  ?aGeom geo:asGML ?aGML .\n  ?aGeom geo:asDGGS ?aDGGS .\n  BIND (geof:rcc8eq(?aGML, ?aDGGS) as ?rcc8eq)\n}\n",
+    "uri": "",
+    "weight": ""
+  },
+  "query-r46-1-14.rq": {
+    "answers": {
+      "{\"head\": {\"vars\": [\"equals\"]}, \"results\": {\"bindings\": [{\"equals\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
+    "definition": "Requirement 46 (Part 1) (GeoJSON-WKT): Implementations shall support geof:rcc8eq as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
+    "label": "Requirement 46-1-14 (GeoJSON-WKT): RCC8 Query Functions: geof:rcc8eq",
+    "module": "GTOP",
+    "query": "PREFIX my: <http://example.org/ApplicationSchema#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX geof: <http://www.opengis.net/def/function/geosparql/>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\nSELECT (xsd:boolean(?rcc8eq) as ?equals)\nWHERE {\n  my:A geo:hasDefaultGeometry ?aGeom .\n  ?aGeom geo:asGeoJSON ?aGeoJSON .\n  ?aGeom geo:asWKT ?aWKT .\n  BIND (geof:rcc8eq(?aGeoJSON, ?aWKT) as ?rcc8eq)\n}\n",
+    "uri": "",
+    "weight": ""
+  },
+  "query-r46-1-15.rq": {
+    "answers": {
+      "{\"head\": {\"vars\": [\"equals\"]}, \"results\": {\"bindings\": [{\"equals\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
+    "definition": "Requirement 46 (Part 1) (GeoJSON-GML): Implementations shall support geof:rcc8eq as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
+    "label": "Requirement 46-1-15 (GeoJSON-GML): RCC8 Query Functions: geof:rcc8eq",
+    "module": "GTOP",
+    "query": "PREFIX my: <http://example.org/ApplicationSchema#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX geof: <http://www.opengis.net/def/function/geosparql/>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\nSELECT (xsd:boolean(?rcc8eq) as ?equals)\nWHERE {\n  my:A geo:hasDefaultGeometry ?aGeom .\n  ?aGeom geo:asGeoJSON ?aGeoJSON .\n  ?aGeom geo:asGML ?aGML .\n  BIND (geof:rcc8eq(?aGeoJSON, ?aGML) as ?rcc8eq)\n}\n",
+    "uri": "",
+    "weight": ""
+  },
+  "query-r46-1-16.rq": {
+    "answers": {
+      "{\"head\": {\"vars\": [\"equals\"]}, \"results\": {\"bindings\": [{\"equals\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
+    "definition": "Requirement 46 (Part 1) (GeoJSON-KML): Implementations shall support geof:rcc8eq as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
+    "label": "Requirement 46-1-16 (GeoJSON-KML): RCC8 Query Functions: geof:rcc8eq",
+    "module": "GTOP",
+    "query": "PREFIX my: <http://example.org/ApplicationSchema#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX geof: <http://www.opengis.net/def/function/geosparql/>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\nSELECT (xsd:boolean(?rcc8eq) as ?equals)\nWHERE {\n  my:A geo:hasDefaultGeometry ?aGeom .\n  ?aGeom geo:asGeoJSON ?aGeoJSON .\n  ?aGeom geo:asKML ?aKML .\n  BIND (geof:rcc8eq(?aGeoJSON, ?aKML) as ?rcc8eq)\n}\n",
+    "uri": "",
+    "weight": ""
+  },
+  "query-r46-1-17.rq": {
+    "answers": {
+      "{\"head\": {\"vars\": [\"equals\"]}, \"results\": {\"bindings\": [{\"equals\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
+    "definition": "Requirement 46 (Part 1) (GeoJSON-DGGS): Implementations shall support geof:rcc8eq as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
+    "label": "Requirement 46-1-17 (GeoJSON-DGGS): RCC8 Query Functions: geof:rcc8eq",
+    "module": "GTOP",
+    "query": "PREFIX my: <http://example.org/ApplicationSchema#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX geof: <http://www.opengis.net/def/function/geosparql/>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\nSELECT (xsd:boolean(?rcc8eq) as ?equals)\nWHERE {\n  my:A geo:hasDefaultGeometry ?aGeom .\n  ?aGeom geo:asGeoJSON ?aGeoJSON .\n  ?aGeom geo:asDGGS ?aDGGS .\n  BIND (geof:rcc8eq(?aGeoJSON, ?aDGGS) as ?rcc8eq)\n}\n",
+    "uri": "",
+    "weight": ""
+  },
+  "query-r46-1-18.rq": {
+    "answers": {
+      "{\"head\": {\"vars\": [\"equals\"]}, \"results\": {\"bindings\": [{\"equals\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
+    "definition": "Requirement 46 (Part 1) (KML-WKT): Implementations shall support geof:rcc8eq as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
+    "label": "Requirement 46-1-18 (KML-WKT): RCC8 Query Functions: geof:rcc8eq",
+    "module": "GTOP",
+    "query": "PREFIX my: <http://example.org/ApplicationSchema#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX geof: <http://www.opengis.net/def/function/geosparql/>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\nSELECT (xsd:boolean(?rcc8eq) as ?equals)\nWHERE {\n  my:A geo:hasDefaultGeometry ?aGeom .\n  ?aGeom geo:asKML ?aKML .\n  ?aGeom geo:asWKT ?aWKT .\n  BIND (geof:rcc8eq(?aKML, ?aWKT) as ?rcc8eq)\n}\n",
+    "uri": "",
+    "weight": ""
+  },
+  "query-r46-1-19.rq": {
+    "answers": {
+      "{\"head\": {\"vars\": [\"equals\"]}, \"results\": {\"bindings\": [{\"equals\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
+    "definition": "Requirement 46 (Part 1) (KML-GML): Implementations shall support geof:rcc8eq as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
+    "label": "Requirement 46-1-19 (KML-GML): RCC8 Query Functions: geof:rcc8eq",
+    "module": "GTOP",
+    "query": "PREFIX my: <http://example.org/ApplicationSchema#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX geof: <http://www.opengis.net/def/function/geosparql/>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\nSELECT (xsd:boolean(?rcc8eq) as ?equals)\nWHERE {\n  my:A geo:hasDefaultGeometry ?aGeom .\n  ?aGeom geo:asKML ?aKML .\n  ?aGeom geo:asGML ?aGML .\n  BIND (geof:rcc8eq(?aKML, ?aGML) as ?rcc8eq)\n}\n",
     "uri": "",
     "weight": ""
   },
   "query-r46-1-2.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"equals\"]}, \"results\": {\"bindings\": [{\"equals\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 46 (Part 1) (GML-GML): Implementations shall support geof:rcc8eq as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-1-2 (GML-GML): RCC8 Query Functions: geof:rcc8eq",
     "module": "GTOP",
-    "query": "PREFIX my: <http://example.org/ApplicationSchema#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX geof: <http://www.opengis.net/def/function/geosparql/>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\nSELECT (xsd:boolean(?rcc8eq) as ?equals)\nWHERE {\n  my:A geo:hasDefaultGeometry ?aGeom .\n  ?aGeom geo:asGML ?aGML .\n  BIND (geof:rcc8eq(?aGML, ?aGML) as ?rcc8eq)\n}\n",
+    "query": "PREFIX my: <http://example.org/ApplicationSchema#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX geof: <http://www.opengis.net/def/function/geosparql/>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\nSELECT (xsd:boolean(?rcc8eq) as ?equals)\nWHERE {\n  my:A geo:hasDefaultGeometry ?aGeom .\n  ?aGeom geo:asGML ?aGML .\n  ?aGeom geo:asGML ?aGML .\n  BIND (geof:rcc8eq(?aGML, ?aGML) as ?rcc8eq)\n}\n",
+    "uri": "",
+    "weight": ""
+  },
+  "query-r46-1-20.rq": {
+    "answers": {
+      "{\"head\": {\"vars\": [\"equals\"]}, \"results\": {\"bindings\": [{\"equals\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
+    "definition": "Requirement 46 (Part 1) (KML-GeoJSON): Implementations shall support geof:rcc8eq as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
+    "label": "Requirement 46-1-20 (KML-GeoJSON): RCC8 Query Functions: geof:rcc8eq",
+    "module": "GTOP",
+    "query": "PREFIX my: <http://example.org/ApplicationSchema#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX geof: <http://www.opengis.net/def/function/geosparql/>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\nSELECT (xsd:boolean(?rcc8eq) as ?equals)\nWHERE {\n  my:A geo:hasDefaultGeometry ?aGeom .\n  ?aGeom geo:asKML ?aKML .\n  ?aGeom geo:asGeoJSON ?aGeoJSON .\n  BIND (geof:rcc8eq(?aKML, ?aGeoJSON) as ?rcc8eq)\n}\n",
+    "uri": "",
+    "weight": ""
+  },
+  "query-r46-1-21.rq": {
+    "answers": {
+      "{\"head\": {\"vars\": [\"equals\"]}, \"results\": {\"bindings\": [{\"equals\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
+    "definition": "Requirement 46 (Part 1) (KML-DGGS): Implementations shall support geof:rcc8eq as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
+    "label": "Requirement 46-1-21 (KML-DGGS): RCC8 Query Functions: geof:rcc8eq",
+    "module": "GTOP",
+    "query": "PREFIX my: <http://example.org/ApplicationSchema#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX geof: <http://www.opengis.net/def/function/geosparql/>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\nSELECT (xsd:boolean(?rcc8eq) as ?equals)\nWHERE {\n  my:A geo:hasDefaultGeometry ?aGeom .\n  ?aGeom geo:asKML ?aKML .\n  ?aGeom geo:asDGGS ?aDGGS .\n  BIND (geof:rcc8eq(?aKML, ?aDGGS) as ?rcc8eq)\n}\n",
+    "uri": "",
+    "weight": ""
+  },
+  "query-r46-1-22.rq": {
+    "answers": {
+      "{\"head\": {\"vars\": [\"equals\"]}, \"results\": {\"bindings\": [{\"equals\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
+    "definition": "Requirement 46 (Part 1) (DGGS-WKT): Implementations shall support geof:rcc8eq as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
+    "label": "Requirement 46-1-22 (DGGS-WKT): RCC8 Query Functions: geof:rcc8eq",
+    "module": "GTOP",
+    "query": "PREFIX my: <http://example.org/ApplicationSchema#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX geof: <http://www.opengis.net/def/function/geosparql/>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\nSELECT (xsd:boolean(?rcc8eq) as ?equals)\nWHERE {\n  my:A geo:hasDefaultGeometry ?aGeom .\n  ?aGeom geo:asDGGS ?aDGGS .\n  ?aGeom geo:asWKT ?aWKT .\n  BIND (geof:rcc8eq(?aDGGS, ?aWKT) as ?rcc8eq)\n}\n",
+    "uri": "",
+    "weight": ""
+  },
+  "query-r46-1-23.rq": {
+    "answers": {
+      "{\"head\": {\"vars\": [\"equals\"]}, \"results\": {\"bindings\": [{\"equals\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
+    "definition": "Requirement 46 (Part 1) (DGGS-GML): Implementations shall support geof:rcc8eq as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
+    "label": "Requirement 46-1-23 (DGGS-GML): RCC8 Query Functions: geof:rcc8eq",
+    "module": "GTOP",
+    "query": "PREFIX my: <http://example.org/ApplicationSchema#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX geof: <http://www.opengis.net/def/function/geosparql/>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\nSELECT (xsd:boolean(?rcc8eq) as ?equals)\nWHERE {\n  my:A geo:hasDefaultGeometry ?aGeom .\n  ?aGeom geo:asDGGS ?aDGGS .\n  ?aGeom geo:asGML ?aGML .\n  BIND (geof:rcc8eq(?aDGGS, ?aGML) as ?rcc8eq)\n}\n",
+    "uri": "",
+    "weight": ""
+  },
+  "query-r46-1-24.rq": {
+    "answers": {
+      "{\"head\": {\"vars\": [\"equals\"]}, \"results\": {\"bindings\": [{\"equals\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
+    "definition": "Requirement 46 (Part 1) (DGGS-GeoJSON): Implementations shall support geof:rcc8eq as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
+    "label": "Requirement 46-1-24 (DGGS-GeoJSON): RCC8 Query Functions: geof:rcc8eq",
+    "module": "GTOP",
+    "query": "PREFIX my: <http://example.org/ApplicationSchema#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX geof: <http://www.opengis.net/def/function/geosparql/>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\nSELECT (xsd:boolean(?rcc8eq) as ?equals)\nWHERE {\n  my:A geo:hasDefaultGeometry ?aGeom .\n  ?aGeom geo:asDGGS ?aDGGS .\n  ?aGeom geo:asGeoJSON ?aGeoJSON .\n  BIND (geof:rcc8eq(?aDGGS, ?aGeoJSON) as ?rcc8eq)\n}\n",
+    "uri": "",
+    "weight": ""
+  },
+  "query-r46-1-25.rq": {
+    "answers": {
+      "{\"head\": {\"vars\": [\"equals\"]}, \"results\": {\"bindings\": [{\"equals\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
+    "definition": "Requirement 46 (Part 1) (DGGS-KML): Implementations shall support geof:rcc8eq as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
+    "label": "Requirement 46-1-25 (DGGS-KML): RCC8 Query Functions: geof:rcc8eq",
+    "module": "GTOP",
+    "query": "PREFIX my: <http://example.org/ApplicationSchema#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX geof: <http://www.opengis.net/def/function/geosparql/>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\nSELECT (xsd:boolean(?rcc8eq) as ?equals)\nWHERE {\n  my:A geo:hasDefaultGeometry ?aGeom .\n  ?aGeom geo:asDGGS ?aDGGS .\n  ?aGeom geo:asKML ?aKML .\n  BIND (geof:rcc8eq(?aDGGS, ?aKML) as ?rcc8eq)\n}\n",
     "uri": "",
     "weight": ""
   },
   "query-r46-1-3.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"equals\"]}, \"results\": {\"bindings\": [{\"equals\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 46 (Part 1) (GeoJSON-GeoJSON): Implementations shall support geof:rcc8eq as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-1-3 (GeoJSON-GeoJSON): RCC8 Query Functions: geof:rcc8eq",
     "module": "GTOP",
-    "query": "PREFIX my: <http://example.org/ApplicationSchema#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX geof: <http://www.opengis.net/def/function/geosparql/>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\nSELECT (xsd:boolean(?rcc8eq) as ?equals)\nWHERE {\n  my:A geo:hasDefaultGeometry ?aGeom .\n  ?aGeom geo:asGeoJSON ?aGeoJSON .\n  BIND (geof:rcc8eq(?aGeoJSON, ?aGeoJSON) as ?rcc8eq)\n}\n",
+    "query": "PREFIX my: <http://example.org/ApplicationSchema#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX geof: <http://www.opengis.net/def/function/geosparql/>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\nSELECT (xsd:boolean(?rcc8eq) as ?equals)\nWHERE {\n  my:A geo:hasDefaultGeometry ?aGeom .\n  ?aGeom geo:asGeoJSON ?aGeoJSON .\n  ?aGeom geo:asGeoJSON ?aGeoJSON .\n  BIND (geof:rcc8eq(?aGeoJSON, ?aGeoJSON) as ?rcc8eq)\n}\n",
     "uri": "",
     "weight": ""
   },
   "query-r46-1-4.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"equals\"]}, \"results\": {\"bindings\": [{\"equals\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 46 (Part 1) (KML-KML): Implementations shall support geof:rcc8eq as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-1-4 (KML-KML): RCC8 Query Functions: geof:rcc8eq",
     "module": "GTOP",
-    "query": "PREFIX my: <http://example.org/ApplicationSchema#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX geof: <http://www.opengis.net/def/function/geosparql/>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\nSELECT (xsd:boolean(?rcc8eq) as ?equals)\nWHERE {\n  my:A geo:hasDefaultGeometry ?aGeom .\n  ?aGeom geo:asKML ?aKML .\n  BIND (geof:rcc8eq(?aKML, ?aKML) as ?rcc8eq)\n}\n",
+    "query": "PREFIX my: <http://example.org/ApplicationSchema#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX geof: <http://www.opengis.net/def/function/geosparql/>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\nSELECT (xsd:boolean(?rcc8eq) as ?equals)\nWHERE {\n  my:A geo:hasDefaultGeometry ?aGeom .\n  ?aGeom geo:asKML ?aKML .\n  ?aGeom geo:asKML ?aKML .\n  BIND (geof:rcc8eq(?aKML, ?aKML) as ?rcc8eq)\n}\n",
     "uri": "",
     "weight": ""
   },
   "query-r46-1-5.rq": {
-    "answers": {},
+    "answers": {
+      "{\"head\": {\"vars\": [\"equals\"]}, \"results\": {\"bindings\": [{\"equals\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
     "definition": "Requirement 46 (Part 1) (DGGS-DGGS): Implementations shall support geof:rcc8eq as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
     "label": "Requirement 46-1-5 (DGGS-DGGS): RCC8 Query Functions: geof:rcc8eq",
     "module": "GTOP",
-    "query": "PREFIX my: <http://example.org/ApplicationSchema#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX geof: <http://www.opengis.net/def/function/geosparql/>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\nSELECT (xsd:boolean(?rcc8eq) as ?equals)\nWHERE {\n  my:A geo:hasDefaultGeometry ?aGeom .\n  ?aGeom geo:asDGGS ?aDGGS .\n  BIND (geof:rcc8eq(?aDGGS, ?aDGGS) as ?rcc8eq)\n}\n",
+    "query": "PREFIX my: <http://example.org/ApplicationSchema#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX geof: <http://www.opengis.net/def/function/geosparql/>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\nSELECT (xsd:boolean(?rcc8eq) as ?equals)\nWHERE {\n  my:A geo:hasDefaultGeometry ?aGeom .\n  ?aGeom geo:asDGGS ?aDGGS .\n  ?aGeom geo:asDGGS ?aDGGS .\n  BIND (geof:rcc8eq(?aDGGS, ?aDGGS) as ?rcc8eq)\n}\n",
+    "uri": "",
+    "weight": ""
+  },
+  "query-r46-1-6.rq": {
+    "answers": {
+      "{\"head\": {\"vars\": [\"equals\"]}, \"results\": {\"bindings\": [{\"equals\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
+    "definition": "Requirement 46 (Part 1) (WKT-GML): Implementations shall support geof:rcc8eq as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
+    "label": "Requirement 46-1-6 (WKT-GML): RCC8 Query Functions: geof:rcc8eq",
+    "module": "GTOP",
+    "query": "PREFIX my: <http://example.org/ApplicationSchema#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX geof: <http://www.opengis.net/def/function/geosparql/>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\nSELECT (xsd:boolean(?rcc8eq) as ?equals)\nWHERE {\n  my:A geo:hasDefaultGeometry ?aGeom .\n  ?aGeom geo:asWKT ?aWKT .\n  ?aGeom geo:asGML ?aGML .\n  BIND (geof:rcc8eq(?aWKT, ?aGML) as ?rcc8eq)\n}\n",
+    "uri": "",
+    "weight": ""
+  },
+  "query-r46-1-7.rq": {
+    "answers": {
+      "{\"head\": {\"vars\": [\"equals\"]}, \"results\": {\"bindings\": [{\"equals\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
+    "definition": "Requirement 46 (Part 1) (WKT-GeoJSON): Implementations shall support geof:rcc8eq as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
+    "label": "Requirement 46-1-7 (WKT-GeoJSON): RCC8 Query Functions: geof:rcc8eq",
+    "module": "GTOP",
+    "query": "PREFIX my: <http://example.org/ApplicationSchema#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX geof: <http://www.opengis.net/def/function/geosparql/>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\nSELECT (xsd:boolean(?rcc8eq) as ?equals)\nWHERE {\n  my:A geo:hasDefaultGeometry ?aGeom .\n  ?aGeom geo:asWKT ?aWKT .\n  ?aGeom geo:asGeoJSON ?aGeoJSON .\n  BIND (geof:rcc8eq(?aWKT, ?aGeoJSON) as ?rcc8eq)\n}\n",
+    "uri": "",
+    "weight": ""
+  },
+  "query-r46-1-8.rq": {
+    "answers": {
+      "{\"head\": {\"vars\": [\"equals\"]}, \"results\": {\"bindings\": [{\"equals\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
+    "definition": "Requirement 46 (Part 1) (WKT-KML): Implementations shall support geof:rcc8eq as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
+    "label": "Requirement 46-1-8 (WKT-KML): RCC8 Query Functions: geof:rcc8eq",
+    "module": "GTOP",
+    "query": "PREFIX my: <http://example.org/ApplicationSchema#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX geof: <http://www.opengis.net/def/function/geosparql/>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\nSELECT (xsd:boolean(?rcc8eq) as ?equals)\nWHERE {\n  my:A geo:hasDefaultGeometry ?aGeom .\n  ?aGeom geo:asWKT ?aWKT .\n  ?aGeom geo:asKML ?aKML .\n  BIND (geof:rcc8eq(?aWKT, ?aKML) as ?rcc8eq)\n}\n",
+    "uri": "",
+    "weight": ""
+  },
+  "query-r46-1-9.rq": {
+    "answers": {
+      "{\"head\": {\"vars\": [\"equals\"]}, \"results\": {\"bindings\": [{\"equals\": {\"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\", \"type\": \"literal\", \"value\": \"true\"}}]}}": true
+    },
+    "definition": "Requirement 46 (Part 1) (WKT-DGGS): Implementations shall support geof:rcc8eq as a SPARQL extension function, consistent with its corresponding DE-9IM intersection pattern, as defined by Simple Features [ISO 19125-1].",
+    "label": "Requirement 46-1-9 (WKT-DGGS): RCC8 Query Functions: geof:rcc8eq",
+    "module": "GTOP",
+    "query": "PREFIX my: <http://example.org/ApplicationSchema#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX geof: <http://www.opengis.net/def/function/geosparql/>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\nSELECT (xsd:boolean(?rcc8eq) as ?equals)\nWHERE {\n  my:A geo:hasDefaultGeometry ?aGeom .\n  ?aGeom geo:asWKT ?aWKT .\n  ?aGeom geo:asDGGS ?aDGGS .\n  BIND (geof:rcc8eq(?aWKT, ?aDGGS) as ?rcc8eq)\n}\n",
     "uri": "",
     "weight": ""
   },
